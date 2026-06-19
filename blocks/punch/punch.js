@@ -80,7 +80,10 @@ export default async function decorate(block) {
   const nodes = collectNodes(block);
 
   const headingNode = nodes.find((n) => /^H[1-6]$/.test(n.tagName));
-  const ctaNode = nodes.find((n) => n.querySelector && n.querySelector('a'));
+  // CTA classifier must match the anchor itself OR a descendant (#53): the EDS
+  // button decorator runs before block JS and can leave the collected node as a
+  // bare <a>, on which querySelector('a') (descendant-only) returns null.
+  const ctaNode = nodes.find((n) => n.matches && (n.matches('a') || n.querySelector('a')));
   const textNodes = nodes.filter((n) => n !== headingNode && n !== ctaNode && n.textContent.trim());
   // shortest = kicker, longest = lede
   const len = (n) => n.textContent.trim().length;
@@ -112,10 +115,15 @@ export default async function decorate(block) {
     wrap.appendChild(lede);
   }
 
-  if (ctaNode) {
+  const anchor = ctaNode && (ctaNode.matches('a') ? ctaNode : ctaNode.querySelector('a'));
+  if (anchor) {
     const actions = document.createElement('div');
     actions.className = 'actions rise'; actions.style.setProperty('--s', '2');
-    [...ctaNode.childNodes].forEach((child) => actions.appendChild(child.cloneNode(true)));
+    const a = anchor.cloneNode(true);
+    // ensure the brand chip styling regardless of whether the EDS button
+    // decorator already ran on the source anchor (idempotent class add).
+    a.classList.add('btn', 'btn-primary');
+    actions.appendChild(a);
     wrap.appendChild(actions);
   }
 
