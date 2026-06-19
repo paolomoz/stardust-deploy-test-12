@@ -1,0 +1,70 @@
+<style>
+  header.header { min-height: 98px; background: var(--color-bg); }
+  .sh-utility {
+    background: var(--color-mulberry); color: #f4ece6;
+    font-size: var(--body-sm); text-align: center;
+    padding: 10px var(--spacing-md);
+  }
+  .sh-utility a { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; color: #f4ece6; }
+  .sh-nav {
+    position: sticky; top: 0; z-index: 50;
+    background: color-mix(in srgb, var(--color-bg) 90%, transparent);
+    backdrop-filter: saturate(1.1) blur(8px);
+    border-bottom: 1px solid var(--color-surface-2);
+  }
+  .sh-nav-inner { display: flex; align-items: center; justify-content: space-between; gap: var(--spacing-lg); padding-block: 14px; }
+  .sh-wordmark { font-family: var(--heading-font-family); font-weight: 800; font-size: 1.15rem; letter-spacing: 0.04em; color: var(--color-fg); }
+  .sh-nav-links { display: flex; align-items: center; gap: clamp(14px, 2vw, 28px); }
+  .sh-nav-links a { font-size: 0.95rem; font-weight: 500; color: var(--color-fg); }
+  .sh-nav-links a:hover { color: var(--color-accent); }
+  .sh-nav-right { display: flex; align-items: center; gap: clamp(12px, 1.6vw, 22px); }
+  .sh-nav-right .sh-text-link { font-size: 0.95rem; font-weight: 500; color: var(--color-fg); }
+  .sh-nav-right .sh-text-link:hover { color: var(--color-accent); }
+  .sh-nav-cta {
+    display: inline-flex; align-items: center; padding: 9px 20px; font-size: 0.95rem; font-weight: 600;
+    background: var(--color-accent); color: var(--color-white); border-radius: var(--radius-pill);
+  }
+  .sh-nav-cta:hover { background: #5e3da0; }
+
+  /* CSS-only mobile menu (checkbox hack — fragments can't run JS) */
+  .sh-nav-toggle { display: none; }
+  .sh-burger {
+    display: none; cursor: pointer; border: 1px solid var(--color-surface-2);
+    border-radius: var(--radius); padding: 8px; line-height: 0; background: none;
+  }
+  .sh-burger svg { display: block; }
+
+  @media (width <= 900px) {
+    .sh-nav-links, .sh-nav-right .sh-text-link { display: none; }
+    .sh-burger { display: inline-flex; }
+    .sh-nav-toggle:checked ~ .sh-nav-inner .sh-nav-links {
+      display: flex; flex-direction: column; align-items: flex-start; gap: var(--spacing-md);
+      width: 100%; padding-block: var(--spacing-md);
+    }
+    .sh-nav-toggle:checked ~ .sh-nav-inner .sh-nav-right .sh-text-link { display: inline-flex; }
+    .sh-nav-toggle:checked ~ .sh-nav-inner { flex-wrap: wrap; }
+  }
+</style>
+<div class="sh-utility">
+  Looking for Superhuman Mail? <a href="https://superhuman.com/products/mail">Learn more <span aria-hidden="true">→</span></a>
+</div>
+<nav class="sh-nav" aria-label="Primary">
+  <input type="checkbox" id="sh-nav-toggle" class="sh-nav-toggle" hidden>
+  <div class="wrap sh-nav-inner">
+    <a class="sh-wordmark" href="/">SUPERHUMAN</a>
+    <label class="sh-burger" for="sh-nav-toggle" aria-label="Toggle menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </label>
+    <ul class="sh-nav-links">
+      <li><a href="https://superhuman.com/products/mail">Product</a></li>
+      <li><a href="https://superhuman.com/solutions/enterprise">Enterprise</a></li>
+      <li><a href="https://superhuman.com/edu">Education</a></li>
+      <li><a href="https://superhuman.com/plans">Pricing</a></li>
+    </ul>
+    <div class="sh-nav-right">
+      <a class="sh-text-link" href="https://superhuman.com/contact">Contact sales</a>
+      <a class="sh-text-link" href="https://superhuman.com/auth/signin">Log in</a>
+      <a class="sh-nav-cta" href="https://superhuman.com/auth/signup?screen_hint=signup">Sign up</a>
+    </div>
+  </div>
+</nav>

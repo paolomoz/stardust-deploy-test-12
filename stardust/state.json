@@ -1,0 +1,38 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-06-19T00:00:00Z"
+  },
+  "site": {
+    "originUrl": "https://superhuman.com",
+    "extractedAt": "2026-06-19T00:00:00Z",
+    "pageCap": 1,
+    "totalDiscovered": 1,
+    "crawled": 1
+  },
+  "pages": [
+    {
+      "slug": "home",
+      "url": "https://superhuman.com/",
+      "status": "prototyped",
+      "currentStatePath": "stardust/current/pages/home.json",
+      "prototypePath": "stardust/prototypes/home-A-proposed.html",
+      "migratedPath": null,
+      "variants": {
+        "A": "stardust/prototypes/home-A-proposed.html",
+        "B": "stardust/prototypes/home-B-proposed.html",
+        "C": "stardust/prototypes/home-C-cinematic.html",
+        "Cstatic": "stardust/prototypes/home-C-proposed.html"
+      }
+    }
+  ],
+  "direction": {
+    "active": true,
+    "activeAt": "2026-06-19T00:00:00Z",
+    "variants": [
+      "A",
+      "B",
+      "C"
+    ]
+  }
+}

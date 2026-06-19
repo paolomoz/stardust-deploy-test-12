@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- stardust:provenance writtenBy="stardust:uplift" page="home" pageUrl="https://superhuman.com/" variant="C" register="kinetic-display" readArtifacts="stardust/prototypes/_SHARED-BRIEF.md, stardust/prototypes/home-A-proposed.html, stardust/current/assets/screenshots/home.png" unsourcedContent="[]" -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Superhuman — Superpowers, everywhere you work</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap');
+
+:root{
+  --heading-font-family:"Super Sans VF",ui-sans-serif,system-ui,-apple-system,"Segoe UI","Hanken Grotesk",sans-serif;
+  --body-font-family:"Super Sans VF",ui-sans-serif,system-ui,-apple-system,"Segoe UI","Hanken Grotesk",sans-serif;
+  --serif-font-family:"Super Serif VF",Georgia,"Times New Roman","Instrument Serif",serif;
+  --heading-xxl:clamp(3rem,7vw,5.5rem);
+  --heading-xl:clamp(2.25rem,4.5vw,3.5rem);
+  --heading-lg:clamp(1.75rem,3vw,2.6rem);
+  --heading-md:1.5rem;
+  --display-mega:clamp(3.5rem,11vw,9rem);
+  --body:1.0625rem; --body-sm:0.875rem;
+  --line-height-heading:1.02; --line-height-body:1.55;
+  --color-bg:#f2f0eb; --color-surface:#f7f5f2; --color-surface-2:#ece9e2;
+  --color-fg:#292827; --color-fg-soft:#5b5853;
+  --color-accent:#714cb6; --color-primary-soft:#d4c7ff;
+  --color-mulberry:#421d24; --color-teal:#0c4243; --color-white:#ffffff;
+  --color-cream-deep:#e6e0d4;
+  --spacing-xs:4px;--spacing-sm:8px;--spacing-md:16px;--spacing-lg:24px;--spacing-xl:48px;--spacing-2xl:96px;
+  --section-padding:clamp(56px,8vw,96px); --max-width:1200px;
+  --radius:8px; --radius-card:16px; --radius-pill:999px;
+  --shadow-card:0 1px 2px rgba(20,20,19,.08),0 12px 32px -16px rgba(20,20,19,.16);
+
+  /* ===== Kinetic-display motion tokens ===== */
+  --ease-entrance:cubic-bezier(0.25,0.46,0.45,0.94);
+  --ease-expo:cubic-bezier(0.16,1,0.3,1);
+  --dur-enter:800ms;
+  --stagger:110ms;
+  --letter-stagger:50ms;
+  --blur-in:8px;
+  --marquee-duration:28s;
+}
+
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{
+  margin:0;
+  background:var(--color-bg);
+  color:var(--color-fg);
+  font-family:var(--body-font-family);
+  font-size:var(--body);
+  line-height:var(--line-height-body);
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+h1,h2,h3{
+  font-family:var(--heading-font-family);
+  line-height:var(--line-height-heading);
+  letter-spacing:-0.025em;
+  margin:0;
+  font-weight:800;
+}
+h1{font-size:var(--heading-xxl);}
+h2{font-size:var(--heading-xl);}
+h3{font-size:var(--heading-lg);}
+p{margin:0;}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+ul{margin:0;padding:0;list-style:none;}
+
+.wrap{max-width:var(--max-width);margin:0 auto;padding-inline:clamp(20px,5vw,40px);}
+.eyebrow{
+  font-family:var(--body-font-family);
+  font-size:var(--body-sm);
+  letter-spacing:0.16em;
+  text-transform:uppercase;
+  font-weight:600;
+  color:var(--color-accent);
+  margin:0 0 var(--spacing-md);
+}
+.soft{color:var(--color-fg-soft);}
+
+a:focus-visible,button:focus-visible{
+  outline:2px solid var(--color-accent);
+  outline-offset:3px;
+  border-radius:var(--radius);
+}
+
+/* Buttons */
+.btn{
+  display:inline-flex;align-items:center;gap:var(--spacing-sm);
+  font-family:var(--body-font-family);
+  font-size:var(--body);font-weight:600;
+  padding:14px 26px;border-radius:var(--radius-pill);
+  border:1px solid transparent;cursor:pointer;
+  transition:transform .15s ease,background .15s ease,border-color .15s ease;
+}
+.btn-primary{background:var(--color-fg);color:var(--color-surface);}
+.btn-primary:hover{transform:translateY(-1px);background:#000;}
+.btn-accent{background:var(--color-accent);color:var(--color-white);}
+.btn-accent:hover{transform:translateY(-1px);background:#5e3da0;}
+.btn-ghost{background:transparent;color:var(--color-fg);border-color:rgba(41,40,39,.25);}
+.btn-ghost:hover{border-color:var(--color-fg);background:rgba(41,40,39,.04);}
+.btn .arrow{transition:transform .15s ease;}
+.btn:hover .arrow{transform:translateX(3px);}
+
+/* ===== Header ===== */
+.utility{
+  background:var(--color-mulberry);color:#f4ece6;
+  font-size:var(--body-sm);text-align:center;
+  padding:10px var(--spacing-md);
+}
+.utility a{display:inline-flex;align-items:center;gap:6px;font-weight:600;text-decoration:underline;text-underline-offset:3px;}
+
+.nav{
+  position:sticky;top:0;z-index:50;
+  background:color-mix(in srgb,var(--color-bg) 88%,transparent);
+  backdrop-filter:saturate(1.1) blur(8px);
+  border-bottom:1px solid var(--color-surface-2);
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:var(--spacing-lg);padding-block:14px;}
+.wordmark{font-family:var(--heading-font-family);font-weight:800;font-size:1.15rem;letter-spacing:0.04em;color:var(--color-fg);}
+.nav-links{display:flex;align-items:center;gap:clamp(14px,2vw,28px);}
+.nav-links a{font-size:0.95rem;font-weight:500;color:var(--color-fg);}
+.nav-links a:hover{color:var(--color-accent);}
+.nav-right{display:flex;align-items:center;gap:clamp(12px,1.6vw,22px);}
+.nav-right .text-link{font-size:0.95rem;font-weight:500;}
+.nav-right .text-link:hover{color:var(--color-accent);}
+.nav-cta{padding:9px 20px;font-size:0.95rem;}
+.nav-toggle{display:none;background:none;border:1px solid var(--color-surface-2);border-radius:var(--radius);padding:8px;cursor:pointer;}
+.nav-toggle svg{display:block;}
+
+/* ===== Hero (type is the star) ===== */
+.hero{position:relative;overflow:hidden;background:var(--color-bg);}
+.hero-inner{padding:clamp(56px,9vw,120px) 0 clamp(40px,6vw,72px);}
+.hero h1{
+  font-size:var(--display-mega);
+  font-weight:800;
+  letter-spacing:-0.035em;
+  line-height:0.96;
+  max-width:16ch;
+  margin-bottom:var(--spacing-lg);
+}
+.hero h1 .line{display:block;}
+.hero h1 .accent{color:var(--color-accent);}
+.hero-sub{font-size:clamp(1.2rem,1.9vw,1.55rem);color:var(--color-fg-soft);max-width:34ch;margin-bottom:var(--spacing-xl);}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:var(--spacing-md);margin-bottom:clamp(40px,6vw,72px);}
+.hero-media{
+  border-radius:var(--radius-card);overflow:hidden;
+  aspect-ratio:21/9;background:var(--color-surface-2);
+  border:1px solid var(--color-surface-2);
+}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center 22%;}
+
+/* split units — final visible state by default; motion only enhances */
+.word,.char{display:inline-block;}
+.word{white-space:nowrap;}
+
+/* ===== Marquee signage band ===== */
+.marquee{
+  background:var(--color-fg);color:var(--color-bg);
+  padding:clamp(18px,2.4vw,30px) 0;overflow:hidden;
+}
+.marquee-track{
+  display:flex;white-space:nowrap;width:max-content;
+}
+.marquee-track span{
+  font-family:var(--heading-font-family);font-weight:800;
+  font-size:clamp(1.6rem,4vw,3.2rem);letter-spacing:0.02em;
+  text-transform:uppercase;padding-inline:clamp(18px,2.5vw,40px);
+  color:transparent;-webkit-text-stroke:1.5px var(--color-bg);
+}
+.marquee-track .solid{color:var(--color-bg);-webkit-text-stroke:0;}
+
+/* ===== Trusted-by ===== */
+.trusted{padding:var(--spacing-2xl) 0;background:var(--color-surface);}
+.trusted-label{text-align:center;font-size:var(--body-sm);letter-spacing:0.16em;text-transform:uppercase;font-weight:600;color:var(--color-fg-soft);margin-bottom:var(--spacing-xl);}
+.logo-wall{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:clamp(28px,5vw,64px);}
+.logo-wall li{font-family:var(--heading-font-family);font-weight:800;font-size:clamp(1.2rem,2.4vw,1.75rem);letter-spacing:0.01em;color:var(--color-fg);opacity:.92;}
+
+/* ===== Suite overview ===== */
+.suite{padding:var(--section-padding) 0;background:var(--color-bg);}
+.suite-head{max-width:680px;margin-bottom:var(--spacing-xl);}
+.suite-head h2{font-size:var(--heading-xl);}
+.suite-head p{color:var(--color-fg-soft);font-size:1.15rem;margin-top:var(--spacing-md);}
+.suite-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--spacing-lg);}
+.suite-tile{
+  background:var(--color-surface);border:1px solid var(--color-surface-2);
+  border-radius:var(--radius-card);padding:var(--spacing-lg);
+  display:flex;flex-direction:column;gap:10px;
+  transition:transform .15s ease,box-shadow .15s ease;
+  border-top:3px solid var(--tile-accent,var(--color-accent));
+}
+.suite-tile:hover{transform:translateY(-3px);box-shadow:var(--shadow-card);}
+.suite-tile .dot{width:12px;height:12px;border-radius:50%;background:var(--tile-accent,var(--color-accent));}
+.suite-tile h3{font-size:1.3rem;}
+.suite-tile p{font-size:0.95rem;color:var(--color-fg-soft);}
+.suite-tile .more{margin-top:auto;font-weight:600;font-size:0.9rem;color:var(--tile-accent,var(--color-accent));display:inline-flex;gap:6px;align-items:center;}
+
+/* ===== Product deep-dive bands ===== */
+.product{padding:var(--section-padding) 0;}
+.product-inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,80px);align-items:center;}
+.product.reverse .product-media{order:2;}
+.product-copy .eyebrow{color:var(--accent-c);}
+.product-copy h3{font-size:var(--heading-lg);margin-bottom:var(--spacing-md);max-width:16ch;}
+.product-copy p{color:var(--color-fg-soft);font-size:1.1rem;margin-bottom:var(--spacing-lg);max-width:40ch;}
+.product-link{display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--accent-c);}
+.product-link:hover{gap:12px;}
+.product-media{
+  border-radius:var(--radius-card);overflow:hidden;
+  aspect-ratio:4/3;position:relative;
+  background:var(--panel-bg,var(--color-surface-2));
+  border:1px solid var(--color-surface-2);
+}
+.product-panel{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(24px,3vw,40px);}
+.product-panel .glyph{
+  font-family:var(--heading-font-family);font-weight:800;
+  font-size:clamp(2.5rem,6vw,4.5rem);color:var(--panel-ink);
+  line-height:1;letter-spacing:-0.03em;
+}
+.product-panel .tag{margin-top:10px;font-size:0.9rem;font-weight:600;color:var(--panel-ink);opacity:.8;letter-spacing:0.04em;}
+
+/* ===== Manifesto ===== */
+.manifesto{position:relative;color:var(--color-white);overflow:hidden;background:var(--color-mulberry);}
+.manifesto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.manifesto-veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(34,11,16,.25),rgba(34,11,16,.72));}
+.manifesto-inner{position:relative;padding:clamp(96px,16vw,200px) 0;}
+.manifesto h2{font-size:var(--heading-xxl);max-width:14ch;margin-bottom:var(--spacing-lg);}
+.manifesto p{color:rgba(255,255,255,.85);max-width:46ch;font-size:1.2rem;margin-bottom:var(--spacing-xl);}
+
+/* ===== Closing CTA ===== */
+.closing{padding:var(--spacing-2xl) 0;background:var(--color-bg);text-align:center;}
+.closing h2{font-size:var(--display-mega);line-height:0.96;letter-spacing:-0.035em;max-width:16ch;margin:0 auto var(--spacing-lg);}
+.closing p{color:var(--color-fg-soft);font-size:1.2rem;max-width:42ch;margin:0 auto var(--spacing-xl);}
+.closing-ctas{display:flex;gap:var(--spacing-md);justify-content:center;flex-wrap:wrap;}
+
+/* ===== Footer ===== */
+.footer{background:var(--color-surface-2);padding:var(--spacing-2xl) 0 var(--spacing-xl);border-top:1px solid var(--color-cream-deep);}
+.footer-grid{display:grid;grid-template-columns:1.4fr repeat(4,1fr);gap:var(--spacing-xl);}
+.footer .wordmark{font-size:1.3rem;margin-bottom:var(--spacing-md);display:inline-block;}
+.footer-blurb{color:var(--color-fg-soft);font-size:0.95rem;max-width:30ch;}
+.footer-col h4{font-size:0.8rem;text-transform:uppercase;letter-spacing:0.12em;color:var(--color-fg-soft);margin:0 0 var(--spacing-md);font-weight:600;}
+.footer-col li{margin-bottom:10px;}
+.footer-col a{font-size:0.95rem;color:var(--color-fg);}
+.footer-col a:hover{color:var(--color-accent);}
+.footer-base{margin-top:var(--spacing-xl);padding-top:var(--spacing-lg);border-top:1px solid var(--color-cream-deep);font-size:var(--body-sm);color:var(--color-fg-soft);display:flex;justify-content:space-between;flex-wrap:wrap;gap:var(--spacing-md);}
+
+/* ===== Responsive ===== */
+@media (max-width:900px){
+  .nav-links,.nav-right .text-link{display:none;}
+  .nav-toggle{display:inline-flex;}
+  .nav.open .nav-links{display:flex;flex-direction:column;align-items:flex-start;gap:var(--spacing-md);width:100%;padding-block:var(--spacing-md);}
+  .nav.open .nav-right .text-link{display:inline-flex;}
+  .nav.open .nav-inner{flex-wrap:wrap;}
+  .hero-media{aspect-ratio:16/10;}
+  .suite-grid{grid-template-columns:repeat(2,1fr);}
+  .product-inner{grid-template-columns:1fr;gap:var(--spacing-xl);}
+  .product.reverse .product-media{order:0;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:560px){
+  .suite-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr;}
+}
+
+/* =====================================================================
+   KINETIC-DISPLAY MOTION — all wrapped so reduced-motion users get the
+   final visible state. Content is fully visible without these rules.
+   ===================================================================== */
+@media (prefers-reduced-motion: no-preference){
+
+  /* keyframes */
+  @keyframes charBlurIn{
+    from{opacity:0;filter:blur(var(--blur-in));transform:translateY(0.18em);font-weight:460;}
+    to{opacity:1;filter:blur(0);transform:translateY(0);font-weight:800;}
+  }
+  @keyframes wipeIn{
+    from{clip-path:inset(0 100% 0 0);}
+    to{clip-path:inset(0 0 0 0);}
+  }
+  @keyframes marqueeScroll{
+    from{transform:translateX(0);}
+    to{transform:translateX(-50%);}
+  }
+
+  /* Hero H1 — word-by-word blur-in + weight settle, runs on load.
+     .kin marks JS-split units; if JS never runs the raw text stays visible. */
+  .hero h1.kin .word{
+    opacity:0;filter:blur(var(--blur-in));
+    transform:translateY(0.18em);font-weight:460;
+    animation:charBlurIn var(--dur-enter) var(--ease-expo) forwards;
+    animation-delay:calc(var(--unit-i,0) * var(--letter-stagger));
+  }
+
+  /* Section h2 heads — wipe in L→R, scroll-triggered via .in */
+  h2.wipe{clip-path:inset(0 100% 0 0);}
+  h2.wipe.in{animation:wipeIn var(--dur-enter) var(--ease-expo) forwards;}
+
+  /* Large display copy (product headlines + closing) — letter-by-letter blur-in on scroll */
+  .reveal-display.kin .char{
+    opacity:0;filter:blur(var(--blur-in));
+    transform:translateY(0.16em);font-weight:460;
+  }
+  .reveal-display.kin.in .char{
+    animation:charBlurIn calc(var(--dur-enter) - 200ms) var(--ease-entrance) forwards;
+    animation-delay:calc(var(--unit-i,0) * var(--letter-stagger));
+  }
+
+  /* Infinite signage marquee */
+  .marquee-track.kin{animation:marqueeScroll var(--marquee-duration) linear infinite;}
+}
+</style>
+</head>
+<body>
+
+<header data-section="header" data-intent="navigation" data-layout="utility-banner-plus-bar">
+  <div class="utility">
+    Looking for Superhuman Mail? <a href="https://superhuman.com/products/mail">Learn more <span aria-hidden="true">→</span></a>
+  </div>
+  <nav class="nav" id="siteNav" aria-label="Primary">
+    <div class="wrap nav-inner">
+      <a class="wordmark" href="/">SUPERHUMAN</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Enterprise</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Pricing</a></li>
+      </ul>
+      <div class="nav-right">
+        <a class="text-link" href="#">Contact sales</a>
+        <a class="text-link" href="#">Log in</a>
+        <a class="btn btn-accent nav-cta" href="https://superhuman.com/auth/signup?screen_hint=signup">Sign up</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero" data-section="hero" data-intent="primary-value-prop" data-layout="display-type-lede">
+    <div class="wrap hero-inner">
+      <h1 data-split="word">
+        <span class="line">Superpowers,</span>
+        <span class="line accent">everywhere you work</span>
+      </h1>
+      <p class="hero-sub">Mail, Docs, and AI that works in every app and tab</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="https://superhuman.com/auth/signup?screen_hint=signup">Get Superhuman</a>
+        <a class="btn btn-ghost" href="https://superhuman.com/plans">Get the suite <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-media">
+        <img src="https://superhumanstatic.com/vwfkeyj6n9ac/5638budzR16gFR9CjmQwf6/4254a1638f76a23f30e1119022e76671/person-1.webp?w=1280" alt="A person in profile lit in warm purple tones, focused at work" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <section class="marquee" data-section="signage-marquee" data-intent="brand-rhythm" data-layout="marquee-band" aria-hidden="true">
+    <div class="marquee-track" data-marquee>
+      <span class="solid">Superpowers</span><span>·</span><span>Everywhere you work</span><span>·</span><span class="solid">Mail</span><span>·</span><span>Grammarly</span><span>·</span><span class="solid">Coda</span><span>·</span><span>Go</span><span>·</span>
+    </div>
+  </section>
+
+  <section class="trusted" data-section="trusted-by" data-intent="social-proof" data-layout="logo-wall">
+    <div class="wrap">
+      <p class="trusted-label">Trusted by the teams shaping how the world works</p>
+      <ul class="logo-wall">
+        <li>Zoom</li>
+        <li>Expensify</li>
+        <li>Zapier</li>
+        <li>Brex</li>
+        <li>Geico</li>
+        <li>Rivian</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="suite" data-section="suite-overview" data-intent="product-overview" data-layout="tile-row-4up">
+    <div class="wrap">
+      <div class="suite-head">
+        <h2 class="wipe">Your Superhuman suite</h2>
+        <p class="soft">Four tools, one workflow. Start with the overview, then dive into each below.</p>
+      </div>
+      <div class="suite-grid">
+        <article class="suite-tile" style="--tile-accent:var(--color-teal)">
+          <span class="dot" aria-hidden="true"></span>
+          <h3>Mail</h3>
+          <p>The most productive email app ever made</p>
+          <a class="more" href="https://superhuman.com/products/mail">Explore Mail <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="suite-tile" style="--tile-accent:var(--color-accent)">
+          <span class="dot" aria-hidden="true"></span>
+          <h3>Grammarly</h3>
+          <p>Everyone's favorite AI writing partner</p>
+          <a class="more" href="https://superhuman.com/products/grammarly">Explore Grammarly <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="suite-tile" style="--tile-accent:var(--color-mulberry)">
+          <span class="dot" aria-hidden="true"></span>
+          <h3>Coda</h3>
+          <p>The all-in-one AI workspace for teams</p>
+          <a class="more" href="https://superhuman.com/products/coda">Explore Coda <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="suite-tile" style="--tile-accent:#a98b3e">
+          <span class="dot" aria-hidden="true"></span>
+          <h3>Go</h3>
+          <p>AI that actually works in every app you use</p>
+          <a class="more" href="https://superhuman.com/products/go-ai-assistant">Explore Go <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="product" data-section="product-mail" data-intent="product-deep-dive" data-layout="split-media-text" style="--accent-c:var(--color-teal);background:var(--color-surface);">
+    <div class="wrap product-inner">
+      <div class="product-media" style="--panel-bg:#0c4243;--panel-ink:#e7f3f1">
+        <div class="product-panel"><span class="glyph">Mail</span><span class="tag">Productivity, perfected</span></div>
+      </div>
+      <div class="product-copy">
+        <p class="eyebrow">Mail</p>
+        <h3 class="reveal-display" data-split="char">The most productive email app ever made</h3>
+        <p class="soft">Fly through your inbox with speed, focus, and AI that handles the busywork — so you spend your time on what matters.</p>
+        <a class="product-link" href="https://superhuman.com/products/mail">Discover Mail <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="product reverse" data-section="product-grammarly" data-intent="product-deep-dive" data-layout="split-media-text" style="--accent-c:var(--color-accent);background:var(--color-bg);">
+    <div class="wrap product-inner">
+      <div class="product-media" style="--panel-bg:#714cb6;--panel-ink:#f0eaff">
+        <div class="product-panel"><span class="glyph">Grammarly</span><span class="tag">Write with confidence</span></div>
+      </div>
+      <div class="product-copy">
+        <p class="eyebrow">Grammarly</p>
+        <h3 class="reveal-display" data-split="char">Everyone's favorite AI writing partner</h3>
+        <p class="soft">Clear, on-brand writing wherever you type — refined in real time by AI that understands your voice.</p>
+        <a class="product-link" href="https://superhuman.com/products/grammarly">Discover Grammarly <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="product" data-section="product-coda" data-intent="product-deep-dive" data-layout="split-media-text" style="--accent-c:var(--color-mulberry);background:var(--color-surface);">
+    <div class="wrap product-inner">
+      <div class="product-media" style="--panel-bg:#421d24;--panel-ink:#f3e2e6">
+        <div class="product-panel"><span class="glyph">Coda</span><span class="tag">One workspace for everything</span></div>
+      </div>
+      <div class="product-copy">
+        <p class="eyebrow">Coda</p>
+        <h3 class="reveal-display" data-split="char">The all-in-one AI workspace for teams</h3>
+        <p class="soft">Docs, tables, and apps that move together — so your whole team works from one living source of truth.</p>
+        <a class="product-link" href="https://superhuman.com/products/coda">Discover Coda <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="product reverse" data-section="product-go" data-intent="product-deep-dive" data-layout="split-media-text" style="--accent-c:#8a6f2e;background:var(--color-bg);">
+    <div class="wrap product-inner">
+      <div class="product-media" style="--panel-bg:#e6e0d4;--panel-ink:#4a4232">
+        <div class="product-panel"><span class="glyph">Go</span><span class="tag">AI in every app you use</span></div>
+      </div>
+      <div class="product-copy">
+        <p class="eyebrow">Go</p>
+        <h3 class="reveal-display" data-split="char">AI that actually works in every app you use</h3>
+        <p class="soft">An assistant that follows you across every tab and tool, taking action where the work already happens.</p>
+        <a class="product-link" href="https://superhuman.com/products/go-ai-assistant">Discover Go <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="manifesto" data-section="manifesto" data-intent="brand-narrative" data-layout="full-bleed-image">
+    <img src="https://superhumanstatic.com/vwfkeyj6n9ac/6dRKs0BhqWbnOdnl43ifjt/0a2f56e8ac1c8cddfe72634f7983b440/homepage-manifesto.webp?w=1280" alt="A girl drafting a Superhuman manifesto by hand" loading="lazy">
+    <div class="manifesto-veil" aria-hidden="true"></div>
+    <div class="wrap manifesto-inner">
+      <h2 class="wipe">Becoming Superhuman.</h2>
+      <p>The story of where we're headed, and why the way you work is about to change.</p>
+      <a class="btn btn-accent" href="https://blog.superhuman.com/introducing-new-superhuman/">Read our announcement <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <section class="closing" data-section="closing-cta" data-intent="conversion" data-layout="centered-cta">
+    <div class="wrap">
+      <h2 class="reveal-display" data-split="char">Superpowers, everywhere you work</h2>
+      <p class="soft">Get the whole suite, or start with the tool you need today.</p>
+      <div class="closing-ctas">
+        <a class="btn btn-primary" href="https://superhuman.com/auth/signup?screen_hint=signup">Get Superhuman</a>
+        <a class="btn btn-ghost" href="https://superhuman.com/plans">Get the suite <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" data-section="footer" data-intent="navigation" data-layout="multi-column">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="wordmark" href="/">SUPERHUMAN</a>
+        <p class="footer-blurb">Superpowers, everywhere you work. Mail, Docs, and AI that works in every app and tab.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="https://superhuman.com/products/mail">Superhuman Mail</a></li>
+          <li><a href="https://superhuman.com/products/grammarly">Grammarly</a></li>
+          <li><a href="https://superhuman.com/products/coda">Coda</a></li>
+          <li><a href="https://superhuman.com/products/go-ai-assistant">Superhuman Go</a></li>
+          <li><a href="#">Agent Store</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Mission &amp; Values</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Status</a></li>
+          <li><a href="#">Superhuman Platform</a></li>
+          <li><a href="#">Enterprise</a></li>
+          <li><a href="#">Education</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Trust</a></li>
+          <li><a href="#">Legal Notices</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>© Superhuman</span>
+      <span>Superpowers, everywhere you work</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* Mobile-nav a11y toggle */
+(function(){
+  var nav=document.getElementById('siteNav');
+  var btn=document.getElementById('navToggle');
+  btn.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open?'true':'false');
+  });
+})();
+
+/* ===== Kinetic-display runtime — enhancement only; bails under reduced-motion ===== */
+(function(){
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce)return; // leave final-state markup untouched
+
+  // Split a heading into animatable units, preserving text & accessibility.
+  function split(el,mode){
+    el.setAttribute('aria-label',el.textContent);
+    var nodes=Array.prototype.slice.call(el.childNodes);
+    var frag=document.createDocumentFragment();
+    var i=0;
+    nodes.forEach(function(node){
+      if(node.nodeType===3){ // text node
+        i=appendUnits(frag,node.textContent,mode,i);
+      }else if(node.nodeType===1){
+        node.setAttribute('aria-hidden','true');
+        var inner=node.textContent;
+        node.textContent='';
+        i=appendUnits(node,inner,mode,i);
+        frag.appendChild(node);
+      }
+    });
+    el.textContent='';
+    el.appendChild(frag);
+    el.classList.add('kin');
+    return i;
+  }
+  function appendUnits(target,text,mode,start){
+    var i=start;
+    if(mode==='word'){
+      var words=text.split(/(\s+)/);
+      words.forEach(function(w){
+        if(w.trim()===''){target.appendChild(document.createTextNode(w));return;}
+        var s=document.createElement('span');
+        s.className='word';s.setAttribute('aria-hidden','true');
+        s.textContent=w;s.style.setProperty('--unit-i',i++);
+        target.appendChild(s);
+      });
+    }else{
+      for(var c=0;c<text.length;c++){
+        var ch=text[c];
+        if(ch===' '){target.appendChild(document.createTextNode(' '));continue;}
+        var sp=document.createElement('span');
+        sp.className='char';sp.setAttribute('aria-hidden','true');
+        sp.textContent=ch;sp.style.setProperty('--unit-i',i++);
+        target.appendChild(sp);
+      }
+    }
+    return i;
+  }
+
+  // Hero H1: split into words, reveal on load.
+  var hero=document.querySelector('.hero h1[data-split="word"]');
+  if(hero)split(hero,'word');
+
+  // Scroll-triggered display headlines: split into chars, reveal via IO.
+  var displays=document.querySelectorAll('.reveal-display[data-split="char"]');
+  displays.forEach(function(el){split(el,'char');});
+
+  // Marquee: duplicate track content for a seamless -50% loop, then animate.
+  var track=document.querySelector('.marquee-track[data-marquee]');
+  if(track){
+    track.innerHTML=track.innerHTML+track.innerHTML;
+    track.classList.add('kin');
+  }
+
+  // IntersectionObserver adds .in to wipe h2s and char-reveal displays.
+  if('IntersectionObserver'in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
+      });
+    },{threshold:0.35,rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('h2.wipe,.reveal-display').forEach(function(el){io.observe(el);});
+  }else{
+    document.querySelectorAll('h2.wipe,.reveal-display').forEach(function(el){el.classList.add('in');});
+  }
+})();
+</script>
+
+</body>
+</html>

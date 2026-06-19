@@ -1,0 +1,208 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:direct(uplift)",
+    "writtenAt": "2026-06-19T00:00:00Z",
+    "mode": "A-faithful",
+    "againstInput": "stardust/direction.md"
+  },
+  "colors": {
+    "background": "#f2f0eb",
+    "surface": "#f7f5f2",
+    "surface-2": "#ece9e2",
+    "text-primary": "#292827",
+    "text-on-dark": "#f7f5f2",
+    "primary": "#714cb6",
+    "primary-soft": "#d4c7ff",
+    "mulberry": "#421d24",
+    "teal": "#0c4243",
+    "white": "#ffffff"
+  },
+  "typography": {
+    "heading": "\"Super Sans VF\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+    "body": "\"Super Sans VF\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+    "serif": "\"Super Serif VF\", Georgia, Times, serif",
+    "scale": "modular",
+    "variableFont": true
+  },
+  "rounded": "8px",
+  "spacing": {
+    "base": "4px",
+    "section": "clamp(56px,8vw,96px)",
+    "maxWidth": "1200px"
+  },
+  "components": [
+    "button",
+    "card",
+    "product-tile",
+    "editorial-hero",
+    "logo-wall",
+    "manifesto-plate",
+    "suite-grid",
+    "footer"
+  ],
+  "extensions": {
+    "componentStyle": {
+      "buttonRadius": "8px",
+      "cardRadius": "16px",
+      "pill": "999px",
+      "shadow": "0 1px 2px rgba(20,20,19,.08)"
+    },
+    "motifs": {
+      "borderRadius": {
+        "primary": "8px",
+        "secondary": "16px",
+        "pill": "999px",
+        "occurrences": [
+          {
+            "value": "8px",
+            "count": 11
+          },
+          {
+            "value": "16px",
+            "count": 6
+          },
+          {
+            "value": "24px",
+            "count": 3
+          },
+          {
+            "value": "999px",
+            "count": 2
+          },
+          {
+            "value": "12px",
+            "count": 1
+          },
+          {
+            "value": "999px 999px 0px",
+            "count": 1
+          }
+        ]
+      },
+      "shadows": [
+        "color(srgb 0.278431 0.270588 0.262745 / 0.16) 0px -4px 8px 0.5px",
+        "color(srgb 0.0784314 0.0784314 0.0745098 / 0.24) 0px 1px 2px 0px, rgb(53, 48, 136) 0px 0px 0px 1px",
+        "color(srgb 0.0784314 0.0784314 0.0745098 / 0.08) 0px 1px 2px 0px",
+        "rgb(255, 255, 255) 0px -5px 0px 0px, rgb(255, 255, 255) 0px 5px 0px 0px",
+        "rgb(113, 76, 182) 0px 0px 0px 1px inset",
+        "color(srgb 1 1 1 / 0.95) 0px 0px 0px 1px inset"
+      ],
+      "gradients": [],
+      "patterns": [
+        "card",
+        "chip",
+        "pill-button",
+        "hero-with-image",
+        "product-tile",
+        "tonal-photography"
+      ]
+    },
+    "voice": {
+      "heroHeadline": "Superpowers, everywhere you work",
+      "heroSubcopy": "Mail, Docs, and AI that works in every app and tab",
+      "primaryCTALabel": "Get Superhuman",
+      "secondaryCTALabel": "Get the suite",
+      "firstParagraph": "Schedule 15 minutes for a quick meeting with Mike",
+      "ctaSamples": [
+        "Looking for Superhuman Mail? Learn more",
+        "Sign up",
+        "Get Superhuman",
+        "Get the suite",
+        "Go",
+        "Read our announcement"
+      ],
+      "navItems": [
+        "Enterprise",
+        "Education",
+        "Pricing",
+        "Contact sales",
+        "Log in",
+        "Sign up",
+        "Superhuman Go",
+        "Grammarly",
+        "Coda",
+        "Superhuman Mail",
+        "Agent Store",
+        "Enterprise"
+      ],
+      "heroImage": "https://superhumanstatic.com/vwfkeyj6n9ac/1MZDaABlJ6y5NbSOUUeaTN/0e6ab0d1c98158fb9b6c6a6c2e089734/homepage-tonal-flower.webp?w=2560&fm=avif",
+      "manifesto": "Becoming Superhuman.",
+      "tagline": "Superpowers, everywhere you work"
+    },
+    "photography": {
+      "present": true,
+      "style": "warm editorial, tonal",
+      "samples": [
+        {
+          "alt": "Person thinking",
+          "src": "https://superhumanstatic.com/vwfkeyj6n9ac/5638budzR16gFR9CjmQwf6/4254a1638f76a23f30e1119022e76671/person-1.webp?w=1280&fm=avif",
+          "w": 818,
+          "h": 660
+        },
+        {
+          "alt": "Girl drafting a Superhuman manifesto",
+          "src": "https://superhumanstatic.com/vwfkeyj6n9ac/6dRKs0BhqWbnOdnl43ifjt/0a2f56e8ac1c8cddfe72634f7983b440/homepage-manifesto.webp?w=1280&fm=avif",
+          "w": 676,
+          "h": 556
+        },
+        {
+          "alt": "Tonal Flower",
+          "src": "https://superhumanstatic.com/vwfkeyj6n9ac/1MZDaABlJ6y5NbSOUUeaTN/0e6ab0d1c98158fb9b6c6a6c2e089734/homepage-tonal-flower.webp?w=2560&fm=avif",
+          "w": 1440,
+          "h": 480
+        }
+      ]
+    },
+    "systemComponents": [
+      {
+        "type": "site-header",
+        "detected": "header landmark",
+        "items": [
+          "Enterprise",
+          "Education",
+          "Pricing",
+          "Contact sales",
+          "Log in",
+          "Sign up",
+          "Superhuman Go",
+          "Grammarly"
+        ],
+        "ctas": [
+          "Log in",
+          "Sign up",
+          "Contact sales"
+        ]
+      },
+      {
+        "type": "site-footer",
+        "detected": "footer landmark"
+      },
+      {
+        "type": "product-suite-strip",
+        "detected": "repeated product tiles",
+        "items": [
+          "Mail",
+          "Grammarly",
+          "Coda",
+          "Go"
+        ]
+      },
+      {
+        "type": "trusted-by-logos",
+        "detected": "logo wall",
+        "items": [
+          "Zoom",
+          "Expensify",
+          "Zapier",
+          "Brex",
+          "Geico",
+          "Rivian"
+        ]
+      }
+    ],
+    "divergence": {
+      "anti_toolbox_hits": [],
+      "notes": "Pure #ffffff allowed sparingly as brand-faithful surface; warm cream #f2f0eb is the primary ground (not white). Brand uses bespoke variable typeface Super Sans VF."
+    }
+  }
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "T-logo-variants",
+    "tag": "observed",
+    "title": "Single logo variant captured",
+    "body": "Only one logo variant captured (inline-svg). The redesign will need a monochrome / inverted variant set; direct should plan that.",
+    "source": "_brand-extraction.json § logo"
+  },
+  {
+    "id": "T-color-imbalance",
+    "tag": "observed",
+    "title": "Multiple palette colors used in only one context",
+    "body": "These colors appear in a single context only: #f2f0eb (background, background-only); #0c4243 (accent-1, background-only); #ece9e2 (accent-2, background-only). Direct will need to decide: drop, expand, or keep as accent.",
+    "source": "_brand-extraction.json § palette.usedAs"
+  }
+]

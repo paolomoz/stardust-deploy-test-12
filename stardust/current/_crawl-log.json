@@ -1,0 +1,28 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-06-19T00:00:00Z"
+  },
+  "site": {
+    "originUrl": "https://superhuman.com"
+  },
+  "discovery": {
+    "method": "single",
+    "fetchTechnique": "headless-chromium",
+    "totalDiscovered": 1,
+    "selected": [
+      "home"
+    ],
+    "filteredAsJunk": [],
+    "waitMode": "medium"
+  },
+  "consent": {
+    "method": "none-detected"
+  },
+  "crawl": {
+    "crawled": [
+      "home"
+    ],
+    "failures": []
+  }
+}

@@ -1,0 +1,47 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Brand review — Superhuman (current state)</title>
+<style>
+:root{--bg:#f2f0eb;--ink:#292827;--primary:#714cb6;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Super Sans VF",system-ui,-apple-system,sans-serif;line-height:1.5}
+.wrap{max-width:960px;margin:0 auto;padding:48px 24px}
+h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 8px}
+h2{font-size:1.5rem;margin:48px 0 16px;border-bottom:1px solid rgba(41,40,39,.15);padding-bottom:8px}
+.muted{color:#8d8a86}
+.cov{background:#fff;border-radius:16px;padding:16px 20px;margin:24px 0;box-shadow:0 1px 2px rgba(20,20,19,.08)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.sw span{display:block;height:56px;border-radius:8px;border:1px solid rgba(41,40,39,.1)}
+.sw code{font-size:12px;display:block;margin-top:6px}
+.sw small{color:#8d8a86;font-size:11px}
+.chip{display:inline-block;background:#fff;border:1px solid rgba(41,40,39,.15);border-radius:999px;padding:4px 12px;margin:3px;font-size:13px}
+.tension{background:#fff;border-left:3px solid var(--primary);border-radius:12px;padding:16px 20px;margin:12px 0;box-shadow:0 1px 2px rgba(20,20,19,.06)}
+.tension .badge{font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--primary);font-weight:600}
+.tension h4{margin:6px 0}.tension small{color:#8d8a86}
+ul{padding-left:18px}li{margin:4px 0}code{background:rgba(41,40,39,.06);padding:1px 5px;border-radius:4px;font-size:12px}
+.type-spec b{font-weight:540}
+.shot{width:100%;border-radius:16px;border:1px solid rgba(41,40,39,.12);margin-top:12px}
+</style></head><body><div class="wrap">
+<p class="muted">stardust · current-state brand review</p>
+<h1>Superhuman</h1>
+<p class="type-spec">Superpowers, everywhere you work — <span class="muted">https://superhuman.com/</span></p>
+<div class="cov"><b>Coverage:</b> 1 page (homepage, <code>--single</code>) · live Playwright render · HTTP 200 · 12427ms · 288 design tokens · 3 editorial images.</div>
+<img class="shot" src="assets/screenshots/home.png" alt="Homepage screenshot">
+
+<h2>Palette</h2><div class="grid"><div class="sw"><span style="background:#f2f0eb"></span><code>#f2f0eb</code><small>background · background</small></div><div class="sw"><span style="background:#292827"></span><code>#292827</code><small>text-primary · text, fill, border</small></div><div class="sw"><span style="background:#421d24"></span><code>#421d24</code><small>surface · fill, background</small></div><div class="sw"><span style="background:#0c4243"></span><code>#0c4243</code><small>accent-1 · background</small></div><div class="sw"><span style="background:#ffffff"></span><code>#ffffff</code><small>surface · fill, background, text, border</small></div><div class="sw"><span style="background:#714cb6"></span><code>#714cb6</code><small>primary · background, text, fill</small></div><div class="sw"><span style="background:#ece9e2"></span><code>#ece9e2</code><small>accent-2 · background</small></div><div class="sw"><span style="background:#9e6ee5"></span><code>#9e6ee5</code><small>accent-3 · fill</small></div></div>
+
+<h2>Typography</h2>
+<p class="type-spec"><b>Heading/body:</b> Super Sans VF (bespoke variable) — weights 460, 540, 700; display to 64px. <b>Serif:</b> Super Serif VF. Scale: <b>modular</b> (clamp tokens).</p>
+
+<h2>Voice & CTAs</h2>
+<p>Hero: <b>"Superpowers, everywhere you work"</b> — Mail, Docs, and AI that works in every app and tab</p>
+<p><span class="chip">Looking for Superhuman Mail? Learn more</span><span class="chip">Sign up</span><span class="chip">Get Superhuman</span><span class="chip">Get the suite</span><span class="chip">Go</span><span class="chip">Read our announcement</span></p>
+
+<h2>Heading outline</h2><ul><li><b>h1</b> Superpowers, everywhere you work <code>64px/540</code></li><li><b>h2</b> Mail, Docs, and AI that works in every app and tab <code>26px/460</code></li><li><b>h2</b> Your Superhuman suite <code>48px/460</code></li><li><b>h2</b> Mail <code>20px/460</code></li><li><b>h2</b> Grammarly <code>20px/460</code></li><li><b>h2</b> Coda <code>20px/460</code></li><li><b>h2</b> Go <code>20px/460</code></li><li><b>h2</b> Mail <code>20px/460</code></li><li><b>h2</b> The most productive email app ever made <code>49px/460</code></li><li><b>h2</b> Grammarly <code>20px/460</code></li><li><b>h2</b> Everyone’s favorite AI writing partner <code>49px/460</code></li><li><b>h2</b> Coda <code>20px/460</code></li></ul>
+
+<h2>Motifs</h2>
+<p>Radius 8px (buttons) / 16px (cards) / pill 999px. Soft low shadows. Token-driven, dark-mode-ready (<code>light-dark()</code>).</p>
+
+<h2>Tensions surfaced</h2><div class="tension"><span class="badge">T-logo-variants · observed</span><h4>Single logo variant captured</h4><p>Only one logo variant captured (inline-svg). The redesign will need a monochrome / inverted variant set; direct should plan that.</p><small>Source: _brand-extraction.json § logo</small></div><div class="tension"><span class="badge">T-color-imbalance · observed</span><h4>Multiple palette colors used in only one context</h4><p>These colors appear in a single context only: #f2f0eb (background, background-only); #0c4243 (accent-1, background-only); #ece9e2 (accent-2, background-only). Direct will need to decide: drop, expand, or keep as accent.</p><small>Source: _brand-extraction.json § palette.usedAs</small></div>
+
+<p class="muted" style="margin-top:48px">Generated by stardust:extract — descriptive snapshot. Direction authored by stardust:direct.</p>
+</div></body></html>

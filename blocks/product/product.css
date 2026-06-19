@@ -1,0 +1,112 @@
+.product { padding: var(--section-padding) 0; }
+
+.product .product-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(32px, 5vw, 80px);
+  align-items: center;
+}
+
+.product .product-copy .eyebrow { color: var(--accent-c, var(--color-accent)); }
+
+.product .product-copy h3 {
+  font-size: var(--heading-lg);
+  margin-bottom: var(--spacing-md);
+  max-width: 16ch;
+}
+
+.product .product-copy p {
+  color: var(--color-fg-soft);
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-lg);
+  max-width: 40ch;
+}
+
+.product .product-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: var(--accent-c, var(--color-accent));
+  transition: gap 0.15s ease;
+}
+
+.product .product-link:hover { gap: 12px; }
+
+.product .product-media {
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  position: relative;
+  background: var(--panel-bg, var(--color-surface-2));
+  border: 1px solid var(--color-surface-2);
+}
+
+.product.reverse .product-media { order: 2; }
+
+.product .product-panel {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: clamp(24px, 3vw, 40px);
+}
+
+.product .product-panel .glyph {
+  font-family: var(--heading-font-family);
+  font-weight: 800;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  color: var(--panel-ink);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.product .product-panel .tag {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--panel-ink);
+  opacity: 0.8;
+  letter-spacing: 0.04em;
+}
+
+.product .char { display: inline-block; }
+
+@media (width <= 900px) {
+  .product .product-inner {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+  .product.reverse .product-media { order: 0; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes product-char-in {
+    from {
+      opacity: 0;
+      filter: blur(var(--blur-in));
+      transform: translateY(0.16em);
+      font-weight: 460;
+    }
+
+    to {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateY(0);
+      font-weight: 800;
+    }
+  }
+
+  .product .reveal-display.kin .char {
+    opacity: 0;
+    filter: blur(var(--blur-in));
+    transform: translateY(0.16em);
+    font-weight: 460;
+  }
+
+  .product .reveal-display.kin.in .char {
+    animation: product-char-in calc(var(--dur-enter) - 200ms) var(--ease-entrance) forwards;
+    animation-delay: calc(var(--unit-i, 0) * var(--letter-stagger));
+  }
+}

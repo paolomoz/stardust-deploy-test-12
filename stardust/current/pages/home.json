@@ -1,0 +1,1200 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-06-19T04:08:15.159Z",
+    "waitMs": 12427,
+    "waitMode": "medium",
+    "httpStatus": 200,
+    "writtenBy": "stardust:extract"
+  },
+  "slug": "home",
+  "url": "https://superhuman.com/",
+  "title": "Superhuman: Docs, Mail, and AI That Work Everywhere",
+  "description": "Superhuman is the AI productivity suite that gives you superpowers everywhere you work. So you can be more creative, strategic, and impactful.",
+  "og": {
+    "title": "Superhuman: Docs, Mail, and AI That Work Everywhere",
+    "description": "Superhuman is the AI productivity suite that gives you superpowers everywhere you work. So you can be more creative, strategic, and impactful.",
+    "image": "https://superhumanstatic.com/super-funnel/main/public/images/v3/social-share.png",
+    "type": "website",
+    "siteName": null
+  },
+  "themeColor": null,
+  "headings": [
+    {
+      "level": 1,
+      "text": "Superpowers, everywhere you work",
+      "fontFamily": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "540",
+      "fontSize": "64px",
+      "lineHeight": "61.44px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "level": 2,
+      "text": "Mail, Docs, and AI that works in every app and tab",
+      "fontFamily": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "460",
+      "fontSize": "26px",
+      "lineHeight": "33.8px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "level": 2,
+      "text": "Your Superhuman suite",
+      "fontFamily": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "460",
+      "fontSize": "48px",
+      "lineHeight": "46.08px",
+      "letterSpacing": "normal",
+      "color": "rgb(41, 40, 39)"
+    },
+    {
+      "level": 2,
+      "text": "Mail",
+      "fontFamily": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "460",
+      "fontSize": "20px",
+      "lineHeight": "22px",
+      "letterSpacing": "-0.55px",
+      "color": "rgb(41, 40, 39)"
+    },
+    {
+      "level": 2,
+      "text": "Grammarly",
+      "fontFamily": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "460",
+      "fontSize": "20px",
+      "lineHeight": "22px",
+      "letterSpacing": "-0.55px",
+      "color": "rgb(41, 40, 39)"
+    },
+    {
+      "level": 2,
+      "text": "Coda",
+      "fontFamily": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "460",
+      "fontSize": "20px",
+      "lineHeight": "22px",
+      "letterSpacing": "-0.55px",
+      "color": "rgb(41, 40, 39)"
+    },
+    {
+      "level": 2,
+      "text": "Go",
+      "fontFamily": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "460",
+      "fontSize": "20px",
+      "lineHeight": "22px",
+      "letterSpacing": "-0.55px",
+      "color": "rgb(41, 40, 39)"
+    },
+    {
+      "level": 2,
+      "text": "Mail",
+      "fontFamily": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "460",
+      "fontSize": "20px",
+      "lineHeight": "22px",
+      "letterSpacing": "-0.55px",
+      "color": "rgb(41, 40, 39)"
+    },
+    {
+      "level": 2,
+      "text": "The most productive email app ever made",
+      "fontFamily": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "460",
+      "fontSize": "49px",
+      "lineHeight": "58.8px",
+      "letterSpacing": "-1.3475px",
+      "color": "rgb(41, 40, 39)"
+    },
+    {
+      "level": 2,
+      "text": "Grammarly",
+      "fontFamily": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "460",
+      "fontSize": "20px",
+      "lineHeight": "22px",
+      "letterSpacing": "-0.55px",
+      "color": "rgb(41, 40, 39)"
+    },
+    {
+      "level": 2,
+      "text": "Everyone’s favorite AI writing partner",
+      "fontFamily": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "460",
+      "fontSize": "49px",
+      "lineHeight": "58.8px",
+      "letterSpacing": "-1.3475px",
+      "color": "rgb(41, 40, 39)"
+    },
+    {
+      "level": 2,
+      "text": "Coda",
+      "fontFamily": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "460",
+      "fontSize": "20px",
+      "lineHeight": "22px",
+      "letterSpacing": "-0.55px",
+      "color": "rgb(41, 40, 39)"
+    },
+    {
+      "level": 2,
+      "text": "The all-in-one AI workspace for teams",
+      "fontFamily": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "460",
+      "fontSize": "49px",
+      "lineHeight": "58.8px",
+      "letterSpacing": "-1.3475px",
+      "color": "rgb(41, 40, 39)"
+    },
+    {
+      "level": 2,
+      "text": "Go",
+      "fontFamily": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "460",
+      "fontSize": "20px",
+      "lineHeight": "22px",
+      "letterSpacing": "-0.55px",
+      "color": "rgb(41, 40, 39)"
+    },
+    {
+      "level": 2,
+      "text": "AI that actually works in every app you use",
+      "fontFamily": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "460",
+      "fontSize": "49px",
+      "lineHeight": "58.8px",
+      "letterSpacing": "-1.3475px",
+      "color": "rgb(41, 40, 39)"
+    },
+    {
+      "level": 2,
+      "text": "Becoming Superhuman.",
+      "fontFamily": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "460",
+      "fontSize": "48px",
+      "lineHeight": "46.08px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "level": 2,
+      "text": "AI that works everywhere you work",
+      "fontFamily": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "540",
+      "fontSize": "64px",
+      "lineHeight": "57.6px",
+      "letterSpacing": "normal",
+      "color": "rgb(41, 40, 39)"
+    },
+    {
+      "level": 3,
+      "text": "Builders of Superhuman Platform apps",
+      "fontFamily": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "540",
+      "fontSize": "28px",
+      "lineHeight": "32px",
+      "letterSpacing": "-0.63px",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "level": 3,
+      "text": "Products",
+      "fontFamily": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "700",
+      "fontSize": "18.72px",
+      "lineHeight": "28.08px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "level": 3,
+      "text": "Company",
+      "fontFamily": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "700",
+      "fontSize": "18.72px",
+      "lineHeight": "28.08px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "level": 3,
+      "text": "Legal",
+      "fontFamily": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "700",
+      "fontSize": "18.72px",
+      "lineHeight": "28.08px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "level": 3,
+      "text": "Connect",
+      "fontFamily": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "700",
+      "fontSize": "18.72px",
+      "lineHeight": "28.08px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 255, 255)"
+    }
+  ],
+  "landmarks": [
+    {
+      "tag": "section",
+      "role": null,
+      "id": null,
+      "class": "section_section___xslj",
+      "childCount": 1,
+      "bg": "rgb(255, 255, 255)",
+      "color": "rgb(41, 40, 39)",
+      "padding": "0px",
+      "gap": "normal",
+      "borderRadius": "0px",
+      "heads": [],
+      "body": [],
+      "lists": [],
+      "rectH": 72
+    },
+    {
+      "tag": "header",
+      "role": null,
+      "id": null,
+      "class": "header_header__ZwL1v",
+      "childCount": 1,
+      "bg": "rgb(255, 255, 255)",
+      "color": "rgb(41, 40, 39)",
+      "padding": "0px",
+      "gap": "normal",
+      "borderRadius": "0px",
+      "heads": [],
+      "body": [],
+      "lists": [],
+      "rectH": 67
+    },
+    {
+      "tag": "nav",
+      "role": null,
+      "id": null,
+      "class": "header_nav__DCyOO",
+      "childCount": 1,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(41, 40, 39)",
+      "padding": "0px",
+      "gap": "normal",
+      "borderRadius": "0px",
+      "heads": [],
+      "body": [],
+      "lists": [
+        {
+          "ordered": false,
+          "items": [
+            "Product",
+            "Enterprise",
+            "Education",
+            "Pricing"
+          ]
+        }
+      ],
+      "rectH": 42
+    },
+    {
+      "tag": "header",
+      "role": null,
+      "id": null,
+      "class": "header_header__ZwL1v",
+      "childCount": 1,
+      "bg": "rgb(255, 255, 255)",
+      "color": "rgb(41, 40, 39)",
+      "padding": "0px",
+      "gap": "normal",
+      "borderRadius": "0px",
+      "heads": [],
+      "body": [],
+      "lists": [],
+      "rectH": 0
+    },
+    {
+      "tag": "nav",
+      "role": null,
+      "id": null,
+      "class": null,
+      "childCount": 1,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(41, 40, 39)",
+      "padding": "0px",
+      "gap": "normal",
+      "borderRadius": "0px",
+      "heads": [],
+      "body": [],
+      "lists": [
+        {
+          "ordered": false,
+          "items": [
+            "ProductSuperhuman GoGrammarlyCodaSuperhuman MailAgent Store",
+            "Enterprise",
+            "Education",
+            "Pricing"
+          ]
+        }
+      ],
+      "rectH": 0
+    },
+    {
+      "tag": "footer",
+      "role": null,
+      "id": null,
+      "class": "header_dialogFooter__XHlLz",
+      "childCount": 3,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(41, 40, 39)",
+      "padding": "24px 32px",
+      "gap": "12px",
+      "borderRadius": "0px",
+      "heads": [],
+      "body": [],
+      "lists": [],
+      "rectH": 0
+    },
+    {
+      "tag": "main",
+      "role": null,
+      "id": null,
+      "class": "flex-1",
+      "childCount": 4,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(41, 40, 39)",
+      "padding": "0px",
+      "gap": "normal",
+      "borderRadius": "0px",
+      "heads": [
+        "Superpowers, everywhere you work",
+        "Mail, Docs, and AI that works in every app and tab",
+        "Your Superhuman suite",
+        "Mail"
+      ],
+      "body": [
+        "Schedule 15 minutes for a quick meeting with Mike",
+        "Tailor this language for executives",
+        "Proofread with Grammarly",
+        "Schedule 15 minutes for a quick meeting with Mike",
+        "Trusted by the most innovative companies in the world"
+      ],
+      "lists": [],
+      "rectH": 5411
+    },
+    {
+      "tag": "section",
+      "role": null,
+      "id": null,
+      "class": "section_section___xslj",
+      "childCount": 1,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "gap": "normal",
+      "borderRadius": "0px",
+      "heads": [
+        "Superpowers, everywhere you work",
+        "Mail, Docs, and AI that works in every app and tab"
+      ],
+      "body": [
+        "Schedule 15 minutes for a quick meeting with Mike",
+        "Tailor this language for executives",
+        "Proofread with Grammarly",
+        "Schedule 15 minutes for a quick meeting with Mike"
+      ],
+      "lists": [],
+      "rectH": 931
+    },
+    {
+      "tag": "section",
+      "role": null,
+      "id": "trusted-by-section",
+      "class": "section_section___xslj",
+      "childCount": 1,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(41, 40, 39)",
+      "padding": "0px",
+      "gap": "normal",
+      "borderRadius": "0px",
+      "heads": [],
+      "body": [
+        "Trusted by the most innovative companies in the world"
+      ],
+      "lists": [],
+      "rectH": 298
+    },
+    {
+      "tag": "section",
+      "role": null,
+      "id": null,
+      "class": "section_section___xslj",
+      "childCount": 1,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(41, 40, 39)",
+      "padding": "0px",
+      "gap": "normal",
+      "borderRadius": "0px",
+      "heads": [
+        "Your Superhuman suite",
+        "Mail",
+        "Grammarly",
+        "Coda"
+      ],
+      "body": [
+        "Fly through your inbox twice as fast as before, never drop the ball again, and save 4 hours every single week.",
+        "Turn your thoughts into writing that’s clear, credible, and impossible to ignore.",
+        "Build everything from wikis, through project plans, to goal trackers — keeping everyone perfectly in sync.",
+        "Go is the proactive AI assistant that knows what you know and offers help without you having to ask."
+      ],
+      "lists": [],
+      "rectH": 3146
+    },
+    {
+      "tag": "header",
+      "role": null,
+      "id": null,
+      "class": "tabbed-section-header_header__yi_x6",
+      "childCount": 2,
+      "bg": "rgb(242, 240, 235)",
+      "color": "rgb(41, 40, 39)",
+      "padding": "0px",
+      "gap": "normal",
+      "borderRadius": "0px",
+      "heads": [
+        "Your Superhuman suite",
+        "Mail",
+        "Grammarly",
+        "Coda"
+      ],
+      "body": [],
+      "lists": [],
+      "rectH": 194
+    },
+    {
+      "tag": "section",
+      "role": null,
+      "id": "manifesto-section",
+      "class": "section_section___xslj",
+      "childCount": 1,
+      "bg": "rgb(12, 66, 67)",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "gap": "normal",
+      "borderRadius": "0px",
+      "heads": [
+        "Becoming Superhuman."
+      ],
+      "body": [
+        "When AI works everywhere you work, it starts to change how you work. At first, you think faster and more deeply. Before you know it, you have the time to be more creative, strategic, and impactful—free to do what only you can do."
+      ],
+      "lists": [],
+      "rectH": 556
+    },
+    {
+      "tag": "section",
+      "role": null,
+      "id": "superhuman-section",
+      "class": "section_section___xslj",
+      "childCount": 2,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(41, 40, 39)",
+      "padding": "0px",
+      "gap": "normal",
+      "borderRadius": "0px",
+      "heads": [
+        "AI that works everywhere you work"
+      ],
+      "body": [],
+      "lists": [],
+      "rectH": 480
+    },
+    {
+      "tag": "footer",
+      "role": null,
+      "id": null,
+      "class": "footer_footer__yLXSJ",
+      "childCount": 1,
+      "bg": "rgb(66, 29, 36)",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "gap": "normal",
+      "borderRadius": "0px",
+      "heads": [
+        "Builders of Superhuman Platform apps",
+        "Products",
+        "Company",
+        "Legal"
+      ],
+      "body": [],
+      "lists": [],
+      "rectH": 628
+    },
+    {
+      "tag": "nav",
+      "role": null,
+      "id": null,
+      "class": "footer_content__YK8Nb",
+      "childCount": 4,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "gap": "40px",
+      "borderRadius": "0px",
+      "heads": [
+        "Products",
+        "Company",
+        "Legal",
+        "Connect"
+      ],
+      "body": [],
+      "lists": [],
+      "rectH": 352
+    }
+  ],
+  "ctas": [
+    {
+      "label": "Looking for Superhuman Mail? Learn more",
+      "href": "https://superhuman.com/products/mail",
+      "bg": "rgb(66, 29, 36)",
+      "color": "rgb(255, 255, 255)",
+      "fontFamily": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "460",
+      "borderRadius": "16px",
+      "padding": "12px",
+      "boxShadow": "none"
+    },
+    {
+      "label": "Sign up",
+      "href": "https://superhuman.com/auth/signup?screen_hint=signup",
+      "bg": "rgb(113, 76, 182)",
+      "color": "rgb(255, 255, 255)",
+      "fontFamily": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "600",
+      "borderRadius": "8px",
+      "padding": "6px 12px",
+      "boxShadow": "none"
+    },
+    {
+      "label": "Get Superhuman",
+      "href": "https://superhuman.com/auth/signup?screen_hint=signup",
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "fontFamily": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "460",
+      "borderRadius": "12px",
+      "padding": "6px 6px 6px 16px",
+      "boxShadow": "color(srgb 0.0784314 0.0784314 0.0745098 / 0.24) 0px 1px 2px 0px, rgb(53, 48, 136) 0px 0px 0px 1px"
+    },
+    {
+      "label": "Get the suite",
+      "href": "https://superhuman.com/plans",
+      "bg": "rgba(255, 255, 255, 0)",
+      "color": "rgb(113, 76, 182)",
+      "fontFamily": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "600",
+      "borderRadius": "8px",
+      "padding": "6px 24px",
+      "boxShadow": "rgb(113, 76, 182) 0px 0px 0px 1px inset"
+    },
+    {
+      "label": "Go",
+      "href": null,
+      "bg": "color(srgb 0.925383 0.913904 0.885205)",
+      "color": "rgb(41, 40, 39)",
+      "fontFamily": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "460",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "boxShadow": "none"
+    },
+    {
+      "label": "Read our announcement",
+      "href": "https://blog.superhuman.com/introducing-new-superhuman/",
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "color(srgb 1 1 1 / 0.95)",
+      "fontFamily": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "600",
+      "borderRadius": "8px",
+      "padding": "6px 24px",
+      "boxShadow": "color(srgb 1 1 1 / 0.95) 0px 0px 0px 1px inset"
+    }
+  ],
+  "links": {
+    "internal": [
+      {
+        "text": "Looking for Superhuman Mail? Learn more",
+        "href": "https://superhuman.com/products/mail"
+      },
+      {
+        "text": "",
+        "href": "https://superhuman.com/"
+      },
+      {
+        "text": "Enterprise",
+        "href": "https://superhuman.com/solutions/enterprise"
+      },
+      {
+        "text": "Education",
+        "href": "https://superhuman.com/edu"
+      },
+      {
+        "text": "Pricing",
+        "href": "https://superhuman.com/plans"
+      },
+      {
+        "text": "Log in",
+        "href": "https://superhuman.com/auth/signin"
+      },
+      {
+        "text": "Sign up",
+        "href": "https://superhuman.com/auth/signup"
+      },
+      {
+        "text": "Superhuman Go",
+        "href": "https://superhuman.com/products/go-ai-assistant"
+      },
+      {
+        "text": "Grammarly",
+        "href": "https://superhuman.com/products/grammarly"
+      },
+      {
+        "text": "Coda",
+        "href": "https://superhuman.com/products/coda"
+      },
+      {
+        "text": "Agent Store",
+        "href": "https://superhuman.com/store/agents"
+      },
+      {
+        "text": "Contact Us",
+        "href": "https://superhuman.com/contact"
+      },
+      {
+        "text": "About",
+        "href": "https://superhuman.com/company/about"
+      },
+      {
+        "text": "Mission & Values",
+        "href": "https://superhuman.com/company/values"
+      },
+      {
+        "text": "Careers",
+        "href": "https://superhuman.com/company/careers"
+      },
+      {
+        "text": "Help Center",
+        "href": "https://superhuman.com/support"
+      },
+      {
+        "text": "Status",
+        "href": "https://superhuman.com/status"
+      },
+      {
+        "text": "Partners",
+        "href": "https://superhuman.com/partners"
+      },
+      {
+        "text": "Superhuman Platform",
+        "href": "https://superhuman.com/superhuman-platform"
+      },
+      {
+        "text": "Terms",
+        "href": "https://superhuman.com/legal/terms"
+      },
+      {
+        "text": "Trust",
+        "href": "https://superhuman.com/legal/trust"
+      },
+      {
+        "text": "Customer Business Agreement",
+        "href": "https://superhuman.com/legal/terms/customer-business-agreement"
+      },
+      {
+        "text": "Legal Notices",
+        "href": "https://superhuman.com/legal/notices"
+      }
+    ],
+    "external": [
+      {
+        "text": "Contact sales",
+        "href": "https://www.superhuman.com/contact-sales"
+      },
+      {
+        "text": "Read our announcement",
+        "href": "https://blog.superhuman.com/introducing-new-superhuman/"
+      },
+      {
+        "text": "Privacy Policy",
+        "href": "https://www.grammarly.com/privacy-policy"
+      },
+      {
+        "text": "LinkedIn",
+        "href": "https://www.linkedin.com/company/superhumanhq"
+      },
+      {
+        "text": "X",
+        "href": "https://x.com/Superhuman"
+      },
+      {
+        "text": "TikTok",
+        "href": "https://www.tiktok.com/@superhumanhq"
+      },
+      {
+        "text": "Instagram",
+        "href": "https://www.instagram.com/superhuman__hq/"
+      },
+      {
+        "text": "Threads",
+        "href": "https://www.threads.com/@superhuman__hq"
+      },
+      {
+        "text": "Facebook",
+        "href": "https://www.facebook.com/SuperhumanCo"
+      }
+    ]
+  },
+  "media": {
+    "images": [
+      {
+        "src": "https://superhumanstatic.com/vwfkeyj6n9ac/5638budzR16gFR9CjmQwf6/4254a1638f76a23f30e1119022e76671/person-1.webp?w=1280&fm=avif",
+        "srcset": null,
+        "alt": "Person thinking",
+        "naturalWidth": 409,
+        "naturalHeight": 330,
+        "rectW": 818,
+        "rectH": 660
+      },
+      {
+        "src": "https://superhumanstatic.com/super-funnel/main/public/images/v3/trusted-by-logos/trustedby-logo-zoom.svg",
+        "srcset": null,
+        "alt": "Zoom",
+        "naturalWidth": 228,
+        "naturalHeight": 80,
+        "rectW": 218,
+        "rectH": 80
+      },
+      {
+        "src": "https://superhumanstatic.com/super-funnel/main/public/images/v3/trusted-by-logos/trustedby-logo-expensify.svg",
+        "srcset": null,
+        "alt": "Expensify",
+        "naturalWidth": 228,
+        "naturalHeight": 80,
+        "rectW": 218,
+        "rectH": 80
+      },
+      {
+        "src": "https://superhumanstatic.com/super-funnel/main/public/images/v3/trusted-by-logos/trustedby-logo-zapier.svg",
+        "srcset": null,
+        "alt": "Zapier",
+        "naturalWidth": 228,
+        "naturalHeight": 80,
+        "rectW": 218,
+        "rectH": 80
+      },
+      {
+        "src": "https://superhumanstatic.com/super-funnel/main/public/images/v3/trusted-by-logos/trustedby-logo-brex.svg",
+        "srcset": null,
+        "alt": "Brex",
+        "naturalWidth": 228,
+        "naturalHeight": 80,
+        "rectW": 218,
+        "rectH": 80
+      },
+      {
+        "src": "https://superhumanstatic.com/super-funnel/main/public/images/v3/trusted-by-logos/trustedby-logo-geico.svg",
+        "srcset": null,
+        "alt": "Geico",
+        "naturalWidth": 228,
+        "naturalHeight": 80,
+        "rectW": 218,
+        "rectH": 80
+      },
+      {
+        "src": "https://superhumanstatic.com/super-funnel/main/public/images/v3/trusted-by-logos/trustedby-logo-rivian.svg",
+        "srcset": null,
+        "alt": "Rivian",
+        "naturalWidth": 228,
+        "naturalHeight": 80,
+        "rectW": 218,
+        "rectH": 80
+      },
+      {
+        "src": "https://superhumanstatic.com/vwfkeyj6n9ac/6dRKs0BhqWbnOdnl43ifjt/0a2f56e8ac1c8cddfe72634f7983b440/homepage-manifesto.webp?w=1280&fm=avif",
+        "srcset": null,
+        "alt": "Girl drafting a Superhuman manifesto",
+        "naturalWidth": 640,
+        "naturalHeight": 526,
+        "rectW": 676,
+        "rectH": 556
+      },
+      {
+        "src": "https://superhumanstatic.com/vwfkeyj6n9ac/1MZDaABlJ6y5NbSOUUeaTN/0e6ab0d1c98158fb9b6c6a6c2e089734/homepage-tonal-flower.webp?w=2560&fm=avif",
+        "srcset": null,
+        "alt": "Tonal Flower",
+        "naturalWidth": 1280,
+        "naturalHeight": 406,
+        "rectW": 1440,
+        "rectH": 480
+      },
+      {
+        "src": "https://superhumanstatic.com/super-funnel/main/public/images/v3/privacy-choices-icon.png",
+        "srcset": null,
+        "alt": "",
+        "naturalWidth": 100,
+        "naturalHeight": 48,
+        "rectW": 40,
+        "rectH": 19
+      },
+      {
+        "src": "https://bat.bing.com/action/0?ti=187218359&tm=gtm002&Ver=2&mid=5fb76c54-094a-4e78-b7ad-e831c9827aef&bo=3&sid=77fa4d506b9411f1bbe4ff15460b31c4&vid=77fa7fc06b9411f1b75cbf7a788143c7&vids=1&msclkid=N&pi=0&lg=en-US&sw=1440&sh=900&sc=24&nwd=1&tl=Superhuman%3A%20Docs,%20Mail,%20and%20AI%20That%20Work%20Everywhere&p=https%3A%2F%2Fsuperhuman.com%2F&r=&lt=706&evt=pageLoad&sv=2&asc=G&cdb=AQAS&rn=975540",
+        "srcset": null,
+        "alt": "",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "rectW": 0,
+        "rectH": 0
+      },
+      {
+        "src": "https://verifi.pdscrb.com/tag?action=view&user_id=d8656980-7862-4277-ac8d-6a5f81a2dc01&advertiser=superhuman&referrer=_&session_referrer=_&session_landing_url=https%3A%2F%2Fsuperhuman.com%2F&device_id=pscrb_d5b1a581-77f9-4d7e-dc9f-4eeb1d8c80d1&first_visited_at=1781842083250&stid=&ipv4=85.6.219.16&ipv6=&url=https%3A%2F%2Fsuperhuman.com%2F&event_url=https%3A%2F%2Fsuperhuman.com%2F&source=js-tag+v1.2.0&cachebust=1781842083663",
+        "srcset": null,
+        "alt": "",
+        "naturalWidth": 1,
+        "naturalHeight": 1,
+        "rectW": 0,
+        "rectH": 0
+      }
+    ],
+    "svgCount": 60,
+    "videos": [
+      {
+        "src": "https://superhumanstatic.com/super-funnel/main/public/videos/v1/shared/hero-background.mp4",
+        "poster": null
+      },
+      {
+        "src": "https://superhumanstatic.com/super-funnel/main/public/videos/v1/homepage/Homepage_Mail_Animation_1336x1358_101025_optimized.mp4",
+        "poster": "https://superhumanstatic.com/vwfkeyj6n9ac/6GZdcneKJhk1BOMc4wSVFP/76ff2c85fd93f8171adc15fae2f7df56/mail-fallback.png"
+      },
+      {
+        "src": "https://superhumanstatic.com/super-funnel/main/public/videos/v1/homepage/Homepage_Grammarly_Animation_1336x1358_101025_optimized.mp4",
+        "poster": "https://superhumanstatic.com/vwfkeyj6n9ac/4Xbsd7oCDAyYCJROHZ80Oo/e8f5b1d2fab4760b806f6413cd256f89/grammarly-fallback.png"
+      },
+      {
+        "src": "https://superhumanstatic.com/super-funnel/main/public/videos/v1/homepage/Homepage_Coda_Animation_1336x1358_101025_optimized.mp4",
+        "poster": "https://superhumanstatic.com/vwfkeyj6n9ac/aX0n8e13NwFiOnXVCAG8u/eed3b77003f84aa38d0bb4eaf5becc6f/coda-fallback.png"
+      },
+      {
+        "src": "https://superhumanstatic.com/super-funnel/main/public/videos/v1/homepage/Homepage_Go_Animation_1336x1358_102325_optimized.mp4",
+        "poster": "https://superhumanstatic.com/vwfkeyj6n9ac/2Elaw7EDLXcTtRhFmYlD3c/048b30c77421faf80ce7556320cd98c6/go-fallback.png"
+      }
+    ],
+    "iframes": [
+      {
+        "src": "https://insight.adsrvr.org/track/cei?advertiser_id=4l2m34u&cookie_sync=1&upv=3.0.0&upid=hl1pmxf&ref=https%3A%2F%2Fsuperhuman.com%2F"
+      }
+    ],
+    "cssBackgrounds": [
+      {
+        "urls": [
+          "https://superhumanstatic.com/super-funnel/main/public/images/v3/homepage-banner-bg.webp"
+        ],
+        "tag": "a",
+        "class": "link_link__5Knfc banner_banner__XIftH"
+      }
+    ]
+  },
+  "cssCustomProperties": {
+    "--theme-grammarly": "",
+    "--red-60": "#cd0037",
+    "--font-size-text-large": "clamp(calc(18 / 16 * 1rem),calc(16.4 / 16 * 1rem + 0.25vw),calc(20 / 16 * 1rem))",
+    "--mulberry-80": "#792d4b",
+    "--color-primary-base": "light-dark(#714cb6,#d4c7ff)",
+    "--sky-30": "#b2cffe",
+    "--space-9x": "calc(36 / 16 * 1rem)",
+    "--green-60": "#148072",
+    "--color-scheme-dark": "",
+    "--line-height-display": "1.1",
+    "--neutral-100": "#141413",
+    "--color-action-secondary-active": "light-dark(#141413,#ffffff)",
+    "--space-1x": "calc(4 / 16 * 1rem)",
+    "--space-0_25x": "calc(1 / 16 * 1rem)",
+    "--blue-100": "#16293d",
+    "--radius-1_5x": "calc(6 / 16 * 1rem)",
+    "--color-bg-overlay": "light-dark(rgb(from #141413 r g b/60%),rgb(from #141413 r g b/60%))",
+    "--radius-4x": "calc(16 / 16 * 1rem)",
+    "--space-16x": "calc(64 / 16 * 1rem)",
+    "--space-6x": "calc(24 / 16 * 1rem)",
+    "--neutral-40": "#8d8a86",
+    "--font-family-serif": "\"Super Serif VF\",Georgia,Times,serif",
+    "--font-size-heading-small": "clamp(calc(24 / 16 * 1rem),calc(18.4 / 16 * 1rem + 0.875vw),calc(31 / 16 * 1rem))",
+    "--radius-1x": "calc(4 / 16 * 1rem)",
+    "--gold-pro-80": "#bd5200",
+    "--space-10x": "calc(40 / 16 * 1rem)",
+    "--red-80": "#9f182d",
+    "--font-size-66": "calc(66 / 16 * 1rem)",
+    "--OFF": "",
+    "--line-height-text": "1.5",
+    "--radius-5x": "calc(20 / 16 * 1rem)",
+    "--orange-80": "#a64500",
+    "--color-action-primary-hover": "light-dark(#533192,#bea1f5)",
+    "--yellow-30": "#f9d255",
+    "--neutral-90": "#292827",
+    "--gold-pro-60": "#e57300",
+    "--space-5x": "calc(20 / 16 * 1rem)",
+    "--space-4x": "calc(16 / 16 * 1rem)",
+    "--font-size-text-medium": "calc(18 / 16 * 1rem)",
+    "--space-14x": "calc(56 / 16 * 1rem)",
+    "--elevation-xsmall": "0 0 0 1px rgb(from light-dark(#474543,#141413) r g b/4%),0 4px 8px -2px rgb(from light-dark(#474543,#141413) r g b/6%),0 2px 4px 0 rgb(from light-dark(#474543,#141413) r g b/4%),0 1px 2px 0 rgb(from light-dark(#474543,#141413) r g b/4%),0 0 0 1px rgb(from light-dark(#dedbd5,#474543) r g b/20%)",
+    "--font-size-display-medium": "clamp(calc(44 / 16 * 1rem),calc(18.4 / 16 * 1rem + 4vw),calc(76 / 16 * 1rem))",
+    "--base-font-family-serif": "Georgia,Times,serif",
+    "--blue-90": "#0a476d",
+    "--font-weight-bold": "700",
+    "--color-scheme-light": "",
+    "--radius-2_5x": "calc(10 / 16 * 1rem)",
+    "--mulberry-40": "#bf6193",
+    "--gold-pro-0": "#fff6e0",
+    "--font-weight-regular": "460",
+    "--letter-spacing-heading": "-0.0275em",
+    "--flow-direction": "1",
+    "--blue-80": "#0c5683",
+    "--red-100": "#5b051c",
+    "--section-space-before-mobile": "0px",
+    "--font-size-20": "calc(20 / 16 * 1rem)",
+    "--font-size-70": "calc(70 / 16 * 1rem)",
+    "--font-family-mono": "\"Super Sans Mono VF\",ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace",
+    "--ON": "",
+    "--color-surface-disabled": "light-dark(rgb(from #8d8a86 r g b/20%),rgb(from #8d8a86 r g b/20%))",
+    "--viewport-padding": "calc(32 / 16 * 1rem)",
+    "--color-border-soft": "light-dark(rgb(from #73716d r g b/5%),rgb(from #fcfaf7 r g b/8%))",
+    "--font-size-80": "calc(80 / 16 * 1rem)",
+    "--neutral-10": "#f2f0eb",
+    "--color-border-base": "light-dark(#8d8a86,#f7f5f2)",
+    "--red-10": "#fedbdb",
+    "--purple-90": "#3f256f",
+    "--gold-pro-90": "#7a3500",
+    "--mulberry-10": "#ffdcf3",
+    "--font-size-42": "calc(42 / 16 * 1rem)",
+    "--font-size-60": "calc(60 / 16 * 1rem)",
+    "--space-8x": "calc(32 / 16 * 1rem)",
+    "--hero-button-background-color-stop-1": "rgb(27, 25, 56)",
+    "--color-faded-lighter": "light-dark(#fcfaf7,rgb(from #ffffff r g b/40%))",
+    "--mulberry-20": "#f6aadd",
+    "--line-height-default": "1.2",
+    "--color-icon-inverse": "light-dark(#f7f5f2,#292827)",
+    "--neutral-60": "#73716d",
+    "--mulberry-0": "#fff2fa",
+    "--color-icon-agent": "light-dark(#421d24,#fcfaf7)",
+    "--color-action-secondary": "light-dark(#292827,rgb(from #ffffff r g b/95%))",
+    "--purple-20": "#d4c7ff",
+    "--z-index-modal": "500",
+    "--color-icon-soft": "light-dark(rgb(from #292827 r g b/50%),rgb(from #fcfaf7 r g b/60%))",
+    "--white": "#ffffff",
+    "--space-2_5x": "calc(10 / 16 * 1rem)",
+    "--blue-10": "#daedfb",
+    "--font-family-sans": "\"Super Sans VF\",system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen,Ubuntu,Cantarell,\"Fira Sans\",\"Droid Sans\",\"Helvetica Neue\",sans-serif",
+    "--color-action-secondary-hover": "light-dark(#141413,#ffffff)",
+    "--space-0_5x": "calc(2 / 16 * 1rem)",
+    "--color-border-sub": "light-dark(rgb(from #73716d r g b/20%),rgb(from #fcfaf7 r g b/20%))",
+    "--color-primary-dark": "light-dark(#533192,rgb(from #9e7be0 r g b/16%))",
+    "--font-size-display-small": "clamp(calc(36 / 16 * 1rem),calc(16 / 16 * 1rem + 3.125vw),calc(61 / 16 * 1rem))",
+    "--font-size-26": "calc(26 / 16 * 1rem)",
+    "--space-3x": "calc(12 / 16 * 1rem)",
+    "--space-0x": "0rem",
+    "--neutral-30": "#bfbcb6",
+    "--font-size-16": "calc(16 / 16 * 1rem)",
+    "--elevation-small": "0 0 0 1px rgb(from light-dark(#474543,#141413) r g b/4%),0 16px 8px -8px rgb(from light-dark(#474543,#141413) r g b/1%),0 12px 6px -6px rgb(from light-dark(#474543,#141413) r g b/2%),0 5px 5px -2.5px rgb(from light-dark(#474543,#141413) r g b/8%),0 1px 3px -1.5px rgb(from light-dark(#474543,#141413) r g b/16%),0 0 0 1px rgb(from light-dark(#dedbd5,#474543) r g b/20%)",
+    "--line-height-heading": "1.2",
+    "--radius-0_5x": "calc(2 / 16 * 1rem)",
+    "--hero-button-gradient-angle": "0deg",
+    "--mulberry-30": "#da7cb4",
+    "--gold-pro-20": "#ffdc85",
+    "--yellow-0": "#fff8da",
+    "--z-index-fixed": "300",
+    "--neutral-80": "#474543",
+    "--z-index-popover": "600",
+    "--elevation-medium": "0 0 0 1px rgb(from light-dark(#474543,#141413) r g b/4%),0 1px 1px 0.5px rgb(from light-dark(#474543,#141413) r g b/4%),0 3px 3px -1.5px rgb(from light-dark(#474543,#141413) r g b/2%),0 6px 6px -3px rgb(from light-dark(#474543,#141413) r g b/4%),0 12px 12px -6px rgb(from light-dark(#474543,#141413) r g b/4%),0 24px 24px -12px rgb(from light-dark(#474543,#141413) r g b/4%),0 48px 48px -24px rgb(from light-dark(#474543,#141413) r g b/4%),0 0 0 1px rgb(from light-dark(#dedbd5,#474543) r g b/20%)",
+    "--color-transparent-hover": "light-dark(rgb(from light-dark(rgb(0 0 0/0%),rgb(255 255 255/0%)) r g b/5%),rgb(from light-dark(rgb(0 0 0/0%),rgb(255 255 255/0%)) r g b/10%))",
+    "--motion-duration-fast": "100ms",
+    "--space-7x": "calc(28 / 16 * 1rem)",
+    "--color-bg-accent-subdued": "light-dark(#f7f5ff,#714cb6)",
+    "--color-bg-accent": "light-dark(#e8e0ff,#281647)",
+    "--z-index-tooltip": "700",
+    "--orange-20": "#fdc298",
+    "--font-size-heading-large": "clamp(calc(32 / 16 * 1rem),calc(18.4 / 16 * 1rem + 2.125vw),calc(49 / 16 * 1rem))",
+    "--color-primary-darker": "light-dark(#3f256f,rgb(from #9e7be0 r g b/10%))",
+    "--header-opacity": "0%",
+    "--font-weight-book": "200",
+    "--purple-100": "#281647",
+    "--green-40": "#26a28b",
+    "--paragraph-spacing-small": "0.5em",
+    "--purple-0": "#f7f5ff",
+    "--font-size-46": "calc(46 / 16 * 1rem)",
+    "--letter-spacing-tight": "-0.0275em",
+    "--purple-30": "#bea1f5",
+    "--font-size-text-small": "calc(16 / 16 * 1rem)",
+    "--green-10": "#d5f7eb",
+    "--blue-30": "#8dcaf2",
+    "--color-warning-dark": "light-dark(#a64500,#f18333)",
+    "--radius-3x": "calc(12 / 16 * 1rem)",
+    "--green-80": "#005c54",
+    "--font-size-12": "calc(12 / 16 * 1rem)",
+    "--font-size-30": "calc(30 / 16 * 1rem)",
+    "--font-size-heading-xsmall": "clamp(calc(20 / 16 * 1rem),calc(16 / 16 * 1rem + 0.625vw),calc(25 / 16 * 1rem))",
+    "--yellow-90": "#7f640b",
+    "--font-size-48": "calc(48 / 16 * 1rem)",
+    "--color-icon-sub": "light-dark(rgb(from #292827 r g b/70%),rgb(from #fcfaf7 r g b/80%))",
+    "--space-32x": "calc(128 / 16 * 1rem)",
+    "--font-size-64": "calc(64 / 16 * 1rem)",
+    "--font-size-44": "calc(44 / 16 * 1rem)",
+    "--font-size-50": "calc(50 / 16 * 1rem)",
+    "--space-12x": "calc(48 / 16 * 1rem)",
+    "--font-size-22": "calc(22 / 16 * 1rem)",
+    "--font-size-display-large": "clamp(calc(48 / 16 * 1rem),calc(16 / 16 * 1rem + 5vw),calc(88 / 16 * 1rem))",
+    "--section-bg-color": "rgba(0, 0, 0, 0)",
+    "--orange-60": "#c25000",
+    "--neutral-20": "#dedbd5",
+    "--color-error-base": "light-dark(#cd0037,#ffa8aa)",
+    "--font-size-heading-medium": "clamp(calc(28 / 16 * 1rem),calc(19.2 / 16 * 1rem + 1.375vw),calc(39 / 16 * 1rem))",
+    "--purple-40": "#9e7be0",
+    "--purple-60": "#714cb6",
+    "--radius-6x": "calc(24 / 16 * 1rem)",
+    "--orange-90": "#812d00",
+    "--radius-16x": "calc(64 / 16 * 1rem)",
+    "--gold-pro-10": "#ffebb8",
+    "--color-text-base": "light-dark(#292827,#ffffff)",
+    "--z-index-base": "0",
+    "--blue-0": "#eff8fd",
+    "--color-bg-secondary-dark": "light-dark(#dedbd5,#141413)",
+    "--color-secondary-base": "light-dark(#292827,rgb(from #ffffff r g b/95%))",
+    "--yellow-10": "#fef1bb",
+    "--font-size-38": "calc(38 / 16 * 1rem)",
+    "--radius-8x": "calc(32 / 16 * 1rem)",
+    "--purple-50": "#8861ca",
+    "--mulberry-60": "#8d3d62",
+    "--radius-12x": "calc(48 / 16 * 1rem)",
+    "--line-height-tight": "1.1",
+    "--orange-10": "#ffe9c9",
+    "--font-size-32": "calc(32 / 16 * 1rem)",
+    "--font-size-40": "calc(40 / 16 * 1rem)",
+    "--space-40x": "calc(160 / 16 * 1rem)",
+    "--yellow-40": "#f5c428",
+    "--orange-100": "#611a00",
+    "--font-size-72": "calc(72 / 16 * 1rem)",
+    "--rem": "16",
+    "--red-20": "#ffa8aa",
+    "--motion-duration-base": "200ms",
+    "--mulberry-black": "#241013",
+    "--sky-60": "#3b96ff",
+    "--color-warning-base": "light-dark(#c25000,#fdc298)",
+    "--z-index-dropdown": "100",
+    "--font-size-text-xsmall": "calc(14 / 16 * 1rem)",
+    "--mobile-padding-inline": "calc(16 / 16 * 1rem)",
+    "--font-size-14": "calc(14 / 16 * 1rem)",
+    "--color-current": "light-dark(#292827,#ffffff)",
+    "--steel": "#4e5c69",
+    "--blue-20": "#bbdff7",
+    "--radius-0x": "0rem",
+    "--yellow-100": "#664d02",
+    "--orange-40": "#f18333",
+    "--grid-columns": "12",
+    "--purple-10": "#e8e0ff",
+    "--neutral-95": "#1f1e1d",
+    "--radius-10x": "calc(40 / 16 * 1rem)",
+    "--green-90": "#0c4243",
+    "--color-action-primary-active": "light-dark(#3f256f,#9e7be0)",
+    "--orange-30": "#ff9d56",
+    "--color-transparent": "light-dark(rgb(255 255 255/0%),rgb(0 0 0/0%))",
+    "--color-border-focus": "light-dark(#3b96ff,#62abff)",
+    "--green-100": "#17261f",
+    "--font-size-34": "calc(34 / 16 * 1rem)",
+    "--color-action-secondary-disabled": "light-dark(rgb(from #141413 r g b/20%),rgb(from #ffffff r g b/20%))",
+    "--blue-60": "#1173a8",
+    "--color-success-dark": "light-dark(#005c54,#26a28b)",
+    "--theme-superhuman": "",
+    "--space-20x": "calc(80 / 16 * 1rem)",
+    "--font-size-24": "calc(24 / 16 * 1rem)",
+    "--color-success-light": "light-dark(#26a28b,#d5f7eb)",
+    "--color-error-light": "light-dark(#f72a42,#fedbdb)",
+    "--color-icon-disabled": "light-dark(rgb(from #141413 r g b/40%),rgb(from #ffffff r g b/40%))",
+    "--font-size-54": "calc(54 / 16 * 1rem)",
+    "--space-18x": "calc(72 / 16 * 1rem)",
+    "--color-warning-light": "light-dark(#f18333,#ffe9c9)",
+    "--color-faded-dark": "light-dark(#474543,#f7f5f2)",
+    "--letter-spacing-display": "-0.0275em",
+    "--color-bg-tertiary": "light-dark(#f7f5f2,#0c4243)",
+    "--color-transparent-inverse": "light-dark(rgb(0 0 0/0%),rgb(255 255 255/0%))",
+    "--color-text-inverse": "light-dark(#ffffff,#292827)",
+    "--motion-duration-emphasis": "400ms",
+    "--hero-button-background-color-stop-2": "rgb(27, 25, 56)",
+    "--color-highlight-dark": "light-dark(#0c5683,#4198d2)",
+    "--font-size-18": "calc(18 / 16 * 1rem)",
+    "--yellow-60": "#dfad0d",
+    "--neutral-5": "#f7f5f2",
+    "--red-30": "#ff565e",
+    "--green-0": "#f4fdfa",
+    "--red-40": "#f72a42",
+    "--sky-40": "#62abff",
+    "--green-30": "#3ac7a1",
+    "--color-bg-primary": "light-dark(#ffffff,#421d24)",
+    "--font-size-36": "calc(36 / 16 * 1rem)",
+    "--space-24x": "calc(96 / 16 * 1rem)",
+    "--gold-pro-40": "#ffa10a",
+    "--color-action-primary": "light-dark(#714cb6,#d4c7ff)",
+    "--letter-spacing-text": "-0.0075em",
+    "--base-font-family-sans": "system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen,Ubuntu,Cantarell,\"Fira Sans\",\"Droid Sans\",\"Helvetica Neue\",sans-serif",
+    "--color-text-soft": "light-dark(#bfbcb6,rgb(from #ffffff r g b/65%))",
+    "--color-shadow": "light-dark(#474543,#141413)",
+    "--color-text-sub": "light-dark(rgb(from #141413 r g b/65%),rgb(from #ffffff r g b/80%))",
+    "--z-index-sticky": "200",
+    "--section-space-after-mobile": "0px",
+    "--color-shadow-ring": "light-dark(#dedbd5,#474543)",
+    "--font-weight-semibold": "600",
+    "--blue-40": "#4198d2",
+    "--gold-pro-100": "#1a0b00",
+    "--mulberry-90": "#602639",
+    "--elevation-large": "0 0 0 1px rgb(from light-dark(#474543,#141413) r g b/4%),0 1px 1px 0.5px rgb(from light-dark(#474543,#141413) r g b/4%),0 3px 3px -1.5px rgb(from light-dark(#474543,#141413) r g b/2%),0 6px 6px -3px rgb(from light-dark(#474543,#141413) r g b/4%),0 12px 12px -6px rgb(from light-dark(#474543,#141413) r g b/4%),0 24px 24px -12px rgb(from light-dark(#474543,#141413) r g b/4%),0 48px 48px -24px rgb(from light-dark(#474543,#141413) r g b/4%),0 96px 96px -32px rgb(from light-dark(#474543,#141413) r g b/6%),0 0 0 1px rgb(from light-dark(#dedbd5,#474543) r g b/20%)",
+    "--space-1_5x": "calc(6 / 16 * 1rem)",
+    "--green-20": "#98ebcd",
+    "--color-success-base": "light-dark(#148072,#98ebcd)",
+    "--yellow-20": "#fcdf83",
+    "--font-size-86": "calc(86 / 16 * 1rem)",
+    "--color-icon-base": "light-dark(#292827,#f7f5f2)",
+    "--color-action-primary-disabled": "light-dark(rgb(from #714cb6 r g b/40%),rgb(from #d4c7ff r g b/40%))",
+    "--paragraph-spacing-large": "0.75em",
+    "--z-index-model-backdrop": "400",
+    "--color-error-dark": "light-dark(#9f182d,#f72a42)",
+    "--olive": "#4f5022",
+    "--color-text-disabled": "light-dark(rgb(from #141413 r g b/40%),rgb(from #ffffff r g b/40%))",
+    "--red-90": "#860628",
+    "--mulberry-100": "#421d24",
+    "--radius-full": "calc(999 / 16 * 1rem)",
+    "--color-surface-soft": "light-dark(rgb(from #73716d r g b/10%),rgb(from #73716d r g b/16%))",
+    "--motion-duration-slow": "300ms",
+    "--space-2x": "calc(8 / 16 * 1rem)",
+    "--red-0": "#fff0f0",
+    "--color-highlight-base": "light-dark(#1173a8,#bbdff7)",
+    "--font-size-58": "calc(58 / 16 * 1rem)",
+    "--radius-2x": "calc(8 / 16 * 1rem)",
+    "--font-size-28": "calc(28 / 16 * 1rem)",
+    "--font-weight-medium": "540",
+    "--yellow-80": "#ae880d",
+    "--page-header-height": "67px",
+    "--letter-spacing-base": "-0.0075em",
+    "--content-max-width": "1280px",
+    "--neutral-0": "#fcfaf7",
+    "--color-faded-light": "light-dark(#f2f0eb,rgb(from #fcfaf7 r g b/8%))",
+    "--color-faded-base": "light-dark(#73716d,rgb(from #fcfaf7 r g b/20%))",
+    "--purple-80": "#533192",
+    "--color-highlight-light": "light-dark(#4198d2,#daedfb)",
+    "--line-height-open": "1.5",
+    "--gold-pro-30": "#ffbf47",
+    "--orange-0": "#fff3e1",
+    "--base-font-family-mono": "ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace",
+    "--color-bg-secondary": "light-dark(#f2f0eb,#241013)",
+    "--color-border-inverse": "light-dark(#f7f5f2,#8d8a86)"
+  },
+  "status": "extracted"
+}

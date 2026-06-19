@@ -1,0 +1,416 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-06-19T04:09:55.954Z",
+    "againstInput": "https://superhuman.com/",
+    "readArtifacts": [
+      "https://superhuman.com/",
+      "stardust/current/pages/home.json"
+    ],
+    "synthesizedInputs": [],
+    "notes": "Single-page (--single) capture of the homepage. Superhuman post-rebrand as an AI productivity suite (Mail, Grammarly, Coda, Go). 288 CSS custom properties present — full token system incl. light-dark() dark-mode pairs."
+  },
+  "site": {
+    "name": "Superhuman",
+    "tagline": "Superpowers, everywhere you work",
+    "originUrl": "https://superhuman.com"
+  },
+  "logo": {
+    "source": "inline-svg",
+    "sourceSelector": "header svg",
+    "localPath": null,
+    "format": "svg",
+    "synthesized": false
+  },
+  "palette": [
+    {
+      "role": "background",
+      "value": "#f2f0eb",
+      "occurrences": 13551,
+      "usedAs": [
+        "background"
+      ],
+      "sources": [
+        "home"
+      ]
+    },
+    {
+      "role": "text-primary",
+      "value": "#292827",
+      "occurrences": 4469,
+      "usedAs": [
+        "text",
+        "fill",
+        "border"
+      ],
+      "sources": [
+        "home"
+      ]
+    },
+    {
+      "role": "surface",
+      "value": "#421d24",
+      "occurrences": 994,
+      "usedAs": [
+        "fill",
+        "background"
+      ],
+      "sources": [
+        "home"
+      ]
+    },
+    {
+      "role": "accent-1",
+      "value": "#0c4243",
+      "occurrences": 801,
+      "usedAs": [
+        "background"
+      ],
+      "sources": [
+        "home"
+      ]
+    },
+    {
+      "role": "surface",
+      "value": "#ffffff",
+      "occurrences": 444,
+      "usedAs": [
+        "fill",
+        "background",
+        "text",
+        "border"
+      ],
+      "sources": [
+        "home"
+      ]
+    },
+    {
+      "role": "primary",
+      "value": "#714cb6",
+      "occurrences": 31,
+      "usedAs": [
+        "background",
+        "text",
+        "fill"
+      ],
+      "sources": [
+        "home"
+      ]
+    },
+    {
+      "role": "accent-2",
+      "value": "#ece9e2",
+      "occurrences": 22,
+      "usedAs": [
+        "background"
+      ],
+      "sources": [
+        "home"
+      ]
+    },
+    {
+      "role": "accent-3",
+      "value": "#9e6ee5",
+      "occurrences": 1,
+      "usedAs": [
+        "fill"
+      ],
+      "sources": [
+        "home"
+      ]
+    }
+  ],
+  "type": {
+    "headingFamily": {
+      "name": "Super Sans VF",
+      "stack": "\"Super Sans VF\", system-ui, -apple-system, sans-serif",
+      "weights": [
+        460,
+        540,
+        700
+      ],
+      "sizes": [
+        "64px",
+        "26px",
+        "48px",
+        "20px",
+        "49px",
+        "28px",
+        "18.72px"
+      ],
+      "lineHeights": [
+        "61.44px",
+        "33.8px",
+        "46.08px",
+        "22px"
+      ],
+      "letterSpacing": [
+        "normal",
+        "-0.55px",
+        "-1.3475px",
+        "-0.63px"
+      ],
+      "sourceSelectors": [
+        "h1",
+        "h2"
+      ]
+    },
+    "bodyFamily": {
+      "name": "Super Sans VF",
+      "stack": "\"Super Sans VF\", system-ui, -apple-system, sans-serif",
+      "weights": [
+        460,
+        500,
+        600
+      ],
+      "sizes": [
+        "16px",
+        "14px",
+        "18px",
+        "12px"
+      ],
+      "lineHeights": [
+        "1.5",
+        "1.4"
+      ],
+      "letterSpacing": [
+        "normal"
+      ],
+      "sourceSelectors": [
+        "p",
+        "li"
+      ]
+    },
+    "serifFamily": {
+      "name": "Super Serif VF",
+      "stack": "\"Super Serif VF\", Georgia, Times, serif",
+      "note": "Captured in --font-family-serif token; used for editorial accents."
+    },
+    "scaleAudit": {
+      "kind": "modular",
+      "basis": "Fluid clamp() scale driven by named --font-size-* tokens (heading-small, display, 66, text-large) with a consistent ratio."
+    },
+    "variableFont": true
+  },
+  "spacing": {
+    "tokenScale": "4px base (--space-Nx)",
+    "sectionPadding": "64px (--space-16x) typical"
+  },
+  "motifs": {
+    "borderRadius": {
+      "primary": "8px",
+      "secondary": "16px",
+      "pill": "999px",
+      "occurrences": [
+        {
+          "value": "8px",
+          "count": 11
+        },
+        {
+          "value": "16px",
+          "count": 6
+        },
+        {
+          "value": "24px",
+          "count": 3
+        },
+        {
+          "value": "999px",
+          "count": 2
+        },
+        {
+          "value": "12px",
+          "count": 1
+        },
+        {
+          "value": "999px 999px 0px",
+          "count": 1
+        }
+      ]
+    },
+    "shadows": [
+      "color(srgb 0.278431 0.270588 0.262745 / 0.16) 0px -4px 8px 0.5px",
+      "color(srgb 0.0784314 0.0784314 0.0745098 / 0.24) 0px 1px 2px 0px, rgb(53, 48, 136) 0px 0px 0px 1px",
+      "color(srgb 0.0784314 0.0784314 0.0745098 / 0.08) 0px 1px 2px 0px",
+      "rgb(255, 255, 255) 0px -5px 0px 0px, rgb(255, 255, 255) 0px 5px 0px 0px",
+      "rgb(113, 76, 182) 0px 0px 0px 1px inset",
+      "color(srgb 1 1 1 / 0.95) 0px 0px 0px 1px inset"
+    ],
+    "gradients": [],
+    "patterns": [
+      "card",
+      "chip",
+      "pill-button",
+      "hero-with-image",
+      "product-tile",
+      "tonal-photography"
+    ]
+  },
+  "componentStyle": {
+    "buttonRadius": "8px",
+    "cardRadius": "16px",
+    "pill": "999px"
+  },
+  "systemComponents": [
+    {
+      "type": "site-header",
+      "detected": "header landmark",
+      "items": [
+        "Enterprise",
+        "Education",
+        "Pricing",
+        "Contact sales",
+        "Log in",
+        "Sign up",
+        "Superhuman Go",
+        "Grammarly"
+      ],
+      "ctas": [
+        "Log in",
+        "Sign up",
+        "Contact sales"
+      ]
+    },
+    {
+      "type": "site-footer",
+      "detected": "footer landmark"
+    },
+    {
+      "type": "product-suite-strip",
+      "detected": "repeated product tiles",
+      "items": [
+        "Mail",
+        "Grammarly",
+        "Coda",
+        "Go"
+      ]
+    },
+    {
+      "type": "trusted-by-logos",
+      "detected": "logo wall",
+      "items": [
+        "Zoom",
+        "Expensify",
+        "Zapier",
+        "Brex",
+        "Geico",
+        "Rivian"
+      ]
+    }
+  ],
+  "iconFont": null,
+  "voice": {
+    "heroHeadline": "Superpowers, everywhere you work",
+    "heroSubcopy": "Mail, Docs, and AI that works in every app and tab",
+    "primaryCTALabel": "Get Superhuman",
+    "secondaryCTALabel": "Get the suite",
+    "firstParagraph": "Schedule 15 minutes for a quick meeting with Mike",
+    "ctaSamples": [
+      "Looking for Superhuman Mail? Learn more",
+      "Sign up",
+      "Get Superhuman",
+      "Get the suite",
+      "Go",
+      "Read our announcement"
+    ],
+    "navItems": [
+      "Enterprise",
+      "Education",
+      "Pricing",
+      "Contact sales",
+      "Log in",
+      "Sign up",
+      "Superhuman Go",
+      "Grammarly",
+      "Coda",
+      "Superhuman Mail",
+      "Agent Store",
+      "Enterprise"
+    ],
+    "heroImage": "https://superhumanstatic.com/vwfkeyj6n9ac/1MZDaABlJ6y5NbSOUUeaTN/0e6ab0d1c98158fb9b6c6a6c2e089734/homepage-tonal-flower.webp?w=2560&fm=avif",
+    "manifesto": "Becoming Superhuman.",
+    "tagline": "Superpowers, everywhere you work"
+  },
+  "voiceTable": {
+    "ctaFrequency": [
+      "Looking for Superhuman Mail? Learn more",
+      "Sign up",
+      "Get Superhuman",
+      "Get the suite",
+      "Go",
+      "Read our announcement"
+    ]
+  },
+  "tokens": {
+    "count": 288,
+    "sample": {
+      "--theme-grammarly": "",
+      "--red-60": "#cd0037",
+      "--font-size-text-large": "clamp(calc(18 / 16 * 1rem),calc(16.4 / 16 * 1rem + 0.25vw),calc(20 / 16 * 1rem))",
+      "--mulberry-80": "#792d4b",
+      "--color-primary-base": "light-dark(#714cb6,#d4c7ff)",
+      "--sky-30": "#b2cffe",
+      "--space-9x": "calc(36 / 16 * 1rem)",
+      "--green-60": "#148072",
+      "--color-scheme-dark": "",
+      "--line-height-display": "1.1",
+      "--neutral-100": "#141413",
+      "--color-action-secondary-active": "light-dark(#141413,#ffffff)",
+      "--space-1x": "calc(4 / 16 * 1rem)",
+      "--space-0_25x": "calc(1 / 16 * 1rem)",
+      "--blue-100": "#16293d",
+      "--radius-1_5x": "calc(6 / 16 * 1rem)",
+      "--color-bg-overlay": "light-dark(rgb(from #141413 r g b/60%),rgb(from #141413 r g b/60%))",
+      "--radius-4x": "calc(16 / 16 * 1rem)",
+      "--space-16x": "calc(64 / 16 * 1rem)",
+      "--space-6x": "calc(24 / 16 * 1rem)",
+      "--neutral-40": "#8d8a86",
+      "--font-family-serif": "\"Super Serif VF\",Georgia,Times,serif",
+      "--font-size-heading-small": "clamp(calc(24 / 16 * 1rem),calc(18.4 / 16 * 1rem + 0.875vw),calc(31 / 16 * 1rem))",
+      "--radius-1x": "calc(4 / 16 * 1rem)",
+      "--gold-pro-80": "#bd5200",
+      "--space-10x": "calc(40 / 16 * 1rem)",
+      "--red-80": "#9f182d",
+      "--font-size-66": "calc(66 / 16 * 1rem)",
+      "--OFF": "",
+      "--line-height-text": "1.5",
+      "--radius-5x": "calc(20 / 16 * 1rem)",
+      "--orange-80": "#a64500",
+      "--color-action-primary-hover": "light-dark(#533192,#bea1f5)",
+      "--yellow-30": "#f9d255",
+      "--neutral-90": "#292827",
+      "--gold-pro-60": "#e57300",
+      "--space-5x": "calc(20 / 16 * 1rem)",
+      "--space-4x": "calc(16 / 16 * 1rem)",
+      "--font-size-text-medium": "calc(18 / 16 * 1rem)",
+      "--space-14x": "calc(56 / 16 * 1rem)"
+    },
+    "darkMode": true,
+    "primaryToken": "light-dark(#714cb6,#d4c7ff)"
+  },
+  "photography": {
+    "present": true,
+    "style": "warm editorial, tonal",
+    "samples": [
+      {
+        "alt": "Person thinking",
+        "src": "https://superhumanstatic.com/vwfkeyj6n9ac/5638budzR16gFR9CjmQwf6/4254a1638f76a23f30e1119022e76671/person-1.webp?w=1280&fm=avif",
+        "w": 818,
+        "h": 660
+      },
+      {
+        "alt": "Girl drafting a Superhuman manifesto",
+        "src": "https://superhumanstatic.com/vwfkeyj6n9ac/6dRKs0BhqWbnOdnl43ifjt/0a2f56e8ac1c8cddfe72634f7983b440/homepage-manifesto.webp?w=1280&fm=avif",
+        "w": 676,
+        "h": 556
+      },
+      {
+        "alt": "Tonal Flower",
+        "src": "https://superhumanstatic.com/vwfkeyj6n9ac/1MZDaABlJ6y5NbSOUUeaTN/0e6ab0d1c98158fb9b6c6a6c2e089734/homepage-tonal-flower.webp?w=2560&fm=avif",
+        "w": 1440,
+        "h": 480
+      }
+    ]
+  },
+  "register": "brand"
+}
