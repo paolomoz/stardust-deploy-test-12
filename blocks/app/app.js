@@ -51,7 +51,7 @@ export default async function decorate(block) {
       // split "Download on the App Store" -> small prefix + bold store name
       const m = c.textContent.trim().match(/^(Download on the|Get it on)\s+(.+)$/i);
       if (m) {
-        const icon = /apple|app store/i.test(m[2]) ? '\u{1F34F}' : '▶';
+        const icon = /apple|app store/i.test(m[2]) ? '\u{1F34E}' : '▶';
         c.replaceChildren();
         const ic = document.createElement('span');
         ic.className = 'badge-ic';
