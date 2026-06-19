@@ -1,0 +1,15 @@
+{
+  "_provenance": { "writtenBy": "stardust:direct (uplift Phase 4)", "writtenAt": "2026-06-19", "variant": "B" },
+  "variant": "B",
+  "role": "Display-typography amplification (design-team motivator)",
+  "inherits": "DESIGN.json",
+  "whatIf": "What if Feather Bold became the page's structure — poster-scale lowercase type as the layout grid?",
+  "deltas": {
+    "type": "display clamp up to ~clamp(64px, 14vw, 168px); lowercase; type IS the composition",
+    "layout": "alternating 50/50 rows replaced by an indexed editorial-poster cadence — huge type left/full-bleed, illustration as supporting accent",
+    "color": "owl-green + one rotating accent per claim (fox/macaw/cardinal/beetle) used as giant type fills",
+    "rhythm": "numbered claims (01–04), oversized index numerals in tinted Feather"
+  },
+  "motion": "static",
+  "sectionPadding": { "desktop": 64 }
+}

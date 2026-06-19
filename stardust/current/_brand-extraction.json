@@ -1,0 +1,106 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract (uplift Phase 1)",
+    "writtenAt": "2026-06-19",
+    "againstInput": "https://www.duolingo.com/",
+    "method": "live Playwright render, cross-referenced with captured CSS custom properties",
+    "renderedBy": "playwright",
+    "httpStatus": 200,
+    "notes": "Single-page extract (homepage). Palette resolved from --color-* design tokens captured at :root."
+  },
+  "logo": {
+    "source": "inline SVG wordmark in header + apple-touch-icon",
+    "appleTouchIcon": "https://d35aaqx5ub95lt.cloudfront.net/images/duolingo-touch-icon2.png",
+    "wordmark": "duolingo (lowercase, Feather Bold, mask-green)",
+    "mascot": "Duo the owl (green)"
+  },
+  "palette": {
+    "background": "#FFFFFF",
+    "surface": "#F7F7F7",
+    "surfaceTint": "#D7FFB8",
+    "text": "#4B4B4B",
+    "textMuted": "#777777",
+    "textHint": "#AFAFAF",
+    "border": "#E5E5E5",
+    "primary": "#58CC02",
+    "primaryShadow": "#58A700",
+    "primaryBright": "#89E219",
+    "secondary": "#1CB0F6",
+    "secondaryShadow": "#0096DC",
+    "accentOrange": "#FF9600",
+    "accentRed": "#FF4B4B",
+    "accentYellow": "#FFC800",
+    "accentPurple": "#CE82FF",
+    "darkNavy": "#100F3E",
+    "darkNavyAlt": "#042C60",
+    "_roleSources": {
+      "primary": "--color-owl / --color-feather-green = 88,204,2",
+      "primaryShadow": "--color-tree-frog = 88,167,0",
+      "secondary": "--color-macaw = 28,176,246",
+      "accentOrange": "--color-fox = 255,150,0",
+      "accentRed": "--color-cardinal = 255,75,75",
+      "accentYellow": "--color-bee = 255,200,0",
+      "accentPurple": "--color-beetle = 206,130,255",
+      "text": "--color-eel = 75,75,75",
+      "textMuted": "--color-wolf = 119,119,119",
+      "textHint": "--color-hare = 175,175,175",
+      "border": "--color-swan = 229,229,229",
+      "surface": "--color-polar = 247,247,247",
+      "darkNavy": "section.LlPOq computed bg = 16,15,62"
+    }
+  },
+  "type": {
+    "displayFamily": "feather (Feather Bold)",
+    "displayWeight": 700,
+    "displaySizes": ["64px (hero h1)", "48px (section h2)", "32px (top h1)"],
+    "bodyFamily": "din-round / duolingo-sans (DIN Round, geometric sans)",
+    "bodyColor": "#4B4B4B",
+    "characteristics": "Rounded, chunky, friendly geometric. Feather is a proprietary rounded display face; body is a DIN-round geometric sans. Headlines lowercase by convention.",
+    "files": [
+      { "localPath": "assets/fonts/3bbe299f41d8289a47d91773fee0cb6a.woff2", "family": "feather/din-round (proprietary)", "licensingFlag": "proprietary — internal review only" },
+      { "localPath": "assets/fonts/68d22534874c554b0c9ebabea379fc60.woff2", "family": "feather/din-round (proprietary)", "licensingFlag": "proprietary — internal review only" },
+      { "localPath": "assets/fonts/f2331bbfd902cdf8971c4d3184a44283.woff2", "family": "feather/din-round (proprietary)", "licensingFlag": "proprietary — internal review only" },
+      { "localPath": "assets/fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2", "family": "Roboto", "licensingFlag": "open (Google Fonts)" }
+    ],
+    "scaleAudit": { "kind": "modular", "note": "32/48/64 display ladder roughly 1.5x steps" }
+  },
+  "motifs": {
+    "borderRadius": "12px (buttons), 16px (cards) — soft, friendly rounding",
+    "signatureButton": "3D 'pushable' button: solid fill + a darker bottom border (box-shadow 0 N 0 shadow-color) that compresses on press. The single most recognizable Duolingo UI gesture.",
+    "shadows": ["0 4px 0 darker-shade (button depth)", "0 2px 8px rgba(0,0,0,0.1) (card lift)"],
+    "patterns": ["mascot characters", "floating illustration clusters", "alternating image+text feature rows", "flag/language chips", "full-bleed green footer"],
+    "illustration": "Flat, rounded, brightly-colored character illustrations (Duo + cast). Generous negative space around each illustration cluster.",
+    "buttonTextTransform": "UPPERCASE button labels, bold, letter-spaced"
+  },
+  "voice": {
+    "heroHeadline": "The free, fun, and effective way to learn a language!",
+    "tagline": "free. fun. effective.",
+    "register": "Playful, warm, encouraging, plain-spoken. Lowercase headlines. Short declaratives. Emoji-adjacent cheer without being childish.",
+    "firstParagraph": "Learning with Duolingo is fun, and research shows that it works! With quick, bite-sized lessons, you'll earn points and unlock new levels while gaining real-world communication skills.",
+    "ctaLabels": ["GET STARTED", "I ALREADY HAVE AN ACCOUNT", "TRY 1 WEEK FREE", "GET YOUR CLASS STARTED", "LEARN MORE ABOUT ABC"],
+    "heroImage": "Mascot/character illustration cluster (Duo the owl + cast), centered above the fold"
+  },
+  "systemComponents": {
+    "header": "Top nav: lowercase 'duolingo' wordmark left, SITE LANGUAGE selector + 'I ALREADY HAVE AN ACCOUNT' right",
+    "footer": "Full-bleed green (#58CC02) footer with white multi-column link lists (About, Products, Apps, Help, etc.) and social row",
+    "ctaBand": "Recurring green 'GET STARTED' conversion band",
+    "appStoreBadges": "App Store + Google Play download badges"
+  },
+  "ia": {
+    "sections": [
+      "header / language selector",
+      "hero (headline + mascot cluster + GET STARTED / I ALREADY HAVE AN ACCOUNT)",
+      "free. fun. effective. (feature)",
+      "backed by science (feature)",
+      "stay motivated (feature)",
+      "personalized learning (feature)",
+      "learn anytime, anywhere (app download)",
+      "Super Duolingo / POWER OF MAX (dark navy promo, TRY 1 WEEK FREE)",
+      "duolingo english test (product)",
+      "duolingo for schools (product)",
+      "duolingo abc (product)",
+      "learn a language with duolingo (closing CTA)",
+      "green footer (link columns)"
+    ]
+  }
+}

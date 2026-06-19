@@ -1,0 +1,26 @@
+<style>
+  header.header { background: rgb(255 255 255 / 92%); backdrop-filter: blur(8px); border-bottom: 2px solid var(--border); }
+  header.header .nav { max-width: var(--maxw); margin: 0 auto; padding: 0 var(--pad); height: 72px; display: flex; align-items: center; justify-content: space-between; }
+  header.header .brand { font-family: var(--font-display); font-weight: 800; font-size: 28px; color: var(--green); letter-spacing: -0.02em; }
+  header.header .nav-right { display: flex; align-items: center; gap: 22px; }
+  header.header .nav-link { font-weight: 700; color: var(--muted); font-size: 15px; }
+  header.header .nav-link:hover { color: var(--text-strong); }
+  header.header a.nav-cta {
+    background: var(--blue); box-shadow: 0 4px 0 var(--blue-shadow); color: #fff;
+    font-family: var(--font-body); font-weight: 800; font-size: 14px; letter-spacing: 0.08em;
+    text-transform: uppercase; padding: 11px 22px; border-radius: 14px;
+  }
+  header.header a.nav-cta:active { transform: translateY(4px); box-shadow: 0 0 0 var(--blue-shadow); }
+  @media (width <= 600px) {
+    header.header .nav { height: 64px; }
+    header.header .nav-link { display: none; }
+  }
+</style>
+<div class="nav">
+  <a class="brand" href="/test-8/index">duolingo</a>
+  <div class="nav-right">
+    <a class="nav-link" href="/test-8/index">Site language: English</a>
+    <a class="nav-link" href="/test-8/index">I already have an account</a>
+    <a class="nav-cta" href="/test-8/index">Get started</a>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+.lang-strip {
+  border-top: 2px solid var(--border);
+  border-bottom: 2px solid var(--border);
+  background: var(--surface);
+}
+
+.lang-strip .wrap {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.lang-strip .chips {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.lang-strip .chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--muted);
+  background: #fff;
+  border: 2px solid var(--border);
+  padding: 8px 14px;
+  border-radius: 999px;
+}

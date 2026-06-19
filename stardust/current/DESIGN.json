@@ -1,0 +1,39 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract (uplift Phase 1)",
+    "writtenAt": "2026-06-19",
+    "againstInput": "https://www.duolingo.com/"
+  },
+  "colors": {
+    "background": "#FFFFFF",
+    "surface": "#F7F7F7",
+    "text": "#4B4B4B",
+    "primary": "#58CC02",
+    "primaryShadow": "#58A700",
+    "secondary": "#1CB0F6",
+    "secondaryShadow": "#0096DC",
+    "accentOrange": "#FF9600",
+    "accentRed": "#FF4B4B",
+    "accentYellow": "#FFC800",
+    "accentPurple": "#CE82FF",
+    "darkNavy": "#100F3E"
+  },
+  "typography": {
+    "display": "feather (Feather Bold)",
+    "displayWeight": 700,
+    "body": "din-round, system-ui geometric sans"
+  },
+  "rounded": "12px",
+  "extensions": {
+    "componentStyle": {
+      "button": "pushable 3D — fill + 0 4px 0 darker-shade bottom border, translateY on active",
+      "card": "16px radius, soft lift shadow",
+      "chip": "pill language/flag chip"
+    },
+    "motifs": ["mascot characters", "floating illustration clusters", "alternating feature rows", "full-bleed green footer", "uppercase button labels"],
+    "voice": {
+      "register": "playful, warm, lowercase, plain-spoken",
+      "ctaLabels": ["GET STARTED", "I ALREADY HAVE AN ACCOUNT", "TRY 1 WEEK FREE"]
+    }
+  }
+}

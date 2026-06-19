@@ -1,0 +1,90 @@
+.products {
+  padding: 72px 0;
+}
+
+.products .p-head {
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+.products .p-head h2 {
+  font-size: clamp(30px, 3.6vw, 44px);
+  color: var(--navy);
+}
+
+.products .p-head p {
+  color: var(--muted);
+  margin-top: 10px;
+}
+
+.products .pgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.products .pcard {
+  border: 2px solid var(--border);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 4px 0 var(--border);
+  transition: transform 0.18s;
+}
+
+.products .pcard:hover {
+  transform: translateY(-5px);
+}
+
+.products .pcard .top {
+  height: 200px;
+  display: grid;
+  place-items: center;
+  padding: 22px;
+}
+
+.products .pcard.p1 .top {
+  background: #eef9ff;
+}
+
+.products .pcard.p2 .top {
+  background: #f1ffe6;
+}
+
+.products .pcard.p3 .top {
+  background: #fff4e0;
+}
+
+.products .pcard .top img, .products .pcard .top picture {
+  height: 100%;
+  object-fit: contain;
+}
+
+.products .pcard .body {
+  padding: 24px;
+}
+
+.products .pcard h3 {
+  font-size: 22px;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.products .pcard .body p {
+  font-size: 15px;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.products .pcard a.p-link {
+  font-weight: 800;
+  color: var(--blue);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 14px;
+}
+
+@media (width <= 900px) {
+  .products .pgrid {
+    grid-template-columns: 1fr;
+  }
+}

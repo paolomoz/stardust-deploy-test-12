@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Duolingo — The free, fun, and effective way to learn a language</title>
+<!-- stardust:uplift variant A · faithful + improvements · brand-faithful Mode A -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fff; --surface:#f7f7f7; --tint:#d7ffb8;
+  --text:#3c3c3c; --text-strong:#4b4b4b; --muted:#777; --hint:#afafaf; --border:#e5e5e5;
+  --green:#58cc02; --green-shadow:#58a700; --green-bright:#89e219;
+  --blue:#1cb0f6; --blue-shadow:#0096dc;
+  --orange:#ff9600; --red:#ff4b4b; --yellow:#ffc800; --purple:#ce82ff; --navy:#100f3e;
+  --display:'Baloo 2', system-ui, sans-serif;
+  --body:'Nunito', system-ui, sans-serif;
+  --maxw:1140px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--text);background:var(--bg);font-size:18px;line-height:1.5;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--display);font-weight:800;color:var(--text-strong);line-height:1.05;letter-spacing:-.01em}
+img,svg{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+/* pushable button — the brand signature */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;
+  font-family:var(--body);font-weight:800;font-size:17px;letter-spacing:.08em;text-transform:uppercase;
+  padding:15px 28px;border-radius:16px;border:0;cursor:pointer;color:#fff;background:var(--green);
+  box-shadow:0 4px 0 var(--green-shadow);transition:transform .08s, box-shadow .08s, filter .15s;white-space:nowrap}
+.btn:hover{filter:brightness(1.05)}
+.btn:active{transform:translateY(4px);box-shadow:0 0 0 var(--green-shadow)}
+.btn--blue{background:var(--blue);box-shadow:0 4px 0 var(--blue-shadow)}
+.btn--blue:active{box-shadow:0 0 0 var(--blue-shadow)}
+.btn--ghost{background:#fff;color:var(--blue);box-shadow:0 2px 0 var(--border), inset 0 0 0 2px var(--border)}
+.btn--ghost:active{transform:translateY(2px);box-shadow:0 0 0 var(--border), inset 0 0 0 2px var(--border)}
+.btn--lg{font-size:19px;padding:18px 40px}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:2px solid var(--border)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{font-family:var(--display);font-weight:800;font-size:28px;color:var(--green);letter-spacing:-.02em}
+.brand span{color:var(--green)}
+.nav-right{display:flex;align-items:center;gap:22px}
+.nav-link{font-weight:700;color:var(--muted);font-size:15px}
+.nav-link:hover{color:var(--text-strong)}
+
+/* hero — improvement 1 + 5: headline promoted to top of ladder, single primary CTA */
+.hero{padding:64px 0 48px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:800;color:var(--green);text-transform:uppercase;letter-spacing:.1em;font-size:14px;background:var(--tint);padding:7px 14px;border-radius:999px;margin-bottom:20px}
+.hero h1{font-size:clamp(40px,5.6vw,68px);color:var(--green);margin-bottom:18px}
+.hero h1 em{font-style:normal;color:var(--navy)}
+.hero p.lead{font-size:21px;color:var(--muted);max-width:30ch;margin-bottom:28px}
+.hero-cta{display:flex;flex-direction:column;gap:14px;max-width:340px}
+.hero-cta .sub{font-size:14px;color:var(--hint);font-weight:700;text-align:center}
+.hero-art{position:relative}
+.hero-art img{filter:drop-shadow(0 24px 40px rgba(0,0,0,.10));animation:float 6s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+
+/* language strip */
+.lang-strip{border-top:2px solid var(--border);border-bottom:2px solid var(--border);background:var(--surface)}
+.lang-strip .wrap{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;padding:14px 24px}
+.chip{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:14px;color:var(--muted);background:#fff;border:2px solid var(--border);padding:8px 14px;border-radius:999px}
+.chip b{font-size:16px}
+
+/* stat band — improvement 4: surface the proof */
+.stats{background:var(--navy);color:#fff;padding:54px 0}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.stat .n{font-family:var(--display);font-weight:800;font-size:clamp(36px,4.4vw,56px);line-height:1;color:var(--green-bright)}
+.stat:nth-child(2) .n{color:var(--yellow)}
+.stat:nth-child(3) .n{color:var(--blue)}
+.stat:nth-child(4) .n{color:var(--orange)}
+.stat .l{margin-top:8px;color:#c9c8e0;font-weight:700;font-size:15px}
+
+/* lead feature — improvement 2: lead claim hero-scale */
+.lead-feature{padding:72px 0}
+.lead-feature .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.lead-feature h2{font-size:clamp(34px,4.4vw,52px);color:var(--green);margin-bottom:16px}
+.lead-feature p{font-size:19px;color:var(--muted);margin-bottom:24px}
+.lead-feature .art{background:radial-gradient(circle at 50% 45%, var(--tint), transparent 70%);border-radius:24px}
+
+/* feature rail — improvement 2: remaining claims compressed */
+.rail{padding:24px 0 80px}
+.rail-head{text-align:center;margin-bottom:40px}
+.rail-head h2{font-size:clamp(28px,3.4vw,40px)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:#fff;border:2px solid var(--border);border-radius:20px;box-shadow:0 2px 0 var(--border);padding:28px 24px;text-align:center;transition:transform .18s, box-shadow .18s}
+.card:hover{transform:translateY(-4px);box-shadow:0 8px 0 var(--border)}
+.card .ic{width:96px;height:96px;margin:0 auto 14px;display:grid;place-items:center;border-radius:24px;font-size:46px}
+.card h3{font-size:23px;margin-bottom:8px;color:var(--navy)}
+.card p{font-size:16px;color:var(--muted)}
+.c1 .ic{background:#e3f7d3}.c2 .ic{background:#dff3ff}.c3 .ic{background:#ffe9cc}
+
+/* app band */
+.app{background:var(--surface);padding:72px 0;border-top:2px solid var(--border)}
+.app .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.app h2{font-size:clamp(30px,3.6vw,44px);color:var(--navy);margin-bottom:16px}
+.app p{color:var(--muted);font-size:19px;margin-bottom:24px}
+.badges{display:flex;gap:14px;flex-wrap:wrap}
+.badge{display:inline-flex;align-items:center;gap:10px;background:#000;color:#fff;border-radius:14px;padding:10px 18px;font-weight:700}
+.badge small{display:block;font-size:11px;font-weight:600;opacity:.8;text-transform:uppercase;letter-spacing:.06em}
+.badge b{font-size:18px;font-family:var(--display)}
+
+/* super promo */
+.super{background:var(--navy);color:#fff;padding:72px 0;position:relative;overflow:hidden}
+.super .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;position:relative;z-index:2}
+.super img.mark{max-width:340px}
+.super h2{color:#fff;font-size:clamp(30px,3.6vw,46px);margin:14px 0 16px}
+.super p{color:#c9c8e0;font-size:19px;margin-bottom:26px}
+.super .glow{position:absolute;inset:auto -10% -40% auto;width:600px;height:600px;background:radial-gradient(circle, rgba(206,130,255,.25), transparent 70%);z-index:1}
+
+/* products — improvement 3: clustered */
+.products{padding:80px 0}
+.products .head{text-align:center;margin-bottom:44px}
+.products .head h2{font-size:clamp(30px,3.6vw,44px);color:var(--navy)}
+.products .head p{color:var(--muted);margin-top:10px}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.pcard{border:2px solid var(--border);border-radius:24px;overflow:hidden;box-shadow:0 4px 0 var(--border);transition:transform .18s}
+.pcard:hover{transform:translateY(-5px)}
+.pcard .top{height:200px;display:grid;place-items:center;padding:22px}
+.pcard.p1 .top{background:#eef9ff}.pcard.p2 .top{background:#f1ffe6}.pcard.p3 .top{background:#fff4e0}
+.pcard .top img{height:100%;object-fit:contain}
+.pcard .body{padding:24px}
+.pcard h3{font-size:22px;color:var(--navy);margin-bottom:8px}
+.pcard p{font-size:15px;color:var(--muted);margin-bottom:16px}
+.pcard a{font-weight:800;color:var(--blue);text-transform:uppercase;letter-spacing:.06em;font-size:14px}
+
+/* closing CTA */
+.closing{background:linear-gradient(180deg,#fff, var(--tint));padding:88px 0 96px;text-align:center}
+.closing h2{font-size:clamp(34px,4.6vw,56px);color:var(--green);margin-bottom:14px}
+.closing p{color:var(--muted);font-size:20px;margin-bottom:28px}
+
+/* footer */
+footer{background:var(--green);color:#fff;padding:64px 0 40px}
+footer .cols{display:grid;grid-template-columns:1.4fr repeat(4,1fr);gap:30px}
+footer .brand-col .fbrand{font-family:var(--display);font-weight:800;font-size:30px;color:#fff}
+footer .brand-col p{color:rgba(255,255,255,.85);font-size:15px;margin-top:10px;max-width:30ch}
+footer h4{font-family:var(--display);color:#fff;font-size:17px;margin-bottom:14px;text-transform:uppercase;letter-spacing:.04em}
+footer ul{list-style:none}
+footer li{margin-bottom:9px}
+footer a{color:rgba(255,255,255,.9);font-weight:600;font-size:15px}
+footer a:hover{color:#fff;text-decoration:underline}
+.foot-bottom{margin-top:40px;padding-top:24px;border-top:2px solid rgba(255,255,255,.25);display:flex;justify-content:space-between;color:rgba(255,255,255,.85);font-size:14px;font-weight:600;flex-wrap:wrap;gap:12px}
+
+@media(max-width:900px){
+  .hero-grid,.lead-feature .wrap,.app .wrap,.super .wrap{grid-template-columns:1fr}
+  .hero-art{order:-1;max-width:420px;margin:0 auto}
+  .stats .wrap{grid-template-columns:1fr 1fr}
+  .cards,.pgrid{grid-template-columns:1fr}
+  footer .cols{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="brand">duolingo</div>
+    <div class="nav-right">
+      <a class="nav-link" href="#">Site language: English</a>
+      <a class="nav-link" href="#">I already have an account</a>
+      <a class="btn btn--blue" href="#" style="padding:11px 22px;font-size:14px">Get started</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">🦉 #1 way to learn</span>
+        <h1>The free, fun, and effective way to <em>learn a language!</em></h1>
+        <p class="lead">Bite-sized lessons backed by science. Loved by hundreds of millions of learners.</p>
+        <div class="hero-cta">
+          <a class="btn btn--lg" href="#">Get started</a>
+          <a class="btn btn--ghost btn--lg" href="#">I already have an account</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="assets/hero-cast.png" alt="Duo the owl and the Duolingo character cast" width="848" height="848">
+      </div>
+    </div>
+  </section>
+
+  <div class="lang-strip">
+    <div class="wrap">
+      <span class="chip"><b>🇪🇸</b> Spanish</span>
+      <span class="chip"><b>🇫🇷</b> French</span>
+      <span class="chip"><b>🇩🇪</b> German</span>
+      <span class="chip"><b>🇯🇵</b> Japanese</span>
+      <span class="chip"><b>🇮🇹</b> Italian</span>
+      <span class="chip"><b>🇰🇷</b> Korean</span>
+      <span class="chip"><b>🇨🇳</b> Chinese</span>
+      <span class="chip">+ 40 more</span>
+    </div>
+  </div>
+
+  <section class="stats">
+    <div class="wrap">
+      <div class="stat"><div class="n">100M+</div><div class="l">Monthly learners</div></div>
+      <div class="stat"><div class="n">40+</div><div class="l">Languages to learn</div></div>
+      <div class="stat"><div class="n">#1</div><div class="l">Education app worldwide</div></div>
+      <div class="stat"><div class="n">7&nbsp;min</div><div class="l">A day builds a habit</div></div>
+    </div>
+  </section>
+
+  <section class="lead-feature">
+    <div class="wrap">
+      <div>
+        <h2>free. fun. effective.</h2>
+        <p>Learning with Duolingo is fun, and research shows that it works! With quick, bite-sized lessons, you'll earn points and unlock new levels while gaining real-world communication skills.</p>
+        <a class="btn" href="#">Start learning</a>
+      </div>
+      <div class="art"><img src="assets/feature-leagues.svg" alt="Characters competing in leagues" width="540" height="540"></div>
+    </div>
+  </section>
+
+  <section class="rail">
+    <div class="wrap">
+      <div class="rail-head"><h2>Why it works</h2></div>
+      <div class="cards">
+        <div class="card c1">
+          <div class="ic">🔬</div>
+          <h3>backed by science</h3>
+          <p>Research-backed methods plus delightful content teach reading, writing, listening and speaking.</p>
+        </div>
+        <div class="card c2">
+          <div class="ic">🔥</div>
+          <h3>stay motivated</h3>
+          <p>Game-like features, fun challenges and reminders from Duo turn learning into a daily habit.</p>
+        </div>
+        <div class="card c3">
+          <div class="ic">🎯</div>
+          <h3>personalized learning</h3>
+          <p>AI plus language science tailor every lesson to just the right level and pace for you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="app">
+    <div class="wrap">
+      <div>
+        <h2>learn anytime, anywhere</h2>
+        <p>Make learning a habit with a few minutes a day: on the bus, in line, or on the couch.</p>
+        <div class="badges">
+          <a class="badge" href="#"><span>🍎</span><span><small>Download on the</small><b>App Store</b></span></a>
+          <a class="badge" href="#"><span>▶</span><span><small>Get it on</small><b>Google Play</b></span></a>
+        </div>
+      </div>
+      <div><img src="assets/app-phone.svg" alt="Duolingo app on a phone" width="640" height="360"></div>
+    </div>
+  </section>
+
+  <section class="super">
+    <div class="glow"></div>
+    <div class="wrap">
+      <div>
+        <img class="mark" src="assets/super-wordmark.svg" alt="Super Duolingo">
+        <h2>Learn faster, ad-free.</h2>
+        <p>Unlock unlimited hearts, personalized practice and no ads with Super Duolingo. Try it free for one week.</p>
+        <a class="btn" href="#">Try 1 week free</a>
+      </div>
+      <div><img src="assets/super-duo.svg" alt="Super Duo" width="360" height="360"></div>
+    </div>
+  </section>
+
+  <section class="products">
+    <div class="wrap">
+      <div class="head">
+        <h2>more from Duolingo</h2>
+        <p>The same delightful, science-based approach, made for tests, classrooms and kids.</p>
+      </div>
+      <div class="pgrid">
+        <div class="pcard p1">
+          <div class="top"><img src="assets/feature-test.svg" alt="Duolingo English Test"></div>
+          <div class="body"><h3>Duolingo English Test</h3><p>A convenient, fast and affordable English test — accepted by thousands of institutions.</p><a href="#">Learn more →</a></div>
+        </div>
+        <div class="pcard p2">
+          <div class="top"><img src="assets/product-schools.svg" alt="Duolingo for Schools"></div>
+          <div class="body"><h3>Duolingo for Schools</h3><p>Free tools that support students as they learn languages, in and out of the classroom.</p><a href="#">Get your class started →</a></div>
+        </div>
+        <div class="pcard p3">
+          <div class="top"><img src="assets/product-abc.svg" alt="Duolingo ABC"></div>
+          <div class="body"><h3>Duolingo ABC</h3><p>Fun phonics and delightful stories help kids ages 3–8 learn to read — 100% free.</p><a href="#">Learn about ABC →</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="wrap">
+      <h2>learn a language with duolingo</h2>
+      <p>Free. Fun. Effective. Join the world's most popular way to learn.</p>
+      <a class="btn btn--lg" href="#">Get started</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div class="brand-col">
+        <div class="fbrand">duolingo</div>
+        <p>The free, fun, and effective way to learn a language.</p>
+      </div>
+      <div><h4>Products</h4><ul><li><a href="#">Duolingo</a></li><li><a href="#">English Test</a></li><li><a href="#">ABC</a></li><li><a href="#">Schools</a></li></ul></div>
+      <div><h4>About</h4><ul><li><a href="#">Courses</a></li><li><a href="#">Mission</a></li><li><a href="#">Careers</a></li><li><a href="#">Press</a></li></ul></div>
+      <div><h4>Apps</h4><ul><li><a href="#">iOS</a></li><li><a href="#">Android</a></li><li><a href="#">Web</a></li></ul></div>
+      <div><h4>Help</h4><ul><li><a href="#">Support</a></li><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li></ul></div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 Duolingo</span><span>Made with 💚 for language learners everywhere</span></div>
+  </div>
+</footer>
+</body>
+</html>

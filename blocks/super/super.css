@@ -1,0 +1,67 @@
+.super {
+  background: var(--navy);
+  color: #fff;
+  padding: 64px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.super .super-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.super .mark {
+  max-width: 340px;
+}
+
+.super h2 {
+  color: #fff;
+  font-size: clamp(30px, 3.6vw, 46px);
+  margin: 14px 0 16px;
+}
+
+.super .super-text p {
+  color: #c9c8e0;
+  font-size: 19px;
+  margin-bottom: 26px;
+}
+
+.super .super-art img, .super .super-art picture {
+  animation: super-bob 4s ease-in-out infinite;
+}
+
+.super .glow {
+  position: absolute;
+  inset: auto -10% -40% auto;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgb(206 130 255 / 25%), transparent 70%);
+  z-index: 1;
+}
+
+@keyframes super-bob {
+  0%, 100% {
+    transform: translateY(0) rotate(-2deg);
+  }
+
+  50% {
+    transform: translateY(-16px) rotate(2deg);
+  }
+}
+
+@media (width <= 900px) {
+  .super .super-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .super .super-art img, .super .super-art picture {
+    animation: none;
+  }
+}

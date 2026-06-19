@@ -1,0 +1,191 @@
+{
+  "provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-06-19T04:09:01.816Z",
+    "waitMs": 4249,
+    "waitMode": "medium",
+    "httpStatus": 200,
+    "finalUrl": "https://www.duolingo.com/",
+    "consentMethod": "selector:#onetrust-reject-all-handler"
+  },
+  "fontFiles": [
+    {
+      "url": "https://d35aaqx5ub95lt.cloudfront.net/vendor/f2331bbfd902cdf8971c4d3184a44283.woff2",
+      "localPath": "assets/fonts/f2331bbfd902cdf8971c4d3184a44283.woff2",
+      "contentType": "binary/octet-stream"
+    },
+    {
+      "url": "https://d35aaqx5ub95lt.cloudfront.net/vendor/3bbe299f41d8289a47d91773fee0cb6a.woff2",
+      "localPath": "assets/fonts/3bbe299f41d8289a47d91773fee0cb6a.woff2",
+      "contentType": "binary/octet-stream"
+    },
+    {
+      "url": "https://d35aaqx5ub95lt.cloudfront.net/vendor/68d22534874c554b0c9ebabea379fc60.woff2",
+      "localPath": "assets/fonts/68d22534874c554b0c9ebabea379fc60.woff2",
+      "contentType": "binary/octet-stream"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2",
+      "localPath": "assets/fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2",
+      "contentType": "font/woff2"
+    }
+  ],
+  "downloadedMedia": [
+    {
+      "src": "https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/56afa7d9803ab5e57d99b4e4e0cd8932.png",
+      "localPath": "assets/media/0-56afa7d9803ab5e57d99b4e4e0cd8932.png",
+      "alt": null,
+      "rect": {
+        "x": 295,
+        "y": 233,
+        "w": 424,
+        "h": 424
+      },
+      "naturalWidth": 424,
+      "naturalHeight": 424
+    },
+    {
+      "src": "https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/23ab11cb1e1a9aff54facdf57833373d.svg",
+      "localPath": "assets/media/1-23ab11cb1e1a9aff54facdf57833373d.svg",
+      "alt": null,
+      "rect": {
+        "x": 800,
+        "y": 996,
+        "w": 530,
+        "h": 530
+      },
+      "naturalWidth": 150,
+      "naturalHeight": 150
+    },
+    {
+      "src": "https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/08ec8d0260c55c054e1b97bcbc96ea0f.svg",
+      "localPath": "assets/media/2-08ec8d0260c55c054e1b97bcbc96ea0f.svg",
+      "alt": null,
+      "rect": {
+        "x": 110,
+        "y": 1526,
+        "w": 530,
+        "h": 530
+      },
+      "naturalWidth": 150,
+      "naturalHeight": 150
+    },
+    {
+      "src": "https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/833a22b2834050d139f266a29899bb00.svg",
+      "localPath": "assets/media/3-833a22b2834050d139f266a29899bb00.svg",
+      "alt": null,
+      "rect": {
+        "x": 800,
+        "y": 2056,
+        "w": 530,
+        "h": 530
+      },
+      "naturalWidth": 150,
+      "naturalHeight": 150
+    },
+    {
+      "src": "https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/9d3c2c99dd19996319a372f79b2ed3c1.svg",
+      "localPath": "assets/media/4-9d3c2c99dd19996319a372f79b2ed3c1.svg",
+      "alt": null,
+      "rect": {
+        "x": 80,
+        "y": 2586,
+        "w": 530,
+        "h": 530
+      },
+      "naturalWidth": 150,
+      "naturalHeight": 150
+    },
+    {
+      "src": "https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/229d5f88cc9df2eb0b68f39466500911.svg",
+      "localPath": "assets/media/5-229d5f88cc9df2eb0b68f39466500911.svg",
+      "alt": null,
+      "rect": {
+        "x": -220,
+        "y": 3283,
+        "w": 2000,
+        "h": 1122
+      },
+      "naturalWidth": 267,
+      "naturalHeight": 150
+    },
+    {
+      "src": "https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/43ea369cfa70f093c3edad4d75ea6009.svg",
+      "localPath": "assets/media/6-43ea369cfa70f093c3edad4d75ea6009.svg",
+      "alt": null,
+      "rect": {
+        "x": 133,
+        "y": 4686,
+        "w": 530,
+        "h": 530
+      },
+      "naturalWidth": 150,
+      "naturalHeight": 150
+    },
+    {
+      "src": "https://d35aaqx5ub95lt.cloudfront.net/images/splash/3a733db6d6873e1a915f70cf72554ce3.svg",
+      "localPath": "assets/media/7-3a733db6d6873e1a915f70cf72554ce3.svg",
+      "alt": "Super Duolingo",
+      "rect": {
+        "x": 703,
+        "y": 4856,
+        "w": 605,
+        "h": 88
+      },
+      "naturalWidth": 606,
+      "naturalHeight": 88
+    },
+    {
+      "src": "https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/a50e95b2b4e8c91d610b9c7318389c1e.svg",
+      "localPath": "assets/media/8-a50e95b2b4e8c91d610b9c7318389c1e.svg",
+      "alt": null,
+      "rect": {
+        "x": 829,
+        "y": 5497,
+        "w": 530,
+        "h": 530
+      },
+      "naturalWidth": 200,
+      "naturalHeight": 200
+    },
+    {
+      "src": "https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/9f63957bf97d10730813cbb715a0baa0.svg",
+      "localPath": "assets/media/9-9f63957bf97d10730813cbb715a0baa0.svg",
+      "alt": null,
+      "rect": {
+        "x": 99,
+        "y": 6027,
+        "w": 530,
+        "h": 530
+      },
+      "naturalWidth": 150,
+      "naturalHeight": 150
+    },
+    {
+      "src": "https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/268877aef1bcca8a53f24b746483346c.svg",
+      "localPath": "assets/media/10-268877aef1bcca8a53f24b746483346c.svg",
+      "alt": null,
+      "rect": {
+        "x": 800,
+        "y": 6557,
+        "w": 530,
+        "h": 530
+      },
+      "naturalWidth": 150,
+      "naturalHeight": 150
+    },
+    {
+      "src": "https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/890eb76de9a395b182c1c28322721405.svg",
+      "localPath": "assets/media/11-890eb76de9a395b182c1c28322721405.svg",
+      "alt": null,
+      "rect": {
+        "x": 0,
+        "y": 7087,
+        "w": 1440,
+        "h": 949
+      },
+      "naturalWidth": 272,
+      "naturalHeight": 150
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "_provenance": { "writtenBy": "stardust:direct (uplift Phase 4)", "writtenAt": "2026-06-19", "variant": "C" },
+  "variant": "C",
+  "role": "Signature-gesture extension, cinematic (visionary pitch)",
+  "inherits": "DESIGN.json",
+  "whatIf": "What if the pushable button and Duo became a kinetic system — the page springs, rises, and counts up like a lesson you're leveling through?",
+  "deltas": {
+    "ia": "identical to A; the bet is motion, not layout",
+    "gesture": "pushable buttons depress on press everywhere; mascot/illustration clusters parallax",
+    "stats": "gamification numerals (learners / streak / XP / lessons) count up on scroll into view"
+  },
+  "extensions": {
+    "motion": {
+      "register": "arrival",
+      "registerSource": "auto",
+      "easings": { "entrance": "cubic-bezier(0.34, 1.56, 0.64, 1)", "transition": "cubic-bezier(0.42, 0, 0, 1)" },
+      "durations": { "enter": 700, "stagger": 90 },
+      "parallax": { "translate": 28, "fade": 0.5, "rangeStart": 0, "range": 80 },
+      "moves": [
+        "hero text enterUp stagger (eyebrow -> title -> body -> CTA)",
+        "illustration clusters parallax on scroll (translateY)",
+        "per-section rising-plate entrances, fade + translateY(40px) with peer stagger",
+        "count-up numerals on the stat band ([data-countup])",
+        "depress-on-press pushable buttons (translateY + shadow collapse)",
+        "green footer wordmark wipe-up via clip-path on scroll progress"
+      ],
+      "reducedMotion": "all motion neutralized under prefers-reduced-motion: reduce; final states shown statically"
+    }
+  },
+  "motion": "cinematic",
+  "sectionPadding": { "desktop": 64 }
+}

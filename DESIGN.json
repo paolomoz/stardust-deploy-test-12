@@ -1,0 +1,48 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:direct (uplift Phase 4)",
+    "writtenAt": "2026-06-19",
+    "mode": "A (brand-faithful, pinned to captured tokens)"
+  },
+  "colors": {
+    "background": "#FFFFFF",
+    "surface": "#F7F7F7",
+    "surfaceTint": "#D7FFB8",
+    "text": "#3C3C3C",
+    "textStrong": "#4B4B4B",
+    "textMuted": "#777777",
+    "textHint": "#AFAFAF",
+    "border": "#E5E5E5",
+    "primary": "#58CC02",
+    "primaryShadow": "#58A700",
+    "primaryBright": "#89E219",
+    "secondary": "#1CB0F6",
+    "secondaryShadow": "#0096DC",
+    "accentOrange": "#FF9600",
+    "accentRed": "#FF4B4B",
+    "accentYellow": "#FFC800",
+    "accentPurple": "#CE82FF",
+    "darkNavy": "#100F3E",
+    "darkNavyAlt": "#042C60"
+  },
+  "typography": {
+    "display": "feather, 'Baloo 2', system-ui",
+    "displayWeight": 800,
+    "body": "din-round, 'Nunito', system-ui, sans-serif"
+  },
+  "rounded": "12px",
+  "spacing": "generous; section padding capped at 64px desktop (density floor)",
+  "components": ["pushable-button", "feature-row", "stat-band", "product-card", "language-chip", "green-footer"],
+  "extensions": {
+    "componentStyle": {
+      "button": "pushable 3D — fill + 0 4px 0 darker-shade bottom border, translateY(2px) + shrink shadow on :active",
+      "card": "16px radius, 2px border, 0 2px 0 border-shade depth",
+      "chip": "pill language/flag chip"
+    },
+    "motifs": ["mascot characters", "floating illustration clusters", "uppercase pushable button labels", "full-bleed green footer", "stat numerals"],
+    "voice": {
+      "register": "playful, warm, lowercase, plain-spoken",
+      "ctaLabels": ["GET STARTED", "I ALREADY HAVE AN ACCOUNT", "TRY SUPER FREE"]
+    }
+  }
+}

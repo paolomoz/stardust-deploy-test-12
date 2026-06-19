@@ -1,0 +1,3415 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-06-19T04:09:01.816Z",
+    "waitMs": 4249,
+    "waitMode": "medium",
+    "httpStatus": 200,
+    "finalUrl": "https://www.duolingo.com/",
+    "consentMethod": "selector:#onetrust-reject-all-handler"
+  },
+  "url": "https://www.duolingo.com/",
+  "slug": "home",
+  "meta": {
+    "title": "Duolingo - The world’s most popular way to learn",
+    "description": "Free, fun, and effective courses in languages and more. Learn with quick, science-based lessons personalized to you.",
+    "og": {
+      "title": "Learn a language for free",
+      "description": null,
+      "image": "https://www.duolingo.com/images/facebook/duo-08523a2.jpg",
+      "siteName": "Duolingo"
+    },
+    "themeColor": null,
+    "appleTouchIcon": "https://d35aaqx5ub95lt.cloudfront.net/images/duolingo-touch-icon2.png",
+    "favicon": "https://d35aaqx5ub95lt.cloudfront.net/favicon.ico",
+    "lang": "en"
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "The free, fun, and effective way to learn a language!",
+      "fontFamily": "duolingo-sans, sans-serif",
+      "fontWeight": "700",
+      "fontSize": "32px",
+      "lineHeight": "normal",
+      "letterSpacing": "normal",
+      "color": "rgb(75, 75, 75)",
+      "textTransform": "none"
+    },
+    {
+      "level": 2,
+      "text": "free. fun. effective.",
+      "fontFamily": "feather, sans-serif",
+      "fontWeight": "700",
+      "fontSize": "48px",
+      "lineHeight": "normal",
+      "letterSpacing": "normal",
+      "color": "rgb(88, 204, 2)",
+      "textTransform": "none"
+    },
+    {
+      "level": 2,
+      "text": "backed by science",
+      "fontFamily": "feather, sans-serif",
+      "fontWeight": "700",
+      "fontSize": "48px",
+      "lineHeight": "normal",
+      "letterSpacing": "normal",
+      "color": "rgb(88, 204, 2)",
+      "textTransform": "none"
+    },
+    {
+      "level": 2,
+      "text": "stay motivated",
+      "fontFamily": "feather, sans-serif",
+      "fontWeight": "700",
+      "fontSize": "48px",
+      "lineHeight": "normal",
+      "letterSpacing": "normal",
+      "color": "rgb(88, 204, 2)",
+      "textTransform": "none"
+    },
+    {
+      "level": 2,
+      "text": "personalized learning",
+      "fontFamily": "feather, sans-serif",
+      "fontWeight": "700",
+      "fontSize": "48px",
+      "lineHeight": "normal",
+      "letterSpacing": "normal",
+      "color": "rgb(88, 204, 2)",
+      "textTransform": "none"
+    },
+    {
+      "level": 1,
+      "text": "learn anytime, anywhere",
+      "fontFamily": "feather, sans-serif",
+      "fontWeight": "700",
+      "fontSize": "64px",
+      "lineHeight": "normal",
+      "letterSpacing": "-1.28px",
+      "color": "rgb(4, 44, 96)",
+      "textTransform": "none"
+    },
+    {
+      "level": 2,
+      "text": "duolingo english test",
+      "fontFamily": "feather, sans-serif",
+      "fontWeight": "700",
+      "fontSize": "48px",
+      "lineHeight": "normal",
+      "letterSpacing": "normal",
+      "color": "rgb(88, 204, 2)",
+      "textTransform": "none"
+    },
+    {
+      "level": 2,
+      "text": "duolingo for schools",
+      "fontFamily": "feather, sans-serif",
+      "fontWeight": "700",
+      "fontSize": "48px",
+      "lineHeight": "normal",
+      "letterSpacing": "normal",
+      "color": "rgb(88, 204, 2)",
+      "textTransform": "none"
+    },
+    {
+      "level": 2,
+      "text": "duolingo abc",
+      "fontFamily": "feather, sans-serif",
+      "fontWeight": "700",
+      "fontSize": "48px",
+      "lineHeight": "normal",
+      "letterSpacing": "normal",
+      "color": "rgb(88, 204, 2)",
+      "textTransform": "none"
+    },
+    {
+      "level": 1,
+      "text": "learn a language with duolingo",
+      "fontFamily": "feather, sans-serif",
+      "fontWeight": "700",
+      "fontSize": "64px",
+      "lineHeight": "normal",
+      "letterSpacing": "-1.28px",
+      "color": "rgb(88, 204, 2)",
+      "textTransform": "none"
+    }
+  ],
+  "landmarks": [
+    {
+      "tag": "header",
+      "role": null,
+      "id": null,
+      "class": "_39290",
+      "childCount": 3,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 900
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(60, 60, 60)",
+      "paddingBlock": "70px 0px",
+      "paddingInline": "0px 0px",
+      "gap": "normal",
+      "borderRadius": "0px",
+      "innerText": "SITE LANGUAGE: ENGLISH The free, fun, and effective way to learn a language! GET STARTED I ALREADY HAVE AN ACCOUNT ENGLISH SPANISH FRENCH GERMAN ITALIAN PORTUGUESE MATH CHESS DUTCH JAPANESE ARABIC CZECH WELSH DANISH GREEK ESPERANTO FINNISH IRISH SCOTTISH GAELIC HEBREW HINDI HAITIAN CREOLE HUNGARIAN HIGH VALYRIAN HAWAIIAN INDONESIAN KOREAN LATIN NORWEGIAN (BOKMÅL) NAVAJO POLISH ROMANIAN RUSSIAN SWEDISH SWAHILI KLINGON TURKISH UKRAINIAN VIETNAMESE YIDDISH CHINESE ZULU",
+      "body": [],
+      "lists": [
+        {
+          "ordered": false,
+          "items": [
+            "ENGLISH",
+            "SPANISH",
+            "FRENCH",
+            "GERMAN",
+            "ITALIAN",
+            "PORTUGUESE",
+            "MATH",
+            "CHESS",
+            "DUTCH",
+            "JAPANESE",
+            "ARABIC",
+            "CZECH",
+            "WELSH",
+            "DANISH",
+            "GREEK"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "nav",
+      "role": null,
+      "id": null,
+      "class": "lZqWH",
+      "childCount": 2,
+      "rect": {
+        "x": 226,
+        "y": 0,
+        "w": 988,
+        "h": 70
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(60, 60, 60)",
+      "paddingBlock": "0px 0px",
+      "paddingInline": "0px 0px",
+      "gap": "normal",
+      "borderRadius": "0px",
+      "innerText": "SITE LANGUAGE: ENGLISH",
+      "body": [],
+      "lists": []
+    },
+    {
+      "tag": "nav",
+      "role": null,
+      "id": null,
+      "class": "zU2RQ _3isJn",
+      "childCount": 3,
+      "rect": {
+        "x": 175,
+        "y": 823,
+        "w": 1090,
+        "h": 74
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(60, 60, 60)",
+      "paddingBlock": "0px 0px",
+      "paddingInline": "0px 0px",
+      "gap": "30px",
+      "borderRadius": "0px",
+      "innerText": "ENGLISH SPANISH FRENCH GERMAN ITALIAN PORTUGUESE MATH CHESS DUTCH JAPANESE ARABIC CZECH WELSH DANISH GREEK ESPERANTO FINNISH IRISH SCOTTISH GAELIC HEBREW HINDI HAITIAN CREOLE HUNGARIAN HIGH VALYRIAN HAWAIIAN INDONESIAN KOREAN LATIN NORWEGIAN (BOKMÅL) NAVAJO POLISH ROMANIAN RUSSIAN SWEDISH SWAHILI KLINGON TURKISH UKRAINIAN VIETNAMESE YIDDISH CHINESE ZULU",
+      "body": [],
+      "lists": [
+        {
+          "ordered": false,
+          "items": [
+            "ENGLISH",
+            "SPANISH",
+            "FRENCH",
+            "GERMAN",
+            "ITALIAN",
+            "PORTUGUESE",
+            "MATH",
+            "CHESS",
+            "DUTCH",
+            "JAPANESE",
+            "ARABIC",
+            "CZECH",
+            "WELSH",
+            "DANISH",
+            "GREEK"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "main",
+      "role": null,
+      "id": null,
+      "class": null,
+      "childCount": 4,
+      "rect": {
+        "x": 0,
+        "y": 900,
+        "w": 1440,
+        "h": 7136
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(60, 60, 60)",
+      "paddingBlock": "0px 0px",
+      "paddingInline": "0px 0px",
+      "gap": "normal",
+      "borderRadius": "0px",
+      "innerText": "free. fun. effective. Learning with Duolingo is fun, and research shows that it works! With quick, bite-sized lessons, you’ll earn points and unlock new levels while gaining real-world communication skills. backed by science We use a combination of research-backed teaching methods and delightful content to create courses that effectively teach reading, writing, listening, and speaking skills! stay motivated We make it easy to form a habit of language learning with game-like features, fun challenges, and reminders from our friendly mascot, Duo the owl. personalized learning Combining the best of AI and language science, lessons are tailored to help you learn at just the right level and pace. learn anytime, anywhere Download on the App Store Get it on Google Play TRY 1 WEEK FREE duolingo english test Our convenient, fast, and affordable English test integrates the latest assessment science and AI — empowering anyone to accurately test their English where and when they’re at their best. CERTIFY YOUR ENGLISH duolingo for schools Teachers, we’re here to help you! Our free tools support your students as they learn languages through the Duolingo app, both in and out of the classroom. GET YOUR CLASS STARTED duolingo abc From language to literacy! With fun phonics lessons and delightful stories, Duolingo ABC helps kids ages 3–8 learn to read and write — 100% free. LEARN MORE ABOUT ABC learn a language with duolingo GET STARTED",
+      "body": [],
+      "lists": []
+    },
+    {
+      "tag": "section",
+      "role": null,
+      "id": null,
+      "class": "uU0-M",
+      "childCount": 4,
+      "rect": {
+        "x": 0,
+        "y": 900,
+        "w": 1440,
+        "h": 2312
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(60, 60, 60)",
+      "paddingBlock": "96px 96px",
+      "paddingInline": "0px 0px",
+      "gap": "0px",
+      "borderRadius": "0px",
+      "innerText": "free. fun. effective. Learning with Duolingo is fun, and research shows that it works! With quick, bite-sized lessons, you’ll earn points and unlock new levels while gaining real-world communication skills. backed by science We use a combination of research-backed teaching methods and delightful content to create courses that effectively teach reading, writing, listening, and speaking skills! stay motivated We make it easy to form a habit of language learning with game-like features, fun challenges, and reminders from our friendly mascot, Duo the owl. personalized learning Combining the best of AI and language science, lessons are tailored to help you learn at just the right level and pace.",
+      "body": [],
+      "lists": []
+    },
+    {
+      "tag": "section",
+      "role": null,
+      "id": null,
+      "class": "_3k9io",
+      "childCount": 2,
+      "rect": {
+        "x": 226,
+        "y": 996,
+        "w": 988,
+        "h": 530
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(60, 60, 60)",
+      "paddingBlock": "0px 0px",
+      "paddingInline": "0px 0px",
+      "gap": "101px",
+      "borderRadius": "0px",
+      "innerText": "free. fun. effective. Learning with Duolingo is fun, and research shows that it works! With quick, bite-sized lessons, you’ll earn points and unlock new levels while gaining real-world communication skills.",
+      "body": [
+        "Learning with Duolingo is fun, and research shows that it works! With quick, bite-sized lessons, you’ll earn points and unlock new levels while gaining real-world communication skills."
+      ],
+      "lists": []
+    },
+    {
+      "tag": "section",
+      "role": null,
+      "id": null,
+      "class": "_36L7f _3k9io",
+      "childCount": 2,
+      "rect": {
+        "x": 226,
+        "y": 1526,
+        "w": 988,
+        "h": 530
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(60, 60, 60)",
+      "paddingBlock": "0px 0px",
+      "paddingInline": "0px 0px",
+      "gap": "101px",
+      "borderRadius": "0px",
+      "innerText": "backed by science We use a combination of research-backed teaching methods and delightful content to create courses that effectively teach reading, writing, listening, and speaking skills!",
+      "body": [
+        "We use a combination of research-backed teaching methods and delightful content to create courses that effectively teach reading, writing, listening, and speaking skills!"
+      ],
+      "lists": []
+    },
+    {
+      "tag": "section",
+      "role": null,
+      "id": null,
+      "class": "_3k9io",
+      "childCount": 2,
+      "rect": {
+        "x": 226,
+        "y": 2056,
+        "w": 988,
+        "h": 530
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(60, 60, 60)",
+      "paddingBlock": "0px 0px",
+      "paddingInline": "0px 0px",
+      "gap": "101px",
+      "borderRadius": "0px",
+      "innerText": "stay motivated We make it easy to form a habit of language learning with game-like features, fun challenges, and reminders from our friendly mascot, Duo the owl.",
+      "body": [
+        "We make it easy to form a habit of language learning with game-like features, fun challenges, and reminders from our friendly mascot, Duo the owl."
+      ],
+      "lists": []
+    },
+    {
+      "tag": "section",
+      "role": null,
+      "id": null,
+      "class": "_36L7f _3k9io",
+      "childCount": 2,
+      "rect": {
+        "x": 226,
+        "y": 2586,
+        "w": 988,
+        "h": 530
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(60, 60, 60)",
+      "paddingBlock": "0px 0px",
+      "paddingInline": "0px 0px",
+      "gap": "101px",
+      "borderRadius": "0px",
+      "innerText": "personalized learning Combining the best of AI and language science, lessons are tailored to help you learn at just the right level and pace.",
+      "body": [
+        "Combining the best of AI and language science, lessons are tailored to help you learn at just the right level and pace."
+      ],
+      "lists": []
+    },
+    {
+      "tag": "section",
+      "role": null,
+      "id": null,
+      "class": "Gijhh",
+      "childCount": 1,
+      "rect": {
+        "x": 0,
+        "y": 3212,
+        "w": 1440,
+        "h": 1289
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(60, 60, 60)",
+      "paddingBlock": "0px 0px",
+      "paddingInline": "0px 0px",
+      "gap": "normal",
+      "borderRadius": "0px",
+      "innerText": "learn anytime, anywhere Download on the App Store Get it on Google Play",
+      "body": [],
+      "lists": []
+    },
+    {
+      "tag": "section",
+      "role": null,
+      "id": null,
+      "class": "LlPOq",
+      "childCount": 1,
+      "rect": {
+        "x": 0,
+        "y": 4501,
+        "w": 1440,
+        "h": 900
+      },
+      "bg": "rgb(16, 15, 62)",
+      "color": "rgb(60, 60, 60)",
+      "paddingBlock": "0px 0px",
+      "paddingInline": "0px 0px",
+      "gap": "normal",
+      "borderRadius": "0px",
+      "innerText": "TRY 1 WEEK FREE",
+      "body": [],
+      "lists": []
+    },
+    {
+      "tag": "section",
+      "role": null,
+      "id": null,
+      "class": "_3dG3I",
+      "childCount": 3,
+      "rect": {
+        "x": 0,
+        "y": 5401,
+        "w": 1440,
+        "h": 1782
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(60, 60, 60)",
+      "paddingBlock": "96px 96px",
+      "paddingInline": "0px 0px",
+      "gap": "0px",
+      "borderRadius": "0px",
+      "innerText": "duolingo english test Our convenient, fast, and affordable English test integrates the latest assessment science and AI — empowering anyone to accurately test their English where and when they’re at their best. CERTIFY YOUR ENGLISH duolingo for schools Teachers, we’re here to help you! Our free tools support your students as they learn languages through the Duolingo app, both in and out of the classroom. GET YOUR CLASS STARTED duolingo abc From language to literacy! With fun phonics lessons and delightful stories, Duolingo ABC helps kids ages 3–8 learn to read and write — 100% free. LEARN MORE ABOUT ABC",
+      "body": [],
+      "lists": []
+    },
+    {
+      "tag": "section",
+      "role": null,
+      "id": null,
+      "class": "_3k9io",
+      "childCount": 2,
+      "rect": {
+        "x": 226,
+        "y": 5497,
+        "w": 988,
+        "h": 530
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(60, 60, 60)",
+      "paddingBlock": "0px 0px",
+      "paddingInline": "0px 0px",
+      "gap": "101px",
+      "borderRadius": "0px",
+      "innerText": "duolingo english test Our convenient, fast, and affordable English test integrates the latest assessment science and AI — empowering anyone to accurately test their English where and when they’re at their best. CERTIFY YOUR ENGLISH",
+      "body": [
+        "Our convenient, fast, and affordable English test integrates the latest assessment science and AI — empowering anyone to accurately test their English where and when they’re at their best."
+      ],
+      "lists": []
+    },
+    {
+      "tag": "section",
+      "role": null,
+      "id": null,
+      "class": "_36L7f _3k9io",
+      "childCount": 2,
+      "rect": {
+        "x": 226,
+        "y": 6027,
+        "w": 988,
+        "h": 530
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(60, 60, 60)",
+      "paddingBlock": "0px 0px",
+      "paddingInline": "0px 0px",
+      "gap": "101px",
+      "borderRadius": "0px",
+      "innerText": "duolingo for schools Teachers, we’re here to help you! Our free tools support your students as they learn languages through the Duolingo app, both in and out of the classroom. GET YOUR CLASS STARTED",
+      "body": [
+        "Teachers, we’re here to help you! Our free tools support your students as they learn languages through the Duolingo app, both in and out of the classroom."
+      ],
+      "lists": []
+    },
+    {
+      "tag": "section",
+      "role": null,
+      "id": null,
+      "class": "_3k9io",
+      "childCount": 2,
+      "rect": {
+        "x": 226,
+        "y": 6557,
+        "w": 988,
+        "h": 530
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(60, 60, 60)",
+      "paddingBlock": "0px 0px",
+      "paddingInline": "0px 0px",
+      "gap": "101px",
+      "borderRadius": "0px",
+      "innerText": "duolingo abc From language to literacy! With fun phonics lessons and delightful stories, Duolingo ABC helps kids ages 3–8 learn to read and write — 100% free. LEARN MORE ABOUT ABC",
+      "body": [
+        "From language to literacy! With fun phonics lessons and delightful stories, Duolingo ABC helps kids ages 3–8 learn to read and write — 100% free."
+      ],
+      "lists": []
+    },
+    {
+      "tag": "section",
+      "role": null,
+      "id": null,
+      "class": "F71XF",
+      "childCount": 3,
+      "rect": {
+        "x": 0,
+        "y": 7183,
+        "w": 1440,
+        "h": 853
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(60, 60, 60)",
+      "paddingBlock": "0px 0px",
+      "paddingInline": "0px 0px",
+      "gap": "normal",
+      "borderRadius": "0px",
+      "innerText": "learn a language with duolingo GET STARTED",
+      "body": [],
+      "lists": []
+    },
+    {
+      "tag": "footer",
+      "role": null,
+      "id": null,
+      "class": "_1nNuk",
+      "childCount": 3,
+      "rect": {
+        "x": 0,
+        "y": 8036,
+        "w": 1440,
+        "h": 791
+      },
+      "bg": "rgb(88, 204, 2)",
+      "color": "rgb(60, 60, 60)",
+      "paddingBlock": "0px 0px",
+      "paddingInline": "0px 0px",
+      "gap": "normal",
+      "borderRadius": "0px",
+      "innerText": "About us Courses Mission Approach Efficacy Duolingo Handbook Research Careers Brand guidelines Store Press Investors Contact us Products Duolingo Duolingo for Schools Duolingo English Test Podcast Duolingo for Business Super Duolingo Gift Super Duolingo Duolingo Max Apps Duolingo for Android Duolingo for iOS Help and support Duolingo FAQs Schools FAQs Duolingo English Test FAQs Status Privacy and terms Community guidelines Terms Privacy Do Not Sell or Share My Personal Information Social Blog Instagram TikTok Twitter YouTube LinkedIn Site language: العربيةবাংলাČeštinaDeutschΕλληνικάEnglishEspañolFrançaisहिंदीMagyarBahasa IndonesiaItaliano日本語한국어NederlandsPolskiPortuguêsRomânăРусскийsvenskaதமிழ்తెలుగుภาษาไทยTagalogTürkçeУкраїнськоюTiếng Việt中文",
+      "body": [],
+      "lists": [
+        {
+          "ordered": false,
+          "items": [
+            "Courses",
+            "Mission",
+            "Approach",
+            "Efficacy",
+            "Duolingo Handbook",
+            "Research",
+            "Careers",
+            "Brand guidelines",
+            "Store",
+            "Press",
+            "Investors",
+            "Contact us"
+          ]
+        },
+        {
+          "ordered": false,
+          "items": [
+            "Duolingo",
+            "Duolingo for Schools",
+            "Duolingo English Test",
+            "Podcast",
+            "Duolingo for Business",
+            "Super Duolingo",
+            "Gift Super Duolingo",
+            "Duolingo Max"
+          ]
+        },
+        {
+          "ordered": false,
+          "items": [
+            "Duolingo for Android",
+            "Duolingo for iOS"
+          ]
+        },
+        {
+          "ordered": false,
+          "items": [
+            "Duolingo FAQs",
+            "Schools FAQs",
+            "Duolingo English Test FAQs",
+            "Status"
+          ]
+        },
+        {
+          "ordered": false,
+          "items": [
+            "Community guidelines",
+            "Terms",
+            "Privacy",
+            "Do Not Sell or Share My Personal Information"
+          ]
+        },
+        {
+          "ordered": false,
+          "items": [
+            "Blog",
+            "Instagram",
+            "TikTok",
+            "Twitter",
+            "YouTube",
+            "LinkedIn"
+          ]
+        },
+        {
+          "ordered": false,
+          "items": [
+            "العربية",
+            "বাংলা",
+            "Čeština",
+            "Deutsch",
+            "Ελληνικά",
+            "English",
+            "Español",
+            "Français",
+            "हिंदी",
+            "Magyar",
+            "Bahasa Indonesia",
+            "Italiano",
+            "日本語",
+            "한국어",
+            "Nederlands"
+          ]
+        }
+      ]
+    }
+  ],
+  "ctas": [
+    {
+      "label": "SITE LANGUAGE: ENGLISH",
+      "href": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(175, 175, 175)",
+      "fontFamily": "duolingo-sans, sans-serif",
+      "fontWeight": "700",
+      "fontSize": "15px",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "boxShadow": "none"
+    },
+    {
+      "label": "I ALREADY HAVE AN ACCOUNT",
+      "href": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(28, 176, 246)",
+      "fontFamily": "duolingo-sans, sans-serif",
+      "fontWeight": "700",
+      "fontSize": "15px",
+      "borderRadius": "12px",
+      "padding": "0px 16px",
+      "boxShadow": "none"
+    },
+    {
+      "label": "TRY 1 WEEK FREE",
+      "href": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 4, 55)",
+      "fontFamily": "duolingo-sans, sans-serif",
+      "fontWeight": "700",
+      "fontSize": "15px",
+      "borderRadius": "12px",
+      "padding": "0px 16px",
+      "boxShadow": "none"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://www.duolingo.com/",
+      "internal": true,
+      "label": ""
+    },
+    {
+      "href": "https://www.duolingo.com/register",
+      "internal": true,
+      "label": "GET STARTED"
+    },
+    {
+      "href": "https://www.duolingo.com/course/en/en/Learn-English",
+      "internal": true,
+      "label": "ENGLISH"
+    },
+    {
+      "href": "https://www.duolingo.com/course/es/en/Learn-Spanish",
+      "internal": true,
+      "label": "SPANISH"
+    },
+    {
+      "href": "https://www.duolingo.com/course/fr/en/Learn-French",
+      "internal": true,
+      "label": "FRENCH"
+    },
+    {
+      "href": "https://www.duolingo.com/course/de/en/Learn-German",
+      "internal": true,
+      "label": "GERMAN"
+    },
+    {
+      "href": "https://www.duolingo.com/course/it/en/Learn-Italian",
+      "internal": true,
+      "label": "ITALIAN"
+    },
+    {
+      "href": "https://www.duolingo.com/course/pt/en/Learn-Portuguese",
+      "internal": true,
+      "label": "PORTUGUESE"
+    },
+    {
+      "href": "https://www.duolingo.com/course/math/Learn-Math",
+      "internal": true,
+      "label": "MATH"
+    },
+    {
+      "href": "https://www.duolingo.com/chess",
+      "internal": true,
+      "label": "CHESS"
+    },
+    {
+      "href": "https://www.duolingo.com/course/nl-NL/en/Learn-Dutch",
+      "internal": true,
+      "label": "DUTCH"
+    },
+    {
+      "href": "https://www.duolingo.com/course/ja/en/Learn-Japanese",
+      "internal": true,
+      "label": "JAPANESE"
+    },
+    {
+      "href": "https://www.duolingo.com/course/ar/en/Learn-Arabic",
+      "internal": true,
+      "label": "ARABIC"
+    },
+    {
+      "href": "https://www.duolingo.com/course/cs/en/Learn-Czech",
+      "internal": true,
+      "label": "CZECH"
+    },
+    {
+      "href": "https://www.duolingo.com/course/cy/en/Learn-Welsh",
+      "internal": true,
+      "label": "WELSH"
+    },
+    {
+      "href": "https://www.duolingo.com/course/da/en/Learn-Danish",
+      "internal": true,
+      "label": "DANISH"
+    },
+    {
+      "href": "https://www.duolingo.com/course/el/en/Learn-Greek",
+      "internal": true,
+      "label": "GREEK"
+    },
+    {
+      "href": "https://www.duolingo.com/course/eo/en/Learn-Esperanto",
+      "internal": true,
+      "label": "ESPERANTO"
+    },
+    {
+      "href": "https://www.duolingo.com/course/fi/en/Learn-Finnish",
+      "internal": true,
+      "label": "FINNISH"
+    },
+    {
+      "href": "https://www.duolingo.com/course/ga/en/Learn-Irish",
+      "internal": true,
+      "label": "IRISH"
+    },
+    {
+      "href": "https://www.duolingo.com/course/gd/en/Learn-Scottish%20Gaelic",
+      "internal": true,
+      "label": "SCOTTISH GAELIC"
+    },
+    {
+      "href": "https://www.duolingo.com/course/he/en/Learn-Hebrew",
+      "internal": true,
+      "label": "HEBREW"
+    },
+    {
+      "href": "https://www.duolingo.com/course/hi/en/Learn-Hindi",
+      "internal": true,
+      "label": "HINDI"
+    },
+    {
+      "href": "https://www.duolingo.com/course/ht/en/Learn-Haitian%20Creole",
+      "internal": true,
+      "label": "HAITIAN CREOLE"
+    },
+    {
+      "href": "https://www.duolingo.com/course/hu/en/Learn-Hungarian",
+      "internal": true,
+      "label": "HUNGARIAN"
+    },
+    {
+      "href": "https://www.duolingo.com/course/hv/en/Learn-High%20Valyrian",
+      "internal": true,
+      "label": "HIGH VALYRIAN"
+    },
+    {
+      "href": "https://www.duolingo.com/course/hw/en/Learn-Hawaiian",
+      "internal": true,
+      "label": "HAWAIIAN"
+    },
+    {
+      "href": "https://www.duolingo.com/course/id/en/Learn-Indonesian",
+      "internal": true,
+      "label": "INDONESIAN"
+    },
+    {
+      "href": "https://www.duolingo.com/course/ko/en/Learn-Korean",
+      "internal": true,
+      "label": "KOREAN"
+    },
+    {
+      "href": "https://www.duolingo.com/course/la/en/Learn-Latin",
+      "internal": true,
+      "label": "LATIN"
+    },
+    {
+      "href": "https://www.duolingo.com/course/no-BO/en/Learn-Norwegian%20Bokm%C3%A5l",
+      "internal": true,
+      "label": "NORWEGIAN (BOKMÅL)"
+    },
+    {
+      "href": "https://www.duolingo.com/course/nv/en/Learn-Navajo",
+      "internal": true,
+      "label": "NAVAJO"
+    },
+    {
+      "href": "https://www.duolingo.com/course/pl/en/Learn-Polish",
+      "internal": true,
+      "label": "POLISH"
+    },
+    {
+      "href": "https://www.duolingo.com/course/ro/en/Learn-Romanian",
+      "internal": true,
+      "label": "ROMANIAN"
+    },
+    {
+      "href": "https://www.duolingo.com/course/ru/en/Learn-Russian",
+      "internal": true,
+      "label": "RUSSIAN"
+    },
+    {
+      "href": "https://www.duolingo.com/course/sv/en/Learn-Swedish",
+      "internal": true,
+      "label": "SWEDISH"
+    },
+    {
+      "href": "https://www.duolingo.com/course/sw/en/Learn-Swahili",
+      "internal": true,
+      "label": "SWAHILI"
+    },
+    {
+      "href": "https://www.duolingo.com/course/tlh/en/Learn-Klingon",
+      "internal": true,
+      "label": "KLINGON"
+    },
+    {
+      "href": "https://www.duolingo.com/course/tr/en/Learn-Turkish",
+      "internal": true,
+      "label": "TURKISH"
+    },
+    {
+      "href": "https://www.duolingo.com/course/uk/en/Learn-Ukrainian",
+      "internal": true,
+      "label": "UKRAINIAN"
+    },
+    {
+      "href": "https://www.duolingo.com/course/vi/en/Learn-Vietnamese",
+      "internal": true,
+      "label": "VIETNAMESE"
+    },
+    {
+      "href": "https://www.duolingo.com/course/yi/en/Learn-Yiddish",
+      "internal": true,
+      "label": "YIDDISH"
+    },
+    {
+      "href": "https://www.duolingo.com/course/zh/en/Learn-Chinese",
+      "internal": true,
+      "label": "CHINESE"
+    },
+    {
+      "href": "https://www.duolingo.com/course/zu/en/Learn-Zulu",
+      "internal": true,
+      "label": "ZULU"
+    },
+    {
+      "href": "https://www.duolingo.com/efficacy",
+      "internal": true,
+      "label": "research shows that it works"
+    },
+    {
+      "href": "https://itunes.apple.com/app/duolingo-learn-spanish-french/id570060128",
+      "internal": false,
+      "label": "Download on the App Store"
+    },
+    {
+      "href": "https://play.google.com/store/apps/details",
+      "internal": false,
+      "label": "Get it on Google Play"
+    },
+    {
+      "href": "https://englishtest.duolingo.com/en",
+      "internal": false,
+      "label": "CERTIFY YOUR ENGLISH"
+    },
+    {
+      "href": "https://schools.duolingo.com/",
+      "internal": false,
+      "label": "GET YOUR CLASS STARTED"
+    },
+    {
+      "href": "https://www.duolingo.com/abc",
+      "internal": true,
+      "label": "LEARN MORE ABOUT ABC"
+    },
+    {
+      "href": "https://www.duolingo.com/courses",
+      "internal": true,
+      "label": "Courses"
+    },
+    {
+      "href": "https://about.duolingo.com/",
+      "internal": false,
+      "label": "Mission"
+    },
+    {
+      "href": "https://duolingo.com/handbook",
+      "internal": false,
+      "label": "Duolingo Handbook"
+    },
+    {
+      "href": "https://research.duolingo.com/",
+      "internal": false,
+      "label": "Research"
+    },
+    {
+      "href": "https://careers.duolingo.com/",
+      "internal": false,
+      "label": "Careers"
+    },
+    {
+      "href": "https://design.duolingo.com/",
+      "internal": false,
+      "label": "Brand guidelines"
+    },
+    {
+      "href": "https://store.duolingo.com/",
+      "internal": false,
+      "label": "Store"
+    },
+    {
+      "href": "https://press.duolingo.com/",
+      "internal": false,
+      "label": "Press"
+    },
+    {
+      "href": "https://investors.duolingo.com/",
+      "internal": false,
+      "label": "Investors"
+    },
+    {
+      "href": "https://podcast.duolingo.com/",
+      "internal": false,
+      "label": "Podcast"
+    },
+    {
+      "href": "https://www.duolingo.com/business",
+      "internal": true,
+      "label": "Duolingo for Business"
+    },
+    {
+      "href": "https://www.duolingo.com/super",
+      "internal": true,
+      "label": "Super Duolingo"
+    },
+    {
+      "href": "https://www.duolingo.com/gift",
+      "internal": true,
+      "label": "Gift Super Duolingo"
+    },
+    {
+      "href": "https://blog.duolingo.com/duolingo-max/",
+      "internal": false,
+      "label": "Duolingo Max"
+    },
+    {
+      "href": "https://www.duolingo.com/help",
+      "internal": true,
+      "label": "Duolingo FAQs"
+    },
+    {
+      "href": "https://duolingoschools.zendesk.com/hc/en-us",
+      "internal": false,
+      "label": "Schools FAQs"
+    },
+    {
+      "href": "https://englishtest.duolingo.com/faq",
+      "internal": false,
+      "label": "Duolingo English Test FAQs"
+    },
+    {
+      "href": "https://status.duolingo.com/",
+      "internal": false,
+      "label": "Status"
+    },
+    {
+      "href": "https://www.duolingo.com/guidelines",
+      "internal": true,
+      "label": "Community guidelines"
+    },
+    {
+      "href": "https://www.duolingo.com/terms",
+      "internal": true,
+      "label": "Terms"
+    },
+    {
+      "href": "https://www.duolingo.com/privacy",
+      "internal": true,
+      "label": "Privacy"
+    },
+    {
+      "href": "https://blog.duolingo.com/",
+      "internal": false,
+      "label": "Blog"
+    },
+    {
+      "href": "https://www.instagram.com/duolingo",
+      "internal": false,
+      "label": "Instagram"
+    },
+    {
+      "href": "https://www.tiktok.com/@duolingo",
+      "internal": false,
+      "label": "TikTok"
+    },
+    {
+      "href": "https://twitter.com/duolingo",
+      "internal": false,
+      "label": "Twitter"
+    },
+    {
+      "href": "https://www.youtube.com/user/duolingo",
+      "internal": false,
+      "label": "YouTube"
+    },
+    {
+      "href": "https://www.linkedin.com/company/duolingo",
+      "internal": false,
+      "label": "LinkedIn"
+    },
+    {
+      "href": "https://ar.duolingo.com/",
+      "internal": false,
+      "label": "العربية"
+    },
+    {
+      "href": "https://bn.duolingo.com/",
+      "internal": false,
+      "label": "বাংলা"
+    },
+    {
+      "href": "https://cs.duolingo.com/",
+      "internal": false,
+      "label": "Čeština"
+    },
+    {
+      "href": "https://de.duolingo.com/",
+      "internal": false,
+      "label": "Deutsch"
+    },
+    {
+      "href": "https://el.duolingo.com/",
+      "internal": false,
+      "label": "Ελληνικά"
+    },
+    {
+      "href": "https://en.duolingo.com/",
+      "internal": false,
+      "label": "English"
+    },
+    {
+      "href": "https://es.duolingo.com/",
+      "internal": false,
+      "label": "Español"
+    },
+    {
+      "href": "https://fr.duolingo.com/",
+      "internal": false,
+      "label": "Français"
+    },
+    {
+      "href": "https://hi.duolingo.com/",
+      "internal": false,
+      "label": "हिंदी"
+    },
+    {
+      "href": "https://hu.duolingo.com/",
+      "internal": false,
+      "label": "Magyar"
+    },
+    {
+      "href": "https://id.duolingo.com/",
+      "internal": false,
+      "label": "Bahasa Indonesia"
+    },
+    {
+      "href": "https://it.duolingo.com/",
+      "internal": false,
+      "label": "Italiano"
+    },
+    {
+      "href": "https://ja.duolingo.com/",
+      "internal": false,
+      "label": "日本語"
+    },
+    {
+      "href": "https://ko.duolingo.com/",
+      "internal": false,
+      "label": "한국어"
+    },
+    {
+      "href": "https://dn.duolingo.com/",
+      "internal": false,
+      "label": "Nederlands"
+    },
+    {
+      "href": "https://pl.duolingo.com/",
+      "internal": false,
+      "label": "Polski"
+    },
+    {
+      "href": "https://pt.duolingo.com/",
+      "internal": false,
+      "label": "Português"
+    },
+    {
+      "href": "https://ro.duolingo.com/",
+      "internal": false,
+      "label": "Română"
+    },
+    {
+      "href": "https://ru.duolingo.com/",
+      "internal": false,
+      "label": "Русский"
+    },
+    {
+      "href": "https://sv.duolingo.com/",
+      "internal": false,
+      "label": "svenska"
+    },
+    {
+      "href": "https://ta.duolingo.com/",
+      "internal": false,
+      "label": "தமிழ்"
+    },
+    {
+      "href": "https://te.duolingo.com/",
+      "internal": false,
+      "label": "తెలుగు"
+    },
+    {
+      "href": "https://th.duolingo.com/",
+      "internal": false,
+      "label": "ภาษาไทย"
+    },
+    {
+      "href": "https://tl.duolingo.com/",
+      "internal": false,
+      "label": "Tagalog"
+    },
+    {
+      "href": "https://tr.duolingo.com/",
+      "internal": false,
+      "label": "Türkçe"
+    },
+    {
+      "href": "https://uk.duolingo.com/",
+      "internal": false,
+      "label": "Українською"
+    },
+    {
+      "href": "https://vi.duolingo.com/",
+      "internal": false,
+      "label": "Tiếng Việt"
+    },
+    {
+      "href": "https://zs.duolingo.com/",
+      "internal": false,
+      "label": "中文"
+    }
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/images/splash/f92d5f2f7d56636846861c458c0d0b6c.svg",
+        "srcset": null,
+        "alt": "Duolingo",
+        "naturalWidth": 179,
+        "naturalHeight": 42,
+        "rect": {
+          "x": 226,
+          "y": 12,
+          "w": 179,
+          "h": 42
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/images/splash/c6eae48dd48246c89e415b89f9e55282.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 14,
+        "naturalHeight": 14,
+        "rect": {
+          "x": 1200,
+          "y": 28,
+          "w": 14,
+          "h": 14
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/56afa7d9803ab5e57d99b4e4e0cd8932.png",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 424,
+        "naturalHeight": 424,
+        "rect": {
+          "x": 295,
+          "y": 233,
+          "w": 424,
+          "h": 424
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/bbe17e16aa4a106032d8e3521eaed13e.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 219,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/59a90a2cedd48b751a8fd22014768fd7.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 349,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/482fda142ee4abd728ebf4ccce5d3307.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 479,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/c71db846ffab7e0a74bc6971e34ad82e.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 605,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/635a09df9323279d39934a991edd4510.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 734,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/27d253ae1272917fc9f4a79459aacd53.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 858,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/395c8a6ee9783610b578b02fda405e85.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 1020,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/c8bad7c09aaf7bc29ddddc50808adb54.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 1129,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/de945d789e249dcd74333a6996472ef8.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 1244,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/edea4fa18ff3e7d8c0282de3f102aaed.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 1360,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/9ab6930a263c981b57f9d578ac97cae7.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 1502,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/828bf0fea457d3beaaab3d6c0bfcc975.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 1622,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/f773f1b240623072e48843ecdf90d756.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 1736,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/6af84a7cb8e99ea8a567c2b9c55b9926.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 1855,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/8db373482261397a3159d3f370eed2f3.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 1977,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/6de7e4731b2a82a6458268e1a3d67ce4.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 2092,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/b4d0e4f6451f504e1441eb93efdbea5e.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 2244,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/ef0bfb96037b127473bd7bcbfde1a6ed.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 2371,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/09eba3135efe8fe93a4662dba813b921.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 2479,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/f818f545a703ddaa046ca8786e781742.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 2669,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/73837fa39dbf1bcc4c95a17a58ed0ffb.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 2799,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/8cb302b44c183c1a8ec3b90caf90d922.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 2908,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/2ed8d0a73eab3c9cba0290e2b459684a.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 3092,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/2880099b038848abbfd11104097953ad.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 3245,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/312e21f793c555787d01a45e20ee8191.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 3421,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/339c0413e542f19b234971d7740447e7.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 3562,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/ec5835ac9f465ff3dad4b1b8725d4314.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 3718,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/f7cee6cc09270371b097129faf792c2a.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 3845,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/90b37d97edc66e830dc2286279548f67.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 3955,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/bbc8ad0cfe2596d5193376ebdc3e969c.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 4184,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/f095084e6ec400e631d62c3d95fefaa2.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 4309,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/357e13bb10cf86fc06552d563957e2e6.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 4429,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/eadd7804652170c33814a89482f1f353.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 4574,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/f578430c9b7ab617c107893afbb501c0.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 4705,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/335311988405b4354e1b6ae9037c02db.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 4839,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/76d654213a8282b0ebc25b4f535ee003.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 4968,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/bc80a9518cd6d5af6ae14e8b22b8a1f4.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 5099,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/7c6e12bc57527843082f7f5bb77c9862.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 5230,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/2b077d42185bc45d4896ed55f15c4fea.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 5377,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/55bad151fa6a8d9e2376fc9697c671c8.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 5535,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/9905aa3a86fcb9e351b0b3bfaf04d8b9.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 5662,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/vendor/112e1531d0ac198a9424bd1b0a7166e6.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 70,
+        "naturalHeight": 54,
+        "rect": {
+          "x": 5792,
+          "y": 846,
+          "w": 36,
+          "h": 28
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/23ab11cb1e1a9aff54facdf57833373d.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 150,
+        "naturalHeight": 150,
+        "rect": {
+          "x": 800,
+          "y": 996,
+          "w": 530,
+          "h": 530
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/08ec8d0260c55c054e1b97bcbc96ea0f.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 150,
+        "naturalHeight": 150,
+        "rect": {
+          "x": 110,
+          "y": 1526,
+          "w": 530,
+          "h": 530
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/833a22b2834050d139f266a29899bb00.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 150,
+        "naturalHeight": 150,
+        "rect": {
+          "x": 800,
+          "y": 2056,
+          "w": 530,
+          "h": 530
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/9d3c2c99dd19996319a372f79b2ed3c1.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 150,
+        "naturalHeight": 150,
+        "rect": {
+          "x": 80,
+          "y": 2586,
+          "w": 530,
+          "h": 530
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/229d5f88cc9df2eb0b68f39466500911.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 267,
+        "naturalHeight": 150,
+        "rect": {
+          "x": -220,
+          "y": 3283,
+          "w": 2000,
+          "h": 1122
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/43ea369cfa70f093c3edad4d75ea6009.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 150,
+        "naturalHeight": 150,
+        "rect": {
+          "x": 133,
+          "y": 4686,
+          "w": 530,
+          "h": 530
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/images/splash/3a733db6d6873e1a915f70cf72554ce3.svg",
+        "srcset": null,
+        "alt": "Super Duolingo",
+        "naturalWidth": 606,
+        "naturalHeight": 88,
+        "rect": {
+          "x": 703,
+          "y": 4856,
+          "w": 605,
+          "h": 88
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/a50e95b2b4e8c91d610b9c7318389c1e.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 200,
+        "naturalHeight": 200,
+        "rect": {
+          "x": 829,
+          "y": 5497,
+          "w": 530,
+          "h": 530
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/9f63957bf97d10730813cbb715a0baa0.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 150,
+        "naturalHeight": 150,
+        "rect": {
+          "x": 99,
+          "y": 6027,
+          "w": 530,
+          "h": 530
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/268877aef1bcca8a53f24b746483346c.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 150,
+        "naturalHeight": 150,
+        "rect": {
+          "x": 800,
+          "y": 6557,
+          "w": 530,
+          "h": 530
+        }
+      },
+      {
+        "src": "https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/890eb76de9a395b182c1c28322721405.svg",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 272,
+        "naturalHeight": 150,
+        "rect": {
+          "x": 0,
+          "y": 7087,
+          "w": 1440,
+          "h": 949
+        }
+      }
+    ],
+    "inlineSvgCount": 6,
+    "videos": [
+      {
+        "tag": "iframe",
+        "src": "https://www.recaptcha.net/recaptcha/enterprise/anchor?ar=1&k=6LcLOdsjAAAAAFfwGusLLnnn492SOGhsCh-uEAvI&co=aHR0cHM6Ly93d3cuZHVvbGluZ28uY29tOjQ0Mw..&hl=en&v=MerVUtRoajKEbP7pLiGXkL28&size=invisible&anchor-ms=20000&execute-ms=30000&cb=k5on6bnrao45",
+        "poster": null
+      },
+      {
+        "tag": "iframe",
+        "src": null,
+        "poster": null
+      }
+    ],
+    "cssBackgrounds": []
+  },
+  "customProps": [
+    {
+      "name": "--text-body-letter-spacing",
+      "value": "0"
+    },
+    {
+      "name": "--color-koala-always-dark",
+      "value": "72, 90, 98"
+    },
+    {
+      "name": "--color-unknown-935051",
+      "value": "147, 80, 81"
+    },
+    {
+      "name": "--color-narwhal",
+      "value": "20, 83, 163"
+    },
+    {
+      "name": "--color-unknown-131757",
+      "value": "19, 23, 87"
+    },
+    {
+      "name": "--color-walking-fish",
+      "value": "255, 223, 224"
+    },
+    {
+      "name": "--color-unknown-172071",
+      "value": "23, 32, 113"
+    },
+    {
+      "name": "--color-ocean",
+      "value": "0, 124, 143"
+    },
+    {
+      "name": "--color-wolf-always-light",
+      "value": "119, 119, 119"
+    },
+    {
+      "name": "--color-humpback",
+      "value": "43, 112, 201"
+    },
+    {
+      "name": "--color-tree-frog-always-light",
+      "value": "88, 167, 0"
+    },
+    {
+      "name": "--color-snow-always-light",
+      "value": "255, 255, 255"
+    },
+    {
+      "name": "--text-heading-weight-medium",
+      "value": "700"
+    },
+    {
+      "name": "--color-adventurer",
+      "value": "96, 12, 199"
+    },
+    {
+      "name": "--color-max-dark",
+      "value": "39, 10, 61"
+    },
+    {
+      "name": "--color-half-branded-outline-green",
+      "value": "38, 206, 155"
+    },
+    {
+      "name": "--color-twitter",
+      "value": "29, 161, 242"
+    },
+    {
+      "name": "--color-half-branded-outline-blue",
+      "value": "42, 136, 255"
+    },
+    {
+      "name": "--text-caption-size",
+      "value": "1rem"
+    },
+    {
+      "name": "--color-facebook-dark",
+      "value": "45, 67, 115"
+    },
+    {
+      "name": "--color-unknown-26ff55",
+      "value": "38, 255, 85"
+    },
+    {
+      "name": "--color-guinea-pig-always-light",
+      "value": "205, 121, 0"
+    },
+    {
+      "name": "--color-ether",
+      "value": "60, 89, 141"
+    },
+    {
+      "name": "--color-lily-radio",
+      "value": "144, 91, 179"
+    },
+    {
+      "name": "--color-streak-panel-frozen-text",
+      "value": "132, 216, 255"
+    },
+    {
+      "name": "--color-adventurer-progress-bar",
+      "value": "122, 13, 199"
+    },
+    {
+      "name": "--color-cloud-light",
+      "value": "221, 221, 221"
+    },
+    {
+      "name": "--color-diamond-tournament-purple",
+      "value": "161, 161, 238"
+    },
+    {
+      "name": "--color-seafoam",
+      "value": "158, 224, 233"
+    },
+    {
+      "name": "--color-streak-panel-milestone-gradient-start",
+      "value": "255, 147, 58"
+    },
+    {
+      "name": "--color-nyp-gradient-purple",
+      "value": "201, 98, 255"
+    },
+    {
+      "name": "--color-unknown-262472",
+      "value": "38, 36, 114"
+    },
+    {
+      "name": "--color-eddy-shine",
+      "value": "255, 105, 105"
+    },
+    {
+      "name": "--text-heading-size-small",
+      "value": "1.25rem"
+    },
+    {
+      "name": "--color-discoverer-progress-bar",
+      "value": "131, 50, 65"
+    },
+    {
+      "name": "--color-diamond-stat",
+      "value": "86, 219, 226"
+    },
+    {
+      "name": "--color-half-branded-background-purple-end",
+      "value": "140, 61, 186"
+    },
+    {
+      "name": "--text-heading-letter-spacing-medium",
+      "value": "0"
+    },
+    {
+      "name": "--color-duck",
+      "value": "251, 229, 109"
+    },
+    {
+      "name": "--color-unknown-048fd1",
+      "value": "4, 143, 209"
+    },
+    {
+      "name": "--color-canary",
+      "value": "255, 245, 211"
+    },
+    {
+      "name": "--color-rookie-progress-bar",
+      "value": "0, 198, 150"
+    },
+    {
+      "name": "--text-heading-line-height-medium",
+      "value": "2rem"
+    },
+    {
+      "name": "--text-heading-letter-spacing-xsmall",
+      "value": "0"
+    },
+    {
+      "name": "--color-trailblazer",
+      "value": "154, 143, 232"
+    },
+    {
+      "name": "--color-turtle-always-light",
+      "value": "165, 237, 110"
+    },
+    {
+      "name": "--color-unknown-013047",
+      "value": "1, 48, 71"
+    },
+    {
+      "name": "--color-polar",
+      "value": "247, 247, 247"
+    },
+    {
+      "name": "--color-fox-always-light",
+      "value": "255, 150, 0"
+    },
+    {
+      "name": "--color-falstaff-secondary",
+      "value": "150, 90, 58"
+    },
+    {
+      "name": "--color-unknown-e3e3e3",
+      "value": "227, 227, 227"
+    },
+    {
+      "name": "--color-unknown-696cee",
+      "value": "105, 108, 238"
+    },
+    {
+      "name": "--color-half-branded-background-blue-middle",
+      "value": "6, 27, 75"
+    },
+    {
+      "name": "--color-friends-quest-friend-incomplete",
+      "value": "145, 145, 145"
+    },
+    {
+      "name": "--color-wolf",
+      "value": "119, 119, 119"
+    },
+    {
+      "name": "--color-iguana-always-light",
+      "value": "221, 244, 255"
+    },
+    {
+      "name": "--color-super-gradient-neutral-purple",
+      "value": "95, 60, 172"
+    },
+    {
+      "name": "--color-streak-panel-frozen-background",
+      "value": "221, 244, 255"
+    },
+    {
+      "name": "--color-starling",
+      "value": "92, 108, 252"
+    },
+    {
+      "name": "--color-dark-mode-locked-path-section-text-color",
+      "value": "82, 101, 109"
+    },
+    {
+      "name": "--color-grizzly-lite",
+      "value": "220, 143, 71"
+    },
+    {
+      "name": "--color-beluga",
+      "value": "187, 242, 255"
+    },
+    {
+      "name": "--color-unknown-f3484e",
+      "value": "243, 72, 78"
+    },
+    {
+      "name": "--color-cardinal-always-dark",
+      "value": "238, 85, 85"
+    },
+    {
+      "name": "--color-unknown-a4dffb",
+      "value": "164, 223, 251"
+    },
+    {
+      "name": "--text-label-weight-large",
+      "value": "700"
+    },
+    {
+      "name": "--color-oscar-shine",
+      "value": "63, 217, 181"
+    },
+    {
+      "name": "--text-caption-line-height",
+      "value": "1.5rem"
+    },
+    {
+      "name": "--color-cardinal-always-light",
+      "value": "255, 75, 75"
+    },
+    {
+      "name": "--text-body-casing-spacious",
+      "value": "none"
+    },
+    {
+      "name": "--color-explorer",
+      "value": "255, 100, 191"
+    },
+    {
+      "name": "--color-kiwi",
+      "value": "122, 199, 12"
+    },
+    {
+      "name": "--text-label-line-height-medium",
+      "value": "1rem"
+    },
+    {
+      "name": "--color-black-text",
+      "value": "60, 60, 60"
+    },
+    {
+      "name": "--color-unknown-a2a2a2",
+      "value": "162, 162, 162"
+    },
+    {
+      "name": "--color-koala",
+      "value": "215, 215, 215"
+    },
+    {
+      "name": "--color-polar-always-light",
+      "value": "247, 247, 247"
+    },
+    {
+      "name": "--text-body-line-height",
+      "value": "1.75rem"
+    },
+    {
+      "name": "--text-label-size-large",
+      "value": "1.5rem"
+    },
+    {
+      "name": "--color-eel-always-light",
+      "value": "75, 75, 75"
+    },
+    {
+      "name": "--color-unknown-de8029",
+      "value": "222, 128, 41"
+    },
+    {
+      "name": "--color-macaw-always-light",
+      "value": "28, 176, 246"
+    },
+    {
+      "name": "--color-eclipse",
+      "value": "0, 4, 55"
+    },
+    {
+      "name": "--color-unknown-959595",
+      "value": "149, 149, 149"
+    },
+    {
+      "name": "--color-streak-panel-extended-background",
+      "value": "255, 150, 0"
+    },
+    {
+      "name": "--color-max-button-purple",
+      "value": "97, 33, 194"
+    },
+    {
+      "name": "--color-unknown-aaa",
+      "value": "170, 170, 170"
+    },
+    {
+      "name": "--color-cheetah",
+      "value": "255, 206, 142"
+    },
+    {
+      "name": "--color-super-gradient-purple-variant1",
+      "value": "17, 34, 181"
+    },
+    {
+      "name": "--color-lily-shine",
+      "value": "214, 150, 255"
+    },
+    {
+      "name": "--color-nebula",
+      "value": "63, 34, 236"
+    },
+    {
+      "name": "--color-hv-orange",
+      "value": "204, 121, 0"
+    },
+    {
+      "name": "--color-zari-radio",
+      "value": "179, 94, 146"
+    },
+    {
+      "name": "--text-heading-line-height-small",
+      "value": "1.5rem"
+    },
+    {
+      "name": "--text-pageTitle-line-height-large",
+      "value": "2.75rem"
+    },
+    {
+      "name": "--color-lin-lucy-shine",
+      "value": "255, 168, 44"
+    },
+    {
+      "name": "--color-monkey",
+      "value": "229, 162, 89"
+    },
+    {
+      "name": "--color-macaw-shadow",
+      "value": "0, 150, 221"
+    },
+    {
+      "name": "--text-label-letter-spacing-large",
+      "value": "0.04em"
+    },
+    {
+      "name": "--text-heading-weight-xsmall",
+      "value": "700"
+    },
+    {
+      "name": "--color-yir-page3-shadow",
+      "value": "187, 172, 252"
+    },
+    {
+      "name": "--color-duo-shine",
+      "value": "114, 214, 39"
+    },
+    {
+      "name": "--color-tree-frog",
+      "value": "88, 167, 0"
+    },
+    {
+      "name": "--color-zari-secondary",
+      "value": "204, 107, 166"
+    },
+    {
+      "name": "--color-unknown-423a9c",
+      "value": "66, 58, 156"
+    },
+    {
+      "name": "--color-unknown-e4ffff",
+      "value": "228, 255, 255"
+    },
+    {
+      "name": "--color-guinea-pig",
+      "value": "205, 121, 0"
+    },
+    {
+      "name": "--text-heading-size-large",
+      "value": "1.75rem"
+    },
+    {
+      "name": "--color-juicy-blue-space-light",
+      "value": "35, 83, 144"
+    },
+    {
+      "name": "--color-discoverer",
+      "value": "111, 44, 57"
+    },
+    {
+      "name": "--color-nyp-gradient-green-header",
+      "value": "38, 203, 160"
+    },
+    {
+      "name": "--color-sea-sponge",
+      "value": "215, 255, 184"
+    },
+    {
+      "name": "--color-crab",
+      "value": "255, 120, 120"
+    },
+    {
+      "name": "--color-flamingo",
+      "value": "255, 178, 178"
+    },
+    {
+      "name": "--color-lion",
+      "value": "255, 177, 0"
+    },
+    {
+      "name": "--color-owl-always-light",
+      "value": "88, 204, 2"
+    },
+    {
+      "name": "--color-iguana",
+      "value": "221, 244, 255"
+    },
+    {
+      "name": "--color-orca",
+      "value": "51, 51, 51"
+    },
+    {
+      "name": "--color-bluebird",
+      "value": "3, 144, 211"
+    },
+    {
+      "name": "--color-cotinga",
+      "value": "121, 58, 227"
+    },
+    {
+      "name": "--color-unknown-fafafa",
+      "value": "250, 250, 250"
+    },
+    {
+      "name": "--color-unknown-f4fafe",
+      "value": "244, 250, 254"
+    },
+    {
+      "name": "--color-black-white",
+      "value": "0, 0, 0"
+    },
+    {
+      "name": "--text-body-casing",
+      "value": "none"
+    },
+    {
+      "name": "--color-max-light-purple",
+      "value": "221, 140, 254"
+    },
+    {
+      "name": "--color-blueberry",
+      "value": "17, 82, 167"
+    },
+    {
+      "name": "--color-unknown-001e2d",
+      "value": "0, 30, 45"
+    },
+    {
+      "name": "--color-max-ad82e6",
+      "value": "173, 130, 230"
+    },
+    {
+      "name": "--color-unknown-ddd",
+      "value": "221, 221, 221"
+    },
+    {
+      "name": "--text-body-size",
+      "value": "1.25rem"
+    },
+    {
+      "name": "--color-whale",
+      "value": "24, 153, 214"
+    },
+    {
+      "name": "--color-ultra-violet",
+      "value": "97, 33, 194"
+    },
+    {
+      "name": "--text-heading-size-medium",
+      "value": "1.5rem"
+    },
+    {
+      "name": "--color-kiwi-dark",
+      "value": "93, 151, 9"
+    },
+    {
+      "name": "--color-navigator",
+      "value": "9, 47, 119"
+    },
+    {
+      "name": "--color-eel-always-dark",
+      "value": "241, 247, 251"
+    },
+    {
+      "name": "--color-champion-progress-bar",
+      "value": "255, 129, 80"
+    },
+    {
+      "name": "--color-duo-radio",
+      "value": "62, 143, 1"
+    },
+    {
+      "name": "--text-heading-weight-small",
+      "value": "700"
+    },
+    {
+      "name": "--color-sea-sponge-always-light",
+      "value": "215, 255, 184"
+    },
+    {
+      "name": "--color-vikram-secondary",
+      "value": "163, 42, 113"
+    },
+    {
+      "name": "--text-label-letter-spacing-medium",
+      "value": "0.04em"
+    },
+    {
+      "name": "--color-snow",
+      "value": "255, 255, 255"
+    },
+    {
+      "name": "--color-celestia",
+      "value": "255, 255, 255"
+    },
+    {
+      "name": "--text-pageTitle-casing-large",
+      "value": "none"
+    },
+    {
+      "name": "--color-friends-quest-own-incomplete",
+      "value": "175, 175, 175"
+    },
+    {
+      "name": "--color-fox",
+      "value": "255, 150, 0"
+    },
+    {
+      "name": "--color-unknown-fbdec5",
+      "value": "251, 222, 197"
+    },
+    {
+      "name": "--color-manta-ray",
+      "value": "4, 44, 96"
+    },
+    {
+      "name": "--color-unknown-fff2aa",
+      "value": "255, 242, 170"
+    },
+    {
+      "name": "--color-super-gradient-top-halo",
+      "value": "12, 76, 70"
+    },
+    {
+      "name": "--color-black-text-always-light",
+      "value": "60, 60, 60"
+    },
+    {
+      "name": "--color-unknown-cf17c9",
+      "value": "207, 23, 201"
+    },
+    {
+      "name": "--color-gold-shine",
+      "value": "255, 231, 0"
+    },
+    {
+      "name": "--color-traveler",
+      "value": "255, 145, 83"
+    },
+    {
+      "name": "--color-cosmos",
+      "value": "60, 77, 255"
+    },
+    {
+      "name": "--color-falstaff-radio",
+      "value": "131, 79, 51"
+    },
+    {
+      "name": "--color-cowbird",
+      "value": "174, 104, 2"
+    },
+    {
+      "name": "--color-fox-shadow",
+      "value": "205, 121, 0"
+    },
+    {
+      "name": "--color-gold",
+      "value": "250, 169, 25"
+    },
+    {
+      "name": "--text-heading-line-height-xsmall",
+      "value": "1.25rem"
+    },
+    {
+      "name": "--color-half-branded-background-blue-end",
+      "value": "22, 55, 140"
+    },
+    {
+      "name": "--color-unknown-fffbef",
+      "value": "255, 251, 239"
+    },
+    {
+      "name": "--color-bea-junior-shine",
+      "value": "67, 190, 248"
+    },
+    {
+      "name": "--text-heading-line-height-large",
+      "value": "2rem"
+    },
+    {
+      "name": "--color-unknown-655ebb",
+      "value": "101, 94, 187"
+    },
+    {
+      "name": "--color-unknown-ffc700",
+      "value": "255, 199, 0"
+    },
+    {
+      "name": "--color-beetle",
+      "value": "206, 130, 255"
+    },
+    {
+      "name": "--text-pageTitle-letter-spacing-large",
+      "value": "0"
+    },
+    {
+      "name": "--color-orca-always-light",
+      "value": "51, 51, 51"
+    },
+    {
+      "name": "--color-zari-shine",
+      "value": "255, 158, 217"
+    },
+    {
+      "name": "--color-black",
+      "value": "0, 0, 0"
+    },
+    {
+      "name": "--color-nova",
+      "value": "207, 23, 200"
+    },
+    {
+      "name": "--color-unknown-3ebbf6",
+      "value": "62, 187, 246"
+    },
+    {
+      "name": "--text-body-weight-bold",
+      "value": "700"
+    },
+    {
+      "name": "--color-cloud",
+      "value": "207, 207, 207"
+    },
+    {
+      "name": "--color-learning-progress-bar",
+      "value": "0, 148, 255"
+    },
+    {
+      "name": "--color-swan",
+      "value": "229, 229, 229"
+    },
+    {
+      "name": "--color-snow-dark-swan",
+      "value": "255, 255, 255"
+    },
+    {
+      "name": "--color-max-button-dark-purple",
+      "value": "58, 27, 123"
+    },
+    {
+      "name": "--text-caption-casing",
+      "value": "none"
+    },
+    {
+      "name": "--text-caption-weight-bold",
+      "value": "700"
+    },
+    {
+      "name": "--color-daredevil-progress-bar",
+      "value": "54, 98, 165"
+    },
+    {
+      "name": "--color-streak-panel-milestone-gradient-end",
+      "value": "255, 200, 0"
+    },
+    {
+      "name": "--color-eddy-radio",
+      "value": "179, 53, 53"
+    },
+    {
+      "name": "--color-max-shadow",
+      "value": "20, 208, 225"
+    },
+    {
+      "name": "--color-super-gradient-blue-variant1",
+      "value": "38, 139, 255"
+    },
+    {
+      "name": "--color-sabrewing",
+      "value": "165, 112, 255"
+    },
+    {
+      "name": "--color-orca-always-dark",
+      "value": "55, 70, 79"
+    },
+    {
+      "name": "--color-macaw",
+      "value": "28, 176, 246"
+    },
+    {
+      "name": "--color-pig",
+      "value": "245, 164, 164"
+    },
+    {
+      "name": "--color-swan-always-light",
+      "value": "229, 229, 229"
+    },
+    {
+      "name": "--color-unknown-0e3d79",
+      "value": "14, 61, 121"
+    },
+    {
+      "name": "--text-body-line-height-spacious",
+      "value": "2rem"
+    },
+    {
+      "name": "--color-grackle",
+      "value": "167, 160, 255"
+    },
+    {
+      "name": "--color-hare-always-light",
+      "value": "175, 175, 175"
+    },
+    {
+      "name": "--color-gamma",
+      "value": "38, 246, 99"
+    },
+    {
+      "name": "--color-betta",
+      "value": "144, 105, 205"
+    },
+    {
+      "name": "--color-diamond",
+      "value": "56, 208, 208"
+    },
+    {
+      "name": "--color-blue-space",
+      "value": "11, 62, 113"
+    },
+    {
+      "name": "--text-body-weight-spacious-bold",
+      "value": "700"
+    },
+    {
+      "name": "--color-streak-panel-unextended-topbar-text",
+      "value": "235, 195, 127"
+    },
+    {
+      "name": "--rtl-sign",
+      "value": "1"
+    },
+    {
+      "name": "--color-traveler-progress-bar",
+      "value": "255, 167, 106"
+    },
+    {
+      "name": "--color-camel",
+      "value": "231, 166, 1"
+    },
+    {
+      "name": "--color-polar-always-dark",
+      "value": "32, 47, 54"
+    },
+    {
+      "name": "--color-streak-panel-friend-background",
+      "value": "255, 95, 0"
+    },
+    {
+      "name": "--color-super-background-secondary",
+      "value": "26, 30, 76"
+    },
+    {
+      "name": "--color-fire-ant-always-light",
+      "value": "234, 43, 43"
+    },
+    {
+      "name": "--color-unknown-d9d9d9",
+      "value": "217, 217, 217"
+    },
+    {
+      "name": "--text-body-letter-spacing-spacious",
+      "value": "0"
+    },
+    {
+      "name": "--color-explorer-progress-bar",
+      "value": "255, 138, 207"
+    },
+    {
+      "name": "--color-unknown-280378",
+      "value": "40, 3, 120"
+    },
+    {
+      "name": "--color-navigator-progress-bar",
+      "value": "12, 57, 141"
+    },
+    {
+      "name": "--color-bea-radio",
+      "value": "20, 123, 172"
+    },
+    {
+      "name": "--color-koala-always-light",
+      "value": "215, 215, 215"
+    },
+    {
+      "name": "--color-hv-peach",
+      "value": "219, 186, 131"
+    },
+    {
+      "name": "--color-oscar-secondary",
+      "value": "0, 164, 125"
+    },
+    {
+      "name": "--color-unknown-00aff9",
+      "value": "0, 175, 249"
+    },
+    {
+      "name": "--color-course-complete-cta",
+      "value": "120, 219, 224"
+    },
+    {
+      "name": "--color-owl",
+      "value": "88, 204, 2"
+    },
+    {
+      "name": "--color-streak-panel-unextended-heading-text",
+      "value": "235, 195, 127"
+    },
+    {
+      "name": "--color-wolf-always-dark",
+      "value": "220, 230, 236"
+    },
+    {
+      "name": "--color-yir-page4-shadow",
+      "value": "143, 219, 255"
+    },
+    {
+      "name": "--color-hv-brown",
+      "value": "140, 90, 17"
+    },
+    {
+      "name": "--color-course-complete-cta-border",
+      "value": "94, 201, 204"
+    },
+    {
+      "name": "--color-moon-jelly",
+      "value": "122, 240, 242"
+    },
+    {
+      "name": "--color-blue-tang",
+      "value": "0, 141, 207"
+    },
+    {
+      "name": "--color-lily-secondary",
+      "value": "165, 104, 204"
+    },
+    {
+      "name": "--color-nyp-gradient-blue",
+      "value": "38, 138, 255"
+    },
+    {
+      "name": "--color-bea-secondary",
+      "value": "24, 153, 214"
+    },
+    {
+      "name": "--color-vikram-radio",
+      "value": "143, 36, 99"
+    },
+    {
+      "name": "--color-unknown-6e00cf",
+      "value": "110, 0, 207"
+    },
+    {
+      "name": "--color-roseate",
+      "value": "223, 75, 162"
+    },
+    {
+      "name": "--color-martin",
+      "value": "71, 85, 223"
+    },
+    {
+      "name": "--web-ui_button-border-radius",
+      "value": "16px"
+    },
+    {
+      "name": "--color-ice",
+      "value": "225, 253, 255"
+    },
+    {
+      "name": "--color-unknown-d087ff",
+      "value": "208, 135, 255"
+    },
+    {
+      "name": "--color-daily_refresh-progress-bar",
+      "value": "28, 160, 255"
+    },
+    {
+      "name": "--color-bee-always-dark",
+      "value": "255, 199, 0"
+    },
+    {
+      "name": "--color-orange",
+      "value": "255, 157, 0"
+    },
+    {
+      "name": "--viewport-height",
+      "value": "100dvh"
+    },
+    {
+      "name": "--color-walking-fish-always-light",
+      "value": "255, 223, 224"
+    },
+    {
+      "name": "--color-diamond-tournament-reaction",
+      "value": "118, 163, 231"
+    },
+    {
+      "name": "--text-heading-size-xsmall",
+      "value": "1rem"
+    },
+    {
+      "name": "--text-pageTitle-casing-small",
+      "value": "none"
+    },
+    {
+      "name": "--color-kiwi-light",
+      "value": "142, 224, 0"
+    },
+    {
+      "name": "--color-daredevil",
+      "value": "46, 83, 138"
+    },
+    {
+      "name": "--color-eel",
+      "value": "75, 75, 75"
+    },
+    {
+      "name": "--text-body-weight-spacious",
+      "value": "500"
+    },
+    {
+      "name": "--color-quasar",
+      "value": "252, 85, 255"
+    },
+    {
+      "name": "--color-falstaff-shine",
+      "value": "227, 165, 108"
+    },
+    {
+      "name": "--color-yir-page5-shadow",
+      "value": "255, 183, 80"
+    },
+    {
+      "name": "--color-mask-green",
+      "value": "137, 226, 25"
+    },
+    {
+      "name": "--text-body-size-spacious",
+      "value": "1.25rem"
+    },
+    {
+      "name": "--color-yir-page0",
+      "value": "221, 244, 255"
+    },
+    {
+      "name": "--color-blue-jay",
+      "value": "132, 216, 255"
+    },
+    {
+      "name": "--text-label-weight-medium",
+      "value": "700"
+    },
+    {
+      "name": "--color-diamond-highlight",
+      "value": "231, 251, 251"
+    },
+    {
+      "name": "--text-label-size-medium",
+      "value": "1rem"
+    },
+    {
+      "name": "--color-freetail",
+      "value": "85, 85, 85"
+    },
+    {
+      "name": "--color-unknown-7c0000",
+      "value": "124, 0, 0"
+    },
+    {
+      "name": "--color-freetail-always-light",
+      "value": "85, 85, 85"
+    },
+    {
+      "name": "--color-yir-page1",
+      "value": "227, 255, 235"
+    },
+    {
+      "name": "--color-owl-always-dark",
+      "value": "147, 211, 51"
+    },
+    {
+      "name": "--text-pageTitle-weight-large",
+      "value": "700"
+    },
+    {
+      "name": "--color-fire-ant",
+      "value": "234, 43, 43"
+    },
+    {
+      "name": "--color-super-gradient-background",
+      "value": "12, 47, 113"
+    },
+    {
+      "name": "--color-swan-always-dark",
+      "value": "55, 70, 79"
+    },
+    {
+      "name": "--text-pageTitle-size-small",
+      "value": "2rem"
+    },
+    {
+      "name": "--color-hare-always-dark",
+      "value": "82, 101, 109"
+    },
+    {
+      "name": "--text-pageTitle-letter-spacing-small",
+      "value": "0"
+    },
+    {
+      "name": "--text-label-casing-large",
+      "value": "uppercase"
+    },
+    {
+      "name": "--color-banana",
+      "value": "255, 176, 32"
+    },
+    {
+      "name": "--text-heading-letter-spacing-small",
+      "value": "0"
+    },
+    {
+      "name": "--color-streak-panel-frozen-subtitle",
+      "value": "28, 176, 246"
+    },
+    {
+      "name": "--color-starfish",
+      "value": "255, 134, 208"
+    },
+    {
+      "name": "--color-vikram-shine",
+      "value": "214, 90, 162"
+    },
+    {
+      "name": "--color-snow-always-dark",
+      "value": "19, 31, 36"
+    },
+    {
+      "name": "--text-heading-weight-large",
+      "value": "700"
+    },
+    {
+      "name": "--color-juicy-blue-space",
+      "value": "10, 74, 130"
+    },
+    {
+      "name": "--color-freetail-always-dark",
+      "value": "82, 101, 109"
+    },
+    {
+      "name": "--color-streak-society-light-orange",
+      "value": "255, 179, 1"
+    },
+    {
+      "name": "--color-streak-panel-streak-society-text",
+      "value": "205, 121, 0"
+    },
+    {
+      "name": "--color-aqua",
+      "value": "56, 238, 255"
+    },
+    {
+      "name": "--color-pearl-stat",
+      "value": "255, 170, 222"
+    },
+    {
+      "name": "--text-caption-letter-spacing",
+      "value": "0"
+    },
+    {
+      "name": "--text-label-casing-medium",
+      "value": "uppercase"
+    },
+    {
+      "name": "--color-super-gradient-pink-variant1",
+      "value": "252, 85, 255"
+    },
+    {
+      "name": "--text-label-line-height-large",
+      "value": "1.5rem"
+    },
+    {
+      "name": "--color-starlight",
+      "value": "38, 138, 255"
+    },
+    {
+      "name": "--color-eddy-secondary",
+      "value": "234, 43, 43"
+    },
+    {
+      "name": "--color-super-gradient-green-variant1",
+      "value": "38, 255, 85"
+    },
+    {
+      "name": "--color-honeycreeper",
+      "value": "193, 187, 255"
+    },
+    {
+      "name": "--color-grizzly",
+      "value": "187, 113, 73"
+    },
+    {
+      "name": "--text-pageTitle-size-large",
+      "value": "2.5rem"
+    },
+    {
+      "name": "--color-rosefinch",
+      "value": "180, 28, 117"
+    },
+    {
+      "name": "--color-unknown-353575",
+      "value": "53, 53, 117"
+    },
+    {
+      "name": "--text-heading-casing-large",
+      "value": "none"
+    },
+    {
+      "name": "--text-heading-casing-small",
+      "value": "none"
+    },
+    {
+      "name": "--text-heading-casing-xsmall",
+      "value": "none"
+    },
+    {
+      "name": "--color-unknown-051d3c",
+      "value": "5, 29, 60"
+    },
+    {
+      "name": "--color-nyp-gradient-blue-header",
+      "value": "38, 143, 248"
+    },
+    {
+      "name": "--color-yir-page1-shadow",
+      "value": "19, 31, 36"
+    },
+    {
+      "name": "--text-pageTitle-line-height-small",
+      "value": "2.25rem"
+    },
+    {
+      "name": "--color-rookie",
+      "value": "0, 175, 133"
+    },
+    {
+      "name": "--color-anchovy",
+      "value": "210, 228, 232"
+    },
+    {
+      "name": "--text-heading-letter-spacing-large",
+      "value": "0"
+    },
+    {
+      "name": "--color-macaw-always-dark",
+      "value": "73, 192, 248"
+    },
+    {
+      "name": "--color-aqua-always-light",
+      "value": "56, 238, 255"
+    },
+    {
+      "name": "--color-hv-light-peach",
+      "value": "241, 218, 179"
+    },
+    {
+      "name": "--color-turtle",
+      "value": "165, 237, 110"
+    },
+    {
+      "name": "--color-half-branded-outline-purple",
+      "value": "140, 82, 255"
+    },
+    {
+      "name": "--color-streak-panel-streak-society-background-always-dark",
+      "value": "215, 148, 51"
+    },
+    {
+      "name": "--text-body-weight",
+      "value": "500"
+    },
+    {
+      "name": "--color-super-gradient-neutral-blue",
+      "value": "21, 82, 167"
+    },
+    {
+      "name": "--color-nyp-gradient-green",
+      "value": "38, 207, 155"
+    },
+    {
+      "name": "--color-unknown-030d42",
+      "value": "3, 13, 66"
+    },
+    {
+      "name": "--color-super-gradient-bottom-halo",
+      "value": "76, 29, 115"
+    },
+    {
+      "name": "--color-deep-starling",
+      "value": "34, 33, 81"
+    },
+    {
+      "name": "--color-unknown-0087d0",
+      "value": "0, 135, 208"
+    },
+    {
+      "name": "--color-facebook",
+      "value": "59, 89, 152"
+    },
+    {
+      "name": "--color-streak-society-dark-orange",
+      "value": "255, 151, 1"
+    },
+    {
+      "name": "--color-cardinal",
+      "value": "255, 75, 75"
+    },
+    {
+      "name": "--color-max-purple",
+      "value": "66, 2, 106"
+    },
+    {
+      "name": "--color-legendary-foreground",
+      "value": "140, 65, 3"
+    },
+    {
+      "name": "--color-streak-revival-background",
+      "value": "37, 9, 87"
+    },
+    {
+      "name": "--color-butterfly",
+      "value": "111, 78, 161"
+    },
+    {
+      "name": "--color-streak-panel-unextended-heading-background",
+      "value": "255, 245, 211"
+    },
+    {
+      "name": "--color-lin-lucy-radio",
+      "value": "179, 105, 0"
+    },
+    {
+      "name": "--color-unknown-a3dbeb",
+      "value": "163, 219, 235"
+    },
+    {
+      "name": "--color-oscar-radio",
+      "value": "0, 144, 109"
+    },
+    {
+      "name": "--color-hare",
+      "value": "175, 175, 175"
+    },
+    {
+      "name": "--color-super-gradient-neutral",
+      "value": "24, 61, 142"
+    },
+    {
+      "name": "--color-trailblazer-progress-bar",
+      "value": "169, 157, 254"
+    },
+    {
+      "name": "--text-caption-weight",
+      "value": "500"
+    },
+    {
+      "name": "--color-unknown-89e219",
+      "value": "137, 226, 25"
+    },
+    {
+      "name": "--color-champion",
+      "value": "255, 110, 53"
+    },
+    {
+      "name": "--color-stardust",
+      "value": "199, 255, 254"
+    },
+    {
+      "name": "--color-legendary-dark-background",
+      "value": "24, 24, 24"
+    },
+    {
+      "name": "--color-google",
+      "value": "66, 133, 244"
+    },
+    {
+      "name": "--color-gilded-secondary",
+      "value": "231, 166, 1"
+    },
+    {
+      "name": "--color-unknown-0e0f10",
+      "value": "14, 15, 16"
+    },
+    {
+      "name": "--color-unknown-000437",
+      "value": "0, 4, 55"
+    },
+    {
+      "name": "--color-hv-light-orange",
+      "value": "255, 177, 64"
+    },
+    {
+      "name": "--color-streak-panel-frozen-flair-background",
+      "value": "132, 216, 255"
+    },
+    {
+      "name": "--color-squid",
+      "value": "235, 227, 227"
+    },
+    {
+      "name": "--text-heading-casing-medium",
+      "value": "none"
+    },
+    {
+      "name": "--color-unknown-0047a4",
+      "value": "0, 71, 164"
+    },
+    {
+      "name": "--color-cloud-lightest",
+      "value": "240, 240, 240"
+    },
+    {
+      "name": "--color-bee",
+      "value": "255, 200, 0"
+    },
+    {
+      "name": "--color-deep-martin",
+      "value": "16, 15, 62"
+    },
+    {
+      "name": "--color-dragon",
+      "value": "204, 52, 141"
+    },
+    {
+      "name": "--color-daily_refresh",
+      "value": "0, 148, 255"
+    },
+    {
+      "name": "--color-unknown-ed8c01",
+      "value": "237, 140, 1"
+    },
+    {
+      "name": "--color-gray-text",
+      "value": "153, 153, 153"
+    },
+    {
+      "name": "--color-streak-panel-streak-society-background",
+      "value": "255, 200, 0"
+    },
+    {
+      "name": "--text-pageTitle-weight-small",
+      "value": "700"
+    },
+    {
+      "name": "--color-streak-panel-frozen-topbar-text",
+      "value": "24, 153, 214"
+    },
+    {
+      "name": "--color-peacock",
+      "value": "0, 205, 156"
+    }
+  ],
+  "forms": [],
+  "bodyBg": "rgb(255, 255, 255)",
+  "bodyColor": "rgb(60, 60, 60)",
+  "bodyFont": "sans-serif"
+}

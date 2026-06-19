@@ -1,0 +1,30 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:uplift",
+    "writtenAt": "2026-06-19"
+  },
+  "site": {
+    "originUrl": "https://www.duolingo.com/",
+    "extractedAt": "2026-06-19",
+    "pageCap": 1,
+    "totalDiscovered": 1,
+    "crawled": 1,
+    "mode": "uplift"
+  },
+  "pages": [
+    {
+      "slug": "home",
+      "url": "https://www.duolingo.com/",
+      "status": "prototyped",
+      "currentStatePath": "stardust/current/pages/home.json",
+      "prototypePath": "stardust/prototypes/home-A-proposed.html",
+      "variants": {
+        "A": "stardust/prototypes/home-A-proposed.html",
+        "B": "stardust/prototypes/home-B-proposed.html",
+        "C-static": "stardust/prototypes/home-C-proposed.html",
+        "C-cinematic": "stardust/prototypes/home-C-cinematic.html"
+      },
+      "migratedPath": ""
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "_provenance": { "writtenBy": "stardust:direct (uplift Phase 4)", "writtenAt": "2026-06-19", "variant": "A" },
+  "variant": "A",
+  "role": "Faithful + improvements (risk-averse green-light)",
+  "inherits": "DESIGN.json",
+  "deltas": {
+    "heroHeadline": "promoted to 64px Feather, owl-green; out-ranks section headings",
+    "featureRows": "lead claim hero-scale; remaining claims compressed into a 3-up card rail",
+    "products": "English Test / Schools / ABC clustered into one compact 'more from Duolingo' band",
+    "statBand": "new social-proof band — learners count, lessons, streak, '#1 way to learn'",
+    "cta": "one primary pushable CTA per viewport; sign-in + language demoted to quiet links"
+  },
+  "motion": "static",
+  "sectionPadding": { "desktop": 64 }
+}
