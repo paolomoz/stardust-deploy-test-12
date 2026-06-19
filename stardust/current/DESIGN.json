@@ -1,0 +1,49 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-06-19T00:00:00Z",
+    "againstInput": "https://elevenlabs.io/",
+    "mode": "descriptive",
+    "readArtifacts": ["stardust/current/_brand-extraction.json"]
+  },
+  "colors": {
+    "background": "#fdfcfc",
+    "surface": "#f5f3f1",
+    "surfaceAlt": "#ebe8e4",
+    "surfaceInverse": "#ffffff",
+    "textPrimary": "#000000",
+    "textMuted": "#777169",
+    "border": "#e5e5e5",
+    "accent": "#eb524b",
+    "accentRamp": { "300": "#FAABA7", "500": "#EB524B", "600": "#D7332B", "700": "#B52720" }
+  },
+  "typography": {
+    "headingFamily": "Waldenburg",
+    "headingStack": "\"Waldenburg\", \"Waldenburg Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif",
+    "bodyFamily": "Inter",
+    "bodyStack": "\"Inter\", \"Inter Fallback\", system-ui, sans-serif",
+    "monoFamily": "Geist Mono",
+    "scaleAudit": { "kind": "ad-hoc", "matchedScale": null }
+  },
+  "rounded": "9999px",
+  "spacing": { "baseUnit": 4, "sectionPadding": "96px", "containerMaxWidth": "1280px", "gridGap": "24px" },
+  "extensions": {
+    "componentStyle": {
+      "buttons": {
+        "primary": { "background": "#000000", "color": "#ffffff", "borderRadius": "9999px", "fontWeight": 700 },
+        "secondary": { "background": "#ffffff", "color": "#000000", "borderRadius": "9999px", "border": "1px solid #e5e5e5" }
+      },
+      "cards": { "background": "#f5f3f1", "borderRadius": "20px", "border": "1px solid #e5e5e5", "shadow": "rgba(0,0,0,0.06) 0 0 0 1px" }
+    },
+    "motifs": {
+      "borderRadius": { "primary": "9999px", "secondary": "20px", "pill": "9999px" },
+      "patterns": ["pill-cta", "social-proof-logos", "two-platform-split", "feature-grid", "api-model-cards", "research-index", "waveform-motif"]
+    },
+    "voice": {
+      "heroHeadline": "Bringing technology to life",
+      "navItems": ["ElevenCreative", "ElevenAgents", "ElevenAPI", "Enterprise", "Pricing"],
+      "tone": "technical-precise",
+      "examples": { "do": [], "dont": [] }
+    }
+  }
+}

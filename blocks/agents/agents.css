@@ -1,0 +1,56 @@
+.agents .eyebrow {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 12px;
+  color: var(--muted);
+  margin: 0 0 16px;
+}
+
+.agents .section-h {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin-bottom: 0;
+}
+
+.agents .section-sub {
+  color: var(--muted);
+  max-width: 620px;
+  margin: 18px 0 0;
+  font-size: 1.1rem;
+}
+
+.agents .card-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin-top: 44px;
+}
+
+.agents .cap {
+  background: var(--ink);
+  color: #fff;
+  border-radius: var(--radius-card);
+  padding: 28px;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: transform 0.38s var(--ease-out), box-shadow 0.38s;
+}
+
+.agents .cap:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgb(0 0 0 / 12%);
+}
+
+.agents .cap h4 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+@media (width <= 900px) { .agents .card-grid { grid-template-columns: repeat(2, 1fr); } }
+
+@media (width <= 560px) { .agents .card-grid { grid-template-columns: 1fr; } }
+
+@media (prefers-reduced-motion: reduce) { .agents .cap:hover { transform: none; } }

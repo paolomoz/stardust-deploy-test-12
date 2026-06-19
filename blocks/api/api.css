@@ -1,0 +1,61 @@
+.api .section-h {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin-bottom: 0;
+}
+
+.api .api-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 44px;
+}
+
+.api .api-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 32px;
+  transition: transform 0.38s var(--ease-out), box-shadow 0.38s;
+}
+
+.api .api-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgb(0 0 0 / 7%);
+}
+
+.api .api-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 18px;
+}
+
+.api .api-card ul {
+  list-style: none;
+  margin: 0 0 24px;
+  padding: 0;
+}
+
+.api .api-card li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 15px;
+  font-family: var(--font-mono);
+}
+
+.api .api-card li:last-child {
+  border-bottom: 0;
+}
+
+.api .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex: none;
+}
+
+@media (width <= 900px) { .api .api-grid { grid-template-columns: 1fr; } }
+
+@media (prefers-reduced-motion: reduce) { .api .api-card:hover { transform: none; } }

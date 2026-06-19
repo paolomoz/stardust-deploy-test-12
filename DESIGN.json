@@ -1,0 +1,16 @@
+{
+  "_provenance": { "writtenBy": "stardust:direct", "writtenAt": "2026-06-19T00:00:00Z", "mode": "A" },
+  "colors": { "background": "#fdfcfc", "surface": "#f5f3f1", "surfaceAlt": "#ebe8e4", "ink": "#000000", "muted": "#5c574f", "border": "#e5e5e5", "accent": "#eb524b", "accentDeep": "#b52720", "accentRamp": { "300": "#FAABA7", "500": "#EB524B", "600": "#D7332B", "700": "#B52720" } },
+  "typography": { "headingFamily": "Waldenburg", "headingStack": "\"Waldenburg\", \"Waldenburg Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif", "bodyFamily": "Inter", "bodyStack": "\"Inter\", system-ui, -apple-system, sans-serif", "monoFamily": "Geist Mono", "monoStack": "\"Geist Mono\", ui-monospace, SFMono-Regular, Menlo, monospace", "scaleAudit": { "kind": "modular", "matchedScale": "perfect-fourth", "ratio": 1.333 } },
+  "rounded": "9999px",
+  "spacing": { "baseUnit": 4, "sectionPadding": "88px", "containerMaxWidth": "1200px", "gridGap": "24px" },
+  "extensions": {
+    "componentStyle": {
+      "buttons": { "primary": { "background": "#000000", "color": "#ffffff", "borderRadius": "9999px", "fontWeight": 700 }, "secondary": { "background": "#ffffff", "color": "#000000", "borderRadius": "9999px", "border": "1px solid #e5e5e5" } },
+      "cards": { "background": "#f5f3f1", "borderRadius": "20px", "border": "1px solid #e5e5e5", "shadow": "rgba(0,0,0,0.06) 0 0 0 1px" }
+    },
+    "motifs": { "borderRadius": { "primary": "9999px", "secondary": "20px" }, "patterns": ["pill-cta", "two-platform-split", "feature-grid", "api-model-cards", "research-index", "social-proof-logos", "waveform-motif"] },
+    "voice": { "heroHeadline": "Bringing technology to life", "navItems": ["ElevenCreative", "ElevenAgents", "ElevenAPI", "Enterprise", "Pricing"], "tone": "technical-precise" },
+    "variants": ["A", "B", "C"]
+  }
+}

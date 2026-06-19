@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ElevenLabs · Current-state brand review</title>
+<style>
+:root{--bg:#fdfcfc;--surface:#f5f3f1;--surface-alt:#ebe8e4;--text:#000000;--muted:#777169;--border:#e5e5e5;--accent:#eb524b;--primary-dark:#111;--display:"Waldenburg", "Waldenburg Fallback", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;--body:"Inter", "Inter Fallback", system-ui, sans-serif;--mono:"Geist Mono", "Geist Mono Fallback", ui-monospace, monospace;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--display);font-weight:400;letter-spacing:-0.015em;}
+h1{font-weight:300;letter-spacing:-0.02em}
+.nav{position:sticky;top:0;z-index:10;background:var(--primary-dark);color:#fff;display:flex;flex-wrap:wrap;gap:4px;align-items:center;padding:10px 24px;font-family:var(--display);text-transform:uppercase;letter-spacing:1.5px;font-size:12px}
+.nav .brand{font-weight:700;margin-right:auto}
+.nav a{color:#fff;text-decoration:none;padding:4px 10px;border-radius:150px}
+.nav a:hover{background:rgba(255,255,255,0.18)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+section{padding:56px 0;border-bottom:1px solid var(--border)}
+.eyebrow{font-family:var(--mono);text-transform:uppercase;letter-spacing:0.08em;font-size:12px;color:var(--muted);margin:0 0 8px}
+.badge{display:inline-block;font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:0.06em;background:var(--surface);border:1px solid var(--border);border-radius:150px;padding:2px 10px;margin-left:8px;color:var(--muted);vertical-align:middle}
+.masthead{padding:72px 0 56px}
+.masthead .hero-line{font-family:var(--display);font-weight:300;font-size:clamp(2.5rem,6vw,4.5rem);line-height:1.05;letter-spacing:-0.02em;color:var(--accent);margin:12px 0}
+.masthead .tagline{font-size:1.125rem;color:var(--muted);max-width:60ch}
+.masthead .url{font-family:var(--mono);font-size:13px;color:var(--muted);margin-top:16px}
+.cov{display:flex;flex-wrap:wrap;gap:16px}
+.cov .box{flex:1;min-width:220px;background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:20px}
+.cov .num{font-family:var(--display);font-size:2rem}
+.grid-sw{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:18px}
+.swatch{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:16px}
+.chip{height:96px;border-radius:14px;margin-bottom:12px}
+.srole{font-family:var(--display);text-transform:uppercase;letter-spacing:0.04em;font-size:13px}
+.shex{font-family:var(--mono);font-size:13px;color:var(--muted)}
+.smeta{font-size:12px;color:var(--muted);margin-top:6px}
+.uchip{display:inline-block;background:var(--bg);border:1px solid var(--border);border-radius:150px;padding:1px 8px;margin:2px 2px 0 0;font-family:var(--mono);font-size:11px}
+.spec{padding:18px 0;border-bottom:1px dashed var(--border)}
+.spec-lab{font-family:var(--mono);font-size:12px;color:var(--muted);margin-bottom:8px}
+.spec-face{color:var(--text)}
+.cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.vcard{background:var(--surface-alt);border-radius:20px;padding:22px}
+.vcard .k{font-family:var(--mono);font-size:11px;text-transform:uppercase;color:var(--muted)}
+.vcard .v{font-family:var(--display);font-size:1.25rem;margin-top:6px}
+table{width:100%;border-collapse:collapse;margin-top:16px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--border);font-size:14px}
+th{font-family:var(--display);text-transform:uppercase;letter-spacing:0.04em;font-size:12px}
+.pill{display:inline-block;background:#000;color:#fff;border-radius:9999px;padding:4px 14px;font-family:var(--mono);font-size:12px}
+.tens{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.tcard{border-left:4px solid var(--accent);background:var(--surface);border-radius:0 16px 16px 0;padding:16px 18px}
+.tcard .tag{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:0.06em;background:var(--accent);color:#fff;border-radius:150px;padding:2px 10px}
+.tcard h4{margin:10px 0 6px}
+.tcard .src{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:8px}
+.motifs{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:16px}
+.motif{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:16px;text-align:center}
+.motif-box{width:72px;height:72px;background:#000;margin:0 auto 10px}
+.cols{columns:2;gap:32px}
+ul.clean{list-style:none;padding:0;margin:0}
+ul.clean li{padding:8px 0 8px 14px;border-left:3px solid var(--accent);margin-bottom:8px;font-size:14px}
+.foot{color:var(--muted);font-size:13px}
+.logo-row{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+.logo-box{max-width:280px;background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:24px}
+dl{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;font-size:14px}
+dt{font-family:var(--display);text-transform:uppercase;font-size:12px;letter-spacing:0.04em;color:var(--muted)}
+@media(max-width:720px){.tens,.cards{grid-template-columns:1fr}.cols{columns:1}}
+</style></head>
+<body>
+<nav class="nav"><span class="brand">ElevenLabs · Current state</span><a href="#coverage">Coverage</a><a href="#pages">Pages</a><a href="#palette">Palette</a><a href="#typography">Typography</a><a href="#voice">Voice</a><a href="#tensions">Tensions</a><a href="#motifs">Motifs</a><a href="#components">Components</a><a href="#system">System</a><a href="#logo">Logo</a><a href="#spacing">Spacing</a></nav>
+<header class="wrap masthead">
+  <p class="eyebrow">Stardust · current-state brand review</p>
+  <h1 style="margin:0;font-size:clamp(2rem,4vw,3rem)">ElevenLabs</h1>
+  <p class="hero-line">Bringing technology to life</p>
+  <p class="tagline">Create lifelike speech with our AI voice generator and voice agents platform.</p>
+  <p class="url">https://elevenlabs.io</p>
+</header>
+
+<section id="coverage" class="wrap"><p class="eyebrow">Coverage</p><h2>Extraction coverage <span class="badge">cross-page n/a · single page</span></h2>
+<div class="cov">
+  <div class="box"><div class="num">1 / 1</div>pages extracted (--single, homepage)</div>
+  <div class="box"><div class="num">22.1s</div>wait · mode <b>spec</b> · HTTP 200</div>
+  <div class="box"><div class="num">8 · 4</div>palette colors · captured font files</div>
+</div></section>
+
+<section id="pages" class="wrap"><p class="eyebrow">Pages</p><h2>Captured surface <span class="badge">screenshot</span></h2>
+<div class="logo-row"><div class="logo-box" style="max-width:520px"><img src="assets/screenshots/home.png" alt="ElevenLabs home" style="width:100%;border-radius:12px;border:1px solid var(--border)"><div class="smeta" style="margin-top:8px"><b>Free AI Voice Generator &amp; Voice Agents Platform | ElevenLabs</b> · <span style="font-family:var(--mono)">/</span></div></div></div></section>
+
+<section id="palette" class="wrap"><p class="eyebrow">Color</p><h2>Palette <span class="badge">home-only</span></h2>
+<div class="grid-sw">
+  <div class="swatch">
+    <div class="chip" style="background:#fdfcfc;border:1px solid var(--border)"></div>
+    <div class="srole">background</div>
+    <div class="shex">#fdfcfc</div>
+    <div class="smeta">29,224 · <span class="uchip">background</span></div>
+  </div>
+  <div class="swatch">
+    <div class="chip" style="background:#000000;"></div>
+    <div class="srole">text-primary</div>
+    <div class="shex">#000000</div>
+    <div class="smeta">5,798 · <span class="uchip">text</span><span class="uchip">fill</span><span class="uchip">border</span><span class="uchip">background</span></div>
+  </div>
+  <div class="swatch">
+    <div class="chip" style="background:#f5f3f1;"></div>
+    <div class="srole">surface</div>
+    <div class="shex">#f5f3f1</div>
+    <div class="smeta">5,071 · <span class="uchip">background</span><span class="uchip">fill</span></div>
+  </div>
+  <div class="swatch">
+    <div class="chip" style="background:#e5e5e5;"></div>
+    <div class="srole">border</div>
+    <div class="shex">#e5e5e5</div>
+    <div class="smeta">2,500 · <span class="uchip">border</span></div>
+  </div>
+  <div class="swatch">
+    <div class="chip" style="background:#777169;"></div>
+    <div class="srole">text-muted</div>
+    <div class="shex">#777169</div>
+    <div class="smeta">2,056 · <span class="uchip">text</span><span class="uchip">border</span><span class="uchip">fill</span></div>
+  </div>
+  <div class="swatch">
+    <div class="chip" style="background:#ffffff;border:1px solid var(--border)"></div>
+    <div class="srole">surface-inverse</div>
+    <div class="shex">#ffffff</div>
+    <div class="smeta">1,658 · <span class="uchip">background</span><span class="uchip">text</span><span class="uchip">border</span></div>
+  </div>
+  <div class="swatch">
+    <div class="chip" style="background:#ebe8e4;"></div>
+    <div class="srole">surface-alt</div>
+    <div class="shex">#ebe8e4</div>
+    <div class="smeta">180 · <span class="uchip">border</span><span class="uchip">background</span></div>
+  </div>
+  <div class="swatch">
+    <div class="chip" style="background:#eb524b;"></div>
+    <div class="srole">accent</div>
+    <div class="shex">#eb524b</div>
+    <div class="smeta">9 · <span class="uchip">text</span><span class="uchip">fill</span></div>
+  </div></div></section>
+
+<section id="typography" class="wrap"><p class="eyebrow">Type</p><h2>Typography <span class="badge">No modular scale</span></h2>
+
+  <div class="spec">
+    <div class="spec-lab">H1 · Waldenburg 300 / display / lh 1.05</div>
+    <div class="spec-face" style="font-family:"Waldenburg", "Waldenburg Fallback", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;font-weight:300;font-size:4.25rem;letter-spacing:-0.02em;">Bringing technology to life</div>
+  </div>
+  <div class="spec">
+    <div class="spec-lab">H2 · Waldenburg / section / lh 1.1</div>
+    <div class="spec-face" style="font-family:"Waldenburg", "Waldenburg Fallback", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;font-weight:400;font-size:2.5rem;letter-spacing:-0.015em;">Two platforms built on the same research foundation</div>
+  </div>
+  <div class="spec">
+    <div class="spec-lab">H3 · Waldenburg / subhead</div>
+    <div class="spec-face" style="font-family:"Waldenburg", "Waldenburg Fallback", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;font-weight:400;font-size:1.5rem;letter-spacing:-0.01em;">Create, edit and localize in one AI platform</div>
+  </div>
+  <div class="spec">
+    <div class="spec-lab">Eyebrow · Geist Mono / uppercase</div>
+    <div class="spec-face" style="font-family:"Geist Mono", "Geist Mono Fallback", ui-monospace, monospace;font-weight:400;font-size:0.8125rem;letter-spacing:0.08em;text-transform:uppercase">RESEARCH</div>
+  </div>
+  <div class="spec">
+    <div class="spec-lab">Body · Inter 400 / 1.125rem / lh 1.55</div>
+    <div class="spec-face" style="font-family:"Inter", "Inter Fallback", system-ui, sans-serif;font-weight:400;font-size:1.125rem;letter-spacing:normal;">Powering the best enterprises, creators, and developers. From ElevenAgents for customer experience to a full creative suite.</div>
+  </div></section>
+
+<section id="voice" class="wrap"><p class="eyebrow">Voice</p><h2>Voice <span class="badge">technical-precise</span></h2>
+<div class="cards">
+  <div class="vcard"><div class="k">Hero headline</div><div class="v">Bringing technology to life</div></div>
+  <div class="vcard"><div class="k">Tagline</div><div class="v">Create lifelike speech with our AI voice generator and voice agents platform.</div></div>
+  <div class="vcard"><div class="k">First paragraph</div><div class="v" style="font-size:1rem;font-family:var(--body)">Powering the best enterprises, creators, and developers. From ElevenAgents for customer experience to a full creative suite for speech, music, sound effects, and video.</div></div>
+</div>
+<h3 style="margin-top:32px">CTA frequency</h3>
+<table><thead><tr><th>Label</th><th>Total</th><th>Pages</th></tr></thead><tbody><tr><td><span class="pill">Learn more</span></td><td>5</td><td>1</td></tr><tr><td><span class="pill">Sign up</span></td><td>2</td><td>1</td></tr><tr><td><span class="pill">Log in</span></td><td>2</td><td>1</td></tr><tr><td><span class="pill">Talk to sales</span></td><td>1</td><td>1</td></tr><tr><td><span class="pill">Contact sales</span></td><td>1</td><td>1</td></tr><tr><td><span class="pill">Get started</span></td><td>1</td><td>1</td></tr><tr><td><span class="pill">Explore docs</span></td><td>1</td><td>1</td></tr><tr><td><span class="pill">Create an AI agent</span></td><td>1</td><td>1</td></tr></tbody></table>
+<div class="cov" style="margin-top:24px">
+  <div class="box"><div class="num">8%</div>headings uppercase</div>
+  <div class="box"><div class="num">48</div>distinct headings</div>
+  <div class="box"><div class="num">12</div>distinct CTA labels</div>
+</div></section>
+
+<section id="tensions" class="wrap"><p class="eyebrow">Decisions for direct</p><h2>Tensions <span class="badge">6</span></h2>
+<div class="tens"><div class="tcard"><span class="tag">T-scale</span><h4>Type scale is ad-hoc</h4><p>Heading sizes don't follow a single modular ratio (1.6 · 1.5 · 1.33). Direct will need to decide whether the target adopts a modular scale.</p><div class="src">Source: _brand-extraction.json § type.scaleAudit</div></div><div class="tcard"><span class="tag">T-color-imbalance</span><h4>Accent #eb524b used in one context only</h4><p>#eb524b (accent) appears as text/fill only — never as background/border. It lives almost exclusively on the waveform/research surfaces. Direct must decide: keep as rare signal, expand, or drop.</p><div class="src">Source: _brand-extraction.json § palette[].usedAs</div></div><div class="tcard"><span class="tag">T-cta-vocab</span><h4>Two phrasings for the sales path</h4><p>"Talk to sales" and "Contact sales" both appear for the same action. Direct should pick one canonical sales CTA.</p><div class="src">Source: pages/home.json § ctas</div></div><div class="tcard"><span class="tag">T-cta-vocab</span><h4>"Learn more" carries every secondary CTA</h4><p>"Learn more" appears 5× as the generic secondary affordance (creative, agents, about, safety…). Screen-reader and scan-clarity tension — the destination isn't in the label. Direct could differentiate ("See ElevenAgents", "Read the research").</p><div class="src">Source: pages/home.json § ctas</div></div><div class="tcard"><span class="tag">T-logo-variants</span><h4>Single logo variant captured</h4><p>Only the inline-SVG wordmark was captured. The redesign will likely need monochrome / inverted variants; direct should plan that.</p><div class="src">Source: _brand-extraction.json § logo</div></div><div class="tcard"><span class="tag">T-img-alt-empty</span><h4>Empty alt text widespread</h4><p>80% of captured images (37/46) carry empty alt text. Accessibility + content-sourcing decision for direct.</p><div class="src">Source: pages/home.json § media.images[].alt</div></div></div></section>
+
+<section id="motifs" class="wrap"><p class="eyebrow">Shape</p><h2>Motifs <span class="badge">home-only</span></h2>
+<div class="motifs">
+  <div class="motif">
+    <div class="motif-box" style="border-radius:9999px;width:120px;height:48px"></div>
+    <div class="smeta"><b>9999px</b> · 195×</div>
+  </div>
+  <div class="motif">
+    <div class="motif-box" style="border-radius:4px;"></div>
+    <div class="smeta"><b>4px</b> · 109×</div>
+  </div>
+  <div class="motif">
+    <div class="motif-box" style="border-radius:20px;"></div>
+    <div class="smeta"><b>20px</b> · 70×</div>
+  </div>
+  <div class="motif">
+    <div class="motif-box" style="border-radius:10px;"></div>
+    <div class="smeta"><b>10px</b> · 27×</div>
+  </div>
+  <div class="motif">
+    <div class="motif-box" style="border-radius:2px;"></div>
+    <div class="smeta"><b>2px</b> · 13×</div>
+  </div>
+  <div class="motif">
+    <div class="motif-box" style="border-radius:16px;"></div>
+    <div class="smeta"><b>16px</b> · 10×</div>
+  </div>
+  <div class="motif">
+    <div class="motif-box" style="border-radius:24px;"></div>
+    <div class="smeta"><b>24px</b> · 7×</div>
+  </div></div></section>
+
+<section id="components" class="wrap"><p class="eyebrow">Components & patterns</p><h2>Components <span class="badge">observed</span></h2>
+<div class="cols"><ul class="clean"><li><b>grids</b> — 45</li><li><b>tabs</b> — 6</li><li><b>tables</b> — 5</li><li><b>iframes</b> — 2</li><li><b>pill-cta</b> — all CTAs render at 9999px radius (195 occurrences); black-fill primary + white-outline secondary</li><li><b>social-proof-logos</b> — 'Trusted by leading developers and enterprises' logo strip after hero</li><li><b>two-platform-split</b> — 'Two platforms built on the same research foundation' — ElevenCreative / ElevenAgents split</li><li><b>feature-grid</b> — Create/edit/localize and agents capabilities laid out as labelled feature grids</li><li><b>api-model-cards</b> — API section lists model cards (Eleven Flash, Multilingual, v3, Scribe)</li><li><b>research-index</b> — 'Research that redefines human technology interaction' — model/research card index with red accent</li><li><b>waveform-motif</b> — audio waveform visual recurs on hero/research surfaces (the one place the red accent lives)</li></ul></div></section>
+
+<section id="system" class="wrap"><p class="eyebrow">System components</p><h2>Repeated structure <span class="badge">home-only</span></h2>
+<ul class="clean"><li><b>site-header</b> (header) — ElevenCreative · ElevenAgents · ElevenAPI · Enterprise · Pricing — CTAs: Log in, Sign up</li><li><b>site-footer</b> (footer) — Product · Company · Resources · Solutions</li></ul></section>
+
+<section id="logo" class="wrap"><p class="eyebrow">Logo</p><h2>Logo & marks</h2>
+<div class="logo-row">
+  <div class="logo-box"><img src="assets/logo.svg" alt="ElevenLabs logo" style="width:100%;max-height:80px;object-fit:contain"></div>
+  <dl>
+    <dt>Source</dt><dd>inline-svg</dd>
+    <dt>File</dt><dd>svg · inline</dd>
+    <dt>Variants captured</dt><dd>1 (primary)</dd>
+    <dt>Variants not captured</dt><dd>monochrome / inverted (see T-logo-variants)</dd>
+  </dl>
+</div></section>
+
+<section id="spacing" class="wrap"><p class="eyebrow">Spacing & shape</p><h2>Spacing & radii</h2>
+<p>Base unit <b>4px</b> · section padding <b>96px</b> · container <b>1280px</b></p>
+<div class="motifs" style="margin-top:16px"><div class="motif"><div class="motif-box" style="border-radius:9999px;background:var(--surface);border:1px solid var(--border)"></div><div class="smeta">9999px</div></div><div class="motif"><div class="motif-box" style="border-radius:4px;background:var(--surface);border:1px solid var(--border)"></div><div class="smeta">4px</div></div><div class="motif"><div class="motif-box" style="border-radius:20px;background:var(--surface);border:1px solid var(--border)"></div><div class="smeta">20px</div></div><div class="motif"><div class="motif-box" style="border-radius:10px;background:var(--surface);border:1px solid var(--border)"></div><div class="smeta">10px</div></div><div class="motif"><div class="motif-box" style="border-radius:2px;background:var(--surface);border:1px solid var(--border)"></div><div class="smeta">2px</div></div><div class="motif"><div class="motif-box" style="border-radius:16px;background:var(--surface);border:1px solid var(--border)"></div><div class="smeta">16px</div></div><div class="motif"><div class="motif-box" style="border-radius:24px;background:var(--surface);border:1px solid var(--border)"></div><div class="smeta">24px</div></div></div></section>
+
+<footer class="wrap" style="padding:40px 0">
+  <p class="foot">Generated by <b>stardust:extract</b> (uplift) from a single live Playwright render of https://elevenlabs.io. Read: pages/home.json, _brand-extraction.json, assets/screenshots/home.png, assets/logo.svg.</p>
+  <p class="foot">What's next → <b>/stardust:direct</b> resolves a redesign direction from these tensions.</p>
+</footer>
+</body></html>

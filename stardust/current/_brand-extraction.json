@@ -1,0 +1,184 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-06-19T00:00:00Z",
+    "readArtifacts": [
+      "https://elevenlabs.io/",
+      "stardust/current/pages/home.json",
+      "stardust/current/_raw-aggregates.json"
+    ],
+    "synthesizedInputs": [],
+    "stardustVersion": "uplift",
+    "notes": "Single-page extract (--single). Palette/type/motifs sourced from the home page only; cross-page aggregation not run. firstParagraph in home.json was polluted by the consent banner; voice.firstParagraph below uses the hero subcopy instead. Brand is near-monochrome (warm off-white + black ink + warm neutrals) with a red accent ramp used sparingly on research/waveform surfaces."
+  },
+  "site": {
+    "name": "ElevenLabs",
+    "tagline": "Create lifelike speech with our AI voice generator and voice agents platform.",
+    "originUrl": "https://elevenlabs.io"
+  },
+  "logo": {
+    "source": "inline-svg",
+    "sourceSelector": "header svg",
+    "localPath": "stardust/current/assets/logo.svg",
+    "format": "svg",
+    "intrinsicWidth": 120,
+    "intrinsicHeight": 24,
+    "synthesized": false,
+    "synthesizedBasis": null
+  },
+  "palette": [
+    { "role": "background",    "value": "#fdfcfc", "occurrences": 29224, "usedAs": ["background"], "sourceSelectors": ["body", ".page", "section"], "sources": ["home"] },
+    { "role": "text-primary",  "value": "#000000", "occurrences": 5798,  "usedAs": ["text","fill","border","background"], "sourceSelectors": ["h1","h2","p",".btn-primary"], "sources": ["home"] },
+    { "role": "surface",       "value": "#f5f3f1", "occurrences": 5071,  "usedAs": ["background","fill"], "sourceSelectors": [".card","section.alt"], "sources": ["home"] },
+    { "role": "border",        "value": "#e5e5e5", "occurrences": 2500,  "usedAs": ["border"], "sourceSelectors": [".card","input","hr"], "sources": ["home"] },
+    { "role": "text-muted",    "value": "#777169", "occurrences": 2056,  "usedAs": ["text","border","fill"], "sourceSelectors": ["p.muted","figcaption","label"], "sources": ["home"] },
+    { "role": "surface-inverse","value": "#ffffff","occurrences": 1658,  "usedAs": ["background","text","border"], "sourceSelectors": [".btn-secondary",".card-white"], "sources": ["home"] },
+    { "role": "surface-alt",   "value": "#ebe8e4", "occurrences": 180,   "usedAs": ["border","background"], "sourceSelectors": ["section.warm",".divider"], "sources": ["home"] },
+    { "role": "accent",        "value": "#eb524b", "occurrences": 9,     "usedAs": ["text","fill"], "sourceSelectors": [".waveform",".research-tag","[class*=red-500]"], "sources": ["home"], "ramp": { "red-300": "#FAABA7", "red-500": "#EB524B", "red-600": "#D7332B", "red-700": "#B52720" } }
+  ],
+  "type": {
+    "headingFamily": {
+      "name": "Waldenburg",
+      "stack": "\"Waldenburg\", \"Waldenburg Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif",
+      "weights": [300, 400, 700],
+      "sizes": ["clamp(2.75rem, 6vw, 5rem)", "clamp(2rem, 4vw, 3rem)", "1.5rem"],
+      "lineHeights": [1.05, 1.1, 1.2],
+      "letterSpacing": ["-0.02em", "-0.015em"],
+      "sourceSelectors": ["h1", "h2", "h3"],
+      "note": "Distinctive private cut. Hero/H1 set in Waldenburg Buch (light, weight 300) — the signature register. WaldenburgFH (Fett Halbschmal, weight 700) used on buttons/labels."
+    },
+    "bodyFamily": {
+      "name": "Inter",
+      "stack": "\"Inter\", \"Inter Fallback\", system-ui, sans-serif",
+      "weights": [400, 500],
+      "sizes": ["1.125rem", "1rem", "0.9375rem"],
+      "lineHeights": [1.55, 1.5, 1.4],
+      "letterSpacing": ["normal"],
+      "sourceSelectors": ["p", "li", "a"]
+    },
+    "monoFamily": {
+      "name": "Geist Mono",
+      "stack": "\"Geist Mono\", \"Geist Mono Fallback\", ui-monospace, monospace",
+      "weights": [400],
+      "sizes": ["0.75rem", "0.8125rem"],
+      "letterSpacing": ["0.04em"],
+      "sourceSelectors": ["span.eyebrow", ".f-ui label"],
+      "note": "Used for uppercase eyebrow/label chrome (--f-ui-*-text-transform: uppercase)."
+    },
+    "scaleRatio": null,
+    "scaleAudit": { "kind": "ad-hoc", "ratios": [1.6, 1.5, 1.33], "matchedScale": null },
+    "loadStrategy": "swap",
+    "files": [
+      { "url": "https://elevenlabs.io/_next/static/media/KMR-Waldenburg-Buch-latin.woff2", "family": "Waldenburg", "weight": 300, "style": "normal", "localPath": "stardust/current/assets/fonts/KMR-Waldenburg-Buch-latin.1f7863d3c4317f3d.woff2", "licensingFlag": "private" },
+      { "url": "https://elevenlabs.io/_next/static/media/KMR-Waldenburg-Normal-latin.woff2", "family": "Waldenburg", "weight": 400, "style": "normal", "localPath": "stardust/current/assets/fonts/KMR-Waldenburg-Normal-latin.47fcefe5bf77b4e5.woff2", "licensingFlag": "private" },
+      { "url": "https://elevenlabs.io/_next/static/media/KMR-Waldenburg-Fett-latin.woff2", "family": "Waldenburg", "weight": 700, "style": "normal", "localPath": "stardust/current/assets/fonts/KMR-Waldenburg-Fett-latin.e6b0db8ee0a63897.woff2", "licensingFlag": "private" },
+      { "url": "https://elevenlabs.io/_next/static/media/KMR-Waldenburg-FettHalbschmal-latin.woff2", "family": "WaldenburgFH", "weight": 700, "style": "normal", "localPath": "stardust/current/assets/fonts/KMR-Waldenburg-FettHalbschmal-latin.f75400b2d7673b43.woff2", "licensingFlag": "private" }
+    ]
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "scale": [4, 8, 12, 16, 20, 24, 32, 48, 64, 96],
+    "sectionPadding": "96px",
+    "containerMaxWidth": "1280px",
+    "gridGap": "24px"
+  },
+  "motifs": {
+    "borderRadius": {
+      "primary": "9999px",
+      "secondary": "20px",
+      "pill": "9999px",
+      "primarySources": ["home"],
+      "occurrences": { "9999px": 195, "4px": 109, "20px": 70, "10px": 27, "2px": 13, "16px": 10, "24px": 7 }
+    },
+    "shadows": [
+      { "value": "rgba(0,0,0,0.075) 0px 0px 0px 1px", "uses": "subtle hairline ring on cards/inputs" },
+      { "value": "rgba(0,0,0,0.06) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 1px 2px 0px", "uses": "cards" },
+      { "value": "rgba(0,0,0,0.08) 0px 0px 0px 0.5px, rgba(0,0,0,0.04) 0px 1.677px 4px 0px", "uses": "raised cards" }
+    ],
+    "gradients": [],
+    "patterns": [
+      { "name": "pill-cta", "evidence": "all CTAs render at 9999px radius (195 occurrences); black-fill primary + white-outline secondary" },
+      { "name": "social-proof-logos", "evidence": "'Trusted by leading developers and enterprises' logo strip after hero" },
+      { "name": "two-platform-split", "evidence": "'Two platforms built on the same research foundation' — ElevenCreative / ElevenAgents split" },
+      { "name": "feature-grid", "evidence": "Create/edit/localize and agents capabilities laid out as labelled feature grids" },
+      { "name": "api-model-cards", "evidence": "API section lists model cards (Eleven Flash, Multilingual, v3, Scribe)" },
+      { "name": "research-index", "evidence": "'Research that redefines human technology interaction' — model/research card index with red accent" },
+      { "name": "waveform-motif", "evidence": "audio waveform visual recurs on hero/research surfaces (the one place the red accent lives)" }
+    ]
+  },
+  "componentStyle": {
+    "buttons": {
+      "primary": { "background": "#000000", "color": "#ffffff", "borderRadius": "9999px", "padding": "10px 20px", "fontWeight": 700, "fontFamily": "WaldenburgFH", "shadow": null, "hoverDelta": "lighten ~10%" },
+      "secondary": { "background": "#ffffff", "color": "#000000", "borderRadius": "9999px", "padding": "10px 20px", "fontWeight": 700, "border": "1px solid #e5e5e5" },
+      "ghost": { "background": "transparent", "color": "#000000", "borderRadius": "9999px" }
+    },
+    "dualCTAPattern": "primary-black-then-secondary-outline",
+    "cards": { "background": "#f5f3f1", "borderRadius": "20px", "padding": "24px", "shadow": "rgba(0,0,0,0.06) 0px 0px 0px 1px", "border": "1px solid #e5e5e5" },
+    "inputs": { "borderRadius": "9999px", "padding": "10px 16px", "border": "1px solid #e5e5e5", "focusRing": "0 0 0 3px rgba(0,0,0,0.1)" }
+  },
+  "systemComponents": [
+    {
+      "name": "site-header",
+      "kind": "header",
+      "occurrences": 1,
+      "headingSequence": ["ElevenCreative", "ElevenAgents", "ElevenAPI", "Enterprise", "Pricing"],
+      "ctaLabels": ["Log in", "Sign up"],
+      "exampleSlug": "home",
+      "exampleSelector": "header",
+      "examplePages": ["home"]
+    },
+    {
+      "name": "site-footer",
+      "kind": "footer",
+      "occurrences": 1,
+      "headingSequence": ["Product", "Company", "Resources", "Solutions"],
+      "ctaLabels": [],
+      "exampleSlug": "home",
+      "exampleSelector": "footer",
+      "examplePages": ["home"]
+    }
+  ],
+  "iconFont": null,
+  "voice": {
+    "heroHeadline": "Bringing technology to life",
+    "heroSubcopy": "Powering the best enterprises, creators, and developers. From ElevenAgents for customer experience to a full creative suite.",
+    "heroImage": {
+      "url": "https://elevenlabs.io/cover.png",
+      "alt": "ElevenLabs audio platform",
+      "source": "css-background",
+      "domPath": "main > section.hero",
+      "localPath": null,
+      "rect": { "x": 0, "y": 80, "width": 1440, "height": 640 }
+    },
+    "primaryCTALabel": "Sign up",
+    "ctaSamples": ["Sign up", "Get started", "Learn more", "Talk to sales", "Explore docs", "Create an AI agent"],
+    "navItems": ["ElevenCreative", "ElevenAgents", "ElevenAPI", "Enterprise", "Pricing"],
+    "footerHeadings": ["Product", "Company", "Resources", "Solutions"],
+    "firstParagraph": "Powering the best enterprises, creators, and developers. From ElevenAgents for customer experience to a full creative suite for speech, music, sound effects, and video.",
+    "tone": {
+      "guess": "technical-precise",
+      "evidence": "research-forward, capability-dense copy; product names as nouns (ElevenAgents, Eleven Flash, Scribe); short declarative headlines; engineer-and-enterprise audience"
+    }
+  },
+  "voiceTable": {
+    "ctaFrequency": [
+      { "label": "Learn more", "total": 5, "pageCount": 1, "pages": ["home"] },
+      { "label": "Sign up", "total": 2, "pageCount": 1, "pages": ["home"] },
+      { "label": "Log in", "total": 2, "pageCount": 1, "pages": ["home"] },
+      { "label": "Talk to sales", "total": 1, "pageCount": 1, "pages": ["home"] },
+      { "label": "Contact sales", "total": 1, "pageCount": 1, "pages": ["home"] },
+      { "label": "Get started", "total": 1, "pageCount": 1, "pages": ["home"] },
+      { "label": "Explore docs", "total": 1, "pageCount": 1, "pages": ["home"] },
+      { "label": "Create an AI agent", "total": 1, "pageCount": 1, "pages": ["home"] }
+    ],
+    "headingFrequency": [],
+    "toneMetrics": {
+      "headingsTotal": 52,
+      "headingsUppercasePercent": 8,
+      "distinctHeadings": 48,
+      "distinctCtaLabels": 12
+    }
+  },
+  "crossPromo": { "detected": false, "anchorHeading": null, "cluster": [], "pages": [], "pageCount": 0, "totalPages": 1 },
+  "register": "brand"
+}

@@ -1,0 +1,56 @@
+.research .eyebrow {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 12px;
+  margin: 0 0 16px;
+}
+
+.research .eyebrow.accent {
+  color: var(--accent);
+}
+
+.research .section-h {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin-bottom: 0;
+}
+
+.research .model-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 44px;
+}
+
+.research .model {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 20px;
+}
+
+.research .model-name {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+}
+
+.research .model-ver {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--accent);
+}
+
+.research .impact {
+  text-align: center;
+  color: var(--muted);
+  margin-top: 36px;
+  font-size: 1.05rem;
+}
+
+@media (width <= 900px) { .research .model-grid { grid-template-columns: repeat(2, 1fr); } }
+
+@media (width <= 560px) { .research .model-grid { grid-template-columns: 1fr; } }

@@ -1,0 +1,24 @@
+.closing {
+  background: var(--ink);
+  color: #fff;
+  text-align: center;
+}
+
+.closing .closing-inner {
+  max-width: 680px;
+}
+
+.closing .closing-h {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 300;
+  color: #fff;
+}
+
+.closing p {
+  color: rgb(255 255 255 / 70%);
+  margin: 18px 0 30px;
+}
+
+.closing .actions {
+  justify-content: center;
+}

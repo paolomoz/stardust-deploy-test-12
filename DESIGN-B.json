@@ -1,0 +1,14 @@
+{
+  "_provenance": { "writtenBy": "stardust:direct", "writtenAt": "2026-06-19T00:00:00Z", "variant": "B", "role": "colour re-weighting" },
+  "inherits": "DESIGN.json",
+  "overrides": {
+    "colors": { "heroGround": "spectrum", "ctaBandGround": "#b52720" },
+    "spacing": {}
+  },
+  "extensions": {
+    "variantBet": "Color-ladder re-weighting: promote the reserved gradient-orb spectrum and red ramp to large grounds. Hero is a colour-flooded gradient band; orbs scale up as section anchors; research/CTA band runs saturated. Typography + IA identical to A.",
+    "composition": "colour-flooded gradient hero -> social-proof -> two-platform split with oversized orbs -> creative suite -> agents -> API model cards -> saturated research+CTA band (accentDeep ground, light type) -> footer",
+    "gradientSpectrum": ["#FAABA7", "#EB524B", "#635bff", "#0a59d2", "#FDE4E3"],
+    "motion": null
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_provenance": { "writtenBy": "stardust:direct", "writtenAt": "2026-06-19T00:00:00Z", "variant": "C", "role": "kinetic-display motion identity" },
+  "inherits": "DESIGN.json",
+  "overrides": { "colors": {}, "spacing": {} },
+  "extensions": {
+    "variantBet": "Display-typography amplification via motion. Same IA as A; the bet is the kinetic-display register: Waldenburg display type assembles like sound resolving into speech.",
+    "composition": "identical IA to A (hero -> social-proof -> two-platform split -> creative suite -> agents -> API model cards -> research index -> CTA band -> footer)",
+    "motion": {
+      "register": "kinetic-display",
+      "registerSource": "heuristic",
+      "easings": { "entrance": "cubic-bezier(0.25, 0.46, 0.45, 0.94)", "expo": "cubic-bezier(0.16, 1, 0.3, 1)" },
+      "durations": { "enter": 800, "stagger": 110, "letterStagger": 50 },
+      "marquee": { "speed": 30 },
+      "signatureMoves": [
+        "hero headline unmasks letter-by-letter (clip-path inset + blur 8px->0), echoing audio resolving into speech",
+        "section heads wipe in left-to-right on word-span children (scroll-driven)",
+        "model-version numerals (v2, v2.5, v3, Turbo) flip/count in on IO trigger",
+        "single signage marquee strip between bands (Geist Mono uppercase, freezes under reduced-motion)",
+        "waveform motif animates as the reveal mechanic on the hero"
+      ],
+      "reducedMotion": "every motion element neutralised under prefers-reduced-motion: reduce; static reference is home-C-proposed.html"
+    }
+  }
+}

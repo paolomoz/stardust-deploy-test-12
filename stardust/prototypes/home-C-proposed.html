@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- stardust:provenance
+  writtenBy:        stardust:prototype (uplift)
+  writtenAt:        2026-06-19T00:00:00Z
+  page:             home
+  pageUrl:          https://elevenlabs.io/
+  variant:          C
+  againstDirection: stardust/direction.md
+  readArtifacts:
+    - stardust/current/pages/home.json
+    - stardust/current/_brand-extraction.json
+    - DESIGN.md
+    - DESIGN-C.json
+  motion:
+    register:       kinetic-display
+    registerSource: heuristic
+  unsourcedContent: []
+  stardustVersion:  uplift
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bringing technology to life | ElevenLabs</title>
+<style>
+
+@font-face{font-family:Waldenburg;src:url('../current/assets/fonts/KMR-Waldenburg-Buch-latin.1f7863d3c4317f3d.woff2') format('woff2');font-weight:300;font-display:swap}
+@font-face{font-family:Waldenburg;src:url('../current/assets/fonts/KMR-Waldenburg-Normal-latin.47fcefe5bf77b4e5.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:Waldenburg;src:url('../current/assets/fonts/KMR-Waldenburg-Fett-latin.e6b0db8ee0a63897.woff2') format('woff2');font-weight:700;font-display:swap}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap');
+:root{
+  --bg:#fdfcfc;--surface:#f5f3f1;--surface-alt:#ebe8e4;--ink:#0a0a0a;--muted:#5c574f;--border:#e5e5e5;
+  --accent:#eb524b;--accent-deep:#b52720;--blue:#0a59d2;--violet:#635bff;
+  --display:"Waldenburg","Waldenburg Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  --body:"Inter",system-ui,-apple-system,sans-serif;--mono:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --maxw:1200px;--pad:88px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+h1,h2,h3,h4,h5{font-family:var(--display);font-weight:400;margin:0;letter-spacing:-0.02em;line-height:1.06}
+a{color:inherit;text-decoration:none}
+.eyebrow{font-family:var(--mono);text-transform:uppercase;letter-spacing:0.14em;font-size:12px;color:var(--muted);margin:0 0 16px}
+.eyebrow.accent{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:9999px;font-family:var(--display);font-weight:700;font-size:15px;padding:10px 22px;border:1px solid transparent;cursor:pointer;transition:transform .25s cubic-bezier(.42,0,0,1),background .25s,color .25s,box-shadow .25s}
+.btn.solid{background:var(--ink);color:#fff}
+.btn.solid:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.18)}
+.btn.ghost{background:#fff;color:var(--ink);border-color:var(--border)}
+.btn.ghost:hover{border-color:var(--ink)}
+.btn.lg{padding:14px 30px;font-size:16px}
+.btn.sm{padding:8px 16px;font-size:13px}
+.btn.invert{background:#fff;color:var(--ink)}
+.btn.on-dark{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}
+.btn.on-dark:hover{border-color:#fff}
+section{padding:var(--pad) 0}
+
+/* header */
+.site{position:sticky;top:0;z-index:50;background:rgba(253,252,252,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav{display:flex;align-items:center;gap:28px;padding-top:14px;padding-bottom:14px}
+.brand{display:flex;align-items:center;color:var(--ink)}
+.primary{display:flex;gap:24px;margin-right:auto;font-size:14px;font-weight:500}
+.primary a{color:var(--ink);opacity:.82;transition:opacity .2s}
+.primary a:hover{opacity:1}
+.nav-cta{display:flex;align-items:center;gap:10px}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:0;padding:8px}
+.burger span{width:22px;height:2px;background:var(--ink);display:block}
+.mobile-nav{display:none}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding-top:96px;padding-bottom:96px}
+.hero-inner{position:relative;z-index:2;text-align:center;max-width:880px}
+.hero-h{font-weight:300;font-size:clamp(2.9rem,7vw,5.5rem);letter-spacing:-0.03em}
+.hero-sub{font-size:clamp(1.05rem,1.6vw,1.35rem);color:var(--muted);max-width:680px;margin:24px auto 0;line-height:1.5}
+.hero-cta{display:flex;gap:12px;justify-content:center;margin-top:34px;flex-wrap:wrap}
+.orbs{position:absolute;inset:0;z-index:1;filter:blur(38px);opacity:.9}
+.orb{position:absolute;border-radius:50%}
+.o1{width:460px;height:460px;left:-90px;top:-120px;background:radial-gradient(circle at 30% 30%,#FAABA7,#eb524b 55%,transparent 72%)}
+.o2{width:520px;height:520px;right:-120px;top:-60px;background:radial-gradient(circle at 60% 40%,#a9c7ff,#635bff 55%,transparent 72%)}
+.o3{width:420px;height:420px;left:38%;bottom:-200px;background:radial-gradient(circle at 50% 50%,#ffd9a8,#eb524b 50%,transparent 72%)}
+.wave{display:flex;align-items:center;justify-content:center;gap:3px;height:72px;margin:48px auto 0;max-width:620px}
+.wave span{flex:1;background:linear-gradient(180deg,var(--accent),var(--violet));border-radius:9999px;opacity:.5;min-height:4px}
+
+/* proof */
+.proof{padding-top:40px;padding-bottom:40px;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.proof-h{text-align:center;font-family:var(--mono);text-transform:uppercase;letter-spacing:.12em;font-size:12px;color:var(--muted);margin:0 0 24px}
+.logos{display:flex;flex-wrap:wrap;gap:16px 40px;justify-content:center;align-items:center}
+.logo-chip{font-family:var(--display);font-weight:700;font-size:20px;color:var(--ink);opacity:.45;letter-spacing:-.01em}
+
+/* section heads */
+.section-h{font-size:clamp(2rem,4vw,3.2rem)}
+.section-sub{color:var(--muted);max-width:620px;margin:18px 0 0;font-size:1.1rem}
+.platforms .section-h,.suite .section-h,.agents .section-h,.apis .section-h,.research .section-h{margin-bottom:0}
+
+/* platforms */
+.plat-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px}
+.plat{position:relative;overflow:hidden;background:var(--surface);border:1px solid var(--border);border-radius:24px;padding:40px}
+.plat h3{font-size:1.9rem;margin-bottom:12px}
+.plat p{color:var(--muted);margin:0 0 24px}
+.plat-orb{position:absolute;width:200px;height:200px;border-radius:50%;right:-50px;top:-50px;filter:blur(28px);opacity:.55}
+.po1{background:radial-gradient(circle,#eb524b,transparent 70%)}
+.po2{background:radial-gradient(circle,#635bff,transparent 70%)}
+
+/* card grids */
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px}
+.card-grid.five{grid-template-columns:repeat(5,1fr)}
+.cap{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:28px;min-height:150px;display:flex;flex-direction:column;justify-content:flex-end;transition:transform .38s cubic-bezier(.42,0,0,1),box-shadow .38s}
+.cap:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(0,0,0,.07)}
+.cap-num{font-family:var(--mono);font-size:12px;color:var(--accent);margin-bottom:auto}
+.cap h4{font-size:1.4rem;font-weight:400}
+.cap.dark{background:var(--ink);color:#fff;min-height:120px}
+.cap.dark h4{color:#fff}
+
+/* api */
+.api-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px}
+.api-card{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:32px;transition:transform .38s cubic-bezier(.42,0,0,1),box-shadow .38s}
+.api-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(0,0,0,.07)}
+.api-card h3{font-size:1.5rem;margin-bottom:18px}
+.api-card ul{list-style:none;margin:0 0 24px;padding:0}
+.api-card li{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--border);font-size:15px;font-family:var(--mono)}
+.api-card li:last-child{border-bottom:0}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--accent)}
+
+/* research */
+.research .eyebrow{margin-top:0}
+.model-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:44px}
+.model{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px 20px}
+.model-name{font-family:var(--display);font-size:1.05rem}
+.model-ver{font-family:var(--mono);font-size:13px;color:var(--accent)}
+.impact{text-align:center;color:var(--muted);margin-top:36px;font-size:1.05rem}
+
+/* closing */
+.closing{background:var(--ink);color:#fff;text-align:center;border-radius:0}
+.closing-inner{max-width:680px}
+.closing-h{font-size:clamp(2.4rem,5vw,4rem);font-weight:300}
+.closing p{color:rgba(255,255,255,.7);margin:18px 0 30px}
+.closing .btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.35)}
+.closing .btn.ghost:hover{border-color:#fff}
+
+/* footer */
+footer{background:var(--bg);border-top:1px solid var(--border);padding:64px 0 32px}
+.foot-grid{display:grid;grid-template-columns:1.6fr repeat(4,1fr);gap:32px}
+.foot-brand p{color:var(--muted);font-size:14px;margin-top:14px}
+.foot-col h5{font-family:var(--mono);text-transform:uppercase;letter-spacing:.1em;font-size:11px;color:var(--muted);margin:0 0 14px;font-weight:500}
+.foot-col ul{list-style:none;margin:0;padding:0}
+.foot-col li{margin-bottom:10px}
+.foot-col a{font-size:14px;color:var(--ink);opacity:.75}
+.foot-col a:hover{opacity:1;color:var(--accent)}
+.foot-base{display:flex;justify-content:space-between;margin-top:48px;padding-top:24px;border-top:1px solid var(--border);font-family:var(--mono);font-size:12px;color:var(--muted)}
+
+/* responsive */
+@media(max-width:900px){
+  .primary,.nav-cta .btn{display:none}
+  .burger{display:flex}
+  .mobile-nav[hidden]{display:none}
+  .mobile-nav{display:flex;flex-direction:column;gap:4px;padding:16px 24px;border-top:1px solid var(--border)}
+  .mobile-nav a{padding:10px 0;font-size:16px}
+  .plat-grid,.api-grid{grid-template-columns:1fr}
+  .card-grid,.card-grid.five{grid-template-columns:repeat(2,1fr)}
+  .model-grid{grid-template-columns:repeat(2,1fr)}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){.card-grid,.card-grid.five,.model-grid{grid-template-columns:1fr}.foot-grid{grid-template-columns:1fr}}
+
+
+
+</style>
+</head>
+<body>
+
+  <header class="site" data-section="site-header" data-intent="navigate" data-layout="contained">
+    <div class="wrap nav">
+      <a class="brand" href="/" aria-label="ElevenLabs home"><svg fill="currentColor" viewBox="0 0 117 15" aria-hidden="true" style="height:1.05rem;overflow:visible"><path d="M41.507 3.698h-2.975l3.595 11.054h3.203l3.595-11.054h-2.976l-2.25 8.327zM0 0h3.079v14.752H0zM6.115 0h3.079v14.752H6.115zM12.23 0h9.112v2.459H15.31V5.97h5.62V8.43h-5.62v3.863h6.033v2.46h-9.111zM23.222 0h2.913v14.752h-2.913zM27.892 9.215c0-4.029 2.004-5.765 5.124-5.765s4.896 1.715 4.896 5.806v.661h-7.148c.103 2.397.826 3.203 2.21 3.203 1.095 0 1.777-.64 1.901-1.756h2.913C37.602 13.802 35.578 15 32.974 15c-3.305 0-5.082-1.756-5.082-5.785m7.148-1.22c-.144-2.024-.847-2.685-2.066-2.685s-1.983.682-2.19 2.686zM49.482 9.215c0-4.029 2.005-5.765 5.124-5.765 3.12 0 4.897 1.715 4.897 5.806v.661h-7.149c.104 2.397.827 3.203 2.211 3.203 1.095 0 1.777-.64 1.9-1.756h2.914C59.193 13.802 57.17 15 54.565 15c-3.306 0-5.083-1.756-5.083-5.785m7.15-1.22c-.145-2.024-.848-2.685-2.067-2.685s-1.983.682-2.19 2.686zM73.304 0h3.079v12.293h5.785v2.46h-8.864z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M82.891 9.215c0-4.215 1.942-5.765 4.442-5.765 1.24 0 2.376.703 2.83 1.447V3.698h2.976v11.054h-2.892V13.45c-.434.868-1.653 1.55-2.996 1.55-2.645 0-4.36-1.694-4.36-5.785m5.207-3.595c1.446 0 2.231 1.095 2.231 3.595s-.785 3.616-2.231 3.616c-1.447 0-2.273-1.116-2.273-3.616s.826-3.595 2.273-3.595M98.284 13.45v1.302H95.39V0h2.913v4.897c.496-.765 1.653-1.447 2.893-1.447 2.438 0 4.38 1.55 4.38 5.765S103.676 15 101.135 15c-1.343 0-2.438-.682-2.851-1.55m2.086-7.81c1.447 0 2.273 1.075 2.273 3.575s-.826 3.616-2.273 3.616c-1.446 0-2.231-1.116-2.231-3.616s.785-3.574 2.231-3.574"></path><path d="M106.776 11.467h2.913c.041 1.157.661 1.715 1.756 1.715s1.715-.496 1.715-1.364c0-.785-.475-1.074-1.508-1.322l-.889-.227c-2.52-.64-3.781-1.323-3.781-3.41 0-2.086 1.942-3.409 4.422-3.409s4.359.972 4.442 3.265h-2.913c-.062-1.012-.682-1.446-1.571-1.446s-1.508.434-1.508 1.26c0 .764.496 1.054 1.364 1.26l.909.228c2.397.599 3.905 1.198 3.905 3.43 0 2.23-1.984 3.553-4.67 3.553-2.913 0-4.524-1.095-4.586-3.533M64.214 8.244c0-1.736.826-2.686 2.107-2.686 1.054 0 1.653.661 1.653 2.087v7.107h2.913V7.19c0-2.562-1.446-3.74-3.553-3.74-1.426 0-2.604.724-3.12 1.674V3.698h-2.955v11.054h2.955z"></path></svg></a>
+      <nav class="primary" aria-label="Primary">
+        <a href="#">ElevenCreative</a><a href="#">ElevenAgents</a><a href="#">ElevenAPI</a><a href="#">Enterprise</a><a href="#">Pricing</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn ghost" href="/app">Log in</a>
+        <a class="btn solid" href="/app/sign-up">Sign up</a>
+        <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="m-nav"><span></span><span></span></button>
+      </div>
+    </div>
+    <nav id="m-nav" class="mobile-nav" aria-label="Mobile" hidden>
+      <a href="#">ElevenCreative</a><a href="#">ElevenAgents</a><a href="#">ElevenAPI</a><a href="#">Enterprise</a><a href="#">Pricing</a>
+      <a href="/app">Log in</a><a class="btn solid" href="/app/sign-up">Sign up</a>
+    </nav>
+  </header>
+
+  <main data-template="landing">
+    <section class="hero" data-section="hero" data-intent="emotional hook" data-layout="contained" data-media="animation">
+      <div class="orbs" aria-hidden="true">
+        <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
+      </div>
+      <div class="wrap hero-inner">
+        <p class="eyebrow"><span data-split>AI&nbsp;AUDIO&nbsp;RESEARCH</span></p>
+        <h1 class="hero-h" data-split data-anim>Bringing technology to life</h1>
+        <p class="hero-sub" data-anim>Powering the best enterprises, creators, and developers. From ElevenAgents for customer experience to a full creative suite for speech, music, sound effects, and video.</p>
+        <div class="hero-cta" data-anim>
+          <a class="btn solid lg" href="/app/sign-up">Get started</a>
+          <a class="btn ghost lg" href="/contact-sales">Contact sales</a>
+        </div>
+        <div class="wave" aria-hidden="true"><span style="--i:0;height:16%"></span><span style="--i:1;height:37%"></span><span style="--i:2;height:58%"></span><span style="--i:3;height:71%"></span><span style="--i:4;height:71%"></span><span style="--i:5;height:55%"></span><span style="--i:6;height:26%"></span><span style="--i:7;height:42%"></span><span style="--i:8;height:75%"></span><span style="--i:9;height:95%"></span><span style="--i:10;height:95%"></span><span style="--i:11;height:75%"></span><span style="--i:12;height:39%"></span><span style="--i:13;height:34%"></span><span style="--i:14;height:70%"></span><span style="--i:15;height:92%"></span><span style="--i:16;height:93%"></span><span style="--i:17;height:76%"></span><span style="--i:18;height:45%"></span><span style="--i:19;height:21%"></span><span style="--i:20;height:50%"></span><span style="--i:21;height:66%"></span><span style="--i:22;height:67%"></span><span style="--i:23;height:55%"></span><span style="--i:24;height:37%"></span><span style="--i:25;height:18%"></span><span style="--i:26;height:27%"></span><span style="--i:27;height:33%"></span><span style="--i:28;height:32%"></span><span style="--i:29;height:26%"></span><span style="--i:30;height:20%"></span><span style="--i:31;height:16%"></span><span style="--i:32;height:16%"></span><span style="--i:33;height:13%"></span><span style="--i:34;height:10%"></span><span style="--i:35;height:8%"></span><span style="--i:36;height:10%"></span><span style="--i:37;height:13%"></span><span style="--i:38;height:15%"></span><span style="--i:39;height:13%"></span><span style="--i:40;height:13%"></span><span style="--i:41;height:16%"></span><span style="--i:42;height:19%"></span><span style="--i:43;height:20%"></span><span style="--i:44;height:16%"></span><span style="--i:45;height:25%"></span><span style="--i:46;height:36%"></span><span style="--i:47;height:46%"></span><span style="--i:48;height:48%"></span><span style="--i:49;height:41%"></span><span style="--i:50;height:22%"></span><span style="--i:51;height:35%"></span><span style="--i:52;height:61%"></span><span style="--i:53;height:79%"></span><span style="--i:54;height:82%"></span><span style="--i:55;height:67%"></span><span style="--i:56;height:37%"></span><span style="--i:57;height:34%"></span><span style="--i:58;height:70%"></span><span style="--i:59;height:94%"></span><span style="--i:60;height:99%"></span><span style="--i:61;height:83%"></span><span style="--i:62;height:50%"></span><span style="--i:63;height:23%"></span></div>
+      </div>
+    </section>
+
+    <section class="proof" data-section="social-proof" data-intent="build trust" data-layout="contained">
+      <div class="wrap">
+        <p class="proof-h">Trusted by leading developers and enterprises</p>
+        <div class="logos" data-items="6"><span class="logo-chip">Cisco</span><span class="logo-chip">Epic Games</span><span class="logo-chip">HubSpot</span><span class="logo-chip">Reuters</span><span class="logo-chip">The Washington Post</span><span class="logo-chip">Salesforce</span></div>
+      </div>
+    </section>
+
+    <section class="platforms" data-section="two-platform-split" data-intent="value proposition" data-layout="split-media" data-items="2">
+      <div class="wrap">
+        <h2 class="section-h" data-split data-anim>Two platforms built on the same research foundation</h2>
+        <div class="plat-grid">
+          <article class="plat" data-anim>
+            <div class="plat-orb po1" aria-hidden="true"></div>
+            <h3>ElevenCreative</h3>
+            <p>A full creative suite — ultra-realistic speech, music, sound effects, voices, and image &amp; video, in one AI platform.</p>
+            <a class="btn ghost" href="/creative">Explore ElevenCreative</a>
+          </article><article class="plat" data-anim>
+            <div class="plat-orb po2" aria-hidden="true"></div>
+            <h3>ElevenAgents</h3>
+            <p>Configure, deploy and monitor natural, human-sounding agents in 70+ languages with leading latency.</p>
+            <a class="btn ghost" href="/agents">Explore ElevenAgents</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="suite" data-section="creative-suite" data-intent="explain mechanic" data-layout="grid" data-items="6">
+      <div class="wrap">
+        <p class="eyebrow"><span data-split>ELEVENCREATIVE</span></p>
+        <h2 class="section-h" data-split data-anim>Create, edit and localize in one AI platform</h2>
+        <p class="section-sub">Turn ideas into ultra-realistic speech, compose music in any genre, design sound effects, and produce video — all in one editor.</p>
+        <div class="card-grid">
+          <article class="cap" data-anim><span class="cap-num">01</span><h4>All-in-one AI editor</h4></article><article class="cap" data-anim><span class="cap-num">02</span><h4>Ultra-realistic speech</h4></article><article class="cap" data-anim><span class="cap-num">03</span><h4>Music</h4></article><article class="cap" data-anim><span class="cap-num">04</span><h4>SFX</h4></article><article class="cap" data-anim><span class="cap-num">05</span><h4>Voices</h4></article><article class="cap" data-anim><span class="cap-num">06</span><h4>Image &amp; Video</h4></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="agents" data-section="agents" data-intent="explain mechanic" data-layout="grid" data-items="5">
+      <div class="wrap">
+        <p class="eyebrow"><span data-split>ELEVENAGENTS</span></p>
+        <h2 class="section-h" data-split data-anim>Deploy agents that talk, type, and take action</h2>
+        <p class="section-sub">Configure, deploy and monitor natural, human-sounding agents in 70+ languages with leading latency.</p>
+        <div class="card-grid five">
+          <article class="cap dark" data-anim><h4>Omnichannel agents</h4></article><article class="cap dark" data-anim><h4>Analytics</h4></article><article class="cap dark" data-anim><h4>Testing</h4></article><article class="cap dark" data-anim><h4>Guardrails</h4></article><article class="cap dark" data-anim><h4>Workflows</h4></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="apis" data-section="api" data-intent="drive action" data-layout="grid" data-items="3">
+      <div class="wrap">
+        <h2 class="section-h" data-split data-anim>Or build anything with a powerful host of APIs</h2>
+        <div class="api-grid">
+          <article class="api-card" data-anim>
+            <h3>Text to Speech API</h3>
+            <ul><li><span class="dot"></span>Eleven Flash</li><li><span class="dot"></span>Eleven Multilingual</li><li><span class="dot"></span>Eleven v3</li></ul>
+            <a class="btn ghost sm" href="/docs">Explore docs</a>
+          </article><article class="api-card" data-anim>
+            <h3>Speech to Text API</h3>
+            <ul><li><span class="dot"></span>Eleven Scribe</li></ul>
+            <a class="btn ghost sm" href="/docs">Explore docs</a>
+          </article><article class="api-card" data-anim>
+            <h3>Music API</h3>
+            <ul><li><span class="dot"></span>Music</li></ul>
+            <a class="btn ghost sm" href="/docs">Explore docs</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="research" data-section="research-index" data-intent="build trust" data-layout="grid" data-items="8">
+      <div class="wrap">
+        <p class="eyebrow accent"><span data-split>RESEARCH</span></p>
+        <h2 class="section-h" data-split data-anim>Research that redefines human&ndash;technology interaction</h2>
+        <div class="model-grid">
+          <article class="model" data-anim>
+            <span class="model-name">Eleven Multilingual v2</span>
+            <span class="model-ver" data-flip>v2</span>
+          </article><article class="model" data-anim>
+            <span class="model-name">Eleven Turbo v2</span>
+            <span class="model-ver" data-flip>v2</span>
+          </article><article class="model" data-anim>
+            <span class="model-name">Eleven Flash v2.5</span>
+            <span class="model-ver" data-flip>v2.5</span>
+          </article><article class="model" data-anim>
+            <span class="model-name">Scribe</span>
+            
+          </article><article class="model" data-anim>
+            <span class="model-name">Eleven v3</span>
+            <span class="model-ver" data-flip>v3</span>
+          </article><article class="model" data-anim>
+            <span class="model-name">Eleven Music</span>
+            
+          </article><article class="model" data-anim>
+            <span class="model-name">Scribe v2 Realtime</span>
+            <span class="model-ver" data-flip>v2</span>
+          </article><article class="model" data-anim>
+            <span class="model-name">Scribe v2</span>
+            <span class="model-ver" data-flip>v2</span>
+          </article>
+        </div>
+        <p class="impact">Showcasing the global impact of AI audio research.</p>
+      </div>
+    </section>
+
+    <section class="closing" data-section="closing-cta" data-intent="drive action" data-layout="full-bleed">
+      <div class="wrap closing-inner">
+        <h2 class="closing-h" data-split data-anim>Bring your ideas to life</h2>
+        <p>Start free, or talk to our team about enterprise deployments.</p>
+        <div class="hero-cta">
+          <a class="btn solid lg " href="/app/sign-up">Get started</a>
+          <a class="btn ghost lg " href="/contact-sales">Contact sales</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-section="footer" data-intent="navigate" data-layout="grid">
+    <div class="wrap foot-grid">
+      <div class="foot-brand"><a href="/" aria-label="ElevenLabs"><svg fill="currentColor" viewBox="0 0 117 15" aria-hidden="true" style="height:1.05rem;overflow:visible"><path d="M41.507 3.698h-2.975l3.595 11.054h3.203l3.595-11.054h-2.976l-2.25 8.327zM0 0h3.079v14.752H0zM6.115 0h3.079v14.752H6.115zM12.23 0h9.112v2.459H15.31V5.97h5.62V8.43h-5.62v3.863h6.033v2.46h-9.111zM23.222 0h2.913v14.752h-2.913zM27.892 9.215c0-4.029 2.004-5.765 5.124-5.765s4.896 1.715 4.896 5.806v.661h-7.148c.103 2.397.826 3.203 2.21 3.203 1.095 0 1.777-.64 1.901-1.756h2.913C37.602 13.802 35.578 15 32.974 15c-3.305 0-5.082-1.756-5.082-5.785m7.148-1.22c-.144-2.024-.847-2.685-2.066-2.685s-1.983.682-2.19 2.686zM49.482 9.215c0-4.029 2.005-5.765 5.124-5.765 3.12 0 4.897 1.715 4.897 5.806v.661h-7.149c.104 2.397.827 3.203 2.211 3.203 1.095 0 1.777-.64 1.9-1.756h2.914C59.193 13.802 57.17 15 54.565 15c-3.306 0-5.083-1.756-5.083-5.785m7.15-1.22c-.145-2.024-.848-2.685-2.067-2.685s-1.983.682-2.19 2.686zM73.304 0h3.079v12.293h5.785v2.46h-8.864z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M82.891 9.215c0-4.215 1.942-5.765 4.442-5.765 1.24 0 2.376.703 2.83 1.447V3.698h2.976v11.054h-2.892V13.45c-.434.868-1.653 1.55-2.996 1.55-2.645 0-4.36-1.694-4.36-5.785m5.207-3.595c1.446 0 2.231 1.095 2.231 3.595s-.785 3.616-2.231 3.616c-1.447 0-2.273-1.116-2.273-3.616s.826-3.595 2.273-3.595M98.284 13.45v1.302H95.39V0h2.913v4.897c.496-.765 1.653-1.447 2.893-1.447 2.438 0 4.38 1.55 4.38 5.765S103.676 15 101.135 15c-1.343 0-2.438-.682-2.851-1.55m2.086-7.81c1.447 0 2.273 1.075 2.273 3.575s-.826 3.616-2.273 3.616c-1.446 0-2.231-1.116-2.231-3.616s.785-3.574 2.231-3.574"></path><path d="M106.776 11.467h2.913c.041 1.157.661 1.715 1.756 1.715s1.715-.496 1.715-1.364c0-.785-.475-1.074-1.508-1.322l-.889-.227c-2.52-.64-3.781-1.323-3.781-3.41 0-2.086 1.942-3.409 4.422-3.409s4.359.972 4.442 3.265h-2.913c-.062-1.012-.682-1.446-1.571-1.446s-1.508.434-1.508 1.26c0 .764.496 1.054 1.364 1.26l.909.228c2.397.599 3.905 1.198 3.905 3.43 0 2.23-1.984 3.553-4.67 3.553-2.913 0-4.524-1.095-4.586-3.533M64.214 8.244c0-1.736.826-2.686 2.107-2.686 1.054 0 1.653.661 1.653 2.087v7.107h2.913V7.19c0-2.562-1.446-3.74-3.553-3.74-1.426 0-2.604.724-3.12 1.674V3.698h-2.955v11.054h2.955z"></path></svg></a><p>Bringing technology to life.</p></div>
+      <div class="foot-col"><h5>Product</h5><ul><li><a href="#">ElevenCreative</a></li><li><a href="#">ElevenAgents</a></li><li><a href="#">ElevenAPI</a></li><li><a href="#">Pricing</a></li><li><a href="#">Enterprise</a></li></ul></div><div class="foot-col"><h5>Company</h5><ul><li><a href="#">About</a></li><li><a href="#">Safety</a></li><li><a href="#">Careers</a></li><li><a href="#">Blog</a></li></ul></div><div class="foot-col"><h5>Resources</h5><ul><li><a href="#">Docs</a></li><li><a href="#">Customer stories</a></li><li><a href="#">Help center</a></li><li><a href="#">Status</a></li></ul></div><div class="foot-col"><h5>Solutions</h5><ul><li><a href="#">Speech</a></li><li><a href="#">Music</a></li><li><a href="#">Sound effects</a></li><li><a href="#">Dubbing</a></li><li><a href="#">Voice agents</a></li></ul></div>
+    </div>
+    <div class="wrap foot-base"><span>&copy; 2026 ElevenLabs</span><span>Redesign prototype &middot; variant C</span></div>
+  </footer>
+
+<script>
+(function(){var b=document.querySelector('.burger'),mn=document.getElementById('m-nav');if(!b||!mn)return;b.addEventListener('click',function(){var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',!o);mn.hidden=o;});document.addEventListener('keydown',function(e){if(e.key==='Escape'){b.setAttribute('aria-expanded','false');mn.hidden=true;}});})();
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:uplift",
+    "writtenAt": "2026-06-19T00:00:00Z"
+  },
+  "site": {
+    "originUrl": "https://elevenlabs.io/",
+    "extractedAt": "2026-06-19T00:00:00Z",
+    "pageCap": 1,
+    "totalDiscovered": 1,
+    "crawled": 1,
+    "mode": "uplift"
+  },
+  "pages": [
+    {
+      "slug": "home",
+      "url": "https://elevenlabs.io/",
+      "status": "prototyped",
+      "type": "landing",
+      "currentStatePath": "stardust/current/pages/home.json",
+      "prototypePath": {
+        "A": "stardust/prototypes/home-A-proposed.html",
+        "B": "stardust/prototypes/home-B-proposed.html",
+        "C": "stardust/prototypes/home-C-proposed.html",
+        "C_cinematic": "stardust/prototypes/home-C-cinematic.html"
+      },
+      "variants": ["A", "B", "C"],
+      "migratedPath": null
+    }
+  ]
+}

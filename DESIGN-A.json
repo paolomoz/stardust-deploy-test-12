@@ -1,0 +1,10 @@
+{
+  "_provenance": { "writtenBy": "stardust:direct", "writtenAt": "2026-06-19T00:00:00Z", "variant": "A", "role": "faithful + improvements" },
+  "inherits": "DESIGN.json",
+  "overrides": { "colors": {}, "spacing": {} },
+  "extensions": {
+    "variantBet": "Faithful: same IA, monochrome restraint kept; apply the 5 improvements (single primary CTA, destination-named secondary CTAs, one sales CTA, modular type scale, AA muted text).",
+    "composition": "hero -> social-proof logos -> two-platform split (ElevenCreative / ElevenAgents) -> creative suite feature grid -> agents feature grid -> API model cards -> research index -> CTA band -> footer",
+    "motion": null
+  }
+}
