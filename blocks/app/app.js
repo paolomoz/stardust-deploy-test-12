@@ -48,6 +48,19 @@ export default async function decorate(block) {
     anchors.forEach((a) => {
       const c = a.cloneNode(true);
       c.classList.add('badge');
+      // split "Download on the App Store" -> small prefix + bold store name
+      const m = c.textContent.trim().match(/^(Download on the|Get it on)\s+(.+)$/i);
+      if (m) {
+        const icon = /apple|app store/i.test(m[2]) ? '\u{1F34F}' : '▶';
+        c.replaceChildren();
+        const ic = document.createElement('span');
+        ic.className = 'badge-ic';
+        ic.textContent = icon;
+        const txt = document.createElement('span');
+        txt.className = 'badge-txt';
+        txt.innerHTML = `<small>${m[1]}</small><b>${m[2]}</b>`;
+        c.append(ic, txt);
+      }
       badges.append(c);
     });
     col.append(badges);
