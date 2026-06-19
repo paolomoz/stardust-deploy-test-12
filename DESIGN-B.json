@@ -1,0 +1,15 @@
+{
+  "_provenance": { "writtenBy": "stardust:direct (via uplift)", "writtenAt": "2026-06-19", "variant": "B", "role": "amplified: photography re-foregrounding" },
+  "inherits": "DESIGN.json",
+  "variant": {
+    "id": "B",
+    "composition": "full-bleed editorial stack: each product is a 100vw section, photo at hero scale edge-to-edge, headline + one benefit line set into the image's quiet band, CTA pair below; alternating light/dark grounds",
+    "motion": "static",
+    "deltas": [
+      "dissolve 2-up grid into vertical full-bleed sections",
+      "product photo runs edge-to-edge at hero scale (share-of-canvas maximized)",
+      "headline set into image quiet band (overlay), not above a thumbnail",
+      "alternating #ffffff / #000000 grounds carried from captured tile tones"
+    ]
+  }
+}

@@ -1,0 +1,1595 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-06-19T04:04:17.871Z",
+    "waitMs": 3711,
+    "waitMode": "medium",
+    "httpStatus": 200,
+    "finalUrl": "https://www.apple.com/",
+    "fetchTechnique": "headless-chromium",
+    "consentMethod": "none-detected"
+  },
+  "slug": "home",
+  "url": "https://www.apple.com/",
+  "title": "Apple",
+  "description": null,
+  "og": {
+    "title": "Apple",
+    "description": "Discover the innovative world of Apple and shop everything iPhone, iPad, Apple Watch, Mac, and Apple TV, plus explore accessories, entertainment, and expert device support.",
+    "image": "https://www.apple.com/ac/structured-data/images/open_graph_logo.png?202604211141",
+    "type": "website",
+    "siteName": "Apple"
+  },
+  "themeColor": null,
+  "appleTouchIcon": null,
+  "favicon": null,
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Apple",
+      "fontFamily": "\"SF Pro Text\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "600",
+      "fontSize": "34px",
+      "lineHeight": "50px",
+      "letterSpacing": "-0.374px",
+      "color": "rgb(29, 29, 31)"
+    },
+    {
+      "tag": "h2",
+      "text": "Father’s Day",
+      "fontFamily": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "600",
+      "fontSize": "56px",
+      "lineHeight": "60px",
+      "letterSpacing": "-0.28px",
+      "color": "rgb(29, 29, 31)"
+    },
+    {
+      "tag": "h2",
+      "text": "Apple for College",
+      "fontFamily": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "600",
+      "fontSize": "56px",
+      "lineHeight": "60px",
+      "letterSpacing": "-0.28px",
+      "color": "rgb(29, 29, 31)"
+    },
+    {
+      "tag": "h2",
+      "text": "iPhone",
+      "fontFamily": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "600",
+      "fontSize": "56px",
+      "lineHeight": "60px",
+      "letterSpacing": "-0.28px",
+      "color": "rgb(29, 29, 31)"
+    },
+    {
+      "tag": "h3",
+      "text": "MacBook Air",
+      "fontFamily": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "600",
+      "fontSize": "40px",
+      "lineHeight": "44px",
+      "letterSpacing": "normal",
+      "color": "rgb(29, 29, 31)"
+    },
+    {
+      "tag": "h3",
+      "text": "iPad Air",
+      "fontFamily": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "600",
+      "fontSize": "40px",
+      "lineHeight": "44px",
+      "letterSpacing": "normal",
+      "color": "rgb(29, 29, 31)"
+    },
+    {
+      "tag": "h3",
+      "text": "Apple Privacy",
+      "fontFamily": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "600",
+      "fontSize": "40px",
+      "lineHeight": "44px",
+      "letterSpacing": "normal",
+      "color": "rgb(245, 245, 247)"
+    },
+    {
+      "tag": "h3",
+      "text": "MacBook Pro",
+      "fontFamily": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "600",
+      "fontSize": "40px",
+      "lineHeight": "44px",
+      "letterSpacing": "normal",
+      "color": "rgb(245, 245, 247)"
+    },
+    {
+      "tag": "h3",
+      "text": "Apple Trade In",
+      "fontFamily": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "600",
+      "fontSize": "40px",
+      "lineHeight": "44px",
+      "letterSpacing": "normal",
+      "color": "rgb(29, 29, 31)"
+    },
+    {
+      "tag": "h3",
+      "text": "Apple Card",
+      "fontFamily": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "600",
+      "fontSize": "40px",
+      "lineHeight": "44px",
+      "letterSpacing": "normal",
+      "color": "rgb(29, 29, 31)"
+    },
+    {
+      "tag": "h2",
+      "text": "Endless entertainment.",
+      "fontFamily": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "600",
+      "fontSize": "56px",
+      "lineHeight": "60px",
+      "letterSpacing": "-0.28px",
+      "color": "rgb(0, 0, 0)"
+    },
+    {
+      "tag": "h2",
+      "text": "Apple Footer",
+      "fontFamily": "\"SF Pro Text\", \"Myriad Set Pro\", \"SF Pro Icons\", \"Apple Legacy Chevron\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "12px",
+      "lineHeight": "16.0005px",
+      "letterSpacing": "-0.12px",
+      "color": "rgba(0, 0, 0, 0.88)"
+    },
+    {
+      "tag": "h3",
+      "text": "Shop and Learn",
+      "fontFamily": "\"SF Pro Text\", \"Myriad Set Pro\", \"SF Pro Icons\", \"Apple Legacy Chevron\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "12px",
+      "lineHeight": "16.0005px",
+      "letterSpacing": "-0.12px",
+      "color": "rgba(0, 0, 0, 0.88)"
+    },
+    {
+      "tag": "h3",
+      "text": "Apple Wallet",
+      "fontFamily": "\"SF Pro Text\", \"Myriad Set Pro\", \"SF Pro Icons\", \"Apple Legacy Chevron\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "12px",
+      "lineHeight": "16.0005px",
+      "letterSpacing": "-0.12px",
+      "color": "rgba(0, 0, 0, 0.88)"
+    },
+    {
+      "tag": "h3",
+      "text": "Account",
+      "fontFamily": "\"SF Pro Text\", \"Myriad Set Pro\", \"SF Pro Icons\", \"Apple Legacy Chevron\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "12px",
+      "lineHeight": "16.0005px",
+      "letterSpacing": "-0.12px",
+      "color": "rgba(0, 0, 0, 0.88)"
+    },
+    {
+      "tag": "h3",
+      "text": "Entertainment",
+      "fontFamily": "\"SF Pro Text\", \"Myriad Set Pro\", \"SF Pro Icons\", \"Apple Legacy Chevron\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "12px",
+      "lineHeight": "16.0005px",
+      "letterSpacing": "-0.12px",
+      "color": "rgba(0, 0, 0, 0.88)"
+    },
+    {
+      "tag": "h3",
+      "text": "Apple Store",
+      "fontFamily": "\"SF Pro Text\", \"Myriad Set Pro\", \"SF Pro Icons\", \"Apple Legacy Chevron\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "12px",
+      "lineHeight": "16.0005px",
+      "letterSpacing": "-0.12px",
+      "color": "rgba(0, 0, 0, 0.88)"
+    },
+    {
+      "tag": "h3",
+      "text": "For Business",
+      "fontFamily": "\"SF Pro Text\", \"Myriad Set Pro\", \"SF Pro Icons\", \"Apple Legacy Chevron\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "12px",
+      "lineHeight": "16.0005px",
+      "letterSpacing": "-0.12px",
+      "color": "rgba(0, 0, 0, 0.88)"
+    },
+    {
+      "tag": "h3",
+      "text": "For Education",
+      "fontFamily": "\"SF Pro Text\", \"Myriad Set Pro\", \"SF Pro Icons\", \"Apple Legacy Chevron\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "12px",
+      "lineHeight": "16.0005px",
+      "letterSpacing": "-0.12px",
+      "color": "rgba(0, 0, 0, 0.88)"
+    },
+    {
+      "tag": "h3",
+      "text": "For Healthcare",
+      "fontFamily": "\"SF Pro Text\", \"Myriad Set Pro\", \"SF Pro Icons\", \"Apple Legacy Chevron\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "12px",
+      "lineHeight": "16.0005px",
+      "letterSpacing": "-0.12px",
+      "color": "rgba(0, 0, 0, 0.88)"
+    },
+    {
+      "tag": "h3",
+      "text": "For Government",
+      "fontFamily": "\"SF Pro Text\", \"Myriad Set Pro\", \"SF Pro Icons\", \"Apple Legacy Chevron\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "12px",
+      "lineHeight": "16.0005px",
+      "letterSpacing": "-0.12px",
+      "color": "rgba(0, 0, 0, 0.88)"
+    },
+    {
+      "tag": "h3",
+      "text": "Apple Values",
+      "fontFamily": "\"SF Pro Text\", \"Myriad Set Pro\", \"SF Pro Icons\", \"Apple Legacy Chevron\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "12px",
+      "lineHeight": "16.0005px",
+      "letterSpacing": "-0.12px",
+      "color": "rgba(0, 0, 0, 0.88)"
+    },
+    {
+      "tag": "h3",
+      "text": "About Apple",
+      "fontFamily": "\"SF Pro Text\", \"Myriad Set Pro\", \"SF Pro Icons\", \"Apple Legacy Chevron\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "12px",
+      "lineHeight": "16.0005px",
+      "letterSpacing": "-0.12px",
+      "color": "rgba(0, 0, 0, 0.88)"
+    }
+  ],
+  "landmarks": [
+    {
+      "tag": "aside",
+      "role": null,
+      "id": "ac-localeswitcher",
+      "class": null,
+      "childCount": 1,
+      "bg": "rgb(250, 250, 252)",
+      "color": "rgb(29, 29, 31)",
+      "text": "Wähle ein anderes Land oder eine andere Region, um Inhalte für deinen Standort zu sehen und online einzukaufen. Schweiz Weiter"
+    },
+    {
+      "tag": "aside",
+      "role": null,
+      "id": "globalmessage-segment",
+      "class": "globalmessage-segment",
+      "childCount": 1,
+      "bg": "rgb(250, 250, 252)",
+      "color": "rgba(0, 0, 0, 0.8)",
+      "text": ""
+    },
+    {
+      "tag": "nav",
+      "role": null,
+      "id": "globalnav",
+      "class": "globalnav js   ",
+      "childCount": 2,
+      "bg": "rgba(255, 255, 255, 0.8)",
+      "color": "rgb(29, 29, 31)",
+      "text": "Apple Store Mac iPad iPhone Watch Vision AirPods TV & Home Entertainment Accessories Support 0 +"
+    },
+    {
+      "tag": "main",
+      "role": "main",
+      "id": null,
+      "class": "main",
+      "childCount": 3,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(29, 29, 31)",
+      "text": "Father’s Day It’s not too late to find the perfect gift. Shop Apple for College Mac and iPad. Major in any field. Learn more iPhone Meet the latest iPhone lineup. Learn more Shop iPhone MacBook Air Now supercharged by M5. Learn more Buy iPad Air Now supercharged by M4. Learn more Buy Apple Privacy That's iPhone. Learn more MacBook Pro Now with M5, M5 Pro, and M5 Max. Learn more Buy Apple Trade In Get up to $195–$695 in credit when you trade in iPhone 13 or higher.1 Get your estimate Apple Card Get up to 3% Daily Cash back with every purchase. Learn more Apply now Endless entertainment. Item 1 Item 2 Item 3 Item 4 Item 5 Item 6 Item 7 Item 8 Item 9 Stream now DramaNew season. Stream now ThrillerFear takes hold. F1 on Apple TV Every Grand Prix™, live and on demand—all in one place, all year long. Stream now MysteryWelcome to the island, please enjoy your stay. Just don’t ask too many questions. MLS on Apple TV Watch every club, every match, live—all season long. Stream now DramaIs it a crime to want more? See the schedule Live MLB games, every Friday. Stream now ThrillerA soccer mom falls down a rabbit hole of blackmail and murder. Stream now ComedyEveryone’s got a side hustle. Play now Hello Kitty Island Adventure Sabrina Carpenter: The Zane Lowe Interview Listen now Watch now 30 Days of Gratitude and Kindness Play now PowerWash Simulator A-List Pop Listen now Watch now Strength with Jenn • Music by Davido Play now SpongeBob: Patty Pursuit 2 New Music Daily Listen now Watch now Asian-Pacific American Heritage Month"
+    },
+    {
+      "tag": "footer",
+      "role": "contentinfo",
+      "id": "ac-globalfooter",
+      "class": "js",
+      "childCount": 1,
+      "bg": "rgb(245, 245, 247)",
+      "color": "rgba(0, 0, 0, 0.56)",
+      "text": "Apple Footer Trade‑in values will vary based on the condition, year, and configuration of your eligible trade‑in device. Not all devices are eligible for credit. You must be at least the age of majority to be eligible to trade in for credit or for an Apple Gift Card. Trade‑in value may be applied toward qualifying new device purchase, or added to an Apple Gift Card. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on full value of a new device purchase. In‑store trade‑in requires presentation of a valid photo ID (local law may require saving this information). Offer may not be available in all stores and may vary between in‑store and online trade‑in. Some stores may have additional requirements. Apple or its trade‑in partners reserve the right to refuse, cancel, or limit quantity of any trade‑in transaction for any reason. More details are available from Apple’s trade-in partner for trade‑in and recycling of eligible devices. Restrictions and limitations may apply. To access and use all Apple Card features and products available only to Apple Card users, you must add Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or iPadOS. Apple Card is subject to credit approval, available only for qualifying applicants in the United States, and issued by Goldman Sachs Bank USA, Salt Lake City Branch. Apple Payments Services LLC, a subsidiary of Apple Inc., is a service provider of Goldman Sachs Bank USA for Apple Card and Savings accounts. Neither Apple Inc. nor Apple Payments Services LLC is a bank. All communications from Apple and Goldman Sachs Bank USA about Apple Card (including transactional and marketing communications) and customer service support are available in English. Certain communications about Apple Card can be viewed in another language depending on your device language settings. If you reside in the U.S. Virgin Islands, Am"
+    },
+    {
+      "tag": "nav",
+      "role": "navigation",
+      "id": null,
+      "class": "ac-gf-directory with-5-columns",
+      "childCount": 5,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgba(0, 0, 0, 0.56)",
+      "text": "Shop and Learn Store Mac iPad iPhone Watch Vision AirPods TV & Home AirTag Accessories Gift Cards Apple Wallet Wallet Apple Card Apple Pay Apple Cash Account Manage Your Apple Account Apple Store Account iCloud.com Entertainment Apple One Apple TV Apple Music Apple Arcade Apple Fitness+ Apple News+ Apple Podcasts Apple Books App Store Apple Store Find a Store Genius Bar Today at Apple Group Reservations Apple Camp Apple Store App Certified Refurbished Apple Trade In Financing Carrier Deals at Apple Order Status Shopping Help For Business Apple and Business Shop for Business For Education Apple and Education Shop for K-12 Shop for College For Healthcare Apple and Healthcare For Government Apple and Government Shop for Veterans and Military Shop for State and Local Employees Shop for Federal Employees Apple Values Accessibility Education Environment Inclusion and Diversity Privacy Racial Equity and Justice Supply Chain Innovation About Apple Newsroom Apple Leadership Career Opportunities Investors Ethics & Compliance Events Contact Apple"
+    }
+  ],
+  "ctas": [
+    {
+      "label": "Schweiz",
+      "href": null,
+      "bg": "rgb(250, 250, 252)",
+      "color": "rgba(0, 0, 0, 0.8)",
+      "fontFamily": "\"SF Pro Text\", \"Myriad Set Pro\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", \"SF Pro Icons\", \"Apple Legacy Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "400",
+      "borderRadius": "11px",
+      "padding": "0px 14px"
+    },
+    {
+      "label": "Weiter",
+      "href": "https://www.apple.com/chde/",
+      "bg": "rgb(29, 29, 31)",
+      "color": "rgb(255, 255, 255)",
+      "fontFamily": "\"SF Pro Text\", \"Myriad Set Pro\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", \"SF Pro Icons\", \"Apple Legacy Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "400",
+      "borderRadius": "8px",
+      "padding": "8px 15px"
+    },
+    {
+      "label": "Shop",
+      "href": "/us/shop/goto/store",
+      "bg": "rgb(0, 113, 227)",
+      "color": "rgb(255, 255, 255)",
+      "fontFamily": "\"SF Pro Text\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "400",
+      "borderRadius": "980px",
+      "padding": "11px 21px"
+    },
+    {
+      "label": "Learn more",
+      "href": "/education/college-students/",
+      "bg": "rgb(0, 113, 227)",
+      "color": "rgb(255, 255, 255)",
+      "fontFamily": "\"SF Pro Text\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "400",
+      "borderRadius": "980px",
+      "padding": "11px 21px"
+    },
+    {
+      "label": "Get your estimate",
+      "href": "/us/shop/goto/trade_in",
+      "bg": "rgb(0, 113, 227)",
+      "color": "rgb(255, 255, 255)",
+      "fontFamily": "\"SF Pro Text\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "400",
+      "borderRadius": "980px",
+      "padding": "8px 15px"
+    },
+    {
+      "label": "Play endless entertainment gallery",
+      "href": null,
+      "bg": "rgba(210, 210, 215, 0.64)",
+      "color": "rgba(0, 0, 0, 0.48)",
+      "fontFamily": "\"SF Pro Text\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontWeight": "400",
+      "borderRadius": "50%",
+      "padding": "0px"
+    }
+  ],
+  "links": {
+    "all": [
+      "https://www.apple.com/chde/",
+      "/",
+      "/us/shop/goto/store",
+      "/us/shop/goto/store",
+      "/us/shop/goto/buy_mac",
+      "/us/shop/goto/buy_ipad",
+      "/us/shop/goto/buy_iphone",
+      "/us/shop/goto/buy_watch",
+      "/us/shop/goto/buy_vision",
+      "/us/shop/goto/airpods/accessories",
+      "/us/shop/goto/buy_accessories",
+      "/retail/",
+      "/us/shop/goto/order/list",
+      "/us/shop/goto/trade_in",
+      "/us/shop/goto/payment_plan",
+      "/us/shop/goto/personal_setup",
+      "/us/shop/goto/special_deals",
+      "/us/shop/goto/educationrouting",
+      "/retail/business/",
+      "/us/shop/goto/eppstore/veteransandmilitary",
+      "/r/store/government/",
+      "/mac/",
+      "/mac/",
+      "/macbook-neo/",
+      "/macbook-air/",
+      "/macbook-pro/",
+      "/imac/",
+      "/mac-mini/",
+      "/mac-studio/",
+      "/displays/",
+      "/mac/compare/",
+      "/mac/mac-does-that/",
+      "/us/shop/goto/buy_mac",
+      "/mac/best-mac/",
+      "/us/shop/goto/mac/accessories",
+      "/us/shop/goto/trade_in#mac",
+      "/us/shop/goto/payment_plan",
+      "/us/shop/goto/personal_setup",
+      "https://support.apple.com/mac?cid=gn-ols-mac-psp-prodfly",
+      "/applecare/?filter=mac",
+      "/os/macos/",
+      "/apple-intelligence/",
+      "/apps/",
+      "/apple-creator-studio/",
+      "/macos/continuity/",
+      "/icloud/",
+      "/business/mac/",
+      "/education/",
+      "/ipad/",
+      "/ipad/",
+      "/ipad-pro/",
+      "/ipad-air/",
+      "/ipad-11/",
+      "/ipad-mini/",
+      "/apple-pencil/",
+      "/ipad-keyboards/",
+      "/ipad/compare/",
+      "/us/shop/goto/buy_ipad",
+      "/us/shop/goto/ipad/accessories",
+      "/us/shop/goto/trade_in#ipad",
+      "/us/shop/goto/payment_plan",
+      "/us/shop/goto/personal_setup",
+      "https://support.apple.com/ipad?cid=gn-ols-ipad-psp-prodfly",
+      "/applecare/?filter=ipad",
+      "/os/ipados/",
+      "/apple-intelligence/",
+      "/apps/",
+      "/apple-creator-studio/",
+      "/icloud/",
+      "/education/",
+      "/iphone/",
+      "/iphone/",
+      "/iphone-17-pro/",
+      "/iphone-air/",
+      "/iphone-17/",
+      "/iphone-17e/",
+      "/us/shop/goto/buy_iphone/iphone_16",
+      "/iphone/compare/",
+      "/iphone/switch/",
+      "/us/shop/goto/buy_iphone",
+      "/us/shop/goto/iphone/accessories",
+      "/us/shop/goto/trade_in#iphone",
+      "/us/shop/goto/buy_iphone/carrier_offers",
+      "/us/shop/goto/payment_plan",
+      "/us/shop/goto/personal_setup",
+      "https://support.apple.com/iphone?cid=gn-ols-iphone-psp-prodfly",
+      "/applecare/?filter=iphone",
+      "/os/ios/",
+      "/apple-intelligence/",
+      "/apps/",
+      "/privacy/",
+      "/macos/continuity/",
+      "/icloud/",
+      "/wallet/",
+      "/watch/",
+      "/watch/",
+      "/apple-watch-series-11/",
+      "/apple-watch-se-3/",
+      "/apple-watch-ultra-3/",
+      "/apple-watch-nike/",
+      "/apple-watch-hermes/",
+      "/watch/compare/",
+      "/watch/why-apple-watch/",
+      "/us/shop/goto/buy_watch",
+      "/us/shop/goto/watch/bands",
+      "/us/shop/goto/watch/accessories",
+      "/us/shop/goto/trade_in#watch",
+      "/us/shop/goto/payment_plan",
+      "/us/shop/goto/personal_setup",
+      "https://support.apple.com/watch?cid=gn-ols-watch-psp-prodfly",
+      "/applecare/?filter=watch",
+      "/os/watchos/",
+      "/apple-watch-for-your-kids/",
+      "/apps/",
+      "/apple-fitness-plus/",
+      "/education/",
+      "/apple-vision-pro/",
+      "/apple-vision-pro/",
+      "/apple-vision-pro/specs/",
+      "/us/shop/goto/buy_vision",
+      "/us/shop/goto/vision/accessories",
+      "/retail/instore-shopping-session/session-selection/?topic=visionpro",
+      "/us/shop/goto/payment_plan",
+      "/us/shop/goto/personal_setup",
+      "https://support.apple.com/apple-vision-pro?cid=gn-nav-vision-psp-prodfly",
+      "/applecare/?filter=apple-vision-pro",
+      "/os/visionos/",
+      "/business/enterprise/apple-vision-pro/",
+      "/airpods/",
+      "/airpods/",
+      "/airpods-4/",
+      "/airpods-pro/",
+      "/airpods-max/",
+      "/airpods/compare/",
+      "/us/shop/goto/accessories/all_accessories/headphones_speakers?fh=47d1%2B3214%2B45aa%2B45ab&f=apple-overear-sport&page=1",
+      "/us/shop/goto/airpods/accessories",
+      "https://support.apple.com/airpods?cid=gn-ols-airpods-psp-prodfly",
+      "/applecare/?filter=headphones",
+      "/airpods-pro/hearing-health/",
+      "/apple-music/",
+      "/apple-fitness-plus/",
+      "/tv-home/",
+      "/tv-home/",
+      "/apple-tv-4k/",
+      "/homepod-2nd-generation/",
+      "/homepod-mini/",
+      "/us/shop/goto/buy_tv/apple_tv_4k",
+      "/us/shop/goto/buy_homepod/homepod",
+      "/us/shop/goto/buy_homepod/homepod_mini",
+      "/us/shop/goto/product/MW5G3",
+      "/us/shop/goto/smart_home/accessories",
+      "https://support.apple.com/apple-tv?cid=gn-ols-appletv-psp-prodfly",
+      "https://support.apple.com/homepod?cid=gn-ols-homepod-psp-prodfly",
+      "/applecare/?filter=tv",
+      "/applecare/?filter=homepod",
+      "/apple-tv-app/",
+      "/apple-tv/",
+      "/home-app/",
+      "/apple-music/",
+      "/airplay/",
+      "/entertainment/",
+      "/services/",
+      "/apple-one/",
+      "/apple-tv/",
+      "/apple-music/",
+      "/apple-arcade/",
+      "/apple-fitness-plus/",
+      "/apple-news/",
+      "/apple-podcasts/",
+      "/apple-books/",
+      "/app-store/",
+      "https://support.apple.com/tv?cid=gn-ols-tv-psp-prodfly",
+      "https://support.apple.com/music?cid=gn-ols-music-psp-prodfly",
+      "/us/shop/goto/buy_accessories",
+      "/us/shop/goto/buy_accessories",
+      "/us/shop/goto/mac/accessories",
+      "/us/shop/goto/ipad/accessories",
+      "/us/shop/goto/iphone/accessories",
+      "/us/shop/goto/watch/accessories",
+      "/us/shop/goto/vision/accessories",
+      "/us/shop/goto/airpods/accessories",
+      "/us/shop/goto/smart_home/accessories",
+      "/us/shop/goto/accessories/all_accessories/made_by_apple",
+      "/us/shop/goto/accessories/all_accessories/beats_featured",
+      "/airtag/",
+      "/accessibility/assistive-technologies/",
+      "https://support.apple.com/?cid=gn-ols-home-hp-tab",
+      "https://support.apple.com/iphone?cid=gn-ols-iphone-psp-explore",
+      "https://support.apple.com/mac?cid=gn-ols-mac-psp-explore",
+      "https://support.apple.com/ipad?cid=gn-ols-ipad-psp-explore",
+      "https://support.apple.com/watch?cid=gn-ols-watch-psp-explore",
+      "https://support.apple.com/apple-vision-pro?cid=gn-nav-vision-psp-explore",
+      "https://support.apple.com/airpods?cid=gn-ols-airpods-psp-explore",
+      "https://support.apple.com/music?cid=gn-ols-music-psp-explore",
+      "https://support.apple.com/tv?cid=gn-ols-tv-psp-explore",
+      "https://support.apple.com/?cid=gn-ols-home-hp-explore",
+      "https://discussions.apple.com/welcome?cid=gn-com-community-lp-get_help",
+      "https://checkcoverage.apple.com/us/en?cid=gn-ols-checkcoverage-lp-get_help",
+      "/retail/geniusbar/",
+      "https://support.apple.com/repair?cid=gn-ols-repair-lp-get_help",
+      "/applecare/",
+      "https://support.apple.com/apple-account?cid=gn-ols-appleaccount-psp-helpful_topics",
+      "https://support.apple.com/billing?cid=gn-ols-billing-collection-helpful_topics",
+      "https://support.apple.com/accessibility?cid=gn-ols-accessibility-psp-helpful_topics",
+      "/us/search",
+      "https://www.apple.com/retail/",
+      "https://www.apple.com/apple-vision-pro/",
+      "https://www.apple.com/airpods/",
+      "https://www.apple.com/apple-intelligence/",
+      "https://www.apple.com/us/shop/goto/trade_in",
+      "/us/shop/goto/bag",
+      "/us/shop/goto/store",
+      "/us/shop/goto/store",
+      "/education/college-students/",
+      "/education/college-students/",
+      "/iphone/",
+      "/iphone/",
+      "/us/shop/goto/buy_iphone",
+      "/macbook-air/",
+      "/macbook-air/",
+      "/us/shop/goto/buy_mac/macbook_air",
+      "/ipad-air/",
+      "/ipad-air/",
+      "/us/shop/goto/buy_ipad/ipad_air",
+      "/privacy/",
+      "/privacy/",
+      "/macbook-pro/",
+      "/macbook-pro/",
+      "/us/shop/goto/buy_mac/macbook_pro",
+      "/us/shop/goto/trade_in",
+      "/us/shop/goto/trade_in",
+      "/apple-card/",
+      "/apple-card/",
+      "https://card.apple.com/apply/application?referrer=cid%3Dapy-200-10000036&start=false",
+      "#endless-entertainment-gallery-item-1",
+      "#endless-entertainment-gallery-item-2",
+      "#endless-entertainment-gallery-item-3",
+      "#endless-entertainment-gallery-item-4",
+      "#endless-entertainment-gallery-item-5",
+      "#endless-entertainment-gallery-item-6",
+      "#endless-entertainment-gallery-item-7",
+      "#endless-entertainment-gallery-item-8",
+      "#endless-entertainment-gallery-item-9",
+      "https://tv.apple.com/us/show/sugar/umc.cmc.4r6q7tdquewehwvb3rzl0k3dt?l=en-US?itscg=10000&itsct=atv-apl_hp-stream_now--220622",
+      "https://tv.apple.com/us/show/cape-fear/umc.cmc.377zdzwefgtzkvykexeca9qrc?l=en-US?itscg=10000&itsct=atv-apl_hp-stream_now--220622",
+      "https://tv.apple.com/us/room/formula-1/uts.room.formula-1?itscg=10000&itsct=atv-apl_hp-stream_now--220622",
+      "https://tv.apple.com/us/show/widows-bay/umc.cmc.1zzly0vah46bnvnwf0qkrjhh2?l=en-US?itscg=10000&itsct=atv-apl_hp-stream_now--220622",
+      "https://tv.apple.com/us/channel/mls/tvs.sbd.7000?itscg=10000&itsct=atv-apl_hp-stream_now--220622",
+      "https://tv.apple.com/us/show/your-friends--neighbors/umc.cmc.74o37kzay0yuuub8iumddjsg?l=en-US?itscg=10000&itsct=atv-apl_hp-stream_now--220622",
+      "https://tv.apple.com/us/room/friday-night-baseball/edt.item.62327df1-6874-470e-98b2-a5bbeac509a2?itscg=10000&itsct=atv-apl_hp-stream_now--220622",
+      "https://tv.apple.com/us/show/maximum-pleasure-guaranteed/umc.cmc.10k6tes7rmc2ti0ho1ozgwezc?l=en-US?itscg=10000&itsct=atv-apl_hp-stream_now--220622",
+      "https://tv.apple.com/us/show/margos-got-money-troubles/umc.cmc.6wgw0u6vuwydp6obbzzccup3w?l=en-US?itscg=10000&itsct=atv-apl_hp-stream_now--220622",
+      "https://apps.apple.com/us/app/hello-kitty-island-adventure/id1553505132?itscg=10000&itsct=aa-apl_hp-play_now--240326",
+      "https://music.apple.com/us/station/sabrina-carpenter-the-zane-lowe-interview/ra.1837392419?itscg=10000&itsct=am-apl_hp-listen_now--240326",
+      "https://fitness.apple.com/us/studio-collection/30-days-of-gratitude-and-kindness/1671857394?itscg=10000&itsct=afp-apl_hp-watch_now--240326",
+      "https://apps.apple.com/us/app/powerwash-simulator/id6477445344?itscg=10000&itsct=aa-apl_hp-play_now--240326",
+      "https://music.apple.com/us/playlist/a-list-pop/pl.5ee8333dbe944d9f9151e97d92d1ead9?itscg=10000&itsct=am-apl_hp-listen_now--240326",
+      "https://fitness.apple.com/us/workout/strength-with-jenn-music-by-davido/1895667791?itscg=10000&itsct=afp-apl_hp-watch_now--240326",
+      "https://apps.apple.com/us/app/spongebob-patty-pursuit-2/id6472008605?itscg=10000&itsct=aa-apl_hp-play_now--240326",
+      "https://music.apple.com/us/playlist/new-music-daily/pl.2b0e6e332fdf4b7a91164da3162127b5?itscg=10000&itsct=am-apl_hp-listen_now--240326",
+      "https://fitness.apple.com/us/studio-collection/asian-pacific-american-heritage-month/1808728535?itscg=10000&itsct=afp-apl_hp-watch_now--240326",
+      "https://support.apple.com/kb/HT209218",
+      "/us/shop/goto/store",
+      "/mac/",
+      "/ipad/",
+      "/iphone/",
+      "/watch/",
+      "/apple-vision-pro/",
+      "/airpods/",
+      "/tv-home/",
+      "/airtag/",
+      "/us/shop/goto/buy_accessories",
+      "/us/shop/goto/giftcards",
+      "/wallet/",
+      "/apple-card/",
+      "/apple-pay/",
+      "/apple-cash/",
+      "https://account.apple.com/",
+      "/us/shop/goto/account",
+      "https://www.icloud.com",
+      "/apple-one/",
+      "/apple-tv/",
+      "/apple-music/",
+      "/apple-arcade/",
+      "/apple-fitness-plus/",
+      "/apple-news/",
+      "/apple-podcasts/",
+      "/apple-books/",
+      "/app-store/",
+      "/retail/",
+      "/retail/geniusbar/",
+      "/today/",
+      "/today/groups/",
+      "/today/camp/",
+      "https://apps.apple.com/us/app/apple-store/id375380948",
+      "/us/shop/goto/special_deals",
+      "/us/shop/goto/trade_in",
+      "/us/shop/goto/payment_plan",
+      "/us/shop/goto/buy_iphone/carrier_offers",
+      "/us/shop/goto/order/list",
+      "/us/shop/goto/help",
+      "/business/",
+      "/retail/business/",
+      "/education/",
+      "/education/k12/how-to-buy/",
+      "/us/shop/goto/educationrouting",
+      "/healthcare/",
+      "/government/",
+      "/us/shop/goto/eppstore/veteransandmilitary",
+      "/us_epp_67909/store",
+      "/us_epp_55499/store",
+      "/accessibility/",
+      "/education-initiative/",
+      "/environment/",
+      "/diversity/",
+      "/privacy/",
+      "/racial-equity-justice-initiative/",
+      "/supply-chain/",
+      "/newsroom/",
+      "/leadership/",
+      "/careers/us/",
+      "https://investor.apple.com/",
+      "/compliance/",
+      "/apple-events/",
+      "/contact/",
+      "/retail/",
+      "https://locate.apple.com/",
+      "tel:1-800-692-7753",
+      "/choose-country-region/",
+      "/legal/privacy/",
+      "/legal/internet-services/terms/site.html",
+      "/us/shop/goto/help/sales_refunds",
+      "/legal/",
+      "/sitemap/",
+      "/choose-country-region/"
+    ]
+  },
+  "media": {
+    "imgs": [
+      {
+        "src": "https://www.apple.com/v/home/images/fathers-day-2026/a/hero_fd26_startframe__9cmey4u4wuay_largetall_2x.jpg",
+        "srcset": null,
+        "alt": null,
+        "w": 3008,
+        "h": 692
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/fathers-day-2026/a/hero_fd26__c9vr0hxu24eq_largetall_2x.jpg",
+        "srcset": null,
+        "alt": "Dot, squiggle, spiral, and star shapes in different hues of blue, green, and purple burst and spread across from behind Apple logo, wrapped in a blue color bow, made up of dots, squiggles, spirals, and star shapes in different hues of blue, green, and purple",
+        "w": 3008,
+        "h": 692
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/fathers-day-2026/a/stars/star01__bx1epqccfyb6_large_2x.png",
+        "srcset": null,
+        "alt": null,
+        "w": 57,
+        "h": 57
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/fathers-day-2026/a/stars/star04__lkh28qjzjh6e_large_2x.png",
+        "srcset": null,
+        "alt": null,
+        "w": 57,
+        "h": 57
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/fathers-day-2026/a/stars/star05__b4zhm6zdjpua_large_2x.png",
+        "srcset": null,
+        "alt": null,
+        "w": 57,
+        "h": 57
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/fathers-day-2026/a/stars/star07__e866qn7p0ei6_large_2x.png",
+        "srcset": null,
+        "alt": null,
+        "w": 57,
+        "h": 57
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/fathers-day-2026/a/stars/star10__lmxkjc91gt6e_large_2x.png",
+        "srcset": null,
+        "alt": null,
+        "w": 57,
+        "h": 57
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/fathers-day-2026/a/stars/star12__epjhzny3a20y_large_2x.png",
+        "srcset": null,
+        "alt": null,
+        "w": 57,
+        "h": 57
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/fathers-day-2026/a/stars/star14__bor0824u6gwi_large_2x.png",
+        "srcset": null,
+        "alt": null,
+        "w": 57,
+        "h": 57
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/fathers-day-2026/a/stars/star16__d0nup3hr4rma_large_2x.png",
+        "srcset": null,
+        "alt": null,
+        "w": 57,
+        "h": 57
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/fathers-day-2026/a/squiggles/squiggle01__d6jreg377tm6_large_2x.png",
+        "srcset": null,
+        "alt": null,
+        "w": 63,
+        "h": 46
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/fathers-day-2026/a/squiggles/squiggle02__f0o9e92zsaeu_large_2x.png",
+        "srcset": null,
+        "alt": null,
+        "w": 61,
+        "h": 57
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/fathers-day-2026/a/squiggles/squiggle04__fkwr12t511ea_large_2x.png",
+        "srcset": null,
+        "alt": null,
+        "w": 61,
+        "h": 57
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/fathers-day-2026/a/squiggles/squiggle07__dnwnii1qbpqq_large_2x.png",
+        "srcset": null,
+        "alt": null,
+        "w": 61,
+        "h": 57
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/fathers-day-2026/a/squiggles/squiggle08__73vqkj13yky6_large_2x.png",
+        "srcset": null,
+        "alt": null,
+        "w": 60,
+        "h": 35
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/fathers-day-2026/a/squiggles/squiggle09__82w6jfv5u8im_large_2x.png",
+        "srcset": null,
+        "alt": null,
+        "w": 63,
+        "h": 48
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/fathers-day-2026/a/squiggles/squiggle11__tf0wgxob1bmq_large_2x.png",
+        "srcset": null,
+        "alt": null,
+        "w": 59,
+        "h": 41
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/fathers-day-2026/a/squiggles/squiggle13__wufaz1o9boim_large_2x.png",
+        "srcset": null,
+        "alt": null,
+        "w": 63,
+        "h": 46
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/college-students-2026/a/hero_college_students_2026__dzrtx52rt9aq_largetall_2x.jpg",
+        "srcset": null,
+        "alt": "Mac and iPad, screens showing college coursework across various apps",
+        "w": 3008,
+        "h": 692
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/iphone-family/a/hero_iphone_family__be5jkzxszb1e_largetall_2x.jpg",
+        "srcset": null,
+        "alt": "iPhone 17 Pro, back exterior, deep blue color, Pro Fusion camera system in top left corner, Apple logo in center, iPhone 17, back exterior, white color, Dual Fusion camera system in top left corner, Apple logo in center, iPhone 17e, back exterior, soft pink color, Fusion camera system in top left corner, Apple logo in center, iPhone Air, side, titanium frame profile, Fusion camera system in top left corner",
+        "w": 3008,
+        "h": 692
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/macbook-air-m5/a/promo_macbook_air_m5__e5xk2yysqiie_large_2x.jpg",
+        "srcset": null,
+        "alt": "Two open MacBook Air laptops in sky blue color forming arrow shape, emphasizing narrow profile",
+        "w": 1262,
+        "h": 580
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/logos/ipad-air-m4/a/promo_logo_ipad_air__dqdj4ni03quu_large_2x.png",
+        "srcset": null,
+        "alt": null,
+        "w": 144,
+        "h": 49
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/ipad-air-m4/a/promo_ipad_air_m4__bgcv7t286k8y_large_2x.jpg",
+        "srcset": null,
+        "alt": "iPad Air models floating, back exterior, single-lens camera, front exterior, rounded corners, black display bezel",
+        "w": 1262,
+        "h": 580
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/logos/privacy/a/promo_logo_privacy__ca4we7oemzte_large_2x.png",
+        "srcset": null,
+        "alt": null,
+        "w": 162,
+        "h": 52
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/privacy/a/promo_privacy__cnqoldc74oty_large_2x.jpg",
+        "srcset": null,
+        "alt": "A person holds iPhone 17 Pro in front of their face, back exterior facing outward, Cosmic Orange color.",
+        "w": 1262,
+        "h": 580
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/macbook-pro/a/promo_macbook_pro__c9td9w1mc8ia_large_2x.jpg",
+        "srcset": null,
+        "alt": "MacBook Pro positioned into the shape of a V, referencing the M5 chip family",
+        "w": 1262,
+        "h": 580
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/logos/iphone-tradein/a/promo_logo_iphone_tradein__bb7assu7ubo2_large_2x.png",
+        "srcset": null,
+        "alt": null,
+        "w": 156,
+        "h": 49
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/iphone-tradein/a/promo_iphone_tradein__e4hrjxmgmf0i_large_2x.jpg",
+        "srcset": null,
+        "alt": "Side-by-side, hand holding iPhone 13 in silicon case with stickers on back exterior, trade-in with hand holding new iPhone box for iPhone 17 Pro",
+        "w": 1262,
+        "h": 580
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/logos/apple-card/a/promo_logo_apple_card__28vxrcexz0ia_large_2x.png",
+        "srcset": null,
+        "alt": null,
+        "w": 108,
+        "h": 49
+      },
+      {
+        "src": "https://www.apple.com/v/home/images/apple-card/a/promo_apple_card__d8xz4kd4evwy_large_2x.jpg",
+        "srcset": null,
+        "alt": "Apple Card, front, Apple logo in top left, cardholder name in middle left Marisa Robertson, card chip in middle right.",
+        "w": 1262,
+        "h": 580
+      },
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/Hm4A4O3VorNjFFadQnyhcA/1960x1044sr.jpg",
+        "srcset": null,
+        "alt": null,
+        "w": 980,
+        "h": 522
+      },
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/Ens6pYdEw8o7VjRZrd--Ng/220x54.png",
+        "srcset": null,
+        "alt": null,
+        "w": 90,
+        "h": 54
+      },
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/qkaEsaFl5id_Gx38S0IVLw/1960x1044sr.jpg",
+        "srcset": null,
+        "alt": null,
+        "w": 980,
+        "h": 522
+      },
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/w-hRWVBPfcq3HixQ-3yZiw/220x54.png",
+        "srcset": null,
+        "alt": null,
+        "w": 220,
+        "h": 31
+      },
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/Features/v4/11/cd/47/11cd47ca-af61-71a8-6b02-4a0af9d55077/a54b4338-9340-422f-b5c6-1420bf850b01.png/1960x1044sr.jpg",
+        "srcset": null,
+        "alt": null,
+        "w": 980,
+        "h": 522
+      },
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/Features221/v4/f0/ac/1e/f0ac1e58-0027-49d0-378e-68470edfb0ec/3b7d6fac-0061-401c-9716-742245053fd0.png/220x54.png",
+        "srcset": null,
+        "alt": null,
+        "w": 214,
+        "h": 54
+      },
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/Features211/v4/78/97/14/7897142a-b8df-f071-fddb-c9bfcc5d8dbb/1081aa3d-8d1e-404a-87ca-7bb9642657c2.png/1960x1044sr.jpg",
+        "srcset": null,
+        "alt": null,
+        "w": 980,
+        "h": 522
+      },
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/vXNv4MQ8aLXIkWQTZxw-BQ/220x54.png",
+        "srcset": null,
+        "alt": null,
+        "w": 114,
+        "h": 54
+      },
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/Features/v4/78/57/f6/7857f6ec-a4ed-87dc-dea9-a6ed02888722/ebd59c17-8e95-49b1-aec0-44aec57388ee.png/1960x1044sr.jpg",
+        "srcset": null,
+        "alt": null,
+        "w": 980,
+        "h": 522
+      },
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/Kc1Xx3Z1QBOuXe1EHDu4TA/220x54.png",
+        "srcset": null,
+        "alt": null,
+        "w": 51,
+        "h": 54
+      },
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/pa_Dd2CLL-BlWQRqIurClw/1960x1044sr.jpg",
+        "srcset": null,
+        "alt": null,
+        "w": 980,
+        "h": 522
+      },
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/J7bMKs9REENSizTYepOTeg/220x54.png",
+        "srcset": null,
+        "alt": null,
+        "w": 220,
+        "h": 50
+      },
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/Features/v4/33/9e/cf/339ecfe7-f515-8594-2e48-d991803409ea/5a944fdc-acd7-47a8-89e7-274d84cf4276.png/1960x1044sr.jpg",
+        "srcset": null,
+        "alt": null,
+        "w": 980,
+        "h": 522
+      },
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/Features211/v4/6f/41/7c/6f417c01-dbf7-6cdc-df62-f014aa88a673/e452926f-7b52-4c05-a07f-8e4939b1bf6b.png/220x54.png",
+        "srcset": null,
+        "alt": null,
+        "w": 160,
+        "h": 54
+      },
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/X6v_Cbb571UaAbZnIJvClw/1960x1044sr.jpg",
+        "srcset": null,
+        "alt": null,
+        "w": 980,
+        "h": 522
+      },
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/OgnpCsm4bVHdGZyFiwuHXQ/220x54.png",
+        "srcset": null,
+        "alt": null,
+        "w": 129,
+        "h": 54
+      },
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/Hj0w3h6_8b-NM4nnDwjfzQ/1960x1044sr.jpg",
+        "srcset": null,
+        "alt": null,
+        "w": 980,
+        "h": 522
+      },
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/wY4kakhFPvD_8_pKkfu3AA/220x54.png",
+        "srcset": null,
+        "alt": null,
+        "w": 135,
+        "h": 54
+      },
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/Features211/v4/5b/b3/4a/5bb34a60-695c-a96f-75ec-8a957fc2a20b/45899847-e52c-44a1-9ce5-09aedebb7a78.png/834x468.jpg",
+        "srcset": null,
+        "alt": null,
+        "w": 416,
+        "h": 234
+      },
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/Features211/v4/55/2b/5f/552b5f86-46e6-d848-ee06-5395bf09c206/83e0ed3d-c824-4ed9-9572-ae9e784568cb.png/392x392sr.jpg",
+        "srcset": null,
+        "alt": null,
+        "w": 196,
+        "h": 196
+      },
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/Features221/v4/80/20/29/80202998-1f1e-7f47-dc4d-3e4ac4dd801a/8712fa0d-f863-469e-8ac0-000b8a462629.png/834x468.jpg",
+        "srcset": null,
+        "alt": null,
+        "w": 416,
+        "h": 234
+      },
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/Features211/v4/53/55/d7/5355d758-e5b7-b406-f004-bb98d03ecb38/9388d284-2a0b-43e8-86e0-5852e8559d18.png/834x468.jpg",
+        "srcset": null,
+        "alt": null,
+        "w": 416,
+        "h": 234
+      },
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/Features/v4/7b/0f/28/7b0f2824-c00c-7986-8dc5-6e1e1e682e77/f76d06d2-afa9-4dba-bc5d-01d9d7b80ccf.png/392x392SC.DN01.jpg?l=en-US",
+        "srcset": null,
+        "alt": null,
+        "w": 196,
+        "h": 196
+      },
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/a7/ee/cb/a7eecbd1-7884-241d-7a88-9c6baa9944ce/ST_JCL_0134_artwork_en_ID324334_0.png/834x468.jpg",
+        "srcset": null,
+        "alt": null,
+        "w": 416,
+        "h": 234
+      },
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/Features221/v4/20/56/2b/20562bcb-a666-0f36-367d-7e188766eec6/85a24e2f-a12f-443a-a5c1-ddd78b076bc2.png/834x468.jpg",
+        "srcset": null,
+        "alt": null,
+        "w": 416,
+        "h": 234
+      },
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/Features/v4/17/0e/8f/170e8f90-aabe-8930-c53d-1f9b0980e33f/031712e4-5d00-4157-a50f-4b2e9758fd99.png/392x392SC.DN01.jpg?l=en-US",
+        "srcset": null,
+        "alt": null,
+        "w": 196,
+        "h": 196
+      },
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/Features221/v4/0d/5d/18/0d5d18f6-ed1f-30fa-06c9-afbb5e375a4f/1b8cf2eb-1858-4d53-9faa-26c6b2e6cdfc.png/834x468.jpg",
+        "srcset": null,
+        "alt": null,
+        "w": 416,
+        "h": 234
+      }
+    ],
+    "cssBackgrounds": [],
+    "inlineSvgCount": 89,
+    "videoCount": 1,
+    "iframeCount": 0
+  },
+  "colorCount": {
+    "rgb(29, 29, 31)": 802,
+    "rgb(250, 250, 252)": 6,
+    "rgba(0, 0, 0, 0.8)": 224,
+    "rgb(51, 51, 54)": 238,
+    "rgb(255, 255, 255)": 14,
+    "rgba(255, 255, 255, 0.8)": 14,
+    "rgb(110, 110, 115)": 32,
+    "rgb(0, 0, 0)": 50,
+    "rgba(232, 232, 237, 0.4)": 1,
+    "rgb(245, 245, 247)": 66,
+    "rgb(0, 102, 204)": 32,
+    "rgb(0, 113, 227)": 9,
+    "rgb(41, 151, 255)": 390,
+    "rgba(0, 0, 0, 0.48)": 6,
+    "rgba(210, 210, 215, 0.64)": 1,
+    "rgb(244, 248, 251)": 1,
+    "rgb(164, 97, 141)": 1,
+    "rgb(159, 198, 244)": 1,
+    "rgb(234, 51, 192)": 1,
+    "rgb(39, 24, 16)": 1,
+    "rgb(51, 151, 212)": 1,
+    "rgb(222, 148, 68)": 1,
+    "rgb(55, 20, 16)": 1,
+    "rgba(0, 0, 0, 0.56)": 123,
+    "rgba(0, 0, 0, 0.88)": 100,
+    "rgba(0, 0, 0, 0.72)": 71
+  },
+  "fontCount": {
+    "\"SF Pro Text\", \"Myriad Set Pro\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", \"SF Pro Icons\", \"Apple Legacy Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif": 26,
+    "\"SF Pro Text\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif": 1573,
+    "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif": 200,
+    "Arial": 1,
+    "\"SF Pro Text\", \"Myriad Set Pro\", \"SF Pro Icons\", \"Apple Legacy Chevron\", \"Helvetica Neue\", Helvetica, Arial, sans-serif": 297
+  },
+  "radiusCount": {
+    "11px": 2,
+    "8px 8px 0px 0px": 1,
+    "0px 0px 8px 8px": 1,
+    "8px": 4,
+    "5px": 5,
+    "980px": 32,
+    "999px": 1,
+    "50%": 1
+  },
+  "shadowCount": {
+    "rgba(0, 0, 0, 0.22) 3px 5px 30px 0px": 3
+  },
+  "customProps": [
+    {
+      "name": "--r-localnav-text-zoom-factor",
+      "value": "1"
+    },
+    {
+      "name": "--r-localnav-viewport-small-min-width",
+      "value": "320px"
+    },
+    {
+      "name": "--r-globalnav-background-opened",
+      "value": "#fafafc"
+    },
+    {
+      "name": "--hero-content-height",
+      "value": "692px"
+    },
+    {
+      "name": "--sk-productred",
+      "value": "rgb(175, 30, 45)"
+    },
+    {
+      "name": "--sk-footnote-reduced-offset-top",
+      "value": "-.86em"
+    },
+    {
+      "name": "--sk-enviro-green",
+      "value": "rgb(0, 217, 89)"
+    },
+    {
+      "name": "--sk-body-text-color",
+      "value": "rgb(29, 29, 31)"
+    },
+    {
+      "name": "--sk-body-font-stack",
+      "value": "text"
+    },
+    {
+      "name": "--sk-fill-secondary",
+      "value": "rgb(250, 250, 252)"
+    },
+    {
+      "name": "--sk-fill-tertiary",
+      "value": "rgb(245, 245, 247)"
+    },
+    {
+      "name": "--r-localnav-viewport-medium-min-width",
+      "value": "834px"
+    },
+    {
+      "name": "--globalnav-height",
+      "value": "44px"
+    },
+    {
+      "name": "--sk-fill-orange-secondary",
+      "value": "rgb(255, 249, 244)"
+    },
+    {
+      "name": "--sk-link-disabled-opacity",
+      "value": "0.42"
+    },
+    {
+      "name": "--media-gallery-dotnav-gap",
+      "value": "12px"
+    },
+    {
+      "name": "--sk-footnote-font-size",
+      "value": "0.6em"
+    },
+    {
+      "name": "--sk-fill-gray-secondary",
+      "value": "rgb(134, 134, 139)"
+    },
+    {
+      "name": "--sk-fill-red",
+      "value": "rgb(227, 0, 0)"
+    },
+    {
+      "name": "--sk-fill-green-secondary",
+      "value": "rgb(245, 255, 246)"
+    },
+    {
+      "name": "--media-gallery-bottom-content-padding-right",
+      "value": "48px"
+    },
+    {
+      "name": "--sk-paragraph-plus-element-margin",
+      "value": "0.8em"
+    },
+    {
+      "name": "--r-sk-safe-area-inset-start",
+      "value": "0px"
+    },
+    {
+      "name": "--r-localnav-gn-height",
+      "value": "44px"
+    },
+    {
+      "name": "--sk-headline-plus-first-element-margin",
+      "value": "0.8em"
+    },
+    {
+      "name": "--sk-fill",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "--r-localnav-viewport-large-query",
+      "value": "min-width(1024px)"
+    },
+    {
+      "name": "--r-localeswitcher-height",
+      "value": "70px"
+    },
+    {
+      "name": "--sk-glyph-orange",
+      "value": "rgb(182, 68, 0)"
+    },
+    {
+      "name": "--sk-fill-orange",
+      "value": "rgb(245, 99, 0)"
+    },
+    {
+      "name": "--r-globalmessage-segment-height",
+      "value": "0px"
+    },
+    {
+      "name": "--sk-glyph-gray-secondary-alt-alpha",
+      "value": "rgba(0, 0, 0, 0.72)"
+    },
+    {
+      "name": "--sk-glyph-red",
+      "value": "rgb(227, 0, 0)"
+    },
+    {
+      "name": "--r-localnav-viewport-medium-max-width",
+      "value": "1023px"
+    },
+    {
+      "name": "--media-gallery-section-padding-bottom",
+      "value": "12px"
+    },
+    {
+      "name": "--sk-glyph-gray-secondary-alt",
+      "value": "rgb(66, 66, 69)"
+    },
+    {
+      "name": "--sk-glyph-gray-alpha",
+      "value": "rgba(0, 0, 0, 0.88)"
+    },
+    {
+      "name": "--sk-focus-color",
+      "value": "#0071e3"
+    },
+    {
+      "name": "--media-gallery-tile-width",
+      "value": "930px"
+    },
+    {
+      "name": "--sk-paragraph-plus-headline-margin",
+      "value": "1.6em"
+    },
+    {
+      "name": "--sk-glyph-gray",
+      "value": "rgb(29, 29, 31)"
+    },
+    {
+      "name": "--media-gallery-dotnav-iconcontrol-margin-right",
+      "value": "calc(12px + 0px)"
+    },
+    {
+      "name": "--sk-glyph-gray-tertiary",
+      "value": "rgb(134, 134, 139)"
+    },
+    {
+      "name": "--sk-fill-green",
+      "value": "rgb(3, 161, 14)"
+    },
+    {
+      "name": "--r-globalnav-height",
+      "value": "44px"
+    },
+    {
+      "name": "--globalnav-collective-height",
+      "value": "calc(44px + 70px)"
+    },
+    {
+      "name": "--r-localnav-viewport-medium-query",
+      "value": "min-width(834px)"
+    },
+    {
+      "name": "--sk-focus-offset",
+      "value": "1px"
+    },
+    {
+      "name": "--r-sk-start",
+      "value": "left"
+    },
+    {
+      "name": "--sk-body-link-color",
+      "value": "rgb(0, 102, 204)"
+    },
+    {
+      "name": "--sk-fill-gray-tertiary",
+      "value": "rgb(210, 210, 215)"
+    },
+    {
+      "name": "--r-localnav-viewport-small-max-width",
+      "value": "833px"
+    },
+    {
+      "name": "--sk-enviro-neutral",
+      "value": "rgb(232, 232, 237)"
+    },
+    {
+      "name": "--media-gallery-tile-height",
+      "value": "523px"
+    },
+    {
+      "name": "--media-gallery-dotnav-iconcontrol-margin-top",
+      "value": ""
+    },
+    {
+      "name": "--media-gallery-slide-duration",
+      "value": "800ms"
+    },
+    {
+      "name": "--fam-gallery-tile-height",
+      "value": "234px"
+    },
+    {
+      "name": "--sk-fill-gray-tertiary-alpha",
+      "value": "rgba(0, 0, 0, 0.16)"
+    },
+    {
+      "name": "--sk-focus-color-alt",
+      "value": "rgb(0, 0, 0)"
+    },
+    {
+      "name": "--media-gallery-bottom-content-padding-bottom",
+      "value": "40px"
+    },
+    {
+      "name": "--sk-glyph-green",
+      "value": "rgb(0, 128, 9)"
+    },
+    {
+      "name": "--sk-glyph",
+      "value": "rgb(0, 0, 0)"
+    },
+    {
+      "name": "--media-gallery-bottom-copy-duration",
+      "value": "600ms"
+    },
+    {
+      "name": "--r-localnav-height",
+      "value": "calc(52px * 1)"
+    },
+    {
+      "name": "--sk-fill-gray-secondary-alpha",
+      "value": "rgba(0, 0, 0, 0.48)"
+    },
+    {
+      "name": "--sk-fill-gray-alpha",
+      "value": "rgba(0, 0, 0, 0.88)"
+    },
+    {
+      "name": "--sk-fill-gray-quaternary-alpha",
+      "value": "rgba(0, 0, 0, 0.08)"
+    },
+    {
+      "name": "--sk-footnote-reduced-font-size",
+      "value": ".45em"
+    },
+    {
+      "name": "--sk-headline-text-color",
+      "value": "rgb(29, 29, 31)"
+    },
+    {
+      "name": "--media-gallery-longnote-position-left",
+      "value": "18px"
+    },
+    {
+      "name": "--promo-content-height",
+      "value": "580px"
+    },
+    {
+      "name": "--sk-glyph-gray-secondary-alpha",
+      "value": "rgba(0, 0, 0, 0.56)"
+    },
+    {
+      "name": "--sk-fill-gray-quaternary",
+      "value": "rgb(232, 232, 237)"
+    },
+    {
+      "name": "--sk-glyph-blue",
+      "value": "rgb(0, 102, 204)"
+    },
+    {
+      "name": "--media-gallery-bottom-content-padding-left",
+      "value": "48px"
+    },
+    {
+      "name": "--media-gallery-headline-margin-bottom",
+      "value": "26px"
+    },
+    {
+      "name": "--sk-fill-gray",
+      "value": "rgb(29, 29, 31)"
+    },
+    {
+      "name": "--media-gallery-tile-gap",
+      "value": "13px"
+    },
+    {
+      "name": "--r-sk-safe-area-inset-end",
+      "value": "0px"
+    },
+    {
+      "name": "--sk-fill-yellow",
+      "value": "rgb(255, 224, 69)"
+    },
+    {
+      "name": "--sk-glyph-gray-tertiary-alpha",
+      "value": "rgba(0, 0, 0, 0.48)"
+    },
+    {
+      "name": "--sk-focus-offset-container",
+      "value": "3px"
+    },
+    {
+      "name": "--sk-fill-blue",
+      "value": "rgb(0, 113, 227)"
+    },
+    {
+      "name": "--sk-footnote-offset-top",
+      "value": "-0.5em"
+    },
+    {
+      "name": "--r-globalnav-segmentbar-height",
+      "value": "0px"
+    },
+    {
+      "name": "--sk-fill-red-secondary",
+      "value": "rgb(255, 242, 244)"
+    },
+    {
+      "name": "--r-sk-logical-factor",
+      "value": "1"
+    },
+    {
+      "name": "--sk-glyph-gray-secondary",
+      "value": "rgb(110, 110, 115)"
+    },
+    {
+      "name": "--sk-headline-plus-headline-margin",
+      "value": "0.4em"
+    },
+    {
+      "name": "--r-globalnav-background-opened-dark",
+      "value": "#161617"
+    },
+    {
+      "name": "--media-gallery-genre-m-dot-padding",
+      "value": "0.25em"
+    },
+    {
+      "name": "--r-localnav-viewport-large-min-width",
+      "value": "1024px"
+    },
+    {
+      "name": "--r-localnav-viewport-small-query",
+      "value": "min-width(320px)"
+    },
+    {
+      "name": "--sk-fill-yellow-secondary",
+      "value": "rgb(255, 254, 242)"
+    },
+    {
+      "name": "--media-gallery-button-margin-top",
+      "value": "0"
+    },
+    {
+      "name": "--r-sk-end",
+      "value": "right"
+    },
+    {
+      "name": "--sk-body-background-color",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "--sk-default-stacked-margin",
+      "value": "0.4em"
+    },
+    {
+      "name": "--r-localnav-stacked-height",
+      "value": "calc(66px * 1)"
+    }
+  ],
+  "body": [
+    "It’s not too late to find the perfect gift.",
+    "Mac and iPad. Major in any field.",
+    "Now with M5, M5 Pro, and M5 Max.",
+    "Get up to $195–$695 in credit when you trade in iPhone 13 or higher.1",
+    "Get up to 3% Daily Cash back with every purchase.",
+    "Every Grand Prix™, live and on demand—all in one place, all year long.",
+    "MysteryWelcome to the island, please enjoy your stay. Just don’t ask too many questions.",
+    "Watch every club, every match, live—all season long.",
+    "DramaIs it a crime to want more?",
+    "ThrillerA soccer mom falls down a rabbit hole of blackmail and murder.",
+    "ComedyEveryone’s got a side hustle.",
+    "Sabrina Carpenter: The Zane Lowe Interview",
+    "Sabrina Carpenter: The Zane Lowe Interview",
+    "30 Days of Gratitude and Kindness",
+    "Strength with Jenn • Music by Davido",
+    "Asian-Pacific American Heritage Month",
+    "To access and use all Apple Card features and products available only to Apple Card users, you must add Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or iPadOS. Apple Card is subject to credit approval, available only for qualifying applicants in the United States, and issued by Goldman Sachs Bank USA, Salt Lake City Branch.",
+    "Apple Payments Services LLC, a subsidiary of Apple Inc., is a service provider of Goldman Sachs Bank USA for Apple Card and Savings accounts. Neither Apple Inc. nor Apple Payments Services LLC is a bank.",
+    "All communications from Apple and Goldman Sachs Bank USA about Apple Card (including transactional and marketing communications) and customer service support are available in English. Certain communications about Apple Card can be viewed in another language depending on your device language settings. If you reside in the U.S. Virgin Islands, American Samoa, Guam, Northern Mariana Islands, or U.S. Minor Outlying Islands, please call Goldman Sachs at 877-255-5923 with questions about Apple Card."
+  ]
+}

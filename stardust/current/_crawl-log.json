@@ -1,0 +1,21 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-06-19T04:04:17.871Z",
+    "againstInput": "https://www.apple.com/"
+  },
+  "discovery": {
+    "mode": "single",
+    "fetchTechnique": "headless-chromium",
+    "waitMode": "medium"
+  },
+  "consent": {
+    "method": "none-detected"
+  },
+  "crawl": {
+    "crawled": [
+      "home"
+    ],
+    "failures": []
+  }
+}

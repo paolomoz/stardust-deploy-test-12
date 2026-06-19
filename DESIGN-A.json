@@ -1,0 +1,15 @@
+{
+  "_provenance": { "writtenBy": "stardust:direct (via uplift)", "writtenAt": "2026-06-19", "variant": "A", "role": "faithful + improvements" },
+  "inherits": "DESIGN.json",
+  "variant": {
+    "id": "A",
+    "composition": "captured bento IA: globalnav, promo hero, iPhone hero, re-ranked product tiles (hierarchy by scale, not flat peer grid), entertainment gallery, footer",
+    "motion": "static",
+    "deltas": [
+      "re-rank tiles: iPhone hero -> one secondary focal tile (Mac) -> quieter services row",
+      "CTA differentiation: primary (Buy/Shop) solid blue pill; secondary (Learn more) quiet text link + chevron",
+      "subhead contrast lifted to #1d1d1f on light grounds",
+      "region/consent strip removed from first viewport"
+    ]
+  }
+}

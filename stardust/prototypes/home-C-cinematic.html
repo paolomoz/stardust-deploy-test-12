@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apple — C · kinetic display</title>
+<style>
+@font-face{font-family:"SF Pro Display";src:url("../current/assets/fonts/sf-pro-display_regular.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"SF Pro Display";src:url("../current/assets/fonts/sf-pro-display_semibold.woff2") format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"SF Pro Display";src:url("../current/assets/fonts/sf-pro-display_bold.woff2") format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"SF Pro Text";src:url("../current/assets/fonts/sf-pro-text_regular.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"SF Pro Text";src:url("../current/assets/fonts/sf-pro-text_semibold.woff2") format("woff2");font-weight:600;font-display:swap}
+:root{
+  --bg:#fff;--surface:#f5f5f7;--ground-dark:#000;--text:#1d1d1f;--text-on-dark:#f5f5f7;
+  --text-secondary:#6e6e73;--primary:#0071e3;--accent:#2997ff;
+  --font-display:"SF Pro Display",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-text:"SF Pro Text",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  --radius-pill:980px;--gutter:22px;--enter:cubic-bezier(0.16,1,0.3,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--font-text);color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+
+.nav{position:sticky;top:0;z-index:50;height:48px;background:rgba(251,251,253,.8);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(0,0,0,.04)}
+.nav__in{max-width:1024px;margin:0 auto;height:100%;display:flex;align-items:center;justify-content:space-between;padding:0 22px}
+.nav__logo svg{width:14px;height:16px;fill:var(--text)}
+.nav__links{display:flex;list-style:none}
+.nav__links a{font-family:var(--font-text);font-size:12px;color:rgba(29,29,31,.8);padding:0 10px;line-height:44px}
+.nav__icons{display:flex;gap:18px;opacity:.8}
+@media(max-width:833px){.nav__links{display:none}}
+
+.scene{position:relative;padding:14svh 22px;text-align:center;overflow:hidden}
+.scene--dark{background:var(--ground-dark);color:var(--text-on-dark)}
+.scene--surface{background:var(--surface)}
+.eyebrow{font-family:var(--font-text);font-size:19px;font-weight:600;color:var(--primary);margin-bottom:4px}
+.scene--dark .eyebrow{color:var(--accent)}
+/* kinetic display: oversized headline is the protagonist */
+.kh{font-family:var(--font-display);font-weight:600;letter-spacing:-.03em;line-height:.92;font-size:clamp(64px,13vw,200px);margin:0 auto}
+.kh--mid{font-size:clamp(52px,9vw,128px)}
+.sub{font-family:var(--font-display);font-weight:400;font-size:clamp(21px,2.2vw,28px);margin-top:18px;color:var(--text)}
+.scene--dark .sub{color:var(--text-on-dark)}
+.cta{display:flex;gap:24px;justify-content:center;align-items:center;margin-top:26px;flex-wrap:wrap}
+.btn{font-family:var(--font-text);font-size:19px;border-radius:var(--radius-pill);padding:11px 23px;background:var(--primary);color:#fff;transition:background .2s}
+.btn:hover{background:#0077ed}
+.link{font-family:var(--font-text);font-size:19px;color:var(--primary)}
+.scene--dark .link{color:var(--accent)}
+.link:hover{text-decoration:underline}
+.media{margin-top:36px}
+.media img{width:100%;max-width:1100px;margin:0 auto;border-radius:18px;height:auto}
+
+/* motion: blur-to-sharp + scale-settle reveal */
+[data-anim]{opacity:0;transform:translateY(26px) scale(.965);filter:blur(14px);transition:opacity .8s var(--enter),transform .8s var(--enter),filter .8s var(--enter)}
+[data-anim].in{opacity:1;transform:none;filter:blur(0)}
+[data-anim][data-d="1"]{transition-delay:.09s}
+[data-anim][data-d="2"]{transition-delay:.18s}
+/* section-head wipe */
+.wipe{clip-path:inset(0 100% 0 0);transition:clip-path 1s var(--enter)}
+.wipe.in{clip-path:inset(0 0 0 0)}
+
+.foot{background:var(--surface);color:var(--text-secondary);font-family:var(--font-text);font-size:12px;line-height:1.4}
+.foot__in{max-width:1024px;margin:0 auto;padding:32px 22px}
+.foot__cols{display:grid;grid-template-columns:repeat(5,1fr);gap:24px;border-bottom:1px solid #d2d2d7;padding-bottom:24px}
+.foot__cols h4{font-size:12px;color:var(--text);margin-bottom:8px}
+.foot__cols ul{list-style:none}.foot__cols li{margin-bottom:6px}
+.foot__legal{padding-top:18px}
+@media(max-width:833px){.foot__cols{grid-template-columns:repeat(2,1fr)}}
+
+@media(prefers-reduced-motion:reduce){
+  [data-anim]{opacity:1!important;transform:none!important;filter:none!important;transition:none!important}
+  .wipe{clip-path:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="nav__in">
+    <a class="nav__logo" aria-label="Apple" href="#"><svg viewBox="0 0 14 16"><path d="M11.62 8.49c-.02-1.74 1.42-2.58 1.49-2.62-.81-1.19-2.08-1.35-2.53-1.37-1.08-.11-2.1.63-2.65.63-.54 0-1.39-.61-2.28-.6-1.18.02-2.26.68-2.87 1.73-1.22 2.12-.31 5.26.88 6.98.58.84 1.28 1.79 2.19 1.75.88-.03 1.21-.57 2.27-.57 1.06 0 1.36.57 2.28.55.94-.02 1.54-.86 2.12-1.71.67-.98.94-1.93.96-1.98-.02-.01-1.84-.71-1.86-2.8zM9.86 3.39c.48-.59.81-1.4.72-2.21-.7.03-1.54.46-2.04 1.04-.45.52-.84 1.35-.74 2.14.78.06 1.58-.4 2.06-.97z"/></svg></a>
+    <ul class="nav__links">
+      <li><a href="#">Store</a></li><li><a href="#">Mac</a></li><li><a href="#">iPad</a></li>
+      <li><a href="#">iPhone</a></li><li><a href="#">Watch</a></li><li><a href="#">Vision</a></li>
+      <li><a href="#">AirPods</a></li><li><a href="#">TV &amp; Home</a></li><li><a href="#">Entertainment</a></li>
+      <li><a href="#">Accessories</a></li><li><a href="#">Support</a></li>
+    </ul>
+    <div class="nav__icons"><span>⌕</span><span>⌂</span></div>
+  </div>
+</header>
+
+<main>
+  <section class="scene">
+    <p class="eyebrow" data-anim>Father&rsquo;s Day</p>
+    <h2 class="kh wipe">Gifts<br>for Dad.</h2>
+    <p class="sub" data-anim data-d="1">It&rsquo;s not too late to find the perfect one.</p>
+    <div class="cta" data-anim data-d="2"><a class="btn" href="#">Shop</a><a class="link" href="#">Learn more&nbsp;&rsaquo;</a></div>
+    <div class="media" data-anim data-d="2"><img src="../current/assets/media/img1.jpg" alt="Father's Day gift shapes" width="3008" height="692"></div>
+  </section>
+
+  <section class="scene scene--dark">
+    <p class="eyebrow" data-anim>iPhone</p>
+    <h2 class="kh wipe">iPhone&nbsp;17&nbsp;Pro</h2>
+    <p class="sub" data-anim data-d="1">Meet the latest iPhone lineup.</p>
+    <div class="cta" data-anim data-d="2"><a class="btn" href="#">Buy</a><a class="link" href="#">Learn more&nbsp;&rsaquo;</a></div>
+    <div class="media" data-anim data-d="2"><img src="../current/assets/media/img3.jpg" alt="iPhone 17 Pro, deep blue" width="3008" height="692"></div>
+  </section>
+
+  <section class="scene scene--surface">
+    <p class="eyebrow" data-anim>MacBook&nbsp;Air</p>
+    <h2 class="kh wipe">Supercharged<br>by&nbsp;M5.</h2>
+    <div class="cta" data-anim data-d="1"><a class="btn" href="#">Buy</a><a class="link" href="#">Learn more&nbsp;&rsaquo;</a></div>
+    <div class="media" data-anim data-d="2"><img src="../current/assets/media/img4.jpg" alt="Two MacBook Air laptops in sky blue" width="1262" height="580"></div>
+  </section>
+
+  <section class="scene">
+    <p class="eyebrow" data-anim>Apple for College</p>
+    <h2 class="kh kh--mid wipe">Major in<br>any field.</h2>
+    <p class="sub" data-anim data-d="1">Mac and iPad, ready for the semester.</p>
+    <div class="cta" data-anim data-d="2"><a class="btn" href="#">Shop</a><a class="link" href="#">Learn more&nbsp;&rsaquo;</a></div>
+    <div class="media" data-anim data-d="2"><img src="../current/assets/media/img2.jpg" alt="Mac and iPad for college" width="3008" height="692"></div>
+  </section>
+
+  <section class="scene scene--surface">
+    <p class="eyebrow" data-anim>iPad&nbsp;Air</p>
+    <h2 class="kh wipe">Light. Years<br>ahead.</h2>
+    <p class="sub" data-anim data-d="1">Now supercharged by M4.</p>
+    <div class="cta" data-anim data-d="2"><a class="btn" href="#">Buy</a><a class="link" href="#">Learn more&nbsp;&rsaquo;</a></div>
+    <div class="media" data-anim data-d="2"><img src="../current/assets/media/img5.jpg" alt="iPad Air models" width="1262" height="580"></div>
+  </section>
+
+  <section class="scene scene--dark">
+    <p class="eyebrow" data-anim>Privacy</p>
+    <h2 class="kh wipe">That&rsquo;s&nbsp;iPhone.</h2>
+    <div class="cta" data-anim data-d="1"><a class="link" href="#">See how we protect your data&nbsp;&rsaquo;</a></div>
+  </section>
+
+  <section class="scene scene--dark">
+    <p class="eyebrow" data-anim>Apple&nbsp;TV+</p>
+    <h2 class="kh kh--mid wipe">Endless<br>entertainment.</h2>
+    <p class="sub" data-anim data-d="1">Originals, F1, and live sport, all in one place.</p>
+    <div class="cta" data-anim data-d="2"><a class="btn" href="#">Stream now</a></div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot__in">
+    <div class="foot__cols">
+      <div><h4>Shop and Learn</h4><ul><li>Store</li><li>Mac</li><li>iPad</li><li>iPhone</li><li>Watch</li><li>AirPods</li><li>TV &amp; Home</li><li>Accessories</li></ul></div>
+      <div><h4>Account</h4><ul><li>Manage Your Apple Account</li><li>Apple Store Account</li><li>iCloud.com</li></ul>
+        <h4 style="margin-top:16px">Apple Wallet</h4><ul><li>Wallet</li><li>Apple Card</li><li>Apple Pay</li></ul></div>
+      <div><h4>Entertainment</h4><ul><li>Apple One</li><li>Apple TV+</li><li>Apple Music</li><li>Apple Arcade</li><li>App Store</li></ul></div>
+      <div><h4>Apple Store</h4><ul><li>Find a Store</li><li>Genius Bar</li><li>Apple Trade In</li><li>Financing</li><li>Order Status</li></ul></div>
+      <div><h4>For Business</h4><ul><li>Apple and Business</li><li>Shop for Business</li></ul>
+        <h4 style="margin-top:16px">About Apple</h4><ul><li>Newsroom</li><li>Apple Values</li><li>Careers</li></ul></div>
+    </div>
+    <div class="foot__legal">Copyright &copy; 2026 Apple Inc. All rights reserved. &nbsp; Privacy Policy &nbsp; Terms of Use &nbsp; Sales and Refunds &nbsp; Legal &nbsp; Site Map</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var nodes = [].slice.call(document.querySelectorAll('[data-anim], .wipe'));
+  var reveal = function(n){ n.classList.add('in'); };
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce || !('IntersectionObserver' in window)) { nodes.forEach(reveal); return; }
+  // Reveal anything already in (or near) the first viewport immediately — the hero must never render blank.
+  var vh = window.innerHeight;
+  nodes.forEach(function(n){ var r = n.getBoundingClientRect(); if (r.top < vh * 0.92) reveal(n); });
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if (e.isIntersecting){ reveal(e.target); io.unobserve(e.target); } });
+  }, { threshold: 0.01, rootMargin: '0px 0px -10% 0px' });
+  nodes.forEach(function(n){ if (!n.classList.contains('in')) io.observe(n); });
+  // Safety net: never leave content hidden if a reveal is missed.
+  setTimeout(function(){ nodes.forEach(reveal); }, 3500);
+})();
+</script>
+</body>
+</html>

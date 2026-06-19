@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apple — B · photography re-foregrounded</title>
+<style>
+@font-face{font-family:"SF Pro Display";src:url("../current/assets/fonts/sf-pro-display_regular.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"SF Pro Display";src:url("../current/assets/fonts/sf-pro-display_semibold.woff2") format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"SF Pro Display";src:url("../current/assets/fonts/sf-pro-display_bold.woff2") format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"SF Pro Text";src:url("../current/assets/fonts/sf-pro-text_regular.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"SF Pro Text";src:url("../current/assets/fonts/sf-pro-text_semibold.woff2") format("woff2");font-weight:600;font-display:swap}
+:root{
+  --bg:#fff;--surface:#f5f5f7;--ground-dark:#000;--text:#1d1d1f;--text-on-dark:#f5f5f7;
+  --text-secondary:#6e6e73;--primary:#0071e3;--accent:#2997ff;
+  --font-display:"SF Pro Display",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-text:"SF Pro Text",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  --radius-pill:980px;--gutter:22px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-text);color:var(--text);background:#000;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+
+.nav{position:sticky;top:0;z-index:50;height:48px;background:rgba(0,0,0,.6);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px)}
+.nav__in{max-width:1024px;margin:0 auto;height:100%;display:flex;align-items:center;justify-content:space-between;padding:0 22px}
+.nav__logo svg{width:14px;height:16px;fill:#f5f5f7}
+.nav__links{display:flex;list-style:none}
+.nav__links a{font-family:var(--font-text);font-size:12px;color:rgba(245,245,247,.8);padding:0 10px;line-height:44px}
+.nav__links a:hover{color:#fff}
+.nav__icons{display:flex;gap:18px;color:rgba(245,245,247,.8)}
+@media(max-width:833px){.nav__links{display:none}}
+
+/* full-bleed editorial sections */
+.scene{position:relative;min-height:100svh;display:flex;overflow:hidden}
+.scene__img{position:absolute;inset:0}
+.scene__img img{width:100%;height:100%;object-fit:cover;object-position:center}
+.scene__copy{position:relative;z-index:2;width:100%;max-width:1024px;margin:0 auto;padding:72px 40px;display:flex;flex-direction:column}
+.scene--top{justify-content:flex-start}
+.scene--bottom .scene__copy{justify-content:flex-end}
+.scene--center{align-items:center;text-align:center}
+.scene--center .scene__copy{align-items:center}
+.scrim-top::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.5),transparent 42%)}
+.scrim-bot::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,rgba(0,0,0,.6),transparent 45%)}
+/* light scrims: dark text over light product imagery (Apple's actual rule) */
+.scrim-ltop::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(245,245,247,.92),rgba(245,245,247,0) 46%)}
+.scrim-lbot::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,rgba(245,245,247,.95),rgba(245,245,247,0) 48%)}
+.scrim-lfull::before{content:"";position:absolute;inset:0;z-index:1;background:rgba(245,245,247,.42)}
+.on-dark{color:var(--text-on-dark)}
+.on-dark .eyebrow{opacity:.9}
+.on-light{color:var(--text)}
+.on-light .eyebrow{color:var(--primary);opacity:1}
+.on-light .link{color:var(--primary)}
+.eyebrow{font-family:var(--font-text);font-size:clamp(17px,1.6vw,19px);font-weight:600;letter-spacing:.01em;opacity:.85;margin-bottom:10px}
+.scene h2{font-family:var(--font-display);font-weight:600;font-size:clamp(44px,7vw,92px);line-height:.98;letter-spacing:-.025em}
+.scene .sub{font-family:var(--font-display);font-weight:400;font-size:clamp(21px,2.4vw,30px);margin-top:14px;max-width:18ch}
+.scene--center .sub{max-width:30ch}
+.cta{display:flex;gap:26px;align-items:center;margin-top:26px;flex-wrap:wrap}
+.btn{font-family:var(--font-text);font-size:19px;border-radius:var(--radius-pill);padding:11px 23px;background:var(--primary);color:#fff;transition:background .2s}
+.btn:hover{background:#0077ed}
+.link{font-family:var(--font-text);font-size:19px;color:var(--accent)}
+.link.dark{color:var(--primary)}
+.link:hover{text-decoration:underline}
+
+/* a couple type-led ground sections (no dedicated photo) */
+.band{min-height:74svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 40px}
+.band--surface{background:var(--surface);color:var(--text)}
+.band--dark{background:var(--ground-dark);color:var(--text-on-dark)}
+.band .inner{max-width:760px}
+
+.foot{background:#000;color:rgba(245,245,247,.55);font-family:var(--font-text);font-size:12px;line-height:1.4;border-top:1px solid rgba(255,255,255,.1)}
+.foot__in{max-width:1024px;margin:0 auto;padding:32px 22px}
+.foot__cols{display:grid;grid-template-columns:repeat(5,1fr);gap:24px;border-bottom:1px solid rgba(255,255,255,.12);padding-bottom:24px}
+.foot__cols h4{font-size:12px;color:#f5f5f7;margin-bottom:8px}
+.foot__cols ul{list-style:none}.foot__cols li{margin-bottom:6px}
+.foot__legal{padding-top:18px}
+@media(max-width:833px){.foot__cols{grid-template-columns:repeat(2,1fr)}.scene__copy{padding:56px 24px}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="nav__in">
+    <a class="nav__logo" aria-label="Apple" href="#"><svg viewBox="0 0 14 16"><path d="M11.62 8.49c-.02-1.74 1.42-2.58 1.49-2.62-.81-1.19-2.08-1.35-2.53-1.37-1.08-.11-2.1.63-2.65.63-.54 0-1.39-.61-2.28-.6-1.18.02-2.26.68-2.87 1.73-1.22 2.12-.31 5.26.88 6.98.58.84 1.28 1.79 2.19 1.75.88-.03 1.21-.57 2.27-.57 1.06 0 1.36.57 2.28.55.94-.02 1.54-.86 2.12-1.71.67-.98.94-1.93.96-1.98-.02-.01-1.84-.71-1.86-2.8zM9.86 3.39c.48-.59.81-1.4.72-2.21-.7.03-1.54.46-2.04 1.04-.45.52-.84 1.35-.74 2.14.78.06 1.58-.4 2.06-.97z"/></svg></a>
+    <ul class="nav__links">
+      <li><a href="#">Store</a></li><li><a href="#">Mac</a></li><li><a href="#">iPad</a></li>
+      <li><a href="#">iPhone</a></li><li><a href="#">Watch</a></li><li><a href="#">Vision</a></li>
+      <li><a href="#">AirPods</a></li><li><a href="#">TV &amp; Home</a></li><li><a href="#">Entertainment</a></li>
+      <li><a href="#">Accessories</a></li><li><a href="#">Support</a></li>
+    </ul>
+    <div class="nav__icons"><span>⌕</span><span>⌂</span></div>
+  </div>
+</header>
+
+<main>
+  <!-- iPhone, full-bleed hero, copy top, dark image -> white text -->
+  <section class="scene scene--top scrim-top">
+    <div class="scene__img"><img src="../current/assets/media/img3.jpg" alt="iPhone 17 Pro, deep blue"></div>
+    <div class="scene__copy on-dark">
+      <p class="eyebrow">iPhone</p>
+      <h2>iPhone&nbsp;17&nbsp;Pro</h2>
+      <p class="sub">Meet the latest iPhone lineup.</p>
+      <div class="cta"><a class="btn" href="#">Buy</a><a class="link" href="#">Learn more&nbsp;&rsaquo;</a></div>
+    </div>
+  </section>
+
+  <!-- MacBook Air, light image -> dark text + light scrim -->
+  <section class="scene scene--bottom scrim-lbot">
+    <div class="scene__img"><img src="../current/assets/media/img4.jpg" alt="Two MacBook Air laptops in sky blue"></div>
+    <div class="scene__copy on-light">
+      <p class="eyebrow">MacBook&nbsp;Air</p>
+      <h2>Now supercharged by&nbsp;M5.</h2>
+      <div class="cta"><a class="btn" href="#">Buy</a><a class="link" href="#">Learn more&nbsp;&rsaquo;</a></div>
+    </div>
+  </section>
+
+  <!-- Apple for College, centered, light image -> dark text + veil -->
+  <section class="scene scene--center scrim-lfull">
+    <div class="scene__img"><img src="../current/assets/media/img2.jpg" alt="Mac and iPad for college"></div>
+    <div class="scene__copy on-light">
+      <p class="eyebrow">Apple for College</p>
+      <h2>Major in any field.</h2>
+      <p class="sub">Mac and iPad, ready for everything the semester throws at them.</p>
+      <div class="cta"><a class="btn" href="#">Shop</a><a class="link" href="#">Learn more&nbsp;&rsaquo;</a></div>
+    </div>
+  </section>
+
+  <!-- iPad Air full-bleed bottom, light image -> dark text -->
+  <section class="scene scene--bottom scrim-lbot">
+    <div class="scene__img"><img src="../current/assets/media/img5.jpg" alt="iPad Air models"></div>
+    <div class="scene__copy on-light">
+      <p class="eyebrow">iPad&nbsp;Air</p>
+      <h2>Now supercharged by&nbsp;M4.</h2>
+      <div class="cta"><a class="btn" href="#">Buy</a><a class="link" href="#">Learn more&nbsp;&rsaquo;</a></div>
+    </div>
+  </section>
+
+  <!-- Apple Privacy, type-led dark band -->
+  <section class="band band--dark">
+    <div class="inner">
+      <h2 style="font-family:var(--font-display);font-weight:600;font-size:clamp(40px,6vw,80px);line-height:1;letter-spacing:-.02em">Privacy. <span style="opacity:.55">That&rsquo;s iPhone.</span></h2>
+      <div class="cta" style="justify-content:center"><a class="link" href="#">Learn how we protect your data&nbsp;&rsaquo;</a></div>
+    </div>
+  </section>
+
+  <!-- Father's Day full-bleed, light image -> dark text + light scrim -->
+  <section class="scene scene--top scrim-ltop">
+    <div class="scene__img"><img src="../current/assets/media/img1.jpg" alt="Father's Day gift shapes"></div>
+    <div class="scene__copy on-light">
+      <p class="eyebrow">Father&rsquo;s Day</p>
+      <h2>The perfect gift.</h2>
+      <p class="sub">It&rsquo;s not too late.</p>
+      <div class="cta"><a class="btn" href="#">Shop</a><a class="link" href="#">Get help choosing&nbsp;&rsaquo;</a></div>
+    </div>
+  </section>
+
+  <!-- Services: Trade In + Card, light surface band -->
+  <section class="band band--surface">
+    <div class="inner">
+      <h2 style="font-family:var(--font-display);font-weight:600;font-size:clamp(36px,5vw,64px);line-height:1.02;letter-spacing:-.02em">Trade in. Trade up.</h2>
+      <p class="sub" style="margin:14px auto 0;max-width:30ch;font-family:var(--font-display);font-weight:400;font-size:clamp(19px,2vw,24px)">Get up to $195&ndash;$695 in credit toward your next iPhone, or 3% Daily Cash with Apple&nbsp;Card.</p>
+      <div class="cta" style="justify-content:center"><a class="btn" href="#">Get your estimate</a><a class="link dark" href="#">Apply for Apple&nbsp;Card&nbsp;&rsaquo;</a></div>
+    </div>
+  </section>
+
+  <!-- Entertainment, dark type-led closer -->
+  <section class="band band--dark">
+    <div class="inner">
+      <h2 style="font-family:var(--font-display);font-weight:600;font-size:clamp(40px,6vw,80px);line-height:1;letter-spacing:-.02em">Endless entertainment.</h2>
+      <p class="sub" style="margin:14px auto 0;max-width:30ch;font-family:var(--font-display);font-weight:400;font-size:clamp(19px,2vw,24px)">Apple&nbsp;TV+ originals, F1, and live sport, all in one place.</p>
+      <div class="cta" style="justify-content:center"><a class="btn" href="#">Stream now</a></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot__in">
+    <div class="foot__cols">
+      <div><h4>Shop and Learn</h4><ul><li>Store</li><li>Mac</li><li>iPad</li><li>iPhone</li><li>Watch</li><li>AirPods</li><li>TV &amp; Home</li><li>Accessories</li></ul></div>
+      <div><h4>Account</h4><ul><li>Manage Your Apple Account</li><li>Apple Store Account</li><li>iCloud.com</li></ul>
+        <h4 style="margin-top:16px">Apple Wallet</h4><ul><li>Wallet</li><li>Apple Card</li><li>Apple Pay</li></ul></div>
+      <div><h4>Entertainment</h4><ul><li>Apple One</li><li>Apple TV+</li><li>Apple Music</li><li>Apple Arcade</li><li>App Store</li></ul></div>
+      <div><h4>Apple Store</h4><ul><li>Find a Store</li><li>Genius Bar</li><li>Apple Trade In</li><li>Financing</li><li>Order Status</li></ul></div>
+      <div><h4>For Business</h4><ul><li>Apple and Business</li><li>Shop for Business</li></ul>
+        <h4 style="margin-top:16px">About Apple</h4><ul><li>Newsroom</li><li>Apple Values</li><li>Careers</li></ul></div>
+    </div>
+    <div class="foot__legal">Copyright &copy; 2026 Apple Inc. All rights reserved. &nbsp; Privacy Policy &nbsp; Terms of Use &nbsp; Sales and Refunds &nbsp; Legal &nbsp; Site Map</div>
+  </div>
+</footer>
+</body>
+</html>

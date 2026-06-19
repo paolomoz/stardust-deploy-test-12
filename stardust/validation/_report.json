@@ -1,0 +1,129 @@
+{
+  "A": {
+    "desktop": {
+      "errors": [],
+      "failedAssets": [],
+      "overflow": false,
+      "landmarks": {
+        "nav": true,
+        "main": true,
+        "footer": true,
+        "h2": 4
+      },
+      "revealed": null
+    },
+    "tablet": {
+      "errors": [],
+      "failedAssets": [],
+      "overflow": false,
+      "landmarks": {
+        "nav": true,
+        "main": true,
+        "footer": true,
+        "h2": 4
+      },
+      "revealed": null
+    },
+    "mobile": {
+      "errors": [],
+      "failedAssets": [],
+      "overflow": false,
+      "landmarks": {
+        "nav": true,
+        "main": true,
+        "footer": true,
+        "h2": 4
+      },
+      "revealed": null
+    }
+  },
+  "B": {
+    "desktop": {
+      "errors": [],
+      "failedAssets": [],
+      "overflow": false,
+      "landmarks": {
+        "nav": true,
+        "main": true,
+        "footer": true,
+        "h2": 8
+      },
+      "revealed": null
+    },
+    "tablet": {
+      "errors": [],
+      "failedAssets": [],
+      "overflow": false,
+      "landmarks": {
+        "nav": true,
+        "main": true,
+        "footer": true,
+        "h2": 8
+      },
+      "revealed": null
+    },
+    "mobile": {
+      "errors": [],
+      "failedAssets": [],
+      "overflow": false,
+      "landmarks": {
+        "nav": true,
+        "main": true,
+        "footer": true,
+        "h2": 8
+      },
+      "revealed": null
+    }
+  },
+  "C": {
+    "desktop": {
+      "errors": [],
+      "failedAssets": [],
+      "overflow": false,
+      "landmarks": {
+        "nav": true,
+        "main": true,
+        "footer": true,
+        "h2": 7
+      },
+      "revealed": {
+        "total": 24,
+        "visible": 11
+      }
+    },
+    "tablet": {
+      "errors": [],
+      "failedAssets": [],
+      "overflow": false,
+      "landmarks": {
+        "nav": true,
+        "main": true,
+        "footer": true,
+        "h2": 7
+      },
+      "revealed": {
+        "total": 24,
+        "visible": 6
+      }
+    },
+    "mobile": {
+      "errors": [],
+      "failedAssets": [],
+      "overflow": false,
+      "landmarks": {
+        "nav": true,
+        "main": true,
+        "footer": true,
+        "h2": 7
+      },
+      "revealed": {
+        "total": 24,
+        "visible": 4
+      }
+    },
+    "reducedMotion": {
+      "total": 24,
+      "visibleStatic": 24
+    }
+  }
+}

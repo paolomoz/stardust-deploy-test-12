@@ -1,0 +1,90 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-06-19",
+    "againstInput": "https://www.apple.com/",
+    "renderedBy": "playwright",
+    "synthesized": false,
+    "notes": "Single-page extract (uplift --single). Region banner (Schweiz/Weiter) captured as noise — geolocated CH consent strip, excluded from voice/component aggregation. Tokens sourced from Apple's live --sk-* / --r-* custom properties and computed-style frequency."
+  },
+  "logo": {
+    "source": "inline-svg",
+    "localPath": "assets/logo.svg",
+    "synthesized": false,
+    "notes": "Apple globalnav apple-logo glyph, monochrome, fills currentColor (near-black on light, white on dark)."
+  },
+  "palette": {
+    "roles": {
+      "background": "#ffffff",
+      "surface": "#f5f5f7",
+      "surfaceAlt": "#fafafc",
+      "text": "#1d1d1f",
+      "textSecondary": "#6e6e73",
+      "primary": "#0071e3",
+      "primaryLink": "#0066cc",
+      "accentBright": "#2997ff",
+      "onDark": "#f5f5f7"
+    },
+    "evidence": {
+      "#1d1d1f": "--sk-body-text-color, 802 computed hits (dominant text)",
+      "#f5f5f7": "--sk-fill-tertiary, 66 hits (signature section fill)",
+      "#fafafc": "--sk-fill-secondary",
+      "#0071e3": "primary pill CTA background (Shop/Learn more/Get your estimate)",
+      "#0066cc": "--sk-link color, 32 hits",
+      "#2997ff": "bright accent / link on dark, 390 hits",
+      "#6e6e73": "secondary text, 32 hits"
+    }
+  },
+  "type": {
+    "headingFamily": "\"SF Pro Display\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "bodyFamily": "\"SF Pro Text\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "scaleAudit": { "kind": "modular", "notes": "h1 34px, hero h2 56px/600, tile h3 40px/600, footer 12px/400 — clean display/text split, semibold display headers" },
+    "files": [
+      { "family": "SF Pro Display", "weight": "400", "localPath": "assets/fonts/sf-pro-display_regular.woff2", "licensingFlag": "apple-proprietary" },
+      { "family": "SF Pro Display", "weight": "600", "localPath": "assets/fonts/sf-pro-display_semibold.woff2", "licensingFlag": "apple-proprietary" },
+      { "family": "SF Pro Display", "weight": "700", "localPath": "assets/fonts/sf-pro-display_bold.woff2", "licensingFlag": "apple-proprietary" },
+      { "family": "SF Pro Text", "weight": "400", "localPath": "assets/fonts/sf-pro-text_regular.woff2", "licensingFlag": "apple-proprietary" },
+      { "family": "SF Pro Text", "weight": "600", "localPath": "assets/fonts/sf-pro-text_semibold.woff2", "licensingFlag": "apple-proprietary" },
+      { "family": "SF Pro Text", "weight": "700", "localPath": "assets/fonts/sf-pro-text_bold.woff2", "licensingFlag": "apple-proprietary" }
+    ],
+    "licensingNote": "SF Pro is Apple-proprietary; permitted for internal prototype review (files already publicly served by apple.com). For production fall back to -apple-system / system-ui which renders SF natively on Apple devices, Inter/Helvetica elsewhere."
+  },
+  "motifs": {
+    "borderRadius": { "signature": "980px", "evidence": "32 hits — the pill CTA; tiles use 18-28px large radius (--sk fill cards)", "tileRadius": "28px" },
+    "shadow": ["rgba(0,0,0,0.22) 3px 5px 30px 0px"],
+    "gradients": [],
+    "patterns": ["pill-cta", "product-tile (headline+subhead+link pair over full-bleed product photo)", "bento-grid (full-width hero tiles + 2-up tile rows)", "light/dark tile alternation"]
+  },
+  "voice": {
+    "heroHeadline": "iPhone",
+    "heroImage": "assets/media/img3.jpg",
+    "tagline": "Meet the latest iPhone lineup.",
+    "samples": [
+      "Mac and iPad. Major in any field.",
+      "Now supercharged by M5.",
+      "Now with M5, M5 Pro, and M5 Max.",
+      "Get up to 3% Daily Cash back with every purchase.",
+      "It's not too late to find the perfect gift."
+    ],
+    "ctaLabels": ["Shop", "Learn more", "Buy", "Get your estimate", "Apply now"],
+    "register": "confident, terse, product-forward; declarative product-name headlines with a single-line benefit subhead; minimal adjectives"
+  },
+  "systemComponents": [
+    { "id": "globalnav", "role": "site header", "items": ["Store","Mac","iPad","iPhone","Watch","Vision","AirPods","TV & Home","Entertainment","Accessories","Support"], "height": "44px", "evidence": "nav.globalnav" },
+    { "id": "globalfooter", "role": "site footer", "shape": "5-column directory + legal", "groups": ["Shop and Learn","Apple Wallet","Account","Entertainment","Apple Store","For Business","For Education","For Healthcare","For Government","Apple Values","About Apple"], "evidence": "footer.contentinfo + nav.ac-gf-directory" }
+  ],
+  "sections": [
+    { "kind": "promo-hero", "headline": "Father's Day", "sub": "It's not too late to find the perfect gift.", "ctas": ["Shop"], "tone": "light" },
+    { "kind": "feature-hero", "headline": "Apple for College", "sub": "Mac and iPad. Major in any field.", "ctas": ["Learn more"], "tone": "light" },
+    { "kind": "hero", "headline": "iPhone", "sub": "Meet the latest iPhone lineup.", "ctas": ["Learn more","Shop iPhone"], "tone": "dark" },
+    { "kind": "tile", "headline": "MacBook Air", "sub": "Now supercharged by M5.", "ctas": ["Learn more","Buy"], "tone": "light" },
+    { "kind": "tile", "headline": "iPad Air", "sub": "Now supercharged by M4.", "ctas": ["Learn more","Buy"], "tone": "light" },
+    { "kind": "tile", "headline": "Apple Privacy", "sub": "That's iPhone.", "ctas": ["Learn more"], "tone": "dark" },
+    { "kind": "tile", "headline": "MacBook Pro", "sub": "Now with M5, M5 Pro, and M5 Max.", "ctas": ["Learn more","Buy"], "tone": "dark" },
+    { "kind": "tile", "headline": "Apple Trade In", "sub": "Get up to $195–$695 in credit when you trade in iPhone 13 or higher.", "ctas": ["Get your estimate"], "tone": "light" },
+    { "kind": "tile", "headline": "Apple Card", "sub": "Get up to 3% Daily Cash back with every purchase.", "ctas": ["Learn more","Apply now"], "tone": "light" },
+    { "kind": "gallery", "headline": "Endless entertainment.", "sub": "Apple TV+ originals, F1, sport.", "ctas": ["Stream now"], "tone": "dark" }
+  ],
+  "customPropsCount": 99,
+  "mediaCount": { "imgs": 57, "savedHero": 6, "inlineSvg": "many", "cssBackgrounds": 0 }
+}

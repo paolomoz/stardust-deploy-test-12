@@ -1,0 +1,68 @@
+/* showcase — kinetic-display product section (scoped under .showcase) */
+
+.showcase { position: relative; text-align: center; overflow: hidden; background: var(--bg); color: var(--text); }
+.showcase.surface { background: var(--surface); }
+.showcase.dark { background: var(--ground-dark); color: var(--text-on-dark); }
+
+.showcase .showcase__in {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 14vh var(--gutter);
+}
+
+.showcase .showcase__eyebrow {
+  font-family: var(--font-text);
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+.showcase.dark .showcase__eyebrow { color: var(--accent); }
+
+/* the kinetic-display protagonist: oversized SF Pro Display headline */
+.showcase .showcase__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 0.92;
+  font-size: clamp(56px, 13vw, 200px);
+  margin: 0 auto;
+}
+.showcase.surface .showcase__title,
+.showcase .showcase__title { color: inherit; }
+
+/* secondary titles (h2) a touch smaller than the lead h1 */
+.showcase h2.showcase__title { font-size: clamp(52px, 9vw, 128px); }
+
+.showcase .showcase__sub {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(21px, 2.2vw, 28px);
+  margin: 18px auto 0;
+  max-width: 24ch;
+  color: inherit;
+}
+
+.showcase .showcase__actions { margin-top: 26px; }
+
+.showcase .showcase__media { margin-top: 36px; }
+.showcase .showcase__media :is(img, picture) { width: 100%; max-width: 1100px; margin: 0 auto; border-radius: var(--radius-card); }
+.showcase .showcase__media picture img { width: 100%; }
+
+/* ---- motion: blur-to-sharp + scale-settle reveal ---- */
+.showcase [data-anim] {
+  opacity: 0;
+  transform: translateY(26px) scale(0.965);
+  filter: blur(14px);
+  transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out), filter 0.8s var(--ease-out);
+}
+.showcase [data-anim].in { opacity: 1; transform: none; filter: blur(0); }
+.showcase [data-anim][data-d="1"] { transition-delay: 0.09s; }
+.showcase [data-anim][data-d="2"] { transition-delay: 0.18s; }
+.showcase .wipe { clip-path: inset(0 100% 0 0); transition: clip-path 1s var(--ease-out); }
+.showcase .wipe.in { clip-path: inset(0 0 0 0); }
+
+@media (prefers-reduced-motion: reduce) {
+  .showcase [data-anim] { opacity: 1 !important; transform: none !important; filter: none !important; transition: none !important; }
+  .showcase .wipe { clip-path: none !important; transition: none !important; }
+}

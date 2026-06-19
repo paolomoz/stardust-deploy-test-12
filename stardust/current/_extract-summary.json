@@ -1,0 +1,292 @@
+{
+  "technique": "headless-chromium",
+  "httpStatus": 200,
+  "finalUrl": "https://www.apple.com/",
+  "waitMs": 3711,
+  "topColors": [
+    {
+      "value": "rgb(29, 29, 31)",
+      "count": 802
+    },
+    {
+      "value": "rgb(41, 151, 255)",
+      "count": 390
+    },
+    {
+      "value": "rgb(51, 51, 54)",
+      "count": 238
+    },
+    {
+      "value": "rgba(0, 0, 0, 0.8)",
+      "count": 224
+    },
+    {
+      "value": "rgba(0, 0, 0, 0.56)",
+      "count": 123
+    },
+    {
+      "value": "rgba(0, 0, 0, 0.88)",
+      "count": 100
+    },
+    {
+      "value": "rgba(0, 0, 0, 0.72)",
+      "count": 71
+    },
+    {
+      "value": "rgb(245, 245, 247)",
+      "count": 66
+    },
+    {
+      "value": "rgb(0, 0, 0)",
+      "count": 50
+    },
+    {
+      "value": "rgb(110, 110, 115)",
+      "count": 32
+    },
+    {
+      "value": "rgb(0, 102, 204)",
+      "count": 32
+    },
+    {
+      "value": "rgb(255, 255, 255)",
+      "count": 14
+    }
+  ],
+  "topFonts": [
+    {
+      "value": "\"SF Pro Text\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "count": 1573
+    },
+    {
+      "value": "\"SF Pro Text\", \"Myriad Set Pro\", \"SF Pro Icons\", \"Apple Legacy Chevron\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "count": 297
+    },
+    {
+      "value": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "count": 200
+    },
+    {
+      "value": "\"SF Pro Text\", \"Myriad Set Pro\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", \"SF Pro Icons\", \"Apple Legacy Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "count": 26
+    },
+    {
+      "value": "Arial",
+      "count": 1
+    }
+  ],
+  "topRadius": [
+    {
+      "value": "980px",
+      "count": 32
+    },
+    {
+      "value": "5px",
+      "count": 5
+    },
+    {
+      "value": "8px",
+      "count": 4
+    },
+    {
+      "value": "11px",
+      "count": 2
+    },
+    {
+      "value": "8px 8px 0px 0px",
+      "count": 1
+    },
+    {
+      "value": "0px 0px 8px 8px",
+      "count": 1
+    }
+  ],
+  "topShadow": [
+    {
+      "value": "rgba(0, 0, 0, 0.22) 3px 5px 30px 0px",
+      "count": 3
+    }
+  ],
+  "headingCount": 23,
+  "ctaCount": 6,
+  "imgCount": 57,
+  "cssBgCount": 0,
+  "fontFiles": 6,
+  "savedMedia": 6,
+  "logoSaved": "assets/logo.svg (inline svg)",
+  "customProps": 99,
+  "savedMediaList": [
+    {
+      "src": "https://www.apple.com/v/home/images/fathers-day-2026/a/hero_fd26_startframe__9cmey4u4wuay_largetall_2x.jpg",
+      "localPath": "assets/media/img0.jpg",
+      "w": 3008,
+      "h": 692,
+      "alt": null
+    },
+    {
+      "src": "https://www.apple.com/v/home/images/fathers-day-2026/a/hero_fd26__c9vr0hxu24eq_largetall_2x.jpg",
+      "localPath": "assets/media/img1.jpg",
+      "w": 3008,
+      "h": 692,
+      "alt": "Dot, squiggle, spiral, and star shapes in different hues of blue, green, and purple burst and spread across from behind Apple logo, wrapped in a blue color bow, made up of dots, squiggles, spirals, and star shapes in different hues of blue, green, and purple"
+    },
+    {
+      "src": "https://www.apple.com/v/home/images/college-students-2026/a/hero_college_students_2026__dzrtx52rt9aq_largetall_2x.jpg",
+      "localPath": "assets/media/img2.jpg",
+      "w": 3008,
+      "h": 692,
+      "alt": "Mac and iPad, screens showing college coursework across various apps"
+    },
+    {
+      "src": "https://www.apple.com/v/home/images/iphone-family/a/hero_iphone_family__be5jkzxszb1e_largetall_2x.jpg",
+      "localPath": "assets/media/img3.jpg",
+      "w": 3008,
+      "h": 692,
+      "alt": "iPhone 17 Pro, back exterior, deep blue color, Pro Fusion camera system in top left corner, Apple logo in center, iPhone 17, back exterior, white color, Dual Fusion camera system in top left corner, Apple logo in center, iPhone 17e, back exterior, soft pink color, Fusion camera system in top left corner, Apple logo in center, iPhone Air, side, titanium frame profile, Fusion camera system in top left corner"
+    },
+    {
+      "src": "https://www.apple.com/v/home/images/macbook-air-m5/a/promo_macbook_air_m5__e5xk2yysqiie_large_2x.jpg",
+      "localPath": "assets/media/img4.jpg",
+      "w": 1262,
+      "h": 580,
+      "alt": "Two open MacBook Air laptops in sky blue color forming arrow shape, emphasizing narrow profile"
+    },
+    {
+      "src": "https://www.apple.com/v/home/images/ipad-air-m4/a/promo_ipad_air_m4__bgcv7t286k8y_large_2x.jpg",
+      "localPath": "assets/media/img5.jpg",
+      "w": 1262,
+      "h": 580,
+      "alt": "iPad Air models floating, back exterior, single-lens camera, front exterior, rounded corners, black display bezel"
+    }
+  ],
+  "fontFilesList": [
+    {
+      "url": "https://www.apple.com/wss/fonts/SF-Pro-Text/v3/sf-pro-text_semibold.woff2",
+      "localPath": "assets/fonts/sf-pro-text_semibold.woff2"
+    },
+    {
+      "url": "https://www.apple.com/wss/fonts/SF-Pro-Text/v3/sf-pro-text_regular.woff2",
+      "localPath": "assets/fonts/sf-pro-text_regular.woff2"
+    },
+    {
+      "url": "https://www.apple.com/wss/fonts/SF-Pro-Display/v3/sf-pro-display_semibold.woff2",
+      "localPath": "assets/fonts/sf-pro-display_semibold.woff2"
+    },
+    {
+      "url": "https://www.apple.com/wss/fonts/SF-Pro-Display/v3/sf-pro-display_regular.woff2",
+      "localPath": "assets/fonts/sf-pro-display_regular.woff2"
+    },
+    {
+      "url": "https://www.apple.com/wss/fonts/SF-Pro-Display/v3/sf-pro-display_bold.woff2",
+      "localPath": "assets/fonts/sf-pro-display_bold.woff2"
+    },
+    {
+      "url": "https://www.apple.com/wss/fonts/SF-Pro-Text/v3/sf-pro-text_bold.woff2",
+      "localPath": "assets/fonts/sf-pro-text_bold.woff2"
+    }
+  ],
+  "topColorsFull": [
+    {
+      "value": "rgb(29, 29, 31)",
+      "count": 802
+    },
+    {
+      "value": "rgb(41, 151, 255)",
+      "count": 390
+    },
+    {
+      "value": "rgb(51, 51, 54)",
+      "count": 238
+    },
+    {
+      "value": "rgba(0, 0, 0, 0.8)",
+      "count": 224
+    },
+    {
+      "value": "rgba(0, 0, 0, 0.56)",
+      "count": 123
+    },
+    {
+      "value": "rgba(0, 0, 0, 0.88)",
+      "count": 100
+    },
+    {
+      "value": "rgba(0, 0, 0, 0.72)",
+      "count": 71
+    },
+    {
+      "value": "rgb(245, 245, 247)",
+      "count": 66
+    },
+    {
+      "value": "rgb(0, 0, 0)",
+      "count": 50
+    },
+    {
+      "value": "rgb(110, 110, 115)",
+      "count": 32
+    },
+    {
+      "value": "rgb(0, 102, 204)",
+      "count": 32
+    },
+    {
+      "value": "rgb(255, 255, 255)",
+      "count": 14
+    },
+    {
+      "value": "rgba(255, 255, 255, 0.8)",
+      "count": 14
+    },
+    {
+      "value": "rgb(0, 113, 227)",
+      "count": 9
+    },
+    {
+      "value": "rgb(250, 250, 252)",
+      "count": 6
+    },
+    {
+      "value": "rgba(0, 0, 0, 0.48)",
+      "count": 6
+    },
+    {
+      "value": "rgba(232, 232, 237, 0.4)",
+      "count": 1
+    },
+    {
+      "value": "rgba(210, 210, 215, 0.64)",
+      "count": 1
+    },
+    {
+      "value": "rgb(244, 248, 251)",
+      "count": 1
+    },
+    {
+      "value": "rgb(164, 97, 141)",
+      "count": 1
+    }
+  ],
+  "topFontsFull": [
+    {
+      "value": "\"SF Pro Text\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "count": 1573
+    },
+    {
+      "value": "\"SF Pro Text\", \"Myriad Set Pro\", \"SF Pro Icons\", \"Apple Legacy Chevron\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "count": 297
+    },
+    {
+      "value": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "count": 200
+    },
+    {
+      "value": "\"SF Pro Text\", \"Myriad Set Pro\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", \"SF Pro Icons\", \"Apple Legacy Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "count": 26
+    },
+    {
+      "value": "Arial",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brand Review: apple.com</title>
+<style>
+  :root{
+    --bg:#fff; --surface:#f5f5f7; --text:#1d1d1f; --text2:#6e6e73;
+    --primary:#0071e3; --accent:#2997ff;
+    --display:"SF Pro Display","Helvetica Neue",Helvetica,Arial,sans-serif;
+    --body:"SF Pro Text","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:var(--body);color:var(--text);background:var(--bg);line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:980px;margin:0 auto;padding:64px 22px}
+  h1{font-family:var(--display);font-weight:600;font-size:48px;letter-spacing:-.02em;margin-bottom:8px}
+  .sub{color:var(--text2);font-size:19px;margin-bottom:48px}
+  h2{font-family:var(--display);font-weight:600;font-size:28px;margin:48px 0 16px;letter-spacing:-.01em}
+  .cite{color:var(--text2);font-size:13px;margin-bottom:16px}
+  .swatches{display:flex;gap:12px;flex-wrap:wrap}
+  .sw{width:120px;border-radius:14px;overflow:hidden;border:1px solid #e3e3e6}
+  .sw .chip{height:72px}
+  .sw .lbl{padding:8px 10px;font-size:12px;color:var(--text2)}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .card{background:var(--surface);border-radius:18px;padding:24px}
+  .pill{display:inline-block;background:var(--primary);color:#fff;border-radius:980px;padding:8px 18px;font-size:15px}
+  .type-row{padding:10px 0;border-bottom:1px solid #ececef}
+  .tension{background:var(--surface);border-radius:14px;padding:18px 22px;margin-bottom:14px}
+  .tension h3{color:var(--text)}
+  .tension h3{font-family:var(--display);font-size:17px;margin-bottom:6px}
+  .tension p{font-size:15px;color:var(--text2)}
+  .tag{display:inline-block;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--primary);font-weight:600;margin-bottom:6px}
+  ul{margin:8px 0 0 20px;font-size:15px;color:var(--text2)}
+  .shot{width:100%;border-radius:18px;border:1px solid #e3e3e6;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Brand Review</h1>
+  <div class="sub">apple.com: captured 2026-06-19 · live Playwright render (headless chromium, HTTP 200, 3.7s wait)</div>
+
+  <h2>Palette</h2>
+  <div class="cite">_brand-extraction.json § palette: frequency-sorted computed colors + Apple --sk-* tokens</div>
+  <div class="swatches">
+    <div class="sw"><div class="chip" style="background:#1d1d1f"></div><div class="lbl">text · #1d1d1f</div></div>
+    <div class="sw"><div class="chip" style="background:#fff;border-bottom:1px solid #e3e3e6"></div><div class="lbl">bg · #ffffff</div></div>
+    <div class="sw"><div class="chip" style="background:#f5f5f7"></div><div class="lbl">surface · #f5f5f7</div></div>
+    <div class="sw"><div class="chip" style="background:#0071e3"></div><div class="lbl">primary · #0071e3</div></div>
+    <div class="sw"><div class="chip" style="background:#2997ff"></div><div class="lbl">accent · #2997ff</div></div>
+    <div class="sw"><div class="chip" style="background:#6e6e73"></div><div class="lbl">text2 · #6e6e73</div></div>
+  </div>
+
+  <h2>Typography</h2>
+  <div class="cite">_brand-extraction.json § type: 6 woff2 files captured (SF Pro Display/Text)</div>
+  <div class="type-row" style="font-family:var(--display);font-weight:600;font-size:48px;letter-spacing:-.02em">SF Pro Display Semibold: hero 56px</div>
+  <div class="type-row" style="font-family:var(--display);font-weight:600;font-size:32px">SF Pro Display Semibold: tile 40px</div>
+  <div class="type-row" style="font-family:var(--body);font-size:17px">SF Pro Text Regular: body & subhead</div>
+
+  <h2>Components & motifs</h2>
+  <div class="cite">_brand-extraction.json § motifs / systemComponents</div>
+  <div class="grid">
+    <div class="card"><span class="pill">Learn more</span><p style="margin-top:12px;font-size:14px;color:var(--text2)">980px pill CTA: the signature shape (32 hits)</p></div>
+    <div class="card"><strong style="font-family:var(--display);font-size:22px">MacBook Air</strong><p style="font-size:14px;margin-top:4px">Now supercharged by M5.</p><p style="margin-top:8px;font-size:13px;color:var(--primary)">Learn more&nbsp;&nbsp;Buy</p><p style="margin-top:10px;font-size:13px;color:var(--text2)">product-tile: name + 1 benefit line + link pair</p></div>
+  </div>
+
+  <h2>Home screenshot</h2>
+  <div class="cite">assets/screenshots/home.png</div>
+  <img class="shot" src="assets/screenshots/home.png" alt="apple.com home capture">
+
+  <h2>Tensions surfaced</h2>
+  <div class="cite">brand-review-template.md § Detectors: mechanical triggers over the captured surface</div>
+
+  <div class="tension">
+    <span class="tag">single-accent monotony</span>
+    <h3>One blue does all the chromatic work</h3>
+    <p>The palette resolves to near-black, two grays and a single blue. Faithful and disciplined, but every tile competes on identical chrome, so differentiation rests entirely on the photography. A product photo that underperforms leaves its tile visually inert.</p>
+  </div>
+  <div class="tension">
+    <span class="tag">uniform-tile flatten</span>
+    <h3>Equal-weight grid hides the hierarchy</h3>
+    <p>MacBook Air, iPad Air, Privacy, MacBook Pro, Trade In and Apple Card all render at the same 40px/tile scale. The captured page has a clear priority order (iPhone hero → Mac → services) but the 2-up grid renders six tiles as peers, so the eye has no second focal point after the hero.</p>
+  </div>
+  <div class="tension">
+    <span class="tag">static-on-arrival</span>
+    <h3>Home grid is motion-silent</h3>
+    <p>With reduced-motion the home is fully static; even live, motion is limited to hover-zoom and one autoplay gallery. The brand's cinematic capability (which it deploys heavily on product pages) is absent from the first surface, so the home undersells the brand's own kinetic identity.</p>
+  </div>
+  <div class="tension">
+    <span class="tag">typographic-restraint-ceiling</span>
+    <h3>Display type never gets to perform</h3>
+    <p>SF Pro Display is one of the most refined display faces shipped, yet the home uses it at a polite 40 to 56px in a single weight. The headline is always the product name, never a typographic moment. A large amount of expressive range is left on the table.</p>
+  </div>
+  <div class="tension">
+    <span class="tag">region-banner-noise</span>
+    <h3>Consent/region strip pollutes first viewport</h3>
+    <p>Capture surfaced a region banner (Schweiz / Weiter) overlaying content. A geo artifact, but representative: the first thing above the hero is a dismissable interruption rather than brand.</p>
+  </div>
+</div>
+</body>
+</html>
