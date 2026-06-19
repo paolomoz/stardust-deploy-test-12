@@ -36,3 +36,18 @@ colour / motion). Reduced-motion neutralises all of C's motion.
 deploy (org=paolomoz, repo=stardust-deploy-test-12, branch=test-12-2,
 page test-2/index). Leaning toward the variant that best balances
 brand fidelity, presales impact, and clean authorability in DA.
+
+## 2026-06-19 · deploy Variant A → EDS/DA (step 2)
+
+Chose **Variant A** (faithful + improvements) — best brand fit for ElevenLabs'
+restraint thesis + cleanest authorable EDS conversion. Bootstrapped AuthorKit
+runtime over vanilla boilerplate (static header/footer fragments; lazy.js #4 +
+postlcp.js #21 edits; eslint/stylelint ignores). 8 blocks + foundation + self-
+hosted fonts (Waldenburg licensing alert). Pushed test-12-2 → Code Sync built.
+Sanitised + DA PUT (201) to test-2/index.html; preview POST (200).
+Renders at https://test-12-2--stardust-deploy-test-12--paolomoz.aem.page/test-2/
+(EDS resolves index → directory; /test-2/index 404s by design). Editable at
+https://da.live/#/paolomoz/stardust-deploy-test-12/test-2/index.
+Diff probes: visual red flags none; content-diff 0 structural 🔴 (75/75 nodes,
+matching role counts); lone 🟠 FONT FORK is correct (#77 — EDS serves real Inter,
+proto fell back). Lint clean.
