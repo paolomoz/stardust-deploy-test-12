@@ -1,0 +1,133 @@
+.platforms {
+  padding: var(--section-py) 0;
+}
+
+.platforms .wrap {
+  width: 100%;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 var(--section-px);
+}
+
+.platforms h2 {
+  max-width: 30ch;
+  font-family: var(--font-waldenburg);
+  font-size: var(--f-heading-02);
+  font-weight: var(--weight-light);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: var(--black);
+}
+
+.platforms-intro {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.platforms-col h3 {
+  font-family: var(--font-inter);
+  font-size: var(--f-heading-05);
+  font-weight: var(--weight-regular);
+  color: var(--black);
+}
+
+.platforms-col p {
+  margin-top: 0.5rem;
+  max-width: 32ch;
+  font-family: var(--font-inter);
+  font-size: var(--f-body-sm);
+  color: var(--neutral-500);
+}
+
+/* product-visual placeholder panel */
+.platforms-panel {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background: var(--neutral-50);
+  border-radius: var(--radius-lg);
+}
+
+.platforms-pane {
+  display: flex;
+  min-height: 16rem;
+  overflow: hidden;
+  background: var(--white-50);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+}
+
+.platforms-sidebar {
+  display: flex;
+  flex: 0 0 28%;
+  flex-direction: column;
+  gap: 0.625rem;
+  padding: 0.875rem;
+  background: linear-gradient(180deg, rgb(0 0 0 / 3%), rgb(0 0 0 / 1%));
+  border-right: 1px solid var(--rule);
+}
+
+.platforms-sidebar span {
+  height: 0.5rem;
+  border-radius: 999px;
+  background: var(--neutral-200);
+}
+
+.platforms-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+}
+
+.platforms-body span {
+  height: 0.625rem;
+  border-radius: 999px;
+  background: var(--neutral-100);
+}
+
+.platforms-body span:nth-child(1) { width: 70%; }
+.platforms-body span:nth-child(2) { width: 90%; }
+.platforms-body span:nth-child(3) { width: 50%; }
+.platforms-body span:nth-child(4) { width: 80%; }
+.platforms-body span:nth-child(5) { width: 40%; }
+
+.platforms-sidebar span:first-child {
+  width: 60%;
+  background: var(--neutral-400);
+}
+
+.platforms-pane-creative .platforms-body {
+  background: linear-gradient(135deg, rgb(243 111 28 / 6%), rgb(196 125 229 / 6%));
+}
+
+.platforms-pane-agents .platforms-body {
+  background: linear-gradient(135deg, rgb(114 148 227 / 6%), rgb(30 86 108 / 6%));
+}
+
+.platforms-eyebrow {
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+  font-family: var(--font-geist-mono);
+  font-size: var(--f-ui-sm);
+  color: var(--neutral-500);
+}
+
+@media (width >= 600px) {
+  .platforms-intro {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (width <= 600px) {
+  .platforms-panel {
+    grid-template-columns: 1fr;
+  }
+}

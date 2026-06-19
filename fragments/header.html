@@ -1,0 +1,162 @@
+<style>
+  header.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--page-bg);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  header.header .nav-inner {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0.75rem var(--section-px);
+    min-height: 64px;
+    box-sizing: border-box;
+  }
+
+  header.header .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--font-waldenburg);
+    font-weight: 500;
+    font-size: 1.0625rem;
+    color: var(--black);
+    letter-spacing: -0.01em;
+  }
+
+  header.header .brand .mark {
+    display: inline-flex;
+    gap: 2px;
+  }
+
+  header.header .brand .mark i {
+    width: 3px;
+    height: 15px;
+    background: var(--black);
+    border-radius: 1px;
+  }
+
+  header.header .brand .mark i:nth-child(2) { height: 11px; align-self: center; }
+
+  header.header nav.primary {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  header.header nav.primary a {
+    font-family: var(--font-inter);
+    font-size: 0.9375rem;
+    color: var(--neutral-800);
+    transition: color 0.15s var(--ease-out);
+  }
+
+  header.header nav.primary a:hover { color: var(--black); }
+
+  header.header .spacer { flex: 1; }
+
+  header.header .actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  header.header .actions a.login {
+    font-family: var(--font-inter);
+    font-size: 0.9375rem;
+    color: var(--neutral-800);
+  }
+
+  header.header .actions a.login:hover { color: var(--black); }
+
+  header.header .actions a.signup {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    background: var(--black);
+    color: var(--eggshell);
+    font-family: var(--font-inter);
+    font-size: 0.9375rem;
+    transition: background 0.2s var(--ease-out);
+  }
+
+  header.header .actions a.signup:hover { background: var(--neutral-800); }
+
+  /* mobile menu (CSS-only checkbox hack) */
+  header.header #nav-toggle { display: none; }
+
+  header.header label.burger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    padding: 6px;
+  }
+
+  header.header label.burger span {
+    width: 22px;
+    height: 2px;
+    background: var(--black);
+    border-radius: 2px;
+  }
+
+  @media (width <= 1024px) {
+    header.header .nav-inner { min-height: 60px; padding: 0.625rem 1.25rem; }
+    header.header label.burger { display: flex; order: 3; margin-left: auto; }
+    header.header nav.primary,
+    header.header .actions {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 60px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.25rem;
+      background: var(--page-bg);
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--rule);
+      transform: translateY(-120%);
+      transition: transform 0.3s var(--ease-out);
+      visibility: hidden;
+    }
+
+    header.header .actions { top: 220px; box-shadow: 0 16px 24px rgb(0 0 0 / 6%); }
+    header.header nav.primary a { font-size: 1.125rem; padding: 0.5rem 0; }
+
+    header.header #nav-toggle:checked ~ .nav-inner nav.primary,
+    header.header #nav-toggle:checked ~ .nav-inner .actions {
+      transform: translateY(0);
+      visibility: visible;
+    }
+
+    header.header .spacer { display: none; }
+  }
+</style>
+
+<input type="checkbox" id="nav-toggle" aria-label="Toggle navigation">
+<div class="nav-inner">
+  <a href="https://elevenlabs.io/" class="brand" aria-label="ElevenLabs home">
+    <span class="mark"><i></i><i></i><i></i></span>
+    ElevenLabs
+  </a>
+  <nav class="primary">
+    <a href="https://elevenlabs.io/creative">ElevenCreative</a>
+    <a href="https://elevenlabs.io/agents">ElevenAgents</a>
+    <a href="https://elevenlabs.io/api">ElevenAPI</a>
+    <a href="https://elevenlabs.io/enterprise">Enterprise</a>
+    <a href="https://elevenlabs.io/pricing">Pricing</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="actions">
+    <a href="https://elevenlabs.io/app" class="login">Log in</a>
+    <a href="https://elevenlabs.io/app/sign-up" class="signup">Sign up</a>
+  </div>
+  <label for="nav-toggle" class="burger" aria-hidden="true"><span></span><span></span><span></span></label>
+</div>

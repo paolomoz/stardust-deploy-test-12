@@ -1,0 +1,185 @@
+<style>
+  footer.footer {
+    background: var(--page-bg);
+    border-top: 1px solid var(--rule);
+    margin-top: 0;
+  }
+
+  footer.footer .foot-inner {
+    width: 100%;
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 4rem var(--section-px) 2.5rem;
+    box-sizing: border-box;
+  }
+
+  footer.footer .foot-top {
+    display: grid;
+    grid-template-columns: 1.2fr repeat(3, 1fr) 0.9fr 0.9fr;
+    gap: 2rem;
+  }
+
+  footer.footer .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--font-waldenburg);
+    font-weight: 500;
+    font-size: 1.0625rem;
+    color: var(--black);
+  }
+
+  footer.footer .brand .mark { display: inline-flex; gap: 2px; }
+  footer.footer .brand .mark i { width: 3px; height: 15px; background: var(--black); border-radius: 1px; }
+  footer.footer .brand .mark i:nth-child(2) { height: 11px; align-self: center; }
+
+  footer.footer .lang {
+    margin-top: 1rem;
+    font-family: var(--font-inter);
+    font-size: 0.8125rem;
+    color: var(--neutral-500);
+  }
+
+  footer.footer .col h4 {
+    margin: 0 0 1rem;
+    font-family: var(--font-inter);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--neutral-500);
+  }
+
+  footer.footer .col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+
+  footer.footer .col a {
+    font-family: var(--font-inter);
+    font-size: 0.875rem;
+    color: var(--neutral-700);
+    transition: color 0.15s var(--ease-out);
+  }
+
+  footer.footer .col a:hover { color: var(--black); }
+
+  footer.footer .foot-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+    align-items: center;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  footer.footer .foot-bottom a,
+  footer.footer .foot-bottom span {
+    font-family: var(--font-inter);
+    font-size: 0.8125rem;
+    color: var(--neutral-500);
+  }
+
+  footer.footer .foot-bottom a:hover { color: var(--black); }
+  footer.footer .foot-bottom .copy { margin-right: auto; }
+
+  @media (width <= 1024px) {
+    footer.footer .foot-top { grid-template-columns: 1fr 1fr 1fr; }
+    footer.footer .brand-col { grid-column: 1 / -1; }
+  }
+
+  @media (width <= 600px) {
+    footer.footer .foot-inner { padding: 2.5rem 1.25rem 2rem; }
+    footer.footer .foot-top { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+
+<div class="foot-inner">
+  <div class="foot-top">
+    <div class="col brand-col">
+      <a href="https://elevenlabs.io/" class="brand" aria-label="ElevenLabs home">
+        <span class="mark"><i></i><i></i><i></i></span>
+        ElevenLabs
+      </a>
+      <div class="lang">English</div>
+    </div>
+    <div class="col">
+      <h4>ElevenCreative</h4>
+      <ul>
+        <li><a href="https://elevenlabs.io/text-to-speech">Text to Speech</a></li>
+        <li><a href="https://elevenlabs.io/speech-to-text">Speech to Text</a></li>
+        <li><a href="https://elevenlabs.io/voice-changer">Voice Changer</a></li>
+        <li><a href="https://elevenlabs.io/sound-effects">Text to Sound Effects</a></li>
+        <li><a href="https://elevenlabs.io/voice-cloning">Voice Cloning</a></li>
+        <li><a href="https://elevenlabs.io/music">AI Music Generator</a></li>
+        <li><a href="https://elevenlabs.io/studio">Studio</a></li>
+        <li><a href="https://elevenlabs.io/ai-voice-generator">AI Voice Generator</a></li>
+        <li><a href="https://elevenlabs.io/video">AI Video Generator</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h4>ElevenAgents</h4>
+      <ul>
+        <li><a href="https://elevenlabs.io/agents">ElevenAgents</a></li>
+        <li><a href="https://elevenlabs.io/voice-agents">Voice Agents</a></li>
+        <li><a href="https://elevenlabs.io/conversational-ai">Conversational AI</a></li>
+        <li><a href="https://elevenlabs.io/agents/integrations">Integrations</a></li>
+        <li><a href="https://elevenlabs.io/agents/telecommunications">Telecommunications</a></li>
+        <li><a href="https://elevenlabs.io/agents/financial-services">Financial Services</a></li>
+        <li><a href="https://elevenlabs.io/agents/healthcare">Healthcare</a></li>
+        <li><a href="https://elevenlabs.io/support">Customer Support</a></li>
+        <li><a href="https://elevenlabs.io/chatbot">Chatbots</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h4>ElevenAPI</h4>
+      <ul>
+        <li><a href="https://elevenlabs.io/docs/api-reference/text-to-speech/convert">API Reference</a></li>
+        <li><a href="https://elevenlabs.io/docs/eleven-api/quickstart">Agents API</a></li>
+        <li><a href="https://elevenlabs.io/docs/overview/capabilities/speech-engine">Speech Engine</a></li>
+        <li><a href="https://elevenlabs.io/text-to-speech-api">Text to Speech API</a></li>
+        <li><a href="https://elevenlabs.io/speech-to-text-api">Speech to Text API</a></li>
+        <li><a href="https://elevenlabs.io/docs/eleven-api/guides/cookbooks/music">Music API</a></li>
+        <li><a href="https://elevenlabs.io/app/settings/api-keys">API Key</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="https://elevenlabs.io/blog">Blog</a></li>
+        <li><a href="https://elevenlabs.io/iconic-marketplace">Iconic Marketplace</a></li>
+        <li><a href="https://elevenlabs.io/impact-program">Impact Program</a></li>
+        <li><a href="https://elevenlabs.io/startup-grants">Startup Grants</a></li>
+        <li><a href="https://help.elevenlabs.io/hc/en-us">Help Center</a></li>
+        <li><a href="https://elevenlabs.io/docs/overview/intro">Docs</a></li>
+        <li><a href="https://elevenlabs.io/enterprise">Enterprise</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="https://elevenlabs.io/about">About</a></li>
+        <li><a href="https://elevenlabs.io/careers">Careers</a></li>
+        <li><a href="https://elevenlabs.io/safety">Safety</a></li>
+        <li><a href="https://elevenlabs.io/brand">Brand &amp; Press Kit</a></li>
+        <li><a href="https://x.com/elevenlabs">X</a></li>
+        <li><a href="https://www.linkedin.com/company/elevenlabsio">LinkedIn</a></li>
+        <li><a href="https://github.com/elevenlabs">GitHub</a></li>
+        <li><a href="https://discord.gg/elevenlabs">Discord</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span class="copy">© 2026 ElevenLabs</span>
+    <a href="https://elevenlabs.io/terms-of-use">Terms</a>
+    <a href="https://elevenlabs.io/privacy-policy">Privacy</a>
+    <a href="https://elevenlabs.io/digital-services-act">EU DSA</a>
+    <a href="https://elevenlabs.io/ai-transparency">AI Transparency</a>
+    <a href="https://compliance.elevenlabs.io/">Trust Center</a>
+  </div>
+</div>

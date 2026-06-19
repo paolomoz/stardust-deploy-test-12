@@ -1,325 +1,332 @@
 /*
- * Copyright 2020 Adobe. All rights reserved.
- * This file is licensed to you under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License. You may obtain a copy
- * of the License at http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software distributed under
- * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
- * OF ANY KIND, either express or implied. See the License for the specific language
- * governing permissions and limitations under the License.
+ * ⚠️ FONT LICENSING REQUIRED BEFORE GOING LIVE
+ * ----------------------------------------------------------------------------
+ * Waldenburg and WaldenburgFH are PROPRIETARY typefaces (foundry: Kometa /
+ * "KMR-Waldenburg", used by ElevenLabs). They are self-hosted here for brand
+ * fidelity during this conversion test, but you MUST confirm a webfont /
+ * embedding license before publishing to *.aem.live (production).
+ * Remove path: delete the waldenburg-*.woff2 files + their @font-face rules and
+ * the heading stacks fall back to the metric-matched Arial face below.
+ * See styles/fonts/LICENSING.md.
+ * Inter and Geist Mono are SIL OFL 1.1 — self-hosting permitted.
+ * ----------------------------------------------------------------------------
  */
 
+/* ---- Brand faces -------------------------------------------------------- */
+
+@font-face {
+  font-family: Inter;
+  src: url("/styles/fonts/inter-variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/styles/fonts/geist-mono-variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Waldenburg — proprietary (see licensing banner). Buch = book/light,
+   Normal = regular, Fett = bold. Headings use the light end (300). */
+@font-face {
+  font-family: Waldenburg;
+  src: url("/styles/fonts/waldenburg-buch.woff2") format("woff2");
+  font-weight: 300 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Waldenburg;
+  src: url("/styles/fonts/waldenburg-normal.woff2") format("woff2");
+  font-weight: 401 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Waldenburg;
+  src: url("/styles/fonts/waldenburg-fett.woff2") format("woff2");
+  font-weight: 601 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* WaldenburgFH — condensed display face (FettHalbschmal = bold semi-condensed) */
+@font-face {
+  font-family: WaldenburgFH;
+  src: url("/styles/fonts/waldenburg-fetthalbschmal.woff2") format("woff2");
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---- Metric-matched system fallbacks (zero-CLS swap) -------------------- *
+ * Inter and Waldenburg share near-identical width proportions (xAvg/upm
+ * 0.610 vs 0.609), so both lean on one Arial-based calibration (the canonical
+ * fontsource Inter Fallback). Body renders this adjusted Arial at first paint;
+ * body.session swaps to the brand stack with no line-box shift.            */
+
+@font-face {
+  font-family: Arial;
+  src: local("Arial");
+  ascent-override: 90.49%;
+  descent-override: 22.56%;
+  line-gap-override: 0%;
+  size-adjust: 107.06%;
+}
+
+/* Dedicated display fallback (own name so it does not inherit body metrics) */
+@font-face {
+  font-family: "Waldenburg Fallback";
+  src: local("Arial");
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+  size-adjust: 107%;
+}
+
+/* ---- Brand tokens (lifted from elevenlabs.io :root) --------------------- */
+
 :root {
-  /* colors */
-  --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  /* surfaces */
+  --eggshell: #fdfcfc;
+  --page-bg: #fdfcfc;
+  --white-50: #fff;
+  --white-200: #f5f3f1;
+  --black: #000;
 
-  /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  /* neutrals */
+  --neutral-50: #f2f2f2;
+  --neutral-100: #e5e5e5;
+  --neutral-200: #dcdcdc;
+  --neutral-300: #bdbdbd;
+  --neutral-400: #949494;
+  --neutral-500: #767676;
+  --neutral-600: #6e6e6e;
+  --neutral-700: #525252;
+  --neutral-800: #464646;
+  --neutral-900: #3d3d3d;
+  --neutral-950: #1c1c1c;
 
-  /* body sizes */
-  --body-font-size-m: 22px;
-  --body-font-size-s: 19px;
-  --body-font-size-xs: 17px;
+  /* accents (used in cards / gradients) */
+  --green-900: #064e37;
+  --orange-500: #f36f1c;
+  --orange-600: #e45512;
+  --cyan-800: #1e566c;
+  --blue-400: #7294e3;
+  --purple-500: #c47de5;
 
-  /* heading sizes */
-  --heading-font-size-xxl: 55px;
-  --heading-font-size-xl: 44px;
-  --heading-font-size-l: 34px;
-  --heading-font-size-m: 27px;
-  --heading-font-size-s: 24px;
-  --heading-font-size-xs: 22px;
+  /* type families */
+  --font-inter: "Inter", "Arial", arial, sans-serif;
+  --font-waldenburg: "Waldenburg", "Waldenburg Fallback", arial, sans-serif;
+  --font-waldenburg-fh: "WaldenburgFH", "Waldenburg Fallback", arial, sans-serif;
+  --font-geist-mono: "Geist Mono", "Courier New", courier, monospace;
+  --font-body: var(--font-inter);
+  --font-display: var(--font-waldenburg);
 
-  /* nav height */
-  --nav-height: 64px;
+  /* type scale */
+  --f-display-01: 6.25rem;   /* WaldenburgFH 700 */
+  --f-display-02: 4rem;
+  --f-heading-01: 3.75rem;   /* Waldenburg 300 */
+  --f-heading-02: 3rem;
+  --f-heading-03: 2.25rem;
+  --f-heading-04: 1.5rem;
+  --f-heading-05: 1.25rem;
+  --f-body-01: 1.125rem;
+  --f-body-sm: 1rem;
+  --f-ui: 0.875rem;
+  --f-ui-sm: 0.75rem;
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-bold: 700;
+
+  /* layout */
+  --maxw: 81.5rem;            /* container-width 1304px */
+  --outer-gutter: 4rem;
+  --inner-gutter: 1.25rem;
+  --section-px: 3rem;
+  --section-py: 6.25rem;
+  --radius: 0.5rem;
+  --radius-lg: 1rem;
+  --rule: rgb(0 0 0 / 8%);
+  --rule-strong: rgb(0 0 0 / 16%);
+
+  /* motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* fallback fonts */
-@font-face {
-  font-family: roboto-condensed-fallback;
-  size-adjust: 88.82%;
-  src: local('Arial');
-}
+/* ---- Reset -------------------------------------------------------------- */
 
-@font-face {
-  font-family: roboto-fallback;
-  size-adjust: 99.529%;
-  src: local('Arial');
-}
+*,
+*::before,
+*::after { box-sizing: border-box; }
 
-@media (width >= 900px) {
-  :root {
-    /* body sizes */
-    --body-font-size-m: 18px;
-    --body-font-size-s: 16px;
-    --body-font-size-xs: 14px;
-
-    /* heading sizes */
-    --heading-font-size-xxl: 45px;
-    --heading-font-size-xl: 36px;
-    --heading-font-size-l: 28px;
-    --heading-font-size-m: 22px;
-    --heading-font-size-s: 20px;
-    --heading-font-size-xs: 18px;
-  }
+html {
+  scroll-behavior: smooth;
+  text-size-adjust: 100%;
 }
 
 body {
-  display: none;
   margin: 0;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  font-family: var(--body-font-family);
-  font-size: var(--body-font-size-m);
-  line-height: 1.6;
+  font-family: arial, sans-serif;       /* metric-adjusted Arial at first paint */
+  font-size: var(--f-body-01);
+  line-height: 1.5;
+  color: var(--black);
+  background: var(--page-bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
 }
 
-body.appear {
+body.session { font-family: var(--font-body); }
+
+::selection {
+  background: rgb(0 0 0 / 90%);
+  color: var(--eggshell);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: var(--weight-light);
+}
+
+p { margin: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
   display: block;
-}
-
-header {
-  height: var(--nav-height);
-}
-
-header .header,
-footer .footer {
-  visibility: hidden;
-}
-
-header .header[data-block-status="loaded"],
-footer .footer[data-block-status="loaded"] {
-  visibility: visible;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0.8em;
-  margin-bottom: 0.25em;
-  font-family: var(--heading-font-family);
-  font-weight: 600;
-  line-height: 1.25;
-  scroll-margin: 40px;
-}
-
-h1 { font-size: var(--heading-font-size-xxl); }
-h2 { font-size: var(--heading-font-size-xl); }
-h3 { font-size: var(--heading-font-size-l); }
-h4 { font-size: var(--heading-font-size-m); }
-h5 { font-size: var(--heading-font-size-s); }
-h6 { font-size: var(--heading-font-size-xs); }
-
-p,
-dl,
-ol,
-ul,
-pre,
-blockquote {
-  margin-top: 0.8em;
-  margin-bottom: 0.25em;
-}
-
-code,
-pre {
-  font-size: var(--body-font-size-s);
-}
-
-pre {
-  padding: 16px;
-  border-radius: 8px;
-  background-color: var(--light-color);
-  overflow-x: auto;
-  white-space: pre;
-}
-
-main > div {
-  margin: 40px 16px;
-}
-
-input,
-textarea,
-select,
-button {
-  font: inherit;
-}
-
-/* links */
-a:any-link {
-  color: var(--link-color);
-  text-decoration: none;
-  overflow-wrap: break-word;
-}
-
-a:hover {
-  color: var(--link-hover-color);
-  text-decoration: underline;
-}
-
-/* buttons */
-p.button-wrapper {
-  margin: 12px 0;
-}
-
-a.button:any-link,
-button.button {
-  box-sizing: border-box;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   max-width: 100%;
-  margin: 0;
-  border: 2px solid transparent;
-  border-radius: 2.4em;
-  padding: 0.5em 1.2em;
-  font: inherit;
-  font-weight: 500;
-  line-height: 1.25;
-  text-decoration: none;
-  cursor: pointer;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-a.button[aria-disabled="true"],
-button.button:disabled {
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-a.button.primary,
-button.button.primary {
-  border-color: var(--text-color);
-  background-color: var(--text-color);
-  color: var(--background-color);
-}
-
-a.button.primary:hover,
-a.button.primary:focus-visible,
-button.button.primary:hover,
-button.button.primary:focus-visible {
-  border-color: var(--dark-color);
-  background-color: var(--dark-color);
-  color: var(--light-color);
-}
-
-a.button.primary[aria-disabled="true"],
-a.button.primary[aria-disabled="true"]:hover,
-a.button.primary[aria-disabled="true"]:focus-visible,
-button.button.primary:disabled,
-button.button.primary:disabled:hover,
-button.button.primary:disabled:focus-visible {
-  background-color: var(--light-color);
-  border-color: var(--light-color);
-  color: var(--dark-color);
-}
-
-a.button.secondary,
-button.button.secondary {
-  border-color: var(--text-color);
-  background-color: transparent;
-  color: var(--text-color);
-}
-
-a.button.secondary:hover,
-a.button.secondary:focus-visible,
-button.button.secondary:hover,
-button.button.secondary:focus-visible {
-  border-color: var(--dark-color);
-  background-color: var(--light-color);
-  color: var(--dark-color);
-}
-
-a.button.secondary[aria-disabled="true"],
-a.button.secondary[aria-disabled="true"]:hover,
-a.button.secondary[aria-disabled="true"]:focus-visible,
-button.button.secondary:disabled,
-button.button.secondary:disabled:hover,
-button.button.secondary:disabled:focus-visible {
-  background-color: var(--light-color);
-  border-color: var(--light-color);
-  color: var(--dark-color);
-}
-
-/* high-impact call-to-action */
-a.button.accent,
-button.button.accent {
-  border-color: var(--link-color);
-  background-color: var(--link-color);
-  color: var(--background-color);
-}
-
-a.button.accent:hover,
-a.button.accent:focus-visible,
-button.button.accent:hover,
-button.button.accent:focus-visible {
-  border-color: var(--link-hover-color);
-  background-color: var(--link-hover-color);
-}
-
-a.button.accent[aria-disabled="true"],
-a.button.accent[aria-disabled="true"]:hover,
-a.button.accent[aria-disabled="true"]:focus-visible,
-button.button.accent:disabled,
-button.button.accent:disabled:hover,
-button.button.accent:disabled:focus-visible {
-  background-color: var(--light-color);
-  border-color: var(--light-color);
-  color: var(--dark-color);
-}
-
-main img {
-  max-width: 100%;
-  width: auto;
   height: auto;
 }
 
-.icon {
-  display: inline-block;
-  height: 24px;
-  width: 24px;
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }
 
-.icon img {
-  height: 100%;
+/* ---- EDS section scaffold ---------------------------------------------- */
+
+main .section { display: block; }
+
+main .section > .default-content,
+main .section > .block-content { display: block; }
+
+main > div,
+.has-template,
+div[data-status] { display: none; }
+
+main .section[data-section-status="loaded"],
+main .block[data-block-status="loaded"] { display: block; }
+
+/* generic centered container helper blocks reuse */
+.wrap {
   width: 100%;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 var(--section-px);
 }
 
-/* sections */
-main > .section {
-  margin: 40px 0;
+@media (width <= 900px) {
+  .wrap { padding: 0 1.5rem; }
 }
 
-main > .section > div {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 24px;
+/* ---- Header height reservation (#81) ----------------------------------- *
+ * postlcp.js injects fragments/header.html after first paint. The bare
+ * <header> reserves the nav height so the first section never shifts down. */
+
+header {
+  min-height: 64px;
+  background: var(--page-bg);
 }
 
-main > .section:first-of-type {
-  margin-top: 0;
+@media (width <= 1024px) {
+  header { min-height: 60px; }
 }
 
-@media (width >= 900px) {
-  main > .section > div {
-    padding: 0 32px;
-  }
+/* ---- Global button system ---------------------------------------------- *
+ * ak.js decorateButton() maps author emphasis to .btn classes:
+ *   <strong><a>      -> .btn.btn-primary   (solid black pill)
+ *   <em><a>          -> .btn.btn-secondary (outlined)
+ *   <em><strong><a>  -> .btn.btn-accent    (eggshell on dark)              */
+
+a.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6875rem 1.25rem;
+  font-family: var(--font-inter);
+  font-size: var(--f-ui);
+  font-weight: var(--weight-regular);
+  line-height: 1;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  transition: background 0.2s var(--ease-out), color 0.2s var(--ease-out),
+    border-color 0.2s var(--ease-out), opacity 0.2s var(--ease-out);
 }
 
-/* section metadata */
-main .section.light,
-main .section.highlight {
-  background-color: var(--light-color);
-  margin: 0;
-  padding: 40px 0;
+a.btn-primary {
+  background: var(--black);
+  color: var(--eggshell);
+  border-color: var(--black);
+}
+
+a.btn-primary:hover {
+  background: var(--neutral-800);
+  border-color: var(--neutral-800);
+}
+
+a.btn-secondary {
+  background: transparent;
+  color: var(--black);
+  border-color: var(--rule-strong);
+}
+
+a.btn-secondary:hover {
+  border-color: var(--black);
+  background: rgb(0 0 0 / 4%);
+}
+
+a.btn-accent {
+  background: var(--eggshell);
+  color: var(--black);
+  border-color: var(--eggshell);
+}
+
+a.btn-accent:hover {
+  background: var(--white-200);
+  border-color: var(--white-200);
+}
+
+/* On dark surfaces, secondary uses a light outline (scope to block class too, #41) */
+main .dark a.btn-secondary,
+main .section.dark a.btn-secondary {
+  color: var(--eggshell);
+  border-color: rgb(255 255 255 / 28%);
+}
+
+main .dark a.btn-secondary:hover,
+main .section.dark a.btn-secondary:hover {
+  border-color: rgb(255 255 255 / 70%);
+  background: rgb(255 255 255 / 8%);
+}
+
+.btn-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
 }
