@@ -1,5 +1,9 @@
 {
-  "_provenance": { "writtenBy": "stardust:uplift", "writtenAt": "2026-06-19", "againstInput": "https://www.apple.com/" },
+  "_provenance": {
+    "writtenBy": "stardust:uplift",
+    "writtenAt": "2026-06-19",
+    "againstInput": "https://www.apple.com/"
+  },
   "site": {
     "originUrl": "https://www.apple.com/",
     "extractedAt": "2026-06-19",
@@ -12,7 +16,7 @@
     {
       "slug": "home",
       "url": "https://www.apple.com/",
-      "status": "prototyped",
+      "status": "migrated",
       "currentStatePath": "stardust/current/pages/home.json",
       "prototypePath": "stardust/prototypes/home-A-proposed.html",
       "variants": {
@@ -22,8 +26,19 @@
         "C-cinematic": "stardust/prototypes/home-C-cinematic.html"
       },
       "validation": "stardust/validation/_report.json",
-      "migratedPath": "",
-      "provenance": { "renderedBy": "playwright", "fetchedAt": "2026-06-19", "waitMs": 3711, "waitMode": "medium", "httpStatus": 200 }
+      "migratedPath": "content/test-1/index.html",
+      "provenance": {
+        "renderedBy": "playwright",
+        "fetchedAt": "2026-06-19",
+        "waitMs": 3711,
+        "waitMode": "medium",
+        "httpStatus": 200
+      },
+      "deployed": {
+        "previewUrl": "https://test-12-1--stardust-deploy-test-12--paolomoz.aem.page/test-1/",
+        "editUrl": "https://da.live/edit#/paolomoz/stardust-deploy-test-12/test-1/index",
+        "variant": "C"
+      }
     }
   ]
 }
