@@ -80,3 +80,26 @@ Starts at `<body>`, no DOCTYPE/html/head, empty `<header></header>`/`<footer></f
 
 ### Divider count reconciliation
 Brief table said "constellation-divider ×6", but the authoritative proposed prototype (home-C-proposed.html) ships exactly **5** dividers — between hero→mission, mission→lightbulb, lightbulb→better-world, better-world→team, team→investors; NO divider before closing. The content page matches the prototype's 5-divider placement (the prototype is the visual spec).
+
+## Step 10 — diff reconciliation vs prototype (home-C-proposed.html) — 2026-06-19
+Probes: stardust:diff visual-diff.mjs + content-diff.mjs, `--profile eds`, against the live
+branch render https://test-12-5--stardust-deploy-test-12--paolomoz.aem.page/test-5/.
+
+**Visual / layout diff:** initial run flagged 3× FLUSH-LEFT on the hero (eyebrow/h1/sub at left 0).
+Root cause: hero.css never styled `.hero__inner`'s gutter (#74) — the inner carried the `wrap`
+class but no `.wrap` rule reached it (each block scopes its own `.wrap`; hero had none). Fix:
+added `margin-inline:auto; padding-inline:var(--gutter); box-sizing:border-box` to `.hero .hero__inner`.
+Re-measured: EDS h1Left = 536px = PROTO 536px (centered 30ch column, exact match). **Re-run: red flags = none.**
+Portrait `stretched` fires on BOTH proto and EDS = justified (#45): the prototype itself crops the
+780×1140 portraits to object-fit:cover cards; faithful lift, not a defect.
+
+**Structural content / type diff:** 3 🔴 MISSING CTA (member "LinkedIn" links) = **confirmed FALSE POSITIVE**:
+the live render contains all 6 social links (3 Twitter + 3 LinkedIn) with exact text + hrefs (verified by
+direct DOM inspection). The probe's role classifier split each member's two adjacent links asymmetrically
+(Twitter→CTA, LinkedIn→body), so a CTA-vs-CTA match missed. No content dropped.
+🟡 MISSING BODY/EXTRA pairs = benign: same paragraphs with curly-vs-straight apostrophes, plus the
+narrative count-up splitting "30%" into "30"+"%". EDS body-node count (44) ≥ proto (43); every MISSING has a
+matching EXTRA. No prose lost.
+
+**Live render verification:** 6 constellation canvases sized/drawn (hero 2560×1732 + 5 dividers), single
+`<h1>`, 3 members, 5 investors, footer "Dala" wordmark, `body.session` → PP Neue Montreal active, 0 about:error.
