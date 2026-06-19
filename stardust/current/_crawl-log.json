@@ -1,0 +1,18 @@
+{
+  "_provenance": { "writtenBy": "stardust:extract", "writtenAt": "2026-06-19", "againstInput": "https://linear.app/" },
+  "discovery": {
+    "mode": "single-page (uplift --single)",
+    "originUrl": "https://linear.app/",
+    "fetchTechnique": "headless-chromium (no bot-management block encountered)",
+    "waitMode": "spec (networkidle) — JS-driven marketing site",
+    "totalDiscovered": 1,
+    "selected": ["home"]
+  },
+  "consent": { "method": "none-detected" },
+  "crawl": {
+    "pages": [
+      { "slug": "home", "url": "https://linear.app/", "finalUrl": "https://linear.app/", "httpStatus": 200, "waitMs": 23529, "waitMode": "networkidle", "renderedBy": "playwright", "status": "extracted" }
+    ],
+    "failures": []
+  }
+}

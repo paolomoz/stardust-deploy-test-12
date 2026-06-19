@@ -1,0 +1,14 @@
+{
+  "_provenance": { "writtenBy": "stardust:direct (via uplift)", "writtenAt": "2026-06-19", "mode": "Mode A", "variant": "A" },
+  "extends": "DESIGN.json",
+  "variant": { "id": "A", "role": "faithful + improvements", "motion": "static" },
+  "delta": {
+    "improvements": [
+      "re-weight 6 equal pillars into a hierarchy (1-2 lead, rest demote to compact rail)",
+      "lift muted text off #62666d floor to >=#8a8f98 for WCAG AA on #08090a",
+      "replace pastel gradient display text with solid near-white + single lime accent word",
+      "sharper section markers: Berkeley Mono eyebrows + index numerals",
+      "product mock gets more share-of-canvas"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "_provenance": { "writtenBy": "stardust:direct (via uplift)", "writtenAt": "2026-06-19", "mode": "Mode A", "variant": "B" },
+  "extends": "DESIGN.json",
+  "variant": { "id": "B", "role": "amplified — reserved lime promoted to primary surface", "motion": "static" },
+  "delta": {
+    "trait": "lime #e4f222 (currently 1-3 highlight chips only)",
+    "composition": [
+      "one full-bleed manifesto band inverted to lime (#e4f222 ground, #08090a text)",
+      "closing CTA band on lime",
+      "lime as structural accent on section eyebrows + index numerals",
+      "primary CTA recolored to lime on the dark sections"
+    ],
+    "constraint": "palette unchanged; only proportions shift. No motion (differentiate from C by axis)."
+  }
+}

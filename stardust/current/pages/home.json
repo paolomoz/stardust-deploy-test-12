@@ -1,0 +1,4061 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-06-19T04:06:58.763Z",
+    "waitMs": 23529,
+    "waitMode": "networkidle",
+    "requestedWaitMode": "spec",
+    "httpStatus": 200,
+    "finalUrl": "https://linear.app/",
+    "againstInput": "https://linear.app/"
+  },
+  "url": "https://linear.app/",
+  "slug": "home",
+  "title": "Linear – The system for product development",
+  "description": "Purpose-built for planning and building products with AI agents.",
+  "og": {
+    "title": "Linear – The system for product development",
+    "description": "Purpose-built for planning and building products with AI agents.",
+    "image": "https://linear.app/static/og/homepage.jpg",
+    "type": null,
+    "siteName": null
+  },
+  "themeColor": "#08090a",
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "The product development system for teams and agents The product development system for teams and agents",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "fontSize": "64px",
+      "lineHeight": "64px",
+      "letterSpacing": "-1.408px",
+      "color": "rgb(247, 248, 248)"
+    },
+    {
+      "tag": "h3",
+      "text": "Faster app launch",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "590",
+      "fontSize": "20px",
+      "lineHeight": "26.6px",
+      "letterSpacing": "-0.24px",
+      "color": "rgb(208, 214, 224)"
+    },
+    {
+      "tag": "h4",
+      "text": "Activity",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "590",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "color": "rgb(208, 214, 224)"
+    },
+    {
+      "tag": "h2",
+      "text": "A new species of product tool. Purpose-built for modern teams with AI workflows at its core, Linear sets a new standard for planning and building products.",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "fontSize": "48px",
+      "lineHeight": "48px",
+      "letterSpacing": "-1.056px",
+      "color": "rgb(138, 143, 152)"
+    },
+    {
+      "tag": "h2",
+      "text": "Make product operations self-driving",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "fontSize": "48px",
+      "lineHeight": "48px",
+      "letterSpacing": "-1.056px",
+      "color": "rgb(247, 248, 248)"
+    },
+    {
+      "tag": "h2",
+      "text": "Define the product direction",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "fontSize": "48px",
+      "lineHeight": "48px",
+      "letterSpacing": "-1.056px",
+      "color": "rgb(247, 248, 248)"
+    },
+    {
+      "tag": "h2",
+      "text": "Move work forward across teams and agents",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "fontSize": "48px",
+      "lineHeight": "48px",
+      "letterSpacing": "-1.056px",
+      "color": "rgb(247, 248, 248)"
+    },
+    {
+      "tag": "h2",
+      "text": "Review PRs and agent output",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "fontSize": "48px",
+      "lineHeight": "48px",
+      "letterSpacing": "-1.056px",
+      "color": "rgb(247, 248, 248)"
+    },
+    {
+      "tag": "h2",
+      "text": "Understand progress at scale",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "fontSize": "48px",
+      "lineHeight": "48px",
+      "letterSpacing": "-1.056px",
+      "color": "rgb(247, 248, 248)"
+    },
+    {
+      "tag": "h2",
+      "text": "Changelog",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "fontSize": "48px",
+      "lineHeight": "48px",
+      "letterSpacing": "-1.056px",
+      "color": "rgb(247, 248, 248)"
+    },
+    {
+      "tag": "h2",
+      "text": "Built for the future. Available today.",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "fontSize": "72px",
+      "lineHeight": "72px",
+      "letterSpacing": "-1.584px",
+      "color": "rgb(247, 248, 248)"
+    },
+    {
+      "tag": "h3",
+      "text": "Product",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "fontSize": "13px",
+      "lineHeight": "19.5px",
+      "letterSpacing": "-0.13px",
+      "color": "rgb(247, 248, 248)"
+    },
+    {
+      "tag": "h3",
+      "text": "Features",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "fontSize": "13px",
+      "lineHeight": "19.5px",
+      "letterSpacing": "-0.13px",
+      "color": "rgb(247, 248, 248)"
+    },
+    {
+      "tag": "h3",
+      "text": "Company",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "fontSize": "13px",
+      "lineHeight": "19.5px",
+      "letterSpacing": "-0.13px",
+      "color": "rgb(247, 248, 248)"
+    },
+    {
+      "tag": "h3",
+      "text": "Resources",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "fontSize": "13px",
+      "lineHeight": "19.5px",
+      "letterSpacing": "-0.13px",
+      "color": "rgb(247, 248, 248)"
+    },
+    {
+      "tag": "h3",
+      "text": "Connect",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "fontSize": "13px",
+      "lineHeight": "19.5px",
+      "letterSpacing": "-0.13px",
+      "color": "rgb(247, 248, 248)"
+    },
+    {
+      "tag": "h3",
+      "text": "Legal",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "fontSize": "13px",
+      "lineHeight": "19.5px",
+      "letterSpacing": "-0.13px",
+      "color": "rgb(247, 248, 248)"
+    }
+  ],
+  "landmarks": [
+    {
+      "tag": "header",
+      "role": null,
+      "id": null,
+      "class": "Header_header__hfMjL Header_header__hfMjL",
+      "childCount": 1,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(247, 248, 248)",
+      "paddingBlock": "0px 0px",
+      "text": "Product Resources Customers Pricing Now Contact Log in Sign up",
+      "body": [],
+      "lists": [
+        {
+          "ordered": false,
+          "items": [
+            "ProductResourcesCustomersPricingNowContactDocsOpen appLog inSign up"
+          ]
+        },
+        {
+          "ordered": false,
+          "items": [
+            "Product",
+            "Resources",
+            "Customers",
+            "Pricing",
+            "Now",
+            "Contact"
+          ]
+        },
+        {
+          "ordered": false,
+          "items": [
+            "Docs",
+            "Open app",
+            "Log in",
+            "Sign up"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "nav",
+      "role": null,
+      "id": null,
+      "class": "Header_menuRoot__tJRFd",
+      "childCount": 1,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(247, 248, 248)",
+      "paddingBlock": "0px 0px",
+      "text": "Product Resources Customers Pricing Now Contact Log in Sign up",
+      "body": [],
+      "lists": [
+        {
+          "ordered": false,
+          "items": [
+            "ProductResourcesCustomersPricingNowContactDocsOpen appLog inSign up"
+          ]
+        },
+        {
+          "ordered": false,
+          "items": [
+            "Product",
+            "Resources",
+            "Customers",
+            "Pricing",
+            "Now",
+            "Contact"
+          ]
+        },
+        {
+          "ordered": false,
+          "items": [
+            "Docs",
+            "Open app",
+            "Log in",
+            "Sign up"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "main",
+      "role": null,
+      "id": null,
+      "class": "Layout_content__PrPCk",
+      "childCount": 2,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(247, 248, 248)",
+      "paddingBlock": "72px 0px",
+      "text": "The product development system for teams and agents The product development system for teams and agents Purpose-built for planning and building products. Designed for the AI era. New Coding Sessions → Linear Inbox My issues Reviews Pulse Workspace Initiatives Projects More Favorites Faster app launch Agent tasks UI Refresh Agents Insights Faster app launch 02 / 145 Faster app launch Render UI before vehicle_state sync when minimum required state is present, instead of blocking on full refresh during iOS startup. Activity Linear created the issue via Slack on behalf of karri · 2min ago Triage Intelligence added the label Performance and iOS · 2min ago karri · 4 min ago Right now we show a spinner forever, which makes it look like the car disappeared... jori · just now @Linear can you take a stab at this? Linear connected by jori · 2 min ago Changed 2 files Draft PR awaiting your review · 2 min ago Linear moved from Todo to In Progress · just now LinearOpus 4.8 jori connected Linear to ENG-2703 Examining the startup path... Worked for 7s Pushed and opened a draft PR. Changes: useRideHistory.ts : build a waitingStatusById map and use it as the getLastAction by line RideHistoryPage.tsx : dimmed rows reset Preview Changed 2 files +4 -4 Draft Update homepage H1 master ← ride/drv-899-update-homepage-h1-65a6 ENG-2703 In Progress High jori Linear Labels Performance iOS Cycle Cycle 144 Project Core Performance A new species of product tool. Purpose-built for modern teams with AI workflows at its core, Linear sets a new standard for planning and building products. FIG 0.2 Built for purpose Linear is shaped by the practices and principles of world-class product teams. FIG 0.3 Powered by AI agents Designed for workflows shared by humans and agents. From drafting PRDs to pushing PRs. FIG 0.4 Designed for speed Reduces noise and restores momentum to help teams ship with high velocity and focus. Make product operations self-driving Turn conversations and customer feedback into actionable issues that are routed, labeled, and prioritized for the right team. 1.0Intake→ Backlog 8 ENG-2085 Reduce UI flicker during autonomy... ENG-2094 Add buffering for autonomy event streams ENG-2092 Reduce startup delay caused by vehicle sync ENG-2200 Fix delayed route updates during rerouting Todo 71 ENG-926 Remove UI inconsistencies Bug Design ENG-2088 TypeError: Cannot read properties Bug ENG-924 Upgrade to Claude Opus 4.5 AI ENG-1882 Optimize load times Performance In Progress 3 ENG-1487 Remove contentData from GraphQL API 61039 MKT-1028 Launch page assets Design ENG-2187 Prevent duplicate ride requests on poor... Bug 62048 Done 53 ENG-2074 Clean up deprecated APIs... API 61002 ENG-1912 Reduce latency in autonomy st... 61005 ENG-1951 Reduce ETA fluctuations durin... 61202 ENG-1960 Improve fallback messaging UI 61149 ENG-1991 Improve rider visibility into veh... Thread in #feedback didier 6:06 AM Has anyone been looking into the iOS startup performance issues? lena 6:06 AM Anyone else noticing the iOS app feels slow to open if you haven't used it in a bit? didier 6:06 AM Yea, we're still blocking initial render on a full vehicle_state sync every time... andreas 6:06 AM Feels like we could render sooner and load the rest in the background. Probably also worth tracking startup timing so we know how often this happens! @Linear create urgent issues and assign to me 1.1 Linear Agent + 1.2 Triage + 1.3 Customer Requests + 1.4 Linear Asks + Define the product direction Plan and navigate from idea to launch. Align your team with product initiatives, strategic roadmaps, and clear, up-to-date PRDs. 2.0Plan→ FEB MAR APR MAY JUN JUL AUG SEP 2 9 16 23 2 9 16 23 30 6 13 20 27 4 11 18 25 1 8 15 22 29 6 13 20 27 3 10 17 24 31 7 14 21 28 UI Refresh Core screens Polish Split fares Internal Public Beta Autonomy status clarity Alpha GA Initiatives Core Product 99 Infra stability 28 Autonomous systems 16 Mobile apps 8 APAC Expansion 21 Japan Launch 12 Customer-driven priorities 9 2.1 Projects + 2.2 Documents + 2.3 Initiatives + 2.4 Visual planning + Move work forward across teams and agents Build and deploy AI agents that work alongside your team. Work on complex tasks together or delegate entire issues end-to-end. 3.0Build→ Codex On it! I've received your request. Kicked off a task in kinetic/kinetic-iOS environment. Searching for root AGENTS file kinetic/kinetic-iOS$ /bin/bash -lc rg --files -g 'AGENTS.md' AGENTS.md Locating initialization logic for vehicle_state Thinking... Agents Command Menu Codex Agent Steven Ema GitHub Copilot Agent Cursor Agent Meg 3.1 Issues + 3.2 Agents + 3.3 Linear MCP + 3.4 Git automations + 3.5 Cycles + Review PRs and agent output Understand code changes at a glance with structural diffs for human and agent output. Review, discuss, and merge — all within Linear. 4.0Diffs→ kinetic-ios/src/screens/Home/HomeScreen.tsx Linear import React from 'react' import { View, ActivityIndicator } from 'react-native' import { useVehicleState } from '@hooks/useVehicleState' import { Dashboard } from '@components/Dashboard' export const HomeScreen = () => { const { vehicleState, isFullySynced } = useVehicleState() if (!isFullySynced) { return <ActivityIndicator size=\"large\" /> } return ( <View> <Dashboard state={vehicleState} /> </View> ) } import React from 'react' import { View, ActivityIndicator } from 'react-native' import { useVehicleState, SyncStatus } from '@hooks/useVehicleState' import { Dashboard } from '@components/Dashboard' export const HomeScreen = () => { const { vehicleState, syncStatus } = useVehicleState() if (syncStatus === SyncStatus.PENDING) { return <ActivityIndicator size=\"large\" /> } return ( <View> <Dashboard state={vehicleState} syncStatus={syncStatus} /> </View> ) } Understand progress at scale Take the guesswork out of product development with project updates, analytics, and dashboards that surface what needs your attention. 5.0Monitor→ Issue count by created date 18 16 14 12 10 8 6 4 2 0 Feb 2025 May ",
+      "body": [
+        "Purpose-built for planning and building products. Designed for the AI era.",
+        "Render UI before vehicle_state sync when minimum required state is present, instead of blocking on full refresh during iOS startup.",
+        "Linear is shaped by the practices and principles of world-class product teams.",
+        "Designed for workflows shared by humans and agents. From drafting PRDs to pushing PRs.",
+        "Reduces noise and restores momentum to help teams ship with high velocity and focus.",
+        "Linear is shaped by the practices and principles of world-class product teams.",
+        "Designed for workflows shared by humans and agents. From drafting PRDs to pushing PRs.",
+        "Reduces noise and restores momentum to help teams ship with high velocity and focus.",
+        "Turn conversations and customer feedback into actionable issues that are routed, labeled, and prioritized for the right team.",
+        "Plan and navigate from idea to launch. Align your team with product initiatives, strategic roadmaps, and clear, up-to-date PRDs.",
+        "Build and deploy AI agents that work alongside your team. Work on complex tasks together or delegate entire issues end-to-end.",
+        "Understand code changes at a glance with structural diffs for human and agent output. Review, discuss, and merge — all within Linear.",
+        "Take the guesswork out of product development with project updates, analytics, and dashboards that surface what needs your attention.",
+        "iOS implementation is mostly complete, but Android updates are still work in progress",
+        "Risk of timeline slip if remaining design decisions aren’t finalized soon",
+        "Localization efforts have been completed",
+        "Everything else on track for launch in early September",
+        "You’ll probably build a better product, just because of the craft that using Linear infuses on your brain.",
+        "Our speed is intense and Linear helps us be action biased.",
+        "Linear is excellent, just excellent. It has the right opinions for fast moving teams.",
+        "You’ll probably build a better product, just because of the craft that using Linear infuses on your brain.",
+        "Our speed is intense and Linear helps us be action biased.",
+        "Linear powers over 33,000 product teams. From ambitious startups to major enterprises."
+      ],
+      "lists": [
+        {
+          "ordered": false,
+          "items": [
+            "iOS implementation is mostly complete, but Android updates are still work in progress",
+            "Risk of timeline slip if remaining design decisions aren’t finalized soon"
+          ]
+        },
+        {
+          "ordered": false,
+          "items": [
+            "Localization efforts have been completed",
+            "Everything else on track for launch in early September"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "nav",
+      "role": null,
+      "id": null,
+      "class": "Sidebar_sidebar__yeDLZ",
+      "childCount": 3,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(247, 248, 248)",
+      "paddingBlock": "8px 14px",
+      "text": "Linear Inbox My issues Reviews Pulse Workspace Initiatives Projects More Favorites Faster app launch Agent tasks UI Refresh Agents Insights",
+      "body": [],
+      "lists": []
+    },
+    {
+      "tag": "header",
+      "role": null,
+      "id": null,
+      "class": "IssueView_header__sldQv SharedViewStyles_header__19pF0",
+      "childCount": 2,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(247, 248, 248)",
+      "paddingBlock": "0px 0px",
+      "text": "Faster app launch 02 / 145",
+      "body": [],
+      "lists": []
+    },
+    {
+      "tag": "header",
+      "role": null,
+      "id": null,
+      "class": "IssueView_chatBoxHeader__dsIb0",
+      "childCount": 2,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(247, 248, 248)",
+      "paddingBlock": "0px 0px",
+      "text": "LinearOpus 4.8",
+      "body": [],
+      "lists": []
+    },
+    {
+      "tag": "header",
+      "role": null,
+      "id": null,
+      "class": "SlackIssue_header__NtjDx utils_bottomGradientBorder__OEIzU",
+      "childCount": 2,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(247, 248, 248)",
+      "paddingBlock": "17px 17px",
+      "text": "Thread in #feedback",
+      "body": [],
+      "lists": []
+    },
+    {
+      "tag": "header",
+      "role": null,
+      "id": null,
+      "class": "Plan_initiativesBoxHeader__BpkZm",
+      "childCount": 1,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(247, 248, 248)",
+      "paddingBlock": "0px 0px",
+      "text": "Initiatives",
+      "body": [],
+      "lists": []
+    },
+    {
+      "tag": "header",
+      "role": null,
+      "id": null,
+      "class": "Build_header__OAL8V",
+      "childCount": 2,
+      "bg": "rgb(15, 16, 17)",
+      "color": "rgb(247, 248, 248)",
+      "paddingBlock": "0px 0px",
+      "text": "Codex",
+      "body": [],
+      "lists": []
+    },
+    {
+      "tag": "header",
+      "role": null,
+      "id": null,
+      "class": "Monitor_header__guWRp",
+      "childCount": 1,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(247, 248, 248)",
+      "paddingBlock": "20px 20px",
+      "text": "Issue count by created date",
+      "body": [],
+      "lists": []
+    },
+    {
+      "tag": "header",
+      "role": null,
+      "id": null,
+      "class": "Monitor_header__guWRp",
+      "childCount": 1,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(247, 248, 248)",
+      "paddingBlock": "20px 20px",
+      "text": "Cycle time by agent",
+      "body": [],
+      "lists": []
+    },
+    {
+      "tag": "header",
+      "role": null,
+      "id": null,
+      "class": "Monitor_pulseHeader__BiXEt",
+      "childCount": 1,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(247, 248, 248)",
+      "paddingBlock": "0px 32px",
+      "text": "Weekly Pulse for Jun 19 Listen 1.0×",
+      "body": [],
+      "lists": []
+    },
+    {
+      "tag": "footer",
+      "role": null,
+      "id": null,
+      "class": "Footer_footer__lJt10",
+      "childCount": 1,
+      "bg": "rgb(8, 9, 10)",
+      "color": "rgb(247, 248, 248)",
+      "paddingBlock": "0px 0px",
+      "text": "Product Intake Plan Build Diffs Monitor Pricing Security Features Asks Agents Coding Sessions Customer Requests Insights Mobile Integrations Changelog Company About Customers Careers Blog Method Quality Brand Resources Switch Download Documentation Developers Status Enterprise Startups Connect Contact us Community X (Twitter) GitHub YouTube Privacy Terms DPA AUP",
+      "body": [],
+      "lists": [
+        {
+          "ordered": false,
+          "items": [
+            "Intake",
+            "Plan",
+            "Build",
+            "Diffs",
+            "Monitor",
+            "Pricing",
+            "Security"
+          ]
+        },
+        {
+          "ordered": false,
+          "items": [
+            "Asks",
+            "Agents",
+            "Coding Sessions",
+            "Customer Requests",
+            "Insights",
+            "Mobile",
+            "Integrations",
+            "Changelog"
+          ]
+        },
+        {
+          "ordered": false,
+          "items": [
+            "About",
+            "Customers",
+            "Careers",
+            "Blog",
+            "Method",
+            "Quality",
+            "Brand"
+          ]
+        },
+        {
+          "ordered": false,
+          "items": [
+            "Switch",
+            "Download",
+            "DocumentationDocs",
+            "Developers",
+            "Status",
+            "Enterprise",
+            "Startups"
+          ]
+        },
+        {
+          "ordered": false,
+          "items": [
+            "Contact us",
+            "Community",
+            "X (Twitter)",
+            "GitHub",
+            "YouTube"
+          ]
+        },
+        {
+          "ordered": false,
+          "items": [
+            "Privacy",
+            "Terms",
+            "DPA",
+            "AUP"
+          ]
+        }
+      ]
+    }
+  ],
+  "ctas": [
+    {
+      "label": "Product",
+      "href": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(138, 143, 152)",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "400",
+      "borderRadius": "9999px",
+      "padding": "0px 12px",
+      "boxShadow": "none"
+    },
+    {
+      "label": "Resources",
+      "href": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(138, 143, 152)",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "400",
+      "borderRadius": "9999px",
+      "padding": "0px 12px",
+      "boxShadow": "none"
+    },
+    {
+      "label": "Open app",
+      "href": "/login",
+      "bg": "rgb(229, 229, 230)",
+      "color": "rgb(8, 9, 10)",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "borderRadius": "9999px",
+      "padding": "0px 12px",
+      "boxShadow": "rgba(0, 0, 0, 0) 0px 8px 2px 0px, rgba(0, 0, 0, 0.01) 0px 5px 2px 0px, rgba(0, 0, 0, 0.04) 0px 3px 2px 0px, rgba(0, 0, 0, 0.07) 0px 1px 1px 0px, rgba(0, 0, 0, 0.08) 0px 0px 1px 0px"
+    },
+    {
+      "label": "Sign up",
+      "href": "/signup",
+      "bg": "rgb(229, 229, 230)",
+      "color": "rgb(8, 9, 10)",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "borderRadius": "9999px",
+      "padding": "0px 12px",
+      "boxShadow": "rgba(0, 0, 0, 0) 0px 8px 2px 0px, rgba(0, 0, 0, 0.01) 0px 5px 2px 0px, rgba(0, 0, 0, 0.04) 0px 3px 2px 0px, rgba(0, 0, 0, 0.07) 0px 1px 1px 0px, rgba(0, 0, 0, 0.08) 0px 0px 1px 0px"
+    },
+    {
+      "label": "Linear",
+      "href": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "400",
+      "borderRadius": "4px",
+      "padding": "0px 4px",
+      "boxShadow": "none"
+    },
+    {
+      "label": "Inbox",
+      "href": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(208, 214, 224)",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "borderRadius": "6px",
+      "padding": "0px 6px",
+      "boxShadow": "none"
+    },
+    {
+      "label": "My issues",
+      "href": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(208, 214, 224)",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "borderRadius": "6px",
+      "padding": "0px 6px",
+      "boxShadow": "none"
+    },
+    {
+      "label": "Reviews",
+      "href": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(208, 214, 224)",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "borderRadius": "6px",
+      "padding": "0px 6px",
+      "boxShadow": "none"
+    },
+    {
+      "label": "Pulse",
+      "href": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(208, 214, 224)",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "borderRadius": "6px",
+      "padding": "0px 6px",
+      "boxShadow": "none"
+    },
+    {
+      "label": "Workspace",
+      "href": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(98, 102, 109)",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "borderRadius": "6px",
+      "padding": "0px 6px 0px 4px",
+      "boxShadow": "none"
+    },
+    {
+      "label": "Initiatives",
+      "href": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(208, 214, 224)",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "borderRadius": "6px",
+      "padding": "0px 6px",
+      "boxShadow": "none"
+    },
+    {
+      "label": "Projects",
+      "href": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(208, 214, 224)",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "borderRadius": "6px",
+      "padding": "0px 6px",
+      "boxShadow": "none"
+    },
+    {
+      "label": "More",
+      "href": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(208, 214, 224)",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "borderRadius": "6px",
+      "padding": "0px 6px",
+      "boxShadow": "none"
+    },
+    {
+      "label": "Favorites",
+      "href": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(98, 102, 109)",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "borderRadius": "6px",
+      "padding": "0px 6px 0px 4px",
+      "boxShadow": "none"
+    },
+    {
+      "label": "Faster app launch",
+      "href": null,
+      "bg": "rgba(255, 255, 255, 0.04)",
+      "color": "rgb(208, 214, 224)",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "borderRadius": "6px",
+      "padding": "0px 6px",
+      "boxShadow": "none"
+    },
+    {
+      "label": "Agent tasks",
+      "href": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(208, 214, 224)",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "borderRadius": "6px",
+      "padding": "0px 6px",
+      "boxShadow": "none"
+    },
+    {
+      "label": "UI Refresh",
+      "href": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(208, 214, 224)",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "borderRadius": "6px",
+      "padding": "0px 6px",
+      "boxShadow": "none"
+    },
+    {
+      "label": "Agents Insights",
+      "href": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(208, 214, 224)",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "borderRadius": "6px",
+      "padding": "0px 6px",
+      "boxShadow": "none"
+    },
+    {
+      "label": "Performance",
+      "href": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(208, 214, 224)",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "borderRadius": "9999px",
+      "padding": "0px 10px 0px 5px",
+      "boxShadow": "none"
+    },
+    {
+      "label": "iOS",
+      "href": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(208, 214, 224)",
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontWeight": "510",
+      "borderRadius": "9999px",
+      "padding": "0px 10px 0px 5px",
+      "boxShadow": "none"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://linear.app/",
+      "internal": true,
+      "text": "Skip to content →"
+    },
+    {
+      "href": "https://linear.app/homepage",
+      "internal": true,
+      "text": ""
+    },
+    {
+      "href": "https://linear.app/customers",
+      "internal": true,
+      "text": "Customers"
+    },
+    {
+      "href": "https://linear.app/pricing",
+      "internal": true,
+      "text": "Pricing"
+    },
+    {
+      "href": "https://linear.app/now",
+      "internal": true,
+      "text": "Now"
+    },
+    {
+      "href": "https://linear.app/contact",
+      "internal": true,
+      "text": "Contact"
+    },
+    {
+      "href": "https://linear.app/docs",
+      "internal": true,
+      "text": "Docs"
+    },
+    {
+      "href": "https://linear.app/login",
+      "internal": true,
+      "text": "Open app"
+    },
+    {
+      "href": "https://linear.app/signup",
+      "internal": true,
+      "text": "Sign up"
+    },
+    {
+      "href": "https://linear.app/coding-sessions",
+      "internal": true,
+      "text": "NewCoding Sessions →"
+    },
+    {
+      "href": "https://linear.app/intake",
+      "internal": true,
+      "text": "1.0Intake→"
+    },
+    {
+      "href": "https://linear.app/plan",
+      "internal": true,
+      "text": "2.0Plan→"
+    },
+    {
+      "href": "https://linear.app/build",
+      "internal": true,
+      "text": "3.0Build→"
+    },
+    {
+      "href": "https://linear.app/diffs",
+      "internal": true,
+      "text": "4.0Diffs→"
+    },
+    {
+      "href": "https://linear.app/monitor",
+      "internal": true,
+      "text": "5.0Monitor→"
+    },
+    {
+      "href": "https://linear.app/changelog/2026-06-18-agent-assisted-project-updates",
+      "internal": true,
+      "text": "Agent assisted project updates Project and initiative update"
+    },
+    {
+      "href": "https://linear.app/changelog/2026-06-11-coding-sessions",
+      "internal": true,
+      "text": "Coding sessions in Linear Earlier this year, we launched Lin"
+    },
+    {
+      "href": "https://linear.app/changelog/2026-06-04-team-documents",
+      "internal": true,
+      "text": "Team documents Important team context doesn’t always belong "
+    },
+    {
+      "href": "https://linear.app/changelog/2026-05-27-linear-diffs",
+      "internal": true,
+      "text": "Linear Diffs Agents generate large volumes of code, but indi"
+    },
+    {
+      "href": "https://linear.app/changelog",
+      "internal": true,
+      "text": "View all →"
+    },
+    {
+      "href": "https://linear.app/customers/openai",
+      "internal": true,
+      "text": "You’ll probably build a better product, just because of the "
+    },
+    {
+      "href": "https://linear.app/customers/ramp",
+      "internal": true,
+      "text": "Our speed is intense and Linear helps us be action biased.Ni"
+    },
+    {
+      "href": "https://linear.app/customers/opendoor",
+      "internal": true,
+      "text": "Linear is excellent, just excellent. It has the right opinio"
+    },
+    {
+      "href": "https://linear.app/contact/sales",
+      "internal": true,
+      "text": "Contact sales"
+    },
+    {
+      "href": "https://linear.app/download",
+      "internal": true,
+      "text": "Download"
+    },
+    {
+      "href": "https://linear.app/security",
+      "internal": true,
+      "text": "Security"
+    },
+    {
+      "href": "https://linear.app/asks",
+      "internal": true,
+      "text": "Asks"
+    },
+    {
+      "href": "https://linear.app/agents",
+      "internal": true,
+      "text": "Agents"
+    },
+    {
+      "href": "https://linear.app/customer-requests",
+      "internal": true,
+      "text": "Customer Requests"
+    },
+    {
+      "href": "https://linear.app/insights",
+      "internal": true,
+      "text": "Insights"
+    },
+    {
+      "href": "https://linear.app/mobile",
+      "internal": true,
+      "text": "Mobile"
+    },
+    {
+      "href": "https://linear.app/integrations",
+      "internal": true,
+      "text": "Integrations"
+    },
+    {
+      "href": "https://linear.app/about",
+      "internal": true,
+      "text": "About"
+    },
+    {
+      "href": "https://linear.app/careers",
+      "internal": true,
+      "text": "Careers"
+    },
+    {
+      "href": "https://linear.app/blog",
+      "internal": true,
+      "text": "Blog"
+    },
+    {
+      "href": "https://linear.app/method",
+      "internal": true,
+      "text": "Method"
+    },
+    {
+      "href": "https://linear.app/quality",
+      "internal": true,
+      "text": "Quality"
+    },
+    {
+      "href": "https://linear.app/brand",
+      "internal": true,
+      "text": "Brand"
+    },
+    {
+      "href": "https://linear.app/switch",
+      "internal": true,
+      "text": "Switch"
+    },
+    {
+      "href": "https://linear.app/developers",
+      "internal": true,
+      "text": "Developers"
+    },
+    {
+      "href": "https://linearstatus.com/",
+      "internal": false,
+      "text": "Status"
+    },
+    {
+      "href": "https://linear.app/enterprise",
+      "internal": true,
+      "text": "Enterprise"
+    },
+    {
+      "href": "https://linear.app/startups",
+      "internal": true,
+      "text": "Startups"
+    },
+    {
+      "href": "https://linear.app/join-slack",
+      "internal": true,
+      "text": "Community"
+    },
+    {
+      "href": "https://x.com/linear",
+      "internal": false,
+      "text": "X (Twitter)"
+    },
+    {
+      "href": "https://github.com/linear",
+      "internal": false,
+      "text": "GitHub"
+    },
+    {
+      "href": "https://www.youtube.com/@linear",
+      "internal": false,
+      "text": "YouTube"
+    },
+    {
+      "href": "https://linear.app/privacy",
+      "internal": true,
+      "text": "Privacy"
+    },
+    {
+      "href": "https://linear.app/terms",
+      "internal": true,
+      "text": "Terms"
+    },
+    {
+      "href": "https://linear.app/dpa",
+      "internal": true,
+      "text": "DPA"
+    },
+    {
+      "href": "https://linear.app/legal/aup",
+      "internal": true,
+      "text": "AUP"
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/c7b144b7-4ef0-4991-9bcb-617c6a37d200/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "",
+        "w": 1062,
+        "h": 493
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/6600ca96-e49b-4fd9-c03a-7979faddad00/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/c7fa8f5f-d439-4329-6a65-de549b51e300/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "",
+        "w": 6304,
+        "h": 3520
+      },
+      {
+        "src": "https://webassets.linear.app/images/ornj730p/production/f79251b06e9edeeacbf2875384defe629e000b3c-352x352.png?w=72&q=95&auto=format&dpr=2",
+        "alt": "Avatar of Karri",
+        "w": 144,
+        "h": 144
+      },
+      {
+        "src": "https://webassets.linear.app/images/ornj730p/production/f79251b06e9edeeacbf2875384defe629e000b3c-352x352.png?w=72&q=95&auto=format&dpr=2",
+        "alt": "Avatar of Karri",
+        "w": 144,
+        "h": 144
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/f28b59f4-538c-4517-cfd7-510913015200/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "",
+        "w": 64,
+        "h": 64
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/c2f6447a-d507-43c1-f3ab-3f2c6fbceb00/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "",
+        "w": 64,
+        "h": 64
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/c2f6447a-d507-43c1-f3ab-3f2c6fbceb00/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "",
+        "w": 64,
+        "h": 64
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/f28b59f4-538c-4517-cfd7-510913015200/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "",
+        "w": 64,
+        "h": 64
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/f28b59f4-538c-4517-cfd7-510913015200/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "",
+        "w": 64,
+        "h": 64
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/c2f6447a-d507-43c1-f3ab-3f2c6fbceb00/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "Codex",
+        "w": 64,
+        "h": 64
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/086b510a-f5da-414b-bc9d-228afb968600/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "",
+        "w": 56,
+        "h": 56
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/302b16a5-f9ca-42f2-dbae-3c76f19b2d00/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "",
+        "w": 56,
+        "h": 56
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/1eb8f8b2-3593-473f-ba8a-acac99aa0300/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "",
+        "w": 56,
+        "h": 56
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/6550520e-9e50-441d-b9e8-579be321f900/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "",
+        "w": 56,
+        "h": 56
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/4d3381aa-fb2f-4d3d-1a06-957fc616d400/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "",
+        "w": 56,
+        "h": 56
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/7ea107e7-c1a0-4c99-756d-5837fd91f200/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "",
+        "w": 56,
+        "h": 56
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/c8aeedda-7726-4a4f-226a-f573f85d8d00/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "didier",
+        "w": 512,
+        "h": 512
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/580cd9c0-2770-4fe4-1ad2-95c76fc6f000/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "lena",
+        "w": 192,
+        "h": 192
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/c8aeedda-7726-4a4f-226a-f573f85d8d00/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "didier",
+        "w": 512,
+        "h": 512
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/22210a73-581d-42db-d42a-bf2907860300/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "andreas",
+        "w": 144,
+        "h": 144
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/7d7115d9-a0eb-4a92-5900-3ca3ee077d00/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/584d7dbd-ff4a-41bb-4fab-74fd5217a400/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/13a0909f-186f-4d83-3fd3-d04883ec2d00/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "Codex",
+        "w": 96,
+        "h": 96
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/13a0909f-186f-4d83-3fd3-d04883ec2d00/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "Codex",
+        "w": 96,
+        "h": 96
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/e408d7c9-e3a3-4802-e4d4-51ed197c3a00/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "Steven",
+        "w": 96,
+        "h": 96
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/a482eab9-69d1-412f-f2ce-8f72444fcb00/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "Ema",
+        "w": 96,
+        "h": 96
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/f9ed2721-1966-4abc-129b-93aaac1a6200/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "GitHub Copilot",
+        "w": 96,
+        "h": 96
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/5a228df7-2423-4807-6105-cd32ddddde00/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "Cursor",
+        "w": 64,
+        "h": 64
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/229693cb-2eda-40d1-ba64-ce6762435200/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "Meg",
+        "w": 64,
+        "h": 64
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/c16152f3-a36c-468e-89ae-f87c2f244d00/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "src": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/33ec1482-c0b8-402e-d67e-c4902a71ee00/f=auto,dpr=2,fit=scale-down,metadata=none",
+        "alt": "",
+        "w": 0,
+        "h": 0
+      }
+    ],
+    "svgCount": 183,
+    "videos": [],
+    "cssBackgrounds": [
+      {
+        "urls": [
+          "https://static.linear.app/static/grain-default.png"
+        ],
+        "w": 1318,
+        "h": 718,
+        "size": "256px 256px",
+        "position": "0% 0%"
+      },
+      {
+        "urls": [
+          "https://static.linear.app/static/grain-default.png"
+        ],
+        "w": 1068,
+        "h": 700,
+        "size": "256px 256px",
+        "position": "0% 0%"
+      },
+      {
+        "urls": [
+          "https://static.linear.app/static/grain-default.png"
+        ],
+        "w": 1460,
+        "h": 607,
+        "size": "256px 256px",
+        "position": "0% 0%"
+      },
+      {
+        "urls": [
+          "%23a"
+        ],
+        "w": 480,
+        "h": 573,
+        "size": "1280px 832px",
+        "position": "-200px -2813.72px"
+      },
+      {
+        "urls": [
+          "https://static.linear.app/static/grain-default.png"
+        ],
+        "w": 478,
+        "h": 571,
+        "size": "256px 256px",
+        "position": "0% 0%"
+      },
+      {
+        "urls": [
+          "https://static.linear.app/static/grain-default.png"
+        ],
+        "w": 1326,
+        "h": 599,
+        "size": "256px 256px",
+        "position": "0% 0%"
+      },
+      {
+        "urls": [
+          "%23a"
+        ],
+        "w": 400,
+        "h": 463,
+        "size": "1280px 832px",
+        "position": "-200px -4146.44px"
+      },
+      {
+        "urls": [
+          "https://static.linear.app/static/grain-default.png"
+        ],
+        "w": 398,
+        "h": 461,
+        "size": "256px 256px",
+        "position": "0% 0%"
+      },
+      {
+        "urls": [
+          "https://static.linear.app/static/grain-default.png"
+        ],
+        "w": 1324,
+        "h": 527,
+        "size": "256px 256px",
+        "position": "0% 0%"
+      },
+      {
+        "urls": [
+          "%23a"
+        ],
+        "w": 560,
+        "h": 424,
+        "size": "1280px 832px",
+        "position": "112% -5308.16px"
+      },
+      {
+        "urls": [
+          "https://static.linear.app/static/grain-default.png"
+        ],
+        "w": 558,
+        "h": 422,
+        "size": "256px 256px",
+        "position": "0% 0%"
+      },
+      {
+        "urls": [
+          "https://static.linear.app/static/grain-default.png"
+        ],
+        "w": 1324,
+        "h": 564,
+        "size": "256px 256px",
+        "position": "0% 0%"
+      },
+      {
+        "urls": [
+          "https://static.linear.app/static/grain-default.png"
+        ],
+        "w": 1440,
+        "h": 579,
+        "size": "256px 256px",
+        "position": "0% 0%"
+      },
+      {
+        "urls": [
+          "%23a"
+        ],
+        "w": 520,
+        "h": 523,
+        "size": "1280px 832px",
+        "position": "-200px -7570.59px"
+      },
+      {
+        "urls": [
+          "https://static.linear.app/static/grain-default.png"
+        ],
+        "w": 518,
+        "h": 521,
+        "size": "256px 256px",
+        "position": "0% 0%"
+      }
+    ]
+  },
+  "cssVars": [
+    {
+      "name": "--btn-overlay-shadow-hover",
+      "value": "none"
+    },
+    {
+      "name": "--x1cxqmhc",
+      "value": ""
+    },
+    {
+      "name": "--x15hezws",
+      "value": "transparent"
+    },
+    {
+      "name": "--zoom-in",
+      "value": "default"
+    },
+    {
+      "name": "--font-variations",
+      "value": "\"opsz\" auto"
+    },
+    {
+      "name": "--x1wu6xkv",
+      "value": "12px"
+    },
+    {
+      "name": "--xd1bcc1",
+      "value": ""
+    },
+    {
+      "name": "--title-1-line-height",
+      "value": "1.4"
+    },
+    {
+      "name": "--text-micro-size",
+      "value": "0.75rem"
+    },
+    {
+      "name": "--font-size-title1",
+      "value": "2.25rem"
+    },
+    {
+      "name": "--sx-1ijrdvx",
+      "value": "#ff8849"
+    },
+    {
+      "name": "--sx-1uv3w6h",
+      "value": "#2c2d32"
+    },
+    {
+      "name": "--title-3-letter-spacing",
+      "value": "-0.012em"
+    },
+    {
+      "name": "--editor-block-menu-size",
+      "value": "20px"
+    },
+    {
+      "name": "--xn768d",
+      "value": "100%"
+    },
+    {
+      "name": "--speed-highlightFadeOut",
+      "value": "0.15s"
+    },
+    {
+      "name": "--xkthb5v",
+      "value": ""
+    },
+    {
+      "name": "--diff-view-editor-font-size",
+      "value": ""
+    },
+    {
+      "name": "--sx-138kmyo",
+      "value": "#424449"
+    },
+    {
+      "name": "--xaxo4ug",
+      "value": ""
+    },
+    {
+      "name": "--sx-1mc3c6y",
+      "value": "#1e2022"
+    },
+    {
+      "name": "--scrollbar-size-active",
+      "value": "10px"
+    },
+    {
+      "name": "--color-text-tertiary",
+      "value": "#8a8f98"
+    },
+    {
+      "name": "--cursor-disabled",
+      "value": "not-allowed"
+    },
+    {
+      "name": "--xq9soxx",
+      "value": ""
+    },
+    {
+      "name": "--x1fphd1n",
+      "value": ""
+    },
+    {
+      "name": "--layer-tooltip",
+      "value": "1100"
+    },
+    {
+      "name": "--font-emoji",
+      "value": "\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Segoe UI\",\"Twemoji Mozilla\",\"Noto Color Emoji\",\"Android Emoji\""
+    },
+    {
+      "name": "--ease-in-out-quart",
+      "value": "cubic-bezier(0.77,0,0.175,1)"
+    },
+    {
+      "name": "--x5igtf4",
+      "value": ""
+    },
+    {
+      "name": "--x7ide1",
+      "value": ""
+    },
+    {
+      "name": "--text-regular-size",
+      "value": "0.9375rem"
+    },
+    {
+      "name": "--font-size-miniPlus",
+      "value": "0.75rem"
+    },
+    {
+      "name": "--text-regular-letter-spacing",
+      "value": "-0.011em"
+    },
+    {
+      "name": "--sx-vatjr0",
+      "value": "#34353a"
+    },
+    {
+      "name": "--x1mc3c6y",
+      "value": ""
+    },
+    {
+      "name": "--x1ikf7kw",
+      "value": ""
+    },
+    {
+      "name": "--editor-block-spacing-small",
+      "value": "calc(0.375 * 1rem)"
+    },
+    {
+      "name": "--sx-tw6awd",
+      "value": "#ffe7de"
+    },
+    {
+      "name": "--x1gm0lru",
+      "value": ""
+    },
+    {
+      "name": "--font-size-microPlus",
+      "value": "0.6875rem"
+    },
+    {
+      "name": "--shadow-low",
+      "value": "0px 2px 4px rgba(0,0,0,0.1)"
+    },
+    {
+      "name": "--x1jffjrl",
+      "value": ""
+    },
+    {
+      "name": "--color-white",
+      "value": "#fff"
+    },
+    {
+      "name": "--sx-kthb5v",
+      "value": "#6c76e0"
+    },
+    {
+      "name": "--sx-183dfpr",
+      "value": "#ff9958"
+    },
+    {
+      "name": "--text-tiny",
+      "value": "0.625rem /1.5 \"Inter Variable\",\"SF Pro Display\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Roboto\",\"Oxygen\",\"Ubuntu\",\"Cantarell\",\"Open Sans\",\"Helvetica Neue\",sans-serif"
+    },
+    {
+      "name": "--text-small-line-height",
+      "value": "calc(21 / 14)"
+    },
+    {
+      "name": "--x35jz1e",
+      "value": ""
+    },
+    {
+      "name": "--ease-in-out-circ",
+      "value": "cubic-bezier(0.785,0.135,0.15,0.86)"
+    },
+    {
+      "name": "--title-7",
+      "value": "590 3.5rem /1.1 \"Inter Variable\",\"SF Pro Display\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Roboto\",\"Oxygen\",\"Ubuntu\",\"Cantarell\",\"Open Sans\",\"Helvetica Neue\",sans-serif"
+    },
+    {
+      "name": "--x8gevfv",
+      "value": ""
+    },
+    {
+      "name": "--speed-quickTransition",
+      "value": "0.1s"
+    },
+    {
+      "name": "--sx-jw5zf4",
+      "value": "#39b350"
+    },
+    {
+      "name": "--text-large",
+      "value": "1.0625rem /1.6 \"Inter Variable\",\"SF Pro Display\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Roboto\",\"Oxygen\",\"Ubuntu\",\"Cantarell\",\"Open Sans\",\"Helvetica Neue\",sans-serif"
+    },
+    {
+      "name": "--xkbzynh",
+      "value": "transparent"
+    },
+    {
+      "name": "--title-7-size",
+      "value": "3.5rem"
+    },
+    {
+      "name": "--sx-pqiwo2",
+      "value": "#373a56"
+    },
+    {
+      "name": "--x13kjjc4",
+      "value": ""
+    },
+    {
+      "name": "--title-1",
+      "value": "590 1.0625rem /1.4 \"Inter Variable\",\"SF Pro Display\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Roboto\",\"Oxygen\",\"Ubuntu\",\"Cantarell\",\"Open Sans\",\"Helvetica Neue\",sans-serif"
+    },
+    {
+      "name": "--xds2y8i",
+      "value": "5px"
+    },
+    {
+      "name": "--dp-label-muted",
+      "value": ""
+    },
+    {
+      "name": "--x1ele6il",
+      "value": ""
+    },
+    {
+      "name": "--color-border-translucent",
+      "value": "rgba(255,255,255,0.05)"
+    },
+    {
+      "name": "--text-small-size",
+      "value": "0.875rem"
+    },
+    {
+      "name": "--xw1p5jj",
+      "value": ""
+    },
+    {
+      "name": "--x1hz3utq",
+      "value": ""
+    },
+    {
+      "name": "--color-bg-level-3",
+      "value": "#191a1b"
+    },
+    {
+      "name": "--x1urpf9d",
+      "value": ""
+    },
+    {
+      "name": "--editor-text-color",
+      "value": "#e4e5e9"
+    },
+    {
+      "name": "--transparent",
+      "value": "rgba(255,255,255,0)"
+    },
+    {
+      "name": "--layer-2",
+      "value": "2"
+    },
+    {
+      "name": "--page-padding-block",
+      "value": "64px"
+    },
+    {
+      "name": "--editor-bullet-disc-offset",
+      "value": "0.5em"
+    },
+    {
+      "name": "--sx-6zt3z6",
+      "value": "1px solid #323439"
+    },
+    {
+      "name": "--radius-rounded",
+      "value": "9999px"
+    },
+    {
+      "name": "--xcx2ark",
+      "value": ""
+    },
+    {
+      "name": "--sx-1fh23cp",
+      "value": "#9c9da1"
+    },
+    {
+      "name": "--xohseg1",
+      "value": ""
+    },
+    {
+      "name": "--xtw6awd",
+      "value": ""
+    },
+    {
+      "name": "--xx7veac",
+      "value": "transparent"
+    },
+    {
+      "name": "--xickszr",
+      "value": ""
+    },
+    {
+      "name": "--sx-1vyp3gc",
+      "value": "#ffeac6"
+    },
+    {
+      "name": "--action-menu-item-bg-focus",
+      "value": ""
+    },
+    {
+      "name": "--x1yxqotz",
+      "value": ""
+    },
+    {
+      "name": "--x1m4y240",
+      "value": ""
+    },
+    {
+      "name": "--radius-circle",
+      "value": "50%"
+    },
+    {
+      "name": "--x7jk47a",
+      "value": ""
+    },
+    {
+      "name": "--x1yqbkz7",
+      "value": "1"
+    },
+    {
+      "name": "--_number-flow-d",
+      "value": "0"
+    },
+    {
+      "name": "--radius-8",
+      "value": "8px"
+    },
+    {
+      "name": "--sx-ay0skx",
+      "value": "#fefeff"
+    },
+    {
+      "name": "--x16hn3q3",
+      "value": ""
+    },
+    {
+      "name": "--radius-12",
+      "value": "12px"
+    },
+    {
+      "name": "--sx-or1tl7",
+      "value": "#55ccff"
+    },
+    {
+      "name": "--sx-ys2i3t",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--vp-chapters-mask",
+      "value": "none"
+    },
+    {
+      "name": "--x1gakdvt",
+      "value": ""
+    },
+    {
+      "name": "--sx-umgfby",
+      "value": "0 1px 1px inset #00000011, 0 1px 3px inset #00000011, 0 2px 5px inset #00000019"
+    },
+    {
+      "name": "--text-micro-letter-spacing",
+      "value": "0"
+    },
+    {
+      "name": "--xjw5zf4",
+      "value": ""
+    },
+    {
+      "name": "--xbpgheo",
+      "value": ""
+    },
+    {
+      "name": "--sx-1rzu7x2",
+      "value": "#626366"
+    },
+    {
+      "name": "--x1s7kw6p",
+      "value": "transparent"
+    },
+    {
+      "name": "--btn-overlay-shadow",
+      "value": "none"
+    },
+    {
+      "name": "--x11lpf43",
+      "value": "0.8125rem"
+    },
+    {
+      "name": "--title-6-letter-spacing",
+      "value": "-0.022em"
+    },
+    {
+      "name": "--color-border-secondary",
+      "value": "#34343a"
+    },
+    {
+      "name": "--ease-out-circ",
+      "value": "cubic-bezier(0.075,0.82,0.165,1)"
+    },
+    {
+      "name": "--ease-out-quint",
+      "value": "cubic-bezier(0.23,1,0.32,1)"
+    },
+    {
+      "name": "--sx-1n1r1h9",
+      "value": "#ffffff0d"
+    },
+    {
+      "name": "--title-5",
+      "value": "590 2.5rem /1.1 \"Inter Variable\",\"SF Pro Display\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Roboto\",\"Oxygen\",\"Ubuntu\",\"Cantarell\",\"Open Sans\",\"Helvetica Neue\",sans-serif"
+    },
+    {
+      "name": "--sx-1cxqmhc",
+      "value": "#00e8ff"
+    },
+    {
+      "name": "--btn-group-divider-width",
+      "value": "1px"
+    },
+    {
+      "name": "--1fr",
+      "value": "minmax(0,1fr)"
+    },
+    {
+      "name": "--sx-5t1vcl",
+      "value": "#00ceff"
+    },
+    {
+      "name": "--xirmyh9",
+      "value": ""
+    },
+    {
+      "name": "--sx-2icmlu",
+      "value": "#08080826"
+    },
+    {
+      "name": "--sx-cx2ark",
+      "value": "#37393e"
+    },
+    {
+      "name": "--title-6",
+      "value": "590 3rem /1 \"Inter Variable\",\"SF Pro Display\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Roboto\",\"Oxygen\",\"Ubuntu\",\"Cantarell\",\"Open Sans\",\"Helvetica Neue\",sans-serif"
+    },
+    {
+      "name": "--btn-highlight-bg",
+      "value": "transparent"
+    },
+    {
+      "name": "--x1qdowq0",
+      "value": ""
+    },
+    {
+      "name": "--color-accent-hover",
+      "value": "#828fff"
+    },
+    {
+      "name": "--dvh",
+      "value": "1dvh"
+    },
+    {
+      "name": "--xykavoc",
+      "value": "5px"
+    },
+    {
+      "name": "--xn8xqcl",
+      "value": ""
+    },
+    {
+      "name": "--font-regular",
+      "value": "\"Inter Variable\",\"SF Pro Display\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Roboto\",\"Oxygen\",\"Ubuntu\",\"Cantarell\",\"Open Sans\",\"Helvetica Neue\",sans-serif"
+    },
+    {
+      "name": "--sx-1h56kua",
+      "value": "#f0bf00"
+    },
+    {
+      "name": "--title-9-letter-spacing",
+      "value": "-0.022em"
+    },
+    {
+      "name": "--sx-1rsaf4u",
+      "value": "#2a2d48"
+    },
+    {
+      "name": "--rounded-full",
+      "value": "9999px"
+    },
+    {
+      "name": "--xkwfvdu",
+      "value": ""
+    },
+    {
+      "name": "--sx-35jz1e",
+      "value": "#3c3f5c"
+    },
+    {
+      "name": "--100svh",
+      "value": "calc(100 * 1svh)"
+    },
+    {
+      "name": "--xy7jo44",
+      "value": ""
+    },
+    {
+      "name": "--sx-10lzhmx",
+      "value": "0px 4px 4px -1px #0000000a, 0px 1px 1px 0px #00000014"
+    },
+    {
+      "name": "--xot17o6",
+      "value": ""
+    },
+    {
+      "name": "--xtwzhyf",
+      "value": "4px"
+    },
+    {
+      "name": "--x1umwnkk",
+      "value": "\"Berkeley Mono\",\"SFMono Regular\",Consolas,\"Liberation Mono\",Menlo,Courier,monospace"
+    },
+    {
+      "name": "--color-border-tertiary",
+      "value": "#3e3e44"
+    },
+    {
+      "name": "--x1ps2i54",
+      "value": ""
+    },
+    {
+      "name": "--sx-k68kma",
+      "value": "#37393e"
+    },
+    {
+      "name": "--title-3-line-height",
+      "value": "1.33"
+    },
+    {
+      "name": "--x1rnpv0l",
+      "value": ""
+    },
+    {
+      "name": "--xciqj87",
+      "value": ""
+    },
+    {
+      "name": "--cursor-none",
+      "value": "none"
+    },
+    {
+      "name": "--sx-ykavoc",
+      "value": "8px"
+    },
+    {
+      "name": "--color-button-invert-bg-hover",
+      "value": "#fff"
+    },
+    {
+      "name": "--color-button-invert-bg",
+      "value": "#e5e5e6"
+    },
+    {
+      "name": "--sx-v3o8qy",
+      "value": "#636467"
+    },
+    {
+      "name": "--scrollbar-width",
+      "value": "12px"
+    },
+    {
+      "name": "--x1edn6di",
+      "value": ""
+    },
+    {
+      "name": "--btn-group-divider-color-hover",
+      "value": "transparent"
+    },
+    {
+      "name": "--mask-visible",
+      "value": "black"
+    },
+    {
+      "name": "--sx-d29rh7",
+      "value": "#28292e"
+    },
+    {
+      "name": "--xx8afrf",
+      "value": "6px"
+    },
+    {
+      "name": "--x2icmlu",
+      "value": ""
+    },
+    {
+      "name": "--color-fg-quaternary",
+      "value": "#62666d"
+    },
+    {
+      "name": "--x1ltkoa",
+      "value": ""
+    },
+    {
+      "name": "--color-overlay-primary",
+      "value": "rgba(0,0,0,0.85)"
+    },
+    {
+      "name": "--sx-13m9wh7",
+      "value": "#007def"
+    },
+    {
+      "name": "--xumgfby",
+      "value": ""
+    },
+    {
+      "name": "--x105wzx7",
+      "value": ""
+    },
+    {
+      "name": "--sx-13kjjc4",
+      "value": "#38393d"
+    },
+    {
+      "name": "--dp-control-primary",
+      "value": ""
+    },
+    {
+      "name": "--title-8-size",
+      "value": "4rem"
+    },
+    {
+      "name": "--text-micro-line-height",
+      "value": "1.4"
+    },
+    {
+      "name": "--sx-1q6smeb",
+      "value": "#ff6565"
+    },
+    {
+      "name": "--btn-group-divider-color",
+      "value": "transparent"
+    },
+    {
+      "name": "--svh",
+      "value": "1svh"
+    },
+    {
+      "name": "--xnihqbq",
+      "value": ""
+    },
+    {
+      "name": "--ease-in-quint",
+      "value": "cubic-bezier(0.755,0.05,0.855,0.06)"
+    },
+    {
+      "name": "--sx-c3gk8m",
+      "value": "0 0 0 1px #5e69d1"
+    },
+    {
+      "name": "--sx-16hn3q3",
+      "value": "#292a2e"
+    },
+    {
+      "name": "--btn-highlight-color",
+      "value": ""
+    },
+    {
+      "name": "--x129bhjt",
+      "value": ""
+    },
+    {
+      "name": "--speed-highlightFadeIn",
+      "value": "0s"
+    },
+    {
+      "name": "--dp-label-title",
+      "value": ""
+    },
+    {
+      "name": "--text-tiny-line-height",
+      "value": "1.5"
+    },
+    {
+      "name": "--x1crf4sx",
+      "value": ""
+    },
+    {
+      "name": "--sx-1xaoi8i",
+      "value": "#7a88ff"
+    },
+    {
+      "name": "--color-border-primary",
+      "value": "#23252a"
+    },
+    {
+      "name": "--sx-d1bcc1",
+      "value": "#08080826"
+    },
+    {
+      "name": "--font-size-largePlus",
+      "value": "1.125rem"
+    },
+    {
+      "name": "--homepage-max-width",
+      "value": "calc(1344px + 46px * 2)"
+    },
+    {
+      "name": "--mask-off",
+      "value": "transparent"
+    },
+    {
+      "name": "--diff-view-comment-button-removed-bg-hover",
+      "value": ""
+    },
+    {
+      "name": "--x1gxylln",
+      "value": ""
+    },
+    {
+      "name": "--sx-3zwjav",
+      "value": "#e4e5e9"
+    },
+    {
+      "name": "--mask-on",
+      "value": "black"
+    },
+    {
+      "name": "--x91u3ar",
+      "value": ""
+    },
+    {
+      "name": "--font-size-smallPlus",
+      "value": "0.8125rem"
+    },
+    {
+      "name": "--xgauayi",
+      "value": ""
+    },
+    {
+      "name": "--header-blur",
+      "value": "20px"
+    },
+    {
+      "name": "--title-8-line-height",
+      "value": "1.06"
+    },
+    {
+      "name": "--sx-8gevfv",
+      "value": "#43bc58"
+    },
+    {
+      "name": "--text-regular-line-height",
+      "value": "1.6"
+    },
+    {
+      "name": "--xpuww38",
+      "value": ""
+    },
+    {
+      "name": "--xvatjr0",
+      "value": ""
+    },
+    {
+      "name": "--xbf3q0r",
+      "value": "0%"
+    },
+    {
+      "name": "--x1h56kua",
+      "value": ""
+    },
+    {
+      "name": "--text-small",
+      "value": "0.875rem /calc(21 / 14) \"Inter Variable\",\"SF Pro Display\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Roboto\",\"Oxygen\",\"Ubuntu\",\"Cantarell\",\"Open Sans\",\"Helvetica Neue\",sans-serif"
+    },
+    {
+      "name": "--prose-max-width",
+      "value": "624px"
+    },
+    {
+      "name": "--sx-6od1kq",
+      "value": "#dbffff"
+    },
+    {
+      "name": "--x10o0rs5",
+      "value": ""
+    },
+    {
+      "name": "--x1glqxor",
+      "value": ""
+    },
+    {
+      "name": "--x1gcjx5j",
+      "value": ""
+    },
+    {
+      "name": "--x74qs5",
+      "value": ""
+    },
+    {
+      "name": "--color-link-primary",
+      "value": "#828fff"
+    },
+    {
+      "name": "--sx-ws85c5",
+      "value": "#fcfaff"
+    },
+    {
+      "name": "--sx-1qdowq0",
+      "value": "#00000066"
+    },
+    {
+      "name": "--sx-15wwovl",
+      "value": "#303136"
+    },
+    {
+      "name": "--sx-6ayg1n",
+      "value": "#2c2e34"
+    },
+    {
+      "name": "--color-line-tint",
+      "value": "#141516"
+    },
+    {
+      "name": "--color-green",
+      "value": "#27a644"
+    },
+    {
+      "name": "--sx-ikq9iy",
+      "value": "#322122"
+    },
+    {
+      "name": "--xas9fd0",
+      "value": ""
+    },
+    {
+      "name": "--xk68kma",
+      "value": ""
+    },
+    {
+      "name": "--xnnhj77",
+      "value": ""
+    },
+    {
+      "name": "--layer-max",
+      "value": "10000"
+    },
+    {
+      "name": "--dp-label-base",
+      "value": ""
+    },
+    {
+      "name": "--xwsz0k3",
+      "value": ""
+    },
+    {
+      "name": "--ease-out-expo",
+      "value": "cubic-bezier(0.19,1,0.22,1)"
+    },
+    {
+      "name": "--sx-g52i5g",
+      "value": "#1c1f24"
+    },
+    {
+      "name": "--title-7-letter-spacing",
+      "value": "-0.022em"
+    },
+    {
+      "name": "--sx-9o00jb",
+      "value": "#00c6d9"
+    },
+    {
+      "name": "--_number-flow-d-width",
+      "value": "0"
+    },
+    {
+      "name": "--radius-24",
+      "value": "24px"
+    },
+    {
+      "name": "--x19k7np8",
+      "value": "1"
+    },
+    {
+      "name": "--mask-invisible",
+      "value": "transparent"
+    },
+    {
+      "name": "--color-text-primary",
+      "value": "#f7f8f8"
+    },
+    {
+      "name": "--xi20l48",
+      "value": ""
+    },
+    {
+      "name": "--layer-dialog",
+      "value": "700"
+    },
+    {
+      "name": "--diff-view-editor-line-height",
+      "value": ""
+    },
+    {
+      "name": "--xg52i5g",
+      "value": ""
+    },
+    {
+      "name": "--x10845vo",
+      "value": ""
+    },
+    {
+      "name": "--xhfmm6c",
+      "value": ""
+    },
+    {
+      "name": "--radius-4",
+      "value": "4px"
+    },
+    {
+      "name": "--xwc5opx",
+      "value": "opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94)"
+    },
+    {
+      "name": "--diff-view-removed-inline-bg",
+      "value": ""
+    },
+    {
+      "name": "--radius-6",
+      "value": "6px"
+    },
+    {
+      "name": "--sx-1k7nh0l",
+      "value": "#fffaa6"
+    },
+    {
+      "name": "--color-brand-bg",
+      "value": "#5e6ad2"
+    },
+    {
+      "name": "--button-tab-border",
+      "value": "transparent"
+    },
+    {
+      "name": "--radius-16",
+      "value": "16px"
+    },
+    {
+      "name": "--title-1-size",
+      "value": "1.0625rem"
+    },
+    {
+      "name": "--x1k7v50d",
+      "value": ""
+    },
+    {
+      "name": "--editor-block-menu-offset",
+      "value": "28px"
+    },
+    {
+      "name": "--shadow-medium",
+      "value": "0px 4px 24px rgba(0,0,0,0.2)"
+    },
+    {
+      "name": "--xea5pml",
+      "value": "rgba(255,255,255,0.25)"
+    },
+    {
+      "name": "--speed-regularTransition",
+      "value": "0.25s"
+    },
+    {
+      "name": "--color-bg-marketing",
+      "value": "#010102"
+    },
+    {
+      "name": "--modal-dp-control-primary-hover",
+      "value": ""
+    },
+    {
+      "name": "--diff-view-inline-highlight-padding-block",
+      "value": ""
+    },
+    {
+      "name": "--color-linear-security",
+      "value": "#7a7fad"
+    },
+    {
+      "name": "--x1stx5uy",
+      "value": ""
+    },
+    {
+      "name": "--x133wec9",
+      "value": ""
+    },
+    {
+      "name": "--x6zt3z6",
+      "value": ""
+    },
+    {
+      "name": "--color-bg-panel",
+      "value": "#0f1011"
+    },
+    {
+      "name": "--sx-142jeir",
+      "value": "#323439"
+    },
+    {
+      "name": "--cursor-pointer",
+      "value": "pointer"
+    },
+    {
+      "name": "--scrollbar-color-active",
+      "value": "rgba(255,255,255,0.4)"
+    },
+    {
+      "name": "--color-bg-tint",
+      "value": "#141516"
+    },
+    {
+      "name": "--font-size-title3",
+      "value": "1.25rem"
+    },
+    {
+      "name": "--editor-safe-area",
+      "value": "16px"
+    },
+    {
+      "name": "--header-border",
+      "value": "rgba(255,255,255,0.08)"
+    },
+    {
+      "name": "--x1q6smeb",
+      "value": ""
+    },
+    {
+      "name": "--ease-in-out-quad",
+      "value": "cubic-bezier(0.455,0.03,0.515,0.955)"
+    },
+    {
+      "name": "--icon-grayscale-image-filter",
+      "value": "grayscale(100%) brightness(400%)"
+    },
+    {
+      "name": "--x1a798ef",
+      "value": "6px"
+    },
+    {
+      "name": "--diff-view-focus-bg",
+      "value": ""
+    },
+    {
+      "name": "--focus-ring-width",
+      "value": "1px"
+    },
+    {
+      "name": "--sx-1yxqotz",
+      "value": "#5e6ad2"
+    },
+    {
+      "name": "--border-hairline",
+      "value": "0.5px"
+    },
+    {
+      "name": "--title-7-line-height",
+      "value": "1.1"
+    },
+    {
+      "name": "--xb9djef",
+      "value": "transparent"
+    },
+    {
+      "name": "--color-bg-level-2",
+      "value": "#141516"
+    },
+    {
+      "name": "--dp-font-size-small",
+      "value": "0.8125rem"
+    },
+    {
+      "name": "--editor-block-spacing",
+      "value": "1rem"
+    },
+    {
+      "name": "--shadow-stack-low",
+      "value": "0px 8px 2px 0px rgba(0,0,0,0),0px 5px 2px 0px rgba(0,0,0,0.01),0px 3px 2px 0px rgba(0,0,0,0.04),0px 1px 1px 0px rgba(0,0,0,0.07),0px 0px 1px 0px rgba(0,0,0,0.08)"
+    },
+    {
+      "name": "--text-tiny-size",
+      "value": "0.625rem"
+    },
+    {
+      "name": "--diff-view-git-deleted-fg",
+      "value": ""
+    },
+    {
+      "name": "--xfeitbp",
+      "value": ""
+    },
+    {
+      "name": "--focus-ring-color",
+      "value": "#5e69d1"
+    },
+    {
+      "name": "--x1vqca58",
+      "value": ""
+    },
+    {
+      "name": "--title-5-line-height",
+      "value": "1.1"
+    },
+    {
+      "name": "--color-indigo",
+      "value": "#5e6ad2"
+    },
+    {
+      "name": "--font-size-regular",
+      "value": "0.9375rem"
+    },
+    {
+      "name": "--ease-in-expo",
+      "value": "cubic-bezier(0.95,0.05,0.795,0.035)"
+    },
+    {
+      "name": "--layer-context-menu",
+      "value": "1200"
+    },
+    {
+      "name": "--ease-in-cubic",
+      "value": "cubic-bezier(0.55,0.055,0.675,0.19)"
+    },
+    {
+      "name": "--x1ijrdvx",
+      "value": ""
+    },
+    {
+      "name": "--x1em7oyp",
+      "value": ""
+    },
+    {
+      "name": "--title-4",
+      "value": "590 2rem /1.125 \"Inter Variable\",\"SF Pro Display\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Roboto\",\"Oxygen\",\"Ubuntu\",\"Cantarell\",\"Open Sans\",\"Helvetica Neue\",sans-serif"
+    },
+    {
+      "name": "--color-border-translucent-strong",
+      "value": "rgba(255,255,255,0.08)"
+    },
+    {
+      "name": "--diff-view-editor-background",
+      "value": ""
+    },
+    {
+      "name": "--sx-17ckey5",
+      "value": "#ff5d5e"
+    },
+    {
+      "name": "--font-weight-medium",
+      "value": "510"
+    },
+    {
+      "name": "--sx-74qs5",
+      "value": "#00000001"
+    },
+    {
+      "name": "--font-weight-normal",
+      "value": "400"
+    },
+    {
+      "name": "--xc3gk8m",
+      "value": ""
+    },
+    {
+      "name": "--x1ospiv4",
+      "value": ""
+    },
+    {
+      "name": "--mask-ease",
+      "value": "rgba(0,0,0,0.2)"
+    },
+    {
+      "name": "--sx-14ggo8w",
+      "value": "#1e2823"
+    },
+    {
+      "name": "--title-3",
+      "value": "590 1.5rem /1.33 \"Inter Variable\",\"SF Pro Display\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Roboto\",\"Oxygen\",\"Ubuntu\",\"Cantarell\",\"Open Sans\",\"Helvetica Neue\",sans-serif"
+    },
+    {
+      "name": "--x1ddj3ws",
+      "value": ""
+    },
+    {
+      "name": "--font-size-mini",
+      "value": "0.75rem"
+    },
+    {
+      "name": "--sx-7jk47a",
+      "value": "#2c2d32"
+    },
+    {
+      "name": "--sx-1m4y240",
+      "value": "#19191b"
+    },
+    {
+      "name": "--diff-view-editor-background-opaque",
+      "value": ""
+    },
+    {
+      "name": "--sx-ljw4h1",
+      "value": "#303236"
+    },
+    {
+      "name": "--x629164",
+      "value": ""
+    },
+    {
+      "name": "--header-height",
+      "value": "72px"
+    },
+    {
+      "name": "--x14ggo8w",
+      "value": ""
+    },
+    {
+      "name": "--sx-18pfyxa",
+      "value": "6px 12px"
+    },
+    {
+      "name": "--editor-todolist-checkbox-width",
+      "value": "14px"
+    },
+    {
+      "name": "--x1g0wh59",
+      "value": "transparent"
+    },
+    {
+      "name": "--sx-1urpf9d",
+      "value": "#ffffff18"
+    },
+    {
+      "name": "--xor1tl7",
+      "value": ""
+    },
+    {
+      "name": "--color-overlay-dim-rgb",
+      "value": "255,255,255"
+    },
+    {
+      "name": "--sx-1stx5uy",
+      "value": "#74e3ff"
+    },
+    {
+      "name": "--text-large-line-height",
+      "value": "1.6"
+    },
+    {
+      "name": "--sx-7ide1",
+      "value": "#747ee9"
+    },
+    {
+      "name": "--modal-dp-bg-selected",
+      "value": ""
+    },
+    {
+      "name": "--x142jeir",
+      "value": ""
+    },
+    {
+      "name": "--x1uoekal",
+      "value": ""
+    },
+    {
+      "name": "--font-settings",
+      "value": "\"cv01\",\"ss03\""
+    },
+    {
+      "name": "--ease-out-quad",
+      "value": "cubic-bezier(0.25,0.46,0.45,0.94)"
+    },
+    {
+      "name": "--sx-138rywl",
+      "value": "13vh"
+    },
+    {
+      "name": "--x10lzhmx",
+      "value": ""
+    },
+    {
+      "name": "--sx-sfnrch",
+      "value": "#f0bf00"
+    },
+    {
+      "name": "--editor-last-invisible-paragraph-spacing",
+      "value": "10px"
+    },
+    {
+      "name": "--sx-1ltkoa",
+      "value": "#626467"
+    },
+    {
+      "name": "--title-9-line-height",
+      "value": "1"
+    },
+    {
+      "name": "--color-text-secondary",
+      "value": "#d0d6e0"
+    },
+    {
+      "name": "--diff-view-removed-bg",
+      "value": ""
+    },
+    {
+      "name": "--xpi45vo",
+      "value": "transparent"
+    },
+    {
+      "name": "--sx-1dcvabv",
+      "value": "#332024"
+    },
+    {
+      "name": "--x193njt9",
+      "value": ""
+    },
+    {
+      "name": "--text-mini-letter-spacing",
+      "value": "-0.01em"
+    },
+    {
+      "name": "--sx-91u3ar",
+      "value": "#ffcc00"
+    },
+    {
+      "name": "--sx-18uyzu6",
+      "value": "#008a2a"
+    },
+    {
+      "name": "--sx-ot17o6",
+      "value": "#00cee2"
+    },
+    {
+      "name": "--sx-1gm0lru",
+      "value": "#282a30"
+    },
+    {
+      "name": "--icon-replacement-color",
+      "value": ""
+    },
+    {
+      "name": "--sx-34xdpc",
+      "value": "#d9343f"
+    },
+    {
+      "name": "--sx-1gxylln",
+      "value": "#242629"
+    },
+    {
+      "name": "--color-line-tertiary",
+      "value": "#18191a"
+    },
+    {
+      "name": "--editor-block-radius",
+      "value": "6px"
+    },
+    {
+      "name": "--media-player-preview",
+      "value": "0"
+    },
+    {
+      "name": "--diff-view-git-modified-fg",
+      "value": ""
+    },
+    {
+      "name": "--color-accent",
+      "value": "#7170ff"
+    },
+    {
+      "name": "--x1fj52yw",
+      "value": ""
+    },
+    {
+      "name": "--media-player-range-start",
+      "value": "0"
+    },
+    {
+      "name": "--ease-out-quart",
+      "value": "cubic-bezier(0.165,0.84,0.44,1)"
+    },
+    {
+      "name": "--editor-line-height",
+      "value": "1.6"
+    },
+    {
+      "name": "--sx-1ccqs4f",
+      "value": "#3f4145"
+    },
+    {
+      "name": "--font-weight-bold",
+      "value": "680"
+    },
+    {
+      "name": "--x3zwjav",
+      "value": ""
+    },
+    {
+      "name": "--xugsh4",
+      "value": ""
+    },
+    {
+      "name": "--sx-feitbp",
+      "value": "#ffffff"
+    },
+    {
+      "name": "--layer-debug",
+      "value": "5100"
+    },
+    {
+      "name": "--sx-fwc8so",
+      "value": "#cf4608"
+    },
+    {
+      "name": "--ease-in-circ",
+      "value": "cubic-bezier(0.6,0.04,0.98,0.335)"
+    },
+    {
+      "name": "--_number-flow-d-opacity",
+      "value": "0"
+    },
+    {
+      "name": "--sx-13sdql6",
+      "value": "\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Segoe UI\",\"Twemoji Mozilla\",\"Noto Color Emoji\",\"Android Emoji\""
+    },
+    {
+      "name": "--dp-font-weight-medium",
+      "value": "500"
+    },
+    {
+      "name": "--text-tiny-letter-spacing",
+      "value": "-0.015em"
+    },
+    {
+      "name": "--x1eapsa9",
+      "value": ""
+    },
+    {
+      "name": "--color-selection-bg",
+      "value": "color-mix(in lch,#5e6ad2,black 10%)"
+    },
+    {
+      "name": "--color-line-secondary",
+      "value": "#202122"
+    },
+    {
+      "name": "--x1uv3w6h",
+      "value": ""
+    },
+    {
+      "name": "--xlvzzfs",
+      "value": "rgba(255,255,255,0.55)"
+    },
+    {
+      "name": "--editor-font-size",
+      "value": "0.9375rem"
+    },
+    {
+      "name": "--title-2-letter-spacing",
+      "value": "-0.012em"
+    },
+    {
+      "name": "--color-line-primary",
+      "value": "#37393a"
+    },
+    {
+      "name": "--sx-1vqca58",
+      "value": "#69daff"
+    },
+    {
+      "name": "--x1pq3ez9",
+      "value": "2px"
+    },
+    {
+      "name": "--diff-view-editor-font-family",
+      "value": ""
+    },
+    {
+      "name": "--text-micro",
+      "value": "0.75rem /1.4 \"Inter Variable\",\"SF Pro Display\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Roboto\",\"Oxygen\",\"Ubuntu\",\"Cantarell\",\"Open Sans\",\"Helvetica Neue\",sans-serif"
+    },
+    {
+      "name": "--xd29rh7",
+      "value": ""
+    },
+    {
+      "name": "--sx-1fphd1n",
+      "value": "#232427"
+    },
+    {
+      "name": "--color-fg-primary",
+      "value": "#f7f8f8"
+    },
+    {
+      "name": "--title-2-line-height",
+      "value": "1.33"
+    },
+    {
+      "name": "--ease-in-quart",
+      "value": "cubic-bezier(0.895,0.03,0.685,0.22)"
+    },
+    {
+      "name": "--ease-in-out-cubic",
+      "value": "cubic-bezier(0.645,0.045,0.355,1)"
+    },
+    {
+      "name": "--sx-5igtf4",
+      "value": "#ffffff1b"
+    },
+    {
+      "name": "--page-inset",
+      "value": "32px"
+    },
+    {
+      "name": "--title-2-size",
+      "value": "1.25rem"
+    },
+    {
+      "name": "--x34xdpc",
+      "value": ""
+    },
+    {
+      "name": "--sx-as9fd0",
+      "value": "#282a30"
+    },
+    {
+      "name": "--title-4-size",
+      "value": "2rem"
+    },
+    {
+      "name": "--sx-ugsh4",
+      "value": "#ffd500"
+    },
+    {
+      "name": "--ease-in-out-quint",
+      "value": "cubic-bezier(0.86,0,0.07,1)"
+    },
+    {
+      "name": "--editor-bullet-disc-width",
+      "value": "0.5em"
+    },
+    {
+      "name": "--editor-letter-spacing",
+      "value": "-0.00666667em"
+    },
+    {
+      "name": "--font-size-micro",
+      "value": "0.6875rem"
+    },
+    {
+      "name": "--x17ckey5",
+      "value": ""
+    },
+    {
+      "name": "--color-bg-quinary",
+      "value": "#282828"
+    },
+    {
+      "name": "--font-size-title2",
+      "value": "1.5rem"
+    },
+    {
+      "name": "--color-text-quaternary",
+      "value": "#62666d"
+    },
+    {
+      "name": "--homepage-outer-padding",
+      "value": "46px"
+    },
+    {
+      "name": "--x19hxmp1",
+      "value": ""
+    },
+    {
+      "name": "--sx-1glqxor",
+      "value": "#232535"
+    },
+    {
+      "name": "--sx-n8xqcl",
+      "value": "#5e69d1"
+    },
+    {
+      "name": "--color-alpha",
+      "value": "255"
+    },
+    {
+      "name": "--action-menu-control-primary",
+      "value": ""
+    },
+    {
+      "name": "--sx-w1p5jj",
+      "value": "#424449"
+    },
+    {
+      "name": "--layer-command-menu",
+      "value": "650"
+    },
+    {
+      "name": "--text-mini",
+      "value": "0.8125rem /1.5 \"Inter Variable\",\"SF Pro Display\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Roboto\",\"Oxygen\",\"Ubuntu\",\"Cantarell\",\"Open Sans\",\"Helvetica Neue\",sans-serif"
+    },
+    {
+      "name": "--title-5-letter-spacing",
+      "value": "-0.022em"
+    },
+    {
+      "name": "--ease-in-out-expo",
+      "value": "cubic-bezier(1,0,0,1)"
+    },
+    {
+      "name": "--layer-popover",
+      "value": "600"
+    },
+    {
+      "name": "--button-tab-bg",
+      "value": "transparent"
+    },
+    {
+      "name": "--x138rywl",
+      "value": "13vh"
+    },
+    {
+      "name": "--sx-1k7v50d",
+      "value": "0 4px 40px #00000019, 0 3px 20px #0000001f,0 3px 12px #0000001f, 0 2px 8px #0000001f, 0 1px 1px #0000001f"
+    },
+    {
+      "name": "--sx-1ospiv4",
+      "value": "#ffffff22"
+    },
+    {
+      "name": "--command-menu-item-details-max-width",
+      "value": "100%"
+    },
+    {
+      "name": "--shadow-high",
+      "value": "0px 7px 32px rgba(0,0,0,0.35)"
+    },
+    {
+      "name": "--font-size-small",
+      "value": "0.8125rem"
+    },
+    {
+      "name": "--x13m9wh7",
+      "value": ""
+    },
+    {
+      "name": "--diff-view-blank-bg",
+      "value": ""
+    },
+    {
+      "name": "--layer-dialog-overlay",
+      "value": "699"
+    },
+    {
+      "name": "--xjupg42",
+      "value": ""
+    },
+    {
+      "name": "--shadow-tiny",
+      "value": "0px 0px 0px transparent"
+    },
+    {
+      "name": "--xpqiwo2",
+      "value": ""
+    },
+    {
+      "name": "--x1jpq86z",
+      "value": "transparent"
+    },
+    {
+      "name": "--modal-dp-label-base",
+      "value": ""
+    },
+    {
+      "name": "--sx-1jffjrl",
+      "value": "#6a76e3"
+    },
+    {
+      "name": "--dp-label-faint",
+      "value": ""
+    },
+    {
+      "name": "--layer-footer",
+      "value": "50"
+    },
+    {
+      "name": "--sx-cb0zzs",
+      "value": "#33353b"
+    },
+    {
+      "name": "--sx-ch85qk",
+      "value": "#5e69d1"
+    },
+    {
+      "name": "--diff-view-editor-foreground",
+      "value": ""
+    },
+    {
+      "name": "--sx-1ubxoo9",
+      "value": "#1e2022"
+    },
+    {
+      "name": "--title-4-line-height",
+      "value": "1.125"
+    },
+    {
+      "name": "--font-size-large",
+      "value": "1.125rem"
+    },
+    {
+      "name": "--x1ccqs4f",
+      "value": ""
+    },
+    {
+      "name": "--radius-32",
+      "value": "32px"
+    },
+    {
+      "name": "--color-accent-tint",
+      "value": "#18182f"
+    },
+    {
+      "name": "--x18uyzu6",
+      "value": ""
+    },
+    {
+      "name": "--sx-wsz0k3",
+      "value": "#26a544"
+    },
+    {
+      "name": "--sx-1qlh175",
+      "value": "#00889c"
+    },
+    {
+      "name": "--text-regular",
+      "value": "0.9375rem /1.6 \"Inter Variable\",\"SF Pro Display\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Roboto\",\"Oxygen\",\"Ubuntu\",\"Cantarell\",\"Open Sans\",\"Helvetica Neue\",sans-serif"
+    },
+    {
+      "name": "--xch85qk",
+      "value": ""
+    },
+    {
+      "name": "--diff-view-line-number-fg",
+      "value": ""
+    },
+    {
+      "name": "--sx-193njt9",
+      "value": "#ffffff22"
+    },
+    {
+      "name": "--header-bg",
+      "value": "rgba(11,11,11,0.8)"
+    },
+    {
+      "name": "--color-line-quaternary",
+      "value": "#141515"
+    },
+    {
+      "name": "--x1dd5bcf",
+      "value": ""
+    },
+    {
+      "name": "--font-size-regularPlus",
+      "value": "0.9375rem"
+    },
+    {
+      "name": "--layer-scrollbar",
+      "value": "75"
+    },
+    {
+      "name": "--color-black",
+      "value": "#000"
+    },
+    {
+      "name": "--sx-1dhg814",
+      "value": "0 3px 8px #0000001f, 0 2px 5px #0000001f, 0 1px 1px #0000001f"
+    },
+    {
+      "name": "--sx-629164",
+      "value": "#2c2d30"
+    },
+    {
+      "name": "--sx-1dd5bcf",
+      "value": "#9c9da1"
+    },
+    {
+      "name": "--page-padding-right",
+      "value": "max(0px,24px)"
+    },
+    {
+      "name": "--sx-1uoekal",
+      "value": "#00b8cb"
+    },
+    {
+      "name": "--scrollbar-color-hover",
+      "value": "rgba(255,255,255,0.2)"
+    },
+    {
+      "name": "--text-mini-size",
+      "value": "0.8125rem"
+    },
+    {
+      "name": "--cursor-tooltip",
+      "value": "help"
+    },
+    {
+      "name": "--page-padding-left",
+      "value": "max(0px,24px)"
+    },
+    {
+      "name": "--color-link-hover",
+      "value": "#fff"
+    },
+    {
+      "name": "--font-monospace",
+      "value": "\"Berkeley Mono\",ui-monospace,\"SF Mono\",\"Menlo\",monospace"
+    },
+    {
+      "name": "--x1rsaf4u",
+      "value": ""
+    },
+    {
+      "name": "--sx-1uztw8p",
+      "value": "#ffffff30"
+    },
+    {
+      "name": "--dp-bg-border",
+      "value": ""
+    },
+    {
+      "name": "--icon-default-color",
+      "value": ""
+    },
+    {
+      "name": "--title-6-size",
+      "value": "3rem"
+    },
+    {
+      "name": "--title-5-size",
+      "value": "2.5rem"
+    },
+    {
+      "name": "--color-bg-level-1",
+      "value": "#0f1011"
+    },
+    {
+      "name": "--title-6-line-height",
+      "value": "1"
+    },
+    {
+      "name": "--x1k7nh0l",
+      "value": ""
+    },
+    {
+      "name": "--xv3o8qy",
+      "value": ""
+    },
+    {
+      "name": "--xys2i3t",
+      "value": ""
+    },
+    {
+      "name": "--title-1-letter-spacing",
+      "value": "-0.012em"
+    },
+    {
+      "name": "--pointer",
+      "value": "default"
+    },
+    {
+      "name": "--media-player-thumb-start",
+      "value": "0"
+    },
+    {
+      "name": "--shadow-none",
+      "value": "0px 0px 0px transparent"
+    },
+    {
+      "name": "--color-brand-text",
+      "value": "#fff"
+    },
+    {
+      "name": "--x1rwcria",
+      "value": ""
+    },
+    {
+      "name": "--title-2",
+      "value": "590 1.25rem /1.33 \"Inter Variable\",\"SF Pro Display\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Roboto\",\"Oxygen\",\"Ubuntu\",\"Cantarell\",\"Open Sans\",\"Helvetica Neue\",sans-serif"
+    },
+    {
+      "name": "--sx-1ikf7kw",
+      "value": "#ffffff30"
+    },
+    {
+      "name": "--scrollbar-size",
+      "value": "6px"
+    },
+    {
+      "name": "--x6ayg1n",
+      "value": ""
+    },
+    {
+      "name": "--_number-flow-dx",
+      "value": "0px"
+    },
+    {
+      "name": "--min-tap-size",
+      "value": "44px"
+    },
+    {
+      "name": "--x1o1lnwn",
+      "value": ""
+    },
+    {
+      "name": "--text-large-size",
+      "value": "1.0625rem"
+    },
+    {
+      "name": "--action-menu-bg-border-solid",
+      "value": ""
+    },
+    {
+      "name": "--sx-1gakdvt",
+      "value": "#25283f"
+    },
+    {
+      "name": "--page-padding-inline",
+      "value": "24px"
+    },
+    {
+      "name": "--title-8-letter-spacing",
+      "value": "-0.022em"
+    },
+    {
+      "name": "--text-large-letter-spacing",
+      "value": "0"
+    },
+    {
+      "name": "--diff-view-comment-button-removed-bg",
+      "value": ""
+    },
+    {
+      "name": "--underline-offset",
+      "value": "clamp(2px,0.225em,6px)"
+    },
+    {
+      "name": "--color-teal",
+      "value": "#00b8cc"
+    },
+    {
+      "name": "--x1fh23cp",
+      "value": ""
+    },
+    {
+      "name": "--color-linear-plan",
+      "value": "#68cc58"
+    },
+    {
+      "name": "--x15wwovl",
+      "value": ""
+    },
+    {
+      "name": "--xmsgncm",
+      "value": ""
+    },
+    {
+      "name": "--page-max-width",
+      "value": "1024px"
+    },
+    {
+      "name": "--text-small-letter-spacing",
+      "value": "-0.013em"
+    },
+    {
+      "name": "--sx-129bhjt",
+      "value": "#967000"
+    },
+    {
+      "name": "--color-orange",
+      "value": "#fc7840"
+    },
+    {
+      "name": "--color-selection-text",
+      "value": "#fff"
+    },
+    {
+      "name": "--action-menu-label-faint",
+      "value": ""
+    },
+    {
+      "name": "--sx-1ipkkxf",
+      "value": "\"Inter Variable\",\"SF Pro Display\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen,Ubuntu,Cantarell,\"Open Sans\",\"Helvetica Neue\",\"Linear Thai\",sans-serif"
+    },
+    {
+      "name": "--x1uztw8p",
+      "value": ""
+    },
+    {
+      "name": "--color-fg-secondary",
+      "value": "#d0d6e0"
+    },
+    {
+      "name": "--ease-in-quad",
+      "value": "cubic-bezier(0.55,0.085,0.68,0.53)"
+    },
+    {
+      "name": "--button-tab-shadow",
+      "value": "none"
+    },
+    {
+      "name": "--x1jmjcvw",
+      "value": ""
+    },
+    {
+      "name": "--color-bg-translucent",
+      "value": "rgba(255,255,255,0.05)"
+    },
+    {
+      "name": "--diff-view-inserted-inline-bg",
+      "value": ""
+    },
+    {
+      "name": "--title-9",
+      "value": "590 4.5rem /1 \"Inter Variable\",\"SF Pro Display\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Roboto\",\"Oxygen\",\"Ubuntu\",\"Cantarell\",\"Open Sans\",\"Helvetica Neue\",sans-serif"
+    },
+    {
+      "name": "--media-player-range-end",
+      "value": "0"
+    },
+    {
+      "name": "--layer-overlay",
+      "value": "500"
+    },
+    {
+      "name": "--x5li4y",
+      "value": "rgba(255,255,255,0.75)"
+    },
+    {
+      "name": "--sx-180qi0f",
+      "value": "#d5ffd6"
+    },
+    {
+      "name": "--xj1ai0m",
+      "value": ""
+    },
+    {
+      "name": "--sx-irmyh9",
+      "value": "#ffffff13"
+    },
+    {
+      "name": "--sx-11lpf43",
+      "value": "0.8125rem"
+    },
+    {
+      "name": "--layer-header",
+      "value": "100"
+    },
+    {
+      "name": "--color-red",
+      "value": "#eb5757"
+    },
+    {
+      "name": "--xhabas",
+      "value": "6px"
+    },
+    {
+      "name": "--grid-columns",
+      "value": "12"
+    },
+    {
+      "name": "--x138kmyo",
+      "value": ""
+    },
+    {
+      "name": "--x13sdql6",
+      "value": "\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Segoe UI\",\"Twemoji Mozilla\",\"Noto Color Emoji\",\"Android Emoji\""
+    },
+    {
+      "name": "--title-9-size",
+      "value": "4.5rem"
+    },
+    {
+      "name": "--vp-full-window-width",
+      "value": "100vw"
+    },
+    {
+      "name": "--x1dcvabv",
+      "value": ""
+    },
+    {
+      "name": "--diff-view-comment-button-added-bg",
+      "value": ""
+    },
+    {
+      "name": "--font-weight-light",
+      "value": "300"
+    },
+    {
+      "name": "--sx-1bu05id",
+      "value": "#ff8583"
+    },
+    {
+      "name": "--x180qi0f",
+      "value": ""
+    },
+    {
+      "name": "--sx-19hxmp1",
+      "value": "#adbaff"
+    },
+    {
+      "name": "--color-blue",
+      "value": "#4ea7fc"
+    },
+    {
+      "name": "--sx-1o1lnwn",
+      "value": "#3d3f44"
+    },
+    {
+      "name": "--color-selection-dim",
+      "value": "color-mix(in lch,#5e6ad2,transparent 80%)"
+    },
+    {
+      "name": "--sx-1fj52yw",
+      "value": ""
+    },
+    {
+      "name": "--layer-toasts",
+      "value": "800"
+    },
+    {
+      "name": "--sx-1gcjx5j",
+      "value": "#2d2f37"
+    },
+    {
+      "name": "--x183dfpr",
+      "value": ""
+    },
+    {
+      "name": "--title-3-size",
+      "value": "1.5rem"
+    },
+    {
+      "name": "--sx-1em7oyp",
+      "value": "#1b263a"
+    },
+    {
+      "name": "--sx-11vg3qk",
+      "value": "#ff7235"
+    },
+    {
+      "name": "--xcb0zzs",
+      "value": ""
+    },
+    {
+      "name": "--x1uu732i",
+      "value": "12px"
+    },
+    {
+      "name": "--x9o00jb",
+      "value": ""
+    },
+    {
+      "name": "--sx-i20l48",
+      "value": "#f34e52"
+    },
+    {
+      "name": "--color-bg-tertiary",
+      "value": "#232326"
+    },
+    {
+      "name": "--sx-1edn6di",
+      "value": "#33353a"
+    },
+    {
+      "name": "--xkig6sr",
+      "value": ""
+    },
+    {
+      "name": "--sx-j1ai0m",
+      "value": "#e4e5e9"
+    },
+    {
+      "name": "--x1qlh175",
+      "value": ""
+    },
+    {
+      "name": "--xjq95p6",
+      "value": "36px"
+    },
+    {
+      "name": "--xhsrmg4",
+      "value": ""
+    },
+    {
+      "name": "--diff-view-inserted-bg",
+      "value": ""
+    },
+    {
+      "name": "--diff-view-comment-button-added-bg-hover",
+      "value": ""
+    },
+    {
+      "name": "--scrollbar-gap",
+      "value": "4px"
+    },
+    {
+      "name": "--x1rzu7x2",
+      "value": ""
+    },
+    {
+      "name": "--ximi5ey",
+      "value": ""
+    },
+    {
+      "name": "--xfwc8so",
+      "value": ""
+    },
+    {
+      "name": "--btn-group-inner-highlight-bg",
+      "value": "transparent"
+    },
+    {
+      "name": "--dp-highlighted-color",
+      "value": ""
+    },
+    {
+      "name": "--diff-view-git-added-fg",
+      "value": ""
+    },
+    {
+      "name": "--focus-ring-outline",
+      "value": "1px solid #5e69d1"
+    },
+    {
+      "name": "--dp-control-label",
+      "value": ""
+    },
+    {
+      "name": "--xljw4h1",
+      "value": ""
+    },
+    {
+      "name": "--color-bg-quaternary",
+      "value": "#28282c"
+    },
+    {
+      "name": "--sx-ickszr",
+      "value": "#fefeff"
+    },
+    {
+      "name": "--color-bg-primary",
+      "value": "#08090a"
+    },
+    {
+      "name": "--sx-1hz3utq",
+      "value": "#ff8042"
+    },
+    {
+      "name": "--focus-ring-offset",
+      "value": "2px"
+    },
+    {
+      "name": "--layer-3",
+      "value": "3"
+    },
+    {
+      "name": "--ease-out-cubic",
+      "value": "cubic-bezier(0.215,0.61,0.355,1)"
+    },
+    {
+      "name": "--title-8",
+      "value": "590 4rem /1.06 \"Inter Variable\",\"SF Pro Display\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Roboto\",\"Oxygen\",\"Ubuntu\",\"Cantarell\",\"Open Sans\",\"Helvetica Neue\",sans-serif"
+    },
+    {
+      "name": "--dp-thin-pixel",
+      "value": "1px"
+    },
+    {
+      "name": "--font-serif-display",
+      "value": "\"Tiempos Headline\",ui-serif,Georgia,Cambria,\"Times New Roman\",Times,serif"
+    },
+    {
+      "name": "--x18pfyxa",
+      "value": "6px 12px"
+    },
+    {
+      "name": "--sx-10845vo",
+      "value": "#c9ffff"
+    },
+    {
+      "name": "--x1ipkkxf",
+      "value": "\"Inter Variable\",\"SF Pro Display\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen,Ubuntu,Cantarell,\"Open Sans\",\"Helvetica Neue\",\"Linear Thai\",sans-serif"
+    },
+    {
+      "name": "--sx-axo4ug",
+      "value": "0 0 0 0.5px #323439"
+    },
+    {
+      "name": "--xay0skx",
+      "value": ""
+    },
+    {
+      "name": "--sx-10o0rs5",
+      "value": "#e4e5e9"
+    },
+    {
+      "name": "--color-yellow",
+      "value": "#f0bf00"
+    },
+    {
+      "name": "--font-weight-semibold",
+      "value": "590"
+    },
+    {
+      "name": "--color-fg-tertiary",
+      "value": "#8a8f98"
+    },
+    {
+      "name": "--sx-1ps2i54",
+      "value": "#1b282d"
+    },
+    {
+      "name": "--layer-skip-nav",
+      "value": "5000"
+    },
+    {
+      "name": "--x1ubxoo9",
+      "value": ""
+    },
+    {
+      "name": "--xikq9iy",
+      "value": ""
+    },
+    {
+      "name": "--x1n1r1h9",
+      "value": ""
+    },
+    {
+      "name": "--sx-1umwnkk",
+      "value": "\"Berkeley Mono\",\"SFMono Regular\",Consolas,\"Liberation Mono\",Menlo,Courier,monospace"
+    },
+    {
+      "name": "--color-bg-level-0",
+      "value": "#08090a"
+    },
+    {
+      "name": "--sx-1jmjcvw",
+      "value": "#ffffff29"
+    },
+    {
+      "name": "--x1xaoi8i",
+      "value": ""
+    },
+    {
+      "name": "--x1bu05id",
+      "value": ""
+    },
+    {
+      "name": "--sx-105wzx7",
+      "value": "#edbf0a"
+    },
+    {
+      "name": "--x1dhg814",
+      "value": ""
+    },
+    {
+      "name": "--scrollbar-color",
+      "value": "rgba(255,255,255,0.1)"
+    },
+    {
+      "name": "--line-number-width",
+      "value": "50px"
+    },
+    {
+      "name": "--icon-color",
+      "value": ""
+    },
+    {
+      "name": "--diff-view-comment-button-default-bg",
+      "value": ""
+    },
+    {
+      "name": "--color-linear-build",
+      "value": "#d4b144"
+    },
+    {
+      "name": "--sx-1uu732i",
+      "value": "12px"
+    },
+    {
+      "name": "--sx-msgncm",
+      "value": "#292521"
+    },
+    {
+      "name": "--sx-hfmm6c",
+      "value": "#2d2e31"
+    },
+    {
+      "name": "--layer-1",
+      "value": "1"
+    },
+    {
+      "name": "--text-mini-line-height",
+      "value": "1.5"
+    },
+    {
+      "name": "--underline-thickness",
+      "value": "from-font"
+    },
+    {
+      "name": "--radix-select-content-available-height",
+      "value": "none"
+    },
+    {
+      "name": "--x1vyp3gc",
+      "value": ""
+    },
+    {
+      "name": "--button-tab-color",
+      "value": ""
+    },
+    {
+      "name": "--sx-1eapsa9",
+      "value": "#626366"
+    },
+    {
+      "name": "--xjrz3l0",
+      "value": "transparent"
+    },
+    {
+      "name": "--editor-list-inset",
+      "value": "1.5rem"
+    },
+    {
+      "name": "--xsfnrch",
+      "value": ""
+    },
+    {
+      "name": "--homepage-padding-inset",
+      "value": "32px"
+    },
+    {
+      "name": "--x6od1kq",
+      "value": ""
+    },
+    {
+      "name": "--sx-1ele6il",
+      "value": "0.5px"
+    },
+    {
+      "name": "--title-4-letter-spacing",
+      "value": "-0.022em"
+    },
+    {
+      "name": "--xws85c5",
+      "value": ""
+    },
+    {
+      "name": "--100dvh",
+      "value": "calc(100 * 1dvh)"
+    },
+    {
+      "name": "--sx-x8afrf",
+      "value": "6px"
+    },
+    {
+      "name": "--x5t1vcl",
+      "value": ""
+    },
+    {
+      "name": "--diff-view-comment-button-default-bg-hover",
+      "value": ""
+    },
+    {
+      "name": "--x11vg3qk",
+      "value": ""
+    },
+    {
+      "name": "--radix-select-trigger-width",
+      "value": "0px"
+    },
+    {
+      "name": "--dp-control-primary-hover",
+      "value": ""
+    },
+    {
+      "name": "--sx-ciqj87",
+      "value": "#3de261"
+    },
+    {
+      "name": "--color-bg-secondary",
+      "value": "#1c1c1f"
+    },
+    {
+      "name": "--sx-bpgheo",
+      "value": "#636fd7"
+    },
+    {
+      "name": "--editor-block-spacing-large",
+      "value": "calc(1.375 * 1rem)"
+    }
+  ],
+  "palette": {
+    "colors": [
+      {
+        "value": "rgb(247, 248, 248)",
+        "weight": 1120
+      },
+      {
+        "value": "rgb(98, 102, 109)",
+        "weight": 338
+      },
+      {
+        "value": "rgb(208, 214, 224)",
+        "weight": 185
+      },
+      {
+        "value": "rgb(138, 143, 152)",
+        "weight": 128
+      },
+      {
+        "value": "rgb(226, 228, 231)",
+        "weight": 120
+      },
+      {
+        "value": "rgb(255, 255, 255)",
+        "weight": 111
+      },
+      {
+        "value": "rgb(247, 156, 224)",
+        "weight": 41
+      },
+      {
+        "value": "rgba(0, 0, 0, 0)",
+        "weight": 26
+      },
+      {
+        "value": "rgb(247, 191, 139)",
+        "weight": 22
+      },
+      {
+        "value": "rgb(255, 223, 159)",
+        "weight": 10
+      },
+      {
+        "value": "rgb(131, 220, 220)",
+        "weight": 9
+      },
+      {
+        "value": "rgb(8, 9, 10)",
+        "weight": 8
+      }
+    ],
+    "backgrounds": [
+      {
+        "value": "rgb(8, 9, 10)",
+        "weight": 16282419
+      },
+      {
+        "value": "rgb(15, 16, 17)",
+        "weight": 4048802
+      },
+      {
+        "value": "rgb(9, 10, 11)",
+        "weight": 950400
+      },
+      {
+        "value": "rgb(16, 17, 18)",
+        "weight": 950400
+      },
+      {
+        "value": "rgb(18, 19, 20)",
+        "weight": 754688
+      },
+      {
+        "value": "rgba(255, 255, 255, 0.02)",
+        "weight": 620882
+      },
+      {
+        "value": "rgb(228, 242, 34)",
+        "weight": 207360
+      },
+      {
+        "value": "rgb(22, 23, 24)",
+        "weight": 195200
+      },
+      {
+        "value": "rgba(255, 255, 255, 0.01)",
+        "weight": 142372
+      },
+      {
+        "value": "rgba(243, 78, 82, 0.1)",
+        "weight": 63648
+      },
+      {
+        "value": "rgba(39, 166, 68, 0.07)",
+        "weight": 63648
+      },
+      {
+        "value": "rgb(94, 106, 210)",
+        "weight": 47900
+      }
+    ],
+    "families": [
+      {
+        "value": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+        "weight": 1864
+      },
+      {
+        "value": "\"Berkeley Mono\", ui-monospace, \"SF Mono\", Menlo, monospace",
+        "weight": 269
+      }
+    ],
+    "radii": [
+      {
+        "value": "2px",
+        "weight": 42
+      },
+      {
+        "value": "6px",
+        "weight": 40
+      },
+      {
+        "value": "50%",
+        "weight": 38
+      },
+      {
+        "value": "4px",
+        "weight": 28
+      },
+      {
+        "value": "9999px",
+        "weight": 19
+      },
+      {
+        "value": "12px",
+        "weight": 12
+      },
+      {
+        "value": "8px",
+        "weight": 12
+      },
+      {
+        "value": "12px 12px 0px 0px",
+        "weight": 11
+      }
+    ],
+    "shadows": [
+      {
+        "value": "rgba(0, 0, 0, 0.03) 0px 1.2px 0px 0px",
+        "weight": 31
+      },
+      {
+        "value": "rgba(0, 0, 0, 0.4) 0px 2px 4px 0px",
+        "weight": 16
+      },
+      {
+        "value": "rgba(0, 0, 0, 0.2) 0px 0px 12px 0px inset",
+        "weight": 6
+      },
+      {
+        "value": "rgb(35, 37, 42) 0px 0px 0px 1px inset",
+        "weight": 5
+      },
+      {
+        "value": "rgba(0, 0, 0, 0.2) 0px 0px 0px 1px",
+        "weight": 3
+      },
+      {
+        "value": "rgba(0, 0, 0, 0) 0px 8px 2px 0px, rgba(0, 0, 0, 0.01) 0px 5px 2px 0px, rgba(0, 0, 0, 0.04) 0px 3px 2px 0px, rgba(0, 0, 0, 0.07) 0px 1px 1px 0px, rgba(0, 0, 0, 0.08) 0px 0px 1px 0px",
+        "weight": 2
+      }
+    ]
+  },
+  "bodyBg": "rgb(8, 9, 10)",
+  "bodyColor": "rgb(247, 248, 248)",
+  "bodyFont": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+}

@@ -1,0 +1,31 @@
+{
+  "consentMethod": "none-detected",
+  "waitMs": 23529,
+  "resolvedWaitMode": "networkidle",
+  "httpStatus": 200,
+  "finalUrl": "https://linear.app/",
+  "fonts": [
+    {
+      "url": "https://static.linear.app/fonts/InterVariable.woff2?v=4.1",
+      "basename": "InterVariable.woff2",
+      "bytes": 352240,
+      "licensingFlag": "verify"
+    },
+    {
+      "url": "https://static.linear.app/fonts/Berkeley-Mono-Variable.woff2?v=3.2",
+      "basename": "Berkeley-Mono-Variable.woff2",
+      "bytes": 160932,
+      "licensingFlag": "verify"
+    }
+  ],
+  "logo": "inline-svg",
+  "counts": {
+    "headings": 17,
+    "landmarks": 13,
+    "ctas": 20,
+    "links": 51,
+    "images": 32,
+    "cssBackgrounds": 15,
+    "cssVars": 635
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "_provenance": { "writtenBy": "stardust:direct (via uplift)", "writtenAt": "2026-06-19", "mode": "Mode A" },
+  "colors": {
+    "background": "#08090a", "surface": "#0f1011", "surfaceRaised": "#121314",
+    "border": "#23252a", "text": "#f7f8f8", "textBright": "#d0d6e0",
+    "textMuted": "#8a8f98", "primary": "#5e6ad2", "accent": "#e4f222",
+    "danger": "#f34e52", "success": "#27a644"
+  },
+  "typography": { "heading": "Inter Variable", "body": "Inter Variable", "mono": "Berkeley Mono", "weights": [510, 590], "scale": ["13px","16px","20px","48px","64px","72px"] },
+  "rounded": "6px",
+  "spacing": "generous",
+  "components": ["sticky-nav","pill-cta","hairline-card","product-ui-mock","six-column-footer","section-eyebrow-mono","index-numeral"],
+  "extensions": {
+    "motifs": { "radius": "6px", "limeHighlight": "#e4f222", "hairline": "#23252a", "productMockHero": true },
+    "voice": { "hero": "The product development system for teams and agents", "subhead": "Purpose-built for planning and building products with AI agents.", "closing": "Built for the future. Available today." }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_provenance": { "writtenBy": "stardust:direct (via uplift)", "writtenAt": "2026-06-19", "mode": "Mode A", "variant": "C" },
+  "extends": "DESIGN.json",
+  "variant": { "id": "C", "role": "cinematic — operational liveness as identity", "motion": "cinematic" },
+  "delta": {
+    "trait": "operational liveness (Live-data promotion)",
+    "composition": "identical IA to A; the bet is motion, not layout. Add a hero-adjacent live-operations band.",
+    "constraint": "headings stay still; the data is the choreography. Reduced-motion neutralises all animation."
+  },
+  "extensions": {
+    "motion": {
+      "register": "live-systems",
+      "registerSource": "auto-picked from PRODUCT.md Brand Personality (operationally-transparent / data-led)",
+      "attributes": ["data-tile-anim", "data-countup", "data-fill"],
+      "cssHooks": [".live-sweep", ".marquee__track", "pulse-dot"],
+      "tokens": {
+        "easings": { "entrance": "cubic-bezier(0.25,0.46,0.45,0.94)", "expo": "cubic-bezier(0.16,1,0.3,1)" },
+        "durations": { "enter": 600, "stagger": 100, "fill": 1100 },
+        "pulse": { "duration": 1600, "spread": 8 },
+        "sweep": { "interval": 5400, "duration": 1700 }
+      },
+      "reducedMotion": "all data-* animations forced to final state; marquee + sweep + pulse paused"
+    }
+  }
+}

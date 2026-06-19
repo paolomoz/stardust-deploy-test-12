@@ -1,0 +1,53 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-06-19",
+    "againstInput": "https://linear.app/",
+    "mode": "descriptive"
+  },
+  "colors": {
+    "background": "#08090a",
+    "surface": "#0f1011",
+    "surfaceRaised": "#121314",
+    "surfaceAlt": "#161718",
+    "border": "#23252a",
+    "text": "#f7f8f8",
+    "textBright": "#d0d6e0",
+    "textMuted": "#8a8f98",
+    "textSubtle": "#62666d",
+    "primary": "#5e6ad2",
+    "accent": "#e4f222",
+    "danger": "#f34e52",
+    "success": "#27a644"
+  },
+  "typography": {
+    "heading": "Inter Variable",
+    "body": "Inter Variable",
+    "mono": "Berkeley Mono",
+    "weights": [510, 590],
+    "scale": ["13px", "16px", "20px", "48px", "64px", "72px"]
+  },
+  "rounded": "6px",
+  "spacing": "generous",
+  "components": ["sticky-nav", "pill-cta", "hairline-card", "product-ui-mock", "gradient-display-heading", "six-column-footer"],
+  "extensions": {
+    "componentStyle": {
+      "cta": { "primary": { "bg": "#e5e5e6", "color": "#08090a", "radius": "9999px" }, "ghost": { "bg": "transparent", "radius": "9999px" } },
+      "card": { "bg": "#0f1011", "border": "1px solid #23252a", "radius": "12px" }
+    },
+    "motifs": {
+      "radius": "6px",
+      "gradientText": ["#f79ce0", "#f7bf8b", "#ffdf9f", "#83dcdc"],
+      "limeHighlight": "#e4f222",
+      "hairline": "#23252a",
+      "productMockHero": true
+    },
+    "voice": {
+      "hero": "The product development system for teams and agents",
+      "subhead": "Purpose-built for planning and building products with AI agents.",
+      "closing": "Built for the future. Available today.",
+      "register": "confident, terse, engineering-grade, agent-native"
+    },
+    "gradients": ["linear-gradient(90deg, #f79ce0, #f7bf8b, #ffdf9f, #83dcdc)"]
+  }
+}

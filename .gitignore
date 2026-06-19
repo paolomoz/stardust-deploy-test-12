@@ -11,3 +11,14 @@ helix-importer-ui
 # Ensure these files are tracked
 !CLAUDE.md
 !AGENTS.md
+
+# secrets & local QA (added for stardust deploy tests)
+.env
+.env.*
+qa/
+samples/
+
+# stardust derived artifacts (heavy / local-only)
+stardust/_tools/
+stardust/**/_shot-*.png
+stardust/current/assets/screenshots/

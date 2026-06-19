@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brand review — Linear (current state)</title>
+<style>
+  :root{
+    --bg:#08090a; --surface:#0f1011; --raised:#121314; --border:#23252a;
+    --text:#f7f8f8; --bright:#d0d6e0; --muted:#8a8f98; --subtle:#62666d;
+    --primary:#5e6ad2; --lime:#e4f222; --danger:#f34e52; --success:#27a644;
+    --mono:"Berkeley Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font-family:"Inter Variable","Inter","SF Pro Display",-apple-system,system-ui,sans-serif;
+    font-weight:420;line-height:1.5;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1040px;margin:0 auto;padding:64px 32px 96px}
+  header.hero{border-bottom:1px solid var(--border);padding-bottom:40px;margin-bottom:48px}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--muted);text-transform:uppercase}
+  h1{font-size:48px;font-weight:510;letter-spacing:-.02em;margin:.4em 0 .2em}
+  h2{font-size:24px;font-weight:510;letter-spacing:-.01em;margin:56px 0 16px}
+  .lede{color:var(--bright);font-size:18px;max-width:62ch}
+  .badge{display:inline-block;font-family:var(--mono);font-size:11px;padding:2px 8px;border:1px solid var(--border);border-radius:9999px;color:var(--muted);margin-right:6px}
+  .badge.home{color:var(--lime);border-color:rgba(228,242,34,.3)}
+  .grid{display:grid;gap:16px}
+  .cols-2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:720px){.cols-2{grid-template-columns:1fr}}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px}
+  .swatch{height:64px;border-radius:8px;border:1px solid var(--border)}
+  .swrow{display:flex;gap:6px;align-items:center;margin-top:8px;font-family:var(--mono);font-size:12px;color:var(--muted)}
+  .pill{display:inline-flex;align-items:center;padding:6px 14px;border-radius:9999px;font-size:13px}
+  .pill.primary{background:#e5e5e6;color:#08090a;font-weight:510}
+  .pill.ghost{border:1px solid var(--border);color:var(--bright)}
+  .grad{background:linear-gradient(90deg,#f79ce0,#f7bf8b,#ffdf9f,#83dcdc);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:590}
+  .tension{border-left:2px solid var(--primary);padding:14px 18px;background:var(--raised);border-radius:0 8px 8px 0;margin-bottom:14px}
+  .tension .tag{font-family:var(--mono);font-size:11px;color:var(--lime)}
+  .tension h3{margin:6px 0;font-size:16px;font-weight:510}
+  .tension p{margin:0;color:var(--muted);font-size:14px}
+  .meta{font-family:var(--mono);font-size:12px;color:var(--subtle)}
+  table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
+  td,th{text-align:left;padding:8px 10px;border-bottom:1px solid var(--border)}
+  th{color:var(--muted);font-weight:510;font-family:var(--mono);font-size:12px}
+  .radii{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end;margin-top:10px}
+  .rad{background:var(--primary);width:56px;height:56px}
+  footer{margin-top:72px;border-top:1px solid var(--border);padding-top:24px;color:var(--subtle);font-size:13px}
+  a{color:var(--primary)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="eyebrow">stardust · current-state brand review</div>
+    <h1>Linear</h1>
+    <p class="lede">The product development system for teams and agents. Captured from
+      <a href="https://linear.app/">linear.app</a> — single-page extract, live Playwright render (HTTP 200, networkidle).</p>
+    <p class="meta">Coverage: 1 page (home) · 17 headings · 13 landmarks · 20 CTAs · 32 images · 635 CSS custom properties · 2 web fonts.</p>
+  </header>
+
+  <h2>Palette <span class="badge home">home-only</span></h2>
+  <div class="grid cols-2">
+    <div class="card">
+      <div class="grid cols-2">
+        <div><div class="swatch" style="background:#08090a"></div><div class="swrow">#08090a · background</div></div>
+        <div><div class="swatch" style="background:#0f1011"></div><div class="swrow">#0f1011 · surface</div></div>
+        <div><div class="swatch" style="background:#23252a"></div><div class="swrow">#23252a · hairline</div></div>
+        <div><div class="swatch" style="background:#f7f8f8"></div><div class="swrow">#f7f8f8 · text</div></div>
+        <div><div class="swatch" style="background:#5e6ad2"></div><div class="swrow">#5e6ad2 · primary</div></div>
+        <div><div class="swatch" style="background:#e4f222"></div><div class="swrow">#e4f222 · lime</div></div>
+      </div>
+    </div>
+    <div class="card">
+      <p class="meta">Signature display gradient (reserved for headings)</p>
+      <p style="font-size:32px;letter-spacing:-.02em" class="grad">A new species of product tool.</p>
+      <p class="meta" style="margin-top:18px">Step-down text ramp</p>
+      <p style="color:#f7f8f8">Near-white #f7f8f8</p>
+      <p style="color:#d0d6e0">Bright #d0d6e0</p>
+      <p style="color:#8a8f98">Muted #8a8f98</p>
+      <p style="color:#62666d">Subtle #62666d</p>
+    </div>
+  </div>
+
+  <h2>Typography <span class="badge">observed</span></h2>
+  <div class="card">
+    <p style="font-size:64px;font-weight:510;letter-spacing:-.03em;margin:0">Aa</p>
+    <p class="meta">Inter Variable · weights 510 / 590 · scale 13 / 16 / 20 / 48 / 64 / 72px · modular</p>
+    <p style="font-family:var(--mono);margin-top:14px">Berkeley&nbsp;Mono — eyebrows, labels, code</p>
+  </div>
+
+  <h2>CTAs &amp; shape <span class="badge home">home-only</span></h2>
+  <div class="card">
+    <span class="pill primary">Sign up</span>&nbsp;
+    <span class="pill ghost">Log in</span>
+    <div class="radii">
+      <div class="rad" style="border-radius:2px"></div>
+      <div class="rad" style="border-radius:4px"></div>
+      <div class="rad" style="border-radius:6px"></div>
+      <div class="rad" style="border-radius:8px"></div>
+      <div class="rad" style="border-radius:12px"></div>
+      <div class="rad" style="border-radius:9999px"></div>
+    </div>
+    <p class="meta" style="margin-top:8px">2 · 4 · 6 · 8 · 12 · pill — tight radii on chrome, pill on primary CTA.</p>
+  </div>
+
+  <h2>System components <span class="badge">observed</span></h2>
+  <table>
+    <tr><th>kind</th><th>fingerprint</th></tr>
+    <tr><td>header / nav</td><td>Wordmark · Product · Resources · Customers · Pricing · Now · Contact · Log&nbsp;in · Sign&nbsp;up</td></tr>
+    <tr><td>hero mock</td><td>Live Linear app UI (Inbox / My&nbsp;issues / Reviews / Pulse / Workspace / Initiatives / Projects)</td></tr>
+    <tr><td>footer</td><td>6-column: Product · Features · Company · Resources · Connect · Legal</td></tr>
+    <tr><td>closing band</td><td>"Built for the future. Available today." (72px)</td></tr>
+  </table>
+
+  <h2>Tensions surfaced <span class="badge">mechanical detectors</span></h2>
+  <div class="tension">
+    <div class="tag">T-radius-vocab</div>
+    <h3>Radius vocabulary is fragmented</h3>
+    <p>Five distinct sub-16px radii in active use: 2px (42×), 4px (28×), 6px (40×), 8px (12×), 12px (12×). Direct will need to pick a canonical small-radius value or accept the variance.</p>
+  </div>
+  <div class="tension">
+    <div class="tag">T-img-alt-empty</div>
+    <h3>Empty alt text widespread</h3>
+    <p>56% of captured images (18 / 32) carry empty alt. Many are product-UI mock fragments — an accessibility gap and a content-sourcing decision for the redesign.</p>
+  </div>
+  <div class="tension">
+    <div class="tag">T-logo-variants</div>
+    <h3>Single logo variant captured</h3>
+    <p>Only the inline-SVG wordmark was captured. The redesign will need a monochrome / inverted variant set; direct should plan that.</p>
+  </div>
+  <div class="tension">
+    <div class="tag">nuanced</div>
+    <h3>The hero shows the product, but motion is implied, not delivered</h3>
+    <p>The static capture freezes a tool whose entire value proposition is speed and "self-driving" operations. The most kinetic claim on the page ("Make product operations self-driving") is rendered as still type — a tension the cinematic variant can resolve.</p>
+  </div>
+
+  <footer>
+    <p>Read: <code>_brand-extraction.json</code>, <code>pages/home.json</code>, <code>DESIGN.json</code>. Rendered in Linear's own captured colors and Inter type.</p>
+    <p>What's next → <code>/stardust:direct</code> (resolve a redesign direction). This run continues automatically via <code>stardust:uplift</code>.</p>
+  </footer>
+</div>
+</body>
+</html>

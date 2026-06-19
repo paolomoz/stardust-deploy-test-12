@@ -1,0 +1,100 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-06-19",
+    "againstInput": "https://linear.app/",
+    "mode": "single-page",
+    "aggregationScope": "home-only (single-page extract)",
+    "renderedBy": "playwright",
+    "notes": "Single homepage capture per uplift --single. Palette/type aggregated from 4000-element walk on the home document."
+  },
+  "logo": {
+    "type": "inline-svg",
+    "localPath": "stardust/current/assets/logo.svg",
+    "source": "header inline <svg> aria-label Linear",
+    "synthesized": false
+  },
+  "palette": {
+    "background": "#08090a",
+    "surface": "#0f1011",
+    "surfaceRaised": "#121314",
+    "surfaceAlt": "#161718",
+    "border": "#23252a",
+    "text": "#f7f8f8",
+    "textMuted": "#8a8f98",
+    "textSubtle": "#62666d",
+    "textBright": "#d0d6e0",
+    "primary": "#5e6ad2",
+    "accentLime": "#e4f222",
+    "gradientStops": ["#f79ce0", "#f7bf8b", "#ffdf9f", "#83dcdc"],
+    "semantic": { "danger": "#f34e52", "success": "#27a644" },
+    "roleNotes": "Dark-first. #08090a confirmed by <meta theme-color>. #5e6ad2 is Linear's signature indigo; #e4f222 is the newer lime highlight; the four pastel stops form the 'new species' gradient text. Light pill buttons use #e5e5e6 bg on the dark canvas.",
+    "sources": ["pages/home.json#palette", "meta[name=theme-color]"]
+  },
+  "type": {
+    "headingFamily": "Inter Variable",
+    "bodyFamily": "Inter Variable",
+    "monoFamily": "Berkeley Mono",
+    "weightsObserved": [510, 590],
+    "sizesObserved": ["13px", "16px", "20px", "48px", "64px", "72px"],
+    "scaleAudit": { "kind": "modular", "basis": "13 / 16 / 20 / 48 / 64 / 72 — display jumps are large; body cluster 13-20" },
+    "files": [
+      { "url": "https://static.linear.app/fonts/InterVariable.woff2?v=4.1", "family": "Inter Variable", "localPath": "assets/fonts/InterVariable.woff2", "bytes": 352240, "licensingFlag": "open (Inter, OFL)" },
+      { "url": "https://static.linear.app/fonts/Berkeley-Mono-Variable.woff2?v=3.2", "family": "Berkeley Mono", "localPath": "assets/fonts/Berkeley-Mono-Variable.woff2", "bytes": 160932, "licensingFlag": "verify (Berkeley Mono is a commercial license)" }
+    ],
+    "notes": "Inter at 510/590 weight (variable optical). Berkeley Mono used for eyebrows/labels/code. Tight tracking on display sizes."
+  },
+  "motifs": {
+    "radius": { "dominant": "6px", "scale": ["2px", "4px", "6px", "8px", "12px"], "pill": "9999px", "notes": "Tight radii on chrome (4-6px); pill (9999px) on primary CTAs; 12px on cards." },
+    "shadows": [
+      "rgba(0,0,0,0.03) 0px 1.2px 0px 0px",
+      "rgba(0,0,0,0.4) 0px 2px 4px 0px",
+      "rgb(35,37,42) 0px 0px 0px 1px inset"
+    ],
+    "patterns": ["hairline 1px inset borders (#23252a)", "subtle elevation shadows", "product-UI screenshot embeds", "gradient display text", "lime highlight chips"],
+    "signatureGesture": "Hairline-bordered dark cards + a live product-UI mock embedded in the hero; gradient-on-dark display type."
+  },
+  "voice": {
+    "heroHeadline": "The product development system for teams and agents",
+    "subhead": "Purpose-built for planning and building products with AI agents.",
+    "metaTitle": "Linear – The system for product development",
+    "metaDescription": "Purpose-built for planning and building products with AI agents.",
+    "closingHeadline": "Built for the future. Available today.",
+    "ctaSamples": ["Open app", "Sign up", "Log in", "Contact"],
+    "sectionHeadlines": [
+      "A new species of product tool.",
+      "Make product operations self-driving",
+      "Define the product direction",
+      "Move work forward across teams and agents",
+      "Review PRs and agent output",
+      "Understand progress at scale",
+      "Changelog"
+    ],
+    "register": "confident, terse, engineering-grade; declarative product statements; agent-native framing",
+    "heroImage": "https://linear.app/static/og/homepage.jpg"
+  },
+  "systemComponents": {
+    "header": "Sticky top nav: wordmark + Product / Resources / Customers / Pricing / Now / Contact, then Log in + Sign up (light pill).",
+    "footer": "Six-column link grid: Product, Features, Company, Resources, Connect, Legal (h3 13px).",
+    "heroProductMock": "Embedded Linear app UI (Inbox / My issues / Reviews / Pulse / Workspace / Initiatives / Projects) shown as the hero visual.",
+    "closingCTA": "'Built for the future. Available today.' full-bleed closing band (72px)."
+  },
+  "sectionsOutline": [
+    "Hero — agentic product development system + product-UI mock",
+    "A new species of product tool (feature manifesto, gradient text)",
+    "Make product operations self-driving",
+    "Define the product direction",
+    "Move work forward across teams and agents",
+    "Review PRs and agent output",
+    "Understand progress at scale",
+    "Changelog / Now",
+    "Closing CTA — Built for the future. Available today."
+  ],
+  "coverage": {
+    "cssVars": 635,
+    "images": 32,
+    "cssBackgrounds": 15,
+    "fontsCaptured": 2,
+    "note": "635 CSS custom properties → mature design-token system."
+  }
+}

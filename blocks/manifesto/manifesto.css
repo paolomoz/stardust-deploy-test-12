@@ -1,0 +1,28 @@
+.manifesto {
+  padding: 96px 0;
+  text-align: center;
+}
+
+.manifesto .manifesto-inner {
+  display: block;
+}
+
+.manifesto h2 {
+  font-size: clamp(30px, 4.4vw, 48px);
+  line-height: 1.06;
+  max-width: 18ch;
+  margin: 0 auto;
+}
+
+.manifesto .manifesto-body {
+  color: var(--muted);
+  max-width: 48ch;
+  margin: 18px auto 0;
+  font-size: 18px;
+}
+
+@media (width <= 600px) {
+  .manifesto {
+    padding: 64px 0;
+  }
+}

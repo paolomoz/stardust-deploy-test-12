@@ -1,37 +1,210 @@
-.hero-container .hero-wrapper {
-  max-width: unset;
-  padding: 0;
+.hero {
+  padding: 96px 0 40px;
+  text-align: center;
 }
 
-.hero {
-  position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
+.hero .hero-inner {
+  display: block;
 }
 
 .hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
+  font-size: clamp(40px, 6.4vw, 72px);
+  line-height: 1.02;
+  max-width: 16ch;
+  margin: 0 auto;
 }
 
-.hero picture {
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
+.hero .hero-accent {
+  color: var(--primary);
 }
 
-.hero img {
-  object-fit: cover;
-  width: 100%;
+.hero .hero-sub {
+  color: var(--bright);
+  font-size: clamp(17px, 2vw, 21px);
+  max-width: 52ch;
+  margin: 22px auto 0;
+}
+
+.hero .actions {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.hero .actions a.btn {
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
+/* ---------- product-UI mock (fixed decorative visual) ---------- */
+.hero .hero-mock-wrap {
+  max-width: 1040px;
+  margin: 54px auto 0;
+  text-align: left;
+}
+
+.hero .hero-mock {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--surface);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 40%), 0 24px 80px -40px rgb(94 106 210 / 35%);
+}
+
+.hero .mock-side {
+  background: #0c0d0e;
+  border-right: 1px solid var(--border);
+  padding: 14px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.hero .mock-brand {
+  color: var(--text);
+  font-weight: 560;
+  padding: 4px 8px 14px;
+  font-size: 14px;
+}
+
+.hero .mock-nav {
+  font-size: 13px;
+  color: var(--muted);
+  padding: 5px 8px;
+  border-radius: 6px;
+}
+
+.hero .mock-nav.is-active {
+  background: rgb(94 106 210 / 16%);
+  color: var(--text);
+}
+
+.hero .mock-main {
+  padding: 16px 18px;
+}
+
+.hero .mock-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  font-size: 12px;
+  color: var(--muted);
+  font-family: var(--font-mono);
+}
+
+.hero .mock-count b {
+  color: var(--text);
+}
+
+.hero .mock-bars {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.hero .mock-bar {
+  flex: 1;
+  font-size: 11px;
+  color: var(--muted);
+  font-family: var(--font-mono);
+}
+
+.hero .mock-bar .bar {
+  display: block;
+  height: 6px;
+  background: #16181b;
+  border-radius: 9999px;
+  margin-top: 6px;
+  overflow: hidden;
+}
+
+.hero .mock-bar .bar b {
+  display: block;
   height: 100%;
+  background: var(--primary);
+  border-radius: 9999px;
 }
 
-@media (width >= 900px) {
+.hero .mock-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 8px;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+}
+
+.hero .mock-st {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex: none;
+}
+
+.hero .mock-st-todo {
+  border: 1.5px solid #5a5e66;
+}
+
+.hero .mock-st-progress {
+  border: 1.5px solid var(--lime);
+}
+
+.hero .mock-st-review {
+  border: 1.5px solid var(--primary);
+}
+
+.hero .mock-st-done {
+  background: var(--success);
+}
+
+.hero .mock-id {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--muted);
+  width: 66px;
+  flex: none;
+}
+
+.hero .mock-t {
+  color: var(--bright);
+  flex: 1;
+}
+
+.hero .mock-who {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #1c1f24;
+  color: var(--bright);
+  font-size: 10px;
+  font-weight: 560;
+  display: grid;
+  place-items: center;
+  flex: none;
+}
+
+.hero .mock-who[data-who="AG"] {
+  background: rgb(94 106 210 / 25%);
+  color: #aeb6ee;
+}
+
+@media (width <= 600px) {
   .hero {
-    padding: 40px 32px;
+    padding: 64px 0 24px;
+  }
+
+  .hero .hero-mock {
+    grid-template-columns: 1fr;
+  }
+
+  .hero .mock-side {
+    flex-flow: row wrap;
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
   }
 }
