@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-19T05:20:00Z",
+  "title": "Design System: Dala — Variant B",
+  "_provenance": {
+    "writtenBy": "stardust:direct",
+    "variantId": "B",
+    "role": "one captured trait amplified — display-typography signature",
+    "mode": "A",
+    "inheritsFrom": "DESIGN.json (shared base)",
+    "motionBlock": "ABSENT (static variant)",
+    "stardustVersion": "0.10.0"
+  },
+  "extensions": {
+    "amplifiedTrait": {
+      "trait": "display-typography-signature",
+      "thesis": "What if type was the interface — a strict modular scale and the full PP Neue Montreal weight range (200→600) the site owns but never exercises, doing all the structural work?",
+      "personalityMove": "'Type carries the brand' (PRODUCT.md Design Principles)",
+      "capturedEvidence": "_brand-extraction.json#type: single family across display/body/UI; weights [200,400,600] captured but headings render at 400 only; scaleAudit.kind = 'ad-hoc'.",
+      "isCapturedNotInvented": true
+    },
+    "modularScale": {
+      "base": "1rem",
+      "ratio": 1.333,
+      "ratioName": "perfect-fourth",
+      "override": true,
+      "overrideRationale": "B overrides the base 1.25 to 1.333 to give the display steps real drama while remaining a fixed modular system. This is a type-axis amplification of a captured trait, not size-as-personality: the trait being amplified is the single-family display signature, and the scale discipline directly retires the captured ad-hoc scale (T-scale).",
+      "steps": { "-1": "0.75rem", "0": "1rem", "1": "1.333rem", "2": "1.777rem", "3": "2.369rem", "4": "3.157rem", "5": "4.209rem", "6": "5.61rem", "7": "7.478rem", "8": "9.969rem" }
+    },
+    "shadows": [],
+    "breakpoints": [
+      { "name": "tablet", "value": "600px" },
+      { "name": "desktop", "value": "900px" },
+      { "name": "wide", "value": "1200px" }
+    ],
+    "densityFloor": { "resolvedSectionPadding": { "desktop": "64px", "tablet": "48px", "mobile": "32px" }, "tier": "balanced", "inheritedFrom": "base", "note": "holds even with oversized type" },
+    "structuralDeltasVsA": [
+      "Hero is type-led (letterforms ARE the composition); A's hero pairs the manifesto headline with a concrete product-moment panel — different hero layout strategy.",
+      "Mid-page type-specimen ladder replaces the investor-text + team-grid sections that A retains in restrained form — different section layout strategy / presence.",
+      "Constellation motif suppressed (near-static faint backdrop or removed) so type owns the page; A reprises it lightly as a recurring accent — different motif treatment."
+    ],
+    "improvementsHonored": "All five base improvements honored as a floor; B goes further on #3 (full weight range + strict scale) and re-routes #4/#5 through type rather than restrained logo/portrait treatment.",
+    "antiToolboxAudit": {
+      "result": "PASS",
+      "checks": [
+        { "rule": "Size-as-personality", "hit": false, "evidence": "Amplification is the captured single-family display signature exercised across its full captured weight range + a fixed modular scale; large sizes are a consequence of the scale, not the personality." },
+        { "rule": "Editorial-register vocabulary", "hit": false, "evidence": "'Specimen' is a type-craft term, not editorial costume; no 'atelier/journal/studio' vocabulary. Copy stays in the captured manifesto voice." }
+      ]
+    },
+    "iaPriorities": [
+      { "signal": "commercial-conversion", "preserveAs": "single-funnel-cta", "mutability": "movable", "inheritedFrom": "base", "constraint": "single 'Request Access' funnel intact" },
+      { "signal": "audience-ordering", "preserveAs": "primary-audience-first", "mutability": "movable", "inheritedFrom": "base" },
+      { "signal": "section-ordering", "preserveAs": "manifesto-sequence", "mutability": "movable", "inheritedFrom": "base", "constraint": "IA spine preserved; mid-page sections re-typeset as a specimen ladder, not re-sequenced — hero stays hero, closing CTA stays terminal" }
+    ],
+    "componentStyle": { "inheritedFrom": "base", "buttons": { "primary": { "reservedFor": "Request Access → Typeform" } } },
+    "voice": { "inheritedFrom": "base" }
+  },
+  "components": [],
+  "narrative": {
+    "northStar": "The Specimen in the Dark",
+    "overview": "Variant B amplifies the captured display-typography signature: one private typeface that already carries display, body and UI, but renders at weight 400 only on an ad-hoc scale in the captured site. B exercises the full 200→600 weight range and a strict 1.333 modular scale, and lets oversized type — not imagery — do all the structural work. Static; palette, typeface, IA spine all pinned.",
+    "keyCharacteristics": [
+      "One typeface across the full captured weight range (200 / 400 / 600).",
+      "Strict modular scale at ratio 1.333 (perfect fourth).",
+      "Type-led hero: letterforms are the composition, not a particle field.",
+      "Mid-page type-specimen ladder replaces the slider/strip sections."
+    ],
+    "rules": [
+      { "name": "The Full-Range Rule", "body": "All three captured weights (200/400/600) are in play on every long section: Light body, Regular sub-heads, SemiBold heads. Weight-400-only flatness is retired.", "section": "typography" },
+      { "name": "The Modular-Scale Rule", "body": "Ratio 1.333 override of the base 1.25. Every step is a power of the perfect fourth; no ad-hoc sizes.", "section": "typography" }
+    ],
+    "dos": [
+      "Do exercise all three captured weights (200/400/600) on every long section.",
+      "Do let oversized type be the layout; negative space is the second material.",
+      "Do keep the IA spine and the single 'Request Access' funnel intact."
+    ],
+    "donts": [
+      "Don't read B as 'A but bigger fonts'.",
+      "Don't add imagery to compensate; type carries the page.",
+      "Don't exceed 64px desktop section padding even with oversized type."
+    ]
+  }
+}

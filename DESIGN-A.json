@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-19T05:20:00Z",
+  "title": "Design System: Dala — Variant A",
+  "_provenance": {
+    "writtenBy": "stardust:direct",
+    "variantId": "A",
+    "role": "faithful + improvements",
+    "mode": "A (strict)",
+    "inheritsFrom": "DESIGN.json (shared base)",
+    "motionBlock": "ABSENT (static variant)",
+    "stardustVersion": "0.10.0"
+  },
+  "extensions": {
+    "modularScale": { "base": "1rem", "ratio": 1.25, "ratioName": "minor-third", "inheritedFrom": "base" },
+    "shadows": [],
+    "breakpoints": [
+      { "name": "tablet", "value": "600px" },
+      { "name": "desktop", "value": "900px" },
+      { "name": "wide", "value": "1200px" }
+    ],
+    "densityFloor": { "resolvedSectionPadding": { "desktop": "64px", "tablet": "48px", "mobile": "32px" }, "tier": "balanced", "inheritedFrom": "base" },
+    "improvementsApplied": [
+      { "n": 1, "tag": "dated-pattern", "fix": "Hero pairs the manifesto headline with a concrete product moment; retires the centered stealth-teaser pattern. Single CTA 'Request Access' preserved." },
+      { "n": 2, "tag": "ia-clutter", "fix": "Numbered mixed-case section eyebrows + clearer hierarchy across the 12 headings; the wall of prose gains a spine." },
+      { "n": 3, "tag": "contrast-or-density", "fix": "Hierarchy from weight (200/400/600) + a strict 1.25 modular scale, not size alone; retires the ad-hoc scale (T-scale)." },
+      { "n": 4, "tag": "cliche", "fix": "Decorative investor logo-PNG strip + generic team slider replaced with restrained on-brand text + a static team grid; bare 'here' link given descriptive text (T-link-content-free)." },
+      { "n": 5, "tag": "missed-opportunity", "fix": "Constellation motif reprised lightly past the hero as a quiet recurring accent (light reprise, not a structural system)." }
+    ],
+    "antiToolboxAudit": { "result": "PASS", "inheritedFrom": "base", "note": "A introduces no new moves beyond the improvements list; base audit holds." },
+    "iaPriorities": [
+      { "signal": "commercial-conversion", "preserveAs": "single-funnel-cta", "mutability": "movable", "inheritedFrom": "base", "constraint": "single 'Request Access' funnel preserved even with the new hero product moment" },
+      { "signal": "audience-ordering", "preserveAs": "primary-audience-first", "mutability": "movable", "inheritedFrom": "base" },
+      { "signal": "section-ordering", "preserveAs": "manifesto-sequence", "mutability": "movable", "inheritedFrom": "base", "constraint": "captured 8-section sequence preserved verbatim — A is the faithful baseline" }
+    ],
+    "componentStyle": { "inheritedFrom": "base", "buttons": { "primary": { "reservedFor": "Request Access → Typeform" } } },
+    "voice": { "inheritedFrom": "base" }
+  },
+  "components": [],
+  "narrative": {
+    "northStar": "The Constellation in the Dark",
+    "overview": "Variant A is strict Mode A: the risk-averse green-light. Same IA, same section sequence, same composition strategy as the captured site, with the five captured weaknesses fixed and nothing reached for beyond them. Static — no cinematic motion layer.",
+    "keyCharacteristics": [
+      "Hero pairs the manifesto headline with a concrete product moment.",
+      "Numbered mixed-case section eyebrows spine the long scroll.",
+      "Hierarchy from weight + a 1.25 modular scale, not size alone.",
+      "Restrained investor/team treatment replaces decorative strips.",
+      "Light constellation reprise past the hero."
+    ],
+    "rules": [
+      { "name": "The Faithful-Floor Rule", "body": "Variant A applies exactly the five improvements — no extras, no embellishment, no creative reach. The brand team should react 'yes, that's us, with the obvious fixes.'", "section": "overview" }
+    ],
+    "dos": [
+      "Do pair the hero manifesto headline with a concrete product moment (improvement #1).",
+      "Do keep 'Request Access' as the one conversion path.",
+      "Do number the section eyebrows and keep them mixed-case."
+    ],
+    "donts": [
+      "Don't add a second conversion verb.",
+      "Don't reach beyond the five improvements."
+    ]
+  }
+}

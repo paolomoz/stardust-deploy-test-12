@@ -1,0 +1,138 @@
+.team {
+  padding-block: var(--sp-section);
+  position: relative;
+}
+
+.team .wrap {
+  width: 100%;
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.team .section__head {
+  margin-bottom: var(--sp-xl);
+}
+
+.team .eyebrow {
+  font-size: var(--step--1);
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  color: var(--muted-gray);
+  margin: 0 0 var(--sp-lg);
+}
+
+.team .eyebrow__num {
+  color: var(--paper-white);
+}
+
+.team .headline {
+  font-size: var(--step-2);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  margin: 0;
+  text-wrap: balance;
+}
+
+.team .team__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-lg);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.team .member__photo {
+  aspect-ratio: 780 / 1140;
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--r-md);
+  filter: grayscale(1) contrast(1.02);
+  transition: filter 0.4s ease;
+}
+
+.team .member:hover .member__photo {
+  filter: grayscale(0);
+}
+
+.team .member__role {
+  font-size: var(--step--1);
+  letter-spacing: 0.04em;
+  color: var(--muted-gray);
+  margin: var(--sp-md) 0 4px;
+}
+
+.team .member__name {
+  margin: 0;
+  font-size: var(--step-1);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.team .member__social {
+  display: flex;
+  gap: var(--sp-md);
+  margin-top: 10px;
+}
+
+.team .member__social a {
+  font-size: 0.9rem;
+}
+
+.team .lnk {
+  color: var(--muted-gray);
+  text-decoration: none;
+  border-bottom: 1px solid rgb(154 154 154 / 40%);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.team .lnk:hover {
+  color: var(--paper-white);
+  border-bottom-color: var(--paper-white);
+}
+
+.team .hiring {
+  margin-top: var(--sp-xl);
+  padding-top: var(--sp-xl);
+  border-top: 1px solid var(--hairline);
+  max-width: var(--measure);
+}
+
+.team .hiring h3 {
+  margin: 0 0 var(--sp-md);
+  font-size: var(--step-1);
+  font-weight: 400;
+}
+
+.team .hiring p {
+  color: rgb(255 255 255 / 74%);
+}
+
+@media (width <= 768px) {
+  .team .team__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (width <= 640px) {
+  .team .team__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .team .na-anim {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .team .na-anim.na-in {
+    opacity: 1;
+    transform: none;
+  }
+}

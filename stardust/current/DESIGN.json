@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-19T04:13:00Z",
+  "title": "Design System: Dala",
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "readArtifacts": [
+      "stardust/current/_brand-extraction.json",
+      "stardust/current/pages/home.json",
+      "stardust/current/DESIGN.md"
+    ],
+    "stardustVersion": "0.10.0",
+    "notes": "Single-page extraction; all tokens home-only. No box-shadows, gradients, or CSS design tokens (only --vh) were present on the source."
+  },
+  "extensions": {
+    "colorMeta": {
+      "ink-black": { "role": "neutral", "displayName": "Ink Black", "canonical": "#000000", "tonalRamp": ["#000000", "#0a0a0a", "#141414", "#1f1f1f", "#2b2b2b", "#3a3a3a", "#525252", "#737373"] },
+      "paper-white": { "role": "neutral", "displayName": "Paper White", "canonical": "#ffffff", "tonalRamp": ["#171717", "#404040", "#737373", "#a3a3a3", "#d4d4d4", "#e5e5e5", "#f5f5f5", "#ffffff"] },
+      "electric-purple": { "role": "primary", "displayName": "Electric Purple", "canonical": "#8052ff", "tonalRamp": ["#1e1240", "#2e1b63", "#432a8f", "#5a3bbf", "#7049e6", "#8052ff", "#9b76ff", "#c1aaff"] },
+      "muted-gray": { "role": "neutral", "displayName": "Muted Gray", "canonical": "#9a9a9a", "tonalRamp": ["#1a1a1a", "#333333", "#4d4d4d", "#666666", "#808080", "#9a9a9a", "#b3b3b3", "#cccccc"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero headline only ('Unlock collective wisdom.'), 112px on black." },
+      "headline": { "displayName": "Headline", "purpose": "Major section titles ('Our team', 'Our investors')." },
+      "title": { "displayName": "Title", "purpose": "Sub-section headings, closing CTA line, team-member names." },
+      "body": { "displayName": "Body", "purpose": "Manifesto and mission prose." },
+      "label": { "displayName": "Label", "purpose": "Nav links and small UI text in muted gray." }
+    },
+    "motifs": {
+      "borderRadius": {
+        "primary": "22.5px",
+        "secondary": "24px",
+        "pill": "50%",
+        "occurrences": { "22.5px": 6, "24px": 2, "50%": 1, "0px": 24 }
+      },
+      "shadows": [],
+      "gradients": [],
+      "patterns": [
+        { "name": "generative-particle-hero", "evidence": "home hero is a black-background particle/constellation cloud behind a giant typographic headline" },
+        { "name": "scrollytelling-reveal", "evidence": "long single-page narrative; sections animate in on scroll" },
+        { "name": "manifesto-longform", "evidence": "problem -> solution -> mission prose blocks, no card grid" },
+        { "name": "team-portrait-slider", "evidence": "3 founder portraits in a horizontal team slider" },
+        { "name": "investor-logo-marks", "evidence": "5 decorative illustration PNGs under 'Our investors'" },
+        { "name": "pill-cta", "evidence": "purple pill 'Request Access' buttons -> Typeform" }
+      ]
+    },
+    "shadows": [],
+    "motion": [],
+    "breakpoints": []
+  },
+  "componentStyle": {
+    "buttons": {
+      "primary": { "background": "#8052ff", "color": "#ffffff", "borderRadius": "22.5px", "padding": "12px 24px", "fontWeight": 400, "shadow": null, "hoverDelta": "unknown" },
+      "secondary": null,
+      "ghost": { "background": "transparent", "color": "#9a9a9a", "borderRadius": "0px", "padding": "0", "fontWeight": 400, "shadow": null }
+    },
+    "dualCTAPattern": null,
+    "cards": null,
+    "inputs": null
+  },
+  "voice": {
+    "heroHeadline": "Unlock collective wisdom.",
+    "heroSubcopy": "Plug into your team’s shared brainpower. Ask Dala to instantly find anything or anyone from any workplace system. Focus on doing your best work with context, confidence and clarity.",
+    "primaryCTALabel": "Request Access",
+    "ctaSamples": ["Request Access", "Request access", "Accept"],
+    "navItems": ["Manifesto", "Team", "Blog", "Request Access"],
+    "footerHeadings": ["Build with us.", "Privacy", "Terms"],
+    "firstParagraph": "Plug into your team’s shared brainpower. Ask Dala to instantly find anything or anyone from any workplace system. Focus on doing your best work with context, confidence and clarity.",
+    "tone": { "guess": "aspirational", "evidence": "first-person-plural mission language, emotional verbs (delightful, flow), reframes productivity philosophically" }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single filled conversion control; opens an external Typeform.",
+      "html": "<a class=\"ds-btn-primary\" href=\"https://askdala.typeform.com/to/lSujgyr8\">Request Access</a>",
+      "css": ".ds-btn-primary { display:inline-block; background:#8052ff; color:#ffffff; padding:12px 24px; border-radius:22.5px; font-family:PPNeueMontreal,system-ui,sans-serif; font-weight:400; text-decoration:none; transition:opacity .2s; } .ds-btn-primary:hover { opacity:.88; } .ds-btn-primary:focus-visible { outline:2px solid #fff; outline-offset:2px; }"
+    },
+    {
+      "name": "Ghost Nav Link",
+      "kind": "nav",
+      "refersTo": "button-ghost",
+      "description": "Muted-gray text nav link in the black header.",
+      "html": "<a class=\"ds-nav-link\" href=\"/#manifesto\">Manifesto</a>",
+      "css": ".ds-nav-link { color:#9a9a9a; font-family:PPNeueMontreal,system-ui,sans-serif; font-size:.875rem; text-decoration:none; transition:color .2s; } .ds-nav-link:hover { color:#ffffff; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Constellation in the Dark",
+    "overview": "Dala's surface is a cinematic, near-monochrome landing rendered almost entirely in pure black. The single load-bearing visual is a generative particle cloud that literalises 'Unlock collective wisdom.' as a constellation of scattered knowledge coalescing. The system is built in negative space: oversized editorial typography on black, generous body prose, and one electric purple doing all the accent work. It explicitly rejects the generic SaaS landing page.",
+    "keyCharacteristics": [
+      "Pure-black canvas (#000000) as the dominant material.",
+      "One restrained accent (electric purple #8052ff), used on conversion only.",
+      "A single private typeface carrying display, body and UI.",
+      "Generative / abstract imagery over literal product screenshots.",
+      "Long-scroll, manifesto-paced narrative with motion as reveal."
+    ],
+    "rules": [
+      { "name": "The One-Voice Rule", "body": "Electric purple appears on conversion affordances only — never as decoration, divider, or background; under 10% of any viewport.", "section": "colors" },
+      { "name": "The Scale-Not-Weight Rule", "body": "Hierarchy comes from dramatic size jumps on a single regular weight, not from bolding.", "section": "typography" },
+      { "name": "The No-Shadow Rule", "body": "Surfaces never lift off the black; separate with space, not shadows.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do build on pure black (#000000) and treat blackspace as the primary material.",
+      "Do reserve electric purple (#8052ff) for conversion affordances only.",
+      "Do drive hierarchy through dramatic type scale on a single regular weight.",
+      "Do keep imagery generative / abstract.",
+      "Do keep surfaces flat — separate with space, not shadows."
+    ],
+    "donts": [
+      "Don't introduce a generic SaaS blue gradient hero or a 3-up feature-card grid.",
+      "Don't add stock illustration, light dashboards, or dense multi-card layouts.",
+      "Don't spread purple into decoration, dividers, or backgrounds.",
+      "Don't lead with feature bullet lists.",
+      "Don't add drop shadows or a card elevation ramp."
+    ]
+  }
+}

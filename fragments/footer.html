@@ -1,0 +1,108 @@
+<style>
+  footer.footer {
+    border-top: 1px solid var(--hairline);
+    padding-block: var(--sp-xl);
+    background: var(--ink-black);
+    color: var(--paper-white);
+  }
+
+  footer.footer .ftr-wrap {
+    width: 100%;
+    max-width: var(--maxw);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+  }
+
+  footer.footer .ftr-wordwrap {
+    position: relative;
+    overflow: hidden;
+  }
+
+  footer.footer .ftr-wordmark {
+    font-size: clamp(4rem, 18vw, 16rem);
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    line-height: 0.9;
+    margin: 0 0 var(--sp-xl);
+    color: var(--paper-white);
+  }
+
+  footer.footer .ftr-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--sp-lg);
+  }
+
+  footer.footer .ftr-copy {
+    color: var(--muted-gray);
+    font-size: 0.9rem;
+  }
+
+  footer.footer .ftr-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-lg);
+    list-style: none;
+    margin: var(--sp-xl) 0 0;
+    padding: 0;
+  }
+
+  footer.footer .ftr-nav a {
+    color: var(--muted-gray);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+  }
+
+  footer.footer .ftr-nav a:hover {
+    color: var(--paper-white);
+  }
+
+  footer.footer .ftr-social {
+    display: flex;
+    gap: var(--sp-lg);
+    margin-top: var(--sp-md);
+  }
+
+  footer.footer .ftr-link {
+    color: var(--muted-gray);
+    text-decoration: none;
+    border-bottom: 1px solid rgb(154 154 154 / 40%);
+    font-size: 0.95rem;
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  footer.footer .ftr-link:hover {
+    color: var(--paper-white);
+    border-bottom-color: var(--paper-white);
+  }
+
+  @media (width <= 640px) {
+    footer.footer .ftr-top {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>
+<div class="ftr-wrap">
+  <div class="ftr-wordwrap">
+    <p class="ftr-wordmark">Dala</p>
+  </div>
+  <div class="ftr-top">
+    <span class="ftr-copy">© 2021 Dala Technologies Limited. All rights reserved.</span>
+  </div>
+  <ul class="ftr-nav">
+    <li><a href="/#manifesto">Manifesto</a></li>
+    <li><a href="/#team">Team</a></li>
+    <li><a href="https://medium.com/dala-ai" rel="noopener">Blog</a></li>
+    <li><a href="/privacy">Privacy</a></li>
+    <li><a href="/terms">Terms</a></li>
+  </ul>
+  <div class="ftr-social">
+    <a class="ftr-link" href="https://www.linkedin.com/company/askdala/" rel="noopener">LinkedIn</a>
+    <a class="ftr-link" href="https://twitter.com/askdala" rel="noopener">Twitter</a>
+    <a class="ftr-link" href="mailto:careers@dala.ai">Email</a>
+  </div>
+</div>

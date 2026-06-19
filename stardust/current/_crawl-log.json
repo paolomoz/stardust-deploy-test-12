@@ -1,0 +1,56 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-06-19T04:12:30Z",
+    "stardustVersion": "0.10.0",
+    "mode": "--single"
+  },
+  "consent": {
+    "method": "none-detected",
+    "note": "No consent / cookie banner present on first navigation (a custom 'Accept' cookie button exists in the DOM but no blocking overlay was detected by the API or selector chain)."
+  },
+  "discovery": {
+    "method": "single-entry",
+    "entryUrl": "https://dala.craftedbygc.com/",
+    "sitemapChecked": false,
+    "fetchTechnique": "headless-chromium",
+    "waitMode": "medium",
+    "waitModeBasis": "Pre-flight curl returned HTTP/2 200, text/html, 45KB server-rendered body with real <main>/<h1> markup -> server-rendered marketing site -> medium is appropriate.",
+    "totalDiscovered": 1,
+    "filteredAsJunk": [],
+    "userChoice": "--single (cap 1, homepage only)",
+    "kept": ["/"],
+    "cut": []
+  },
+  "crawl": {
+    "pagesAttempted": 1,
+    "pagesSucceeded": 1,
+    "pagesFailed": 0,
+    "pages": [
+      {
+        "slug": "home",
+        "url": "https://dala.craftedbygc.com/",
+        "finalUrl": "https://dala.craftedbygc.com/",
+        "httpStatus": 200,
+        "contentType": "text/html",
+        "waitMode": "medium",
+        "waitMs": 6625,
+        "renderedBy": "playwright",
+        "fetchedAt": "2026-06-19T04:10:00Z"
+      }
+    ],
+    "failures": []
+  },
+  "assets": {
+    "fontsCaptured": 3,
+    "fontFiles": [
+      "PPNeueMontreal-Light.woff2",
+      "PPNeueMontreal-Regular.woff2",
+      "PPNeueMontreal-SemiBold.woff2"
+    ],
+    "mediaDownloaded": 9,
+    "logo": "stardust/current/assets/logo.svg (inline-svg, header wordmark, D-mark PNG inlined as data-URI)",
+    "screenshots": ["home.png"]
+  },
+  "waitSummary": "1 page resolved at medium (6.6s). No fallbacks."
+}

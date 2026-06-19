@@ -1,0 +1,71 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-06-19T04:17:00Z",
+    "stardustVersion": "0.10.0"
+  },
+  "site": {
+    "name": "Dala",
+    "originUrl": "https://dala.craftedbygc.com",
+    "extractedAt": "2026-06-19T04:10:00Z",
+    "pageCap": 1,
+    "totalDiscovered": 1,
+    "crawled": 1,
+    "mode": "single"
+  },
+  "currentStatePath": "stardust/current",
+  "direction": {
+    "resolvedAt": "2026-06-19T05:20:00Z",
+    "phrase": "uplift / presales brand-faithful redesign (3 variants)",
+    "directionFile": "stardust/direction.md",
+    "mode": "A",
+    "iaFidelity": "reimagined",
+    "variantMode": "A+B+C role-differentiated",
+    "variants": [
+      { "id": "A", "role": "faithful + improvements", "parentVariant": null, "design": ["DESIGN-A.md", "DESIGN-A.json"], "static": true },
+      { "id": "B", "role": "display-typography amplified", "parentVariant": null, "design": ["DESIGN-B.md", "DESIGN-B.json"], "static": true },
+      { "id": "C", "role": "signature-gesture extension", "parentVariant": null, "design": ["DESIGN-C.md", "DESIGN-C.json"], "static": false, "motionRegister": "arrival" }
+    ]
+  },
+  "pages": [
+    {
+      "slug": "home",
+      "url": "https://dala.craftedbygc.com/",
+      "title": "Dala",
+      "type": null,
+      "status": "prototyped",
+      "currentStatePath": "stardust/current/pages/home.json",
+      "prototypePath": "stardust/prototypes/home-A-proposed.html",
+      "prototypePaths": {
+        "A": "stardust/prototypes/home-A-proposed.html",
+        "B": "stardust/prototypes/home-B-proposed.html",
+        "C": "stardust/prototypes/home-C-proposed.html",
+        "C-cinematic": "stardust/prototypes/home-C-cinematic.html"
+      },
+      "shapePaths": {
+        "A": "stardust/prototypes/home-A-shape.md",
+        "B": "stardust/prototypes/home-B-shape.md",
+        "C": "stardust/prototypes/home-C-shape.md"
+      },
+      "migratedPath": "",
+      "prototypedAt": "2026-06-19T07:55:00Z",
+      "history": [
+        { "status": "directed", "at": "2026-06-19T05:20:00Z" },
+        { "status": "prototyped", "at": "2026-06-19T07:55:00Z" }
+      ],
+      "qualityGates": {
+        "A": { "critique": { "p0": 0, "p1": 0 }, "audit": "pass", "adapt": "done", "motion": "n/a (static)" },
+        "B": { "critique": { "p0": 0, "p1": 0 }, "audit": "pass", "adapt": "done", "motion": "n/a (static)" },
+        "C": { "critique": { "p0": 0, "p1": 0 }, "audit": "pass", "adapt": "done", "motion": { "register": "arrival", "lenisBoot": "ok", "reducedMotionFallback": "complete", "noJsFallback": "pass", "scrollJack": "pass", "registerMatch": "pass", "cliffDetector": "pass", "probeFindings": "by-design (staggered entrance)" } }
+      },
+      "provenance": {
+        "renderedBy": "playwright",
+        "fetchedAt": "2026-06-19T04:10:00Z",
+        "waitMode": "medium",
+        "waitMs": 6625,
+        "httpStatus": 200,
+        "contentType": "text/html"
+      }
+    }
+  ]
+}

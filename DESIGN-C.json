@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-19T05:20:00Z",
+  "title": "Design System: Dala — Variant C",
+  "_provenance": {
+    "writtenBy": "stardust:direct",
+    "variantId": "C",
+    "role": "different captured trait amplified — signature-gesture extension (generative constellation)",
+    "mode": "A",
+    "inheritsFrom": "DESIGN.json (shared base); typography + IA inherited from variant A",
+    "motionBlock": "PRESENT (this is the only variant carrying extensions.motion)",
+    "stardustVersion": "0.10.0"
+  },
+  "extensions": {
+    "amplifiedTrait": {
+      "trait": "signature-gesture / generative-particle-constellation",
+      "thesis": "What if the generative constellation stopped being a hero backdrop and became the brand's structural voice — threading from the first viewport through every section and resolving in the footer wordmark?",
+      "personalityMove": "'The constellation is the brand's thesis, not a hero backdrop' (PRODUCT.md Design Principles) + cinematic personality trait",
+      "capturedEvidence": "_brand-extraction.json#motifs.patterns.generative-particle-hero present at hero only; remaining sections collapse to manifesto-longform prose with no recurring motif. The constellation is the literal product thesis (scattered fragments → shared knowledge) yet used exactly once.",
+      "isCapturedNotInvented": true,
+      "differentFromB": "B amplifies the display-typography signature (a different captured trait); C amplifies the generative constellation. Different trait, different personality move, different chrome."
+    },
+    "motion": {
+      "register": "arrival",
+      "registerSource": "auto",
+      "registerRationale": "PRODUCT.md Brand Personality is brand-register with a cinematic/aspirational formal voice introducing an entity; arrival is the heuristic default for a brand-register marketing surface introducing an entity (and the tiebreak default when editorial also matches). The captured signature — generative-particle-hero + scrollytelling-reveal + enormous hero headline + 'Motion as narrative' principle — maps one-to-one onto arrival's signature moves (hero parallax, rising plate, staggered per-section entrances, hero-text enterUp stagger). No --cinematic-register override supplied.",
+      "easings":   { "entrance": "cubic-bezier(0.25, 0.46, 0.45, 0.94)", "transition": "cubic-bezier(0.42, 0, 0, 1)" },
+      "durations": { "enter": 700, "stagger": 90 },
+      "parallax":  { "translate": 35, "fade": 0.55, "rangeStart": 0, "range": 80 },
+      "refusesClauseResolution": "arrival refuses editorial-airy section padding (>96px desktop). Dala's captured 120px sections do NOT carry forward — the multi-audience density floor caps sectionPadding.desktop at 64px in C, so the refuses clause is satisfied and the editorial/arrival tiebreak is moot.",
+      "reducedMotion": "Every motion element (hero parallax, rising plates, per-section entrances, constellation-divider resolves, footer-wordmark wipe) is neutralised to a static resolved end-state under prefers-reduced-motion: reduce. The reduced-motion render is a complete, legible page on its own."
+    },
+    "modularScale": { "base": "1rem", "ratio": 1.25, "ratioName": "minor-third", "inheritedFrom": "variant A / base", "note": "C does not move the type axis; its differentiation is motion." },
+    "shadows": [],
+    "breakpoints": [
+      { "name": "tablet", "value": "600px" },
+      { "name": "desktop", "value": "900px" },
+      { "name": "wide", "value": "1200px" }
+    ],
+    "densityFloor": { "resolvedSectionPadding": { "desktop": "64px", "tablet": "48px", "mobile": "32px" }, "tier": "balanced", "inheritedFrom": "base", "note": "applies to C too — satisfies the arrival refuses-clause" },
+    "structuralDeltasVsA": [
+      "Live-particle hero composition: the hero is a live generative particle field with scroll-parallax + enterUp-staggered headline, vs A's static hero paired with a concrete product-moment panel — different hero composition / layout strategy.",
+      "Constellation-divider system: each section transition is a constellation field that resolves into a diamond node as the next section rises and staggers in (arrival choreography), vs A's plain section breaks — a structural section-divider system that does not exist in A.",
+      "Footer-wordmark constellation wipe: the footer 'Dala' wordmark is composed of constellation points converging into the letterforms on reveal, vs A's static wordmark footer — a distinct footer treatment / signature component."
+    ],
+    "cCliffCheck": {
+      "result": "PASS",
+      "definedAgainstCapturedTrait": "generative-particle-constellation (motifs.patterns.generative-particle-hero)",
+      "notBPlusMore": true,
+      "notSizeAsPersonality": true,
+      "notPaddingAsPersonality": true,
+      "noEditorialVocabulary": true,
+      "evidence": "C is the captured constellation gesture extended into a structural+kinetic system; it amplifies a different captured trait than B (motion/motif vs type), is a defensible standalone proposition, and uses no slider-pushed-past-B definitions."
+    },
+    "improvementsHonored": "All five base improvements honored as a floor; C goes furthest on #5 (constellation reprised past the hero) by making the motif the structural spine.",
+    "antiToolboxAudit": {
+      "result": "PASS",
+      "checks": [
+        { "rule": "C-cliff overshoot / B-but-more", "hit": false, "evidence": "C amplifies a distinct captured trait (constellation) via a structural+motion system, not a slider pushed past B." },
+        { "rule": "Editorial-register vocabulary", "hit": false, "evidence": "Constellation/arrival language is the captured product thesis, not editorial costume; copy stays in the captured manifesto voice." },
+        { "rule": "Accent purple spread as decoration", "hit": false, "evidence": "Constellation points are particle luminance (purple/gold/white); the One-Voice Rule still reserves the purple pill to conversion." }
+      ]
+    },
+    "iaPriorities": [
+      { "signal": "commercial-conversion", "preserveAs": "single-funnel-cta", "mutability": "movable", "inheritedFrom": "base", "constraint": "single 'Request Access' funnel intact; pill sits above the live hero field at full contrast" },
+      { "signal": "audience-ordering", "preserveAs": "primary-audience-first", "mutability": "movable", "inheritedFrom": "base" },
+      { "signal": "section-ordering", "preserveAs": "manifesto-sequence", "mutability": "movable", "inheritedFrom": "base", "constraint": "IA identical to A; hero stays first viewport, closing CTA terminal — motion does not re-sequence the page" }
+    ],
+    "componentStyle": { "inheritedFrom": "base", "buttons": { "primary": { "reservedFor": "Request Access → Typeform" } } },
+    "systemComponentRoles": {
+      "constellation-accent": { "deployment": "structural-spine", "note": "C deploys the base abstract constellation-accent role as the structural spine: hero field → section dividers → footer wordmark" }
+    },
+    "voice": { "inheritedFrom": "base" }
+  },
+  "components": [],
+  "narrative": {
+    "northStar": "The Constellation as Spine",
+    "overview": "Variant C amplifies the captured generative-particle constellation — the literal product thesis — into the brand's structural voice. On the captured site it appears once at the hero, then is abandoned; C threads it from the first viewport through every section divider and resolves it in the footer wordmark. Typography, scale and IA are inherited from variant A verbatim; the differentiation is motion (register arrival), not layout.",
+    "keyCharacteristics": [
+      "The generative constellation is the structural spine, not a hero backdrop.",
+      "Cinematic arrival choreography: hero parallax, rising plates, staggered per-section entrances.",
+      "IA identical to A; the bet is motion.",
+      "Every motion element neutralised under prefers-reduced-motion: reduce."
+    ],
+    "rules": [
+      { "name": "The Constellation-Spine Rule", "body": "The generative constellation threads hero → section dividers → footer wordmark as one structural system; it is never a one-off hero backdrop.", "section": "components" },
+      { "name": "The Reduced-Motion-Complete Rule", "body": "Every motion element resolves to a static legible end-state under prefers-reduced-motion: reduce. The reduced-motion render is a complete page on its own.", "section": "components" }
+    ],
+    "dos": [
+      "Do thread the constellation from hero to section dividers to footer wordmark as one structural system.",
+      "Do keep IA identical to A; the differentiation is motion, not layout.",
+      "Do gate every motion element behind prefers-reduced-motion."
+    ],
+    "donts": [
+      "Don't define C as 'B but more', size-as-personality, or padding-as-personality.",
+      "Don't spread the accent purple into the constellation as decoration.",
+      "Don't let motion break the single 'Request Access' funnel or move the hero out of the first viewport."
+    ]
+  }
+}

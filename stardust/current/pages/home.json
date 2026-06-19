@@ -1,0 +1,1309 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-06-19T04:10:30.501Z",
+    "readArtifacts": [
+      "https://dala.craftedbygc.com/"
+    ],
+    "synthesizedInputs": [],
+    "stardustVersion": "0.10.0",
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-06-19T04:10:30.501Z",
+    "waitMode": "medium",
+    "waitMs": 6625,
+    "httpStatus": 200,
+    "contentType": "text/html"
+  },
+  "slug": "home",
+  "url": "https://dala.craftedbygc.com/",
+  "finalUrl": "https://dala.craftedbygc.com/",
+  "title": "Dala",
+  "metaDescription": "Your workplace has the answer. Just ask Dala for it.",
+  "og": {
+    "title": "Dala",
+    "description": "Your workplace has the answer. Just ask Dala for it.",
+    "image": "https://dala.ai/images/fb-og.jpg",
+    "type": "website",
+    "siteName": "Your workplace has the answer. Just ask Dala for it."
+  },
+  "themeColor": {
+    "light": "#000000"
+  },
+  "language": "en",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Dala",
+      "id": null,
+      "domPath": "html > body > header.header.js-header > div.header__inner.js-header-inner:nth-child(2) > h1.sr",
+      "style": {
+        "fontFamily": "PPNeueMontreal, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontWeight": "700",
+        "fontSize": "24px",
+        "lineHeight": "36px",
+        "letterSpacing": "normal",
+        "color": "rgb(255, 255, 255)"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Unlockcollectivewisdom.",
+      "id": null,
+      "domPath": "html > body > div:nth-child(8) > main > div.section.landing:nth-child(2) > h2.landing__title.t-56",
+      "style": {
+        "fontFamily": "PPNeueMontreal, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontWeight": "400",
+        "fontSize": "112.5px",
+        "lineHeight": "123.75px",
+        "letterSpacing": "-4.5px",
+        "color": "rgb(255, 255, 255)"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Make decisions with confidence",
+      "id": null,
+      "domPath": "body > div:nth-child(8) > main > div.section.section--tall:nth-child(3) > div.mobile-blur > h2.introduction__title.t-32",
+      "style": {
+        "fontFamily": "PPNeueMontreal, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontWeight": "400",
+        "fontSize": "42px",
+        "lineHeight": "50.4px",
+        "letterSpacing": "normal",
+        "color": "rgb(255, 255, 255)"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Spark lightbulb moments",
+      "id": null,
+      "domPath": "body > div:nth-child(8) > main > div.section.section--tall:nth-child(5) > div.manifesto__inner.mobile-blur > h2.manifesto__title.t-32",
+      "style": {
+        "fontFamily": "PPNeueMontreal, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontWeight": "400",
+        "fontSize": "42px",
+        "lineHeight": "50.4px",
+        "letterSpacing": "normal",
+        "color": "rgb(255, 255, 255)"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Build a better world of work",
+      "id": null,
+      "domPath": "body > div:nth-child(8) > main > div.section.section--tall:nth-child(6) > div.manifesto__inner.mobile-blur > h2.manifesto__title.t-32",
+      "style": {
+        "fontFamily": "PPNeueMontreal, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontWeight": "400",
+        "fontSize": "42px",
+        "lineHeight": "50.4px",
+        "letterSpacing": "normal",
+        "color": "rgb(255, 255, 255)"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Our team",
+      "id": null,
+      "domPath": "div:nth-child(8) > main > div.section.js-section:nth-child(7) > div.team:nth-child(1) > div.team__head.js-team-head:nth-child(1) > h2.t-56.t-lh-1",
+      "style": {
+        "fontFamily": "PPNeueMontreal, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontWeight": "400",
+        "fontSize": "78px",
+        "lineHeight": "85.8px",
+        "letterSpacing": "normal",
+        "color": "rgb(255, 255, 255)"
+      }
+    },
+    {
+      "level": 3,
+      "text": "Haroun Hickman",
+      "id": null,
+      "domPath": "div.team:nth-child(1) > div.team-slider.|:nth-child(2) > ul.team-slider__content > li.team-slider__content__item:nth-child(1) > div.team-card__content.| > h3.t-40.t-lh-1",
+      "style": {
+        "fontFamily": "PPNeueMontreal, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontWeight": "400",
+        "fontSize": "42px",
+        "lineHeight": "50.4px",
+        "letterSpacing": "normal",
+        "color": "rgb(255, 255, 255)"
+      }
+    },
+    {
+      "level": 3,
+      "text": "Poppy Reid",
+      "id": null,
+      "domPath": "div.team:nth-child(1) > div.team-slider.|:nth-child(2) > ul.team-slider__content > li.team-slider__content__item:nth-child(2) > div.team-card__content.| > h3.t-40.t-lh-1",
+      "style": {
+        "fontFamily": "PPNeueMontreal, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontWeight": "400",
+        "fontSize": "42px",
+        "lineHeight": "50.4px",
+        "letterSpacing": "normal",
+        "color": "rgb(255, 255, 255)"
+      }
+    },
+    {
+      "level": 3,
+      "text": "Joel Kang",
+      "id": null,
+      "domPath": "div.team:nth-child(1) > div.team-slider.|:nth-child(2) > ul.team-slider__content > li.team-slider__content__item:nth-child(3) > div.team-card__content.| > h3.t-40.t-lh-1",
+      "style": {
+        "fontFamily": "PPNeueMontreal, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontWeight": "400",
+        "fontSize": "42px",
+        "lineHeight": "50.4px",
+        "letterSpacing": "normal",
+        "color": "rgb(255, 255, 255)"
+      }
+    },
+    {
+      "level": 3,
+      "text": "Build with us.",
+      "id": null,
+      "domPath": "div:nth-child(8) > main > div.section.js-section:nth-child(7) > div.team:nth-child(1) > div:nth-child(3) > h3.t-36.t-lh-1",
+      "style": {
+        "fontFamily": "PPNeueMontreal, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontWeight": "400",
+        "fontSize": "27px",
+        "lineHeight": "27px",
+        "letterSpacing": "normal",
+        "color": "rgb(255, 255, 255)"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Our investors",
+      "id": null,
+      "domPath": "div:nth-child(8) > main > div.section.js-section:nth-child(7) > div.investors:nth-child(2) > div.investors__text:nth-child(6) > h2.t-56.t-lh-1",
+      "style": {
+        "fontFamily": "PPNeueMontreal, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontWeight": "400",
+        "fontSize": "78px",
+        "lineHeight": "70.2px",
+        "letterSpacing": "normal",
+        "color": "rgb(255, 255, 255)"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Your workplace has the answer. Ask Dala to find it.",
+      "id": null,
+      "domPath": "body > div:nth-child(8) > main > div.section.footer:nth-child(8) > div.footer__head:nth-child(1) > h2.t-40.t-lh-1",
+      "style": {
+        "fontFamily": "PPNeueMontreal, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontWeight": "400",
+        "fontSize": "48px",
+        "lineHeight": "52.8px",
+        "letterSpacing": "normal",
+        "color": "rgb(255, 255, 255)"
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "tag": "header",
+      "role": null,
+      "id": null,
+      "classes": [
+        "header",
+        "js-header"
+      ],
+      "innerText": "Dala\nDala\nMANIFESTO\nTEAM\nBLOG\nREQUEST ACCESS",
+      "childCount": 2,
+      "children": [
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "header__inner",
+            "js-header-inner"
+          ],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Dala Dala MANIFESTO TEAM BLOG REQUEST ACCESS",
+          "wordCount": 7,
+          "body": [],
+          "lists": [
+            {
+              "ordered": false,
+              "items": [
+                "Manifesto",
+                "Team",
+                "Blog",
+                "Request Access"
+              ]
+            }
+          ],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "nav",
+      "role": null,
+      "id": null,
+      "classes": [
+        "nav",
+        "js-nav"
+      ],
+      "innerText": "MANIFESTO\nTEAM\nBLOG\nREQUEST ACCESS",
+      "childCount": 2,
+      "children": []
+    },
+    {
+      "tag": "main",
+      "role": null,
+      "id": null,
+      "classes": [],
+      "innerText": "Unlock\ncollective\nwisdom.\nSTOP MANAGING KNOWLEDGE. START USING IT.\n\nPlug into your team’s shared brainpower. Ask Dala to\ninstantly find anything or anyone from any workplace\nsystem. Focus on doing your best work with context,\nconviction and clarity.\n\nREQUEST ACCESS\nMake decisions\nwith confidence\n\nDala’s bleeding-edge AI search tool automates\nextracting knowledge from across your\norganisation so that you can take the guesswork\nout of your work.\n\nThis is your workplace today. Countless fragments of critical knowledge\nscattered across hundreds of disparate systems.\n\n30% of your time is spent trying to organise and find the information and\nexpertise you need to do your job.\n\nThe impossible battle to make sense of this chaos leaves your team feeling\noverwhelmed and unproductive.\n\nThey’re confronted with the anxiety of bothering a busy coworker again, or\naimlessly trying to connect the dots with incomplete context.\n\nExisting solutions are cumbersome and quickly become outdated. Yet\nanother decaying system that requires continuous maintenance.\n\nThey fail to understand what you need from the vast amounts of\ninformation that your team creates every day.\n\nSpark lightbulb\nmoments\n\nDala is your intelligent, real-time source of truth\nthat eliminates the cultural, financial and\noperational struggles of splintered tools.\n\nWe connect your systems behind the scenes\nand pull together exactly the knowledge you\nrequire into an elegant contextual view.\n\nJust ask Dala for the answer that advances your\nwork, and helps you make better decisions with\nmore confidence.\n\nBuild a better world\nof work\n\nOur mission is to make work more coherent and\ndelightful—reframing productivity from doing more\nto being better.\n\nYour happiest and most purposeful moments at\nwork are when you’re in flow, intellectually\nstimulated, and creating value for customers.\n\nWe want to recreate that every time you\nexperience Dala. A tool that is completely\nintegrated with how you think, feel and work.\n\nOur team\nCO FOUNDER & CEO\nHaroun\nHickman\nTwitter\nLinkedin\nPRODUCT DESIGN LEAD\nPoppy\nReid\nTwitter\nLinkedin\nCO FOUNDER & CTO\nJoel\nKang\nTwitter\nLinkedin\nPrevious\nNext\nBuild with us.\n\nWe are actively hiring intentional, empathetic and\ncurious people who thrive on creating delightful\nexperiences. If you'd like to be a part of the journey, email\ncareers@dala.ai with your CV or portfolio, and a\nthoughtful note.\n\nRead more about our values here.\n\nSeedcamp\nJames Meekings\nCo-founder of Funding Circle\nEvening Fund\nValia Ventures\nRoman Schumacher\nCo-founder & CPO at Personio\nOur investors\n\nWe are supported by some of the world's most\npioneering operators and progressive funds to fuel our\ngrowth.\n\nYour workplace has the answer.\nAsk Dala to find it.\nREQUEST ACCESS\n© 2021 Dala Technologies Limited.\nAll rights reserved.\nMANIFESTO\nTEAM\nBLOG\nPRIVACY\nTERMS\nLinkedIn\nTwitter\nEmail",
+      "childCount": 9,
+      "children": [
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "section",
+            "landing",
+            "|",
+            "js-section"
+          ],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Unlock collective wisdom. STOP MANAGING KNOWLEDGE. START USING IT. Plug into your team’s shared brainpower. Ask Dala to instantly find anything or anyone from any workplace system. Focus on doing your best work with context, conviction and ",
+          "wordCount": 40,
+          "body": [
+            "Plug into your team’s shared brainpower. Ask Dala to instantly find anything or anyone from any workplace system. Focus on doing your best work with context, conviction and clarity."
+          ],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "section",
+            "section--tall",
+            "introduction",
+            "|",
+            "js-section"
+          ],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Make decisions with confidence Dala’s bleeding-edge AI search tool automates extracting knowledge from across your organisation so that you can take the guesswork out of your work.",
+          "wordCount": 27,
+          "body": [
+            "Dala’s bleeding-edge AI search tool automates extracting knowledge from across your organisation so that you can take the guesswork out of your work."
+          ],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "js-section"
+          ],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "This is your workplace today. Countless fragments of critical knowledge scattered across hundreds of disparate systems. 30% of your time is spent trying to organise and find the information and expertise you need to do your job. The impossi",
+          "wordCount": 109,
+          "body": [
+            "This is your workplace today. Countless fragments of critical knowledge scattered across hundreds of disparate systems.",
+            "30% of your time is spent trying to organise and find the information and expertise you need to do your job.",
+            "The impossible battle to make sense of this chaos leaves your team feeling overwhelmed and unproductive.",
+            "They’re confronted with the anxiety of bothering a busy coworker again, or aimlessly trying to connect the dots with incomplete context.",
+            "Existing solutions are cumbersome and quickly become outdated. Yet another decaying system that requires continuous maintenance.",
+            "They fail to understand what you need from the vast amounts of information that your team creates every day."
+          ],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "section",
+            "section--tall",
+            "manifesto",
+            "manifesto--section",
+            "items-end@md"
+          ],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Spark lightbulb moments Dala is your intelligent, real-time source of truth that eliminates the cultural, financial and operational struggles of splintered tools. We connect your systems behind the scenes and pull together exactly the knowl",
+          "wordCount": 61,
+          "body": [
+            "Dala is your intelligent, real-time source of truth that eliminates the cultural, financial and operational struggles of splintered tools.",
+            "We connect your systems behind the scenes and pull together exactly the knowledge you require into an elegant contextual view.",
+            "Just ask Dala for the answer that advances your work, and helps you make better decisions with more confidence."
+          ],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "section",
+            "section--tall",
+            "manifesto",
+            "manifesto--section",
+            "items-start@md"
+          ],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Build a better world of work Our mission is to make work more coherent and delightful—reframing productivity from doing more to being better. Your happiest and most purposeful moments at work are when you’re in flow, intellectually stimulat",
+          "wordCount": 66,
+          "body": [
+            "Our mission is to make work more coherent and delightful—reframing productivity from doing more to being better.",
+            "Your happiest and most purposeful moments at work are when you’re in flow, intellectually stimulated, and creating value for customers.",
+            "We want to recreate that every time you experience Dala. A tool that is completely integrated with how you think, feel and work."
+          ],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "section",
+            "js-section",
+            "js-team-section",
+            "mb-1"
+          ],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Our team CO FOUNDER & CEO Haroun Hickman Twitter Linkedin PRODUCT DESIGN LEAD Poppy Reid Twitter Linkedin CO FOUNDER & CTO Joel Kang Twitter Linkedin Previous Next Build with us. We are actively hiring intentional, empathetic and curious pe",
+          "wordCount": 110,
+          "body": [
+            "We are actively hiring intentional, empathetic and curious people who thrive on creating delightful experiences. If you'd like to be a part of the journey, email careers@dala.ai with your CV or portfolio, and a thoughtful note.",
+            "Read more about our values here.",
+            "We are supported by some of the world's most pioneering operators and progressive funds to fuel our growth."
+          ],
+          "lists": [
+            {
+              "ordered": false,
+              "items": [
+                "Co Founder & CEOHaroun HickmanTwitter Linkedin",
+                "Product Design LeadPoppy ReidTwitter Linkedin",
+                "Co Founder & CTOJoel KangTwitter Linkedin"
+              ]
+            }
+          ],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "section",
+            "footer",
+            "|",
+            "js-section"
+          ],
+          "purpose": "footer-nav",
+          "headlineRef": null,
+          "innerTextSummary": "Your workplace has the answer. Ask Dala to find it. REQUEST ACCESS © 2021 Dala Technologies Limited. All rights reserved. MANIFESTO TEAM BLOG PRIVACY TERMS LinkedIn Twitter Email",
+          "wordCount": 28,
+          "body": [],
+          "lists": [
+            {
+              "ordered": false,
+              "items": [
+                "Manifesto",
+                "Team",
+                "Blog",
+                "Privacy",
+                "Terms"
+              ]
+            }
+          ],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    }
+  ],
+  "ctas": [
+    {
+      "label": "Toggle Mobile Navigation",
+      "href": null,
+      "tag": "button",
+      "domPath": "html > body > button.nav-toggle.js-nav-toggle",
+      "style": {
+        "backgroundColor": "rgb(128, 82, 255)",
+        "color": "rgb(0, 0, 0)",
+        "fontFamily": "PPNeueMontreal, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontWeight": "400",
+        "borderRadius": "50%",
+        "padding": "12px",
+        "boxShadow": "none"
+      },
+      "appearsAbove": "fold"
+    },
+    {
+      "label": "Dala",
+      "href": null,
+      "tag": "button",
+      "domPath": "html > body > header.header.js-header > div.header__inner.js-header-inner:nth-child(2) > button.header__logo.|",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "fontFamily": "PPNeueMontreal, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontWeight": "400",
+        "borderRadius": "0px",
+        "padding": "1px 6px",
+        "boxShadow": "none"
+      },
+      "appearsAbove": "fold"
+    },
+    {
+      "label": "Request Access",
+      "href": "https://askdala.typeform.com/to/lSujgyr8",
+      "tag": "a",
+      "domPath": "html > body > header.header.js-header > div.header__inner.js-header-inner:nth-child(2) > div.header__cta.mr-4 > a.btn.t-16",
+      "style": {
+        "backgroundColor": "rgb(128, 82, 255)",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "PPNeueMontreal, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontWeight": "600",
+        "borderRadius": "22.5px",
+        "padding": "14.4px 15.96px",
+        "boxShadow": "none"
+      },
+      "appearsAbove": "fold"
+    },
+    {
+      "label": "Accept",
+      "href": null,
+      "tag": "button",
+      "domPath": "html > body > div.cookie-notice.fixed:nth-child(4) > div.d-flex.items-center > div.flex-no-shrink.d-flex:nth-child(2) > button.btn.t-16",
+      "style": {
+        "backgroundColor": "rgb(128, 82, 255)",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "PPNeueMontreal, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontWeight": "600",
+        "borderRadius": "22.5px",
+        "padding": "7.5px 12px",
+        "boxShadow": "none"
+      },
+      "appearsAbove": "fold"
+    },
+    {
+      "label": "Previous",
+      "href": null,
+      "tag": "button",
+      "domPath": "main > div.section.js-section:nth-child(7) > div.team:nth-child(1) > div.team-slider.|:nth-child(2) > div.team-slider__controls:nth-child(3) > button.team-slider__control.team-slider__previous:nth-child(1)",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "fontFamily": "PPNeueMontreal, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontWeight": "400",
+        "borderRadius": "0px",
+        "padding": "15px",
+        "boxShadow": "none"
+      },
+      "appearsAbove": "below-fold"
+    },
+    {
+      "label": "Next",
+      "href": null,
+      "tag": "button",
+      "domPath": "main > div.section.js-section:nth-child(7) > div.team:nth-child(1) > div.team-slider.|:nth-child(2) > div.team-slider__controls:nth-child(3) > button.team-slider__control.team-slider__next:nth-child(2)",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "fontFamily": "PPNeueMontreal, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontWeight": "400",
+        "borderRadius": "0px",
+        "padding": "15px",
+        "boxShadow": "none"
+      },
+      "appearsAbove": "below-fold"
+    },
+    {
+      "label": "Request access",
+      "href": "https://askdala.typeform.com/to/lSujgyr8",
+      "tag": "a",
+      "domPath": "div:nth-child(8) > main > div.section.footer:nth-child(8) > div.footer__head:nth-child(1) > div.d-flex.justify-center > a.btn.t-16",
+      "style": {
+        "backgroundColor": "rgb(128, 82, 255)",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "PPNeueMontreal, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontWeight": "600",
+        "borderRadius": "22.5px",
+        "padding": "14.4px 15.96px",
+        "boxShadow": "none"
+      },
+      "appearsAbove": "below-fold"
+    },
+    {
+      "label": "Manifesto",
+      "href": null,
+      "tag": "button",
+      "domPath": "main > div.section.footer:nth-child(8) > div.footer__bar:nth-child(2) > ul.footer__nav > li.footer__nav__item.|:nth-child(1) > button.footer__nav__link.t-16",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(154, 154, 154)",
+        "fontFamily": "PPNeueMontreal, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontWeight": "600",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      "appearsAbove": "below-fold"
+    },
+    {
+      "label": "Team",
+      "href": null,
+      "tag": "button",
+      "domPath": "main > div.section.footer:nth-child(8) > div.footer__bar:nth-child(2) > ul.footer__nav > li.footer__nav__item.|:nth-child(2) > button.footer__nav__link.t-16",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(154, 154, 154)",
+        "fontFamily": "PPNeueMontreal, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+        "fontWeight": "600",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      "appearsAbove": "below-fold"
+    }
+  ],
+  "links": {
+    "internal": [
+      {
+        "href": "/#manifesto",
+        "text": "Manifesto",
+        "domPath": "header.header.js-header > div.header__inner.js-header-inner:nth-child(2) > nav.nav.js-nav > ul.nav__list.js-nav-list > li.nav__item.|:nth-child(1) > a.nav__link.js-nav-link"
+      },
+      {
+        "href": "/#team",
+        "text": "Team",
+        "domPath": "header.header.js-header > div.header__inner.js-header-inner:nth-child(2) > nav.nav.js-nav > ul.nav__list.js-nav-list > li.nav__item.|:nth-child(2) > a.nav__link.js-nav-link"
+      },
+      {
+        "href": "/privacy",
+        "text": "Privacy",
+        "domPath": "main > div.section.footer:nth-child(8) > div.footer__bar:nth-child(2) > ul.footer__nav > li.footer__nav__item.|:nth-child(4) > a.footer__nav__link.t-16"
+      },
+      {
+        "href": "/terms",
+        "text": "Terms",
+        "domPath": "main > div.section.footer:nth-child(8) > div.footer__bar:nth-child(2) > ul.footer__nav > li.footer__nav__item.|:nth-child(5) > a.footer__nav__link.t-16"
+      }
+    ],
+    "external": [
+      {
+        "href": "https://askdala.typeform.com/to/lSujgyr8",
+        "text": "Request Access",
+        "domPath": "html > body > header.header.js-header > div.header__inner.js-header-inner:nth-child(2) > div.header__cta.mr-4 > a.btn.t-16"
+      },
+      {
+        "href": "https://medium.com/dala-ai",
+        "text": "Blog",
+        "domPath": "header.header.js-header > div.header__inner.js-header-inner:nth-child(2) > nav.nav.js-nav > ul.nav__list.js-nav-list > li.nav__item.|:nth-child(3) > a.nav__link.js-nav-link"
+      },
+      {
+        "href": "https://medium.com/dala-ai/why-we-started-dala-a36fc6cbbdb9",
+        "text": "being better.",
+        "domPath": "div.manifesto__inner.mobile-blur > div.manifesto__body > p.t-24.t-lh-1.5:nth-child(1) > div:nth-child(3) > div > a"
+      },
+      {
+        "href": "https://twitter.com/HarounHickman",
+        "text": "Twitter",
+        "domPath": "div.team-slider.|:nth-child(2) > ul.team-slider__content > li.team-slider__content__item:nth-child(1) > div.team-card__content.| > div.team-card__social > a.team-card__social__link.|:nth-child(1)"
+      },
+      {
+        "href": "https://www.linkedin.com/in/harounhickman",
+        "text": "Linkedin",
+        "domPath": "div.team-slider.|:nth-child(2) > ul.team-slider__content > li.team-slider__content__item:nth-child(1) > div.team-card__content.| > div.team-card__social > a.team-card__social__link.|:nth-child(2)"
+      },
+      {
+        "href": "https://twitter.com/ReidPoppy",
+        "text": "Twitter",
+        "domPath": "div.team-slider.|:nth-child(2) > ul.team-slider__content > li.team-slider__content__item:nth-child(2) > div.team-card__content.| > div.team-card__social > a.team-card__social__link.|:nth-child(1)"
+      },
+      {
+        "href": "https://www.linkedin.com/in/poppy-reid-484087121",
+        "text": "Linkedin",
+        "domPath": "div.team-slider.|:nth-child(2) > ul.team-slider__content > li.team-slider__content__item:nth-child(2) > div.team-card__content.| > div.team-card__social > a.team-card__social__link.|:nth-child(2)"
+      },
+      {
+        "href": "https://twitter.com/_joel_kang_",
+        "text": "Twitter",
+        "domPath": "div.team-slider.|:nth-child(2) > ul.team-slider__content > li.team-slider__content__item:nth-child(3) > div.team-card__content.| > div.team-card__social > a.team-card__social__link.|:nth-child(1)"
+      },
+      {
+        "href": "https://www.linkedin.com/in/joelkang",
+        "text": "Linkedin",
+        "domPath": "div.team-slider.|:nth-child(2) > ul.team-slider__content > li.team-slider__content__item:nth-child(3) > div.team-card__content.| > div.team-card__social > a.team-card__social__link.|:nth-child(2)"
+      },
+      {
+        "href": "https://medium.com/dala-ai/why-we-wrote-our-values-before-we-wrote-a-single-line-of-code-99ada8a18cd5",
+        "text": "here",
+        "domPath": "div:nth-child(3) > div.team__body > p.t-20.t-lh-1.5:nth-child(2) > div > div > a"
+      },
+      {
+        "href": "https://askdala.typeform.com/to/lSujgyr8",
+        "text": "Request access",
+        "domPath": "div:nth-child(8) > main > div.section.footer:nth-child(8) > div.footer__head:nth-child(1) > div.d-flex.justify-center > a.btn.t-16"
+      },
+      {
+        "href": "https://www.linkedin.com/company/askdala/",
+        "text": "LinkedIn",
+        "domPath": "div:nth-child(8) > main > div.section.footer:nth-child(8) > div.footer__bar:nth-child(2) > div.footer__social:nth-child(4) > a.footer__social__link:nth-child(1)"
+      },
+      {
+        "href": "https://twitter.com/askdala",
+        "text": "Twitter",
+        "domPath": "div:nth-child(8) > main > div.section.footer:nth-child(8) > div.footer__bar:nth-child(2) > div.footer__social:nth-child(4) > a.footer__social__link:nth-child(2)"
+      }
+    ]
+  },
+  "media": {
+    "images": [
+      {
+        "src": "https://dala.craftedbygc.com/images/team/haroun.jpg",
+        "srcset": null,
+        "alt": "Portrait of Haroun Hickman",
+        "naturalWidth": 780,
+        "naturalHeight": 1140,
+        "localPath": null
+      },
+      {
+        "src": "https://dala.craftedbygc.com/images/team/poppy.jpg",
+        "srcset": null,
+        "alt": "Portrait of Poppy Reid",
+        "naturalWidth": 780,
+        "naturalHeight": 1140,
+        "localPath": null
+      },
+      {
+        "src": "https://dala.craftedbygc.com/images/team/joel.jpg",
+        "srcset": null,
+        "alt": "Portrait of Joel Kang",
+        "naturalWidth": 780,
+        "naturalHeight": 1140,
+        "localPath": null
+      },
+      {
+        "src": "https://dala.craftedbygc.com/images/team/haroun.jpg",
+        "srcset": null,
+        "alt": "Portrait of Haroun Hickman",
+        "naturalWidth": 780,
+        "naturalHeight": 1140,
+        "localPath": null
+      },
+      {
+        "src": "https://dala.craftedbygc.com/images/team/poppy.jpg",
+        "srcset": null,
+        "alt": "Portrait of Poppy Reid",
+        "naturalWidth": 780,
+        "naturalHeight": 1140,
+        "localPath": null
+      },
+      {
+        "src": "https://dala.craftedbygc.com/images/team/joel.jpg",
+        "srcset": null,
+        "alt": "Portrait of Joel Kang",
+        "naturalWidth": 780,
+        "naturalHeight": 1140,
+        "localPath": null
+      },
+      {
+        "src": "https://dala.craftedbygc.com/images/team/haroun.jpg",
+        "srcset": null,
+        "alt": "Portrait of Haroun Hickman",
+        "naturalWidth": 780,
+        "naturalHeight": 1140,
+        "localPath": null
+      },
+      {
+        "src": "https://dala.craftedbygc.com/images/team/poppy.jpg",
+        "srcset": null,
+        "alt": "Portrait of Poppy Reid",
+        "naturalWidth": 780,
+        "naturalHeight": 1140,
+        "localPath": null
+      },
+      {
+        "src": "https://dala.craftedbygc.com/images/team/joel.jpg",
+        "srcset": null,
+        "alt": "Portrait of Joel Kang",
+        "naturalWidth": 780,
+        "naturalHeight": 1140,
+        "localPath": null
+      },
+      {
+        "src": "https://dala.craftedbygc.com/images/team/haroun.jpg",
+        "srcset": null,
+        "alt": "Portrait of Haroun Hickman",
+        "naturalWidth": 780,
+        "naturalHeight": 1140,
+        "localPath": null
+      },
+      {
+        "src": "https://dala.craftedbygc.com/images/team/poppy.jpg",
+        "srcset": null,
+        "alt": "Portrait of Poppy Reid",
+        "naturalWidth": 780,
+        "naturalHeight": 1140,
+        "localPath": null
+      },
+      {
+        "src": "https://dala.craftedbygc.com/images/team/joel.jpg",
+        "srcset": null,
+        "alt": "Portrait of Joel Kang",
+        "naturalWidth": 780,
+        "naturalHeight": 1140,
+        "localPath": null
+      },
+      {
+        "src": "https://dala.craftedbygc.com/images/team/haroun.jpg",
+        "srcset": null,
+        "alt": "Portrait of Haroun Hickman",
+        "naturalWidth": 780,
+        "naturalHeight": 1140,
+        "localPath": null
+      },
+      {
+        "src": "https://dala.craftedbygc.com/images/team/poppy.jpg",
+        "srcset": null,
+        "alt": "Portrait of Poppy Reid",
+        "naturalWidth": 780,
+        "naturalHeight": 1140,
+        "localPath": null
+      },
+      {
+        "src": "https://dala.craftedbygc.com/images/team/joel.jpg",
+        "srcset": null,
+        "alt": "Portrait of Joel Kang",
+        "naturalWidth": 780,
+        "naturalHeight": 1140,
+        "localPath": null
+      },
+      {
+        "src": "https://dala.craftedbygc.com/images/team/haroun.jpg",
+        "srcset": null,
+        "alt": "Portrait of Haroun Hickman",
+        "naturalWidth": 780,
+        "naturalHeight": 1140,
+        "localPath": "stardust/current/assets/media/haroun-12f81a51.jpg"
+      },
+      {
+        "src": "https://dala.craftedbygc.com/images/team/poppy.jpg",
+        "srcset": null,
+        "alt": "Portrait of Poppy Reid",
+        "naturalWidth": 780,
+        "naturalHeight": 1140,
+        "localPath": "stardust/current/assets/media/poppy-c0f01710.jpg"
+      },
+      {
+        "src": "https://dala.craftedbygc.com/images/team/joel.jpg",
+        "srcset": null,
+        "alt": "Portrait of Joel Kang",
+        "naturalWidth": 780,
+        "naturalHeight": 1140,
+        "localPath": "stardust/current/assets/media/joel-6fdb13c8.jpg"
+      },
+      {
+        "src": "https://dala.craftedbygc.com/images/investors/1.png",
+        "srcset": null,
+        "alt": "",
+        "naturalWidth": 239,
+        "naturalHeight": 234,
+        "localPath": "stardust/current/assets/media/1-592eda2c.png"
+      },
+      {
+        "src": "https://dala.craftedbygc.com/images/investors/2.png",
+        "srcset": null,
+        "alt": "",
+        "naturalWidth": 232,
+        "naturalHeight": 227,
+        "localPath": "stardust/current/assets/media/2-5aca7de2.png"
+      },
+      {
+        "src": "https://dala.craftedbygc.com/images/investors/3.png",
+        "srcset": null,
+        "alt": "",
+        "naturalWidth": 222,
+        "naturalHeight": 208,
+        "localPath": "stardust/current/assets/media/3-4046b345.png"
+      },
+      {
+        "src": "https://dala.craftedbygc.com/images/investors/4.png",
+        "srcset": null,
+        "alt": "",
+        "naturalWidth": 232,
+        "naturalHeight": 241,
+        "localPath": "stardust/current/assets/media/4-51e69584.png"
+      },
+      {
+        "src": "https://dala.craftedbygc.com/images/investors/5.png",
+        "srcset": null,
+        "alt": "",
+        "naturalWidth": 240,
+        "naturalHeight": 258,
+        "localPath": "stardust/current/assets/media/5-039bd921.png"
+      }
+    ],
+    "inlineSvgs": [
+      {
+        "viewBox": "0 0 16 16",
+        "domPath": "html > body > button.nav-toggle.js-nav-toggle > svg",
+        "markupHash": "len:627"
+      },
+      {
+        "viewBox": "0 0 113 48",
+        "domPath": "html > body > header.header.js-header > div.header__inner.js-header-inner:nth-child(2) > button.header__logo.| > svg",
+        "markupHash": "len:7114"
+      },
+      {
+        "viewBox": "0 0 142 141",
+        "domPath": "body > div.site-loader.|:nth-child(5) > div.site-loader__content:nth-child(2) > div.site-loader__main:nth-child(1) > div.site-loader__spinner.|:nth-child(1) > svg",
+        "markupHash": "len:719"
+      },
+      {
+        "viewBox": "0 0 142 141",
+        "domPath": "html > body > div.nav-transition-mask.js-nav-transition-mask:nth-child(7) > div.nav-transition-mask__spinner.| > svg",
+        "markupHash": "len:569"
+      },
+      {
+        "viewBox": null,
+        "domPath": "ul.team-slider__content > li.team-slider__content__item:nth-child(1) > div.team-card__content.| > div.team-card__social > a.team-card__social__link.|:nth-child(1) > svg",
+        "markupHash": "len:129"
+      },
+      {
+        "viewBox": null,
+        "domPath": "ul.team-slider__content > li.team-slider__content__item:nth-child(1) > div.team-card__content.| > div.team-card__social > a.team-card__social__link.|:nth-child(2) > svg",
+        "markupHash": "len:131"
+      },
+      {
+        "viewBox": null,
+        "domPath": "ul.team-slider__content > li.team-slider__content__item:nth-child(2) > div.team-card__content.| > div.team-card__social > a.team-card__social__link.|:nth-child(1) > svg",
+        "markupHash": "len:129"
+      },
+      {
+        "viewBox": null,
+        "domPath": "ul.team-slider__content > li.team-slider__content__item:nth-child(2) > div.team-card__content.| > div.team-card__social > a.team-card__social__link.|:nth-child(2) > svg",
+        "markupHash": "len:131"
+      },
+      {
+        "viewBox": null,
+        "domPath": "ul.team-slider__content > li.team-slider__content__item:nth-child(3) > div.team-card__content.| > div.team-card__social > a.team-card__social__link.|:nth-child(1) > svg",
+        "markupHash": "len:129"
+      },
+      {
+        "viewBox": null,
+        "domPath": "ul.team-slider__content > li.team-slider__content__item:nth-child(3) > div.team-card__content.| > div.team-card__social > a.team-card__social__link.|:nth-child(2) > svg",
+        "markupHash": "len:131"
+      },
+      {
+        "viewBox": null,
+        "domPath": "div.section.js-section:nth-child(7) > div.team:nth-child(1) > div.team-slider.|:nth-child(2) > div.team-slider__controls:nth-child(3) > button.team-slider__control.team-slider__previous:nth-child(1) > svg",
+        "markupHash": "len:62"
+      },
+      {
+        "viewBox": null,
+        "domPath": "div.section.js-section:nth-child(7) > div.team:nth-child(1) > div.team-slider.|:nth-child(2) > div.team-slider__controls:nth-child(3) > button.team-slider__control.team-slider__next:nth-child(2) > svg",
+        "markupHash": "len:62"
+      },
+      {
+        "viewBox": "0 0 113 48",
+        "domPath": "div:nth-child(8) > main > div.section.footer:nth-child(8) > div.footer__bar:nth-child(2) > div.footer__logo:nth-child(1) > svg",
+        "markupHash": "len:6478"
+      },
+      {
+        "viewBox": null,
+        "domPath": "main > div.section.footer:nth-child(8) > div.footer__bar:nth-child(2) > div.footer__social:nth-child(4) > a.footer__social__link:nth-child(1) > svg",
+        "markupHash": "len:126"
+      },
+      {
+        "viewBox": null,
+        "domPath": "main > div.section.footer:nth-child(8) > div.footer__bar:nth-child(2) > div.footer__social:nth-child(4) > a.footer__social__link:nth-child(2) > svg",
+        "markupHash": "len:124"
+      },
+      {
+        "viewBox": null,
+        "domPath": "main > div.section.footer:nth-child(8) > div.footer__bar:nth-child(2) > div.footer__social:nth-child(4) > a.footer__social__link:nth-child(3) > svg",
+        "markupHash": "len:120"
+      }
+    ],
+    "cssBackgrounds": [],
+    "videos": [],
+    "iframes": []
+  },
+  "forms": [],
+  "widgets": {
+    "modals": [
+      {
+        "trigger": null,
+        "domPath": "html > body > div.cookie-notice.fixed:nth-child(4)"
+      }
+    ],
+    "accordions": [],
+    "tabs": []
+  },
+  "components": {
+    "cards": {
+      "count": 72,
+      "examples": [
+        "div.section.js-section:nth-child(7) > div.team:nth-child(1) > div.team-slider.|:nth-child(2) > div.team-slider__slides-container:nth-child(1) > ul.team-slider__slides.| > li.team-card.|:nth-child(1)",
+        "div.team:nth-child(1) > div.team-slider.|:nth-child(2) > div.team-slider__slides-container:nth-child(1) > ul.team-slider__slides.| > li.team-card.|:nth-child(1) > div.team-card__inner"
+      ]
+    },
+    "grids": {
+      "count": 1,
+      "examples": []
+    },
+    "accordions": {
+      "count": 0,
+      "examples": []
+    },
+    "tabs": {
+      "count": 0,
+      "examples": []
+    },
+    "tables": {
+      "count": 0,
+      "examples": []
+    },
+    "modals": {
+      "count": 1,
+      "examples": [
+        "html > body > div.cookie-notice.fixed:nth-child(4)"
+      ]
+    },
+    "carousels": {
+      "count": 14,
+      "examples": [
+        "body > div:nth-child(8) > main > div.section.js-section:nth-child(7) > div.team:nth-child(1) > div.team-slider.|:nth-child(2)",
+        "div:nth-child(8) > main > div.section.js-section:nth-child(7) > div.team:nth-child(1) > div.team-slider.|:nth-child(2) > div.team-slider__slides-container:nth-child(1)"
+      ]
+    },
+    "videos": {
+      "count": 0,
+      "examples": []
+    },
+    "iframes": {
+      "count": 0,
+      "examples": []
+    },
+    "dataVizEmbeds": {
+      "count": 0,
+      "examples": []
+    },
+    "teamTiles": {
+      "count": 0,
+      "examples": []
+    },
+    "pricingTiles": {
+      "count": 0,
+      "examples": []
+    },
+    "testimonialCards": {
+      "count": 0,
+      "examples": []
+    },
+    "logoStrip": {
+      "count": 0,
+      "examples": []
+    },
+    "timeline": {
+      "count": 0,
+      "examples": []
+    },
+    "breadcrumbs": {
+      "count": 0,
+      "examples": []
+    },
+    "statRow": {
+      "count": 0,
+      "examples": []
+    },
+    "ctaBand": {
+      "count": 2,
+      "examples": [
+        "html > body > header.header.js-header > div.header__inner.js-header-inner:nth-child(2) > div.header__cta.mr-4",
+        "body > header.header.js-header > div.header__inner.js-header-inner:nth-child(2) > nav.nav.js-nav > ul.nav__list.js-nav-list > li.nav__cta.|:nth-child(4)"
+      ]
+    },
+    "formFields": {
+      "count": 0,
+      "examples": []
+    },
+    "other": []
+  },
+  "perSectionStyle": [
+    {
+      "sectionRef": "html > body > div:nth-child(8) > main > div:nth-child(1)",
+      "purpose": "unknown",
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "hasImage": false,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(255, 255, 255)"
+      },
+      "spacing": {
+        "paddingBlock": "0px",
+        "paddingInline": "0px",
+        "gap": "normal"
+      },
+      "borderRadius": "0px",
+      "fontFamilies": [
+        "PPNeueMontreal"
+      ],
+      "shadowsUsed": []
+    },
+    {
+      "sectionRef": "html > body > div:nth-child(8) > main > div.section.landing:nth-child(2)",
+      "purpose": "unknown",
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "hasImage": false,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(255, 255, 255)"
+      },
+      "spacing": {
+        "paddingBlock": "120px",
+        "paddingInline": "120px",
+        "gap": "normal"
+      },
+      "borderRadius": "22.5px",
+      "fontFamilies": [
+        "PPNeueMontreal"
+      ],
+      "shadowsUsed": []
+    },
+    {
+      "sectionRef": "html > body > div:nth-child(8) > main > div.section.section--tall:nth-child(3)",
+      "purpose": "unknown",
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "hasImage": false,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(255, 255, 255)"
+      },
+      "spacing": {
+        "paddingBlock": "60px",
+        "paddingInline": "120px",
+        "gap": "normal"
+      },
+      "borderRadius": "0px",
+      "fontFamilies": [
+        "PPNeueMontreal"
+      ],
+      "shadowsUsed": []
+    },
+    {
+      "sectionRef": "html > body > div:nth-child(8) > main > div.js-section:nth-child(4)",
+      "purpose": "unknown",
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "hasImage": false,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(255, 255, 255)"
+      },
+      "spacing": {
+        "paddingBlock": "0px",
+        "paddingInline": "0px",
+        "gap": "normal"
+      },
+      "borderRadius": "0px",
+      "fontFamilies": [
+        "PPNeueMontreal"
+      ],
+      "shadowsUsed": []
+    },
+    {
+      "sectionRef": "html > body > div:nth-child(8) > main > div.section.section--tall:nth-child(5)",
+      "purpose": "unknown",
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "hasImage": false,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(255, 255, 255)"
+      },
+      "spacing": {
+        "paddingBlock": "60px",
+        "paddingInline": "120px",
+        "gap": "normal"
+      },
+      "borderRadius": "0px",
+      "fontFamilies": [
+        "PPNeueMontreal"
+      ],
+      "shadowsUsed": []
+    },
+    {
+      "sectionRef": "html > body > div:nth-child(8) > main > div.section.section--tall:nth-child(6)",
+      "purpose": "unknown",
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "hasImage": false,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(255, 255, 255)"
+      },
+      "spacing": {
+        "paddingBlock": "60px",
+        "paddingInline": "120px",
+        "gap": "normal"
+      },
+      "borderRadius": "0px",
+      "fontFamilies": [
+        "PPNeueMontreal"
+      ],
+      "shadowsUsed": []
+    },
+    {
+      "sectionRef": "html > body > div:nth-child(8) > main > div.section.js-section:nth-child(7)",
+      "purpose": "unknown",
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "hasImage": false,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(255, 255, 255)"
+      },
+      "spacing": {
+        "paddingBlock": "60px",
+        "paddingInline": "120px",
+        "gap": "normal"
+      },
+      "borderRadius": "24px",
+      "fontFamilies": [
+        "PPNeueMontreal"
+      ],
+      "shadowsUsed": []
+    },
+    {
+      "sectionRef": "html > body > div:nth-child(8) > main > div.section.footer:nth-child(8)",
+      "purpose": "footer-nav",
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "hasImage": false,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(255, 255, 255)"
+      },
+      "spacing": {
+        "paddingBlock": "0px",
+        "paddingInline": "0px",
+        "gap": "normal"
+      },
+      "borderRadius": "22.5px",
+      "fontFamilies": [
+        "PPNeueMontreal"
+      ],
+      "shadowsUsed": []
+    },
+    {
+      "sectionRef": "html > body > div:nth-child(8) > main > div:nth-child(9)",
+      "purpose": "unknown",
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "hasImage": false,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(255, 255, 255)"
+      },
+      "spacing": {
+        "paddingBlock": "0px",
+        "paddingInline": "0px",
+        "gap": "normal"
+      },
+      "borderRadius": "0px",
+      "fontFamilies": [
+        "PPNeueMontreal"
+      ],
+      "shadowsUsed": []
+    }
+  ],
+  "embedDominance": {
+    "dominated": false,
+    "iframeSrc": null,
+    "viewportCoveragePct": null,
+    "mainHeightCoveragePct": null,
+    "screenshot": null
+  },
+  "cssCustomProperties": [
+    {
+      "name": "--vh",
+      "value": "9px"
+    }
+  ],
+  "screenshot": "stardust/current/assets/screenshots/home.png",
+  "stats": {
+    "wordCount": 462,
+    "ctaCount": 9,
+    "internalLinkCount": 4,
+    "externalLinkCount": 13,
+    "imageCount": 23
+  },
+  "_raw": {
+    "fontFaces": [
+      {
+        "family": "PPNeueMontreal",
+        "weight": "200",
+        "style": "normal",
+        "src": "url(\"../fonts/PPNeueMontreal-Light.woff2?6b8baf9c2be548c40ad3d89e520b72ac\") format(\"woff2\"), url(\"../fonts/PPNeueMontreal-Light.woff?190f0059eba8a672a10c0a445313f03b\") format(\"woff\")",
+        "display": "swap",
+        "unicodeRange": ""
+      },
+      {
+        "family": "PPNeueMontreal",
+        "weight": "400",
+        "style": "normal",
+        "src": "url(\"../fonts/PPNeueMontreal-Regular.woff2?e975bf8371aec1efabce9f2164d14431\") format(\"woff2\"), url(\"../fonts/PPNeueMontreal-Regular.woff?11e3b547be00780a6b56f2be1574012c\") format(\"woff\")",
+        "display": "swap",
+        "unicodeRange": ""
+      },
+      {
+        "family": "PPNeueMontreal",
+        "weight": "600",
+        "style": "normal",
+        "src": "url(\"../fonts/PPNeueMontreal-SemiBold.woff2?82363d624b471941cd6b3f2e06777e06\") format(\"woff2\"), url(\"../fonts/PPNeueMontreal-SemiBold.woff?11ce7260119bd987ca5a92a82ed3d6f4\") format(\"woff\")",
+        "display": "swap",
+        "unicodeRange": ""
+      }
+    ],
+    "iconGlyphs": [],
+    "bodyStyle": {
+      "background": "rgb(0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "fontFamily": "PPNeueMontreal, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif"
+    }
+  }
+}

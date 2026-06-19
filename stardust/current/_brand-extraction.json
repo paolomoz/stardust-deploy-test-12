@@ -1,0 +1,225 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-06-19T04:12:00Z",
+    "readArtifacts": [
+      "https://dala.craftedbygc.com/",
+      "stardust/current/pages/home.json"
+    ],
+    "synthesizedInputs": [],
+    "stardustVersion": "0.10.0",
+    "notes": [
+      "Single-page (--single) extraction: cross-page aggregation scopes collapse to the home page. Palette/type/motif readings are therefore home-only by necessity; badge them as home-only in any downstream review.",
+      "System-component detection skipped: requires >= 3 pages; crawl is 1 page.",
+      "Hero is a typographic + generative-particle-cloud composition on pure black, not a raster hero image. No <img> or css-background hero survived the heroImage filters; voice.heroImage elevates the og:image as the only curated full-bleed asset, flagged below.",
+      "scaleAudit: only two visible display sizes captured (112.5px hero H2, 78px section H2) plus 48/42/24px supporting; ratios are uneven (1.44, 1.62, 1.625) -> ad-hoc.",
+      "Design-token layer effectively empty: only --vh (a JS viewport hack) defined at :root."
+    ]
+  },
+  "site": {
+    "name": "Dala",
+    "tagline": "Your workplace has the answer. Just ask Dala for it.",
+    "originUrl": "https://dala.craftedbygc.com"
+  },
+  "logo": {
+    "source": "inline-svg",
+    "sourceSelector": "header.header svg",
+    "localPath": "stardust/current/assets/logo.svg",
+    "format": "svg",
+    "intrinsicWidth": 113,
+    "intrinsicHeight": 48,
+    "synthesized": false,
+    "synthesizedBasis": null,
+    "_provenance": {
+      "notes": "Wordmark SVG: an embedded raster 'D' glyph (dala-d.png, inlined as a data-URI so logo.svg is self-contained) plus vectorised 'ala' text. White-on-black lockup. Only one variant captured (locator stops at first hit); a monochrome / inverted variant set is not present."
+    }
+  },
+  "palette": [
+    {
+      "role": "background",
+      "value": "#000000",
+      "occurrences": 4200,
+      "sourceSelectors": ["body", "main", "header", "section"],
+      "usedAs": ["background"]
+    },
+    {
+      "role": "text-primary",
+      "value": "#ffffff",
+      "occurrences": 1800,
+      "sourceSelectors": ["body", "h1", "h2", "h3", "p"],
+      "usedAs": ["text", "fill"]
+    },
+    {
+      "role": "primary",
+      "value": "#8052ff",
+      "occurrences": 9,
+      "sourceSelectors": [".button", ".nav-toggle", "a.btn--request"],
+      "sources": ["home"],
+      "usedAs": ["background", "fill"]
+    },
+    {
+      "role": "text-muted",
+      "value": "#9a9a9a",
+      "occurrences": 60,
+      "sourceSelectors": ["nav a", ".header__nav-link", "footer a"],
+      "usedAs": ["text"]
+    }
+  ],
+  "type": {
+    "headingFamily": {
+      "name": "PP Neue Montreal",
+      "stack": "PPNeueMontreal, system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      "weights": [400],
+      "sizes": ["112.5px", "78px", "48px", "42px", "27px", "24px"],
+      "lineHeights": [1.0, 1.05, 1.1, 1.15],
+      "letterSpacing": ["normal", "-0.01em"],
+      "sourceSelectors": ["h1", "h2", "h3"]
+    },
+    "bodyFamily": {
+      "name": "PP Neue Montreal",
+      "stack": "PPNeueMontreal, system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      "weights": [200, 400, 600],
+      "sizes": ["1rem", "1.125rem", "0.875rem"],
+      "lineHeights": [1.5, 1.55, 1.4],
+      "letterSpacing": ["normal"],
+      "sourceSelectors": ["p", "li", "a"]
+    },
+    "monoFamily": null,
+    "scaleRatio": null,
+    "scaleAudit": {
+      "kind": "ad-hoc",
+      "ratios": [1.44, 1.625, 1.143, 1.556, 1.125],
+      "matchedScale": null
+    },
+    "loadStrategy": "swap",
+    "files": [
+      {
+        "url": "https://dala.craftedbygc.com/fonts/PPNeueMontreal-Light.woff2",
+        "family": "PP Neue Montreal",
+        "weight": 200,
+        "style": "normal",
+        "unicodeRange": "",
+        "localPath": "stardust/current/assets/fonts/PPNeueMontreal-Light.woff2",
+        "sourceCssRule": "@font-face { font-family: 'PPNeueMontreal'; font-weight: 200; src: url('/fonts/PPNeueMontreal-Light.woff2') format('woff2'); }",
+        "licensingFlag": "private"
+      },
+      {
+        "url": "https://dala.craftedbygc.com/fonts/PPNeueMontreal-Regular.woff2",
+        "family": "PP Neue Montreal",
+        "weight": 400,
+        "style": "normal",
+        "unicodeRange": "",
+        "localPath": "stardust/current/assets/fonts/PPNeueMontreal-Regular.woff2",
+        "sourceCssRule": "@font-face { font-family: 'PPNeueMontreal'; font-weight: 400; src: url('/fonts/PPNeueMontreal-Regular.woff2') format('woff2'); }",
+        "licensingFlag": "private"
+      },
+      {
+        "url": "https://dala.craftedbygc.com/fonts/PPNeueMontreal-SemiBold.woff2",
+        "family": "PP Neue Montreal",
+        "weight": 600,
+        "style": "normal",
+        "unicodeRange": "",
+        "localPath": "stardust/current/assets/fonts/PPNeueMontreal-SemiBold.woff2",
+        "sourceCssRule": "@font-face { font-family: 'PPNeueMontreal'; font-weight: 600; src: url('/fonts/PPNeueMontreal-SemiBold.woff2') format('woff2'); }",
+        "licensingFlag": "private"
+      }
+    ]
+  },
+  "spacing": {
+    "baseUnit": 8,
+    "scale": [8, 16, 24, 32, 48, 64, 96, 120],
+    "sectionPadding": "120px",
+    "containerMaxWidth": "1280px",
+    "gridGap": "24px"
+  },
+  "motifs": {
+    "borderRadius": {
+      "primary": "22.5px",
+      "secondary": "24px",
+      "pill": "50%",
+      "primarySources": ["home"],
+      "occurrences": { "22.5px": 6, "24px": 2, "50%": 1, "0px": 24 }
+    },
+    "shadows": [],
+    "gradients": [],
+    "patterns": [
+      { "name": "generative-particle-hero", "evidence": "home hero is a black-background particle/constellation cloud (purple/gold/white points) behind a giant typographic headline" },
+      { "name": "scrollytelling-reveal", "evidence": "long single-page narrative; sections fade/animate in on scroll (IntersectionObserver-driven, frozen by reduced-motion at capture)" },
+      { "name": "manifesto-longform", "evidence": "problem -> solution -> mission narrative blocks of body prose, no card grid" },
+      { "name": "team-portrait-slider", "evidence": "3 founder portraits (780x1140 each) in a horizontal team slider with name + role + social links" },
+      { "name": "investor-logo-marks", "evidence": "5 decorative illustration/logo PNGs under 'Our investors'" },
+      { "name": "pill-cta", "evidence": "purple #8052ff pill buttons (22.5px radius) for 'Request Access' -> Typeform" }
+    ]
+  },
+  "componentStyle": {
+    "buttons": {
+      "primary": {
+        "background": "#8052ff",
+        "color": "#ffffff",
+        "borderRadius": "22.5px",
+        "padding": "12px 24px",
+        "fontWeight": 400,
+        "shadow": null,
+        "hoverDelta": "unknown (reduced-motion at capture)"
+      },
+      "secondary": null,
+      "ghost": {
+        "background": "transparent",
+        "color": "#9a9a9a",
+        "borderRadius": "0px",
+        "padding": "0",
+        "fontWeight": 400,
+        "shadow": null
+      }
+    },
+    "dualCTAPattern": null,
+    "cards": null,
+    "inputs": null
+  },
+  "systemComponents": [],
+  "iconFont": null,
+  "voice": {
+    "heroHeadline": "Unlock collective wisdom.",
+    "heroSubcopy": "Plug into your team’s shared brainpower. Ask Dala to instantly find anything or anyone from any workplace system. Focus on doing your best work with context, confidence and clarity.",
+    "heroImage": {
+      "url": "https://dala.ai/images/fb-og.jpg",
+      "alt": "Dala social card",
+      "source": "img",
+      "domPath": null,
+      "localPath": "stardust/current/assets/media/og-hero.jpg",
+      "rect": null,
+      "_note": "No live raster hero exists on the page; the hero is a typographic + generative-particle composition on black. This og:image is elevated only as the single curated full-bleed brand asset. Downstream prototype should treat the particle-cloud-on-black + giant type as the true hero treatment, not this card."
+    },
+    "primaryCTALabel": "Request Access",
+    "ctaSamples": ["Request Access", "Request access", "Accept"],
+    "navItems": ["Manifesto", "Team", "Blog", "Request Access"],
+    "footerHeadings": ["Build with us.", "Privacy", "Terms"],
+    "firstParagraph": "Plug into your team’s shared brainpower. Ask Dala to instantly find anything or anyone from any workplace system. Focus on doing your best work with context, confidence and clarity.",
+    "tone": {
+      "guess": "aspirational",
+      "evidence": "first-person plural mission language ('Our mission is to make work more coherent and delightful'), emotional verbs (delightful, flow, intellectually stimulated), reframes productivity philosophically ('from doing more to being better'); confident but warm, manifesto register rather than feature-list register"
+    }
+  },
+  "voiceTable": {
+    "ctaFrequency": [
+      { "label": "Request Access", "total": 2, "pageCount": 1, "pages": ["home"] },
+      { "label": "Accept", "total": 1, "pageCount": 1, "pages": ["home"] }
+    ],
+    "headingFrequency": [],
+    "toneMetrics": {
+      "headingsTotal": 12,
+      "headingsUppercasePercent": 0,
+      "distinctHeadings": 12,
+      "distinctCtaLabels": 3
+    }
+  },
+  "crossPromo": {
+    "detected": false,
+    "anchorHeading": null,
+    "cluster": null,
+    "pages": null,
+    "pageCount": null,
+    "totalPages": 1
+  },
+  "register": "brand"
+}

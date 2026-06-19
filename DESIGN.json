@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-19T05:20:00Z",
+  "title": "Design System: Dala",
+  "_provenance": {
+    "writtenBy": "stardust:direct",
+    "mode": "A (brand-faithful, signal-strong)",
+    "role": "shared base spec — variants inherit from this",
+    "readArtifacts": [
+      "stardust/current/_brand-extraction.json",
+      "stardust/current/PRODUCT.md",
+      "stardust/current/DESIGN.md",
+      "stardust/uplift-improvements.md",
+      "stardust/uplift-questions.md",
+      "stardust/direction.md"
+    ],
+    "stardustVersion": "0.10.0"
+  },
+  "extensions": {
+    "colorMeta": {
+      "ink-black": { "role": "neutral", "displayName": "Ink Black", "canonical": "#000000", "note": "Pure black retained — brand-faithful inversion; impeccable no-pure-black rule waived under Mode A because the captured brand's identity IS pure-black canvas.", "tonalRamp": ["#000000", "#0a0a0a", "#141414", "#1f1f1f", "#2e2e2e", "#454545", "#6b6b6b", "#9a9a9a"] },
+      "paper-white": { "role": "neutral", "displayName": "Paper White", "canonical": "#ffffff", "note": "Pure white retained — brand-faithful inversion; captured text color.", "tonalRamp": ["#1a1a1a", "#333333", "#555555", "#777777", "#9a9a9a", "#c2c2c2", "#e0e0e0", "#ffffff"] },
+      "electric-purple": { "role": "primary", "displayName": "Electric Purple", "canonical": "#8052ff", "tonalRamp": ["#1c0f3a", "#2d1a5e", "#412681", "#5733a8", "#6c43d6", "#8052ff", "#a079ff", "#c4adff"] },
+      "muted-gray": { "role": "neutral", "displayName": "Muted Gray", "canonical": "#9a9a9a", "tonalRamp": ["#2e2e2e", "#454545", "#5c5c5c", "#737373", "#8a8a8a", "#9a9a9a", "#bcbcbc", "#dedede"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero headline only. SemiBold 600, modular-scale top step." },
+      "headline": { "displayName": "Headline", "purpose": "Major section titles. SemiBold 600." },
+      "title": { "displayName": "Title", "purpose": "Sub-section heads, team names, closing CTA line. Regular 400." },
+      "body": { "displayName": "Body", "purpose": "Manifesto / mission prose at 65–75ch. Regular 400, line-height 1.6 on dark." },
+      "label": { "displayName": "Label / Eyebrow", "purpose": "Numbered section eyebrows + small UI. SemiBold 600, 0.04em tracking, mixed-case." }
+    },
+    "modularScale": {
+      "base": "1rem",
+      "ratio": 1.25,
+      "ratioName": "minor-third",
+      "rationale": "Shared base + variants A and C use 1.25 (calm committed brand ratio ≥ impeccable's 1.25 floor) to retire the captured ad-hoc scale (T-scale) without overstating. Variant B overrides to 1.333 (perfect fourth) to amplify the display-typography signature.",
+      "steps": { "-1": "0.8rem", "0": "1rem", "1": "1.25rem", "2": "1.5625rem", "3": "1.953rem", "4": "2.441rem", "5": "3.052rem", "6": "3.815rem" }
+    },
+    "shadows": [],
+    "breakpoints": [
+      { "name": "tablet", "value": "600px" },
+      { "name": "desktop", "value": "900px" },
+      { "name": "wide", "value": "1200px" }
+    ],
+    "densityFloor": {
+      "trigger": "brand register + captured inventory >5 sections (8 captured) → multi-audience hard floor fires",
+      "capturedSectionPadding": "120px",
+      "resolvedSectionPadding": { "desktop": "64px", "tablet": "48px", "mobile": "32px" },
+      "tier": "balanced",
+      "bound": "≤64px desktop, ≥40px — applies to ALL variants including the highest-divergence one (C)",
+      "note": "The captured 120px is reduced and does NOT carry forward in any variant."
+    },
+    "divergence": {
+      "mode": "A",
+      "modeDetection": "signal-strong (palette ≥3 distinct after clustering: black/white/purple/gray; type family PP Neue Montreal named) + no rebrand trigger → Mode A default per precedence step 1",
+      "seed": {
+        "decade": { "value": "2025-now", "picked_by": "rolled", "teeth": true },
+        "craft": { "value": "generative-computational", "picked_by": "anchor-reference: captured generative-particle-hero", "teeth": true },
+        "register": { "value": "manifesto / premium-dark", "picked_by": "inherited from PRODUCT.md", "teeth": true },
+        "ground_family": { "value": "pure-black", "picked_by": "user-constraint", "override": { "reason": "brand-faithful", "note": "captured ground is #000000 stark-black; any rolled ground loses to the brand's fixed ground per Mode C." } },
+        "font_deck": { "name": "brand-inherited", "picked_by": "user-constraint", "note": "PP Neue Montreal, weights 200/400/600 — no font-deck pick; ceremony skipped." },
+        "palette": { "source": "inherited from _brand-extraction.json", "picked_by": "user-constraint", "note": "4-color captured set; palette-picker not invoked." },
+        "anchors": [
+          { "ref": "captured generative-particle-hero", "implies": "craft = generative-computational" }
+        ]
+      },
+      "brand_faithful_inversions": [
+        { "field": "colors.ink-black", "retained": "#000000", "rule_waived": "impeccable no-pure-black", "basis": "captured brand identity is pure-black canvas; the void is load-bearing material, not a default." },
+        { "field": "colors.paper-white", "retained": "#ffffff", "rule_waived": "impeccable no-pure-white", "basis": "captured primary text + logo wordmark color." },
+        { "field": "colorFormat", "retained": "hex sRGB", "rule_waived": "impeccable OKLCH-only", "basis": "captured tokens are hex; frontmatter stays hex for Stitch round-trip, canonical hex recorded here. OKLCH not needed — no P3 values." },
+        { "field": "typography.family", "retained": "PP Neue Montreal (single family, no display/body pair)", "rule_relaxed": "impeccable two-families-when-voice-needs-it", "basis": "captured brand is deliberately single-family; identity-preservation wins over greenfield pairing reflex." }
+      ],
+      "teeth_report": {
+        "decade": "rolled → 2025-now",
+        "craft": "anchored → generative-computational (captured)",
+        "register": "inherited → manifesto / premium-dark",
+        "ground_family": "inherited → pure-black (brand-native, Mode C override = brand-faithful)",
+        "font_deck": "inherited → PP Neue Montreal stack",
+        "palette": "inherited → existing 4-color set"
+      }
+    },
+    "antiToolboxAudit": {
+      "result": "PASS",
+      "checks": [
+        { "rule": "Editorial-register vocabulary applied to non-editorial brands", "hit": false, "evidence": "No 'atelier / the studio / mise-en-place / the journal' vocabulary introduced. Register is product/manifesto; copy stays in the captured aspirational-manifesto voice. Numbered eyebrows are functional wayfinding, not editorial costume." },
+        { "rule": "Repeated tiny uppercase tracked labels above every section heading (AI scaffolding)", "hit": false, "evidence": "Eyebrows are mixed-case (headingsUppercasePercent stays 0, matching capture) and numbered — a deliberate, named brand system (improvement #2), not generic tracked-uppercase scaffolding." },
+        { "rule": "Generic-2026-SaaS silhouette (modernise guardrail)", "hit": false, "evidence": "No blue gradient hero, no 3-up feature-card grid, no logo-soup strip; the decorative investor PNG strip is explicitly removed (improvement #4)." },
+        { "rule": "Invented color outside captured palette", "hit": false, "evidence": "Only #000000/#ffffff/#8052ff/#9a9a9a used; no fourth color in any variant." },
+        { "rule": "Invented font outside captured surface", "hit": false, "evidence": "Only PP Neue Montreal (captured weights 200/400/600)." },
+        { "rule": "Size-as-personality / padding-as-personality (C-cliff)", "hit": false, "evidence": "Variant C is defined against the captured generative-constellation trait, not against larger type or more padding; density floor caps padding ≤64px in C too." }
+      ]
+    },
+    "iaPriorities": [
+      {
+        "signal": "commercial-conversion",
+        "evidence": "_brand-extraction.json#voice.primaryCTALabel = 'Request Access' → external Typeform; voiceTable.ctaFrequency shows single dominant conversion verb. pages/home.json hero sole CTA.",
+        "preserveAs": "single-funnel-cta",
+        "constraint": "Exactly one conversion verb ('Request Access') routed to the Typeform. No competing/fragmenting CTA verbs introduced. The primary purple pill is reserved to this funnel in every variant and every viewport.",
+        "scope": "site-wide",
+        "mutability": "movable",
+        "note": "movable = reimagined ia-fidelity (variants may re-shape its deployment) but the single-funnel floor never breaks; the hero stays the hero and 'Request Access' stays the one act."
+      },
+      {
+        "signal": "audience-ordering",
+        "evidence": "PRODUCT.md Users: knowledge-workers lead; hires + investors sit below the fold by design (uplift-questions disqualified audience-routing reframe — single CTA verb above fold).",
+        "preserveAs": "primary-audience-first",
+        "constraint": "Knowledge-worker manifesto leads the home; hires and investor signal stay below the fold. No audience-routing split in the first viewport.",
+        "scope": "page:home",
+        "mutability": "movable"
+      },
+      {
+        "signal": "section-ordering",
+        "evidence": "Captured single-page narrative: hero → mission → decisions/confidence → lightbulb → better-world → team → investors → closing CTA (8 sections).",
+        "preserveAs": "manifesto-sequence",
+        "constraint": "Hero remains first viewport in all variants. Closing 'Request Access' CTA remains the terminal section. Variants B and C re-typeset / re-animate within this spine; they do not re-sequence the conversion path.",
+        "scope": "page:home",
+        "mutability": "movable"
+      }
+    ],
+    "componentStyle": {
+      "buttons": {
+        "primary": { "background": "#8052ff", "color": "#ffffff", "borderRadius": "22.5px", "padding": "14px 28px", "fontWeight": 600, "hover": "brightness lift, no hue change", "reservedFor": "Request Access → Typeform (single funnel)" },
+        "secondary": { "background": "#000000", "color": "#ffffff", "border": "1px solid rgba(255,255,255,0.4)", "borderRadius": "22.5px", "padding": "14px 28px", "fontWeight": 400 },
+        "ghost": { "background": "transparent", "color": "#9a9a9a", "borderRadius": "0px", "padding": "0", "hover": "color → #ffffff" }
+      },
+      "dualCTAPattern": null,
+      "cards": null,
+      "inputs": null
+    },
+    "systemComponentRoles": {
+      "header": { "purpose": "Persistent top nav: logo wordmark + muted-gray text links + one purple Request Access pill.", "positionClass": "sticky-top" },
+      "footer": { "purpose": "Build-with-us recruiting block + Privacy/Terms links + logo wordmark. Descriptive link text only (no bare 'here').", "positionClass": "page-end" },
+      "cta-band": { "purpose": "Terminal conversion band restating the single Request Access funnel.", "positionClass": "page-end-before-footer", "constraint": "purple pill reserved to this and the header funnel" },
+      "section-eyebrow": { "purpose": "Numbered mixed-case section label giving the long scroll a spine.", "positionClass": "section-lead" },
+      "constellation-accent": { "purpose": "Recurring generative-particle motif reprised past the hero as a structural accent.", "positionClass": "section-divider | hero-field", "constraint": "abstract role; per-variant deployment (light accent in A, none in B, structural spine in C) is set in each DESIGN-<id>.json" }
+    },
+    "voice": {
+      "examples": {
+        "do": [
+          "Lead with mission and feeling ('make work more coherent and delightful').",
+          "Keep the conversion verb singular: 'Request Access'.",
+          "Give links descriptive text; replace the captured bare 'here'."
+        ],
+        "dont": [
+          "Don't list features as bullets.",
+          "Don't introduce a second conversion verb.",
+          "Don't use editorial costume vocabulary ('the journal', 'atelier')."
+        ]
+      }
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single filled control — Request Access → Typeform.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#request\">Request Access</a>",
+      "css": ".ds-btn-primary { display:inline-flex; align-items:center; background:#8052ff; color:#ffffff; padding:14px 28px; border-radius:22.5px; font-family:PPNeueMontreal,system-ui,sans-serif; font-weight:600; font-size:1rem; text-decoration:none; transition:filter .2s ease, transform .2s ease; } .ds-btn-primary:hover { filter:brightness(1.12); } .ds-btn-primary:focus-visible { outline:2px solid #ffffff; outline-offset:3px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Non-conversion affordance; keeps purple reserved for the one funnel.",
+      "html": "<a class=\"ds-btn-secondary\" href=\"#\">Read the manifesto</a>",
+      "css": ".ds-btn-secondary { display:inline-flex; align-items:center; background:#000000; color:#ffffff; padding:14px 28px; border:1px solid rgba(255,255,255,0.4); border-radius:22.5px; font-family:PPNeueMontreal,system-ui,sans-serif; font-weight:400; font-size:1rem; text-decoration:none; transition:border-color .2s ease; } .ds-btn-secondary:hover { border-color:#ffffff; } .ds-btn-secondary:focus-visible { outline:2px solid #ffffff; outline-offset:3px; }"
+    },
+    {
+      "name": "Section Eyebrow",
+      "kind": "badge",
+      "refersTo": "label",
+      "description": "Numbered mixed-case section label (improvement #2).",
+      "html": "<span class=\"ds-eyebrow\">01 — Manifesto</span>",
+      "css": ".ds-eyebrow { display:inline-block; color:#9a9a9a; font-family:PPNeueMontreal,system-ui,sans-serif; font-weight:600; font-size:0.8125rem; letter-spacing:0.04em; }"
+    },
+    {
+      "name": "Nav Link",
+      "kind": "nav",
+      "refersTo": "link",
+      "description": "Muted-gray header / footer link with descriptive text.",
+      "html": "<a class=\"ds-link\" href=\"#manifesto\">Manifesto</a>",
+      "css": ".ds-link { color:#9a9a9a; font-family:PPNeueMontreal,system-ui,sans-serif; font-size:0.875rem; text-decoration:none; transition:color .2s ease; } .ds-link:hover { color:#ffffff; } .ds-link:focus-visible { outline:2px solid #ffffff; outline-offset:3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Constellation in the Dark",
+    "overview": "Dala's surface is a cinematic, near-monochrome landing rendered almost entirely in pure black. The single load-bearing visual is a generative particle cloud that literalises 'Unlock collective wisdom.' as scattered knowledge coalescing. Oversized editorial typography floats on black; one electric purple does all the accent work. This shared base tightens the captured surface where it was loose — 120px sections reduced to 64px, ad-hoc scale replaced by a modular scale, the 200/400/600 weight range exercised — while pinning palette and typeface to the captured brand.",
+    "keyCharacteristics": [
+      "Pure-black canvas (#000000) as the dominant material.",
+      "One restrained accent (electric purple #8052ff), used on conversion only.",
+      "A single private typeface (PP Neue Montreal) carrying display, body and UI.",
+      "Generative / abstract imagery over literal product screenshots.",
+      "Long-scroll, manifesto-paced narrative; balanced (not airy) density."
+    ],
+    "rules": [
+      { "name": "The One-Voice Rule", "body": "Electric purple appears on conversion affordances only; under 10% of any viewport. Its scarcity makes 'Request Access' read as the one thing to do.", "section": "colors" },
+      { "name": "The Modular-Scale Rule", "body": "Hierarchy is built on a fixed modular ratio (≥1.25), never on ad-hoc size jumps. The captured uneven ratios are retired.", "section": "typography" },
+      { "name": "The Weight-and-Scale Rule", "body": "Light 200 carries atmospheric lead-ins; SemiBold 600 carries structural heads. Contrast comes from weight and scale together.", "section": "typography" },
+      { "name": "The No-Shadow Rule", "body": "Surfaces never lift off the black. No card vocabulary, no elevation ramp; separate with space, not shadows.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do build on pure black (#000000) and treat blackspace as the primary material.",
+      "Do reserve electric purple (#8052ff) for conversion affordances only.",
+      "Do drive hierarchy through a strict modular scale and the 200/400/600 weight range together.",
+      "Do keep imagery generative / abstract.",
+      "Do keep surfaces flat — separate with space, not shadows.",
+      "Do give links descriptive text and sections numbered eyebrows."
+    ],
+    "donts": [
+      "Don't introduce a generic SaaS blue gradient hero or a 3-up feature-card grid.",
+      "Don't add stock illustration, light dashboards, or dense multi-card layouts.",
+      "Don't spread purple into decoration, dividers, or backgrounds.",
+      "Don't lead with feature bullet lists.",
+      "Don't add drop shadows or a card elevation ramp.",
+      "Don't smuggle in editorial-register costume vocabulary.",
+      "Don't exceed 64px desktop section padding."
+    ]
+  }
+}

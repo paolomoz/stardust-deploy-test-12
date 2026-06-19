@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- stardust:provenance
+  writtenBy:        stardust:prototype
+  writtenAt:        2026-06-19T06:45:00Z
+  page:             home
+  variant:          A
+  pageUrl:          https://dala.craftedbygc.com/
+  againstDirection: stardust/direction.md (Active 2026-06-19T05:20:00Z)
+  readArtifacts:
+    - stardust/current/pages/home.json
+    - stardust/current/_brand-extraction.json
+    - DESIGN-A.md
+    - DESIGN-A.json
+    - stardust/direction.md
+    - stardust/prototypes/home-A-shape.md
+    - stardust/prototypes/home-improvements.md
+  paletteSource:    captured brand surface (hex: #000000 / #ffffff / #8052ff / #9a9a9a)
+  fontDeck:         PP Neue Montreal (captured private; 200/400/600)
+  fidelity:         refined
+  divergenceNote:   "Pure #000000 ground + #ffffff text and the hex color format are brand-faithful inversions (DESIGN.json.extensions.divergence.brand_faithful_inversions) — chosen as captured brand decisions, NOT agent reflex. no-pure-black / no-pure-white / OKLCH-only impeccable defaults are waived per direction.md."
+  reflexRejectAudit: { bypassed: true, reason: "Mode A — captured display + body family PP Neue Montreal pinned; not a reflex pick" }
+  unsourcedContent: []
+  stardustVersion:  0.10.0
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dala</title>
+<meta name="description" content="Your workplace has the answer. Just ask Dala for it.">
+<style>
+  :root {
+    /* ── Palette (hex, brand-faithful) ───────────────────────── */
+    --ink-black: #000000;
+    --paper-white: #ffffff;
+    --electric-purple: #8052ff;
+    --electric-purple-hi: #9269ff;
+    --muted-gray: #9a9a9a;
+    --hairline: rgba(255, 255, 255, 0.14);
+    --panel: rgba(255, 255, 255, 0.035);
+
+    /* ── Modular type scale, ratio 1.25 (minor third) ────────── */
+    --step--1: 0.8125rem;   /* label */
+    --step-0:  1.125rem;    /* body */
+    --step-1:  1.75rem;     /* title  (~1.25^2 of label band) */
+    --step-2:  clamp(2.25rem, 4vw, 3.25rem);   /* headline */
+    --step-3:  clamp(3rem, 7vw, 6.25rem);      /* display */
+
+    /* ── Type families ───────────────────────────────────────── */
+    --font: "PP Neue Montreal", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+    /* ── Spacing ─────────────────────────────────────────────── */
+    --sp-sm: 8px;
+    --sp-md: 16px;
+    --sp-lg: 24px;
+    --sp-xl: 48px;
+    --sp-section: 64px;
+
+    /* ── Radius ──────────────────────────────────────────────── */
+    --r-pill: 22.5px;
+    --r-md: 24px;
+    --r-circle: 50%;
+
+    --measure: 68ch;
+    --maxw: 1200px;
+    --gutter: clamp(20px, 5vw, 64px);
+
+    /* z-scale */
+    --z-sticky: 100;
+    --z-nav-drawer: 200;
+  }
+
+  @font-face { font-family: "PP Neue Montreal"; font-weight: 200; font-style: normal; font-display: swap; src: url("../current/assets/fonts/PPNeueMontreal-Light.woff2") format("woff2"); }
+  @font-face { font-family: "PP Neue Montreal"; font-weight: 400; font-style: normal; font-display: swap; src: url("../current/assets/fonts/PPNeueMontreal-Regular.woff2") format("woff2"); }
+  @font-face { font-family: "PP Neue Montreal"; font-weight: 600; font-style: normal; font-display: swap; src: url("../current/assets/fonts/PPNeueMontreal-SemiBold.woff2") format("woff2"); }
+
+  /* base nav-burger rule — source-order load-bearing, sits before @media */
+  .ds-nav-burger { display: none; }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; hanging-punctuation: first; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  body {
+    margin: 0;
+    background: var(--ink-black);
+    color: var(--paper-white);
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: var(--step-0);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-variant-numeric: tabular-nums;
+    overflow-x: hidden;
+  }
+
+  a { color: inherit; }
+  img { max-width: 100%; display: block; }
+
+  .wrap { width: 100%; max-width: var(--maxw); margin-inline: auto; padding-inline: var(--gutter); }
+
+  /* ── Type primitives ─────────────────────────────────────── */
+  .eyebrow {
+    font-size: var(--step--1);
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    color: var(--muted-gray);
+    margin: 0 0 var(--sp-lg);
+  }
+  .eyebrow__num { color: var(--paper-white); font-weight: 600; }
+
+  .display {
+    font-size: var(--step-3);
+    font-weight: 600;
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .headline {
+    font-size: var(--step-2);
+    font-weight: 600;
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .title {
+    font-size: var(--step-1);
+    font-weight: 400;
+    line-height: 1.15;
+    margin: 0;
+  }
+  .lede { font-weight: 200; }
+  .prose { max-width: var(--measure); text-wrap: pretty; }
+  .prose p { margin: 0 0 1.15em; }
+  .prose p:last-child { margin-bottom: 0; }
+
+  /* ── Buttons ─────────────────────────────────────────────── */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    font-family: var(--font); font-size: 1rem; font-weight: 600;
+    line-height: 1; text-decoration: none; cursor: pointer;
+    border-radius: var(--r-pill); padding: 14px 28px;
+    border: 1px solid transparent;
+    transition: background-color .22s cubic-bezier(.42,0,0,1), filter .22s, color .22s;
+  }
+  .btn--primary { background: var(--electric-purple); color: var(--paper-white); }
+  .btn--primary:hover { filter: brightness(1.12); }
+  .btn--primary:focus-visible { outline: 2px solid var(--paper-white); outline-offset: 3px; }
+
+  /* ── Links ───────────────────────────────────────────────── */
+  .lnk {
+    color: var(--muted-gray); text-decoration: none;
+    border-bottom: 1px solid rgba(154,154,154,.4);
+    transition: color .2s, border-color .2s;
+  }
+  .lnk:hover { color: var(--paper-white); border-bottom-color: var(--paper-white); }
+
+  /* ── Header ──────────────────────────────────────────────── */
+  .site-header {
+    position: sticky; top: 0; z-index: var(--z-sticky);
+    background: rgba(0,0,0,0.72);
+    backdrop-filter: saturate(140%) blur(14px);
+    border-bottom: 1px solid var(--hairline);
+  }
+  .site-header__inner {
+    display: flex; align-items: center; justify-content: space-between;
+    height: 68px;
+  }
+  .brand-mark {
+    font-size: 1.35rem; font-weight: 600; letter-spacing: -0.01em;
+    color: var(--paper-white); text-decoration: none;
+  }
+  .nav { display: flex; align-items: center; gap: var(--sp-xl); }
+  .nav__links { display: flex; align-items: center; gap: var(--sp-lg); list-style: none; margin: 0; padding: 0; }
+  .nav__link { color: var(--muted-gray); text-decoration: none; font-size: 0.95rem; transition: color .2s; }
+  .nav__link:hover, .nav__link:focus-visible { color: var(--paper-white); }
+  .btn--nav { padding: 10px 20px; font-size: 0.95rem; }
+
+  .ds-nav-burger {
+    appearance: none; background: var(--electric-purple); border: 0;
+    width: 44px; height: 44px; border-radius: var(--r-circle);
+    cursor: pointer; align-items: center; justify-content: center; padding: 0;
+  }
+  .ds-nav-burger span, .ds-nav-burger span::before, .ds-nav-burger span::after {
+    content: ""; display: block; width: 18px; height: 2px; background: var(--paper-white); position: relative;
+  }
+  .ds-nav-burger span::before { position: absolute; top: -6px; }
+  .ds-nav-burger span::after  { position: absolute; top: 6px; }
+
+  /* ── Hero ────────────────────────────────────────────────── */
+  .hero { position: relative; padding-block: clamp(56px, 9vw, 112px) var(--sp-section); overflow: hidden; }
+  .hero__dots {
+    position: absolute; inset: 0; z-index: 0; pointer-events: none;
+    background:
+      radial-gradient(1px 1px at 18% 30%, rgba(255,255,255,.42) 50%, transparent 51%),
+      radial-gradient(1px 1px at 32% 64%, rgba(128,82,255,.55) 50%, transparent 51%),
+      radial-gradient(1.4px 1.4px at 52% 22%, rgba(255,255,255,.30) 50%, transparent 51%),
+      radial-gradient(1px 1px at 67% 48%, rgba(255,255,255,.36) 50%, transparent 51%),
+      radial-gradient(1.6px 1.6px at 80% 34%, rgba(128,82,255,.42) 50%, transparent 51%),
+      radial-gradient(1px 1px at 88% 70%, rgba(255,255,255,.30) 50%, transparent 51%),
+      radial-gradient(1px 1px at 44% 82%, rgba(255,255,255,.22) 50%, transparent 51%);
+    mask-image: radial-gradient(120% 90% at 70% 30%, #000 35%, transparent 78%);
+  }
+  .hero__inner {
+    position: relative; z-index: 1;
+    display: grid; grid-template-columns: 6fr 5fr; gap: clamp(32px, 5vw, 72px); align-items: center;
+  }
+  .hero__copy { max-width: 38ch; }
+  .hero__sub { color: rgba(255,255,255,.78); margin: var(--sp-lg) 0 var(--sp-xl); max-width: 44ch; line-height: 1.65; }
+  .hero__cta { display: flex; gap: var(--sp-md); flex-wrap: wrap; }
+
+  /* product moment — stylized representation, clearly UI chrome */
+  .demo {
+    border: 1px solid var(--hairline); border-radius: var(--r-md);
+    background: var(--panel); padding: var(--sp-lg);
+    display: grid; gap: var(--sp-md);
+  }
+  .demo__ask {
+    display: flex; align-items: center; gap: 12px;
+    border: 1px solid var(--hairline); border-radius: var(--r-pill);
+    padding: 13px 18px; color: rgba(255,255,255,.62); font-size: 0.95rem;
+  }
+  .demo__ask::before {
+    content: ""; width: 9px; height: 9px; border-radius: 50%;
+    background: var(--electric-purple); flex: none;
+    box-shadow: 0 0 0 4px rgba(128,82,255,.22);
+  }
+  .demo__q { color: rgba(255,255,255,.9); }
+  .demo__answer { border-top: 1px solid var(--hairline); padding-top: var(--sp-md); }
+  .demo__label { font-size: var(--step--1); letter-spacing: 0.04em; color: var(--muted-gray); margin: 0 0 8px; }
+  .demo__line { height: 9px; border-radius: 6px; background: rgba(255,255,255,.12); margin-bottom: 9px; }
+  .demo__line.w70 { width: 70%; } .demo__line.w90 { width: 90%; } .demo__line.w50 { width: 50%; }
+  .demo__chips { display: flex; gap: 8px; margin-top: var(--sp-md); flex-wrap: wrap; }
+  .demo__chip {
+    font-size: 0.78rem; color: rgba(255,255,255,.72);
+    border: 1px solid var(--hairline); border-radius: var(--r-pill); padding: 5px 12px;
+  }
+
+  /* ── Generic section ─────────────────────────────────────── */
+  .section { padding-block: var(--sp-section); position: relative; }
+  .section::before {
+    /* hairline divider + a faint constellation reprise accent (improvement #5) */
+    content: ""; position: absolute; top: 0; left: var(--gutter); right: var(--gutter); height: 1px;
+    background: linear-gradient(90deg, transparent, var(--hairline) 16%, var(--hairline) 84%, transparent);
+  }
+  .section::after {
+    content: ""; position: absolute; top: -3px; left: 50%; width: 5px; height: 5px; border-radius: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    background: var(--electric-purple); opacity: .5;
+  }
+  .section__head { margin-bottom: var(--sp-xl); }
+  .section__lead { color: rgba(255,255,255,.82); margin-top: var(--sp-lg); font-size: 1.25rem; line-height: 1.5; max-width: 52ch; }
+
+  .narrative .prose p { color: rgba(255,255,255,.74); font-size: 1.15rem; }
+  .narrative .prose p:first-child { color: var(--paper-white); }
+
+  /* ── Team ────────────────────────────────────────────────── */
+  .team__grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-lg);
+  }
+  .member__photo {
+    aspect-ratio: 780 / 1140; width: 100%; object-fit: cover;
+    border-radius: var(--r-md); filter: grayscale(1) contrast(1.02);
+    transition: filter .4s ease;
+  }
+  .member:hover .member__photo { filter: grayscale(0); }
+  .member__role { font-size: var(--step--1); letter-spacing: .04em; color: var(--muted-gray); margin: var(--sp-md) 0 4px; }
+  .member__name { margin: 0; }
+  .member__social { display: flex; gap: var(--sp-md); margin-top: 10px; }
+  .member__social a { font-size: 0.9rem; }
+
+  .hiring { margin-top: var(--sp-xl); padding-top: var(--sp-xl); border-top: 1px solid var(--hairline); max-width: var(--measure); }
+  .hiring h3 { margin: 0 0 var(--sp-md); font-size: var(--step-1); font-weight: 400; }
+  .hiring p { color: rgba(255,255,255,.74); }
+
+  /* ── Investors ───────────────────────────────────────────── */
+  .investors__lead { max-width: 50ch; color: rgba(255,255,255,.82); font-size: 1.25rem; line-height: 1.5; }
+  .investors__list { list-style: none; margin: var(--sp-xl) 0 0; padding: 0; display: grid; gap: 0; }
+  .investors__item {
+    display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px;
+    padding: var(--sp-lg) 0; border-top: 1px solid var(--hairline);
+  }
+  .investors__item:last-child { border-bottom: 1px solid var(--hairline); }
+  .investors__name { font-size: var(--step-1); font-weight: 400; }
+  .investors__note { color: var(--muted-gray); }
+  .investors__kind { margin-left: auto; font-size: var(--step--1); letter-spacing: .04em; color: var(--muted-gray); }
+
+  /* ── Closing CTA ─────────────────────────────────────────── */
+  .closing { text-align: center; padding-block: clamp(64px, 10vw, 120px) var(--sp-section); }
+  .closing h2 { max-width: 18ch; margin: 0 auto var(--sp-xl); }
+
+  /* ── Footer ──────────────────────────────────────────────── */
+  .site-footer { border-top: 1px solid var(--hairline); padding-block: var(--sp-xl); }
+  .site-footer__top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--sp-lg); }
+  .site-footer__word { font-size: 2rem; font-weight: 600; letter-spacing: -0.01em; }
+  .site-footer__copy { color: var(--muted-gray); font-size: 0.9rem; }
+  .footer-nav { display: flex; flex-wrap: wrap; gap: var(--sp-lg); list-style: none; margin: var(--sp-xl) 0 0; padding: 0; }
+  .footer-nav a, .footer-nav button {
+    color: var(--muted-gray); text-decoration: none; font-size: 0.95rem;
+    background: none; border: 0; padding: 0; font-family: var(--font); cursor: pointer; transition: color .2s;
+  }
+  .footer-nav a:hover, .footer-nav button:hover { color: var(--paper-white); }
+  .site-footer__social { display: flex; gap: var(--sp-lg); margin-top: var(--sp-md); }
+
+  .skip-link {
+    position: absolute; left: -9999px; top: 0; z-index: 1000;
+    background: var(--paper-white); color: var(--ink-black); padding: 10px 16px; border-radius: 8px;
+  }
+  .skip-link:focus { left: 12px; top: 12px; }
+
+  /* ── Responsive ──────────────────────────────────────────── */
+  @media (max-width: 1024px) {
+    .hero__inner { grid-template-columns: 1fr; gap: var(--sp-xl); }
+    .hero__copy { max-width: 100%; }
+    .team__grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media (max-width: 768px) {
+    :root { --sp-section: 48px; }
+    .team__grid { grid-template-columns: 1fr 1fr; }
+    .investors__kind { margin-left: 0; flex-basis: 100%; }
+  }
+  @media (max-width: 640px) {
+    :root { --sp-section: 32px; }
+    .nav__links, .btn--nav { display: none; }
+    .ds-nav-burger { display: inline-flex; }
+    .nav { gap: var(--sp-md); }
+
+    /* mobile drawer */
+    .nav__links {
+      position: fixed; inset: 68px 0 auto 0; z-index: var(--z-nav-drawer);
+      flex-direction: column; align-items: flex-start; gap: 0;
+      background: var(--ink-black); border-bottom: 1px solid var(--hairline);
+      padding: var(--sp-md) var(--gutter) var(--sp-lg);
+    }
+    .nav[data-open="true"] .nav__links { display: flex; }
+    .nav[data-open="true"] .btn--nav { display: inline-flex; margin: var(--sp-md) var(--gutter) 0; }
+    .nav__links li { width: 100%; }
+    .nav__link { display: block; padding: 14px 0; width: 100%; border-bottom: 1px solid var(--hairline); }
+    .team__grid { grid-template-columns: 1fr; }
+    .hero__sub { max-width: 100%; }
+    .site-footer__top { flex-direction: column; align-items: flex-start; }
+  }
+  @media (max-width: 360px) {
+    .nav { gap: 10px; }
+    .brand-mark { font-size: 1.2rem; }
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" data-section="header" data-intent="navigate" data-layout="contained" data-nav-collapse="hamburger">
+  <div class="wrap site-header__inner">
+    <a class="brand-mark" href="#main" aria-label="Dala home">Dala</a>
+    <nav class="nav" id="nav" aria-label="Primary" data-open="false">
+      <ul class="nav__links">
+        <li><a class="nav__link" href="#manifesto">Manifesto</a></li>
+        <li><a class="nav__link" href="#team">Team</a></li>
+        <li><a class="nav__link" href="https://medium.com/dala-ai" rel="noopener">Blog</a></li>
+      </ul>
+      <a class="btn btn--primary btn--nav" href="https://askdala.typeform.com/to/lSujgyr8" rel="noopener">Request Access</a>
+      <button class="ds-nav-burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" data-section="hero" data-intent="emotional hook" data-layout="split-media" data-items="1" data-media="image">
+    <div class="hero__dots" aria-hidden="true"></div>
+    <div class="wrap hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow">Stop managing knowledge. Start using it.</p>
+        <h1 class="display">Unlock collective wisdom.</h1>
+        <p class="hero__sub">Plug into your team’s shared brainpower. Ask Dala to instantly find anything or anyone from any workplace system. Focus on doing your best work with context, conviction and clarity.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="https://askdala.typeform.com/to/lSujgyr8" rel="noopener">Request Access</a>
+        </div>
+      </div>
+      <div class="hero__demo" aria-label="A glimpse of asking Dala">
+        <div class="demo">
+          <div class="demo__ask"><span class="demo__q">Who owns the Q3 pricing doc?</span></div>
+          <div class="demo__answer">
+            <p class="demo__label">Dala · pulled together for you</p>
+            <div class="demo__line w90" aria-hidden="true"></div>
+            <div class="demo__line w70" aria-hidden="true"></div>
+            <div class="demo__line w50" aria-hidden="true"></div>
+            <div class="demo__chips">
+              <span class="demo__chip">Owner · Poppy R.</span>
+              <span class="demo__chip">Drive</span>
+              <span class="demo__chip">Slack thread</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section narrative" id="manifesto" data-section="mission-confidence" data-intent="frame the problem" data-layout="stack">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="eyebrow"><span class="eyebrow__num">02</span> — The problem</p>
+        <h2 class="headline">Make decisions with confidence</h2>
+        <p class="section__lead">Dala’s bleeding-edge AI search tool automates extracting knowledge from across your organisation so that you can take the guesswork out of your work.</p>
+      </div>
+      <div class="prose">
+        <p>This is your workplace today. Countless fragments of critical knowledge scattered across hundreds of disparate systems.</p>
+        <p>30% of your time is spent trying to organise and find the information and expertise you need to do your job.</p>
+        <p>The impossible battle to make sense of this chaos leaves your team feeling overwhelmed and unproductive.</p>
+        <p>They’re confronted with the anxiety of bothering a busy coworker again, or aimlessly trying to connect the dots with incomplete context.</p>
+        <p>Existing solutions are cumbersome and quickly become outdated. Yet another decaying system that requires continuous maintenance.</p>
+        <p>They fail to understand what you need from the vast amounts of information that your team creates every day.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section narrative" data-section="lightbulb" data-intent="explain mechanic" data-layout="stack">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="eyebrow"><span class="eyebrow__num">03</span> — Lightbulb moments</p>
+        <h2 class="headline">Spark lightbulb moments</h2>
+      </div>
+      <div class="prose">
+        <p>Dala is your intelligent, real-time source of truth that eliminates the cultural, financial and operational struggles of splintered tools.</p>
+        <p>We connect your systems behind the scenes and pull together exactly the knowledge you require into an elegant contextual view.</p>
+        <p>Just ask Dala for the answer that advances your work, and helps you make better decisions with more confidence.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section narrative" data-section="better-world" data-intent="state mission" data-layout="stack">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="eyebrow"><span class="eyebrow__num">04</span> — A better world of work</p>
+        <h2 class="headline">Build a better world of work</h2>
+      </div>
+      <div class="prose">
+        <p>Our mission is to make work more coherent and delightful—reframing productivity from doing more to <a class="lnk" href="https://medium.com/dala-ai/why-we-started-dala-a36fc6cbbdb9" rel="noopener">being better.</a></p>
+        <p>Your happiest and most purposeful moments at work are when you’re in flow, intellectually stimulated, and creating value for customers.</p>
+        <p>We want to recreate that every time you experience Dala. A tool that is completely integrated with how you think, feel and work.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="team" data-section="team" data-intent="build trust" data-layout="grid" data-items="3" data-media="image">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="eyebrow"><span class="eyebrow__num">05</span> — Our team</p>
+        <h2 class="headline">Our team</h2>
+      </div>
+      <ul class="team__grid" role="list">
+        <li class="member">
+          <img class="member__photo" src="../current/assets/media/haroun-12f81a51.jpg" width="780" height="1140" alt="Portrait of Haroun Hickman" loading="lazy">
+          <p class="member__role">Co-founder &amp; CEO</p>
+          <h3 class="title member__name">Haroun Hickman</h3>
+          <div class="member__social">
+            <a class="lnk" href="https://twitter.com/HarounHickman" rel="noopener">Twitter</a>
+            <a class="lnk" href="https://www.linkedin.com/in/harounhickman" rel="noopener">LinkedIn</a>
+          </div>
+        </li>
+        <li class="member">
+          <img class="member__photo" src="../current/assets/media/poppy-c0f01710.jpg" width="780" height="1140" alt="Portrait of Poppy Reid" loading="lazy">
+          <p class="member__role">Product Design Lead</p>
+          <h3 class="title member__name">Poppy Reid</h3>
+          <div class="member__social">
+            <a class="lnk" href="https://twitter.com/ReidPoppy" rel="noopener">Twitter</a>
+            <a class="lnk" href="https://www.linkedin.com/in/poppy-reid-484087121" rel="noopener">LinkedIn</a>
+          </div>
+        </li>
+        <li class="member">
+          <img class="member__photo" src="../current/assets/media/joel-6fdb13c8.jpg" width="780" height="1140" alt="Portrait of Joel Kang" loading="lazy">
+          <p class="member__role">Co-founder &amp; CTO</p>
+          <h3 class="title member__name">Joel Kang</h3>
+          <div class="member__social">
+            <a class="lnk" href="https://twitter.com/_joel_kang_" rel="noopener">Twitter</a>
+            <a class="lnk" href="https://www.linkedin.com/in/joelkang" rel="noopener">LinkedIn</a>
+          </div>
+        </li>
+      </ul>
+      <div class="hiring">
+        <h3>Build with us.</h3>
+        <p>We are actively hiring intentional, empathetic and curious people who thrive on creating delightful experiences. If you’d like to be a part of the journey, email <a class="lnk" href="mailto:careers@dala.ai">careers@dala.ai</a> with your CV or portfolio, and a thoughtful note.</p>
+        <p>Read more about <a class="lnk" href="https://medium.com/dala-ai/why-we-wrote-our-values-before-we-wrote-a-single-line-of-code-99ada8a18cd5" rel="noopener">why we wrote our values first</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" data-section="investors" data-intent="build trust" data-layout="stack">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="eyebrow"><span class="eyebrow__num">06</span> — Our investors</p>
+        <h2 class="headline">Our investors</h2>
+        <p class="investors__lead">We are supported by some of the world’s most pioneering operators and progressive funds to fuel our growth.</p>
+      </div>
+      <ul class="investors__list" role="list">
+        <li class="investors__item"><span class="investors__name">Seedcamp</span><span class="investors__kind">Fund</span></li>
+        <li class="investors__item"><span class="investors__name">Evening Fund</span><span class="investors__kind">Fund</span></li>
+        <li class="investors__item"><span class="investors__name">Valia Ventures</span><span class="investors__kind">Fund</span></li>
+        <li class="investors__item"><span class="investors__name">James Meekings</span><span class="investors__note">Co-founder of Funding Circle</span><span class="investors__kind">Operator</span></li>
+        <li class="investors__item"><span class="investors__name">Roman Schumacher</span><span class="investors__note">Co-founder &amp; CPO at Personio</span><span class="investors__kind">Operator</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="closing" data-section="closing-cta" data-intent="drive action" data-layout="contained">
+    <div class="wrap">
+      <h2 class="headline">Your workplace has the answer. Ask Dala to find it.</h2>
+      <a class="btn btn--primary" href="https://askdala.typeform.com/to/lSujgyr8" rel="noopener">Request Access</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" data-section="footer" data-intent="navigate" data-layout="contained">
+  <div class="wrap">
+    <div class="site-footer__top">
+      <span class="site-footer__word">Dala</span>
+      <span class="site-footer__copy">© 2021 Dala Technologies Limited. All rights reserved.</span>
+    </div>
+    <ul class="footer-nav" role="list">
+      <li><a href="#manifesto">Manifesto</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="https://medium.com/dala-ai" rel="noopener">Blog</a></li>
+      <li><a href="/privacy">Privacy</a></li>
+      <li><a href="/terms">Terms</a></li>
+    </ul>
+    <div class="site-footer__social">
+      <a class="lnk" href="https://www.linkedin.com/company/askdala/" rel="noopener">LinkedIn</a>
+      <a class="lnk" href="https://twitter.com/askdala" rel="noopener">Twitter</a>
+      <a class="lnk" href="mailto:careers@dala.ai">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile nav a11y toggle (only permitted inline script — per mobile-nav-collapse.md)
+  const nav = document.getElementById('nav');
+  const burger = nav.querySelector('.ds-nav-burger');
+  burger.addEventListener('click', () => {
+    const open = nav.getAttribute('data-open') === 'true';
+    nav.setAttribute('data-open', String(!open));
+    burger.setAttribute('aria-expanded', String(!open));
+    burger.setAttribute('aria-label', open ? 'Open menu' : 'Close menu');
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && nav.getAttribute('data-open') === 'true') {
+      nav.setAttribute('data-open', 'false'); burger.setAttribute('aria-expanded', 'false'); burger.focus();
+    }
+  });
+</script>
+</body>
+</html>

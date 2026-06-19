@@ -1,0 +1,176 @@
+<style>
+  header.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgb(0 0 0 / 72%);
+    backdrop-filter: saturate(140%) blur(14px);
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  header.header .hdr-wrap {
+    width: 100%;
+    max-width: var(--maxw);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+  }
+
+  header.header .brand-mark {
+    font-size: 1.35rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--paper-white);
+    text-decoration: none;
+  }
+
+  header.header .hdr-nav {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-xl);
+  }
+
+  header.header .hdr-links {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-lg);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  header.header .hdr-link {
+    color: var(--muted-gray);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+  }
+
+  header.header .hdr-link:hover,
+  header.header .hdr-link:focus-visible {
+    color: var(--paper-white);
+  }
+
+  header.header .hdr-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+    border-radius: var(--r-pill);
+    background: var(--electric-purple);
+    color: var(--paper-white);
+    border: 1px solid var(--electric-purple);
+    transition: filter 0.22s;
+  }
+
+  header.header .hdr-cta:hover {
+    filter: brightness(1.12);
+  }
+
+  /* checkbox-hack mobile nav — fragments run no JS */
+  header.header .hdr-toggle {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    width: 0;
+    height: 0;
+  }
+
+  header.header .hdr-burger {
+    display: none;
+    appearance: none;
+    background: var(--electric-purple);
+    border: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: var(--r-circle);
+    cursor: pointer;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header.header .hdr-burger span,
+  header.header .hdr-burger span::before,
+  header.header .hdr-burger span::after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: var(--paper-white);
+    position: relative;
+  }
+
+  header.header .hdr-burger span::before {
+    position: absolute;
+    top: -6px;
+  }
+
+  header.header .hdr-burger span::after {
+    position: absolute;
+    top: 6px;
+  }
+
+  @media (width <= 640px) {
+    header.header .hdr-burger {
+      display: inline-flex;
+    }
+
+    header.header .hdr-links {
+      position: fixed;
+      inset: 68px 0 auto 0;
+      z-index: 200;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+      background: var(--ink-black);
+      border-bottom: 1px solid var(--hairline);
+      padding: var(--sp-md) var(--gutter) var(--sp-lg);
+      display: none;
+    }
+
+    header.header .hdr-cta {
+      display: none;
+    }
+
+    header.header .hdr-toggle:checked ~ .hdr-nav .hdr-links {
+      display: flex;
+    }
+
+    header.header .hdr-toggle:checked ~ .hdr-nav .hdr-cta {
+      display: inline-flex;
+      margin: var(--sp-md) 0 0;
+    }
+
+    header.header .hdr-links li {
+      width: 100%;
+    }
+
+    header.header .hdr-link {
+      display: block;
+      padding: 14px 0;
+      width: 100%;
+      border-bottom: 1px solid var(--hairline);
+    }
+  }
+</style>
+<input class="hdr-toggle" type="checkbox" id="hdr-toggle" aria-hidden="true" tabindex="-1">
+<div class="hdr-wrap">
+  <a class="brand-mark" href="/" aria-label="Dala home">Dala</a>
+  <nav class="hdr-nav" aria-label="Primary">
+    <ul class="hdr-links">
+      <li><a class="hdr-link" href="/#manifesto">Manifesto</a></li>
+      <li><a class="hdr-link" href="/#team">Team</a></li>
+      <li><a class="hdr-link" href="https://medium.com/dala-ai" rel="noopener">Blog</a></li>
+    </ul>
+    <a class="hdr-cta" href="https://askdala.typeform.com/to/lSujgyr8" rel="noopener">Request Access</a>
+    <label class="hdr-burger" for="hdr-toggle" aria-label="Toggle menu"><span></span></label>
+  </nav>
+</div>
