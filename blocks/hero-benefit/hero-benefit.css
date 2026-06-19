@@ -1,0 +1,62 @@
+main .hero-benefit {
+  padding: 0 0 var(--section-padding);
+  background: var(--color-bg);
+}
+
+.hero-benefit .hb-panel {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid rgb(112 115 147 / 14%);
+  border-radius: 24px;
+  padding: 48px;
+  box-shadow: var(--shadow-card);
+}
+
+.hero-benefit .eyebrow { margin-bottom: 12px; }
+
+.hero-benefit h2 {
+  font-size: 44px;
+  margin-bottom: 14px;
+}
+
+.hero-benefit .hb-body {
+  color: var(--fg-subdued);
+  font-size: 18px;
+  max-width: 38ch;
+  margin-bottom: 24px;
+}
+
+.hero-benefit .actions {
+  display: inline-flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.hero-benefit .hb-num {
+  font-family: var(--font-display);
+  font-size: 120px;
+  color: var(--primary);
+  line-height: 0.9;
+  text-align: center;
+}
+
+.hero-benefit .hb-num small {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 17px;
+  color: var(--fg-subdued);
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+@media (width <= 900px) {
+  .hero-benefit .hb-panel {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 32px;
+  }
+  .hero-benefit .hb-num { font-size: 80px; }
+}

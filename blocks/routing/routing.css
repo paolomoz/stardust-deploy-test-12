@@ -1,0 +1,38 @@
+main .routing {
+  padding: var(--section-padding) 0;
+  background: var(--surface-inverted-2);
+  color: var(--fg-inverted);
+}
+
+.routing .rt-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.routing .rt-card {
+  border: 1px solid rgb(255 255 255 / 8%);
+  border-radius: 20px;
+  padding: 40px;
+  background: linear-gradient(180deg, #20202d, #191923);
+}
+
+.routing .rt-card h3 {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.routing .rt-card p {
+  color: #c3c3cc;
+  margin-bottom: 24px;
+  max-width: 34ch;
+}
+
+.routing .rt-card .actions {
+  display: inline-flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+@media (width <= 900px) { .routing .rt-grid { grid-template-columns: 1fr; } }

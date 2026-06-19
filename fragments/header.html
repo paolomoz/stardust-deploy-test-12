@@ -1,0 +1,65 @@
+<style>
+  .header { background: var(--surface-inverted); color: var(--fg-inverted); }
+  .header a { color: inherit; text-decoration: none; }
+  .header .promo {
+    background: #11111a;
+    color: var(--fg-inverted);
+    text-align: center;
+    font-size: 14px;
+    padding: 12px 24px;
+    border-bottom: 1px solid rgb(255 255 255 / 6%);
+  }
+  .header .promo a { color: #bcc6ff; font-weight: 500; }
+  .header .nav-row {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    height: 72px;
+    padding: 0 24px;
+  }
+  .header .brand { display: inline-flex; align-items: center; }
+  .header .brand svg { height: 26px; width: auto; }
+  .header .nav-links { display: flex; gap: 28px; margin-left: 8px; }
+  .header .nav-links a { color: #c9c9d2; font-size: 15px; }
+  .header .nav-links a:hover { color: #fff; }
+  .header .nav-cta { margin-left: auto; display: flex; align-items: center; gap: 12px; }
+  .header .nav-cta .login { color: #c9c9d2; font-size: 15px; padding: 0 8px; }
+  .header .nav-cta .open-account {
+    display: inline-flex; align-items: center; height: 40px; padding: 0 20px;
+    border-radius: 999px; background: var(--primary); color: #fff; font-weight: 500; font-size: 15px;
+    transition: background 0.2s var(--ease-out);
+  }
+  .header .nav-cta .open-account:hover { background: var(--primary-hover); }
+
+  /* CSS-only mobile menu (fragment JS is inert) */
+  .header #mnav-toggle { position: absolute; opacity: 0; pointer-events: none; }
+  .header .burger { display: none; margin-left: auto; width: 40px; height: 40px; align-items: center; justify-content: center; cursor: pointer; color: #fff; font-size: 22px; }
+  @media (width <= 900px) {
+    .header .nav-links { display: none; position: absolute; left: 0; right: 0; top: 100%; flex-direction: column; gap: 0; background: var(--surface-inverted-2); border-top: 1px solid rgb(255 255 255 / 8%); padding: 8px 0; }
+    .header .nav-links a { padding: 14px 24px; }
+    .header .nav-cta .login { display: none; }
+    .header .burger { display: inline-flex; }
+    .header .nav-row { position: relative; }
+    .header #mnav-toggle:checked ~ .nav-row .nav-links { display: flex; }
+  }
+</style>
+<div class="promo">Introducing Command — AI that completes financial work for you. <a href="/">Learn more →</a></div>
+<input type="checkbox" id="mnav-toggle" aria-hidden="true">
+<div class="nav-row">
+  <a class="brand" href="/" aria-label="Mercury">
+    <svg viewBox="0 0 139 32" role="img" aria-label="Mercury"><text x="0" y="23" font-family="ArcadiaDisplay, serif" font-size="22" font-weight="480" fill="#ededf3" letter-spacing="2">MERCURY</text></svg>
+  </a>
+  <nav class="nav-links">
+    <a href="/">Products</a>
+    <a href="/">Solutions</a>
+    <a href="/">Resources</a>
+    <a href="/">About</a>
+  </nav>
+  <label class="burger" for="mnav-toggle" aria-label="Open menu">☰</label>
+  <div class="nav-cta">
+    <a class="login" href="https://app.mercury.com/login">Log in</a>
+    <a class="open-account" href="https://app.mercury.com/signup">Open account</a>
+  </div>
+</div>

@@ -1,37 +1,114 @@
-.hero-container .hero-wrapper {
-  max-width: unset;
-  padding: 0;
+main .section.hero-container,
+main .hero {
+  background: var(--surface-inverted);
+  color: var(--fg-inverted);
 }
 
-.hero {
-  position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
+main .hero { padding: calc(var(--section-padding) + 8px) 0 var(--section-padding); }
+
+.hero .hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 56px;
+  align-items: center;
 }
 
 .hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
+  font-size: var(--heading-xxl);
+  color: #fff;
+  margin-bottom: 20px;
 }
 
-.hero picture {
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
+.hero h1 strong {
+  color: #9cb4e8;
+  font-weight: inherit;
 }
 
-.hero img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+.hero .hero-lede {
+  font-size: 21px;
+  color: #c3c3cc;
+  max-width: 32ch;
+  margin-bottom: 32px;
 }
 
-@media (width >= 900px) {
-  .hero {
-    padding: 40px 32px;
+.hero .actions {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.hero-card {
+  background: linear-gradient(180deg, #20202d, #191923);
+  border: 1px solid rgb(156 180 231 / 16%);
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: 0 40px 80px rgb(0 0 0 / 40%);
+}
+
+.hero-card .hc-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--fg-subdued-inv);
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.hero-card .hc-ballabel {
+  color: var(--fg-subdued-inv);
+  font-size: 13px;
+}
+
+.hero-card .hc-bal {
+  font-family: var(--font-display);
+  font-size: 42px;
+  color: #fff;
+  margin: 2px 0 18px;
+}
+
+.hero-card .hc-rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-card .hc-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-top: 1px solid rgb(255 255 255 / 7%);
+  font-size: 14px;
+  color: #d6d6de;
+}
+
+.hero-card .hc-row .v {
+  color: #fff;
+  font-variant-numeric: tabular-nums;
+}
+
+.hero-card .hc-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgb(82 102 235 / 18%);
+  color: #cdd9ff;
+  border-radius: 999px;
+  padding: 5px 11px;
+  font-size: 12.5px;
+  margin-top: 16px;
+}
+
+.hero-card .hc-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--primary);
+  display: inline-block;
+}
+
+@media (width <= 900px) {
+  .hero .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 }

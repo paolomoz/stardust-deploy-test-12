@@ -1,0 +1,8 @@
+{
+  "_provenance": { "writtenBy": "stardust:direct", "variant": "A", "role": "faithful+improvements", "writtenAt": "2026-06-19T04:12:00Z" },
+  "colors": { "background": "#fbfcfd", "surface": "#f4f5f9", "surfaceInverted": "#171721", "textPrimary": "#272735", "textInverted": "#ededf3", "textSubdued": "#535461", "primary": "#5266eb", "primaryHover": "#4354c8", "accent": "#d03275" },
+  "typography": { "heading": "arcadiaDisplay", "body": "arcadia", "scaleRatio": 1.25, "displayMax": "76px" },
+  "rounded": { "button": "9999px", "card": "14px", "input": "8px" },
+  "spacing": { "baseUnit": 4, "sectionPadding": "88px", "containerMaxWidth": "1200px" },
+  "extensions": { "improvements": ["asymmetric-hero", "ranked-benefits", "light-dark-rhythm", "owned-stat-row", "clean-headline-copy"] }
+}

@@ -1,0 +1,45 @@
+main .stats {
+  padding: var(--section-padding) 0;
+  background: var(--color-bg);
+}
+
+.stats h2 {
+  font-size: var(--heading-lg);
+  text-align: center;
+  max-width: 24ch;
+  margin: 0 auto 8px;
+}
+
+.stats .st-sub {
+  text-align: center;
+  color: var(--fg-subdued);
+  margin-bottom: 48px;
+}
+
+.stats .st-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.stats .st-cell {
+  text-align: center;
+  padding: 32px 20px;
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.stats .st-num {
+  font-family: var(--font-display);
+  font-size: 58px;
+  color: var(--color-fg);
+  line-height: 1;
+}
+
+.stats .st-lbl {
+  color: var(--fg-subdued);
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+@media (width <= 900px) { .stats .st-row { grid-template-columns: 1fr; } }

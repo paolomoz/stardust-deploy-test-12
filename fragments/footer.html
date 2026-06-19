@@ -1,0 +1,24 @@
+<style>
+  .footer { background: var(--surface-inverted); color: var(--fg-subdued-inv); padding: 64px 0 40px; border-top: 1px solid rgb(255 255 255 / 6%); }
+  .footer a { color: inherit; text-decoration: none; }
+  .footer .f-inner { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+  .footer .f-cols { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 32px; margin-bottom: 40px; }
+  .footer .brand svg { height: 24px; }
+  .footer .f-col h4 { font-family: var(--font-body); color: #fff; font-size: 14px; font-weight: 500; margin: 0 0 14px; }
+  .footer .f-col a { display: block; color: var(--fg-subdued-inv); font-size: 14px; padding: 5px 0; }
+  .footer .f-col a:hover { color: #fff; }
+  .footer .disclaimer { font-size: 12.5px; color: #70707d; line-height: 1.6; border-top: 1px solid rgb(255 255 255 / 6%); padding-top: 24px; max-width: 82ch; }
+  @media (width <= 900px) { .footer .f-cols { grid-template-columns: 1fr 1fr; } }
+  @media (width <= 560px) { .footer .f-cols { grid-template-columns: 1fr; } }
+</style>
+<div class="f-inner">
+  <div class="f-cols">
+    <div class="brand">
+      <svg viewBox="0 0 139 32" role="img" aria-label="Mercury"><text x="0" y="23" font-family="ArcadiaDisplay, serif" font-size="22" font-weight="480" fill="#ededf3" letter-spacing="2">MERCURY</text></svg>
+    </div>
+    <div class="f-col"><h4>Product</h4><a href="/">Checking &amp; Savings</a><a href="/">Credit Cards</a><a href="/">Treasury</a><a href="/">Payments</a></div>
+    <div class="f-col"><h4>Company</h4><a href="/">About</a><a href="/">Careers</a><a href="/">Blog</a><a href="/">Stories</a></div>
+    <div class="f-col"><h4>Get started</h4><a href="https://app.mercury.com/signup">Open account</a><a href="/">Contact sales</a><a href="https://demo.mercury.com/dashboard">Try the demo</a></div>
+  </div>
+  <p class="disclaimer">Mercury is a fintech company, not an FDIC-insured bank. Banking services provided through Choice Financial Group and Column N.A., Members FDIC. Mercury Treasury yield and credit card cashback rates are illustrative and subject to change.</p>
+</div>

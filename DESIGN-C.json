@@ -1,0 +1,19 @@
+{
+  "_provenance": { "writtenBy": "stardust:direct", "variant": "C", "role": "live-data-motion", "writtenAt": "2026-06-19T04:12:00Z" },
+  "colors": { "background": "#fbfcfd", "surface": "#f4f5f9", "surfaceInverted": "#171721", "textPrimary": "#272735", "textInverted": "#ededf3", "textSubdued": "#535461", "primary": "#5266eb", "primaryHover": "#4354c8", "accent": "#d03275" },
+  "typography": { "heading": "arcadiaDisplay", "body": "arcadia", "scaleRatio": 1.25, "displayMax": "84px" },
+  "rounded": { "button": "9999px", "card": "14px", "input": "8px" },
+  "spacing": { "baseUnit": 4, "sectionPadding": "88px", "containerMaxWidth": "1200px" },
+  "extensions": {
+    "amplifiedTrait": "live-data",
+    "axis": "motion",
+    "motion": {
+      "register": "live-systems",
+      "registerSource": "auto-picked",
+      "easings": { "entrance": "cubic-bezier(0.25, 0.46, 0.45, 0.94)", "expo": "cubic-bezier(0.16, 1, 0.3, 1)" },
+      "durations": { "enter": 600, "stagger": 100, "fill": 1100 },
+      "pulse": { "duration": 1600, "spread": 8 },
+      "sweep": { "interval": 5400, "duration": 1700 }
+    }
+  }
+}
