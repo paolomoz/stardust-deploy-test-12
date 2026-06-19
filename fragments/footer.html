@@ -1,0 +1,141 @@
+<style>
+  footer.footer {
+    padding: clamp(3rem, 8vh, 6rem) clamp(1rem, 4vw, 3rem);
+    background: var(--bg);
+    color: var(--text);
+    display: block;
+  }
+
+  footer.footer .wrap { width: 100%; max-width: var(--maxw); margin: 0 auto; }
+
+  footer.footer .foot-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  footer.footer .foot-big {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    font-size: clamp(1.6rem, 5vw, 3.5rem);
+    line-height: 1;
+    max-width: 16ch;
+    margin: 0;
+  }
+
+  footer.footer .share-row { display: flex; flex-direction: column; gap: 1rem; }
+
+  footer.footer .copy-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.72rem;
+    transition: border-color 0.22s var(--ease), color 0.22s var(--ease);
+  }
+
+  footer.footer .copy-chip:hover,
+  footer.footer .copy-chip:focus-visible { border-color: var(--primary); color: var(--primary); }
+
+  footer.footer .newsletter { display: flex; gap: 0; margin-top: 0.4rem; max-width: 340px; }
+
+  footer.footer .newsletter input {
+    flex: 1;
+    min-width: 0;
+    background: transparent;
+    border: 1px solid var(--border);
+    border-right: none;
+    color: var(--text);
+    padding: 0.7rem 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+  }
+
+  footer.footer .newsletter input::placeholder {
+    color: rgb(255 237 215 / 45%);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.7rem;
+  }
+
+  footer.footer .newsletter button {
+    background: var(--primary);
+    color: var(--bg);
+    border: 1px solid var(--primary);
+    cursor: pointer;
+    padding: 0 1rem;
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 0.72rem;
+  }
+
+  footer.footer .foot-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 3rem;
+    justify-content: space-between;
+    padding-top: 2.5rem;
+  }
+
+  footer.footer .foot-bottom .col { display: flex; flex-direction: column; gap: 0.4rem; }
+
+  footer.footer .foot-bottom .lbl {
+    color: rgb(255 237 215 / 50%);
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.68rem;
+  }
+
+  footer.footer .foot-bottom a {
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.8rem;
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  footer.footer .foot-bottom a:hover { color: var(--primary); }
+</style>
+<div class="wrap">
+  <div class="foot-top">
+    <h2 class="foot-big">Built by Lusion, with love.</h2>
+    <div class="share-row">
+      <span class="mono" style="font-size:0.7rem;opacity:0.6">Share with friends</span>
+      <a class="copy-chip" href="/test-6/index" aria-label="Copy page URL">Copy URL</a>
+      <div class="newsletter" role="group" aria-label="Newsletter signup">
+        <input type="email" name="email" placeholder="Your email" aria-label="Your email">
+        <button type="button" aria-label="Subscribe">Join</button>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <div class="col">
+      <span class="lbl">New business</span>
+      <a href="mailto:business@lusion.co">business@lusion.co</a>
+    </div>
+    <div class="col">
+      <span class="lbl">General enquiries</span>
+      <a href="mailto:hello@lusion.co">hello@lusion.co</a>
+    </div>
+    <div class="col">
+      <span class="lbl">Studio</span>
+      <a href="https://lusion.co" target="_blank" rel="noopener">lusion.co</a>
+    </div>
+  </div>
+</div>

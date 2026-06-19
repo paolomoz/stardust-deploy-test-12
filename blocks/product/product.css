@@ -1,0 +1,119 @@
+.product .mono {
+  margin-top: 1.6rem;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+}
+
+.product .line {
+  display: block;
+}
+
+.product .line + .line {
+  margin-top: 0.2rem;
+}
+
+.product .accent {
+  color: var(--primary);
+}
+
+/* ============ MOTION ============ */
+.product .split {
+  display: inline-block;
+}
+
+.product .split .word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.product .split .ltr {
+  display: inline-block;
+  clip-path: inset(0 0 110% 0);
+  transform: translateY(0.35em);
+  filter: blur(8px);
+  opacity: 0;
+  will-change: clip-path, transform, filter, opacity;
+}
+
+.product .split.in .ltr {
+  animation: product-ltr-reveal var(--enter) var(--ease) forwards;
+  animation-delay: calc(var(--d) * 50ms);
+}
+
+.product .wipe {
+  clip-path: inset(0 100% 0 0);
+  will-change: clip-path;
+}
+
+.product .wipe.in {
+  animation: product-wipe-in var(--enter) var(--ease) forwards;
+}
+
+.product .rise {
+  opacity: 0;
+  transform: translateY(20px);
+  will-change: opacity, transform;
+}
+
+.product .rise.in {
+  animation: product-rise-in var(--enter) var(--ease) forwards;
+  animation-delay: calc(var(--s, 0) * 110ms);
+}
+
+.product .flap {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-weight: 400;
+  color: var(--primary);
+}
+
+.product .flap .fd {
+  display: inline-block;
+  min-width: 0.62ch;
+  text-align: center;
+}
+
+@keyframes product-ltr-reveal {
+  to {
+    clip-path: inset(0 0 -10% 0);
+    transform: translateY(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes product-wipe-in {
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes product-rise-in {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .product .split .ltr,
+  .product .split.in .ltr {
+    clip-path: none !important;
+    transform: none !important;
+    filter: none !important;
+    opacity: 1 !important;
+    animation: none !important;
+  }
+
+  .product .wipe,
+  .product .wipe.in {
+    clip-path: none !important;
+    animation: none !important;
+  }
+
+  .product .rise,
+  .product .rise.in {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}

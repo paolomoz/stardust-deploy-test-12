@@ -10,14 +10,12 @@ function collectNodes(block) {
 
 function splitWords(headingEl, fullText, accentIndexes = []) {
   headingEl.setAttribute('aria-label', fullText);
-  headingEl.classList.add('split');
-  headingEl.setAttribute('data-split', '');
+  headingEl.classList.add('split'); headingEl.setAttribute('data-split', '');
   headingEl.textContent = '';
   fullText.split(' ').forEach((tok, i) => {
     const w = document.createElement('span');
     w.className = `word${accentIndexes.includes(i) ? ' accent' : ''}`;
-    w.setAttribute('aria-hidden', 'true');
-    w.textContent = tok;
+    w.setAttribute('aria-hidden', 'true'); w.textContent = tok;
     headingEl.append(w, document.createTextNode(' '));
   });
 }
@@ -51,7 +49,10 @@ function initMotion(root) {
       const ticks = 8 + idx * 3; let n = 0;
       const iv = setInterval(() => {
         n += 1;
-        if (n >= ticks) { clearInterval(iv); d.textContent = fin; } else {
+        if (n >= ticks) {
+          clearInterval(iv);
+          d.textContent = fin;
+        } else {
           d.textContent = GL[Math.floor(Math.random() * GL.length)];
         }
       }, 45);
@@ -78,65 +79,47 @@ function initMotion(root) {
 export default async function decorate(block) {
   const nodes = collectNodes(block);
 
-  let heading;
-  let kicker;
-  let sub;
-  nodes.forEach((el) => {
-    if (!heading && (el.matches('h1,h2,h3,h4') || el.querySelector('h1,h2,h3,h4'))) {
-      heading = el.matches('h1,h2,h3,h4') ? el : el.querySelector('h1,h2,h3,h4');
-      return;
-    }
-    const text = el.textContent.trim();
-    if (!text) return;
-    if (text.length <= 45 && !kicker) kicker = text;
-    else if (!sub) sub = text;
-    else if (!kicker) kicker = text;
-  });
+  const headingNode = nodes.find((n) => /^H[1-6]$/.test(n.tagName));
+  const ctaNode = nodes.find((n) => n.querySelector && n.querySelector('a'));
+  const textNodes = nodes.filter((n) => n !== headingNode && n !== ctaNode && n.textContent.trim());
+  // shortest = kicker, longest = lede
+  const len = (n) => n.textContent.trim().length;
+  const sorted = [...textNodes].sort((a, b) => len(a) - len(b));
+  const kickerNode = sorted[0];
+  const ledeNode = sorted.length > 1 ? sorted[sorted.length - 1] : null;
 
   const wrap = document.createElement('div');
-  wrap.className = 'wrap hero-grid';
+  wrap.className = 'wrap';
 
-  const col = document.createElement('div');
-
-  if (kicker) {
-    const k = document.createElement('p');
-    k.className = 'kicker rise';
-    k.setAttribute('data-anim', '');
-    k.textContent = kicker;
-    col.append(k);
+  if (kickerNode) {
+    const kicker = document.createElement('p');
+    kicker.className = 'kicker wipe'; kicker.setAttribute('data-anim', '');
+    kicker.style.marginBottom = '1.4rem';
+    kicker.textContent = kickerNode.textContent.trim();
+    wrap.appendChild(kicker);
   }
 
-  const h1 = document.createElement('h1');
-  h1.className = 'display-xl';
-  splitWords(h1, (heading && heading.textContent.trim()) || 'Oryzo AI', [1]);
-  col.append(h1);
-
-  if (sub) {
-    const s = document.createElement('p');
-    s.className = 'hero-sub rise';
-    s.style.setProperty('--s', 1);
-    s.textContent = sub;
-    col.append(s);
+  if (headingNode) {
+    const h2 = document.createElement('h2');
+    splitWords(h2, headingNode.textContent.trim(), [3]);
+    wrap.appendChild(h2);
   }
 
-  const playRow = document.createElement('div');
-  playRow.className = 'play-row rise';
-  playRow.style.setProperty('--s', 2);
-  playRow.innerHTML = '<button class="play-btn" type="button" aria-label="Play the film"><span class="tri" aria-hidden="true"></span> Play</button><span class="mono" style="font-size:.72rem;opacity:.6">The film</span>';
-  col.append(playRow);
+  if (ledeNode) {
+    const lede = document.createElement('p');
+    lede.className = 'lede rise'; lede.style.setProperty('--s', '1');
+    lede.textContent = ledeNode.textContent.trim();
+    wrap.appendChild(lede);
+  }
 
-  wrap.append(col);
+  if (ctaNode) {
+    const actions = document.createElement('div');
+    actions.className = 'actions rise'; actions.style.setProperty('--s', '2');
+    [...ctaNode.childNodes].forEach((child) => actions.appendChild(child.cloneNode(true)));
+    wrap.appendChild(actions);
+  }
 
-  const poster = document.createElement('div');
-  poster.className = 'poster rise';
-  poster.style.setProperty('--s', 1);
-  poster.setAttribute('role', 'img');
-  poster.setAttribute('aria-label', 'Cork coaster product poster');
-  poster.innerHTML = '<div class="coaster" aria-hidden="true"></div>';
-  wrap.append(poster);
-
+  if (!wrap.children.length) return;
   block.replaceChildren(wrap);
-  if (!wrap.children.length) throw new Error('hero: empty wrap');
-
   initMotion(wrap);
 }

@@ -10,15 +10,38 @@ function collectNodes(block) {
 
 function splitWords(headingEl, fullText, accentIndexes = []) {
   headingEl.setAttribute('aria-label', fullText);
-  headingEl.classList.add('split');
-  headingEl.setAttribute('data-split', '');
+  headingEl.classList.add('split'); headingEl.setAttribute('data-split', '');
   headingEl.textContent = '';
   fullText.split(' ').forEach((tok, i) => {
     const w = document.createElement('span');
     w.className = `word${accentIndexes.includes(i) ? ' accent' : ''}`;
     w.setAttribute('aria-hidden', 'true');
-    w.textContent = tok;
+    if (/^\d[\d/]*$/.test(tok)) {
+      const flap = document.createElement('span');
+      flap.className = 'flap'; flap.setAttribute('data-flip', ''); flap.setAttribute('data-target', tok);
+      flap.textContent = tok;
+      w.appendChild(flap);
+    } else {
+      w.textContent = tok;
+    }
     headingEl.append(w, document.createTextNode(' '));
+  });
+}
+
+function buildCaption(p, text) {
+  p.className = 'caption mono rise'; p.setAttribute('data-anim', '');
+  p.textContent = '';
+  const tokens = text.split(' ');
+  tokens.forEach((tok, i) => {
+    if (/^\d[\d/]*$/.test(tok)) {
+      const flap = document.createElement('span');
+      flap.className = 'flap'; flap.setAttribute('data-flip', ''); flap.setAttribute('data-target', tok);
+      flap.textContent = tok;
+      p.appendChild(flap);
+    } else {
+      p.appendChild(document.createTextNode(tok));
+    }
+    if (i < tokens.length - 1) p.appendChild(document.createTextNode(' '));
   });
 }
 
@@ -51,7 +74,10 @@ function initMotion(root) {
       const ticks = 8 + idx * 3; let n = 0;
       const iv = setInterval(() => {
         n += 1;
-        if (n >= ticks) { clearInterval(iv); d.textContent = fin; } else {
+        if (n >= ticks) {
+          clearInterval(iv);
+          d.textContent = fin;
+        } else {
           d.textContent = GL[Math.floor(Math.random() * GL.length)];
         }
       }, 45);
@@ -77,66 +103,57 @@ function initMotion(root) {
  */
 export default async function decorate(block) {
   const nodes = collectNodes(block);
+  const wrap = document.createElement('div');
+  wrap.className = 'wrap';
 
-  let heading;
-  let kicker;
-  let sub;
-  nodes.forEach((el) => {
-    if (!heading && (el.matches('h1,h2,h3,h4') || el.querySelector('h1,h2,h3,h4'))) {
-      heading = el.matches('h1,h2,h3,h4') ? el : el.querySelector('h1,h2,h3,h4');
-      return;
+  // First h2 is the section head
+  const headNode = nodes.find((n) => /^H2$/.test(n.tagName));
+  if (headNode) {
+    const head = document.createElement('div');
+    head.className = 'specs-head';
+    const h2 = document.createElement('h2');
+    h2.className = 'wipe'; h2.setAttribute('data-anim', '');
+    h2.textContent = headNode.textContent.trim();
+    head.appendChild(h2);
+    wrap.appendChild(head);
+  }
+
+  // Segment remaining nodes: each H3 opens a spec; following non-heading text = caption
+  let current = null;
+  nodes.forEach((n) => {
+    if (/^H2$/.test(n.tagName)) return;
+    if (/^H3$/.test(n.tagName)) {
+      current = document.createElement('div');
+      current.className = 'spec';
+      const h3 = document.createElement('h3');
+      const text = n.textContent.trim();
+      // accent indexes: words that are pure-numeric OR uppercase tech tokens preceding a numeric
+      const words = text.split(' ');
+      const accentIndexes = [];
+      words.forEach((w, i) => {
+        if (/^\d[\d/]*$/.test(w)) accentIndexes.push(i);
+        else if (/^[A-Z0-9]{2,}$/.test(w) && words[i + 1] && /^\d[\d/]*$/.test(words[i + 1])) accentIndexes.push(i);
+      });
+      splitWords(h3, text, accentIndexes);
+      current.appendChild(h3);
+      wrap.appendChild(current);
+    } else if (current) {
+      const txt = n.textContent.trim();
+      if (txt) {
+        const p = document.createElement('p');
+        buildCaption(p, txt);
+        current.appendChild(p);
+      }
     }
-    const text = el.textContent.trim();
-    if (!text) return;
-    if (text.length <= 45 && !kicker) kicker = text;
-    else if (!sub) sub = text;
-    else if (!kicker) kicker = text;
   });
 
-  const wrap = document.createElement('div');
-  wrap.className = 'wrap hero-grid';
-
-  const col = document.createElement('div');
-
-  if (kicker) {
-    const k = document.createElement('p');
-    k.className = 'kicker rise';
-    k.setAttribute('data-anim', '');
-    k.textContent = kicker;
-    col.append(k);
+  const specCount = wrap.querySelectorAll('.spec').length;
+  if (specCount !== 4) {
+    // eslint-disable-next-line no-console
+    console.warn(`specs block expected 4 specs, rendered ${specCount}`);
   }
 
-  const h1 = document.createElement('h1');
-  h1.className = 'display-xl';
-  splitWords(h1, (heading && heading.textContent.trim()) || 'Oryzo AI', [1]);
-  col.append(h1);
-
-  if (sub) {
-    const s = document.createElement('p');
-    s.className = 'hero-sub rise';
-    s.style.setProperty('--s', 1);
-    s.textContent = sub;
-    col.append(s);
-  }
-
-  const playRow = document.createElement('div');
-  playRow.className = 'play-row rise';
-  playRow.style.setProperty('--s', 2);
-  playRow.innerHTML = '<button class="play-btn" type="button" aria-label="Play the film"><span class="tri" aria-hidden="true"></span> Play</button><span class="mono" style="font-size:.72rem;opacity:.6">The film</span>';
-  col.append(playRow);
-
-  wrap.append(col);
-
-  const poster = document.createElement('div');
-  poster.className = 'poster rise';
-  poster.style.setProperty('--s', 1);
-  poster.setAttribute('role', 'img');
-  poster.setAttribute('aria-label', 'Cork coaster product poster');
-  poster.innerHTML = '<div class="coaster" aria-hidden="true"></div>';
-  wrap.append(poster);
-
+  if (!wrap.children.length) return;
   block.replaceChildren(wrap);
-  if (!wrap.children.length) throw new Error('hero: empty wrap');
-
   initMotion(wrap);
 }

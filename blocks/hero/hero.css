@@ -1,37 +1,211 @@
-.hero-container .hero-wrapper {
-  max-width: unset;
-  padding: 0;
-}
-
-.hero {
-  position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
+.hero .kicker {
+  margin-bottom: 1.4rem;
 }
 
 .hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
+  margin-bottom: 1.6rem;
 }
 
-.hero picture {
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
-}
-
-.hero img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+.hero .hero-grid {
+  display: grid;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: end;
 }
 
 @media (width >= 900px) {
-  .hero {
-    padding: 40px 32px;
+  .hero .hero-grid {
+    grid-template-columns: 1.5fr 1fr;
+  }
+}
+
+.hero .hero-sub {
+  max-width: 46ch;
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
+  line-height: 1.4;
+  color: var(--text-soft);
+}
+
+.hero .play-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.hero .play-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.8rem 1.3rem;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text);
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  transition: border-color 0.22s var(--ease), color 0.22s var(--ease);
+}
+
+.hero .play-btn:hover,
+.hero .play-btn:focus-visible {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.hero .play-btn .tri {
+  width: 0;
+  height: 0;
+  border-left: 9px solid currentcolor;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+
+/* ---- CSS poster (cork coaster) ---- */
+.hero .poster {
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  max-width: 460px;
+  justify-self: end;
+  border: 1px solid var(--border);
+  background:
+    radial-gradient(circle at 50% 42%, rgb(220 80 0 / 18%), transparent 55%),
+    var(--surface);
+  overflow: hidden;
+}
+
+.hero .coaster {
+  position: relative;
+  width: 68%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 50% 50%, #2a1a0f 0 28%, transparent 29%),
+    radial-gradient(circle at 38% 34%, rgb(255 237 215 / 10%), transparent 40%),
+    repeating-radial-gradient(circle at 50% 50%, #6b4527 0 2px, #4a2f1a 2px 4px, #5c3a22 4px 7px),
+    radial-gradient(circle at 50% 50%, #7a4e2c, #3f2814);
+  box-shadow: inset 0 0 0 6px rgb(255 237 215 / 6%);
+}
+
+.hero .coaster::after {
+  content: "ORYZO";
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.4em;
+  color: rgb(255 237 215 / 55%);
+}
+
+.hero .accent {
+  color: var(--primary);
+}
+
+/* ============ MOTION ============ */
+.hero .split {
+  display: inline-block;
+}
+
+.hero .split .word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.hero .split .ltr {
+  display: inline-block;
+  clip-path: inset(0 0 110% 0);
+  transform: translateY(0.35em);
+  filter: blur(8px);
+  opacity: 0;
+  will-change: clip-path, transform, filter, opacity;
+}
+
+.hero .split.in .ltr {
+  animation: hero-ltr-reveal var(--enter) var(--ease) forwards;
+  animation-delay: calc(var(--d) * 50ms);
+}
+
+.hero .wipe {
+  clip-path: inset(0 100% 0 0);
+  will-change: clip-path;
+}
+
+.hero .wipe.in {
+  animation: hero-wipe-in var(--enter) var(--ease) forwards;
+}
+
+.hero .rise {
+  opacity: 0;
+  transform: translateY(20px);
+  will-change: opacity, transform;
+}
+
+.hero .rise.in {
+  animation: hero-rise-in var(--enter) var(--ease) forwards;
+  animation-delay: calc(var(--s, 0) * 110ms);
+}
+
+.hero .flap {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-weight: 400;
+  color: var(--primary);
+}
+
+.hero .flap .fd {
+  display: inline-block;
+  min-width: 0.62ch;
+  text-align: center;
+}
+
+@keyframes hero-ltr-reveal {
+  to {
+    clip-path: inset(0 0 -10% 0);
+    transform: translateY(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes hero-wipe-in {
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes hero-rise-in {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero .split .ltr,
+  .hero .split.in .ltr {
+    clip-path: none !important;
+    transform: none !important;
+    filter: none !important;
+    opacity: 1 !important;
+    animation: none !important;
+  }
+
+  .hero .wipe,
+  .hero .wipe.in {
+    clip-path: none !important;
+    animation: none !important;
+  }
+
+  .hero .rise,
+  .hero .rise.in {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
   }
 }

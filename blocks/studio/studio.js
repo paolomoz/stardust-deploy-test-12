@@ -80,7 +80,7 @@ export default async function decorate(block) {
 
   let heading;
   let kicker;
-  let sub;
+  let lede;
   nodes.forEach((el) => {
     if (!heading && (el.matches('h1,h2,h3,h4') || el.querySelector('h1,h2,h3,h4'))) {
       heading = el.matches('h1,h2,h3,h4') ? el : el.querySelector('h1,h2,h3,h4');
@@ -89,54 +89,37 @@ export default async function decorate(block) {
     const text = el.textContent.trim();
     if (!text) return;
     if (text.length <= 45 && !kicker) kicker = text;
-    else if (!sub) sub = text;
+    else if (!lede) lede = text;
     else if (!kicker) kicker = text;
   });
 
   const wrap = document.createElement('div');
-  wrap.className = 'wrap hero-grid';
-
-  const col = document.createElement('div');
+  wrap.className = 'wrap';
 
   if (kicker) {
     const k = document.createElement('p');
-    k.className = 'kicker rise';
+    k.className = 'kicker wipe';
     k.setAttribute('data-anim', '');
+    k.style.marginBottom = '1.4rem';
     k.textContent = kicker;
-    col.append(k);
+    wrap.append(k);
   }
 
-  const h1 = document.createElement('h1');
-  h1.className = 'display-xl';
-  splitWords(h1, (heading && heading.textContent.trim()) || 'Oryzo AI', [1]);
-  col.append(h1);
+  const h2 = document.createElement('h2');
+  h2.className = 'display';
+  splitWords(h2, (heading && heading.textContent.trim()) || 'The award-winning design studio.', [1]);
+  wrap.append(h2);
 
-  if (sub) {
-    const s = document.createElement('p');
-    s.className = 'hero-sub rise';
-    s.style.setProperty('--s', 1);
-    s.textContent = sub;
-    col.append(s);
+  if (lede) {
+    const l = document.createElement('p');
+    l.className = 'lede rise';
+    l.style.setProperty('--s', 1);
+    l.textContent = lede;
+    wrap.append(l);
   }
-
-  const playRow = document.createElement('div');
-  playRow.className = 'play-row rise';
-  playRow.style.setProperty('--s', 2);
-  playRow.innerHTML = '<button class="play-btn" type="button" aria-label="Play the film"><span class="tri" aria-hidden="true"></span> Play</button><span class="mono" style="font-size:.72rem;opacity:.6">The film</span>';
-  col.append(playRow);
-
-  wrap.append(col);
-
-  const poster = document.createElement('div');
-  poster.className = 'poster rise';
-  poster.style.setProperty('--s', 1);
-  poster.setAttribute('role', 'img');
-  poster.setAttribute('aria-label', 'Cork coaster product poster');
-  poster.innerHTML = '<div class="coaster" aria-hidden="true"></div>';
-  wrap.append(poster);
 
   block.replaceChildren(wrap);
-  if (!wrap.children.length) throw new Error('hero: empty wrap');
+  if (!wrap.children.length) throw new Error('studio: empty wrap');
 
   initMotion(wrap);
 }

@@ -1,0 +1,9 @@
+{
+  "variant": "B",
+  "role": "design-team motivator — color-ladder re-weighting",
+  "colors": { "background": "#100904", "surface": "#382416", "text": "#FFEDD7", "primary": "#DC5000", "border": "rgba(255,237,215,0.2)" },
+  "typography": { "display": "Halyard Display / Hanken Grotesk fallback (500,600,700)", "body": "DM Mono 400" },
+  "rounded": "0px",
+  "motion": { "register": null },
+  "bet": "promote #DC5000 from text-only accent to a structural surface — full-bleed orange punchline band, orange index markers on spec rows; same IA as A, static."
+}

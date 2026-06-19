@@ -1,0 +1,9 @@
+{
+  "variant": "A",
+  "role": "faithful + improvements (risk-averse green-light)",
+  "colors": { "background": "#100904", "surface": "#382416", "text": "#FFEDD7", "primary": "#DC5000", "border": "rgba(255,237,215,0.2)" },
+  "typography": { "display": "Halyard Display / Hanken Grotesk fallback (500,600,700)", "body": "DM Mono 400" },
+  "rounded": "0px",
+  "motion": { "register": null },
+  "improvements": ["real DOM/text layer", "promoted primary CTA (Start a project)", "filled mid type-scale step", "accessible imagery + reduced-motion safe"]
+}

@@ -1,0 +1,129 @@
+.punch {
+  text-align: left;
+}
+
+.punch h2 {
+  max-width: 18ch;
+  margin-bottom: 2rem;
+  font-size: clamp(2rem, 6vw, 5rem);
+  line-height: 1;
+}
+
+.punch .lede {
+  max-width: 44ch;
+  margin-bottom: 2.5rem;
+  font-size: clamp(1rem, 1.8vw, 1.4rem);
+  line-height: 1.4;
+  color: rgb(255 237 215 / 82%);
+}
+
+.punch .actions {
+  margin-top: 1rem;
+}
+
+/* ---- motion (scoped) ---- */
+.punch .split {
+  display: inline-block;
+}
+
+.punch .split .word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.punch .split .ltr {
+  display: inline-block;
+  clip-path: inset(0 0 110% 0);
+  opacity: 0;
+  filter: blur(8px);
+  transform: translateY(0.35em);
+  will-change: clip-path, transform, filter, opacity;
+}
+
+.punch .split.in .ltr {
+  animation: ltr-reveal var(--enter) var(--ease) forwards;
+  animation-delay: calc(var(--d) * 50ms);
+}
+
+.punch .wipe {
+  clip-path: inset(0 100% 0 0);
+  will-change: clip-path;
+}
+
+.punch .wipe.in {
+  animation: wipe-in var(--enter) var(--ease) forwards;
+}
+
+.punch .rise {
+  opacity: 0;
+  transform: translateY(20px);
+  will-change: opacity, transform;
+}
+
+.punch .rise.in {
+  animation: rise-in var(--enter) var(--ease) forwards;
+  animation-delay: calc(var(--s, 0) * 110ms);
+}
+
+.punch .flap {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-weight: 400;
+  color: var(--primary);
+}
+
+.punch .flap .fd {
+  display: inline-block;
+  min-width: 0.62ch;
+  text-align: center;
+}
+
+.punch .accent {
+  color: var(--primary);
+}
+
+@keyframes ltr-reveal {
+  to {
+    clip-path: inset(0 0 -10% 0);
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes wipe-in {
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes rise-in {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .punch .split .ltr,
+  .punch .split.in .ltr {
+    clip-path: none !important;
+    opacity: 1 !important;
+    filter: none !important;
+    transform: none !important;
+    animation: none !important;
+  }
+
+  .punch .wipe,
+  .punch .wipe.in {
+    clip-path: none !important;
+    animation: none !important;
+  }
+
+  .punch .rise,
+  .punch .rise.in {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}

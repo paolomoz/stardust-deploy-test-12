@@ -1,0 +1,40 @@
+.marquee {
+  display: block;
+  min-height: auto;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  background: var(--surface);
+}
+
+.marquee .marquee-track {
+  display: inline-flex;
+  will-change: transform;
+  animation: marquee 28s linear infinite;
+}
+
+.marquee .marquee-track span {
+  padding: 1.1rem 0;
+  font-family: var(--font-mono);
+  font-size: clamp(0.9rem, 2vw, 1.4rem);
+  letter-spacing: 0.25em;
+  color: var(--text);
+  text-transform: uppercase;
+}
+
+.marquee .marquee-track span .dot {
+  padding: 0 1.4rem;
+  color: var(--primary);
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee .marquee-track {
+    animation: none !important;
+  }
+}

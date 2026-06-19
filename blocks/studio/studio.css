@@ -1,0 +1,117 @@
+.studio h2 {
+  margin-bottom: 1.5rem;
+}
+
+.studio .lede {
+  max-width: 30ch;
+  font-size: clamp(1.1rem, 2.2vw, 1.7rem);
+  line-height: 1.3;
+  color: var(--text-soft);
+}
+
+.studio .accent {
+  color: var(--primary);
+}
+
+/* ============ MOTION ============ */
+.studio .split {
+  display: inline-block;
+}
+
+.studio .split .word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.studio .split .ltr {
+  display: inline-block;
+  clip-path: inset(0 0 110% 0);
+  transform: translateY(0.35em);
+  filter: blur(8px);
+  opacity: 0;
+  will-change: clip-path, transform, filter, opacity;
+}
+
+.studio .split.in .ltr {
+  animation: studio-ltr-reveal var(--enter) var(--ease) forwards;
+  animation-delay: calc(var(--d) * 50ms);
+}
+
+.studio .wipe {
+  clip-path: inset(0 100% 0 0);
+  will-change: clip-path;
+}
+
+.studio .wipe.in {
+  animation: studio-wipe-in var(--enter) var(--ease) forwards;
+}
+
+.studio .rise {
+  opacity: 0;
+  transform: translateY(20px);
+  will-change: opacity, transform;
+}
+
+.studio .rise.in {
+  animation: studio-rise-in var(--enter) var(--ease) forwards;
+  animation-delay: calc(var(--s, 0) * 110ms);
+}
+
+.studio .flap {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-weight: 400;
+  color: var(--primary);
+}
+
+.studio .flap .fd {
+  display: inline-block;
+  min-width: 0.62ch;
+  text-align: center;
+}
+
+@keyframes studio-ltr-reveal {
+  to {
+    clip-path: inset(0 0 -10% 0);
+    transform: translateY(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes studio-wipe-in {
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes studio-rise-in {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .studio .split .ltr,
+  .studio .split.in .ltr {
+    clip-path: none !important;
+    transform: none !important;
+    filter: none !important;
+    opacity: 1 !important;
+    animation: none !important;
+  }
+
+  .studio .wipe,
+  .studio .wipe.in {
+    clip-path: none !important;
+    animation: none !important;
+  }
+
+  .studio .rise,
+  .studio .rise.in {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}

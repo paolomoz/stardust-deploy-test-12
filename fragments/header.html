@@ -1,0 +1,68 @@
+<style>
+  header.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.1rem clamp(1rem, 4vw, 3rem);
+    background: rgb(16 9 4 / 72%);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  header.header .wordmark {
+    font-family: var(--font-mono);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-size: clamp(0.85rem, 1.6vw, 1rem);
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  header.header nav { display: none; }
+
+  @media (width >= 900px) {
+    header.header nav { display: flex; gap: 2rem; }
+  }
+
+  header.header .nav-link {
+    font-family: var(--font-mono);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.8rem;
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.28s var(--ease);
+  }
+
+  header.header .nav-link:hover,
+  header.header .nav-link:focus-visible { color: var(--primary); }
+
+  header.header .header-cta {
+    font-family: var(--font-mono);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.78rem;
+    text-decoration: none;
+    padding: 0.7rem 1.2rem;
+    background: var(--primary);
+    color: var(--bg);
+    border: 1px solid var(--primary);
+    white-space: nowrap;
+    transition: background 0.22s var(--ease), color 0.22s var(--ease);
+  }
+
+  header.header .header-cta:hover,
+  header.header .header-cta:focus-visible { background: transparent; color: var(--primary); }
+</style>
+<a href="/test-6/index#top" class="wordmark">ORYZO AI</a>
+<nav aria-label="Primary">
+  <a class="nav-link" href="#intro">Intro</a>
+  <a class="nav-link" href="#features">Features</a>
+  <a class="nav-link" href="#product">Product</a>
+  <a class="nav-link" href="#contact">Contact</a>
+</nav>
+<a class="header-cta" href="mailto:business@lusion.co">Start a project</a>

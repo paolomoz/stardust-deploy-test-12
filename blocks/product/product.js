@@ -8,20 +8,6 @@ function collectNodes(block) {
   return out.length ? out : [...block.children];
 }
 
-function splitWords(headingEl, fullText, accentIndexes = []) {
-  headingEl.setAttribute('aria-label', fullText);
-  headingEl.classList.add('split');
-  headingEl.setAttribute('data-split', '');
-  headingEl.textContent = '';
-  fullText.split(' ').forEach((tok, i) => {
-    const w = document.createElement('span');
-    w.className = `word${accentIndexes.includes(i) ? ' accent' : ''}`;
-    w.setAttribute('aria-hidden', 'true');
-    w.textContent = tok;
-    headingEl.append(w, document.createTextNode(' '));
-  });
-}
-
 function initMotion(root) {
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const GL = '0123456789/';
@@ -71,6 +57,20 @@ function initMotion(root) {
   window.addEventListener('load', sweep); setTimeout(sweep, 100);
 }
 
+function buildLine(parent, tokens, accentTokens = []) {
+  const line = document.createElement('span');
+  line.className = 'line';
+  tokens.forEach((tok, i) => {
+    const w = document.createElement('span');
+    w.className = `word${accentTokens.includes(tok) ? ' accent' : ''}`;
+    w.setAttribute('aria-hidden', 'true');
+    w.textContent = tok;
+    line.append(w);
+    if (i < tokens.length - 1) line.append(document.createTextNode(' '));
+  });
+  parent.append(line);
+}
+
 /**
  * loads and decorates the block
  * @param {Element} block The block element
@@ -79,64 +79,49 @@ export default async function decorate(block) {
   const nodes = collectNodes(block);
 
   let heading;
-  let kicker;
-  let sub;
+  let caption;
   nodes.forEach((el) => {
     if (!heading && (el.matches('h1,h2,h3,h4') || el.querySelector('h1,h2,h3,h4'))) {
       heading = el.matches('h1,h2,h3,h4') ? el : el.querySelector('h1,h2,h3,h4');
       return;
     }
     const text = el.textContent.trim();
-    if (!text) return;
-    if (text.length <= 45 && !kicker) kicker = text;
-    else if (!sub) sub = text;
-    else if (!kicker) kicker = text;
+    if (text && !caption) caption = text;
   });
 
+  const fullText = (heading && heading.textContent.trim()) || 'Runs on the edge. Refuses the cloud.';
+
   const wrap = document.createElement('div');
-  wrap.className = 'wrap hero-grid';
+  wrap.className = 'wrap';
 
-  const col = document.createElement('div');
+  const h2 = document.createElement('h2');
+  h2.className = 'display split';
+  h2.setAttribute('data-split', '');
+  h2.setAttribute('aria-label', fullText);
 
-  if (kicker) {
-    const k = document.createElement('p');
-    k.className = 'kicker rise';
-    k.setAttribute('data-anim', '');
-    k.textContent = kicker;
-    col.append(k);
+  // Split on the sentence boundary after "edge."
+  const marker = 'edge.';
+  const idx = fullText.indexOf(marker);
+  let line1Text = fullText;
+  let line2Text = '';
+  if (idx !== -1) {
+    line1Text = fullText.slice(0, idx + marker.length).trim();
+    line2Text = fullText.slice(idx + marker.length).trim();
   }
+  buildLine(h2, line1Text.split(/\s+/).filter(Boolean), ['edge.']);
+  if (line2Text) buildLine(h2, line2Text.split(/\s+/).filter(Boolean));
+  wrap.append(h2);
 
-  const h1 = document.createElement('h1');
-  h1.className = 'display-xl';
-  splitWords(h1, (heading && heading.textContent.trim()) || 'Oryzo AI', [1]);
-  col.append(h1);
-
-  if (sub) {
-    const s = document.createElement('p');
-    s.className = 'hero-sub rise';
-    s.style.setProperty('--s', 1);
-    s.textContent = sub;
-    col.append(s);
+  if (caption) {
+    const cap = document.createElement('p');
+    cap.className = 'mono wipe';
+    cap.setAttribute('data-anim', '');
+    cap.textContent = caption;
+    wrap.append(cap);
   }
-
-  const playRow = document.createElement('div');
-  playRow.className = 'play-row rise';
-  playRow.style.setProperty('--s', 2);
-  playRow.innerHTML = '<button class="play-btn" type="button" aria-label="Play the film"><span class="tri" aria-hidden="true"></span> Play</button><span class="mono" style="font-size:.72rem;opacity:.6">The film</span>';
-  col.append(playRow);
-
-  wrap.append(col);
-
-  const poster = document.createElement('div');
-  poster.className = 'poster rise';
-  poster.style.setProperty('--s', 1);
-  poster.setAttribute('role', 'img');
-  poster.setAttribute('aria-label', 'Cork coaster product poster');
-  poster.innerHTML = '<div class="coaster" aria-hidden="true"></div>';
-  wrap.append(poster);
 
   block.replaceChildren(wrap);
-  if (!wrap.children.length) throw new Error('hero: empty wrap');
+  if (!wrap.children.length) throw new Error('product: empty wrap');
 
   initMotion(wrap);
 }

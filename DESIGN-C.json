@@ -1,0 +1,16 @@
+{
+  "variant": "C",
+  "role": "visionary cinematic pitch — display-typography amplification",
+  "colors": { "background": "#100904", "surface": "#382416", "text": "#FFEDD7", "primary": "#DC5000", "border": "rgba(255,237,215,0.2)" },
+  "typography": { "display": "Halyard Display / Hanken Grotesk fallback (500,600,700)", "body": "DM Mono 400" },
+  "rounded": "0px",
+  "extensions": {
+    "motion": {
+      "register": "kinetic-display",
+      "tokens": { "easings": { "entrance": "cubic-bezier(0.25,0.46,0.45,0.94)", "expo": "cubic-bezier(0.16,1,0.3,1)" }, "durations": { "enter": 800, "stagger": 110, "letterStagger": 50 }, "marquee": { "speed": 30 } },
+      "moves": ["letter-by-letter unmask on display words", "split-flap numerals on spec counts", "signage marquee between bands", "scroll-driven word wipes", "per-letter nav stagger"],
+      "reducedMotion": "all motion neutralized to static final state under prefers-reduced-motion: reduce"
+    }
+  },
+  "bet": "same IA as A; the bet is motion, not layout."
+}

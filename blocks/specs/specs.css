@@ -1,0 +1,140 @@
+.specs .specs-head {
+  margin-bottom: clamp(3rem, 8vh, 6rem);
+}
+
+.specs .specs-head h2 {
+  font-size: clamp(2rem, 7vw, 6rem);
+}
+
+.specs .spec {
+  display: grid;
+  gap: 1rem;
+  padding: clamp(2.5rem, 7vh, 5rem) 0;
+  border-top: 1px solid var(--border);
+}
+
+@media (width >= 900px) {
+  .specs .spec {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: baseline;
+  }
+}
+
+.specs .spec h3 {
+  font-size: clamp(2.2rem, 8vw, 6.5rem);
+  line-height: 0.92;
+}
+
+.specs .spec .caption {
+  align-self: center;
+  font-size: clamp(0.78rem, 1.4vw, 0.95rem);
+  color: rgb(255 237 215 / 70%);
+}
+
+/* ---- motion (scoped) ---- */
+.specs .split {
+  display: inline-block;
+}
+
+.specs .split .word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.specs .split .ltr {
+  display: inline-block;
+  clip-path: inset(0 0 110% 0);
+  opacity: 0;
+  filter: blur(8px);
+  transform: translateY(0.35em);
+  will-change: clip-path, transform, filter, opacity;
+}
+
+.specs .split.in .ltr {
+  animation: ltr-reveal var(--enter) var(--ease) forwards;
+  animation-delay: calc(var(--d) * 50ms);
+}
+
+.specs .wipe {
+  clip-path: inset(0 100% 0 0);
+  will-change: clip-path;
+}
+
+.specs .wipe.in {
+  animation: wipe-in var(--enter) var(--ease) forwards;
+}
+
+.specs .rise {
+  opacity: 0;
+  transform: translateY(20px);
+  will-change: opacity, transform;
+}
+
+.specs .rise.in {
+  animation: rise-in var(--enter) var(--ease) forwards;
+  animation-delay: calc(var(--s, 0) * 110ms);
+}
+
+.specs .flap {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-weight: 400;
+  color: var(--primary);
+}
+
+.specs .flap .fd {
+  display: inline-block;
+  min-width: 0.62ch;
+  text-align: center;
+}
+
+.specs .accent {
+  color: var(--primary);
+}
+
+@keyframes ltr-reveal {
+  to {
+    clip-path: inset(0 0 -10% 0);
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes wipe-in {
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes rise-in {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .specs .split .ltr,
+  .specs .split.in .ltr {
+    clip-path: none !important;
+    opacity: 1 !important;
+    filter: none !important;
+    transform: none !important;
+    animation: none !important;
+  }
+
+  .specs .wipe,
+  .specs .wipe.in {
+    clip-path: none !important;
+    animation: none !important;
+  }
+
+  .specs .rise,
+  .specs .rise.in {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}
