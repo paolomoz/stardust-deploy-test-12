@@ -1,29 +1,42 @@
 /**
  * hero — Mercury dark, asymmetric hero (copy left, live product card right).
  *
- * Authoring rows (queried, not hard-indexed):
- *   - heading  -> page <h1>
- *   - link-free <p> -> lede
- *   - link-bearing <p> -> CTAs (<strong><a> primary, <em><a> secondary)
- * The product card on the right is a decorative mock generated here (no authored content).
+ * Reads by CELL (not <p>): the EDS pipeline unwraps single <p> in cells (#79),
+ * so a querySelectorAll('p') read drops the lede/CTAs on the live build.
+ *   - cell with h1/h2     -> page <h1>
+ *   - cell with a link     -> CTAs (cloned verbatim; ak.js decorateButton has
+ *                             already styled <strong>/<em> wrapped anchors)
+ *   - remaining text cell  -> lede
+ * The product card on the right is a decorative mock generated here.
  */
 export default async function decorate(block) {
-  const h1 = block.querySelector('h1, h2');
-  const ps = [...block.querySelectorAll('p')];
-  const lede = ps.find((p) => !p.querySelector('a'));
-  const ctaP = ps.find((p) => p.querySelector('a'));
+  const cells = [...block.querySelectorAll(':scope > div > div')];
+  let heading;
+  let ledeCell;
+  let ctaCell;
+  cells.forEach((cell) => {
+    if (!heading && cell.querySelector('h1, h2, h3')) heading = cell.querySelector('h1, h2, h3');
+    else if (!ctaCell && cell.querySelector('a')) ctaCell = cell;
+    else if (!ledeCell && cell.textContent.trim()) ledeCell = cell;
+  });
 
   const copy = document.createElement('div');
   copy.className = 'hero-copy';
-  if (h1) {
-    h1.outerHTML = `<h1>${h1.innerHTML}</h1>`;
-    copy.append(block.querySelector('h1'));
+  if (heading) {
+    const h1 = document.createElement('h1');
+    h1.innerHTML = heading.innerHTML;
+    copy.append(h1);
   }
-  if (lede) { lede.classList.add('hero-lede'); copy.append(lede); }
-  if (ctaP) {
+  if (ledeCell) {
+    const p = document.createElement('p');
+    p.className = 'hero-lede';
+    p.textContent = ledeCell.textContent.trim();
+    copy.append(p);
+  }
+  if (ctaCell) {
     const actions = document.createElement('div');
     actions.className = 'actions';
-    [...ctaP.childNodes].forEach((n) => actions.append(n.cloneNode(true)));
+    [...ctaCell.childNodes].forEach((n) => actions.append(n.cloneNode(true)));
     copy.append(actions);
   }
 

@@ -2,8 +2,9 @@
  * routing — dark dual-audience routing band: two cards (business / personal),
  * each with a heading, body, and a CTA.
  *
- * Authoring: one row per card, each cell holding <h3>title</h3><p>body</p> and
- * a CTA paragraph (<strong><a> primary / <em><a> secondary).
+ * Reads by CELL, tolerant of <p> unwrapping (#79): heading via querySelector,
+ * body via a heading/link-stripped textContent, CTA anchors cloned verbatim
+ * (ak.js decorateButton has already styled <strong>/<em> wrapped anchors).
  */
 export default async function decorate(block) {
   const rows = [...block.children];
@@ -13,17 +14,20 @@ export default async function decorate(block) {
   rows.forEach((row) => {
     const cell = row.querySelector(':scope > div') || row;
     const h = cell.querySelector('h2, h3, h4');
-    const body = [...cell.querySelectorAll('p')].find((p) => !p.querySelector('a'));
-    const ctaP = [...cell.querySelectorAll('p')].find((p) => p.querySelector('a'));
+    const anchors = [...cell.querySelectorAll('a')];
+
+    const clone = cell.cloneNode(true);
+    clone.querySelectorAll('h1, h2, h3, h4, a, strong, em').forEach((e) => e.remove());
+    const body = clone.textContent.trim();
 
     const card = document.createElement('div');
     card.className = 'rt-card';
     if (h) { const hh = document.createElement('h3'); hh.innerHTML = h.innerHTML; card.append(hh); }
-    if (body) card.append(body);
-    if (ctaP) {
+    if (body) { const p = document.createElement('p'); p.textContent = body; card.append(p); }
+    if (anchors.length) {
       const actions = document.createElement('div');
       actions.className = 'actions';
-      [...ctaP.childNodes].forEach((n) => actions.append(n.cloneNode(true)));
+      anchors.forEach((a) => actions.append(a.cloneNode(true)));
       card.append(actions);
     }
     grid.append(card);

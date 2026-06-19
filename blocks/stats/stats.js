@@ -1,38 +1,36 @@
 /**
  * stats — heading + subhead + a confident 3-cell stat row.
  *
- * Authoring: <h2> heading, sub <p>, then one row per stat (num | label),
- * e.g. "$5.2B | Company valuation". Tolerant of one-cell-per-line shapes
- * ("$5.2B — Company valuation").
+ * Reads by ROW/CELL (not <p>, #79): heading row (h2), a single text row = sub,
+ * two-cell rows "num | label" = stats (also tolerant of "num — label").
  */
-function collectRows(block) {
-  return [...block.children].map((row) => [...row.children]);
-}
-
 export default async function decorate(block) {
-  const heading = block.querySelector('h2, h1');
-  const ps = [...block.querySelectorAll('p')];
-  const sub = ps.find((p) => !p.querySelector('a'));
-
-  const rows = collectRows(block);
+  const rows = [...block.children];
+  let heading;
+  let subCell;
   const stats = [];
-  rows.forEach((cells) => {
-    if (cells.some((c) => c.querySelector('h1, h2'))) return;
-    if (cells.length >= 2) {
-      const num = cells[0].textContent.trim();
-      const lbl = cells[1].textContent.trim();
-      if (/^[$\d]/.test(num)) stats.push({ num, lbl });
-    } else if (cells.length === 1) {
-      const t = cells[0].textContent.trim();
-      const m = t.match(/^([$\d][\d.,%BMK+]*)\s*[—–-]\s*(.+)$/);
-      if (m) stats.push({ num: m[1], lbl: m[2] });
+
+  rows.forEach((row) => {
+    const cells = [...row.children];
+    if (cells.some((c) => c.querySelector('h1, h2, h3'))) {
+      heading = row.querySelector('h1, h2, h3');
+      return;
     }
+    if (cells.length >= 2 && /^[$\d]/.test(cells[0].textContent.trim())) {
+      stats.push({ num: cells[0].textContent.trim(), lbl: cells[1].textContent.trim() });
+      return;
+    }
+    const [c0] = cells;
+    const t = c0 ? c0.textContent.trim() : '';
+    const m = t.match(/^([$\d][\d.,%BMK+]*)\s*[—–-]\s*(.+)$/);
+    if (m) { stats.push({ num: m[1], lbl: m[2] }); return; }
+    if (t && !subCell) subCell = c0;
   });
 
   const wrap = document.createElement('div');
   wrap.className = 'wrap';
   if (heading) { const h = document.createElement('h2'); h.innerHTML = heading.innerHTML; wrap.append(h); }
-  if (sub && sub.textContent.trim()) { const s = document.createElement('p'); s.className = 'st-sub'; s.textContent = sub.textContent.trim(); wrap.append(s); }
+  if (subCell) { const s = document.createElement('p'); s.className = 'st-sub'; s.textContent = subCell.textContent.trim(); wrap.append(s); }
 
   if (stats.length) {
     const row = document.createElement('div');
