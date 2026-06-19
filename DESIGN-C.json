@@ -1,0 +1,15 @@
+{
+  "_provenance": { "writtenBy": "stardust:direct (via uplift)", "variant": "C", "writtenAt": "2026-06-19T04:10:09.299Z" },
+  "inherits": "DESIGN.json",
+  "extensions": {
+    "variantRole": "live telemetry as kinetic hero (live-data promotion)",
+    "headlineFamily": "Akkurat",
+    "improvements": ["hero-hierarchy", "density-floor", "trusted-by-contrast", "panel-narration", "security-badges"],
+    "motion": {
+      "register": "live-systems",
+      "signatureMoves": ["streaming-trace-rows", "count-up-numerals", "refresh-pulse-dots", "behavior-cards-resolve", "live-indicator"],
+      "reducedMotion": "neutralize-all-to-resting-state",
+      "cCliffGuard": "layout parity with A; differentiation is motion, not scale"
+    }
+  }
+}

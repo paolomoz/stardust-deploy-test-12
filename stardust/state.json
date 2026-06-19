@@ -1,0 +1,29 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:uplift",
+    "writtenAt": "2026-06-19T04:10:09.299Z"
+  },
+  "site": {
+    "originUrl": "https://www.adaline.ai/",
+    "extractedAt": "2026-06-19T04:10:09.299Z",
+    "pageCap": 1,
+    "totalDiscovered": 1,
+    "crawled": 1
+  },
+  "pages": [
+    {
+      "slug": "home",
+      "url": "https://www.adaline.ai/",
+      "status": "prototyped",
+      "currentStatePath": "stardust/current/pages/home.json",
+      "prototypePath": "stardust/prototypes/home-A-proposed.html",
+      "migratedPath": "",
+      "variants": {
+        "A": "stardust/prototypes/home-A-proposed.html",
+        "B": "stardust/prototypes/home-B-proposed.html",
+        "C": "stardust/prototypes/home-C-cinematic.html",
+        "Cstatic": "stardust/prototypes/home-C-proposed.html"
+      }
+    }
+  ]
+}

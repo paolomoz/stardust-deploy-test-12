@@ -1,0 +1,55 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-06-19T04:10:09.299Z",
+    "againstInput": "https://www.adaline.ai/",
+    "basis": "descriptive — computed-style aggregation of live homepage"
+  },
+  "colors": {
+    "background": "#FBFDF6",
+    "surface": "#F8F9F5",
+    "surfaceAlt": "#EFF2E8",
+    "surfaceMuted": "#E1E6DF",
+    "text": "#0A1D08",
+    "textMuted": "#2A332A",
+    "textSubtle": "#6B7860",
+    "primary": "#203B14",
+    "primaryHover": "#2E4320",
+    "accentPill": "#ECF2DF",
+    "dark": "#2A332A",
+    "darkest": "#050E11",
+    "border": "rgba(46,67,32,0.40)"
+  },
+  "typography": {
+    "heading": "Akkurat",
+    "body": "Akkurat",
+    "mono": "Fragment Mono",
+    "display": "Instrument Serif"
+  },
+  "rounded": { "button": "9999px", "card": "3px", "panel": "10px" },
+  "spacing": { "section": "section-y rhythm", "density": "airy" },
+  "extensions": {
+    "componentStyle": {
+      "button": "deep forest-green (#203B14) pill, paper text, no shadow",
+      "eyebrow": "Fragment Mono uppercase 11px, +1.1px tracking, pill chip",
+      "panel": "flat surface, 1px ring border, 10px radius",
+      "displayLine": "Instrument Serif 104px, used once, on dark"
+    },
+    "motifs": [
+      "pill-button",
+      "mono-eyebrow",
+      "live-trace-panel",
+      "behavior-list-codes",
+      "product-ui-over-nature-photography",
+      "trusted-by-logo-row",
+      "giant-serif-close"
+    ],
+    "voice": {
+      "hero": "Never stop learning",
+      "tagline": "Ship Agents That Self-Improve",
+      "positioning": "The ML layer between your traces and your agent diffs",
+      "close": "Self-improve your agents now.",
+      "ctas": ["Sign Up", "Read Docs", "Contact sales"]
+    }
+  }
+}

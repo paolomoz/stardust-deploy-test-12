@@ -1,0 +1,59 @@
+.security {
+  padding: clamp(40px, 5vw, 64px) 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.sec-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+
+@media (width <= 880px) {
+  .sec-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+}
+
+.sec-copy .eyebrow {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--subtle);
+}
+
+.sec-copy h2 {
+  font-size: clamp(24px, 2.6vw, 34px);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  margin: 10px 0 0;
+  max-width: 20ch;
+}
+
+.sec-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--border2);
+  border-radius: 9999px;
+  padding: 8px 16px;
+  font-size: 13.5px;
+  background: var(--surface);
+}
+
+.badge .c {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--forest);
+}

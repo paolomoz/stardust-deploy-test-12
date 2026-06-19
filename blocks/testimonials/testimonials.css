@@ -1,0 +1,54 @@
+.testimonials {
+  padding: clamp(40px, 5vw, 64px) 0;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.tq-intro { margin-bottom: 24px; }
+
+.tq-intro .eyebrow {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--subtle);
+}
+
+.tq-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+@media (width <= 880px) { .tq-grid { grid-template-columns: 1fr; } }
+
+.quote {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  background: var(--paper);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0;
+}
+
+.quote p {
+  font-size: 17px;
+  line-height: 1.45;
+}
+
+.quote .who {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--subtle);
+}
+
+.quote .who b {
+  display: block;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--ink);
+  margin-bottom: 2px;
+}

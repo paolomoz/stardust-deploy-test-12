@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brand Review — Adaline (extracted)</title>
+<style>
+  :root{
+    --bg:#FBFDF6; --surface:#F8F9F5; --surfaceAlt:#EFF2E8; --surfaceMuted:#E1E6DF;
+    --text:#0A1D08; --textMuted:#2A332A; --textSubtle:#6B7860;
+    --primary:#203B14; --pill:#ECF2DF; --dark:#2A332A; --border:rgba(46,67,32,.40);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font-family:"Akkurat",Inter,system-ui,sans-serif;line-height:1.5;padding:48px clamp(20px,6vw,96px)}
+  .mono{font-family:"Fragment Mono",ui-monospace,monospace}
+  .eyebrow{font-family:"Fragment Mono",ui-monospace,monospace;text-transform:uppercase;
+    font-size:11px;letter-spacing:1.1px;color:var(--textSubtle)}
+  h1{font-size:53px;line-height:1.05;letter-spacing:-2px;font-weight:400;margin:.2em 0}
+  h2{font-size:24px;font-weight:400;letter-spacing:-.5px;margin:2.4em 0 .6em;
+    padding-bottom:.4em;border-bottom:1px solid var(--border)}
+  .serif{font-family:"Instrument Serif",Georgia,serif}
+  .row{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0}
+  .sw{width:120px;border:1px solid var(--border);border-radius:6px;overflow:hidden;font-size:11px}
+  .sw .chip{height:56px} .sw .lbl{padding:6px 8px;background:var(--surface)}
+  .card{border:1px solid var(--border);border-radius:10px;padding:18px 20px;background:var(--surface);margin:10px 0}
+  .tension{border-left:3px solid var(--primary)}
+  .pill{display:inline-block;background:var(--primary);color:var(--bg);border-radius:9999px;padding:8px 18px;font-size:14px}
+  .pill.ghost{background:var(--pill);color:var(--text)}
+  cite{display:block;color:var(--textSubtle);font-size:11px;margin-top:6px}
+  .specimen{padding:16px 0;border-bottom:1px solid var(--border)}
+  small{color:var(--textSubtle)}
+</style>
+</head>
+<body>
+  <div class="eyebrow">stardust · extract · brand-review</div>
+  <h1>Adaline</h1>
+  <p style="max-width:60ch;color:var(--textMuted)">Ship Agents That Self-Improve. Observability and evals platform for self-improving AI agents — turns production traces into behaviors, evals, synthetic data, and verified improvements. <small>Source: pages/home.json, live Playwright render 2026-06-19.</small></p>
+
+  <h2>Palette</h2>
+  <div class="row">
+    <div class="sw"><div class="chip" style="background:#FBFDF6"></div><div class="lbl">background<br>#FBFDF6</div></div>
+    <div class="sw"><div class="chip" style="background:#EFF2E8"></div><div class="lbl">surfaceAlt<br>#EFF2E8</div></div>
+    <div class="sw"><div class="chip" style="background:#E1E6DF"></div><div class="lbl">surfaceMuted<br>#E1E6DF</div></div>
+    <div class="sw"><div class="chip" style="background:#203B14"></div><div class="lbl" style="color:#FBFDF6;background:#203B14">primary<br>#203B14</div></div>
+    <div class="sw"><div class="chip" style="background:#0A1D08"></div><div class="lbl" style="color:#FBFDF6;background:#0A1D08">text<br>#0A1D08</div></div>
+    <div class="sw"><div class="chip" style="background:#6B7860"></div><div class="lbl">textSubtle<br>#6B7860</div></div>
+    <div class="sw"><div class="chip" style="background:#ECF2DF"></div><div class="lbl">accentPill<br>#ECF2DF</div></div>
+  </div>
+  <cite>_brand-extraction.json § palette (weighted cross-element aggregation)</cite>
+
+  <h2>Typography</h2>
+  <div class="specimen"><div class="eyebrow">Akkurat — heading / body</div><div style="font-size:40px">Never stop learning</div></div>
+  <div class="specimen"><div class="eyebrow">Fragment Mono — labels / live trace</div><div class="mono">06:10:12 · agent.plan.revise · 3.8s · $0.10 · step 40/30</div></div>
+  <div class="specimen"><div class="eyebrow">Instrument Serif — used once, 104px</div><div class="serif" style="font-size:64px">Self-improve your agents now.</div></div>
+  <cite>_brand-extraction.json § type</cite>
+
+  <h2>Buttons &amp; chips</h2>
+  <div class="row"><span class="pill">Sign Up</span><span class="pill ghost">Read Docs</span><span class="pill ghost">The Self-Improving Agent</span></div>
+  <cite>pages/home.json § ctas — deep forest-green pill, paper text, no shadow</cite>
+
+  <h2>Tensions surfaced</h2>
+  <div class="card tension"><strong>Display register spent on the footer.</strong> The Instrument Serif display face — the single most expressive type moment on the page — appears only once, at 104px, in the closing footer. Its impact lands where the fewest visitors reach.<cite>detector: display-face-used-once · headings[3]</cite></div>
+  <div class="card tension"><strong>Hero photography under-foregrounded.</strong> Landscape/nature photography is the most emotionally distinctive asset, but it sits behind product screenshots at reduced scale.<cite>detector: signature-asset-demoted · media + screenshot</cite></div>
+  <div class="card tension"><strong>"Self-improving / live" claimed, not shown.</strong> Live-trace and behavior panels are static stills; the core promise of a system that learns in motion is told in copy, not demonstrated.<cite>detector: motion-claim-static-proof · landmarks[3,4]</cite></div>
+
+  <h2>System components</h2>
+  <div class="card">Sticky nav · Trusted-by logo row · Footer (COMPANY / RESOURCES / CONNECT) <cite>_brand-extraction.json § systemComponents</cite></div>
+
+  <p style="margin-top:48px"><small>Coverage: 1 page (homepage, --single). 590 CSS custom properties detected. 7 font files captured.</small></p>
+</body>
+</html>

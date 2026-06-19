@@ -1,0 +1,90 @@
+<style>
+  footer.footer {
+    background: var(--darkest);
+    color: #DFE7D8;
+    padding: clamp(56px, 7vw, 96px) 0 40px;
+  }
+  footer.footer .f-inner { max-width: var(--maxw); margin: 0 auto; padding: 0 var(--pad); }
+  footer.footer .close {
+    font-family: var(--font-serif);
+    font-size: clamp(48px, 9vw, 116px);
+    line-height: 0.96;
+    letter-spacing: -0.01em;
+    color: var(--paper);
+    max-width: 14ch;
+  }
+  footer.footer .fcta { display: flex; gap: 14px; margin: 32px 0 56px; flex-wrap: wrap; }
+  footer.footer .fcta a {
+    display: inline-flex; align-items: center; border-radius: 9999px; padding: 12px 22px; font-size: 15px;
+  }
+  footer.footer .fcta .pri { background: var(--forest); color: var(--paper); }
+  footer.footer .fcta .pri:hover { background: var(--forest2); }
+  footer.footer .fcta .ghost { background: transparent; color: #DFE7D8; border: 1px solid rgb(223 231 216 / 28%); }
+  footer.footer .fcta .ghost:hover { background: rgb(223 231 216 / 8%); }
+  footer.footer .cols {
+    display: grid; grid-template-columns: 1.4fr repeat(3, 1fr); gap: 32px;
+    border-top: 1px solid rgb(223 231 216 / 16%); padding-top: 40px;
+  }
+  @media (width <= 760px) { footer.footer .cols { grid-template-columns: 1fr 1fr; } }
+  footer.footer .brandcol .logo { display: flex; align-items: center; gap: 9px; font-weight: 700; font-size: 18px; color: #fff; }
+  footer.footer .brandcol .logo .mark { width: 20px; height: 20px; border-radius: 6px; background: radial-gradient(circle at 30% 30%, #6F8A5F, var(--forest)); }
+  footer.footer .brandcol .tag { font-family: var(--font-mono); color: #9FAE93; font-size: 13px; margin-top: 10px; }
+  footer.footer h4 {
+    font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: #9FAE93; margin-bottom: 14px; font-weight: 400;
+  }
+  footer.footer ul { list-style: none; margin: 0; padding: 0; }
+  footer.footer li { margin-bottom: 9px; font-size: 14px; }
+  footer.footer li a { color: #C4CFBA; }
+  footer.footer li a:hover { color: #fff; }
+  footer.footer .legal {
+    display: flex; justify-content: space-between; margin-top: 40px; gap: 8px; flex-wrap: wrap;
+    font-family: var(--font-mono); font-size: 12px; color: #8A9A7E;
+  }
+</style>
+<div class="f-inner">
+  <div class="close">Self-improve your agents now.</div>
+  <div class="fcta">
+    <a class="pri" href="https://app.adaline.ai/sign-up">Sign Up</a>
+    <a class="ghost" href="https://adaline.ai/docs">Read Docs</a>
+  </div>
+  <div class="cols">
+    <div class="brandcol">
+      <span class="logo"><span class="mark"></span>Adaline</span>
+      <div class="tag">Never stop learning</div>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="/agent-self-improvement">The Self-Improving Agent</a></li>
+        <li><a href="https://labs.adaline.ai/">Labs</a></li>
+        <li><a href="https://adalineapplied.com/">Applied</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="https://go.adaline.ai/careers">Careers</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="https://adaline.ai/docs">Documentation</a></li>
+        <li><a href="https://adaline.ai/docs/reference/introduction">API reference</a></li>
+        <li><a href="/dpa">DPA</a></li>
+        <li><a href="/privacy">Privacy policy</a></li>
+        <li><a href="/terms">Terms of service</a></li>
+        <li><a href="/vulnerability">Report vulnerability</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="https://github.com/adaline">Github</a></li>
+        <li><a href="https://labs.adaline.ai/">Newsletter</a></li>
+        <li><a href="https://www.linkedin.com/company/adaline">LinkedIn</a></li>
+        <li><a href="https://x.com/tryadaline">X (Twitter)</a></li>
+        <li><a href="https://www.youtube.com/@adalineai">YouTube</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="legal"><span>© 2026 Adaline Inc.</span><span>Never stop learning</span></div>
+</div>

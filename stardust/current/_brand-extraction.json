@@ -1,0 +1,416 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-06-19T04:10:09.299Z",
+    "againstInput": "https://www.adaline.ai/",
+    "renderedBy": "playwright",
+    "notes": "Single-page (--single) capture of adaline.ai homepage."
+  },
+  "palette": {
+    "background": "#FBFDF6",
+    "surface": "#F8F9F5",
+    "surfaceAlt": "#EFF2E8",
+    "surfaceMuted": "#E1E6DF",
+    "text": "#0A1D08",
+    "textMuted": "#2A332A",
+    "textSubtle": "#6B7860",
+    "primary": "#203B14",
+    "primaryHover": "#2E4320",
+    "accentPill": "#ECF2DF",
+    "dark": "#2A332A",
+    "darker": "#1D2226",
+    "darkest": "#050E11",
+    "border": "rgba(46,67,32,0.40)",
+    "borderSubtle": "#E1E6DF",
+    "_source": "colorAgg cross-element weighted",
+    "raw": [
+      {
+        "color": "rgb(251, 253, 246)",
+        "weight": 38355416
+      },
+      {
+        "color": "rgb(239, 242, 232)",
+        "weight": 4681120
+      },
+      {
+        "color": "rgb(248, 249, 245)",
+        "weight": 4474015
+      },
+      {
+        "color": "rgb(42, 51, 42)",
+        "weight": 1575616
+      },
+      {
+        "color": "rgb(225, 230, 223)",
+        "weight": 1299736
+      },
+      {
+        "color": "rgb(29, 34, 38)",
+        "weight": 745976
+      },
+      {
+        "color": "rgb(5, 14, 17)",
+        "weight": 622080
+      },
+      {
+        "color": "rgb(10, 29, 8)",
+        "weight": 319060
+      },
+      {
+        "color": "oklab(0.990609 -0.00460494 0.00821501 / 0.85)",
+        "weight": 92160
+      },
+      {
+        "color": "rgb(107, 120, 96)",
+        "weight": 71660
+      },
+      {
+        "color": "rgba(46, 67, 32, 0.4)",
+        "weight": 70960
+      },
+      {
+        "color": "rgb(27, 32, 25)",
+        "weight": 70650
+      },
+      {
+        "color": "rgba(46, 67, 32, 0.7)",
+        "weight": 53708
+      },
+      {
+        "color": "rgb(241, 243, 239)",
+        "weight": 41382
+      },
+      {
+        "color": "rgba(74, 109, 71, 0.05)",
+        "weight": 41316
+      },
+      {
+        "color": "rgba(128, 88, 28, 0.035)",
+        "weight": 27544
+      },
+      {
+        "color": "rgba(43, 107, 94, 0.12)",
+        "weight": 25935
+      },
+      {
+        "color": "rgb(46, 67, 32)",
+        "weight": 22220
+      },
+      {
+        "color": "rgba(46, 67, 32, 0.08)",
+        "weight": 21980
+      },
+      {
+        "color": "color(srgb 0.290196 0.427451 0.278431 / 0.08)",
+        "weight": 21980
+      },
+      {
+        "color": "rgba(74, 109, 71, 0.08)",
+        "weight": 20724
+      },
+      {
+        "color": "oklab(0.980245 -0.00247064 0.00476575 / 0.95)",
+        "weight": 15660
+      },
+      {
+        "color": "rgb(32, 59, 20)",
+        "weight": 14138
+      },
+      {
+        "color": "rgba(74, 109, 71, 0.38)",
+        "weight": 13892
+      },
+      {
+        "color": "rgba(153, 30, 75, 0.04)",
+        "weight": 13772
+      },
+      {
+        "color": "rgb(43, 107, 94)",
+        "weight": 12920
+      },
+      {
+        "color": "rgba(52, 79, 49, 0.07)",
+        "weight": 12588
+      },
+      {
+        "color": "rgb(43, 57, 10)",
+        "weight": 12320
+      },
+      {
+        "color": "oklab(0.309468 -0.0164708 0.011503 / 0.08)",
+        "weight": 10804
+      },
+      {
+        "color": "rgb(153, 30, 75)",
+        "weight": 10605
+      }
+    ]
+  },
+  "type": {
+    "headingFamily": "Akkurat",
+    "bodyFamily": "Akkurat",
+    "monoFamily": "Fragment Mono",
+    "displayFamily": "Instrument Serif",
+    "scaleAudit": {
+      "kind": "modular",
+      "note": "h1 53/64, h2 30/34.7, display 104/98.8 — large jump to serif display"
+    },
+    "headings": [
+      {
+        "level": 1,
+        "family": "akkurat",
+        "weight": "400",
+        "size": "53px",
+        "lineHeight": "64px",
+        "letterSpacing": "-2.12px",
+        "color": "rgb(10, 29, 8)",
+        "sample": "Never stop learning"
+      },
+      {
+        "level": 2,
+        "family": "akkurat",
+        "weight": "400",
+        "size": "30px",
+        "lineHeight": "34.7px",
+        "letterSpacing": "-0.6px",
+        "color": "rgb(10, 29, 8)",
+        "sample": "Truly understand your agents"
+      },
+      {
+        "level": 2,
+        "family": "akkurat",
+        "weight": "400",
+        "size": "30px",
+        "lineHeight": "34.7px",
+        "letterSpacing": "-0.6px",
+        "color": "rgb(10, 29, 8)",
+        "sample": "Evals that write themselves"
+      },
+      {
+        "level": 2,
+        "family": "Instrument Serif",
+        "weight": "400",
+        "size": "104px",
+        "lineHeight": "98.8px",
+        "letterSpacing": "-2.08px",
+        "color": "rgb(251, 253, 246)",
+        "sample": "Self-improve your agents now."
+      },
+      {
+        "level": 3,
+        "family": "fragmentMono",
+        "weight": "400",
+        "size": "11px",
+        "lineHeight": "14px",
+        "letterSpacing": "1.1px",
+        "color": "oklab(0.990609 -0.00460494 0.00821501 / 0.45)",
+        "sample": "COMPANY"
+      },
+      {
+        "level": 3,
+        "family": "fragmentMono",
+        "weight": "400",
+        "size": "11px",
+        "lineHeight": "14px",
+        "letterSpacing": "1.1px",
+        "color": "oklab(0.990609 -0.00460494 0.00821501 / 0.45)",
+        "sample": "RESOURCES"
+      },
+      {
+        "level": 3,
+        "family": "fragmentMono",
+        "weight": "400",
+        "size": "11px",
+        "lineHeight": "14px",
+        "letterSpacing": "1.1px",
+        "color": "oklab(0.990609 -0.00460494 0.00821501 / 0.45)",
+        "sample": "CONNECT"
+      }
+    ],
+    "files": [
+      {
+        "url": "https://www.adaline.ai/_next/static/media/e736cc0ef16411e2-s.p.woff2",
+        "localPath": "stardust/current/assets/fonts/e736cc0ef16411e2-s.p.woff2",
+        "licensingFlag": "unknown"
+      },
+      {
+        "url": "https://www.adaline.ai/_next/static/media/35d8212c8ea92e49-s.p.woff2",
+        "localPath": "stardust/current/assets/fonts/35d8212c8ea92e49-s.p.woff2",
+        "licensingFlag": "unknown"
+      },
+      {
+        "url": "https://www.adaline.ai/_next/static/media/97e6a707cc4543a5-s.p.woff2",
+        "localPath": "stardust/current/assets/fonts/97e6a707cc4543a5-s.p.woff2",
+        "licensingFlag": "unknown"
+      },
+      {
+        "url": "https://www.adaline.ai/_next/static/media/86681560b7871410-s.p.woff2",
+        "localPath": "stardust/current/assets/fonts/86681560b7871410-s.p.woff2",
+        "licensingFlag": "unknown"
+      },
+      {
+        "url": "https://www.adaline.ai/_next/static/media/e6099e249fd938cc-s.woff2",
+        "localPath": "stardust/current/assets/fonts/e6099e249fd938cc-s.woff2",
+        "licensingFlag": "unknown"
+      },
+      {
+        "url": "https://www.adaline.ai/_next/static/media/33a2dcc4e8ba98b4-s.woff2",
+        "localPath": "stardust/current/assets/fonts/33a2dcc4e8ba98b4-s.woff2",
+        "licensingFlag": "unknown"
+      },
+      {
+        "url": "https://www.adaline.ai/_next/static/media/5611c55482296524-s.woff2",
+        "localPath": "stardust/current/assets/fonts/5611c55482296524-s.woff2",
+        "licensingFlag": "unknown"
+      }
+    ],
+    "notes": "Akkurat (Lineto grotesque) for headings+body; Fragment Mono pervasive for technical labels/eyebrows and live-trace UI; Instrument Serif used ONCE at 104px for the footer call-to-action — a captured-but-underused display register."
+  },
+  "motifs": {
+    "radius": {
+      "dominant": "pill (9999px) for buttons/eyebrows",
+      "secondary": "3px small cards",
+      "raw": [
+        {
+          "value": "3.35544e+07px",
+          "count": 329
+        },
+        {
+          "value": "3px",
+          "count": 81
+        },
+        {
+          "value": "1.5px",
+          "count": 48
+        },
+        {
+          "value": "10px",
+          "count": 42
+        },
+        {
+          "value": "4px",
+          "count": 32
+        },
+        {
+          "value": "6px",
+          "count": 26
+        },
+        {
+          "value": "20px",
+          "count": 6
+        },
+        {
+          "value": "8px",
+          "count": 5
+        }
+      ]
+    },
+    "shadow": {
+      "style": "flat — minimal box-shadow; 1px ring borders preferred",
+      "raw": [
+        {
+          "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(52, 79, 49, 0",
+          "count": 3
+        },
+        {
+          "value": "rgb(153, 30, 75) 0px 0px 0px 1px",
+          "count": 3
+        },
+        {
+          "value": "rgb(43, 107, 94) 0px 0px 0px 1px",
+          "count": 1
+        },
+        {
+          "value": "color(srgb 0.290196 0.427451 0.278431 / 0.12) 0px 0px 0px 1px inset",
+          "count": 1
+        },
+        {
+          "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0",
+          "count": 1
+        },
+        {
+          "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0",
+          "count": 1
+        }
+      ]
+    },
+    "patterns": [
+      "pill-button",
+      "mono-eyebrow-label",
+      "live-trace-panel (monospace rows: timestamp · op · latency · cost)",
+      "behavior-list (B01..B25 codes with ISSUE/CHANGED/NEW tags)",
+      "floating product UI over landscape/nature photography",
+      "trusted-by logo row",
+      "giant serif closing statement"
+    ]
+  },
+  "voice": {
+    "heroHeadline": "Never stop learning",
+    "tagline": "Ship Agents That Self-Improve",
+    "firstParagraph": "Adaline helps AI teams improve their agents autonomously, so you can find fires before they happen, ship fixes in minutes, and feel confidence in their agents — for the first time.",
+    "positioning": "Adaline is the ML layer between your traces and your agent diffs — behaviors, evals, data.",
+    "ctaLabels": [
+      "Sign Up",
+      "Read Docs",
+      "Contact sales",
+      "The Self-Improving Agent"
+    ],
+    "closingStatement": "Self-improve your agents now.",
+    "heroImage": "landscape/nature photography behind floating product UI (mountain valley, snow ridge)",
+    "register": "product / developer-tool — precise, technical, confident, organic-growth metaphor (\"never stop learning\")"
+  },
+  "customers": [
+    "Salesforce",
+    "DoorDash",
+    "Reforge",
+    "HubSpot",
+    "Superhuman",
+    "Discord",
+    "McKinsey & Company",
+    "Coframe",
+    "Glue",
+    "Atria",
+    "Daybreak",
+    "SimpleDocs"
+  ],
+  "testimonials": [
+    {
+      "text": "Adaline has become an invaluable tool for my team to develop GenAI products.",
+      "attribution": "Tan S. · Product Manager for Lilli · McKinsey & Company"
+    },
+    {
+      "text": "Adaline is simply the best platform I've found that bridges the gap between technical & nontechnical LLM development.",
+      "attribution": "Ian W. · Member of Technical Staff · OpenAI"
+    },
+    {
+      "text": "Before Adaline, iterating and evaluating prompts was a nightmare. Adaline totally changes the game here.",
+      "attribution": "Josh P. · CEO · Coframe"
+    },
+    {
+      "text": "Adaline has become a crucial part of our tech stack — brought our insufficient answer rate down to practically 0%.",
+      "attribution": "undisclosed"
+    }
+  ],
+  "security": [
+    "SOC 2 Type II audited and certified",
+    "GDPR compliant",
+    "SSO / SAML",
+    "HIPAA compliant",
+    "PII DPAs"
+  ],
+  "systemComponents": [
+    {
+      "name": "site-nav",
+      "evidence": "sticky top-0 nav: logo + Docs/Pricing/Blog + Sign in/Contact sales/Sign up"
+    },
+    {
+      "name": "site-footer",
+      "evidence": "Instrument Serif CTA + COMPANY/RESOURCES/CONNECT columns + © 2026 Adaline Inc."
+    },
+    {
+      "name": "trusted-by-row",
+      "evidence": "customer SVG logo row under hero"
+    }
+  ],
+  "cssVarCount": 590
+}

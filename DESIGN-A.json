@@ -1,0 +1,10 @@
+{
+  "_provenance": { "writtenBy": "stardust:direct (via uplift)", "variant": "A", "writtenAt": "2026-06-19T04:10:09.299Z" },
+  "inherits": "DESIGN.json",
+  "extensions": {
+    "variantRole": "faithful + improvements",
+    "headlineFamily": "Akkurat",
+    "improvements": ["hero-hierarchy", "density-floor", "trusted-by-contrast", "panel-narration", "security-badges"],
+    "motion": { "register": null }
+  }
+}

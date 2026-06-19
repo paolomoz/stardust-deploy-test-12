@@ -1,0 +1,72 @@
+<style>
+  header.header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: color-mix(in srgb, var(--paper) 82%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+  header.header .nav-inner {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0 var(--pad);
+    height: 64px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+  header.header .logo { display: flex; align-items: center; gap: 9px; font-weight: 700; font-size: 18px; letter-spacing: -0.02em; color: var(--ink); }
+  header.header .logo .mark { width: 20px; height: 20px; border-radius: 6px; background: radial-gradient(circle at 30% 30%, #6F8A5F, var(--forest)); }
+  header.header .links { display: flex; gap: 22px; font-size: 14.5px; color: var(--ink2); }
+  header.header .links a:hover { color: var(--ink); }
+  header.header .right { margin-left: auto; display: flex; align-items: center; gap: 18px; font-size: 14.5px; }
+  header.header .right a:hover { color: var(--ink); }
+  header.header .nav-cta {
+    display: inline-flex; align-items: center; border-radius: 9999px;
+    padding: 8px 16px; background: var(--forest); color: var(--paper); font-size: 14px;
+  }
+  header.header .nav-cta:hover { background: var(--forest2); }
+  header.header #mnav-toggle, header.header .burger { display: none; }
+  @media (width <= 760px) {
+    header.header .links, header.header .right > a:not(.nav-cta) { display: none; }
+    header.header .burger {
+      display: inline-flex; margin-left: auto; align-items: center; justify-content: center;
+      width: 38px; height: 38px; border: 1px solid var(--border2); border-radius: 8px; cursor: pointer;
+    }
+    header.header .burger span { width: 16px; height: 1.5px; background: var(--ink); position: relative; }
+    header.header .burger span::before, header.header .burger span::after {
+      content: ""; position: absolute; left: 0; width: 16px; height: 1.5px; background: var(--ink);
+    }
+    header.header .burger span::before { top: -5px; }
+    header.header .burger span::after { top: 5px; }
+    header.header #mnav {
+      position: fixed; inset: 64px 0 auto; background: var(--paper);
+      border-bottom: 1px solid var(--border); padding: 18px var(--pad);
+      display: none; flex-direction: column; gap: 14px; font-size: 16px;
+    }
+    header.header #mnav-toggle:checked ~ #mnav { display: flex; }
+  }
+</style>
+<input type="checkbox" id="mnav-toggle" hidden>
+<div class="nav-inner">
+  <a class="logo" href="/"><span class="mark"></span>Adaline</a>
+  <nav class="links" aria-label="Primary">
+    <a href="https://adaline.ai/docs">Docs</a>
+    <a href="/pricing">Pricing</a>
+    <a href="/blog">Blog</a>
+  </nav>
+  <div class="right">
+    <a href="https://app.adaline.ai/sign-in">Sign in</a>
+    <a href="/get-started">Contact sales</a>
+    <a class="nav-cta" href="https://app.adaline.ai/sign-up">Sign up</a>
+  </div>
+  <label class="burger" for="mnav-toggle" aria-label="Open menu"><span></span></label>
+  <div id="mnav">
+    <a href="https://adaline.ai/docs">Docs</a>
+    <a href="/pricing">Pricing</a>
+    <a href="/blog">Blog</a>
+    <a href="https://app.adaline.ai/sign-in">Sign in</a>
+    <a href="/get-started">Contact sales</a>
+  </div>
+</div>

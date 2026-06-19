@@ -1,0 +1,25 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-06-19T04:10:09.299Z",
+    "againstInput": "https://www.adaline.ai/"
+  },
+  "discovery": {
+    "mode": "single",
+    "fetchTechnique": "headless-chromium",
+    "waitMode": "medium",
+    "totalDiscovered": 1,
+    "kept": [
+      "home"
+    ]
+  },
+  "consent": {
+    "method": "none-detected"
+  },
+  "crawl": {
+    "crawled": [
+      "home"
+    ],
+    "failures": []
+  }
+}

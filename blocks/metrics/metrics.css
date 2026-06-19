@@ -1,0 +1,60 @@
+.metrics {
+  padding: clamp(40px, 5vw, 64px) 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.mx-intro {
+  max-width: 62ch;
+  margin-bottom: 28px;
+}
+
+.mx-intro .eyebrow {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--subtle);
+}
+
+.mx-intro h2 {
+  font-size: clamp(26px, 3vw, 38px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 10px 0 12px;
+  max-width: 20ch;
+}
+
+.mx-intro p {
+  color: var(--ink2);
+  max-width: 54ch;
+}
+
+.mx-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+@media (width <= 760px) { .mx-grid { grid-template-columns: repeat(2, 1fr); } }
+
+.metric {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  background: var(--surface);
+}
+
+.metric .v {
+  font-size: clamp(28px, 3vw, 36px);
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.metric .k {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--subtle);
+  margin-top: 10px;
+}
