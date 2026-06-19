@@ -19,7 +19,10 @@
 .hero .hero__inner {
   position: relative;
   z-index: 1;
+  box-sizing: border-box;
   max-width: 30ch;
+  margin-inline: auto;
+  padding-inline: var(--gutter);
 }
 
 .hero .eyebrow {
